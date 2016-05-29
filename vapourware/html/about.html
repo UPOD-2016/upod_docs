@@ -3,17 +3,36 @@
 <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
-
 <body>
-
+<!--header-->
 <div id="header">
-<h1>About Us</h1>
+<h1>UPOD</h1>
+</div>
+<!--about content-->
+<div class = "container" id="content">
+  <div class = col-md-4>
+    <p>About content goes here.</p>
+  </div>
 </div>
 
-<div id="content">
-<p>Welcome to UPOD.</p>
-</div>
+<!--comment box-->
+<form method="post">
+  <fieldset class = "container">
+    <div class= col-xl-4>
+    <legend>Leave a Comment</legend>
+    <label for="name">Name:</label>
+    <input type="text" name="name" id="name" value="" maxlength="25"><br />
+    <label for="email">Email:</label>
+    <input type="text" name="email" id="email" value="" maxlength="50"><br /><br />
+    <label for="comment">Comment</label><br />
+    <textarea rows="6" cols="50" name="comment" id="comment"></textarea><br />
+    <input type="submit" name="submit" value="Submit">
 
+  </div>
+  </fieldset>
+</form>
+
+<!--footer-->
 <div id="footer">
 UPOD CP317 2016
 </div>
