@@ -1,9 +1,9 @@
 login.html: Delia
-mod.html:
+mod.html: Qamar Farooq & Tudor Bertiean
 admin.html: Qamar Farooq & Tudor Bertiean
 homgepage.html: Ryan Mak
 about.html: Roman Lipisiy
-search.html:
+search.html: Roman Lipisiy
 category.html: Ensieh Mollazadeh
 entry.html: Vishrut Sutaria
 
