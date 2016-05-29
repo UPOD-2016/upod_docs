@@ -1,0 +1,10 @@
+login.html:
+mod.html:
+admin.html:
+homgepage.html: Ryan Mak
+about.html:
+search.html:
+category.html:
+entry.html:
+
+header/footer.html: Kyle Colle-Tripp
