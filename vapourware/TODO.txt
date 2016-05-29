@@ -1,4 +1,4 @@
-login.html:
+login.html: Delia
 mod.html:
 admin.html: Qamar Farooq & Tudor Bertiean
 homgepage.html: Ryan Mak
