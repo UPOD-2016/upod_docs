@@ -2,7 +2,7 @@ login.html:
 mod.html:
 admin.html:
 homgepage.html: Ryan Mak
-about.html:
+about.html: Roman Lipisy
 search.html:
 category.html:
 entry.html:
