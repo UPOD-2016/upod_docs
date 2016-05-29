@@ -1,10 +1,10 @@
 login.html:
 mod.html:
-admin.html:
+admin.html: Qamar Farooq & Tudor Bertiean
 homgepage.html: Ryan Mak
-about.html: Roman Lipisy
+about.html: Roman Lipisiy
 search.html:
-category.html:
-entry.html:
+category.html: Ensieh Mollazadeh
+entry.html: Vishrut Sutaria
 
 header/footer.html: Kyle Colle-Tripp
