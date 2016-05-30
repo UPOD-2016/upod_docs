@@ -2,30 +2,19 @@
 <head>
 <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../css/style.css">
+<script src="../javascript/jquery-2.2.4.js"></script>
+<script>
+	$(function(){
+      $("#headerContent").load("header.html"); 
+			$("#footerContent").load("footer.html");
+    });
+</script> 
 </head>
+
 <body>
 <!--header-->
-<!-- Fixed navbar -->
-  <nav class="navbar navbar-default" style="background-color: #330072; color:#FFFFFF">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">UPOD</a>
-      </div>
-      <div id="navbar" class="collapse navbar-collapse">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div><!--/.nav-collapse -->
-    </div>
-  </nav>
+<div id="headerContent"></div>
+
 <div class="container" id="title">
   <p>About UPOD</p>
 </div>
@@ -55,11 +44,7 @@
 </form>
 
 <!--footer-->
-<footer class="navbar-default navbar-fixed-bottom" style="height:5%; background-color: #330072; color:#FFFFFF">
-	<div class="container-fluid">
-	  <span> Legal Information </span>
-	</div>
-</footer>
+<div id="footerContent"></div>
 
 
 </body>
