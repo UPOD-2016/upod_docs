@@ -1,0 +1,6 @@
+1. Fundamentals              - Kevin Mehta, Brian Wu
+2. Optics                    - Jeffrey Chung, Ryan Mak
+3. Classical Mechanics       - Aman Kumar
+4. Electricity and Megnetism - Wallise Wu
+5. Quantum Mechanics         - Eddy Perez
+6. Statistical Mechanics     - Pillip Lee
