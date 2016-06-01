@@ -14,7 +14,7 @@ default: &default
   encoding: utf8
   pool: 5
   username: root
-  password:
+  password: THE_ROOT_PASSWORD
   socket: /tmp/mysql.sock
 
 development:
