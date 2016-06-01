@@ -1,4 +1,5 @@
 (function() {
+    console.log("hello");
     $("#headerContent").load("header.html"); // load header/nav-bar
     $("#footerContent").load("footer.html"); // load footer
     $("#pushmenuContent").load("pushMenu.html", function() {
