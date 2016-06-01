@@ -2,7 +2,7 @@
     console.log("hello");
     $("#headerContent").load("header.html"); // load header/nav-bar
     $("#footerContent").load("footer.html"); // load footer
-    $("#pushmenuContent").load("pushMenu.html", function() {
+    $("#pushmenuContent").load("push-menu.html", function() {
         $('.icon-menu').click(function() {
             $('.menu').animate({
                 left: "0px"
