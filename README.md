@@ -2,7 +2,7 @@
 CP317 - Group Project
 
 ### Project Tracking Site
-* http://morouney.com/CP317
+* http://upod-2016.github.io/UPOD
 
 ### FaceBook Group
 * https://www.facebook.com/groups/669296119875892/
