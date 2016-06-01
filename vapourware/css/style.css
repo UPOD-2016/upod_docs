@@ -1,0 +1,63 @@
+/* homepage styling */
+body {
+    left: 0;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    background-color: #8c1aff;
+}
+
+.jumbotron {
+    background-color: #8c1aff;
+}
+
+/* Initial push menu */
+.menu {
+    background: #202024 url('../resources/menuBack.png') repeat left top;
+    left: -285px;  /* start off page */
+    height: 100%;
+    position: fixed;
+    width: 285px;
+}
+
+.menu ul {
+    border-top: 1px solid #737373;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    border-bottom: 1px solid #737373;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 45px;
+    padding-bottom: 3px;
+    padding-left: 10px;
+    padding-top: 3px;
+}
+
+.menu a {
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.icon-close {
+    cursor: pointer;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.icon-menu {
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+    padding-top: 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
