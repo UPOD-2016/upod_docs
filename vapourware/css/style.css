@@ -19,11 +19,15 @@ p{
   font-size: 12px;
 }
 .footerContent{
-  "height:100%;
-  background-color: blue;
-  color:black;
+  height:100%;
+  color:yellow;
+  background-color: #7510da;
   text-align: center;
-  padding-top: 10px;"
+  padding: 3px;
+}
+.headerContent{
+  color:yellow;
+  background-color: #7510da;
 }
 .jumbotron {
     background-color: #f5f5f5;
