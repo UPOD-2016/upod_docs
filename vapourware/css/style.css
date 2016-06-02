@@ -46,32 +46,76 @@ p{
 .aboutCommentBox{
     margin-bottom: 30px;
 }
-/*adminpage styling*/
 
-.adminPanel {
+/* Admin Page Style */
+
+#wrapper {
+    padding-left: 0;
+}
+
+#sidebar-wrapper {
+    position: fixed;
+    left: 0;
+    width: 250px;
+    height: 90%;
+    margin-left: 0;
     overflow-y: auto;
-    width: 300px;
-    height: 85%;
-    padding-left: 5px;
-    padding-right: 5px;
-    position: absolute;
-    margin: 20px;
+    background: #000;
 }
 
-.adminGroupHeading{
-    margin-top: 15px;
-    margin-bottom: 5px;
-    font-size: 30px;
-    border-bottom: 1px solid #000000;
-}
-
-.adminBtn{
+#page-content-wrapper {
     width: 100%;
-    height: 40px;
-    border: ;
-    background: #c8cbcd;
-    padding-left: 30px;
-    text-align: left;
+    position: absolute;
+    padding: 15px;
+}
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    font-size: 15px;
+    color: #999999;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
 }
 
 /* Initial push menu */
