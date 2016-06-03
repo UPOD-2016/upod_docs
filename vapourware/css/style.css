@@ -4,7 +4,7 @@ body{
     background-color: white;
     left: 0;
     margin: 0;
-    overflow: hidden;
+    overflow: auto;
     position: relative;
 }
 h1{
