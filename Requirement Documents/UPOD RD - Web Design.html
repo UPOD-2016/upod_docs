@@ -1,0 +1,184 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+		<title>System Requirement Specification Template</title>
+		<style>
+        #p {
+			margin-top: 100px;
+			margin-bottom: 100px;
+			margin-right: 150px;
+			margin-left: 80px;
+		}
+		
+		#inner { 
+            margin-left:25px; 
+            margin-right:25px;
+        }
+		#inner2 {
+			margin-left:50px;
+			margin-right:25px;
+		}
+		#inner3 {
+			margin-left: 75px;
+			margin-right: 25px;
+		}
+		* {
+			font-size: 100%;
+			font-family: 'Open Sans', sans-serif;
+		}
+    </style>
+	</head>
+	
+	<body  id="p">
+		<div>
+			<div>
+				<h1 style="font-weight:bold;text-align:right;font-size:320%">Software Requirements Specification</h3>
+				<h2 style="font-weight:bold;text-align:right;font-size:200%">for</h3>
+				<h1 style="font-weight:bold;text-align:right;font-size:320%">UPOD-Web Design</h3>
+				<h3 style="font-weight:bold;text-align:right;font-size:140%">Version 0.1</h3>
+				<h3 style="font-weight:bold;text-align:right;font-size:140%">Prepared by Tom West</h3>
+				<h3 style="font-weight:bold;text-align:right;font-size:140%">Wilfrid Laurier University, CP317</h3>
+				<h3 style="font-weight:bold;text-align:right;font-size:140%">25/05/2016</h3>
+			</div>
+			<br>
+			<br>
+			<br>
+			<h2>1. Introduction</h1>
+			<div id="inner">
+				<h3>1.1 Purpose</h2>
+				<p id="inner2">This collection of requirement documents outlines the visual and functional design choices made<br>in order to update the Laurier UPOD site. The UPOD site should:</p>
+				<li id="inner3">Contain all relevant (accurate) information a first year physics undergraduate student<br>would need to access in reference to their courses.</li>
+				<li id="inner3">Be easy to navigate, as students generally stop looking unless information is easily<br>available</li>
+				<li id="inner3">Be responsive, as students generally are on tight timelines, and don't have time for sites<br>to load slowly.</li>
+			</div>
+			
+			<div id="inner">
+				<h3>1.2 Product Scope</h2>
+				<p id="inner2">UPOD (Undergraduate Physics Online Database) is a website designed to the students with<br>information about physics. The goal is to provide accurate and up to date physics knowledge for<br>undergraduate students. There are currently very few quality physics reference sites, so UPOD<br>has the opportunity to fill a large gap facing physics students at present.</p>
+			</div>
+			
+		</div>
+		
+		<div>
+			<h2>2. Overall Description</h2>
+			<div id="inner">
+				<h3>2.1 Product Perspective</h3>
+				<p id="inner2">UPOD’s Web Design is dictated by the capability of both the front end and back end programming teams,<br>as well as a visual design philosophy that will focus on quick searches and simple site navigation.</p>
+			</div>
+			
+			<div id="inner">
+				<h3>2.2 Product Funtions</h3>
+				<p id="inner2">The Web Design must allow students to navigate UPOD quickly. The site content should be organized in<br>a tree structure, so that broad topics lead students quickly to more specialized information. This will be<br>most noticeable on the Portal Page, as students can quickly glance through to get a rough idea of what<br>information is covered by each page of UPOD.</p>
+			</div>
+			
+			<div id="inner">
+				<h3>2.3 User Classes and Characteristics</h3>
+				<p id="inner2">The primary users of UPOD will be undergrad students in physics courses. We will assume that users are<br>familiar with common reference and search tools like Google and Wikipedia, and we will therefore<br>attempt to parallel visual cues to help them find the info they are looking for. (See High Level<br>Requirements for Landing Page System Feature for an example)</p>
+				<p id="inner2">Other users will include site admins – WLU staff and potentially future CP317 students charged with<br>updating the site. As such, the layout and design of the site should be intuitive enough for admins to<br>easily manage the site after implementation. </p>
+			</div>
+			
+			<div id="inner">
+				<h3>2.4 Operating Environment</h3>
+				<p id="inner2">The UPOD website will be hosted on the Wilfrid Laurier University Hopper server. All data must be<br>stored locally, and search functions will be supported by the database structure.</p>
+			</div>
+			
+			<div id="inner">
+				<h3>2.5 Design and Implemenation Constraints</h3>
+				<p id="inner2">UPOD front end will be maintained by Wilfrid Laurier staff after the end of the Spring 2016 school term.<br>(July 26, 2016) As such, the admin portal must be functional by this date. Only specified staff may be<br>allowed administrator access.<br>The UPOD budget is $0, so any programs or framework must be free to use.</p>
+			</div>
+			
+		</div>
+		
+		<div>
+			<h2>3. External Interface Requirements</h2>
+			<div id="inner">
+				<h3>3.1 User Interfaces</h2>
+			</div>
+			<div id="inner">
+				<h3>3.2 Hardware Interfaces</h2>
+			</div>
+			<div id="inner">
+				<h3>3.3 Software Interfaces</h2>
+			</div>
+			<div id="inner">
+				<h3>3.4 Communication Interfaces</h2>
+			</div>
+			
+		</div>
+		
+		<div>
+			<h2>4. System Features</h2>
+			<div id="inner">
+				<h3>4.1 Landing Page</h3>
+				<p id="inner2">4.1.1	Description<br><br>The UPOD landing page is the first thing students will see when accessing UPOD.<br>The UPOD design philosophy is to encourage users to search the site quickly<br>- the focus on and size of the search bar on the landing page will promote a quick<br>search to whatever term the student is looking for. Think of the Google Search page<br>for a similar product.</p>
+				<p id="inner2">A permanent link back to the main landing page is common on many sites, as is a left side<br>menu. Students will be familiar with sites like Wikipedia and Google Scholar, so a<br>similar design philosophy should be employed for similar educational tools.<br>Further, by hiding the contents of the left side menu, users will be more likely use<br>the search bar to initially search the site.</p>
+				<p id="inner2">4.1.2 Functional Requirements</p>
+				<p id="inner3">4.1.2.1: The UPOD logo and search bar must be displayed in the main content<br>panel of the landing page. The search bar will take up 75% of the width<br>of the page, and must be centered. The UPOD logo must be displayed<br>above the search bar.</p>
+				<p id="inner3">4.1.2.2: The top bar must contain the UPOD logo, which should act as a hyperlink<br>directing the user to the landing page. This logo and its functionality will<br>remain the same across each page within the UPOD site.</p>
+				<p id="inner3">4.1.2.3: The top bar must also contain a menu button, displayed at the top left of<br>the page. (Logo will be displayed directly to the right of the menu<br>button) The menu button will be displayed as a “hamburger style”<br>button.</p>
+				<p id="inner3">4.1.2.4: Upon clicking the menu button, a menu bar must slide in from the left of<br>the screen. The menu bar must be n pixels wide.</p>
+				<p id="inner3">4.1.2.5: The menu bar must include links to each of the six main physics<br>disciplines covered on the UPOD site:</p>
+				<li id="inner3">Fundementals of Physics</li>
+				<li id="inner3">Classical Mechanics</li>
+				<li id="inner3">Optics</li>
+				<li id="inner3">Electricity and Magnetism</li>
+				<li id="inner3">Quantum Mechanics</li>
+				<li id="inner3">Statistical Mechanics</li>
+				<p id="inner3">4.1.2.6: Site admins must be able to add additional disciplines to the site at their<br>discretion, and the appropriate discipline title must be added to the menu bar.</p>
+				<p id="inner3">4.1.2.7: There must be a bar at the bottom of the landing page that only become<br>visible once the user scrolls. The bar should contain legal jargon.</p>
+				<h3>4.2 Portal Page</h3>
+				<p id="inner2">4.2.1    Description<br><br>For users who prefer to navigate the site rather than using the search bar, links to each of<br>the main physics disciplines in the menu bar will direct users to a portal page for each discipline.</p>
+				<p id="inner2">Each Portal Page will continue to carry through the left side menu, and should also display<br>a search bar in the top right hand corner, which should have the same functionality<br>as the landing page search bar. Portal Pages will display info in two vertical panels<br>– the left panel should display the title of the discipline as well as a brief description<br>of the discipline (i.e. Fundamentals of Physics includes topics such as calculus,<br>vectors, and the groundwork you will need to continue learning Physics at the<br>undergrad level. – as found on the current UPOD site) The right panel will list out<br>topics in a similar manner to the content listed in each category of the current<br>UPOD side (i.e. Commonly Used Constants, Unit Conversions, etc. – with respect<br>to Fundamentals of Physics)</p>
+				<p id="inner2">4.2.2	Functional Requirements</p>
+				<p id="inner3">4.2.2.1: The content area of this page must be split into two vertical columns.</p>
+				<p id="inner3">4.2.2.2: The name of the physics discipline should be displayed centered in the<br>right column in font at size, with a brief description below in font at size. </p>
+				<p id="inner3">4.2.2.3: The left column should contain a list of topics within the given discipline.<br>Topics should be organized by criteria.</p>
+				<p id="inner3">4.2.2.4: Each topic should be described by a title in font at size, as well as a few<br>main headings listed beneath the title in font at size.</p>
+				<p id="inner3">4.2.2.5: The left column must be vertically scrollable.</p>
+				<p id="inner3">4.2.2.6: The UPOD logo and menu must remain visible at the top left of the page</p>
+				<p id="inner3">4.2.2.7: The Search Bar must remain visible at the top of the page. (right aligned)</p>
+				<h3>4.3 Single Entry Page (Scalable and Duplicable)</h3>
+				<p id="inner2">4.3.1	Description<br><br>Single Entries will make up the vast majority of the content on the UPOD site. Each<br>concept or law will have its own Single Entry page, which will display background<br>info, important formulas, and link users to relevant information. Relevant links<br>will be displayed at the bottom of the page, similar to the “See Also” section near<br>the bottom of Wikipedia pages.<br>As usual, left side menu and top right search bar should be available for site navigation.</p>
+				<p id="inner2">4.3.2	Functional Requirements</p>
+				<p id="inner3">4.3.2.1: There must be a replicable template for this page in order for admins to<br>add new content to the UPOD site.</p>
+				<p id="inner3">4.3.2.2: The title of the page must be font at size. </p>
+				<p id="inner3">4.3.2.3: Any subheadings on this page must be font at size. </p>
+				<p id="inner3">4.3.2.4: Descriptive text must be font at size.</p>
+				<p id="inner3">4.3.2.5: There must be only one main title per page. There is no minimum number<br>of subheadings, but each subheading must outline a unique concept, and<br>the text displayed under each subheading must relate to said concept.</p>
+				<p id="inner3">4.3.2.6: The bottom of the page must display a “Suggestions” section with links to<br>relevant content. This section will only be displayed once the user scrolls downwards.</p>
+				<p id="inner3">4.3.2.7: The UPOD logo and menu must remain visible at the top left of the page</p>
+				<p id="inner3">4.3.2.8: The Search Bar must remain visible at the top of the page. (right aligned)</p>
+				<h3>4.4 About Us Page</h3>
+				<p id="inner2">4.4.1	Description<br><br>Users should be able to contact UPOD Admin by email to report missing, incorrect, or broken content.<br>As usual, left side menu and top right search bar should be available for site navigation.</p>
+				<p id="inner2">4.4.2	Functional Requirements</p>
+				<p id="inner3">4.4.2.1: The About Us page should be a modified form of the Single Entry Page.<br>The page title must be “About Us” in font at size.</p>
+				<p id="inner3">4.4.2.2: Text following the title should outline the purpose and origin of the UPOD<br>website, and must be displayed in font at size.</p>
+				<p id="inner3">4.4.2.3: Following the description must be a subheading - “Contact Us”</p>
+				<p id="inner3">4.4.2.4: After the subheading, there must be 3 text boxes, each of which is to be<br>displayed on its own line:</p>
+				<li id="inner3">A single line text box titled “Name”</li>
+				<li id="inner3">Another single line text box titled “Title”</li>
+				<li id="inner3">A multi-line and scalable text box titled “Comments”</li>
+				<p id="inner3">4.4.2.5: Underneath the three text boxes must be a button titled “Send.” Clicking<br>on the button must send the comments to email address. The sender<br>must be displayed as “UPOD Feedback,” and the feedback must contain<br>each of the fields’ content in the body of the email.</p>
+				<p id="inner3">4.4.2.6: There must be text in each text box in order for the Send button to be<br>functional, so as to prevent accidental (empty) feedback messages.</p>
+				<p id="inner3">4.4.2.7: The UPOD logo and menu must remain visible at the top left of the page</p>
+				<p id="inner3">4.4.2.8: The Search Bar must remain visible at the top of the page. (right aligned)</p>
+				<h3>4.5 Admin Login Page</h3>
+				<p id="inner2">4.5.1	Description<br><br>Site admins will need to enter credentials on this page to gain administrator access to the<br>site – URL will only be given to admins (i.e. no direct link to Admin portal.)<br>Admins will use their Novell credentials to sign in.</p>
+				<p id="inner2">4.5.2	Functional Requirements</p>
+				<p id="inner3">4.5.2.1: The Admin Login screen must contain a centered box containing the three elements of the page.</p>
+				<p id="inner3">4.5.2.2: There must be a single line text box labeled “Username”.</p>
+				<p id="inner3">4.5.2.3: There must be a second single line text box underneath the first text box labeled “Password”.</p>
+				<p id="inner3">4.5.2.4: At the bottom of the container must be a button labeled “Login”.</p>
+				<p id="inner3">4.5.2.5: Each of the listed elements must be center aligned on the horizontal axis of the container.</p>
+				<p id="inner3">4.5.2.6: Clicking on the Login button must verify the admin’s credentials, and grant access to edit pages on successful verification.</p>
+				<p id="inner3">4.5.2.7: The UPOD logo and menu must remain visible at the top left of the page</p>
+				<p id="inner3">4.5.2.8: The Search Bar must remain visible at the top of the page. (right aligned)</p>
+				<h3>4.6 Search Results Page</h3>
+				<p id="inner2">4.6.1	Description<br><br>Users should be given enough relevant information after searching for a topic. Since some<br>information can apply to many different disciplines, (i.e. Speed of Light would be<br>found in both Classical Mechanics as well as Optics) a search for a term should a<br>list of all Single Entry Pages that refer to that term. Results should be displayed<br>with a Page Heading as well as a brief preview of the info contained on the linked page. (Similar to a general Google Search)<br>As usual, left side menu and top right search bar should be available for site navigation.</p>
+				<p id="inner2">4.6.2	Functional Requirements</p>
+				<p id="inner3">4.6.2.1: TBD</p>
+			</div>
+		</div>
+	</body>
+</html>
