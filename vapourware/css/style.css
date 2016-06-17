@@ -49,9 +49,18 @@ p{
 .homeJumbotron{
   background-color: #330072;
 }
+
 /*aboutpage styling*/
+.aboutBody {
+	margin-top: 30px;
+	background-color: #330072;
+}
 .aboutCommentBox{
-    margin-bottom: 30px;
+	margin-bottom: 30px;
+	
+}
+
+
 }
 
 /* Admin Page Style */
