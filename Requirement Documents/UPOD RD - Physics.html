@@ -6,37 +6,45 @@
 	
 		<title>System Requirement Specification Template</title>
 		<style>
-	#p {
-	margin-top: 100px;
-	margin-bottom: 100px;
-	margin-right: 150px;
-	margin-left: 80px;
-}
+		h1 {
+			font-size: 120%;
+		}
+		h4 {
+			margin-left: 40px;
+		}
+		#p {
+		margin-top: 100px;
+		margin-bottom: 100px;
+		margin-right: 240px;
+		margin-left: 80px;
+		}
+		#inner { 
+			margin-left: 25px;
+			margin-right:25px;
+		}
+		#inner2 {
+			margin-left:40px;
+			margin-right:25px;
+		}
+		#inner3 {
+			margin-left: 75px;
+			margin-right: 25px;
+		}
+		* {
+			font-size: 100%;
+			font-family: 'Open Sans', sans-serif;
+		}
 
-#inner { 
-	margin-left:25px; 
-	margin-right:25px;
-}
-#inner2 {
-	margin-left:50px;
-	margin-right:25px;
-}
-#inner3 {
-	margin-left: 75px;
-	margin-right: 25px;
-}
-* {
-	font-size: 100%;
-	font-family: 'Open Sans', sans-serif;
-}
+		#indent {
+			padding-left: 20px;			
+		}
+		#indent3 {
+			padding-left: 78px;			
+		}
 
-#indent {
-	padding-left: 20px;			
-}
-
-<!--#tableMargin {
-		line-height: 22px;
-	}		{-->
+		#tableMargin {
+		line-height: 24px;
+		}
 
     </style>
 	</head>
@@ -44,13 +52,13 @@
 	<body  id="p">
 		<div>
 			<div>
-				<h1 style="font-weight:bold;text-align:right;font-size:320%">Software Requirements Specification</h3>
-				<h2 style="font-weight:bold;text-align:right;font-size:200%">for</h3>
-				<h1 style="font-weight:bold;text-align:right;font-size:320%">UPOD-Physics Research</h3>
-				<h3 style="font-weight:bold;text-align:right;font-size:140%">Version 0.2</h3>
-				<h3 style="font-weight:bold;text-align:right;font-size:140%">Prepared by Anders Lam, Kevin Mehta</h3>
-				<h3 style="font-weight:bold;text-align:right;font-size:140%">Wilfrid Laurier University, CP317</h3>
-				<h3 style="font-weight:bold;text-align:right;font-size:140%">15/06/2016</h3>
+				<h1 style="text-align:right;font-size:320%">Software Requirements Specification</h3>
+				<h2 style="text-align:right;font-size:200%">for</h3>
+				<h1 style="text-align:right;font-size:320%">UPOD-Physics Research</h3>
+				<h3 style="text-align:right;font-size:140%">Version 0.2</h3>
+				<h3 style="text-align:right;font-size:140%">Prepared by Anders Lam<br>Kevin Mehta</h3>
+				<h3 style="text-align:right;font-size:140%">Wilfrid Laurier University, CP317</h3>
+				<h3 style="text-align:right;font-size:140%">15/06/2016</h3>
 			</div>
 			<br>
 			
@@ -71,66 +79,65 @@
 					<a href="#External Interfaces">3.1 External Interfaces</a><br>
 					<a href="#Logical Database Requirements">3.2 Logical Database Requirements</a><br>
 					<a href="#Organizing the Specific Requirements">3.3 Organizing the Specific Requirements</a><br>
-						<a id="indent" href="#System Mode">3.3.1 System Mode</a><br>
-						<a id="indent" href="#User Class">3.3.2 User Class</a><br>
-						<a id="indent" href="#Objects">3.3.3 Objects</a><br>
+						<a id="indent" href="#User Class">3.3.1 User Class</a><br>
+						<a id="indent" href="#Objects">3.3.2 Objects</a><br>
 				<a href="#Appendixes">Appendixes</a><br>
 				<a href="#Index">Index</a>
 				
 			</ol> 
 			
 			<br>
-			<h2><a name="Introduction">1. Introduction</a></h1>
+			<h1><a name="Introduction">1. Introduction</a></h1>
 				<div id="inner">
-					<h3><a name="Scope">1.1 Scope</a></h2>
-					<li id="inner3">The physics group will provide the word-to-word content that will be placed onto the website.</li>
-					<li id="inner3">Be easy to navigate, as students generally stop looking unless information is easily available</li>
-					<li id="inner3">Be responsive, as students generally are on tight timelines, and don't have time for sites to load slowly.</li>
+					<h2><a name="Scope">1.1 Scope</a></h2>
+					<li id="inner2">The physics group will provide the word-to-word content that will be placed onto the website.</li>
+					<li id="inner2">Be easy to navigate, as students generally stop looking unless information is easily available</li>
+					<li id="inner2">Be responsive, as students generally are on tight timelines, and don't have time for sites to load slowly.</li>
 				</div>
 				<div id="inner">
 					<h3><a name="Definitions">1.2 Definitions, Acronyms, and Abbreviations</a></h2>
-					<li id="inner3">Interactive Diagram: a diagram that can take input from any visitor on the website, and the resulting diagram will be changed accordingly.</li>
-					<li id="inner3">Stationary Diagram: A diagram that is fixed, in the sense that it does not move, or change with or without user interaction (e.g, pictures).</li>
-					<li id="inner3">Animated Diagram: A diagram that is constantly moving with or without user interaction.</li>
+					<li id="inner2">Interactive Diagram: a diagram that can take input from any visitor on the website, and the resulting diagram will be changed accordingly.</li>
+					<li id="inner2">Stationary Diagram: A diagram that is fixed, in the sense that it does not move, or change with or without user interaction (e.g, pictures).</li>
+					<li id="inner2">Animated Diagram: A diagram that is constantly moving with or without user interaction.</li>
 				</div>
 				<div id="inner">
-					<h3>1.3 References</h2>
-					<p id="inner2">There will be no occurences of references to external sources as of yet.</p>
+					<h3><a name="References">1.3 References</a></h2>
+					<li id="inner2">There will be no occurences of references to external sources as of yet.</li>
 				</div>
 				<div id="inner">
-					<h3>1.4 Overview</h2>
-					<li id="inner3">The physics requirements document will demonstrate how the research will be displayed on the screen (how the user will see it).</li>
-					<li id="inner3">This document will also help understand the format in which the research will be given to each team that requires it.</li>
+					<h3><a name="Overview">1.4 Overview</a></h2>
+					<li id="inner2">The physics requirements document will demonstrate how the research will be displayed on the screen (how the user will see it).</li>
+					<li id="inner2">This document will also help understand the format in which the research will be given to each team that requires it.</li>
 				</div>
 				
 		</div>
 		
 		<div>
-			<h2>2. Overall Description</h2>
+			<h1><a name="Overall Description">2. Overall Description</a></h1>
 			<div id="inner">
-				<h3>2.1 Product Perspective</h3>
+				<h3><a name="Product Perspective">2.1 Product Perspective</a></h3>
 				<p id="inner2">The physics research itself is independent from the other teams.  When dividing the research into certain objects,
 				collaboration with the MathJax, Graphics, and Back-End teams will be required.</p>
-					<p id="inner2">2.1.2 User Interfaces</p>
+					<h4><a name="User Interfaces">2.1.1 User Interfaces</a></h4>
 					<li id="inner3">Users will only be interacting with the interactive animated diagrams.</li>
-				<h3>2.2 Constraints</h3>
+				<h3><a name="Constraints">2.2 Constraints</a></h3>
 				<li id="inner3">The user (person who can access the website) has the possibility to misuse the interactive diagram, and produce bizarre results.</li>
 				<li id="inner3">Divisions by zero in equations, finding the square root of a negative number (imaginary numbers).</li>
 		</div>
 		
 		<div>
-			<h2>3. Specific Requirements</h2>
+			<h1><a name="Specific Requirements">3. Specific Requirements</a></h1>
 			<div id="inner">
-				<h3>3.1 External Interfaces</h2>
+				<h3><a name="External Interfaces">3.1 External Interfaces</a></h2>
 				<p id="inner2">Inputs and outputs from the software system are not applicable to the Physics team, as our sole job is to provide the written context and concepts.</p>
 			</div>
 			<div id="inner">
-				<h3>3.2 Organizing the Specific Requirements</h2>
+				<h3><a name="Organizing the Specific Requirements">3.2 Organizing the Specific Requirements</a></h2>
 			
-				<p id="inner2">3.2.1 User Class</p>
+				<h4>3.2.1 User Class</h4>
 				<li id="inner3">User can access all physics content on the website, including interactive diagrams</li>
 				<li id="inner3">Admins can access and change all the physics content on the website, including necessary adjustments to all diagrams (interactive, animated or stationary).</li>
-				<p id="inner2">3.2.2 Objects</p>
+				<h4>3.2.2 Objects</h4>
 				<li id="inner3">Physics research objects will be converted into the following:<br></li>
 					<li id="inner3">-----> Plain text: general text for the user to see<br></li>
 					<li id="inner3">-----> Equations: equations related to the topic/subtopic<br></li>
