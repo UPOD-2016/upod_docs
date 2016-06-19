@@ -1,0 +1,169 @@
+commit 1c6f783fe8bca5889ec9160ddeaa8dddd95a01a7
+Author: rmoro <moro1422@mylaurier.ca>
+Date:   Tue Jun 7 20:57:25 2016 -0400
+
+    changed some properties in mypod2
+
+commit 01f04c282c9b69ed549b8396166cb8c34e661a55
+Author: rmoro <moro1422@mylaurier.ca>
+Date:   Tue Jun 7 20:01:32 2016 -0400
+
+    changed some sizing of the search page
+
+commit 3226fccbe1b8f476646b95b81fec9b8dba206454
+Author: rmoro <moro1422@mylaurier.ca>
+Date:   Tue Jun 7 19:44:57 2016 -0400
+
+    changed form scss to sass
+
+commit 34805063e3c6c8124969a82cd619e9718243121e
+Author: rmoro <moro1422@mylaurier.ca>
+Date:   Tue Jun 7 19:11:03 2016 -0400
+
+    Using this framework as a sandbox for testing ideas.\nMade a new concept search site for UPOD as mypod2
+
+commit 1fc9bf98d9fba72876b54861f47eb0e6ff45825e
+Author: rmoro <moro1422@mylaurier.ca>
+Date:   Tue Jun 7 01:00:12 2016 -0400
+
+    fixed spacing and deleted unused code
+
+commit 35bc0789b617ec60e6946fa5c2ba0359e6d49040
+Author: rmoro <moro1422@mylaurier.ca>
+Date:   Tue Jun 7 00:56:54 2016 -0400
+
+    made some changes to mock up site in preperation of adding back-end functionality
+
+commit d1bd8ea90e0c46d71bf9e371a4e77539c40758ff
+Author: rmoro <moro1422@mylaurier.ca>
+Date:   Mon Jun 6 23:21:47 2016 -0400
+
+    changed the assets file
+
+commit 7d0d6a3c20c66e307099610b6c2d23c7cb52ee9f
+Author: rmoro <moro1422@mylaurier.ca>
+Date:   Mon Jun 6 23:21:20 2016 -0400
+
+    added some panels to folding concept site
+
+commit 71154cdfd48c186641d34b1004a6c796c1ba3f93
+Author: rmoro <moro1422@mylaurier.ca>
+Date:   Mon Jun 6 23:17:35 2016 -0400
+
+    fixed untracked files
+
+commit cc8ab8b387d95a3c779aaf3825ef8dbc46870e22
+Author: Robert Morouney <dan.morouney@gmail.com>
+Date:   Mon Jun 6 23:16:44 2016 -0400
+
+    Update database.yml
+
+commit 03dc9f2f5b679d948ea7a5ce2102d52b8d6da666
+Merge: 1386221 9ac93ba
+Author: rmoro <moro1422@mylaurier.ca>
+Date:   Mon Jun 6 23:15:47 2016 -0400
+
+    fixing conflicts
+
+commit 1386221a41dee7e7ef4b05b4c575c5e4a684301e
+Author: rmoro <moro1422@mylaurier.ca>
+Date:   Mon Jun 6 23:14:03 2016 -0400
+
+    fixed untracked files
+
+commit 9ac93badad42f5d68cd7e062fc74b46729fff53f
+Author: Robert Morouney <dan.morouney@gmail.com>
+Date:   Mon Jun 6 23:04:30 2016 -0400
+
+    Update database.yml
+
+commit 92b9c074063c45ea3f732129105ca0086de6dbcf
+Author: rmoro <moro1422@mylaurier.ca>
+Date:   Mon Jun 6 23:03:26 2016 -0400
+
+    changed title
+
+commit 47aa133935afadfd12e8ba6efabd9f9cf9438e5e
+Author: Robert Morouney <dan.morouney@gmail.com>
+Date:   Mon Jun 6 23:00:00 2016 -0400
+
+    Update database.yml
+
+commit 9ba6cb16ed6385700fceb49c45fc80b9d0351dea
+Merge: 13dfd22 0635ffb
+Author: rmoro <moro1422@mylaurier.ca>
+Date:   Mon Jun 6 22:57:48 2016 -0400
+
+    Merge branch 'master' of github.com:rmoro/upod_framwork
+
+commit 13dfd227e00b9e472206c2ab48d57eeca44c6479
+Author: rmoro <moro1422@mylaurier.ca>
+Date:   Mon Jun 6 22:57:34 2016 -0400
+
+    Started to work on my own concept of a landing page
+
+commit 0635ffb7847fd301b2d96a4faf3c3c46ff2b6ba6
+Author: Robert Morouney <dan.morouney@gmail.com>
+Date:   Mon Jun 6 22:28:08 2016 -0400
+
+    Update database.yml
+
+commit f59a2da2e0e7e31bc4eeadaea814f14a3b738bf3
+Author: rmoro <moro1422@mylaurier.ca>
+Date:   Mon Jun 6 22:26:25 2016 -0400
+
+    change gitignore a bit
+
+commit 913e28d0db5d4c7d30e398532097d7d7006f9595
+Author: rmoro <moro1422@mylaurier.ca>
+Date:   Mon Jun 6 22:24:49 2016 -0400
+
+    .
+
+commit 26a14373ddc91705fab8b3e9681b1d4735ba893f
+Author: rmoro <moro1422@mylaurier.ca>
+Date:   Mon Jun 6 20:20:09 2016 -0400
+
+    我爱鸭
+
+commit aa21c6a6b3b384e5b4a42f15989ec464702a42cf
+Author: rmoro <moro1422@mylaurier.ca>
+Date:   Mon Jun 6 19:40:54 2016 -0400
+
+    converted site to haml and coffee
+
+commit 35bf0ecfd84ec28508f27c070f61cf05da5ceeb0
+Author: rmoro <moro1422@mylaurier.ca>
+Date:   Mon Jun 6 16:55:09 2016 -0400
+
+    rails_apps_composer: extras
+
+commit ee1196c6307102d0d5dd51e6dfd85d221531a93a
+Author: rmoro <moro1422@mylaurier.ca>
+Date:   Mon Jun 6 16:54:37 2016 -0400
+
+    rails_apps_composer: set up database
+
+commit b54e9808f72ba0ac34f9cbc531d85d64ba4ca3c3
+Author: rmoro <moro1422@mylaurier.ca>
+Date:   Mon Jun 6 16:54:37 2016 -0400
+
+    rails_apps_composer: add README files
+
+commit 3750f0df36234cb6832cc13449c0e62ddb4e0260
+Author: rmoro <moro1422@mylaurier.ca>
+Date:   Mon Jun 6 16:54:36 2016 -0400
+
+    rails_apps_composer: create database
+
+commit 3f815e7ac11849e0935b7d6eacf789f7d37ee130
+Author: rmoro <moro1422@mylaurier.ca>
+Date:   Mon Jun 6 16:53:52 2016 -0400
+
+    rails_apps_composer: Gemfile
+
+commit 30a591781a0f2d013962473888049e172efbda61
+Author: rmoro <moro1422@mylaurier.ca>
+Date:   Mon Jun 6 16:53:03 2016 -0400
+
+    rails_apps_composer: initial commit

@@ -1,0 +1,613 @@
+commit b1aeb0f5fb327a19662458ffbc6bb919059aecff
+Author: swar8080 <stevenswartz@live.ca>
+Date:   Sun Jun 5 16:05:01 2016 -0400
+
+    no longer needed
+
+commit b276b4b3c7af1a79daaa13cebdc92f6a4f0c1d88
+Author: swar8080 <stevenswartz@live.ca>
+Date:   Sun Jun 5 15:54:26 2016 -0400
+
+    Versioning for https://www.lucidchart.com/documents/edit/d0833e5f-c854-44cf-bb23-9112f854ba80?shared=true&#
+
+commit 3c7e69fbab1f32f58bb8de48e259c838d0080ad3
+Author: swar8080 <stevenswartz@live.ca>
+Date:   Sun Jun 5 15:51:35 2016 -0400
+
+    Added tzinfo gem to fix rails s command for windows
+
+commit eaf9947ceb399d1d97f3e7de0ac9aa38d33dcb39
+Author: rmoro <moro1422@mylaurier.ca>
+Date:   Wed Jun 1 16:26:34 2016 -0400
+
+    Site is ready to be deployed with current frontend skeleton.  YOU MUST RUN bundle install then UPDATE config/database.yml and RUN rake db:create then RUN rails s to use
+
+commit f822a6e1b048d30e5850cb539bd06f74ef222f51
+Author: rmoro <moro1422@mylaurier.ca>
+Date:   Wed Jun 1 16:16:11 2016 -0400
+
+    did a little more work on the scaffold. site is ready to be deployed after mysql is set up
+
+commit 152ba799ce6bfc5783b73d06a470f9e311d43fb4
+Author: rmoro <moro1422@mylaurier.ca>
+Date:   Wed Jun 1 14:18:25 2016 -0400
+
+    basic framework scaffold
+
+commit b455be37f11f2664f2ae61c3630767fd6af8f088
+Author: rmoro <moro1422@mylaurier.ca>
+Date:   Wed Jun 1 14:14:37 2016 -0400
+
+    Added an alternative Menu Back
+
+commit 4598dfaf30a17018362f1028d63807bab7b765a1
+Author: rmoro <moro1422@mylaurier.ca>
+Date:   Wed Jun 1 14:13:27 2016 -0400
+
+    Added an alternative icon
+
+commit cfe19e417b1d0d7745955e0de008f10ecccca740
+Author: Delia <epicdelia@gmail.com>
+Date:   Wed Jun 1 12:53:11 2016 -0400
+
+    fixed header, fixed css import
+
+commit f2b12f6f36047ae411f66b1500239ec8e328a352
+Author: Kevzys <meht0360@mylaurier.ca>
+Date:   Wed Jun 1 00:58:44 2016 -0400
+
+    Add files via upload
+    
+    Rough list of topics and subtopics for tomorrows meeting
+
+commit 4c4b05fbf0bc375ac65eda1e4f6ee6c50115c2d0
+Author: Tom <tom.w.est.94@gmail.com>
+Date:   Wed Jun 1 00:09:43 2016 -0400
+
+    Updated formatting and prepped for release
+
+commit 88d531d33aa31485bef67a983bcd665c40d0c9f8
+Author: Vikrant Sharma <robinsharma@Viks-Air.lan>
+Date:   Tue May 31 23:10:32 2016 -0400
+
+    move script tags to the bottom
+
+commit cf32e9587d2d0bfeaf799c901a2e817986aabb6d
+Merge: 5f7b3e9 d8a9ac8
+Author: Vikrant Sharma <robinsharma@Viks-Air.lan>
+Date:   Tue May 31 22:57:11 2016 -0400
+
+    merge
+
+commit 5f7b3e94431ba5cf036a2aed8cf67164c16c4994
+Author: Vikrant Sharma <robinsharma@Viks-Air.lan>
+Date:   Tue May 31 22:53:32 2016 -0400
+
+    create push menu, add push menu to homepage.html and restyle homepage.html and footer.html
+
+commit d8a9ac81fb8b56a1a31284b3bc50babe9166f0f2
+Author: Robert Morouney <dan.morouney@gmail.com>
+Date:   Tue May 31 19:50:17 2016 -0400
+
+    Update README.md
+
+commit fd20ff0ee20aa391cd0bb2c9cdccfd60247bb6a7
+Author: ryanmak <ryan1110mak@yahoo.ca>
+Date:   Tue May 31 19:20:11 2016 -0400
+
+    Added the Optics Section
+    
+    All things related to optics are in here, including PC237 course notes
+
+commit d050610880a5f3dea7d47bbe5c97a849ec5ebf0f
+Author: Clive Shen <CliveShen@Clive-2.local>
+Date:   Tue May 31 03:01:02 2016 -0400
+
+    Add actors and use cases
+
+commit ecbe0cbe17b7f6a99b367001fc33c87b73f1a267
+Author: akuma6620 <kuma6620@mylaurier.ca>
+Date:   Tue May 31 19:00:03 2016 -0400
+
+    Add files via upload
+
+commit 7ea5943bd6ab3527596a6ecf3987cb9b40c315b8
+Author: tudorbertiean <tudorbertiean@hotmail.com>
+Date:   Tue May 31 15:23:13 2016 -0400
+
+    refactor tabs and name-name variables
+
+commit 63b50d7ee6984c2f97a10bec6e154de5f50d4343
+Author: romanlipisiy <lipi4200@mylaurier.ca>
+Date:   Tue May 31 13:09:32 2016 -0400
+
+    add container to title
+
+commit 3fa142bdfc3a260e9a55cf5053e3aaa141afde7a
+Author: romanlipisiy <lipi4200@mylaurier.ca>
+Date:   Tue May 31 12:58:42 2016 -0400
+
+    add search results title
+
+commit a8fde3cb5a7bb509d5dcea0f2d9f551bc4b536c5
+Author: romanlipisiy <lipi4200@mylaurier.ca>
+Date:   Tue May 31 11:28:41 2016 -0400
+
+    add list group to search results
+
+commit a121557afc89be1f90e864c1fb91270995265027
+Author: tudorbertiean <tudorbertiean@hotmail.com>
+Date:   Mon May 30 23:48:19 2016 -0400
+
+    admin side-panel reformatting
+
+commit 0e70368d7fc29edccc529934a3e57e536af16f91
+Author: Kevzys <meht0360@mylaurier.ca>
+Date:   Mon May 30 22:49:27 2016 -0400
+
+    Add files via upload
+
+commit 8ed4c6117c9498797eb1fd40cd8e3320277d3610
+Author: Kevzys <meht0360@mylaurier.ca>
+Date:   Mon May 30 22:42:06 2016 -0400
+
+    Create team-info.txt
+
+commit 6009788beea26e38ff3b37006ce140d3a77f0e03
+Merge: ec3a0a7 8084a81
+Author: tudorbertiean <tudorbertiean@hotmail.com>
+Date:   Mon May 30 22:28:15 2016 -0400
+
+    Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+
+commit ec3a0a7073366ecc609e14d84a5efc2a1fc38ee5
+Author: tudorbertiean <tudorbertiean@hotmail.com>
+Date:   Mon May 30 22:27:56 2016 -0400
+
+    admin page footer & header refactor
+
+commit 8084a8156d4f4d04e2fa9f4f8dc6b25a51f4be8f
+Author: romanlipisiy <lipi4200@mylaurier.ca>
+Date:   Mon May 30 21:35:18 2016 -0400
+
+    add jumbotron and title and description to the search result
+
+commit 3e066c9dc6c74af185144620757efed116878c6b
+Author: romanlipisiy <lipi4200@mylaurier.ca>
+Date:   Mon May 30 21:27:14 2016 -0400
+
+    fix submit button
+
+commit 7b2b7b08c6f8cdab86e5273a1464d8d2e997823f
+Author: romanlipisiy <lipi4200@mylaurier.ca>
+Date:   Mon May 30 20:04:24 2016 -0400
+
+    add jumbotron to about.html page and dummy text
+
+commit 8fc31de9909e177724fef34dbde60694e3207987
+Author: rmoro <moro1422@mylaurier.ca>
+Date:   Mon May 30 17:44:56 2016 -0400
+
+    spelling and grammer
+
+commit f4c253c2fa4dc4ff0b59ac2cfd99d08cda624bdd
+Author: rmoro <moro1422@mylaurier.ca>
+Date:   Mon May 30 17:31:50 2016 -0400
+
+    fixed spacing
+
+commit 1cae4b4df239bb33d9a493c47640b1377a7ba0fd
+Author: rmoro <moro1422@mylaurier.ca>
+Date:   Mon May 30 17:28:13 2016 -0400
+
+    fixed tabbing
+
+commit 65672a4eed75f13cab4c8219e5d785a304a89a96
+Author: tudorbertiean <tudorbertiean@hotmail.com>
+Date:   Mon May 30 17:14:33 2016 -0400
+
+    admin page started
+
+commit a1a8b6d8f4f8167048f8a33f48a3bb1baa1f9751
+Author: Kieran O'Driscoll <oxdr1700@mylaurier.ca>
+Date:   Mon May 30 15:28:54 2016 -0400
+
+    add new simple guide for git
+
+commit 0027fa97819dfbbbecf9033bc1efd95a7b27350c
+Author: swar8080 <stevenswartz@live.ca>
+Date:   Mon May 30 14:51:49 2016 -0400
+
+    Added topics to dicuss for back-end requirements
+
+commit 62d13e05b647252981cb038738d8e604a4abf51a
+Author: Ensieh Mollazadeh <moll7720@mylaurier.ca>
+Date:   Mon May 30 13:14:59 2016 -0400
+
+    vapourware/html/portal.html
+
+commit 8a64f028ed1fbe86d64f2996be363f66d68a1556
+Author: Ensieh Mollazadeh <moll7720@mylaurier.ca>
+Date:   Mon May 30 13:08:15 2016 -0400
+
+    Add portal file
+
+commit 1efef2edd922ebcf3cb52c96a6ba02ce5e745ed7
+Author: Anderszz <lamx7320@mylaurier.ca>
+Date:   Mon May 30 12:38:46 2016 -0400
+
+    Add files via upload
+    
+    Physics Requirements Document - Updated
+
+commit 524a428032167e72d49e0b4011cd57cd157d9711
+Author: Ensieh Mollazadeh <moll7720@mylaurier.ca>
+Date:   Mon May 30 11:58:32 2016 -0400
+
+    added a file to learn github
+
+commit fc2a59f9144ea04603e489677536bc5530b358b1
+Author: rmoro <moro1422@mylaurier.ca>
+Date:   Mon May 30 11:49:04 2016 -0400
+
+    removed test file
+
+commit cf7baa2bffd4108f09405262d2b47ef0df972480
+Author: rmoro <moro1422@mylaurier.ca>
+Date:   Mon May 30 11:48:31 2016 -0400
+
+    Added file for tutorial
+
+commit 1de2c38927b58222a13740fc48abb951e81394ca
+Author: Kieran O'Driscoll <oxdr1700@mylaurier.ca>
+Date:   Mon May 30 11:45:28 2016 -0400
+
+    add folder for organization
+
+commit 96e5ef4c9636a4947f28672d5ec21f08bf9b7232
+Author: kcolletripp <kcolletripp@gmail.com>
+Date:   Mon May 30 11:01:22 2016 -0400
+
+    Added category page
+
+commit f5e0a10ba99cf3f36cde3da140f868577036e151
+Author: kcolletripp <kcolletripp@gmail.com>
+Date:   Mon May 30 10:35:27 2016 -0400
+
+    adjusted header/footer loading
+
+commit 16a0e4ea71c7178bb2261fcf786ca86445f4926a
+Author: ryanmak <ryan1110mak@yahoo.ca>
+Date:   Mon May 30 01:06:54 2016 -0400
+
+    Fixed Homepage Issue
+    
+    Background is fixed; only shows light gray instead of light gray with white sections.
+
+commit 17f0207d09cc0424e2b7fcf581a7d0b64e522197
+Author: Delia <laza6510@mylaurier.ca>
+Date:   Mon May 30 00:33:20 2016 -0400
+
+    Add files via upload
+    
+    Admin login page css
+
+commit 344763e1f6eb694773ee453c778cf14c7efb3287
+Author: Delia <laza6510@mylaurier.ca>
+Date:   Mon May 30 00:32:53 2016 -0400
+
+    Add files via upload
+    
+    Admin login html
+
+commit 6651542a0ec08bf5d0b419a8c29c84cb42d24261
+Author: Delia <epicdelia@gmail.com>
+Date:   Mon May 30 00:17:43 2016 -0400
+
+    Extra folder deleted
+
+commit f1676eb81604f3f2855464a5850cbed1be9cd07c
+Author: kcolletripp <kcolletripp@gmail.com>
+Date:   Mon May 30 00:02:27 2016 -0400
+
+    added dynamic loading of header/footer
+
+commit 63aa03b6b70ab940f9c3570b60eac9770c763281
+Author: Vikrant Sharma <robinsharma@Viks-MacBook-Air.local>
+Date:   Sun May 29 23:56:04 2016 -0400
+
+    fix issue #5
+
+commit 4f63367ccba15b9c21b31cdace03952ebaff79d0
+Author: swar8080 <stevenswartz@live.ca>
+Date:   Sun May 29 21:40:45 2016 -0400
+
+    - Changed User/Article relationship so each user can have zero-many
+      articles
+    - Added some preliminary permissions that user groups can have
+    - Added unique index to email and article title
+    - Added index to article title to speed up search
+
+commit 3359a39401e88142ed0bdff0b66ea13c22b5e377
+Author: chan6240 <chan6240@mylaurier.ca>
+Date:   Sun May 29 20:28:15 2016 -0400
+
+    Add files via upload
+
+commit 107360d75c268a334dbd20949026e3b097636050
+Author: chan6240 <chan6240@mylaurier.ca>
+Date:   Sun May 29 20:27:35 2016 -0400
+
+    Delete empty
+
+commit d6558ae05a609e1c1b640b85580d235c68c65189
+Author: chan6240 <chan6240@mylaurier.ca>
+Date:   Sun May 29 20:27:18 2016 -0400
+
+    Add files via upload
+
+commit e132d85e059eeda98952eeb3a7badd5baf2c35a1
+Author: chan6240 <chan6240@mylaurier.ca>
+Date:   Sun May 29 20:26:18 2016 -0400
+
+    Create empty
+
+commit 9cee64b66069d23dc945580d54b9e423449eed5c
+Author: romanlipisiy <lipi4200@mylaurier.ca>
+Date:   Sun May 29 17:54:12 2016 -0400
+
+    add search results page
+
+commit 31a7b2be38b9fc16eb19d98f923c95e2fc03d768
+Author: kcolletripp <kcolletripp@gmail.com>
+Date:   Sun May 29 16:37:13 2016 -0400
+
+    added entry.html
+
+commit 45493c8187e1b4627edcb132d33267ad1118dbda
+Author: kcolletripp <kcolletripp@gmail.com>
+Date:   Sun May 29 16:31:44 2016 -0400
+
+    updated homepage
+
+commit 0f5a5aef2369e7f8ed6f48e5062eb33820371976
+Author: kcolletripp <kcolletripp@gmail.com>
+Date:   Sun May 29 16:03:27 2016 -0400
+
+    added a few comments
+
+commit b5f3c28f5eb2b9f17d216b4ee8d6b1b00b1b5cce
+Author: kcolletripp <kcolletripp@gmail.com>
+Date:   Sun May 29 15:48:12 2016 -0400
+
+    added search bar
+
+commit f42d5ec30424c6f5d1d0f456e4211a569d4ba997
+Author: kcolletripp <kcolletripp@gmail.com>
+Date:   Sun May 29 15:39:56 2016 -0400
+
+    refactored a bit
+
+commit 7eacba778dbc5a29060a6140bf41db4e92bdb55b
+Author: ryanmak <ryan1110mak@yahoo.ca>
+Date:   Sun May 29 15:34:34 2016 -0400
+
+    resources folder for pictures
+
+commit f75fc61013d51d66cbb3e41f3f7c394924d3140d
+Author: ryanmak <ryan1110mak@yahoo.ca>
+Date:   Sun May 29 15:33:44 2016 -0400
+
+    Add files via upload
+
+commit e63177b3b17af30f0ddcf2fd04611e9c51112db6
+Author: kcolletripp <kcolletripp@gmail.com>
+Date:   Sun May 29 15:14:08 2016 -0400
+
+    added header/footer as imports
+
+commit 54bf04d036f1b7173bc1c0a55f784ea6a9dfaaaf
+Author: kcolletripp <kcolletripp@gmail.com>
+Date:   Sun May 29 15:06:07 2016 -0400
+
+    updated TODO
+
+commit 7129f2d7dd9fa406aec78d8eb8a860197e4951c4
+Author: Delia <laza6510@mylaurier.ca>
+Date:   Sun May 29 14:51:25 2016 -0400
+
+    Add files via upload
+    
+    CSS sheet for admin login
+
+commit 64d3b9ed2c686d5d398b574c7cc8098a5a24b2fd
+Author: Delia <laza6510@mylaurier.ca>
+Date:   Sun May 29 14:49:08 2016 -0400
+
+    Add files via upload
+
+commit c06d48b2093856393c9294e9b86a1a3166fde477
+Author: Delia <laza6510@mylaurier.ca>
+Date:   Sun May 29 14:48:44 2016 -0400
+
+    Create login.html
+    
+    Admin login
+
+commit 43fe8754513cc67ce303708be756b5c394884ba3
+Author: romanlipisiy <lipi4200@mylaurier.ca>
+Date:   Sun May 29 14:48:02 2016 -0400
+
+    add nav bar and footer
+
+commit 9e42c0aab57589a9645d423af3c66109fa33c128
+Author: romanlipisiy <lipi4200@mylaurier.ca>
+Date:   Sun May 29 14:39:42 2016 -0400
+
+    add comment section
+
+commit fb8e9bc81b11708a014f345b8968fce6bdbecbc8
+Author: kcolletripp <kcolletripp@gmail.com>
+Date:   Sun May 29 14:23:18 2016 -0400
+
+    header/footer WIP in index.html
+
+commit 845df9e486ac8bb41024d5f7b8814386e091a6f3
+Merge: 2699e50 512f80c
+Author: kcolletripp <kcolletripp@gmail.com>
+Date:   Sun May 29 13:27:06 2016 -0400
+
+    Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+
+commit 2699e5091e1a387f0fd87461e96388b17f2ea04f
+Author: kcolletripp <kcolletripp@gmail.com>
+Date:   Sun May 29 13:26:45 2016 -0400
+
+    Updated TODO, started work on header/footer
+
+commit 512f80c08884486c36799be9dd2d536e738d4690
+Author: romanlipisiy <lipi4200@mylaurier.ca>
+Date:   Sun May 29 13:20:35 2016 -0400
+
+    add about.html
+
+commit 69bd51687af78e914fd7a65e707454362470269f
+Author: kcolletripp <kcolletripp@gmail.com>
+Date:   Sun May 29 13:08:10 2016 -0400
+
+    Removed style.css
+
+commit 0ced66f86deb1697ea3c858d9a241b41fe9694ae
+Author: kcolletripp <kcolletripp@gmail.com>
+Date:   Sun May 29 13:05:41 2016 -0400
+
+    Updated TODO
+
+commit 64e576169a809d464a5c95553b321e4a7d5448de
+Author: kcolletripp <kcolletripp@gmail.com>
+Date:   Sun May 29 12:59:00 2016 -0400
+
+    Updated TODO
+
+commit bcef8aa3bbe3d7e23f78cd5652350dd9424ee114
+Author: kcolletripp <kcolletripp@gmail.com>
+Date:   Sun May 29 12:56:55 2016 -0400
+
+    Added working TODO doc
+
+commit ee1eaa9759c4de7a1dce84bc7991f992c02aba43
+Author: kcolletripp <kcolletripp@gmail.com>
+Date:   Sun May 29 12:52:48 2016 -0400
+
+    Added bootstrap
+
+commit 81bc86b4c8205cdf2e46e6719a5578726e5cf683
+Author: kcolletripp <kcolletripp@gmail.com>
+Date:   Sun May 29 12:51:05 2016 -0400
+
+    Added file and structure for vapourware
+
+commit 911c84ed2acdd52feddc675669a73e757ce79c80
+Author: Delia <laza6510@mylaurier.ca>
+Date:   Sun May 29 12:30:59 2016 -0400
+
+    Add files via upload
+    
+    Simple Header and Footer
+
+commit e1c40d5df6f0c4a2021da9e63e40a160b8a407c1
+Author: Tom <tom.w.est.94@gmail.com>
+Date:   Thu May 26 23:32:23 2016 -0400
+
+    Second HLR update with Product Description
+
+commit 92c77fd884087ca229da9152a51fba4aaa811e40
+Author: Tom <tom.w.est.94@gmail.com>
+Date:   Thu May 26 22:49:04 2016 -0400
+
+    Updated High Level Requirements on Web Design
+
+commit 9592d7d75b84f87cd97f7b0d7085f47b9e2f42c6
+Author: Tom <tom.w.est.94@gmail.com>
+Date:   Sun May 22 16:57:27 2016 -0400
+
+    Added requirements - first draft
+
+commit 1237409e3068d455a80f8c4ee4bfd80ac167b857
+Author: romanlipisiy <lipi4200@mylaurier.ca>
+Date:   Thu May 19 12:38:53 2016 -0400
+
+    update README.md
+
+commit 4e2a091b456df4f2cb1e3eec85673ffee15cfa39
+Merge: f364e62 7515196
+Author: Robert Morouney <dan.morouney@gmail.com>
+Date:   Fri May 6 12:06:08 2016 -0400
+
+    Merge pull request #3 from mikeroher/patch-1
+    
+    Editing README
+
+commit 751519630b3b817f9eaea864d0e3d61a84175308
+Author: Mike Roher <mikeroher@users.noreply.github.com>
+Date:   Fri May 6 11:52:18 2016 -0400
+
+    Editing README
+    
+    Just creating a pull request
+
+commit f364e62d3bed68c303178bacf9527745fe0c4297
+Author: KODrizzle <KODrizzle@users.noreply.github.com>
+Date:   Wed May 4 15:35:33 2016 -0400
+
+    Update Readme.md
+    
+    Edit format
+
+commit 6998965eea90a9ac92e9a516c46276977b5fb5cc
+Merge: f6eec87 56411e6
+Author: Robert Morouney <dan.morouney@gmail.com>
+Date:   Wed May 4 15:23:34 2016 -0400
+
+    Merge pull request #2 from KODrizzle/development
+    
+    Update README.md
+
+commit 56411e6e15e3c8f03c87f08cc3afee58ae638cd6
+Author: KODrizzle <KODrizzle@users.noreply.github.com>
+Date:   Tue May 3 22:46:33 2016 -0400
+
+    Update README.md
+
+commit f6eec87b79630ee7b5583ef92a57e8b3701025d2
+Author: Robert Morouney <dan.morouney@gmail.com>
+Date:   Tue May 3 21:34:51 2016 -0400
+
+    Update README.md
+
+commit a5596cb7f4b14ca9419a5601acef119220b7eb73
+Merge: e1c2a26 5cebb79
+Author: Robert Morouney <dan.morouney@gmail.com>
+Date:   Tue May 3 14:00:36 2016 -0400
+
+    Merge pull request #1 from WillDetlor/development
+    
+    Development
+
+commit 5cebb7914f3dcd26d10888c09d24f75d361d4199
+Author: WillDetlor <detl8600@mylaurier.ca>
+Date:   Tue May 3 11:16:07 2016 -0400
+
+    fix url
+
+commit 28c817bafe368a7a8da4ad56fb9f6e2b1f6486b2
+Author: WillDetlor <detl8600@mylaurier.ca>
+Date:   Tue May 3 11:12:57 2016 -0400
+
+    update readme
+
+commit e1c2a2626fb247f7c4f0af398cc88e966677b634
+Author: Robert Morouney <dan.morouney@gmail.com>
+Date:   Mon May 2 13:45:29 2016 -0400
+
+    Initial commit
