@@ -6,19 +6,30 @@
 </head>
 
 <body class="aboutBody">
-    <div class="menu"> <!-- push menu -->
+<div id="menuContainer">
+  <input id="toggle" type="checkbox">
+  <label for="toggle">&equiv;</label>
+  <div class="page-content"> 
+    <!------------------------------------------------------------------------------------------------------start content section--> 
+
+
+    <!--div class="menu"--> 
+    	<!-- push menu -->
         <!-- Menu close icon -->
+        <!--
         <div class="icon-close">
           <img src="../resources/red_x_small.png">
         </div>
-
+		-->
         <!-- Menu -->
+        <!--
         <ul>
           <li><a href="home.html">UPOD Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="categories.html">Categories</a></li>
         </ul>
-    </div>
+        -->
+    <!--/div-->
     <!--header-->
     <div id="headerContent"></div>
 
@@ -72,5 +83,20 @@ has the opportunity to fill a large gap facing physics students at present.</spa
 
     <script src="../javascript/jquery-2.2.4.js"></script>
     <script src="../javascript/frontendJS.js"></script>
-
+<!------------------------------------------------------------------------------------------------------end content section--> 
+  </div>
+  <div class="slide-menu">
+    <nav class="menu">
+      <li><a id="menuLink" href="#">Home</a></li>
+      <li><a id="menuLink" href="#">About</a></li>
+      <li><a id="menuLink" href="#">Contact</a></li>
+      <li><a id="menuLink" href="#">Fundamentals</a></li>
+      <li><a id="menuLink" href="#">Classical Mechanics</a></li>
+      <li><a id="menuLink" href="#">Electricity/Magnetism</a></li>
+      <li><a id="menuLink" href="#">Optics</a></li>
+      <li><a id="menuLink" href="#">Quantum Mechanics</a></li>
+      <li><a id="menuLink" href="#">Statistical Mechanics</a></li>
+    </nav>
+  </div>
+</div>
 </body>

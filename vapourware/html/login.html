@@ -1,38 +1,60 @@
 <!doctype html>
+
 <head>
-    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
 
 <body>
-    <div class="menu"> <!-- push menu -->
-        <!-- Menu close icon -->
+<!--div class="menu"> 
+    	<!-- push menu --> 
+<!-- Menu close icon --> 
+<!--
         <div class="icon-close">
           <img src="../resources/red_x_small.png">
         </div>
 
-        <!-- Menu -->
+        <!-- Menu --> 
+<!--
         <ul>
           <li><a href="home.html">UPOD Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="categories.html">Categories</a></li>
         </ul>
-    </div>
+    </div-->
+<div id="menuContainer">
+  <input id="toggle" type="checkbox">
+  <label for="toggle">&equiv;</label>
+  <div class="page-content"> 
+    <!------------------------------------------------------------------------------------------------------start content section-->
     <div id="headerContent"></div>
-
     <div class="login-page">
-        <div class="loginForm">
-            <form class="login-form">
-                <input type="text" placeholder="username"/>
-                <input type="password" placeholder="password"/>
-                <button>login</button>
-                <a href="forgot-password.html">forgot password?</a>
-            </form>
-        </div>
+      <div class="loginForm">
+        <form class="login-form">
+          <input type="text" placeholder="username"/>
+          <input type="password" placeholder="password"/>
+          <button>login</button>
+          <a href="forgot-password.html">forgot password?</a>
+        </form>
+      </div>
     </div>
-
     <div id="footerContent"></div>
-
-    <script src="../javascript/jquery-2.2.4.js"></script>
-    <script src="../javascript/frontendJS.js"></script>
+    <script src="../javascript/jquery-2.2.4.js"></script> 
+    <script src="../javascript/frontendJS.js"></script> 
+    <!------------------------------------------------------------------------------------------------------end content section--> 
+  </div>
+  <div class="slide-menu">
+    <nav class="menu">
+      <li><a id="menuLink" href="#">Home</a></li>
+      <li><a id="menuLink" href="#">About</a></li>
+      <li><a id="menuLink" href="#">Contact</a></li>
+      <li><a id="menuLink" href="#">Fundamentals</a></li>
+      <li><a id="menuLink" href="#">Classical Mechanics</a></li>
+      <li><a id="menuLink" href="#">Electricity/Magnetism</a></li>
+      <li><a id="menuLink" href="#">Optics</a></li>
+      <li><a id="menuLink" href="#">Quantum Mechanics</a></li>
+      <li><a id="menuLink" href="#">Statistical Mechanics</a></li>
+    </nav>
+  </div>
+</div>
 </body>

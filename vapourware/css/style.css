@@ -51,6 +51,7 @@ p{
     overflow: hidden;
     position: relative;
     background-color: #330072;
+	color:#330072
 }
 .homeJumbotron{
   background-color: #330072;
@@ -224,7 +225,7 @@ input[type=checkbox]:checked ~ label {
 }
 .page-content {
    width:100%;
-   background: #f2f2f2;
+   background: inherit;
    transform: translate3d(0, 0, 0);
    transition: transform .4s;
 }

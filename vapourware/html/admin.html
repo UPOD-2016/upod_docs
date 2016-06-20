@@ -1,91 +1,78 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>UPOD Administation Page</title>
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="../css/style.css">
-    </head>
+<head>
+<meta charset="utf-8">
+<title>UPOD Administation Page</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
 
-    <body> 
-        <div class="menu"> <!-- push menu -->
-        <!-- Menu close icon -->
-        <div class="icon-close">
-          <img src="../resources/red_x_small.png">
-        </div>
-
-        <!-- Menu -->
-        <ul>
-          <li><a href="home.html">UPOD Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="categories.html">Categories</a></li>
+<body>
+<div id="menuContainer">
+  <input id="toggle" type="checkbox">
+  <label for="toggle">&equiv;</label>
+  <div class="page-content"> 
+    <!------------------------------------------------------------------------------------------------------start content section--> 
+    <!--div class="menu"--> 
+    <!-- push menu --> 
+    <!-- Menu close icon --> 
+    <!--div class="icon-close"> <img src="../resources/red_x_small.png"> </div>
+  
+  <!-- Menu --> 
+    <!--
+  <ul>
+    <li><a href="home.html">UPOD Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="categories.html">Categories</a></li>
+  </ul>
+</div>
+--> 
+    <!--header-->
+    <div id="headerContent"></div>
+    <div id="wrapper"> 
+      <!-- Sidebar -->
+      <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+          <li> Categories </li>
+          <li> <a href="#">Add</a> </li>
+          <li> <a href="#">Edit</a> </li>
+          <li> <a href="#">Remove</a> </li>
+          <li> Pages </li>
+          <li> <a href="#">Add</a> </li>
+          <li> <a href="#">Edit</a> </li>
+          <li> <a href="#">Remove</a> </li>
+          <li> Moderators </li>
+          <li> <a href="#">Tudor</a> </li>
+          <li> <a href="#">Tudor</a> </li>
+          <li> Adminsistrator </li>
+          <li> <a href="#">Tudor</a> </li>
+          <li> <a href="#">Tudor</a> </li>
+          <li> <a href="#">Tudor</a> </li>
+          <li> <a href="#">Tudor</a> </li>
         </ul>
-    </div>       
-        <!--header-->
-        <div id="headerContent"></div>
-        
-        <div id="wrapper">
-            <!-- Sidebar -->
-            <div id="sidebar-wrapper">
-                <ul class="sidebar-nav">
-                    <li>
-                        Categories
-                    </li>
-                    <li>
-                        <a href="#">Add</a>
-                    </li>
-                    <li>
-                        <a href="#">Edit</a>
-                    </li>
-                    <li>
-                        <a href="#">Remove</a>
-                    </li>
-                    <li>
-                        Pages
-                    </li>
-                    <li>
-                        <a href="#">Add</a>
-                    </li>
-                    <li>
-                        <a href="#">Edit</a>
-                    </li>
-                    <li>
-                        <a href="#">Remove</a>
-                    </li>
-                    <li>
-                        Moderators
-                    </li>
-                    <li>
-                        <a href="#">Tudor</a>
-                    </li>
-                    <li>
-                        <a href="#">Tudor</a>
-                    </li>
-                    <li>
-                        Adminsistrator
-                    </li>
-                    <li>
-                        <a href="#">Tudor</a>
-                    </li>
-                    <li>
-                        <a href="#">Tudor</a>
-                    </li>
-                    <li>
-                        <a href="#">Tudor</a>
-                    </li>
-                    <li>
-                        <a href="#">Tudor</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        
-        <!--footer-->
-        <div id="footerContent"></div>
-        <script src="../javascript/jquery-2.2.4.js"></script>
-        <script src="../javascript/frontendJS.js"></script>
-
-    </body>
-
+      </div>
+    </div>
+    
+    <!--footer-->
+    <div id="footerContent"></div>
+    <script src="../javascript/jquery-2.2.4.js"></script> 
+    <script src="../javascript/frontendJS.js"></script> 
+    <!------------------------------------------------------------------------------------------------------end content section--> 
+  </div>
+  <div class="slide-menu">
+    <nav class="menu">
+      <li><a id="menuLink" href="#">Home</a></li>
+      <li><a id="menuLink" href="#">About</a></li>
+      <li><a id="menuLink" href="#">Contact</a></li>
+      <li><a id="menuLink" href="#">Fundamentals</a></li>
+      <li><a id="menuLink" href="#">Classical Mechanics</a></li>
+      <li><a id="menuLink" href="#">Electricity/Magnetism</a></li>
+      <li><a id="menuLink" href="#">Optics</a></li>
+      <li><a id="menuLink" href="#">Quantum Mechanics</a></li>
+      <li><a id="menuLink" href="#">Statistical Mechanics</a></li>
+    </nav>
+  </div>
+</div>
+</body>
 </html>
