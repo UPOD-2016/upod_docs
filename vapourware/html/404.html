@@ -1,50 +1,54 @@
 <!doctype html>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+<!-- Menu -->
 </head>
-
 <body>
-    <div class="menu"> <!-- push menu -->
-        <!-- Menu close icon -->
-        <div class="icon-close">
-          <img src="../resources/red_x_small.png">
-        </div>
-
-        <!-- Menu -->
-        <ul>
-          <li><a href="home.html">UPOD Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="categories.html">Categories</a></li>
-        </ul>
-    </div>
+<div id="menuContainer">
+<input id="toggle" type="checkbox">
+  <label for="toggle">&equiv;</label>
+  <div class="page-content"> 
+    <!------------------------------------------------------------------------------------------------------start content section--> 
     <!--header-->
     <div id="headerContent"></div>
-
-    <!--about content-->
-    <div class="container" style = "text-align: center; vertical-align: middle;">
+    <div class="menu"> 
+      <!--about content-->
+      <div class="container" style = "text-align: center; vertical-align: middle;">
         <div class="jumbotron">
-            <h1>404</h1>
-            <h4>This probably isn't where you wanted to be.</h4>
+          <h1>404</h1>
+          <h4>This probably isn't where you wanted to be.</h4>
         </div>
-    </div>
-		
-		<div class="form-group-lg col-md-3"></div>
+      </div>
+      <div class="form-group-lg col-md-3"></div>
       <div class="form-group-lg col-md-5">
         <label for="search"></label>
         <input type="text" class="form-control" id="search" style="border:2px solid #330072";>
       </div>
       <div class="form-group-lg col-md-4"></div>
-      <br>
       <input type="button" class="btn btn-warning btn-lg" value="Search">
     </div>
-
-
+    
     <!--footer-->
     <div id="footerContent"></div>
-
-    <script src="../javascript/jquery-2.2.4.js"></script>
-    <script src="../javascript/frontendJS.js"></script>
-
+    <script src="../javascript/jquery-2.2.4.js"></script> 
+    <script src="../javascript/frontendJS.js"></script> 
+  </div>
+  <!------------------------------------------------------------------------------------------------------end content section-->
+  <div class="slide-menu">
+    <h1>UPOD</h1>
+    <nav class="menu">
+      <li><a id="menuLink" href="#">Home</a></li>
+      <li><a id="menuLink" href="#">About</a></li>
+      <li><a id="menuLink" href="#">Contact</a></li>
+      <li><a id="menuLink" href="#">Fundamentals</a></li>
+      <li><a id="menuLink" href="#">Classical Mechanics</a></li>
+      <li><a id="menuLink" href="#">Electricity/Magnetism</a></li>
+      <li><a id="menuLink" href="#">Optics</a></li>
+      <li><a id="menuLink" href="#">Quantum Mechanics</a></li>
+      <li><a id="menuLink" href="#">Statistical Mechanics</a></li>
+    </nav>
+  </div>
+</div>
 </body>
