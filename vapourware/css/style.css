@@ -211,7 +211,7 @@ input[type=checkbox] {
 label {
    position: absolute;
    top: 2%;
-   left: 12%;
+   left: 1%;
    z-index: 1;
    display: block;
    font-size:3em;
