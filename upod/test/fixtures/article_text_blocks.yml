@@ -1,3 +1,11 @@
+# == Schema Information
+#
+# Table name: article_text_blocks
+#
+#  id   :integer          not null, primary key
+#  body :text(65535)
+#
+
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
