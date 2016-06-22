@@ -12,4 +12,5 @@
 class ArticleBlock < ActiveRecord::Base
   actable
   belongs_to :article
+  acts_as_list scope: [:actable_id, :actable_type]
 end
