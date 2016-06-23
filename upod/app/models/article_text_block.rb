@@ -8,4 +8,8 @@
 
 class ArticleTextBlock < ActiveRecord::Base
   acts_as :article_block
+
+  validates :title, presence: true, length: { maximum: 65535 }
+
+
 end

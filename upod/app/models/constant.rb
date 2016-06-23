@@ -12,4 +12,11 @@
 
 class Constant < ActiveRecord::Base
   has_many :article_constant_blocks
+
+  validates :name, presence: true, uniqueness: true, length: {maximum: 255}
+  validates :description, presence: true, length: {maximum: 65535}
+  validates :value, presence: true
+
+
+
 end

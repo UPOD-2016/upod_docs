@@ -19,4 +19,7 @@ class Article < ActiveRecord::Base
   # article.create_equation_block and so on and so forth.
   include Blockable
   include Searchable
+
+  validates :title, presence: true, length: { maximum: 255 }
+
 end
