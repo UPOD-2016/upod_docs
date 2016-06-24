@@ -1,0 +1,19 @@
+Helpful SVG Textbook:
+SVG Essentials
+J. David Eisenberg
+  
+
+Dragging An Object in Javascript:       
+http://www.webreference.com/programming/javascript/mk/column2/index.html
+http://www.codedread.com/blog/archives/2005/12/21/how-to-enable-dragging-in-svg/
+http://nuclearprojects.com/blog/svg-click-and-drag-object-with-mouse-code/
+http://www.petercollingridge.co.uk/interactive-svg-components/draggable-svg-element
+https://hacks.mozilla.org/2014/11/interact-js-for-drag-and-drop-resizing-and-multi-touch-gestures/
+
+
+
+SVG Scripting:
+http://tutorials.jenkov.com/svg/scripting.html
+
+Grouping:
+https://sarasoueidan.com/blog/structuring-grouping-referencing-in-svg/
