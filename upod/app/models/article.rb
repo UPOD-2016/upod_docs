@@ -7,10 +7,9 @@
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #
-require 'elasticsearch/model'
+
 
 class Article < ActiveRecord::Base
-  include Elasticsearch::Model
   has_many :blocks, class_name: 'ArticleBlock', foreign_key: :article_id
   # This include is defined in the blockable.rb concern. Essentially, it
   # provides a nice interface to interact with the various types of article
