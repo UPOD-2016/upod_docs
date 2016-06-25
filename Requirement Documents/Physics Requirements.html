@@ -1,0 +1,296 @@
+<!doctype html>
+<!-- Created by: Omid Ghiyasian -->
+<!-- Creation Date: 2016-06-13 -->
+<!-- Modification by: Brian Oh -->
+<!-- Modification date: 2016-06-18 -->
+<html lang="en">
+	<head>
+		<link rel="stylesheet" type="text/css" href="/css/style.css">
+	
+		<title>System Requirement Specification Template</title>
+		<style>
+		h1 {
+			font-size: 120%;
+		}
+		h4 {
+			margin-left: 40px;
+		}
+		#p {
+		margin-top: 100px;
+		margin-bottom: 100px;
+		margin-right: 240px;
+		margin-left: 80px;
+		}
+		#mainHeading { 
+			margin-left: 25px;
+			margin-right:25px;
+		}
+		#categoryHeading {
+			margin-left:40px;
+			margin-right:25px;
+		}
+		#subcategoryHeading {
+			margin-left: 75px;
+			margin-right: 25px;
+		}
+		* {
+			font-size: 100%;
+			font-family: 'Open Sans', sans-serif;
+		}
+
+		#indent {
+			padding-left: 20px;			
+		}
+		#indent3 {
+			padding-left: 78px;			
+		}
+
+		#tableMargin {
+		line-height: 24px;
+		}
+
+    </style>
+	</head>
+	
+	<body  id="p">
+		<div>
+			<div>
+				<h1 style="text-align:right;font-size:320%">Software Requirements Specification</h3>
+				<h2 style="text-align:right;font-size:200%">for</h3>
+				<h1 style="text-align:right;font-size:320%">UPOD-FILL IN HERE</h3>
+				<h3 style="text-align:right;font-size:140%">Version 0.4</h3>
+				<h3 style="text-align:right;font-size:140%">Prepared by Anders Lam</h3>
+				<h3 style="text-align:right;font-size:140%">Wilfrid Laurier University, CP317</h3>
+				<h3 style="text-align:right;font-size:140%">24-06-2016</h3>
+			</div->
+			<br>
+			
+			<h1>Table of Contents</h1>
+			<ol id="tableMargin">
+				<li><a href="#Introduction">Introduction</a></li>
+					<a href="#Scope">1.1 Scope</a><br>
+					<a href="#Definitions">1.2 Definitions, Acronyms, and Abbreviations</a><br>
+					<a href="#References">1.3 References</a><br>
+					<a href="#Overview">1.4 Overview</a><br>
+
+				<li><a href="#Overall Description">Overall Description</a></li>
+					<a href="#Product Perspective">2.1 Product Perspective</a><br>
+						<a id="indent" href="#System Interfaces">2.1.1 System Interfaces</a><br>
+						<a id="indent" href="#User Interfaces">2.1.2 User Interfaces</a><br>
+						<a id="indent" href="#Software Interfaces">2.1.3 Software Interfaces</a><br>
+						<a id="indent" href="#Communications Interfaces">2.1.4 Communications Interfaces</a><br>
+						<a id="indent" href="#Memory">2.1.5 Memory</a><br>
+					<a href="#Constraints">2.2 Constraints</a><br>
+
+				<li><a href="#Specific Requirements">Specific Requirements</a></li>
+					<a href="#External Interfaces">3.1 External Interfaces</a><br>
+					<a href="#Functions">3.2 Functions</a><br>
+					<a href="#Performance Requirements">3.3 Performance Requirements</a><br>
+					<a href="#Logical Database Requirements">3.4 Logical Database Requirements</a><br>
+					<a href="#Software System Attributes">3.5 Software System Attributes</a><br>
+						<a id="indent" href="#Reliability">3.5.1 Reliability</a><br>
+						<a id="indent" href="#Availability">3.5.2 Availability</a><br>
+						<a id="indent" href="#Security">3.5.3 Security</a><br>
+						<a id="indent" href="#Maintainability">3.5.4 Maintainability</a><br>
+						<a id="indent" href="#Portability">3.5.4 Portability</a><br>
+					<a href="#Organizing the Specific Requirements">3.6 Organizing the Specific Requirements</a><br>
+						<a id="indent" href="#System Mode">3.6.1 System Mode</a><br>
+						<a id="indent" href="#User Class">3.6.2 User Class</a><br>
+						<a id="indent" href="#Objects">3.6.3 Objects</a><br>
+						<a id="indent" href="#Feature">3.6.4 Feature</a><br>
+						<a id="indent" href="#Stimulus">3.6.5 Stimulus</a><br>
+						<a id="indent" href="#Response">3.6.6 Response</a><br>
+						<a id="indent" href="#Functional Hierarchy">3.6.6 Functional Hierarchy</a><br>
+				<a href="#Appendixes">Appendixes</a><br>
+				<a href="#Index">Index</a>
+				
+			</ol> 
+			
+			<br>
+			<h1><a name="Introduction">1. Introduction</a></h1>
+				<div id="mainHeading">
+					<h2><a name="Scope">1.1 Scope</a></h2>
+
+					<p>UPOD (Undergraduate Physics Online Database) is a website designed to the students with information about physics. The goal is to provide accurate and up to date physics knowledge for undergraduate students. There are currently very few quality physics reference sites, so UPOD has the opportunity to fill a large gap facing physics students at present.</p>
+<p>&nbsp;</p>
+				</div>
+				<div id="mainHeading">
+					<h3><a name="Definitions">1.2 Definitions, Acronyms, and Abbreviations</a></h2>
+					<li><span style="text-decoration: underline;">Fundamentals</span></li>
+</ul>
+<p>Fundamental physics is the study of basic materials, properties and forces in our world. It covers all sections of physics from mechanics to atomic physics, and gives a general understanding as to what physic properties governs our world.</p>
+<p>&nbsp;</p>
+<ul>
+<li><span style="text-decoration: underline;">Classical Mechanics</span></li>
+</ul>
+<p>Classical Mechanics is the study of physical laws that describe the motion of bodies under the influence of a system of forces.</p>
+<p>&nbsp;</p>
+<ul>
+<li><span style="text-decoration: underline;">Optics</span></li>
+</ul>
+<p>Optics is the specific branch of physics that involves the properties and behaviour of light in conjunction with matter and the various instruments that either use or detect it.</p>
+<p>&nbsp;</p>
+<ul>
+<li><span style="text-decoration: underline;">Electricity and Magnetism</span></li>
+</ul>
+<p>Electricity and Magnetism is the study of physics that involves the electromagnetic force, which is an interaction that occurs between two electrically charged particles. Magnetism is the physical interaction that occurs as a result of a motion of electric charge that is usually a result of attractive and repulsive forces between objects.</p>
+<p>&nbsp;</p>
+<ul>
+<li><span style="text-decoration: underline;">Quantum Mechanics</span></li>
+</ul>
+<p>Quantum Mechanics is the specific branch of physics that deals with the very miniscule objects. It deals with the mathematical description of the motion and interaction of subatomic particles, which incorporates wave-particle duality, uncertainty principle, and concepts of quantization.</p>
+<p>&nbsp;</p>
+<ul>
+<li><span style="text-decoration: underline;">Statistical Mechanics</span></li>
+</ul>
+<p>Statistical Mechanics is the study of the statistics of the behaviour of very large number of atoms or molecules. It takes into account the distribution of energy among the large number of molecules.</p>
+<h2><a name="_Toc327831566"></a>1.3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; References</h2>
+<ul>
+
+				</div>
+					<div id="mainHeading">
+					<h3><a name="References">1.3 References</a></h2>
+					<li id="categoryHeading">state all references EVER used into this section.</li>
+					<li id="categoryHeading">remember, if ever using statements such as 'See High Level Requirements.. ' then make sure to add that link in this section!</li>
+				</div>
+				<div id="mainHeading">
+					<h3><a name="Overview">1.4 Overview</a></h2>
+					<p>The physics requirements discusses the following topics:</p>
+<ul>
+<li>Fundamentals of physics</li>
+<li>Classical mechanics</li>
+<li>Optics</li>
+<li>Electricity and Magnetism</li>
+<li>Quantum Mechanics</li>
+<li>Statistical Mechanics</li>
+</ul>
+				</div>
+				
+		</div>
+		
+		<div>
+			<h1><a name="Overall Description">2. Overall Description</a></h1>
+			<div id="mainHeading">
+				<h3><a name="Product Perspective">2.1 Product Perspective</a></h3>
+				<p id="categoryHeading">Integrating physics research and information into the new UPOD website, will be much more interactive and will be much more user friendly as well as containing much more relevant information to the topics covered. UPOD&rsquo;s implementation of the physics information will need to be in collaboration with the MathJax team, Animations team, and Front-end team, as the functionality and availability of the physics information will only be made available and interactive through these other teams.</p>
+
+					<h4><a name="System Interfaces">2.1.1 System Interfaces</a></h4>
+						<li id="subcategoryHeading">operates on the modern and standard browsers, including Google Chrome, Safari, Firefox, Internet Explorer and Microsoft Edge.</li>
+					<h4><a name="User Interfaces">2.1.2 User Interfaces</a></h4>
+						<li id="subcategoryHeading">UPOD&rsquo;s MathJax team will implement the physics information into creative and interactive models that users can use to help engage them in any new or old information that they wish to learn more about.</li>
+					<h4><a name="Software Interfaces">2.1.3 Software Interfaces</a></h4>
+<p>A database will be used by the entire UPOD team to store and organize data. In the database, relevant information will be linked together and will be able to include various information, equations, as well as any interactive models or information that can be used by the user to help them learn more about the subject.</p>
+<ul>
+<li>Include various equations regarding the certain aspect of physics</li>
+<li>Ensure that information is not redundant and stored only once</li>
+<li>Include information and brief descriptions involving the aspect of physics</li>
+<li>Improve the linkage between any physics information so that they can be used in unison with one another</li>
+					<h4><a name="Communications Interfaces">2.1.4 Communications Interfaces</a></h4>
+						<li id="subcategoryHeading">Hypertext Transfer Protocol (HTTP)</span></li>
+						<p>HTTP is the underlying protocol used by the World Wide Web, which is a set of rules for transferring files.</p>
+
+					<h4><a name="Memory">2.1.5 Memory</a></h4>
+						<li id="subcategoryHeading">if applicable</li>
+						<li id="subcategoryHeading">for exampleif it is a memory constraint, SHOULD only apply to back end</li>
+				<h3><a name="Constraints">2.2 Constraints</a></h3>
+				<li id="categoryHeading">There might be too much information to include regarding the 6 aspects of physics as information regarding physics is vastly large and infinite and continuously growing</li>
+				<li id = "CategoryHeading">The budget of UPOD is zero, so any software must be free to use.</li>
+		</div>
+		
+		<div>
+			<h1><a name="Specific Requirements">3. Specific Requirements</a></h1>
+			<div id="mainHeading">
+				<h3><a name="External Interfaces">3.1 External Interfaces</a></h2>
+				<p>The physics information and research that is provided by the Physics Team will be used in conjunction with the MathJax Team and Animations Team to provide unique and creative ways to help the user learn about the physic concepts. The MathJax Team will use the physics information collected to showcase sample problems and show equations that the user can see and do practice with. The Animations Team will use the physics information provided to provide the UPOD website with unique and interactive diagrams and animations for the user so that they can be involved and understand the material betterf</p>
+				<h3><a name="Functions">3.2 Functions</a></h2>
+				<ul>
+<li>3.2.1 &ndash; The physics information that includes equations and formulas as well as appropriate information pertaining to the physics topic being covered must be correct.</li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li>3.2.2 &ndash; The information will be used by the MathJax and Animations Team to display certain interactive diagrams and sample problems/links to videos that will help the user better understand the topic at hand.</li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li>3.2.3 &ndash; The equations that will be displayed by the MathJax Team must allow users to rearrange equations and formulas and use them in sample problems that are given.</li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li>3.2.4 &ndash; The units and explanations for each variable for each equation must be displayed and remain visible as to show the user exactly what each formula is related to and how it is useful in the topic they are looking at.</li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li>3.2.5 &ndash; The animations and videos that are linked to the physics topic covered must be relevant to the physics topic that it is covering.</li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li>3.2.6 &ndash; Links to sample problems must also be visible under &ldquo;Suggestions&rdquo; as to show possible additional help that the user can receive.</li>
+</ul>
+				<h3><a name="Performance Requirements">3.3 Performance Requirements</a></h2>
+				<p>The physics research and information that will be collected from the Physics Team will be used to as a basis for the whole UPOD website to function around. Everything from the information projected to the libraries of information available on the UPOD website will be supported by the physics information collected. The equations and formulas that will be produced by MathJax will be focused on mainly presenting the equations and formulas of the physics concepts and topics that will be covered by UPOD. The Animations and the overall look of the UPOD website will be derived from physics information and will reflect the whole aspect of the 6 dynamics of physics that UPOD is currently covering.</p>
+<p>&nbsp;</p>
+				<h3><a name="Logical Database Requirements">3.4 Logical Database Requirements</a></h3>
+					<p>3.4.1 <span style="text-decoration: underline;">Types of information used by various functions</span></p>
+<ul>
+<li>Physics team will make sure that all relevant physics information regarding the 6 aspects of physics covered in the UPOD website will be available</li>
+<li>The information will be used by the animations team, front end, and MathJax team at all stages of their implementation</li>
+<li>The physics information must be relevant enough to include interactive design and models</li>
+<li></li>
+</ul>
+<p>3.4.2&nbsp;&nbsp;&nbsp; <span style="text-decoration: underline;">Frequency of use</span></p>
+<ul>
+<li>The information will be used at all stages of the UPOD project</li>
+</ul>
+<p>&nbsp;</p>
+<p>3.4.3&nbsp;&nbsp;&nbsp; <span style="text-decoration: underline;">Accessing capabilities</span></p>
+<p>&nbsp;</p>
+<p>3.4.4&nbsp;&nbsp;&nbsp; <span style="text-decoration: underline;">Data entities and their relationships</span></p>
+<ul>
+<li>It is crucial that any information regarding one aspect of physics that can be correlated to another aspect of physics can be presented in a way that can link them together</li>
+<li>Any information that is relevant to another part of a physic information is important to include to show any similarities or comparisons</li>
+</ul>
+<p>&nbsp;</p>
+<p>3.4.5&nbsp;&nbsp;&nbsp; <span style="text-decoration: underline;">Integrity constraints</span></p>
+<p>&nbsp;</p>
+<p>3.4.6&nbsp;&nbsp;&nbsp; <span style="text-decoration: underline;">Data retention requirements</span></p>
+<p>&nbsp;</p>
+				<h3><a name="Software System Attributes">3.5 Software System Attributes</a></h3>
+					<h4><a name="Reliability">3.5.1 Reliability</a></h4>
+						<li>Database involving physics information must be up to date and include accurate and relevant information to the concept at hand</li>
+<li>No duplicate information is stored</li>
+<li>The equations regarding the physics information must be correct and relevant to the topic</li>
+<li>Any physics concepts explained must be correct and must be concise, easy to read, and easy to understand by any user</li>
+					<h4><a name="Availability">3.5.2 Availability</a></h4>
+						<li>Physics information must be available at all points of the UPOD system in order to ensure that it is easy to take information regarding the physics branch and implement it into the system.</li>
+					<h4><a name="Security">3.5.3 Security</a></h4>
+						<li>Without appropriate permission and consent from the SQA team, the information regarding the physics information cannot be updated, edited, removed, or added.</li>
+					<h4><a name="Maintainability">3.5.4 Maintainability</a></h4>
+						<li>Any information that is to be added, updated, removed, or edited in the future regarding physics must be documented in the future</li>
+<li>Documentation and making sure that information are in correct components of the database ensure that the UPOD website is easy to maintain and can be easily changed in the future.</li>
+					<h4><a name="Portability">3.5.5 Portability</a></h4>
+						<li id="subcategoryHeading">follow IEEE_830.pdf</li>
+				<h3><a name="Organizing the Specific Requirements">3.6 Organizing the Specific Requirements</a></h2>
+					<li id="mainHeading">apply any if necessary (make sure you check)</li>
+					<h4><a name="User Class">3.6.1 System Mode</a></h4>
+					<h4><a name="User Class">3.6.2 User Class</a></h4>
+					<h4><a name="Objects">3.6.3 Objects</a></h4>
+					<h4><a name="Feature">3.6.4 Feature</a></h4>
+					<h4><a name="Stimulus">3.6.5 Stimulus</a></h4>
+					<h4><a name="Response">3.6.6 Response</a></h4>
+					<h4><a name="Functional Hierarchy">3.6.6 Functional Hierarchy</a></h4>
+			</div>
+			
+		</div>
+		<div>
+			<h1><a name="Supporting Information">4. Supporting Information</a></h1>
+			
+		</div>
+		<div id="mainHeading">
+			<h2><a name="Appendixes">Appendixes</a></h2><br>
+			<li id="categoryHeading">TBA</li>
+			<h2><a name="Index">Index</a></h2><br>
+			<li id="categoryHeading">TBA</li>
+		</div>
+	
+	</body>
+</html>
