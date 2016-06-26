@@ -1,0 +1,60 @@
+
+#header_button_container {
+    position: absolute;
+    right: 0px;  
+}
+
+
+body {
+    margin: 0;
+}
+
+#header {
+    background-image: url("Bullet_Image_Crop1.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: white;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+#header_title {
+    text-align: center;
+    padding: 180px;
+    font-size: 25px;  
+}
+
+#body_text {
+    margin: auto;
+    width: 70%;
+    font-size: 20px;
+}
+
+#input {
+    font-size: 20px;
+    font-family: "Times New Roman";
+    border-style: none; 
+    border-color: Transparent; 
+    overflow-y:hidden;
+}
+
+#footer {
+    text-align: center;
+    padding: 50px 0;
+    width: 100%;
+    height: 120px;
+    background-color: green;
+    
+}
+
+
+
+
+
+
+
+
+
+
