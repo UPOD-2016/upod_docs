@@ -12,6 +12,6 @@
 class ArticleBlock < ActiveRecord::Base
   actable
   belongs_to :article
-  # The scope restricts it to the article id and actable id (block id) so
+  # The scope restricts it to the article id
   acts_as_list scope: :article_id
 end

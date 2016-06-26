@@ -1,8 +1,6 @@
+
 <h1>New Article</h1>
-<div class="container">
-  <div class="md-col-8">
-    <textarea class="editor"></textarea>
-  </div>
-  <div class="md-col-4 preview"></div>
-</div>
+<%= form_tag nil do %>
+<%= text_area_tag :sir_trevor_content, nil, class: 'js-sir-trevor-instance' %>
+<% end %>
 <%= link_to 'Back', articles_path %>

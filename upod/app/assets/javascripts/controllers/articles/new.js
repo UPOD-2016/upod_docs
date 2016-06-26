@@ -1,9 +1,10 @@
- //= require showdown
-$(document).ready(function() {
-  var $editor = $('.editor'), $preview = $('.preview');
-  var converter = new Showdown.converter()
-  $editor.on('keyup', function() {
-    var html = converter.makeHtml($(this).val());
-    $preview.html(html);
+//= require underscore
+//= require includes/eventable
+//= require includes/sir-trevor
+
+$(function(){
+  new SirTrevor.Editor({
+    el: $(".js-sir-trevor-instance"),
+    blockTypes: ["Text", "List", "Video", "Quote", "Iframe"]
   });
 });

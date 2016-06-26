@@ -18,5 +18,7 @@ class Article < ActiveRecord::Base
   # article.create_text_block, ArticleEquationBlock is now
   # article.create_equation_block and so on and so forth.
   include Blockable
-  include Searchable
+  # include Searchable
+  #
+  attr_accessor :sir_trevor_content
 end

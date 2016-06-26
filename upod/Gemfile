@@ -8,9 +8,6 @@ gem 'mysql2', '~> 0.3.18'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 
-# Used for haml files
-gem 'haml'
-
 # Elastic search GEMS <<_>>.:.
 gem 'elasticsearch'
 gem 'elasticsearch-extensions'
@@ -31,7 +28,14 @@ gem 'active_record-acts_as'
 gem 'acts_as_list'
 gem 'annotate'
 gem 'bootstrap-sass'
-gem 'showdown-rails'
+source 'https://rails-assets.org' do
+  # gem 'rails-assets-requirejs'
+  # gem 'rails-assets-es5-shim'
+  # gem 'rails-assets-svg4everybody'
+  # gem 'rails-assets-sir-trevor'
+  gem 'rails-assets-underscore'
+end
+gem "rails-erd"
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -41,11 +45,7 @@ gem 'showdown-rails'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug'
-end
-gem "rails-erd"
+
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
