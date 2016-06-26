@@ -9,4 +9,10 @@
 
 class ArticleLinkBlock < ActiveRecord::Base
   acts_as :article_block
+
+  validates :url, presence: true, length: {maximum: 255}
+  validates :label, presence: true, length: {maximum: 255}
+
+
+
 end
