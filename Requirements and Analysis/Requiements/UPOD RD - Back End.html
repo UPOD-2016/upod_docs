@@ -1,0 +1,270 @@
+<!doctype html>
+<!-- Created by: Omid Ghiyasian -->
+<!-- Creation Date: 2016-06-13 -->
+<!-- Modification by: Brian Oh -->
+<!-- Modification date: 2016-06-18 -->
+<html lang="en">
+	<head>
+		<link rel="stylesheet" type="text/css" href="/css/style.css">
+	
+		<title>System Requirement Specification Template</title>
+		<style>
+		table, th, td {
+			border: 1px solid black;
+		}
+		
+		h1 {
+			font-size: 120%;
+		}
+		h4 {
+			margin-left: 40px;
+		}
+		#p {
+		margin-top: 100px;
+		margin-bottom: 100px;
+		margin-right: 240px;
+		margin-left: 80px;
+		}
+		#categoryHeading {
+			margin-left:40px;
+			margin-right:25px;
+		}
+		#subcategoryHeading {
+			margin-left: 75px;
+			margin-right: 25px;
+		}
+		* {
+			font-size: 100%;
+			font-family: 'Open Sans', sans-serif;
+		}
+
+		#indent {
+			padding-left: 20px;			
+		}
+		#indent3 {
+			padding-left: 78px;			
+		}
+
+		#tableMargin {
+		line-height: 24px;
+		}
+
+		</style>
+	</head>
+	
+	<body  id="p">
+		<div>
+			<div>
+				<h1 style="text-align:right;font-size:320%">Software Requirements Specification</h3>
+				<h2 style="text-align:right;font-size:200%">for</h3>
+				<h1 style="text-align:right;font-size:320%">UPOD-Back End</h3>
+				<h3 style="text-align:right;font-size:140%">Version 0.2</h3>
+				<h3 style="text-align:right;font-size:140%">Prepared by FILL HERE</h3>
+				<h3 style="text-align:right;font-size:140%">Wilfrid Laurier University, CP317</h3>
+				<h3 style="text-align:right;font-size:140%">18/06/2016</h3>
+			</div>
+		<br>
+		
+		<h1>Revision History</h1>
+		<table>
+		  <tr>
+			<th>Name</th>
+			<th>Date</th>
+			<th>Reason for Changes</th>
+			<th>Version</th>
+		  </tr>
+		  <tr>
+			<td>FILL HERE</td>
+			<td>25/06/16</td>
+			<td>State reason.</td>
+			<td>v0.0</td>
+		  </tr>
+		  <tr>
+			<td>FILL HERE</td>
+			<td>24/06/16</td>
+			<td>State reason.</td>
+			<td>v0.0</td>
+
+		  </tr>
+		</table>
+			
+			<h1>Table of Contents</h1>
+			<ol id="tableMargin">
+				<li><a href="#Introduction">Introduction</a></li>
+					<a href="#Scope">1.1 Scope</a><br>
+					<a href="#Definitions">1.2 Definitions, Acronyms, and Abbreviations</a><br>
+					<a href="#References">1.3 References</a><br>
+					<a href="#Overview">1.4 Overview</a><br>
+
+				<li><a href="#Overall Description">Overall Description</a></li>
+					<a href="#Product Perspective">2.1 Product Perspective</a><br>
+						<a id="indent" href="#System Interfaces">2.1.1 System Interfaces</a><br>
+						<a id="indent" href="#Software Interfaces">2.1.2 Software Interfaces</a><br>
+						<a id="indent" href="#Communications Interfaces">2.1.3 Communications Interfaces</a><br>
+						<a id="indent" href="#Memory">2.1.4 Memory</a><br>
+					<a href="#Constraints">2.2 Constraints</a><br>
+
+				<li><a href="#Specific Requirements">Specific Requirements</a></li>
+					<a href="#Functions">3.1 Functions</a><br>
+					<a href="#Performance Requirements">3.2 Performance Requirements</a><br>
+					<a href="#Logical Database Requirements">3.3 Logical Database Requirements</a><br>
+					<a href="#Software System Attributes">3.4 Software System Attributes</a><br>
+						<a id="indent" href="#Reliability">3.4.1 Reliability</a><br>
+						<a id="indent" href="#Security">3.4.2 Security</a><br>
+						<a id="indent" href="#Maintainability">3.4.3 Maintainability</a><br>
+					<a href="#Organizing the Specific Requirements">3.5 Organizing the Specific Requirements</a><br>
+						<a id="indent" href="#Objects">3.5.1 Objects</a><br>
+						<a id="indent" href="#Feature">3.5.2 Feature</a><br>
+						<a id="indent" href="#Functional Hierarchy">3.5.3 Functional Hierarchy</a><br>
+				<a href="#Appendixes">Appendixes</a><br>
+				<a href="#Index">Index</a>
+				
+			</ol> 
+			
+			<br>
+			<h1><a name="Introduction">1. Introduction</a></h1>
+				<div id="mainHeading">
+					<h2><a name="Scope">1.1 Scope</a></h2>
+					<li id="categoryHeading">Having a well-organized database and an efficient search engine help users to find the specific information they need in the shortest amount of time. By entering certain keywords in the search bar, articles related to those keywords should be shown. With the use of server-side scripting, administrators and moderators of UPOD can easily modify the contents of the webpages. </li>
+				</div>
+				<div id="mainHeading">
+					<h3><a name="Definitions">1.2 Definitions, Acronyms, and Abbreviations</a></h2>
+						<p id="categoryHeading"><span style="text-decoration: underline;">Administrator</span></p>
+							<li id="subcategoryHeading">An administrator can login, logout, reset password, create an account for a moderator, update a moderator's account status, alter permissions of moderators, list administrators, list moderators, add/delete/modify categories, and add/delete/modify pages. </li>
+							<p id="categoryHeading"><span style="text-decoration: underline;">Moderator</span></p>
+							<li id="subcategoryHeading">A moderator can login, logout, reset password, add/delete/modify categories, and add/delete/modify pages.</li>
+							<p id="categoryHeading"><span style="text-decoration: underline;">User</span></p>
+							<li id="subcategoryHeading">A user can view categories/pages, search for categories/pages, and interact with graphs. </li>
+				</div>
+				<div id="mainHeading">
+					<h3><a name="References">1.3 References</a></h2>
+					<li id="categoryHeading"> IEEE. IEEE Std 830-1998 IEEE Recommended Practice for Software Requirements Specifications. IEEE Computer Society, 1998. </li>
+				</div>
+				<div id="mainHeading">
+					<h3><a name="Overview">1.4 Overview</a></h2>
+					<p id="categoryHeading">The back end requirement discusses the following topics: </p>
+					<li id="subcategoryHeading">Interfaces of the UPOD Back End</li>
+					<li id="subcategoryHeading">Functions of the UPOD Back End</li>
+					<li id="subcategoryHeading">Requirements of the UPOD Back End</li>
+					<li id="subcategoryHeading">Constraints of the UPOD Back End</li>
+				</div>
+				
+		</div>
+		
+		<div>
+			<h1><a name="Overall Description">2. Overall Description</a></h1>
+			<div id="mainHeading">
+				<h3><a name="Product Perspective">2.1 Product Perspective</a></h3>
+				<p id="categoryHeading">UPOD's back end implementation needs the collaboration of both front end and back end teams, as the functionalities provided by the database and scripting rely on the front-end design. </p>
+					<h4><a name="System Interfaces">2.1.1 System Interfaces</a></h4>
+						<li id="subcategoryHeading">UPOD operates on modern and standard browsers, including Safari, Google Chrome, Firefox, Internet Explorer, and Microsoft Edge.</li>
+					<h4><a name="Software Interfaces">2.1.2 Software Interfaces</a></h4>
+						<p id="categoryHeading"><span style="text-decoration: underline;">Database</span></p>
+							<p id="categoryHeading">A database is used to store and organize data.<br>In the database of this website, the types of data stored include administration information table, formula variables, and articles.</p>
+							<li id="subcategoryHeading">Build connections between related articles. </li>
+							<li id="subcategoryHeading">Ensure information is always stored only once. </li>
+							<li id="subcategoryHeading">Improve the implementation of a search engine. </li>
+							<li id="subcategoryHeading">Potential issues of scalability and reliability can be minimized.</li>
+						<p id="categoryHeading"><span style="text-decoration: underline;">User Management Portal (UMP)</span></p>
+							<li id="subcategoryHeading">Allow administrators to manage moderators and modify permission of each moderator. </li>
+							<li id="subcategoryHeading">Add, delete, or edit page layouts and contents. </li>
+					<h4><a name="Memory">2.1.3 Communications Interfaces</a></h4>
+						<p id="categoryHeading"><span style="text-decoration: underline;">Hypertext Transfer Protocol (HTTP) </span></p>
+							<li id="subcategoryHeading">HTTP is the underlying protocol used by the World Wide Web, which is a set of rules for transferring files. </li>
+						<p id="categoryHeading"><span style="text-decoration: underline;">Hypertext Transfer Protocol Secure (HTTPS) </span></p>
+							<li id="subcategoryHeading">HTTPS is a protocol for secure communication, which consists of communication over HTTP within a connection encrypted by Transport Layer Security (TLS) or Secure Sockets Layer (SSL).</li>
+					<h4><a name="Memory">2.1.4 Memory</a></h4>
+						<li id="subcategoryHeading">TBA (State the size of the Primary and Secondary memory that the database will be on)</li>
+				
+				<h3><a name="Constraints">2.2 Constraints</a></h3>
+				<li id="categoryHeading">The budget of UPOD is zero, so any software must be free to use. </li>
+		</div>
+		
+		<div>
+			<h1><a name="Specific Requirements">3. Specific Requirements</a></h1>
+			<div id="mainHeading">
+			
+				<h3><a name="Functions">3.1 Functions</a></h2>
+				<p id="categoryHeading">The following is a list of use cases that are available for actors:</p>
+					<p id="categoryHeading"><span style="text-decoration: underline;">Login</span></p>
+							<li id="subcategoryHeading">In the User Management Portal, in order to authenticate his/her identity, an administrator or a moderator needs to enter his/her username and password. </li>
+					<p id="categoryHeading"><span style="text-decoration: underline;">Logout</span></p>
+							<li id="subcategoryHeading">To terminate his/her process, an administrator or a moderator can click the Logout option. </li>
+					<p id="categoryHeading"><span style="text-decoration: underline;">Reset Password</span></p>
+							<li id="subcategoryHeading">By inputting the email address that is used to register the account, an email is sent with a link to the Reset Password Page where an administrator or a moderator can reset his/her password. </li>
+					<p id="categoryHeading"><span style="text-decoration: underline;">Create an Account for a Moderator </span></p>
+							<li id="subcategoryHeading">By inputting user name, email address, and permissions, an administrator can create an unverified account for a moderator. Then, an email is sent to the given email address with a link to the Account Registration page, which allows the moderator to verify his/her account and set the password. </li>
+					<p id="categoryHeading"><span style="text-decoration: underline;">Update Moderator's Account Status</span></p>
+							<li id="subcategoryHeading">By entering a username, an administrator can update the account status of a particular moderator. There are three types of account status: unverified, verified or disabled. An unverified account requires a moderator to set his/her password in order to login to UPOD. Once the moderator finishes the registration process, his/her account status will change to verified. A verified account allows a moderator to login to UPOD. A disabled account prevents a moderator to login to UPOD. </li>
+					<p id="categoryHeading"><span style="text-decoration: underline;">List Administrators</span></p>
+							<li id="subcategoryHeading">An administrator has the option to list all the administrators. The displayed table contains usernames, email addresses, and corresponding account status as well as permissions.</li>
+					<p id="categoryHeading"><span style="text-decoration: underline;">List Moderators</span></p>
+							<li id="subcategoryHeading">An administrator has the option to list all the moderators. The displayed table contains usernames, email addresses, and corresponding account status as well as permissions. </li>
+					<p id="categoryHeading"><span style="text-decoration: underline;">Add/Delete/Modify Categories</span></p>
+							<li id="subcategoryHeading">An administrator or a moderator can add, delete, or modify categories in UPOD. </li>
+					<p id="categoryHeading"><span style="text-decoration: underline;">Add/Delete/Modify Pages</span></p>
+							<li id="subcategoryHeading">An administrator or a moderator can modify the content displayed on webpages, and add/delete pages in UPOD. </li>
+					<p id="categoryHeading"><span style="text-decoration: underline;">View Categories</span></p>
+							<li id="subcategoryHeading">A user can view categories that are available in UPOD. </li>
+					<p id="categoryHeading"><span style="text-decoration: underline;">View Pages</span></p>
+							<li id="subcategoryHeading">A user can view pages that are available in UPOD. </li>		
+					<p id="categoryHeading"><span style="text-decoration: underline;">Search for Categories/Pages</span></p>
+							<li id="subcategoryHeading">By inputting keywords in the search bar, a user can view the related categories/pages in the search results page. </li>
+					<p id="categoryHeading"><span style="text-decoration: underline;">Interact with Graphs</span></p>
+							<li id="subcategoryHeading">A user can interact with graphs that are in SVG format. </li>
+							
+				
+				<h3><a name="Performance Requirements">3.2 Performance Requirements</a></h2>
+				<li id="categoryHeading">TBA</li>
+				<li id="categoryHeading">State the number of simultaneous users to be supported.</li>
+				<li id="categoryHeading">Amount and type of information to be handled.</li>
+				
+				<h3><a name="Logical Database Requirements">3.3 Logical Database Requirements</a></h3>
+					<p id="categoryHeading"><span style="text-decoration: underline;">Types of information used by various functions</span></p>
+						<li id="subcategoryHeading">TBA</li>
+					<p id="categoryHeading"><span style="text-decoration: underline;">Frequency of use</span></p>
+						<li id="subcategoryHeading">TBA</li>
+					<p id="categoryHeading"><span style="text-decoration: underline;">Accessing capabilities</span></p>
+						<li id="subcategoryHeading">Administrators can access all moderator's attributes, except their passwords. </li>
+						<li id="subcategoryHeading">Moderators can view their own permissions (add, edit, or remove articles). </li>
+					<p id="categoryHeading"><span style="text-decoration: underline;">Data entities and their relationships</span></p>
+						<li id="subcategoryHeading">TBA</li>
+					<p id="categoryHeading"><span style="text-decoration: underline;">Integrity Constraints</span></p>
+						<li id="subcategoryHeading">TBA</li>
+					<p id="categoryHeading"><span style="text-decoration: underline;">Data retention requirements</span></p>
+						<li id="subcategoryHeading">TBA</li>
+						
+				<h3><a name="Software System Attributes">3.4 Software System Attributes</a></h3>
+					<h4><a name="Reliability">3.4.1 Reliability</a></h4>
+						<li id="subcategoryHeading">Database provides up-to-date, accurate information. </li>
+						<li id="subcategoryHeading">No duplicate information is stored in the database. </li>
+						<li id="subcategoryHeading">The search engine should provide a list of articles that are contains the key words or are related to the key words. </li>
+					<h4><a name="Security">3.4.2 Security</a></h4>
+						<li id="subcategoryHeading">Account passwords of administrators and moderators accounts should be stored securely. </li>
+						<li id="subcategoryHeading">Without appropriate permissions, no articles should be added, removed, or edited. </li>
+					<h4><a name="Maintainability">3.4.3 Maintainability</a></h4>
+						<li id="subcategoryHeading">Additional features may be added to the website in the future, so the whole software should be well documented and easy to maintain. </li>
+				
+				<h3><a name="Organizing the Specific Requirements">3.5 Organizing the Specific Requirements</a></h2>
+					<h4><a name="Objects">3.5.1 Objects</a></h4>
+						<li id="subcategoryHeading">TBA</li>
+					<h4><a name="Feature">3.5.2 Feature</a></h4>
+						<li id="subcategoryHeading">TBA</li>
+					<h4><a name="Functional Hierarchy">3.5.3 Functional Hierarchy</a></h4>
+						<li id="subcategoryHeading">TBA</li>
+			</div>
+			
+		</div>
+		<div>
+			<h1><a name="Supporting Information">4. Supporting Information</a></h1>
+			
+		</div>
+		<div id="mainHeading">
+			<h2><a name="Appendixes">Appendixes</a></h2><br>
+			<li id="categoryHeading">TBA</li>
+			<h2><a name="Index">Index</a></h2><br>
+			<li id="categoryHeading">TBA (make an index)</li>
+		</div>
+	
+	</body>
+</html>

@@ -1,11 +1,18 @@
 <!doctype html>
-
+<!-- Created by: Omid Ghiyasian -->
+<!-- Creation Date: 2016-06-13 -->
+<!-- Modification by: Brian Oh -->
+<!-- Modification date: 2016-06-18 -->
 <html lang="en">
 	<head>
 		<link rel="stylesheet" type="text/css" href="/css/style.css">
 	
 		<title>System Requirement Specification Template</title>
 		<style>
+		table, th, td {
+			border: 1px solid black;
+		}
+		
 		h1 {
 			font-size: 120%;
 		}
@@ -17,10 +24,6 @@
 		margin-bottom: 100px;
 		margin-right: 240px;
 		margin-left: 80px;
-		}
-		#mainHeading { 
-			margin-left: 25px;
-			margin-right:25px;
 		}
 		#categoryHeading {
 			margin-left:40px;
@@ -46,7 +49,7 @@
 		line-height: 24px;
 		}
 
-    </style>
+		</style>
 	</head>
 	
 	<body  id="p">
@@ -54,13 +57,37 @@
 			<div>
 				<h1 style="text-align:right;font-size:320%">Software Requirements Specification</h3>
 				<h2 style="text-align:right;font-size:200%">for</h3>
-				<h1 style="text-align:right;font-size:320%">UPOD-Graphics/Animations</h3>
-				<h3 style="text-align:right;font-size:140%">Version 0.3</h3>
-				<h3 style="text-align:right;font-size:140%">Prepared by Jeffrey Chung</h3>
+				<h1 style="text-align:right;font-size:320%">UPOD-FILL IN HERE</h3>
+				<h3 style="text-align:right;font-size:140%">Version 0.2</h3>
+				<h3 style="text-align:right;font-size:140%">Prepared by FILL HERE</h3>
 				<h3 style="text-align:right;font-size:140%">Wilfrid Laurier University, CP317</h3>
-				<h3 style="text-align:right;font-size:140%">18/06/2016</h3>
+				<h3 style="text-align:right;font-size:140%">DD/MM/YYYY</h3>
 			</div>
-			<br>
+		<br>
+		
+		
+		<h1>Revision History</h1>
+		<table>
+		  <tr>
+			<th>Name</th>
+			<th>Date</th>
+			<th>Reason for Changes</th>
+			<th>Version</th>
+		  </tr>
+		  <tr>
+			<td>John Smith</td>
+			<td>25/06/16</td>
+			<td>State reason.</td>
+			<td>v0.0</td>
+		  </tr>
+		  <tr>
+			<td>Jane Smith</td>
+			<td>24/06/16</td>
+			<td>State reason.</td>
+			<td>v0.0</td>
+
+		  </tr>
+		</table>
 			
 			<h1>Table of Contents</h1>
 			<ol id="tableMargin">
@@ -89,7 +116,7 @@
 						<a id="indent" href="#Availability">3.5.2 Availability</a><br>
 						<a id="indent" href="#Security">3.5.3 Security</a><br>
 						<a id="indent" href="#Maintainability">3.5.4 Maintainability</a><br>
-						<a id="indent" href="#Portability">3.5.4 Portability</a><br>
+						<a id="indent" href="#Portability">3.5.5 Portability</a><br>
 					<a href="#Organizing the Specific Requirements">3.6 Organizing the Specific Requirements</a><br>
 						<a id="indent" href="#System Mode">3.6.1 System Mode</a><br>
 						<a id="indent" href="#User Class">3.6.2 User Class</a><br>
@@ -97,7 +124,7 @@
 						<a id="indent" href="#Feature">3.6.4 Feature</a><br>
 						<a id="indent" href="#Stimulus">3.6.5 Stimulus</a><br>
 						<a id="indent" href="#Response">3.6.6 Response</a><br>
-						<a id="indent" href="#Functional Hierarchy">3.6.6 Functional Hierarchy</a><br>
+						<a id="indent" href="#Functional Hierarchy">3.6.7 Functional Hierarchy</a><br>
 				<a href="#Appendixes">Appendixes</a><br>
 				<a href="#Index">Index</a>
 				
@@ -107,26 +134,23 @@
 			<h1><a name="Introduction">1. Introduction</a></h1>
 				<div id="mainHeading">
 					<h2><a name="Scope">1.1 Scope</a></h2>
-					<p>The UPOD Graphics/Animation group will create the Animations and interactive diagrams with SVG which will allow the user to gain a better understanding of Physics concepts through interactive diagrams. We are hoping to create 5-15 animations touching on each of the physics categories in UPOD. The specific diagrams to be animated will be on decided in tandem with the Physics Research group. </p>
+					<li id="categoryHeading">see 5.1.2 Scope in IEEEE_830.pdf</li>
+					<li id="categoryHeading">e.g, explain what the Group is going to do for the project (Back End, Graphics, Physics)</li>
 				</div>
 				<div id="mainHeading">
 					<h3><a name="Definitions">1.2 Definitions, Acronyms, and Abbreviations</a></h2>
-					<li id="categoryHeading">Model (MVC): Represents the equation or physics concept illustrated</li>
-					<li id="categoryHeading">View (MVC): Sliders, buttons, and other UI elements to interact with the model. Objects to reflect inputs and demonstrate the concepts</li>
-					<li id="categoryHeading">Controller (MVC):Liases and controls the view to reflect the model</li>
-					<li id="categoryHeading">SVG: Scalable Vector Graphics</li>
+						<p id="categoryHeading"><span style="text-decoration: underline;">Put Name Here</span></p>
+							<li id="subcategoryHeading">Put your paragraph here.  This is where you describe any terms such Trees, Stacks, etc. to the client so they undersand the terms used.</li>
 				</div>
 				<div id="mainHeading">
 					<h3><a name="References">1.3 References</a></h2>
-					<li id="categoryHeading">IEEE Std 610.12-1990, IEEE Standard for Software Project Management Plans: http://bohr.wlu.ca/cp317/notes/IEEE_830.pdf</li>
-					<li id="categoryHeading">WLU CP317 Class of Spring 2013: Pong Tracker used as Example</li>
+					<li id="categoryHeading">state all references EVER used into this section.</li>
+					<li id="categoryHeading">remember, if ever using statements such as 'See High Level Requirements.. ' then make sure to add that link in this section!</li>
 				</div>
 				<div id="mainHeading">
 					<h3><a name="Overview">1.4 Overview</a></h2>
-					<p>The UPOD Graphics/Animation Requirement document outlines the following:</p>
-					<li id="categoryHeading">Description of the Graphics/Animation</li>
-					<li id="categoryHeading">User's interaction with the Physics graphics/animations</li>
-					<li id="categoryHeading">The software used to create the Graphics/animations</li>
+					<li id="categoryHeading">look at Pong Tracker overview</li>
+					<li id="categoryHeading">talk about the things this document is about and how it is organized</li>
 				</div>
 				
 		</div>
@@ -135,48 +159,59 @@
 			<h1><a name="Overall Description">2. Overall Description</a></h1>
 			<div id="mainHeading">
 				<h3><a name="Product Perspective">2.1 Product Perspective</a></h3>
-				<p id="categoryHeading">Graphics and animation relates to the physics research due the fact information on what physics animations should be made and also what type of physics diagrams should be used. </p>
+				<p id="categoryHeading">STATE whether the product (your SRS) is independent or self-contained.
+			i.e, Back End is independent of Front End, Front End is dependent on Back End.  since these SRS' are components of a larger system (UPOD SRS as a whole) it 'should relate the requirements of that larger 
+		  system to functionality of the software and should identify interfaces between that system and the software' (IEEE_830.pdf, 5.2.1).  try to include UML diagrams to show relevance!!</p>
 					<h4><a name="System Interfaces">2.1.1 System Interfaces</a></h4>
-						<p id="subcategoryHeading">The Graphics and animations should be able to operate on the following browsers</p>
-						<li id="subcategoryHeading">Google Chrome</li>
-						<li id="subcategoryHeading">Mozilla Firefox</li>
-						<li id="subcategoryHeading">Internet Explorer</li>
-						<li id="subcategoryHeading">Safari</li>
+						<li id="subcategoryHeading">if applicable. If front end, talk about how this will interface with the back end structure</li>
 					<h4><a name="User Interfaces">2.1.2 User Interfaces</a></h4>
-						<li id="subcategoryHeading">The users should be able to use a mouse to interact with certain animations or diagrams on UPOD. Keyboard should be able to input in values in certain diagrams</li>
+						<li id="subcategoryHeading">if applicable, such as will the USERS be interacting with the interface</li>
 					<h4><a name="Software Interfaces">2.1.3 Software Interfaces</a></h4>
-						<li id="subcategoryHeading">Animations and graphics displaying the physics content will be created using javascript SVG.</li>
+						<li id="subcategoryHeading">refer to IEEE_830.pdf 5.2.1.4, pretty straight-forward</li>
+						<li id="subcategoryHeading">for instance Apache for front end and SQL for back end ??</li>
 					<h4><a name="Communications Interfaces">2.1.4 Communications Interfaces</a></h4>
-						<li id="subcategoryHeading">Graphics and animations in UPOD should be portable across internet browsers.</li>
+						<li id="subcategoryHeading">if applicable (hopper)</li>
 					<h4><a name="Memory">2.1.5 Memory</a></h4>
-						<li id="subcategoryHeading">Memory constraints should be expected while creating the graphics and animations. More information shall be added later.</li>
+						<li id="subcategoryHeading">if applicable</li>
+						<li id="subcategoryHeading">for exampleif it is a memory constraint, SHOULD only apply to back end</li>
 				<h3><a name="Constraints">2.2 Constraints</a></h3>
-				<p id="categoryHeading">UPOD graphics and animations must be added onto the site before the end of the 2016 spring term (July 26, 2016). Budget is $0 so any software used to create the graphics and animations must be free to use.</p>
+				<li id="categoryHeading">look at IEEE_830.pdf 5.2.4 to see what constraints necessary</li>
 		</div>
 		
 		<div>
 			<h1><a name="Specific Requirements">3. Specific Requirements</a></h1>
 			<div id="mainHeading">
 				<h3><a name="External Interfaces">3.1 External Interfaces</a></h2>
-				<li id="categoryHeading">Different javascript SVG animation libraries are being researched.</li>
+				<li id="categoryHeading">follow IEEE_830.pdf</li>
 				<h3><a name="Functions">3.2 Functions</a></h2>
-				<li id="categoryHeading">Graphics and animations to be included on the UPOD web interface.</li>
+				<li id="categoryHeading">follow IEEE_830.pdf</li>
 				<h3><a name="Performance Requirements">3.3 Performance Requirements</a></h2>
-				<li id="categoryHeading">Graphics and animations should be able to be seen and be intractable on different browsers. More detail will be added.</li>
+				<li id="categoryHeading">follow IEEE_830.pdf</li>
 				<h3><a name="Logical Database Requirements">3.4 Logical Database Requirements</a></h3>
-					<li id="categoryHeading">All physics content and graphics will be stored on a relational database.</li>
+					<p id="categoryHeading"><span style="text-decoration: underline;">Put Name Here</span></p>
+						<li id="subcategoryHeading">Put your paragraph here.</li>
+						<li id="subcategoryHeading">if applicable (for Back End)</li>
+						<li id="subcategoryHeading">follow IEEE_830.pdf</li>
 				<h3><a name="Software System Attributes">3.5 Software System Attributes</a></h3>
 					<h4><a name="Reliability">3.5.1 Reliability</a></h4>
-						<p id="subcategoryHeading">UPOD Graphics and Animations are expected to be used permanently in the site. Maintenance should be expected and be announced before hand making UPOD unavailable.</p>
+						<li id="subcategoryHeading">follow IEEE_830.pdf</li>
 					<h4><a name="Availability">3.5.2 Availability</a></h4>
-						<p id="subcategoryHeading">Software used to create Graphics and Animations must be supported across the previously listed browsers.</p>
+						<li id="subcategoryHeading">follow IEEE_830.pdf</li>
 					<h4><a name="Security">3.5.3 Security</a></h4>
-						<li id="subcategoryHeading">All Graphics and animations on UPOD are free to use for all and therefore are no   major security constraints. </li>
+						<li id="subcategoryHeading">follow IEEE_830.pdf</li>
 					<h4><a name="Maintainability">3.5.4 Maintainability</a></h4>
-						<li id="subcategoryHeading">Graphics and animations should be coded to standard protocols and should be well documented in order for future maintenance. UPOD is to be assumed available for the future; therefore having a set of individuals in charge of maintenance will not be constant.</li>
+						<li id="subcategoryHeading">follow IEEE_830.pdf</li>
 					<h4><a name="Portability">3.5.5 Portability</a></h4>
-						<li id="subcategoryHeading">Graphics and animation will be developed on UNIX based software. Any new software to be installed on hopper will be communicated to David Brown once they are identified and validated.</li>
-				
+						<li id="subcategoryHeading">follow IEEE_830.pdf</li>
+				<h3><a name="Organizing the Specific Requirements">3.6 Organizing the Specific Requirements</a></h2>
+					<li id="mainHeading">apply any if necessary (make sure you check)</li>
+					<h4><a name="User Class">3.6.1 System Mode</a></h4>
+					<h4><a name="User Class">3.6.2 User Class</a></h4>
+					<h4><a name="Objects">3.6.3 Objects</a></h4>
+					<h4><a name="Feature">3.6.4 Feature</a></h4>
+					<h4><a name="Stimulus">3.6.5 Stimulus</a></h4>
+					<h4><a name="Response">3.6.6 Response</a></h4>
+					<h4><a name="Functional Hierarchy">3.6.7 Functional Hierarchy</a></h4>
 			</div>
 			
 		</div>
