@@ -1,0 +1,230 @@
+<!doctype html>
+<!-- Created by: Omid Ghiyasian -->
+<!-- Creation Date: 2016-06-13 -->
+<!-- Modification by: Brian Oh -->
+<!-- Modification date: 2016-06-18 -->
+<html lang="en">
+	<head>
+		<link rel="stylesheet" type="text/css" href="/css/style.css">
+	
+		<title>System Requirement Specification Template</title>
+		<style>
+		table, th, td {
+			border: 1px solid black;
+		}
+		
+		h1 {
+			font-size: 120%;
+		}
+		h4 {
+			margin-left: 40px;
+		}
+		#p {
+		margin-top: 100px;
+		margin-bottom: 100px;
+		margin-right: 240px;
+		margin-left: 80px;
+		}
+		#categoryHeading {
+			margin-left:40px;
+			margin-right:25px;
+		}
+		#subcategoryHeading {
+			margin-left: 75px;
+			margin-right: 25px;
+		}
+		* {
+			font-size: 100%;
+			font-family: 'Open Sans', sans-serif;
+		}
+
+		#indent {
+			padding-left: 20px;			
+		}
+		#indent3 {
+			padding-left: 78px;			
+		}
+
+		#tableMargin {
+		line-height: 24px;
+		}
+
+		</style>
+	</head>
+	
+	<body  id="p">
+		<div>
+			<div>
+				<h1 style="text-align:right;font-size:320%">Software Requirements Specification</h3>
+				<h2 style="text-align:right;font-size:200%">for</h3>
+				<h1 style="text-align:right;font-size:320%">UPOD-FILL IN HERE</h3>
+				<h3 style="text-align:right;font-size:140%">Version 0.2</h3>
+				<h3 style="text-align:right;font-size:140%">Prepared by FILL HERE</h3>
+				<h3 style="text-align:right;font-size:140%">Wilfrid Laurier University, CP317</h3>
+				<h3 style="text-align:right;font-size:140%">DD/MM/YYYY</h3>
+			</div>
+		<br>
+		
+		
+		<h1>Revision History</h1>
+		<table>
+		  <tr>
+			<th>Name</th>
+			<th>Date</th>
+			<th>Reason for Changes</th>
+			<th>Version</th>
+		  </tr>
+		  <tr>
+			<td>John Smith</td>
+			<td>25/06/16</td>
+			<td>State reason.</td>
+			<td>v0.0</td>
+		  </tr>
+		  <tr>
+			<td>Jane Smith</td>
+			<td>24/06/16</td>
+			<td>State reason.</td>
+			<td>v0.0</td>
+
+		  </tr>
+		</table>
+			
+			<h1>Table of Contents</h1>
+			<ol id="tableMargin">
+				<li><a href="#Introduction">Introduction</a></li>
+					<a href="#Scope">1.1 Scope</a><br>
+					<a href="#Definitions">1.2 Definitions, Acronyms, and Abbreviations</a><br>
+					<a href="#References">1.3 References</a><br>
+					<a href="#Overview">1.4 Overview</a><br>
+
+				<li><a href="#Overall Description">Overall Description</a></li>
+					<a href="#Product Perspective">2.1 Product Perspective</a><br>
+						<a id="indent" href="#System Interfaces">2.1.1 System Interfaces</a><br>
+						<a id="indent" href="#User Interfaces">2.1.2 User Interfaces</a><br>
+						<a id="indent" href="#Software Interfaces">2.1.3 Software Interfaces</a><br>
+						<a id="indent" href="#Communications Interfaces">2.1.4 Communications Interfaces</a><br>
+						<a id="indent" href="#Memory">2.1.5 Memory</a><br>
+					<a href="#Constraints">2.2 Constraints</a><br>
+
+				<li><a href="#Specific Requirements">Specific Requirements</a></li>
+					<a href="#External Interfaces">3.1 External Interfaces</a><br>
+					<a href="#Functions">3.2 Functions</a><br>
+					<a href="#Performance Requirements">3.3 Performance Requirements</a><br>
+					<a href="#Logical Database Requirements">3.4 Logical Database Requirements</a><br>
+					<a href="#Software System Attributes">3.5 Software System Attributes</a><br>
+						<a id="indent" href="#Reliability">3.5.1 Reliability</a><br>
+						<a id="indent" href="#Availability">3.5.2 Availability</a><br>
+						<a id="indent" href="#Security">3.5.3 Security</a><br>
+						<a id="indent" href="#Maintainability">3.5.4 Maintainability</a><br>
+						<a id="indent" href="#Portability">3.5.5 Portability</a><br>
+					<a href="#Organizing the Specific Requirements">3.6 Organizing the Specific Requirements</a><br>
+						<a id="indent" href="#System Mode">3.6.1 System Mode</a><br>
+						<a id="indent" href="#User Class">3.6.2 User Class</a><br>
+						<a id="indent" href="#Objects">3.6.3 Objects</a><br>
+						<a id="indent" href="#Feature">3.6.4 Feature</a><br>
+						<a id="indent" href="#Stimulus">3.6.5 Stimulus</a><br>
+						<a id="indent" href="#Response">3.6.6 Response</a><br>
+						<a id="indent" href="#Functional Hierarchy">3.6.7 Functional Hierarchy</a><br>
+				<a href="#Appendixes">Appendixes</a><br>
+				<a href="#Index">Index</a>
+				
+			</ol> 
+			
+			<br>
+			<h1><a name="Introduction">1. Introduction</a></h1>
+				<div id="mainHeading">
+					<h2><a name="Scope">1.1 Scope</a></h2>
+					<li id="categoryHeading">see 5.1.2 Scope in IEEEE_830.pdf</li>
+					<li id="categoryHeading">e.g, explain what the Group is going to do for the project (Back End, Graphics, Physics)</li>
+				</div>
+				<div id="mainHeading">
+					<h3><a name="Definitions">1.2 Definitions, Acronyms, and Abbreviations</a></h2>
+						<p id="categoryHeading"><span style="text-decoration: underline;">Put Name Here</span></p>
+							<li id="subcategoryHeading">Put your paragraph here.  This is where you describe any terms such Trees, Stacks, etc. to the client so they undersand the terms used.</li>
+				</div>
+				<div id="mainHeading">
+					<h3><a name="References">1.3 References</a></h2>
+					<li id="categoryHeading">state all references EVER used into this section.</li>
+					<li id="categoryHeading">remember, if ever using statements such as 'See High Level Requirements.. ' then make sure to add that link in this section!</li>
+				</div>
+				<div id="mainHeading">
+					<h3><a name="Overview">1.4 Overview</a></h2>
+					<li id="categoryHeading">look at Pong Tracker overview</li>
+					<li id="categoryHeading">talk about the things this document is about and how it is organized</li>
+				</div>
+				
+		</div>
+		
+		<div>
+			<h1><a name="Overall Description">2. Overall Description</a></h1>
+			<div id="mainHeading">
+				<h3><a name="Product Perspective">2.1 Product Perspective</a></h3>
+				<p id="categoryHeading">STATE whether the product (your SRS) is independent or self-contained.
+			i.e, Back End is independent of Front End, Front End is dependent on Back End.  since these SRS' are components of a larger system (UPOD SRS as a whole) it 'should relate the requirements of that larger 
+		  system to functionality of the software and should identify interfaces between that system and the software' (IEEE_830.pdf, 5.2.1).  try to include UML diagrams to show relevance!!</p>
+					<h4><a name="System Interfaces">2.1.1 System Interfaces</a></h4>
+						<li id="subcategoryHeading">if applicable. If front end, talk about how this will interface with the back end structure</li>
+					<h4><a name="User Interfaces">2.1.2 User Interfaces</a></h4>
+						<li id="subcategoryHeading">if applicable, such as will the USERS be interacting with the interface</li>
+					<h4><a name="Software Interfaces">2.1.3 Software Interfaces</a></h4>
+						<li id="subcategoryHeading">refer to IEEE_830.pdf 5.2.1.4, pretty straight-forward</li>
+						<li id="subcategoryHeading">for instance Apache for front end and SQL for back end ??</li>
+					<h4><a name="Communications Interfaces">2.1.4 Communications Interfaces</a></h4>
+						<li id="subcategoryHeading">if applicable (hopper)</li>
+					<h4><a name="Memory">2.1.5 Memory</a></h4>
+						<li id="subcategoryHeading">if applicable</li>
+						<li id="subcategoryHeading">for exampleif it is a memory constraint, SHOULD only apply to back end</li>
+				<h3><a name="Constraints">2.2 Constraints</a></h3>
+				<li id="categoryHeading">look at IEEE_830.pdf 5.2.4 to see what constraints necessary</li>
+		</div>
+		
+		<div>
+			<h1><a name="Specific Requirements">3. Specific Requirements</a></h1>
+			<div id="mainHeading">
+				<h3><a name="External Interfaces">3.1 External Interfaces</a></h2>
+				<li id="categoryHeading">follow IEEE_830.pdf</li>
+				<h3><a name="Functions">3.2 Functions</a></h2>
+				<li id="categoryHeading">follow IEEE_830.pdf</li>
+				<h3><a name="Performance Requirements">3.3 Performance Requirements</a></h2>
+				<li id="categoryHeading">follow IEEE_830.pdf</li>
+				<h3><a name="Logical Database Requirements">3.4 Logical Database Requirements</a></h3>
+					<p id="categoryHeading"><span style="text-decoration: underline;">Put Name Here</span></p>
+						<li id="subcategoryHeading">Put your paragraph here.</li>
+						<li id="subcategoryHeading">if applicable (for Back End)</li>
+						<li id="subcategoryHeading">follow IEEE_830.pdf</li>
+				<h3><a name="Software System Attributes">3.5 Software System Attributes</a></h3>
+					<h4><a name="Reliability">3.5.1 Reliability</a></h4>
+						<li id="subcategoryHeading">follow IEEE_830.pdf</li>
+					<h4><a name="Availability">3.5.2 Availability</a></h4>
+						<li id="subcategoryHeading">follow IEEE_830.pdf</li>
+					<h4><a name="Security">3.5.3 Security</a></h4>
+						<li id="subcategoryHeading">follow IEEE_830.pdf</li>
+					<h4><a name="Maintainability">3.5.4 Maintainability</a></h4>
+						<li id="subcategoryHeading">follow IEEE_830.pdf</li>
+					<h4><a name="Portability">3.5.5 Portability</a></h4>
+						<li id="subcategoryHeading">follow IEEE_830.pdf</li>
+				<h3><a name="Organizing the Specific Requirements">3.6 Organizing the Specific Requirements</a></h2>
+					<li id="mainHeading">apply any if necessary (make sure you check)</li>
+					<h4><a name="User Class">3.6.1 System Mode</a></h4>
+					<h4><a name="User Class">3.6.2 User Class</a></h4>
+					<h4><a name="Objects">3.6.3 Objects</a></h4>
+					<h4><a name="Feature">3.6.4 Feature</a></h4>
+					<h4><a name="Stimulus">3.6.5 Stimulus</a></h4>
+					<h4><a name="Response">3.6.6 Response</a></h4>
+					<h4><a name="Functional Hierarchy">3.6.7 Functional Hierarchy</a></h4>
+			</div>
+			
+		</div>
+		<div>
+			<h1><a name="Supporting Information">4. Supporting Information</a></h1>
+			
+		</div>
+		<div id="mainHeading">
+			<h2><a name="Appendixes">Appendixes</a></h2><br>
+			<li id="categoryHeading">TBA</li>
+			<h2><a name="Index">Index</a></h2><br>
+			<li id="categoryHeading">TBA</li>
+		</div>
+	
+	</body>
+</html>
