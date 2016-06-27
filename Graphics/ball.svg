@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" version="1.1" viewBox="0 0 4000 3000"
+    xmlns="http://www.w3.org/2000/svg" 
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    onload="init()"
+    
+    >
+
+<script type="text/ecmascript" xlink:href="ball_func.js"> </script> 
+<rect id="background" x="0" y="0" width="4000" height="3000" fill="none" stroke="black"  />
+<symbol id="symbol1" overflow="visible" 
+>
+
+<circle fill="green"  cx="0" cy="100" r="100" />
+<line x1="0" x2="0" y1="200" y2="500" id="body" stroke="black" stroke-width="5" />
+<line x1="0" x2="-200" y1="250" y2="350" id="lefthand" stroke="black" stroke-width="5"/>
+<line x1="0" x2="200" y1="250" y2="350" id="righthand" stroke="black" stroke-width="5"/>
+<line x1="0" x2="-100" y1="500" y2="800" id="leftleg" stroke="black" stroke-width="5"/>
+<line x1="0" x2="100" y1="500" y2="800" id="rightleg" stroke="black" stroke-width="5"/>
+
+	
+</symbol>
+
+<symbol id="symbol2" overflow="visible">
+<circle fill="green"  cx="0" cy="700" r="100" />
+<line x1="0" x2="0" y1="600" y2="300" id="body" stroke="black" stroke-width="5" />
+<line x1="0" x2="-200" y1="550" y2="450" id="lefthand" stroke="black" stroke-width="5"/>
+<line x1="0" x2="200" y1="550" y2="450" id="righthand" stroke="black" stroke-width="5"/>
+<line x1="0" x2="-100" y1="300" y2="0" id="leftleg" stroke="black" stroke-width="5"/>
+<line x1="0" x2="100" y1="300" y2="0" id="rightleg" stroke="black" stroke-width="5"/>
+
+</symbol>
+
+
+<circle id="point" fill="black" cx="2000" cy="1000" r="20" />
+<line id="ground" fill="black" x1="" x2="4000" y1="1000" y2="1000" stroke="black" stroke-width="3"/>
+<line id="PathObject" fill="black" x1="400" y1="200" x2="3000" y2="1000" stroke="black" stroke-width="3"/>
+<line id="PathImage" fill="black" x1="1375" y1="1500" x2="3000" y2="1000" stroke="black" stroke-width="3"/>
+<line id="ground2" fill="black" x1="0" x2="4000" y1="1800" y2="1800" stroke="black" stroke-width="3"/>
+
+
+<!--
+d0=2600     //the distance of object from the mirror
+The distance of object from origin: 400
+di=1625     //the distance of image from the mirror
+The distance of object from origin: 1375
+h0=800      //the height of the object
+hi=500      //the height of the image( I did this by scaling)
+The reason that I put x=2200 and y=1600 is that after sacling the x and y also changes so they will become their original values: x=1375 and y=1500
+ -->
+ 
+ <use xlink:href="#symbol2" x="2200" y="1600" transform="scale(0.625,0.625)"
+ id="image"   />
+<use xlink:href="#symbol1" x="400" y="200" transform="translate(0)"
+ id="ball"   />
+
+</svg>
