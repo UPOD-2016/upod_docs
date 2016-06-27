@@ -20,7 +20,7 @@ class Article < ActiveRecord::Base
   include Searchable
   attr_accessor :sir_trevor_content
 
-
+# validates the title and it's length
   validates :title, presence: true, length: { maximum: 255 }
 
 end

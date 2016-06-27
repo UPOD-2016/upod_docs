@@ -10,6 +10,7 @@
 class ArticleLinkBlock < ActiveRecord::Base
   acts_as :article_block
 
+# validates the presence and length of the url block and label
   validates :url, presence: true, length: {maximum: 255}
   validates :label, presence: true, length: {maximum: 255}
 

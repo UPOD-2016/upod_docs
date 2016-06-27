@@ -10,6 +10,7 @@
 class ArticleEquationBlock < ActiveRecord::Base
   acts_as :article_block
 
+# validates the length and presence of equation block and description
   validates :equation, presence: true, length: {maximum: 255}
   validates :descripton, presence: true, length: {maximum: 255}
 
