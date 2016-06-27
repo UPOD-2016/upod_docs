@@ -1,0 +1,128 @@
+.document {
+    font-size: 15px;
+    font-family: sans-serif;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.contents {
+    width: 275px;
+    padding: 5px 20px 20px;
+    background-color: #F5F5F5;
+    margin-left: 30px;
+}
+
+.doctitle {
+    margin-top: 50px;
+    font-size: 42px;
+}
+
+section {
+    margin-top: 30px;
+}
+
+.back-top {
+    margin-top: 25px;
+    margin-bottom: 5px;
+    text-align: right;
+}
+
+.section-title {
+    font-size: 32px;
+}
+
+.indent10 {
+    margin-left: 10px;
+}
+
+.def {
+    font-weight: bold;
+}
+
+.table-head {
+    height: 50px;
+    background-color: #E0E0E0;
+}
+
+table tr {
+    height: 30px;
+}
+
+table tr:nth-of-type(odd) {
+    background-color: #EEEEEE;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, tr, th {
+    border: 2px solid grey;
+    padding: 5px;
+}
+
+table, tr, td {
+    border: 1px solid grey;
+}
+
+td {
+    vertical-align: top;
+    padding: 5px;
+}
+
+.high {
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #FF0000;
+    color: #FFFFFF;
+}
+/*
+ .high:after {
+ content: "High";
+ }*/
+
+.med {
+    text-align: center;
+    vertical-align: middle;
+    background-color: #FFA000;
+}
+
+/*
+ .med:after {
+ content: "Medium";
+ }*/
+
+.low {
+    text-align: center;
+    vertical-align: middle;
+    background-color: #FFFF00;
+}
+
+.dismiss {
+    text-align: center;
+    vertical-align: middle;
+    background-color: #FFFF00;
+}
+
+.fixed {
+    text-align: center;
+    vertical-align: middle;
+    background-color: #75FF47;
+}
+
+.convo {
+    text-align: center;
+    vertical-align: middle;
+    background-color: #FE2E64;
+}
+
+.major-rev {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.final-rev {
+    font-size: 22px;
+    font-weight: bold;
+}
