@@ -60,7 +60,7 @@
                 <h3>Description</h3>
                 <div>
                     
-                        <p>Interface for users trying to perform CRUD operations on articles. It ensure they have permission to modify the article in the requested way before invoking an ArticleManager method to make the changes.</p>
+                        <span class="label label-info">none</span>
                     
                 </div>
             </section>
@@ -132,40 +132,6 @@
 
             <!-- Attributes -->
 
-            
-            <section>
-                <h3>Attributes</h3>
-                <table class="table table-striped table-bordered">
-                    <tr>
-                        <th>Visibility</th>
-                        <th>Name</th>
-                        <th>Type</th>
-                        <th>Description</th>
-                    </tr>
-                    
-                    <tr>
-                        <td>public</td>
-                        <td><a href="ed84fe06481bf3799deae80346496588.html">perms</a></td>
-                        <td><a href='3ab8c6d7d6e392d836dace2508764027.html'>UserPermissions</a></td>
-                        <td></td>
-                    </tr>
-                    
-                    <tr>
-                        <td>public</td>
-                        <td><a href="32d216d0919417a266fd6ad825fde1eb.html">user_id</a></td>
-                        <td>int</td>
-                        <td></td>
-                    </tr>
-                    
-                    <tr>
-                        <td>public</td>
-                        <td><a href="e53eba0b54c814d378d20b40e6db6a72.html">art_managers</a></td>
-                        <td>ArticleManager[]</td>
-                        <td></td>
-                    </tr>
-                    
-                </table>
-            </section>
             
 
             <!-- Operations -->
@@ -355,9 +321,11 @@
     <h3>Relationships</h3>
     <ul class="nav nav-list">
         
-        <li><a href='9c58454b910f637ec65c7588e3f00c21.html'><span class='node-icon _icon-UMLAssociation'></span>Restricts Usage (ArticleManager—UserArticlePermissions)</a></li>
+        <li><a href='9c58454b910f637ec65c7588e3f00c21.html'><span class='node-icon _icon-UMLAssociation'></span>Restricts Article Changes (ArticleManager—UserArticlePermissions)</a></li>
         
         <li><a href='1332897921d8c0a47a0a885b4261a3cd.html'><span class='node-icon _icon-UMLAssociation'></span>Checks Permissions (UserPermissions—UserArticlePermissions)</a></li>
+        
+        <li><a href='0df4a84105f099fce243b4642748ab77.html'><span class='node-icon _icon-UMLAssociation'></span>Restricts  Category Changes (CategoryManager—UserArticlePermissions)</a></li>
         
     </ul>
 </section>

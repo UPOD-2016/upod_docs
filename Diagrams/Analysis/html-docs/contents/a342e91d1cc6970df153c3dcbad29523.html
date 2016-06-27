@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Article</title>
+        <title>CategoryManager</title>
         <!-- <script src="http://use.edgefonts.net/source-sans-pro;source-code-pro.js"></script> -->
 <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic|Source+Code+Pro:300,400,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="../assets/css/bootstrap.css">
@@ -20,14 +20,14 @@
 
             <!-- Name Title -->
 
-            <h1>Article</h1>
+            <h1>CategoryManager</h1>
 
             <!-- Type and Stereotype -->
 
             <section style="margin-top: .5em;">
                 <span class="alert alert-info">
-                    <span class="node-icon _icon-UMLPackage"></span>
-                    UMLPackage
+                    <span class="node-icon _icon-UMLClass"></span>
+                    UMLClass
                 </span>
                 
             </section>
@@ -45,7 +45,10 @@
                     <span class="label label-info"><a href='3201cf9c3786a85a94ff76f5038f559d.html'><span class='node-icon _icon-UMLModel'></span>UML</a></span>
                 
                     <span>::</span>
-                    <span class="label label-info"><a href='87490e6726d5d368d8efdfc67c8cc67f.html'><span class='node-icon _icon-UMLPackage'></span>Article</a></span>
+                    <span class="label label-info"><a href='15f78f43efcb06bea2a112fa9fe4af09.html'><span class='node-icon _icon-UMLPackage'></span>Category</a></span>
+                
+                    <span>::</span>
+                    <span class="label label-info"><a href='a342e91d1cc6970df153c3dcbad29523.html'><span class='node-icon _icon-UMLClass'></span>CategoryManager</a></span>
                 
             </section>
 
@@ -60,7 +63,7 @@
                 <h3>Description</h3>
                 <div>
                     
-                        <span class="label label-info">none</span>
+                        <p>Uses same permission structure as article</p>
                     
                 </div>
             </section>
@@ -79,6 +82,26 @@
             
 
             <!-- Classifier -->
+
+            
+                
+                
+
+
+                
+                
+
+
+                
+                
+
+
+                
+                
+
+
+                
+                
 
             
 
@@ -113,6 +136,40 @@
             <!-- Attributes -->
 
             
+            <section>
+                <h3>Attributes</h3>
+                <table class="table table-striped table-bordered">
+                    <tr>
+                        <th>Visibility</th>
+                        <th>Name</th>
+                        <th>Type</th>
+                        <th>Description</th>
+                    </tr>
+                    
+                    <tr>
+                        <td>private</td>
+                        <td><a href="eee1eb26c86037642f892debf22ba1f5.html">categories</a></td>
+                        <td><a href='f0dc92de0e761a69a3f59e2b756c1e47.html'>Category</a></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td>public</td>
+                        <td><a href="9ff1a7cee87751e49fdae86b61ab8e27.html">permissions</a></td>
+                        <td><a href='55860ffc7b4084600ddd9af8138987f7.html'>UserArticlePermissions</a></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td>public</td>
+                        <td><a href="a165c603c6bc83d7925d32c8b184dc91.html">user_id</a></td>
+                        <td>int</td>
+                        <td></td>
+                    </tr>
+                    
+                </table>
+            </section>
+            
 
             <!-- Operations -->
 
@@ -133,22 +190,6 @@
             <!-- Diagrams -->
 
             
-            
-            <section class="element-list">
-                <h3>Diagrams</h3>
-                <div>
-                    
-                    <div style="display: inline-block; width: 250px; vertical-align: top;">
-                        <div class="member">
-                            <a href="64e1c839ad37c254e96af7c68353ca0d.html">
-                            <img src="../diagrams/64e1c839ad37c254e96af7c68353ca0d.svg">
-                            <div style="text-align: center; margin-top: 1em;">Article Classes</div>
-                            </a>
-                        </div>
-                    </div>
-                    
-                </div>
-            </section>
             
 
             <!-- Behavior -->
@@ -210,7 +251,7 @@
     
     <tr>
         <td>name</td>
-        <td>Article</td>
+        <td>CategoryManager</td>
     </tr>
     
     
@@ -243,11 +284,44 @@
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
     <tr>
-        <td>importedElements</td>
-        <td>
-            
-        </td>
+        <td>isAbstract</td>
+        <td><span class='label label-info'>false</span></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>isFinalSpecialization</td>
+        <td><span class='label label-info'>false</span></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>isLeaf</td>
+        <td><span class='label label-info'>false</span></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>isActive</td>
+        <td><span class='label label-info'>false</span></td>
     </tr>
     
     
@@ -273,15 +347,6 @@
 
                 
                 
-<section class="element-list">
-    <h3>Dependants</h3>
-    <ul class="nav nav-list">
-        
-        <li><a href='062abe20738885f8674b1030e1cb8498.html'><span class='node-icon _icon-UMLPackage'></span>Search</a></li>
-        
-    </ul>
-</section>
-
 
             
 
@@ -293,7 +358,11 @@
     <h3>Relationships</h3>
     <ul class="nav nav-list">
         
-        <li><a href='055518eb69a232601afe717333c43c3a.html'><span class='node-icon _icon-UMLDependency'></span>Searches (Search→Article)</a></li>
+        <li><a href='aca7d9bd3efa906f9b92455ac5e85d4e.html'><span class='node-icon _icon-UMLAssociation'></span>Modifies (CategoryManager—Article)</a></li>
+        
+        <li><a href='a1cd52a7542d1ad4e890dbec2688af17.html'><span class='node-icon _icon-UMLAssociation'></span>Create / Modify (CategoryManager—Category)</a></li>
+        
+        <li><a href='f20bf9be166d3b6126c35c7d178126fd.html'><span class='node-icon _icon-UMLAssociation'></span>Create / Modify (CategoryManager—Category)</a></li>
         
     </ul>
 </section>
@@ -308,25 +377,13 @@
     <h3>Owned Elements</h3>
     <ul class="nav nav-list">
         
-        <li><a href='64e1c839ad37c254e96af7c68353ca0d.html'><span class='node-icon _icon-UMLClassDiagram'></span>Article Classes</a></li>
+        <li><a href='aca7d9bd3efa906f9b92455ac5e85d4e.html'><span class='node-icon _icon-UMLAssociation'></span>Modifies (CategoryManager—Article)</a></li>
         
-        <li><a href='28d7b7d80bed97ad3a42503be6d0309c.html'><span class='node-icon _icon-UMLClass'></span>Article</a></li>
+        <li><a href='a1cd52a7542d1ad4e890dbec2688af17.html'><span class='node-icon _icon-UMLAssociation'></span>Create / Modify (CategoryManager—Category)</a></li>
         
-        <li><a href='452b15bc6b7f02d5da77e29a56baeb8a.html'><span class='node-icon _icon-UMLClass'></span>ArticleManager</a></li>
+        <li><a href='f20bf9be166d3b6126c35c7d178126fd.html'><span class='node-icon _icon-UMLAssociation'></span>Create / Modify (CategoryManager—Category)</a></li>
         
-        <li><a href='fe732ee3815fcc0a9728d525e0f3b1b8.html'><span class='node-icon _icon-UMLClass'></span>ArticleBlock</a></li>
-        
-        <li><a href='fd0268963124a17e59bd3c2a19dac008.html'><span class='node-icon _icon-UMLClass'></span>ImageBlock</a></li>
-        
-        <li><a href='b95285977258d95d93abfbcf322b48ab.html'><span class='node-icon _icon-UMLClass'></span>TextBlock</a></li>
-        
-        <li><a href='f3c381e8c7fabdda97a74b7925d0c69d.html'><span class='node-icon _icon-UMLClass'></span>LinkBlock</a></li>
-        
-        <li><a href='9efbbcfa0fdfa456af3f6f51fc831359.html'><span class='node-icon _icon-UMLClass'></span>EquationBlock</a></li>
-        
-        <li><a href='90cc7b4b28fe7740719766679612369e.html'><span class='node-icon _icon-UMLClass'></span>EquationVariable</a></li>
-        
-        <li><a href='852ccbd471e88f3e61072bf6d8d5ca51.html'><span class='node-icon _icon-UMLClass'></span>CategoryBlock</a></li>
+        <li><a href='da8794e12fe71abe45cd879065e9ad77.html'><span class='node-icon _icon-UMLClass'></span>CategoryManager</a></li>
         
     </ul>
 </section>
