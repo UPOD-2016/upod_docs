@@ -10,7 +10,7 @@ class ArticleTextBlock < ActiveRecord::Base
   acts_as :article_block
 
 # validates the presence and length of the body of title block
-  validates :title, presence: true, length: { maximum: 65535 }
+  validates :body, presence: true, length: { maximum: 65535 }
 
  include Searchable
 end
