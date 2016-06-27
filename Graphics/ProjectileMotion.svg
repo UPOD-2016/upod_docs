@@ -1,0 +1,64 @@
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1200px" height="600px" xml:space="preserve" onload="loaded();">
+    
+     <script type="text/javascript" xlink:href="ProjectileMotion.js" />
+     
+
+     <line id="base" x1="0" y1="500" x2="1200" y2="500" stroke="black" />
+     
+
+
+     <path id="curve" d="M 100 500 C 100 200 400 200 400 500" stroke="blue"
+          stroke-width="5" fill="none" />
+     
+
+     <path id="cliff" d="M 100 500 L 100 500" stroke="black" fill="none"/> 
+
+     <!--LINE TAGS-->
+     <text x="50" y="20" font-family="'Arial'"
+           font-size="12">Initial Velocity(m/s): </text>
+     <text x="50" y="40" font-family="'Arial'"
+           font-size="12">Launch Angle(Degrees): </text>
+     <text x="50" y="60" font-family="'Arial'"
+           font-size="12">Initial Height(m): </text>
+
+     <text x="50" y="100" font-family="'Arial'"
+           font-size="12">Horizontal Distance(m): </text>
+     <text x="50" y="120" font-family="'Arial'"
+           font-size="12">Height(m): </text>
+     <text x="50" y="140" font-family="'Arial'"
+           font-size="12">Time Of Flight(s): </text>
+
+
+
+
+     <!--INPUTS-->
+     <text id="vi" x="200" y="20" font-family="'Arial'"
+	   font-size="12">100</text>
+     <text id="LaunchAngle" x="200" y="40" font-family="'Arial'"
+           font-size="12">50</text>
+     <text id="InitialHeight" x="200" y="60" font-family="'Arial'"
+           font-size="12">0</text>
+
+
+     <!--OUTPUTS-->
+     <text id="DistanceOut" x="200" y="100" font-family="'Arial'"
+           font-size="12"></text>
+     <text id="HeightOut" x="200" y="120" font-family="'Arial'"
+           font-size="12"></text>
+     <text id="TimeOut" x="200" y="140" font-family="'Arial'"
+           font-size="12"></text>
+     
+     <g stroke="black" stroke-width="3" fill="black">
+       <circle id="start" cx="100" cy="500" r="3" />
+       <circle id="end" cx="400" cy="500" r="3" />
+       <circle id="mid" cx="400" cy="500" r="3" />
+     </g>
+
+     <text x="100" y="520" font-family="'Arial'"
+           font-size="12">0</text>
+     <text id="EndText" x="400" y="520" font-family="'Arial'"
+           font-size="12">400</text>
+
+</svg>
