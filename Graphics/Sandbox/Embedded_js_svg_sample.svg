@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+xmlns:xlink="http://www.w3.org/1999/xlink" width="600" height="600">
+  <script type="text/ecmascript">
+    <![CDATA[
+
+      // onclick event handler
+      window.onload=function () {
+
+         var square = document.getElementById("square");
+
+         // onclick event handler
+         square.onclick = function() {
+         var hue = 'rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')';
+              this.setAttribute("fill", hue);
+         }
+      }
+    ]]>
+  </script>
+  <rect id="square" width="400" height="400" fill="#ff0000"
+   x="10" y="10" />
+</svg>
