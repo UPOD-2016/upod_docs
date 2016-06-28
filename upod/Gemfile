@@ -57,3 +57,11 @@ end
 group :development do
 	gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
 end
+
+group :development, :test do
+  gem 'rspec-rails', '~> 3.4'
+end
+
+group :test do
+  gem 'shoulda-matchers', '~> 3.1'
+end
