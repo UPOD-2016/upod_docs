@@ -85,7 +85,7 @@ p{
     height: 90%;
     margin-left: 0;
     overflow-y: auto;
-    background: #000;
+    background: #4d004d;
 }
 
 #page-content-wrapper {
@@ -142,6 +142,7 @@ p{
     color: #fff;
     background: none;
 }
+
 /* Login Page Sytle */
 .login-page {
   width: 360px;
