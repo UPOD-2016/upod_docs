@@ -5090,7 +5090,7 @@
 							},
 							"name": "Article Classes",
 							"visible": true,
-							"defaultDiagram": false,
+							"defaultDiagram": true,
 							"ownedViews": [
 								{
 									"_type": "UMLClassView",
@@ -16987,7 +16987,7 @@
 							"isDerived": false
 						}
 					],
-					"documentation": "Used to get category hierarchy of specific articles or a list of all articles belonging to a specific category",
+					"documentation": "Used to get all categories that an article falls under or all articles belonging to a specific category",
 					"visibility": "public",
 					"attributes": [
 						{
