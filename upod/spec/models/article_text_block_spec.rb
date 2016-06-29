@@ -7,7 +7,6 @@ RSpec.describe ArticleTextBlock, type: :model do
 # of the body of an ArticleTextBlock
   it { is_expected.to validate_presence_of(:body) }
 
-
 # uses shoulda matcher as well as RSpec to validate and test the length
 # of the body of an ArticleTextBlock
   it do
@@ -15,4 +14,7 @@ RSpec.describe ArticleTextBlock, type: :model do
       is_at_most(65535).
       on(:create)
   end
+
+
+
 end
