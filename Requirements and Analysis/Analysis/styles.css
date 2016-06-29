@@ -1,0 +1,91 @@
+.document {
+	font-size: 15px;
+	font-family: sans-serif;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.contents {
+	width: 275px;
+	padding: 5px 20px 20px;
+	background-color: #F5F5F5;
+	margin-left: 30px;
+}
+
+.doctitle {
+	margin-top: 50px;
+	font-size: 42px;
+}
+
+section {
+	margin-top: 30px;
+}
+
+.section-title {
+	font-size: 32px;
+}
+
+.subsection1 {
+	margin-left: 35px;
+}
+
+.subsection1-title {
+	margin-top: 30px;
+	font-size: 22px;
+}
+
+.subsection2 {
+	margin-left: 45px;
+}
+
+.subsection2-title {
+	margin-top: 35px;
+	font-size: 18px;
+}
+
+.subsection3 {
+	margin-left: 60px;
+}
+
+.subsection3-title {
+	font-size: 15px;
+}
+
+.project-contributors td {
+	padding-right: 50px;
+}
+
+.indent50 {
+	margin-left: 50px;
+}
+
+.indent30 {
+	margin-left: 30px;
+}
+
+.indent10 {
+	margin-left: 10px;
+}
+
+.req {
+	display: inline-block;
+	width: 70px;
+	font-weight: bold;
+}
+
+.def {
+	font-weight: bold;
+}
+
+.project-contributors td {
+	padding-right: 50px;
+}
+
+.caption {
+	text-align: center;
+	font-style: italic;
+}
+
+.back-top {
+	text-align: right;
+}

@@ -1,0 +1,110 @@
+body {
+	padding: 0px;
+}
+
+#content {
+	margin: 0px auto;
+	padding: 20px;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+/* headings */
+
+.title {
+	padding: 30px 0px;
+	font-size: 44px;
+}
+
+.heading4 {
+	font-size: 16px;
+}
+
+/* Authors list at the top */
+ul#authors {
+	list-style: none;
+	margin: 0 0 0 0 !important;
+}
+#authors li {
+	display: inline-block;
+	width: 120px;
+}
+
+/* Paragraph styling */
+
+#content p {
+	margin-bottom: 15px;
+}
+
+/* section indenting */
+
+#content > section {
+	margin-left: -5%;
+}
+
+section {
+	padding-left: 5%;
+}
+
+/* Spans */
+
+span.number {
+	display: inline-block;
+	padding-right: 0.28in;
+}
+
+span.code {
+	font-family: monospace;
+}
+
+span.to-top {
+	display: block;
+	text-align: right;
+	font-size: 12px;
+}
+
+p.diagram-label {
+	margin-top: 35px;
+	margin-bottom: 8px !important;
+	font-size: 16px;
+	color: #777;
+}
+
+/* Table of contents */
+
+#table-of-contents {
+	margin-top: 50px;
+	padding: 20px;
+	background-color: #F5F5F5;
+	width: 300px;
+}
+
+/* Term-Defintion tables */
+table.term-def tr {
+	vertical-align: top;
+	margin-bottom: 20px;
+}
+table.term-def td {
+	padding-right: 30px;
+	padding-bottom: 10px;
+
+}
+table.term-def td:first-child { /* first cell is bold (the term being defined ) */
+	font-weight: bold;
+	white-space:nowrap;
+}
+
+
+/* Architecture section */
+
+#architecture embed {
+	padding: 10px;
+	border: 2px solid #ddd;
+}
+#architecture .caption {
+	margin-bottom: 50px;
+}
+
+#architecture p {
+	margin: 10px auto;
+}
