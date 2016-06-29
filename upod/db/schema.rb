@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160628041217) do
+ActiveRecord::Schema.define(version: 20160620204227) do
 
   create_table "article_blocks", force: :cascade do |t|
     t.integer "position",     limit: 4
@@ -25,8 +25,8 @@ ActiveRecord::Schema.define(version: 20160628041217) do
   end
 
   create_table "article_equation_blocks", force: :cascade do |t|
-    t.string "equation", limit: 255
-    t.string "label",    limit: 255
+    t.string "equation",    limit: 255
+    t.string "label", limit: 255
   end
 
   create_table "article_link_blocks", force: :cascade do |t|
