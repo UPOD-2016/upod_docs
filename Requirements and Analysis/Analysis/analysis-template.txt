@@ -25,24 +25,24 @@ UPOD Analysis Document
 
 	2.3 Objects
 
-		3.1 Entity Objects
+		2.3.1 Entity Objects
 		//TODO
 
-		3.2 Boundary Objects
+		2.3.2 Boundary Objects
 		//TODO
 
-		3.3 Control Objects
+		2.3.3 Control Objects
 		//TODO
 
 3. Functional Hierarchy
 
 	3.1 Boundary/Entity/Control Diagrams(s)
 		
-		3.2.1 User Diagram (Interaction with Boundary/Entity/Control Objects)
+		3.1.1 User Diagram (Interaction with Boundary/Entity/Control Objects)
 		//TODO
-		3.2.2 Administrator Diagram (Interaction with Boundary/Entity/Control Objects)
+		3.1.2 Administrator Diagram (Interaction with Boundary/Entity/Control Objects)
 		//TODO
-		3.2.3 Moderator Diagram (Interaction with Boundary/Entity/Control Objects)
+		3.1.3 Moderator Diagram (Interaction with Boundary/Entity/Control Objects)
 		//TODO
 
 	3.2 Class Diagrams
@@ -56,7 +56,7 @@ UPOD Analysis Document
 		3.2.3 Administrator Class Diagrams
 		//TODO
 	
-		3.2.3 Moderator Class Diagrams
+		3.2.4 Moderator Class Diagrams
 		//TODO
 
 4. Additional Information
