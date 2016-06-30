@@ -31,17 +31,19 @@
 </symbol>
 
 
-<circle id="Focalpoint" fill="black" cx="2500" cy="1000" r="20" />
-<text x="2500" y="1100" font-family="Verdana" font-size="70" fill="red" >F</text>
 <line id="ground" fill="black" x1="0" x2="4000" y1="1000" y2="1000" stroke="black" stroke-width="3"/>
-<line id="roof" fill="black" x1="0" x2="2750" y1="200" y2="200" stroke="black" stroke-width="3"/>
-<line id="PathObject" fill="black" x1="1500" y1="200" x2="3000" y2="1400" stroke="black" stroke-width="3"/>
-<line id="PathImage" fill="black" x1="2355" y1="1400" x2="2750" y2="200" stroke="black" stroke-width="3"/>
-<line id="ground2" fill="black" x1="0" x2="4000" y1="1800" y2="1800" stroke="black" stroke-width="3"/>
-<circle id="Centerpoint" fill="black" cx="2000" cy="1000" r="20" />
+<line id="roof" fill="black" x1="0" x2="2850" y1="200" y2="200" stroke="black" stroke-width="3"/>
+<line id="PathObject" fill="black" x1="400" y1="200" x2="3000" y2="1500" stroke="black" stroke-width="3"/>
+<line id="PathImage" fill="black" x1="1475" y1="1500" x2="2850" y2="200" stroke="black" stroke-width="3"/>
+<line id="ground2" fill="black" x1="0" x2="4000" y1="1475" y2="1475" stroke="black" stroke-width="3"/>
 
-<circle id="Centerpoint" fill="black" cx="3000" cy="1000" r="20" />
-<text x="2000" y="1100" font-family="Verdana" font-size="70" fill="red" >C</text>
+<circle id="Focalpoint" fill="black" cx="2000" cy="1000" r="20" />
+<text x="2000" y="1100" font-family="Verdana" font-size="70" fill="red" >F</text>
+<circle id="Centerpoint" fill="black" cx="1000" cy="1000" r="20" />
+<text x="1000" y="1100" font-family="Verdana" font-size="70" fill="red" >C</text>
+
+<circle id="Focalpoint" fill="black" cx="3000" cy="1000" r="20" />
+
 <!--
 d0=2600     //the distance of object from the mirror
 The distance of object from origin: 400
@@ -53,18 +55,23 @@ The reason that I put x=2200 and y=1600 is that after sacling the x and y also c
  transform="scale(0.625,0.625)"
  -->
  
- <use xlink:href="#symbol2" x="4750" y="2000" transform="scale(0.5,0.5)"
+ <use xlink:href="#symbol2" x="2360" y="1600" transform="scale(0.625,0.625)"
  id="image"   />
-<use xlink:href="#symbol1" x="1500" y="200" transform="translate(0)"
- id="ball"   />
+<use xlink:href="#symbol1" x="400" y="200" transform="translate(0)"
+ id="object"   />
  
 <!-- 
-	We have a concave mirror with cx=1500 , cy=1000 and r= 1000
-	-->
-	
+		
   <path
      style="fill:#ffff00;fill-opacity:1;stroke:#000000;stroke-width:4.32355595;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="M 2459.3462,-24.606278 A 925.65769,1085.553 4.0314633 0 1 3004.4166,1044.6965 925.65769,1085.553 4.0314633 0 1 2439.274,1964.548 999.97577,1022.8329 0 0 0 3221.4166,967.58709 999.97577,1022.8329 0 0 0 2459.3462,-24.606278 Z"
+     id="path4688"
+     inkscape:connector-curvature="0" />
+	-->
+	
+	 <path
+     style="fill:#ffff00;fill-opacity:1;stroke:#000000;stroke-width:3.69208312;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="M 2639.1261,-53.588411 A 638.38817,1147.8297 1.0357345 0 1 3014.8275,1077.6943 638.38817,1147.8297 1.0357345 0 1 2625.2909,2050.8632 689.25485,1082.1192 0 0 0 3164.3995,996.11546 689.25485,1082.1192 0 0 0 2639.1261,-53.588411 Z"
      id="path4688"
      inkscape:connector-curvature="0" />
 

@@ -8,12 +8,12 @@
 			var lineObj=document.getElementById("PathObject");;
 			var lineImage=document.getElementById("PathImage");
 			var image=document.getElementById("image");
-			
+			var ground2=document.getElementById("ground2");
     
 	function mouseDown(evt) { 
         bMouseDragging = true;
         
-        var object = document.getElementById("ball");
+        var object = document.getElementById("object");
         if(object) {
            var p = document.documentElement.createSVGPoint();
             p.x = evt.clientX;
@@ -58,12 +58,10 @@
 				lineObj.setAttribute("y2",1000+hi);
 				lineImage.setAttribute("y2", 200);
 				var y = image.getAttribute("y");
-				lineImage.setAttribute("y1",((y * NewRatio)+800*NewRatio));
+				lineImage.setAttribute("y1",((y * NewRatio)+h0*NewRatio));
+				ground2.setAttribute("y1",((y * NewRatio)+h0*NewRatio));
+				ground2.setAttribute("y2",((y * NewRatio)+h0*NewRatio));
 				
-				
-				console.log("di: "+di);
-				console.log("d0: "+d0);
-				console.log("ratio: "+ NewRatio);
 				//var y2 = ball.getAttribute("y");
 				//y2 = ball.getAttribute("y");
 				//console.log(y2);
@@ -80,17 +78,19 @@
                 var x = image.getAttribute("x");
 				 
 				
-                var q = x / 1500;
+                //var q = x / 1500;
 				//console.log(q);
                 image.setAttribute("transform", "scale(" + NewRatio+ ")");
 				//circle.setAttribute("transform", "scale(" + 0.625+ ")");
 				
 				var y = image.getAttribute("y");
-			
+				var lineImage_x1=lineImage.getAttribute("x1") ;
 				
-			
-				image.setAttribute("x", s/NewRatio);
-				
+				console.log("lineImage_x1: "+lineImage_x1);
+				console.log("s: "+s);
+				console.log("Ratio: " + NewRatio);
+				image.setAttribute("x", ((s/NewRatio)+100));
+				console.log("image x: " + image.getAttribute("x"))
 				
 				var k=1000/NewRatio ;
 				//var k=1000/0.625;
@@ -100,8 +100,8 @@
 				
 				lineObj.setAttribute("x1",n);
 				//lineObj.setAttribute("y2",((y * q)+800*q));
-				var lineImage_x1=lineImage.getAttribute("x1") ;
-				lineImage.setAttribute("x1",x * NewRatio);
+				
+				lineImage.setAttribute("x1",s+100);
 				var x1 = lineImage.getAttribute("x1");
 				
 				//lineImage.setAttribute("y1",((y * NewRatio)+800*NewRatio));
@@ -126,11 +126,12 @@
     
     function init() {
 		
-             object = document.getElementById("ball");
+             object = document.getElementById("object");
 			 lineObj=document.getElementById("PathObject");
 			 lineImage=document.getElementById("PathImage");
 			 image=document.getElementById("image");
 			 Fpoint=document.getElementById("Focalpoint");
+			 ground2=document.getElementById("ground2");
 
              if(object) {
             object.addEventListener("mousedown", mouseDown, false);
