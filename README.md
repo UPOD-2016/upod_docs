@@ -1,9 +1,7 @@
 # UPOD
 CP317 - Group Project
 
-### Project Tracking Site
-### NEW!!! 
-* http://upod-2016.github.io/UPOD
+# [Track Your Time Here](https://docs.google.com/spreadsheets/d/1MnkaSM_pRzdGI3y_fJ5XDKtI90yGePFmsP-MoT9rALs/edit#gid=1694166937)
 
 ### FaceBook Group
 * https://www.facebook.com/groups/669296119875892/

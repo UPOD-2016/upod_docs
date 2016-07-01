@@ -18,9 +18,26 @@ class Article < ActiveRecord::Base
   # article.create_equation_block and so on and so forth.
   include Blockable
   include Searchable
-  attr_accessor :sir_trevor_content
 
 # validates the title and it's length
   validates :title, presence: true, length: { maximum: 255 }
+
+  def self.create_from_sir_trevor sir_trevor_content
+    data = JSON.parse(sir_trevor_content)['data']
+
+    # If there are no blocks provided, we have to throw an error
+    return if data.empty?
+
+    #Otherwise, create the block
+    article = Article.create(title: "blank for now #{Time.now}")
+
+    data.each do |block|
+      if block['type'] == 'text'
+        article.create_text_block(body: block['data']['text'])
+      end
+    end
+
+    article
+  end
 
 end
