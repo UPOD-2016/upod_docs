@@ -21,7 +21,8 @@ class ArticlesController < ApplicationController
 
   # POST /articles
   def create
-
+    @article = Article.create_from_sir_trevor(params[:sir_trevor_content])
+    redirect_to articles_path
   end
 
   # PATCH/PUT /articles/1
