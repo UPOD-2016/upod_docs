@@ -11,8 +11,9 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<%= render partial: "static_pages/header" %>
+<!-- <%= render partial: "static_pages/menu" %> -->
 <%= yield %>
-
+<%= render partial: "static_pages/footer" %>
 </body>
 </html>

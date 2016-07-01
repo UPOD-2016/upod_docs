@@ -1,102 +1,61 @@
-<div class="container">
-
-</div>
-  <!-- Page Content -->
+<div id="menuContainer">
+  <input id="toggle" type="checkbox">
+  <label for="toggle">&equiv;</label>
+  <div class="page-content">
+    <!--start content section-->
+    <div id="headerContent"></div>
+    <ul class="breadcrumb">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="categories.html">Categories</a></li>
+      <li class="active"><a href="entry.html">Entry</a></li>
+    </ul>
     <div class="container">
-
-        <div class="row">
-
-            <!-- Blog Post Content Column -->
-            <div class="col-lg-8">
-
-                <!-- Blog Post -->
-
-                <!-- Title -->
-                <h1><%= @article.title %></h1>
-
-                <!-- Author -->
-                <p class="lead">
-                    by <a href="#">AUTHOR_NAME TO BE FILLED IN HERE</a>
-                </p>
-
-
-
-                <!-- Date/Time -->
-                <p><span class="glyphicon glyphicon-time"></span> Posted <%= time_ago_in_words(@article.updated_at) %> ago</p>
-
-                <hr>
-
-                <!-- Preview Image -->
-                <!-- <img class="img-responsive" src="http://placehold.it/900x300" alt=""> -->
-
-                <!-- <hr> -->
-
-                <!-- Post Content -->
-
-
-                <% @article.blocks.each do |block| %>
-                  <%= render partial: "articles/blocks/#{block.slug}", locals: {block: block.specific} %>
-                <% end %>
-
-
-            </div>
-
-            <!-- Blog Sidebar Widgets Column -->
-            <div class="col-md-4">
-
-                <!-- Blog Search Well -->
-                <div class="well">
-                    <h4>Blog Search</h4>
-                    <div class="input-group">
-                        <input type="text" class="form-control">
-                        <span class="input-group-btn">
-                            <button class="btn btn-default" type="button">
-                                <span class="glyphicon glyphicon-search"></span>
-                        </button>
-                        </span>
-                    </div>
-                    <!-- /.input-group -->
-                </div>
-
-                <!-- Blog Categories Well -->
-                <div class="well">
-                    <h4>Blog Categories</h4>
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <ul class="list-unstyled">
-                                <li><a href="#">Category Name</a>
-                                </li>
-                                <li><a href="#">Category Name</a>
-                                </li>
-                                <li><a href="#">Category Name</a>
-                                </li>
-                                <li><a href="#">Category Name</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-6">
-                            <ul class="list-unstyled">
-                                <li><a href="#">Category Name</a>
-                                </li>
-                                <li><a href="#">Category Name</a>
-                                </li>
-                                <li><a href="#">Category Name</a>
-                                </li>
-                                <li><a href="#">Category Name</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- /.row -->
-                </div>
-
-                <!-- Side Widget Well -->
-                <div class="well">
-                    <h4>Side Widget Well</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, perspiciatis adipisci accusamus laudantium odit aliquam repellat tempore quos aspernatur vero.</p>
-                </div>
-
-            </div>
-
+      <div class="jumbotron">
+        <div class = "row">
+          <div class = "col-xs-6 col-md-offset-1">
+            <h3 >title</h3>
+          </div>
+          <div class = "col-xs-6 col-md-offset-2">
+            <h4 >smaller sub title</h4>
+          </div>
+          <div class = "col-xs-6 col-md-offset-4">
+            <p> William Shakespeare was an English poet, playwright, and actor.
+              He was born on 26 April 1564 in Stratford-upon-Avon. His father was a
+              successful local businessman and his mother was the daughter of a landowner.
+              Shakespeare is widely regarded as the greatest writer in the English language and
+              the world's pre-eminent dramatist. He is often called England's national poet and
+              nicknamed the Bard of Avon. He wrote about 38 plays, 154 sonnets, two long narrative
+              poems, and a few other verses, of which the authorship of some is uncertain. His plays
+              have been translated into every major living language and are performed more often than
+              those of any other playwright. </p>
+          </div>
         </div>
-        <!-- /.row -->
+      </div>
+      <div class="jumbotron" >
+        <h3 >Suggestions</h3>
+        <p> <a href="categories.html">Link 1</a></p>
+        <p ><a href="categories.html">Link 2</a></p>
+        <p ><a href="categories.html">Link 3</a>
+        <p>
+      </div>
+      <div id="footerContent"></div>
+    </div>
+    <script src="../javascript/jquery-2.2.4.js"></script>
+    <script src="../javascript/frontendJS.js"></script>
+    <!--end content section-->
+  </div>
+  <div class="slide-menu">
+    <nav class="menu">
+      <li><a id="menuLink" href="home.html">Home</a></li>
+      <li><a id="menuLink" href="about.html">About</a></li>
+      <li><a id="menuLink" href="#">Contact</a></li>
+      <li><a id="menuLink" href="#">Fundamentals</a></li>
+      <li><a id="menuLink" href="#">Classical Mechanics</a></li>
+      <li><a id="menuLink" href="#">Electricity/Magnetism</a></li>
+      <li><a id="menuLink" href="#">Optics</a></li>
+      <li><a id="menuLink" href="#">Quantum Mechanics</a></li>
+      <li><a id="menuLink" href="#">Statistical Mechanics</a></li>
+    </nav>
+  </div>
+</div>
+</body>

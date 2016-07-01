@@ -26,7 +26,7 @@ ActiveRecord::Schema.define(version: 20160628041217) do
 
   create_table "article_equation_blocks", force: :cascade do |t|
     t.string "equation", limit: 255
-    t.string "label",    limit: 255
+    t.string "description",    limit: 255
   end
 
   create_table "article_link_blocks", force: :cascade do |t|

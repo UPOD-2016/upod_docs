@@ -1,0 +1,45 @@
+<!-- Fixed navbar -->
+
+<nav class="navbar navbar-default headerContent">
+  <div class="container">
+    <!--
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+	            <span class="sr-only">Toggle navigation</span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+	        </button>
+            <div class="icon-menu">
+                <img src="../resources/menuIcon.png" width="42" height="42">
+            </div>
+            <a class="navbar-brand" href="home.html">UPOD</a>
+        </div>
+<<<<<<< HEAD
+        -->
+    <!-- <div id="navbar" class="collapse navbar-collapse"> -->
+    <ul class="nav navbar-nav navbar-left">
+      <!-- <li class="active">
+        <div class="icon-menu"> <img src="../resources/menuIcon.png" width="42" height="42"> </div>
+      </li>
+      -->
+      <%= link_to root_path do %>
+
+      <li> <%= image_tag("upod_logo_color_v2.png", style: "width:28% ; height:14%") %> </li>
+      <% end %>
+    </ul>
+    <!--search -->
+    <br />
+    <div class="col-sm-3 col-md-3 pull-right">
+      <form class="navbar-form" role="search">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Search" name="q">
+          <div class="input-group-btn">
+            <button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-search"></span></button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!--search end -->
+  </div>
+</nav>
