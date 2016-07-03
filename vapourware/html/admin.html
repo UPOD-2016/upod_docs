@@ -1,3 +1,4 @@
+<!-- Created and edited by Tudor Bertiean -->
 <!DOCTYPE html>
 <html>
     <head>
@@ -30,7 +31,9 @@
                                 <li class="list-group-item">Two</li>
                                 <li class="list-group-item">Three</li>
                             </ul>
-                        <div class="panel-footer">Create new (+)</div>
+                        <div class="panel-footer">
+                            <a id="new-subcategory">Create new (+)</a>    
+                        </div>
                         </div>
                     </div>
                     <div class="panel panel-default">
@@ -45,16 +48,33 @@
                                 <li class="list-group-item">Two</li>
                                 <li class="list-group-item">Three</li>
                             </ul>
-                        <div class="panel-footer">Create new (+)</div>
+                        <div class="panel-footer">
+                            <a id="new-subcategory">Create new (+)</a>     
+                        </div>
                         </div>
                     </div>
                     <div class="panel-heading">
                         <h4 class="panel-title">
-                            <a data-toggle="collapse" href="#collapse3">Add New Category (+)</a>
+                            <a id="new-category">Add New Category (+)</a>
                         </h4>
                     </div>
                 </div>
             </div>
+             <!-- /#sidebar-wrapper -->
+            
+            <!-- Page Content -->
+            <div id="page-content-wrapper">
+                <div class="container-fluid">
+                    <div class="row">
+                        <h1 id="dynamic-header">Welcome to the admin page! Add a new category or sub-category</h1>                  
+                    </div>
+                </div>
+            </div>
+            <!-- /#page-content-wrapper -->
+            
         </div>
+        <!-- /#wrapper -->
+        
+        <script src="../javascript/adminJS.js"></script>
     </body>
 </html>
