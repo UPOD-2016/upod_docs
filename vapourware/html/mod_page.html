@@ -1,28 +1,59 @@
 <!doctype html>
 
-<html>
 <head>
-	<title>mod_page</title>
-</head>
-<body>
-
-<div id="menu"></div>
-	<div id="sample">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
 	<script type="text/javascript" src="../javascript/nicEdit.js"></script>
 	<script type="text/javascript">
 		bkLib.onDomLoaded(function() {
 			new nicEditor({fullPanel : true, onSave : function(content, id, instance) { alert('save button clicked for element '+id+' = '+content);}}).panelInstance('area2');
 		});
 	</script>
+</head>
 
+<body>
 
-
-	<h4>All Available Buttons {fullPanel : true}</h4>
-	<p>new nicEditor({fullPanel : true}).panelInstance('area2');</p>
-	<textarea style="width:100%;" id="area2">Some Initial Content was in this textarea</textarea>
+<div id="menuContainer">
+	<input id="toggle" type="checkbox">
+	<label for="toggle">&equiv;</label>
+	<div class="page-content">
+		<div id="headerContent"></div>
+		<ul class="breadcrumb">
+			<li><a href="home.html">Home</a></li>
+			<li class="active"><a href="entry.html">Entry</a></li>
+		</ul>
+		<div class="container">
+			<div class="jumbotron">
+				<div class="row">
+					<div>
+						<h3>Title</h3>
+						<textarea style="width:100%" id="area2">Some 	Initial Content was in this textarea</textarea>
+					</div>
+				</div>
+			</div>
+			<div class="jumbotron">
+				<h3>Suggestions</h3>
+				<p><a href="categories.html">Link 1</a></p>
+				<p><a href="categories.html">Link 2</a></p>
+				<p><a href="categories.html">Link 3</a></p>
+			</div>
+			<div id="footerContent"></div>
+		</div>
+		<script src="../javascript/jquery-2.2.4.js"></script>
+		<script src="../javascript/frontendJS.js"></script>
 	</div>
-
+	<div class="slide-menu">
+    <nav class="menu">
+      <li><a id="menuLink" href="home.html">Home</a></li>
+      <li><a id="menuLink" href="about.html">About</a></li>
+      <li><a id="menuLink" href="#">Contact</a></li>
+      <li><a id="menuLink" href="#">Fundamentals</a></li>
+      <li><a id="menuLink" href="#">Classical Mechanics</a></li>
+      <li><a id="menuLink" href="#">Electricity/Magnetism</a></li>
+      <li><a id="menuLink" href="#">Optics</a></li>
+      <li><a id="menuLink" href="#">Quantum Mechanics</a></li>
+      <li><a id="menuLink" href="#">Statistical Mechanics</a></li>
+    </nav>
+  </div>
 </div>
-
 </body>
-</html>
