@@ -1,0 +1,28 @@
+<!doctype html>
+
+<html>
+<head>
+	<title>mod_page</title>
+</head>
+<body>
+
+<div id="menu"></div>
+	<div id="sample">
+	<script type="text/javascript" src="../javascript/nicEdit.js"></script>
+	<script type="text/javascript">
+		bkLib.onDomLoaded(function() {
+			new nicEditor({fullPanel : true, onSave : function(content, id, instance) { alert('save button clicked for element '+id+' = '+content);}}).panelInstance('area2');
+		});
+	</script>
+
+
+
+	<h4>All Available Buttons {fullPanel : true}</h4>
+	<p>new nicEditor({fullPanel : true}).panelInstance('area2');</p>
+	<textarea style="width:100%;" id="area2">Some Initial Content was in this textarea</textarea>
+	</div>
+
+</div>
+
+</body>
+</html>
