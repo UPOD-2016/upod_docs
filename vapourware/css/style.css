@@ -302,7 +302,8 @@ input[type=checkbox]:checked ~ .slide-menu .menu li {
     background-color: #F5DEB3; /*default: #3e8e41 */
 }
 
-/*           admin_page                 */
+
+/* ---------- admin_page ---------- */
 
 
 #header_button_container {
@@ -356,7 +357,11 @@ body {
     
 }
 
+.textareaDiv {
+	resize: none;
+    overflow: auto;
 
+}
 
 	
 
