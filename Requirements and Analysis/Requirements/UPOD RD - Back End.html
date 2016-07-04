@@ -75,6 +75,13 @@
 		  </tr>
 
 		  <tr>
+		  	<td>Will Detlor</td>
+		  	<td>04/07/16</td>
+		  	<td>Added content regarding requirements for categories and sub-categories</td>
+		  	<td>v0.7</td>
+		  </tr>
+
+		  <tr>
 			<td>Clive Shen</td>
 			<td>29/06/16</td>
 			<td>Edited based on SQA feedback</td>
@@ -117,8 +124,6 @@
 			<td>v0.1</td>
 		  </tr>
 
-
-
 		</table>
 			
 			<h1>Table of Contents</h1>
@@ -149,6 +154,9 @@
 						<a id="indent" href="#Objects">3.5.1 Objects</a><br>
 						<a id="indent" href="#Feature">3.5.2 Feature</a><br>
 						<a id="indent" href="#Functional Hierarchy">3.5.3 Functional Hierarchy</a><br>
+					<a href="#Categories Information">3.6 Categories Information</a><br>
+						<a id="indent" href="#Categories Notes">3.6.1 Categories Notes</a><br>
+						<a id="indent" href="#Categories To Do List">3.6.2 Categories To Do List</a><br>
 				<a href="#Appendixes">Appendixes</a><br>
 				<a href="#Index">Index</a>
 				
@@ -291,6 +299,37 @@
 						<li id="subcategoryHeading">TBA</li>
 					<h4><a name="Functional Hierarchy">3.5.3 Functional Hierarchy</a></h4>
 						<li id="subcategoryHeading">TBA</li>
+
+				<h3><a name="Categories Information">3.6 Categories Information</a></h2>
+					<h4><a name="Categories Notes">3.6.1 Categories Notes</a></h4>
+						<ul>
+							<li id="subcategoryHeading">Categories are top level in terms of hierarchy</li>
+							<li id="subcategoryHeading">Each sub-category will pertain to ONE category (foreign key stored in the sub-category table)</li>
+							<li id="subcategoryHeading">Each sub-category will contain a set of articles that relate to that topic</li>
+							<li id="subcategoryHeading">Each article can belong to ONE OR MORE sub-category</li>
+							<li id="subcategoryHeading">Each article MUST belong to at least one sub-category</li>
+							<li id="subcategoryHeading">Articles can only belong to sub-categories not categories (however the pertaining sub-category would belong to a parent category)</li>
+						</ul>
+					<h4><a name="Categories To Do List">3.6.2 Categories To Do List</a></h4>
+						<ol>
+							<li id="subcategoryHeading">Implement database schema for categories (category table, sub-category table (contains foreign key of category it pertains to), sub-category-to-article table)</li>
+							<li id="subcategoryHeading">Create category MODEL</li>
+							<li id="subcategoryHeading">Update category MODEL</li>
+							<li id="subcategoryHeading">Remove category MODEL (delete category and all sub-categories (call delete sub-category function listed below for each sub-category in the category to be deleted) within this category)</li>
+							<li id="subcategoryHeading">Create sub-category MODEL</li>
+							<li id="subcategoryHeading">Update sub-category MODEL</li>
+							<li id="subcategoryHeading">Remove sub-category MODEL (delete sub-category and all articles within this category. Need to check if article pertains to other sub-categories before deleting)</li>
+							<li id="subcategoryHeading">Get all categories MODEL</li>
+							<li id="subcategoryHeading">Get all categories with sub-categories and articles MODEL</li>
+							<li id="subcategoryHeading">Get all sub-categories with articles in specific category MODEL</li>
+							<li id="subcategoryHeading">Get all articles in specific sub-category MODEL</li>
+							<li id="subcategoryHeading">Add article to sub-category MODEL (create new record in sub-category-to-article table)</li>
+							<li id="subcategoryHeading">Update article to sub-category MODEL</li>
+							<li id="subcategoryHeading">Remove article to sub-category MODEL</li>
+							<li id="subcategoryHeading">Create VIEW/CONTROLLER to have a page to display list of all categories and sub-categories</li>
+							<li id="subcategoryHeading">Create VIEW/CONTROLLER to have a page to display list of all articles in a specific category</li>
+							<li id="subcategoryHeading">Integrate add/edit/delete category/sub-category functionality into create/edit article pages</li>
+						</ol>
 			</div>
 			
 		</div>
