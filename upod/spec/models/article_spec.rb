@@ -13,4 +13,9 @@ RSpec.describe Article, type: :model do
       is_at_most(255).
       on(:create)
   end
+  
+  it do
+	should have_many :blocks
+  end
+  
 end
