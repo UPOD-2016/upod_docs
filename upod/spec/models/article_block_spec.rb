@@ -29,5 +29,4 @@ RSpec.describe ArticleBlock, type: :model do
 # belongs to article.
   it { should belong_to(:article) }
 
->>>>>>> assocation_tests
 end
