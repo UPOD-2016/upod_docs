@@ -18,15 +18,9 @@
             <h4 >smaller sub title</h4>
           </div>
           <div class = "col-xs-6 col-md-offset-4">
-            <p> William Shakespeare was an English poet, playwright, and actor.
-              He was born on 26 April 1564 in Stratford-upon-Avon. His father was a
-              successful local businessman and his mother was the daughter of a landowner.
-              Shakespeare is widely regarded as the greatest writer in the English language and
-              the world's pre-eminent dramatist. He is often called England's national poet and
-              nicknamed the Bard of Avon. He wrote about 38 plays, 154 sonnets, two long narrative
-              poems, and a few other verses, of which the authorship of some is uncertain. His plays
-              have been translated into every major living language and are performed more often than
-              those of any other playwright. </p>
+            <% @article.blocks.each do |block| %>
+                  <%= render partial: "articles/blocks/#{block.slug}", locals: {block: block.specific} %>
+            <% end %>
           </div>
         </div>
       </div>
@@ -37,19 +31,6 @@
         <p ><a href="categories.html">Link 3</a>
         <p>
     <!--end content section-->
-  </div>
-  <div class="slide-menu">
-    <nav class="menu">
-      <li><a id="menuLink" href="home.html">Home</a></li>
-      <li><a id="menuLink" href="about.html">About</a></li>
-      <li><a id="menuLink" href="#">Contact</a></li>
-      <li><a id="menuLink" href="#">Fundamentals</a></li>
-      <li><a id="menuLink" href="#">Classical Mechanics</a></li>
-      <li><a id="menuLink" href="#">Electricity/Magnetism</a></li>
-      <li><a id="menuLink" href="#">Optics</a></li>
-      <li><a id="menuLink" href="#">Quantum Mechanics</a></li>
-      <li><a id="menuLink" href="#">Statistical Mechanics</a></li>
-    </nav>
   </div>
 </div>
 </body>

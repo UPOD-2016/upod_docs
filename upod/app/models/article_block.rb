@@ -15,11 +15,6 @@ class ArticleBlock < ActiveRecord::Base
   # The scope restricts it to the article id
   acts_as_list scope: :article_id
 
-  #validates the inputs of Position, actable_type
-  # validates :position, presence: true, uniqueness: true
-  # validates :actable_id, presence: true
-  # validates :actable_type, presence: true, length: { maximum: 255 }
-
   # Used to resolve partials in views
   # e.g. ArticleTextBlock => text_block
   def slug

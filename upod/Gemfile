@@ -29,10 +29,6 @@ gem 'acts_as_list'
 gem 'annotate'
 gem 'bootstrap-sass'
 source 'https://rails-assets.org' do
-  # gem 'rails-assets-requirejs'
-  # gem 'rails-assets-es5-shim'
-  # gem 'rails-assets-svg4everybody'
-  # gem 'rails-assets-sir-trevor'
   gem 'rails-assets-underscore'
 end
 gem "rails-erd"
