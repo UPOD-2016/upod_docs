@@ -18,10 +18,4 @@ RSpec.describe Article, type: :model do
 	should have_many :blocks
   end
   
-
-# uses shoulda matcher along with RSpec to test the association
-# of article. An article has many blocks.
-  it { should have_many(:blocks) }
-
->>>>>>> assocation_tests
 end
