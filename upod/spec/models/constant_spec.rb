@@ -25,4 +25,9 @@ RSpec.describe Constant, type: :model do
       is_at_most(65535).
       on(:create)
   end
+# uses shoulda matcher along with RSpec to test the association
+# of constant. An constant has many article_constant_blocks.
+  it { should have_many(:article_constant_blocks) }
+
+
 end
