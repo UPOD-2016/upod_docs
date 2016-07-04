@@ -1,5 +1,5 @@
 require 'rails_helper'
-require "active_record/acts_as/matchers"
+
 
 RSpec.describe ArticleBlock, type: :model do
 
