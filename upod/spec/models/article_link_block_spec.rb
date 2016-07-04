@@ -1,4 +1,5 @@
 require 'rails_helper'
+require "active_record/acts_as/matchers"
 
 RSpec.describe ArticleLinkBlock, type: :model do
 
@@ -6,6 +7,7 @@ RSpec.describe ArticleLinkBlock, type: :model do
 # the url and label in the ArticleLinkBlock
   it { is_expected.to validate_presence_of(:url) }
   it { is_expected.to validate_presence_of(:label) }
+  it { is_expected.to act_as(:article_block) }
 
 # uses shoulda matcher along with RSpec to validate and test the length of
 # the url in the ArticleLinkBlock

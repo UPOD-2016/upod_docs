@@ -1,4 +1,5 @@
 require 'rails_helper'
+require "active_record/acts_as/matchers"
 
 RSpec.describe ArticleEquationBlock, type: :model do
 
@@ -6,6 +7,7 @@ RSpec.describe ArticleEquationBlock, type: :model do
 # of equation and description in the ArticleEquationBlock.
   it { is_expected.to validate_presence_of(:equation) }
   it { is_expected.to validate_presence_of(:label) }
+  it { is_expected.to act_as(:article_block) }
 
 # uses shoulda matcher along with rspec to test and validate the length of
 # the equation in the ArticleEquationBlock
