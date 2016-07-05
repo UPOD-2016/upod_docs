@@ -360,9 +360,25 @@ body {
 
 .textareaDiv {
 	resize: none;
-    overflow: auto;
+    overflow: auto;}
+
+    
+.dropbtn {
+    color: black;
+    padding: 0px;
+    font-size: 16px;
+    cursor: pointer;
 
 }
 
-	
 
+/* for article page */
+.dropdown:hover .dropbtn {
+    background-color: #ffd700;
+}
+
+/*padding test for article page*/ 
+#pad{
+    padding-left: 50%;
+    
+}
