@@ -13,7 +13,7 @@
 
 
 <symbol id="symbol1" overflow="visible" >
-<circle fill="green"  cx="0" cy="100" r="100" />
+<circle fill="green" stroke="black" cx="0" cy="100" r="100" />
 <line x1="0" x2="0" y1="200" y2="500" id="body" stroke="black" stroke-width="5" />
 <line x1="0" x2="-200" y1="250" y2="350" id="lefthand" stroke="black" stroke-width="5"/>
 <line x1="0" x2="200" y1="250" y2="350" id="righthand" stroke="black" stroke-width="5"/>
@@ -22,7 +22,7 @@
 </symbol>
 
 <symbol id="symbol2" overflow="visible">
-<circle fill="green"  cx="0" cy="700" r="100" />
+<circle fill="green" stroke="black" cx="0" cy="700" r="100" />
 <line x1="0" x2="0" y1="600" y2="300" id="body" stroke="black" stroke-width="5" />
 <line x1="0" x2="-200" y1="550" y2="450" id="lefthand" stroke="black" stroke-width="5"/>
 <line x1="0" x2="200" y1="550" y2="450" id="righthand" stroke="black" stroke-width="5"/>
@@ -32,18 +32,27 @@
 
 
 <line id="ground" fill="black" x1="0" x2="4000" y1="1000" y2="1000" stroke="black" stroke-width="3"/>
-<line id="roof" fill="black" x1="0" x2="2850" y1="200" y2="200" stroke="black" stroke-width="3"/>
-<line id="PathObject" fill="black" x1="400" y1="200" x2="3000" y2="1500" stroke="black" stroke-width="3"/>
-<line id="PathImage" fill="black" x1="1475" y1="1500" x2="2850" y2="200" stroke="black" stroke-width="3"/>
-<line id="ground2" fill="black" x1="0" x2="4000" y1="1475" y2="1475" stroke="black" stroke-width="3"/>
+<line id="roof" fill="black" x1="0" x2="3430" y1="200" y2="200" stroke="black" stroke-width="3"/>
+<line id="PathObject" fill="black" x1="1600" y1="200" x2="3430" y2="1800" stroke="black" stroke-width="3"/>
+<line id="PathImage" fill="black" x1="1600" y1="1800" x2="3430" y2="200" stroke="black" stroke-width="3"/>
+<line id="ground2" fill="black" x1="0" x2="4000" y1="1800" y2="1800" stroke="black" stroke-width="3"/>
 
-<circle id="Focalpoint" fill="black" cx="2000" cy="1000" r="20" />
-<text x="2000" y="1100" font-family="Verdana" font-size="70" fill="red" >F</text>
-<circle id="Centerpoint" fill="black" cx="1000" cy="1000" r="20" />
-<text x="1000" y="1100" font-family="Verdana" font-size="70" fill="red" >C</text>
 
-<circle id="Focalpoint" fill="black" cx="3000" cy="1000" r="20" />
 
+<circle id="Focalpoint" fill="black" cx="2515" cy="1000" r="20" />
+<text x="2600" y="1100" font-family="Verdana" font-size="70" fill="red" >F</text>
+<circle id="Centerpoint" fill="black" cx="1600" cy="1000" r="20" />
+<text x="1600" y="1100" font-family="Verdana" font-size="70" fill="red" >C</text>
+
+
+<!-- 
+    Circle of the mirror:
+    cx="1600"
+    cy="1000"
+    r="2000"
+    -->	
+
+	
 <!--
 d0=2600     //the distance of object from the mirror
 The distance of object from origin: 400
@@ -53,26 +62,24 @@ h0=800      //the height of the object
 hi=500      //the height of the image( I did this by scaling)
 The reason that I put x=2200 and y=1600 is that after sacling the x and y also changes so they will become their original values: x=1375 and y=1500
  transform="scale(0.625,0.625)"
+ 
+ <circle fill="none" stroke="black" stroke-width="20" cx="1600" cy="1000" r="2000" />
+  
  -->
  
- <use xlink:href="#symbol2" x="2360" y="1600" transform="scale(0.625,0.625)"
+ <use xlink:href="#symbol2" x="1600" y="1000" 
  id="image"   />
-<use xlink:href="#symbol1" x="400" y="200" transform="translate(0)"
+ 
+
+<use xlink:href="#symbol1" x="1600" y="200" transform="translate(0)"
  id="object"   />
  
-<!-- 
-		
-  <path
-     style="fill:#ffff00;fill-opacity:1;stroke:#000000;stroke-width:4.32355595;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     d="M 2459.3462,-24.606278 A 925.65769,1085.553 4.0314633 0 1 3004.4166,1044.6965 925.65769,1085.553 4.0314633 0 1 2439.274,1964.548 999.97577,1022.8329 0 0 0 3221.4166,967.58709 999.97577,1022.8329 0 0 0 2459.3462,-24.606278 Z"
-     id="path4688"
-     inkscape:connector-curvature="0" />
-	-->
-	
-	 <path
-     style="fill:#ffff00;fill-opacity:1;stroke:#000000;stroke-width:3.69208312;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     d="M 2639.1261,-53.588411 A 638.38817,1147.8297 1.0357345 0 1 3014.8275,1077.6943 638.38817,1147.8297 1.0357345 0 1 2625.2909,2050.8632 689.25485,1082.1192 0 0 0 3164.3995,996.11546 689.25485,1082.1192 0 0 0 2639.1261,-53.588411 Z"
-     id="path4688"
-     inkscape:connector-curvature="0" />
 
+    <path
+     style="fill:#ffff00;fill-opacity:1;stroke:#000000;stroke-width:4.10654831;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 3285.9721,-1164.0191 a 253.11863,2906.0368 0 0 1 153.4228,2670.3868 253.11863,2906.0368 0 0 1 -131.0834,2542.3212 283.30781,2670.1237 0 0 0 212.8753,-2584.1411 283.30781,2670.1237 0 0 0 -235.2147,-2628.5669 z"
+     id="path4153"
+     inkscape:connector-curvature="0" />
+	 
+	 
 </svg>
