@@ -1,0 +1,113 @@
+.lineBlack {
+     fill: none;
+      stroke: black;
+       stroke-width: 2px;
+        stroke-linecap: butt;
+	 stroke-linejoin: miter;
+	  stroke-opacity: 1;
+	  }
+
+.thickBlack {
+     fill: none;
+      stroke: black;
+       stroke-width: 4px;
+        stroke-linecap: butt;
+	 stroke-linejoin: miter;
+	  stroke-opacity: 1;
+	  }
+
+.dashed {
+     fill: none;
+      stroke: black;
+       stroke-width: 2px;
+        stroke-linecap: butt;
+	 stroke-linejoin: miter;
+	  stroke-opacity: 1;
+	   stroke-dasharray: 4px, 4px
+	   }
+
+.dashedSilver {
+     fill: none;
+      stroke: silver;
+       stroke-width: 2px;
+        stroke-dasharray: 4px, 4px
+	}
+
+.fillWhite {
+     fill: white;
+      stroke: black;
+       stroke-width: 1px;
+       }
+
+.strokeGreen {
+     fill: white;
+      stroke: green;
+       stroke-width: 1px;
+       }
+
+.allWhite {
+     fill: white;
+      stroke: white;
+       stroke-width: 1px;
+       }
+
+.text0 {
+     font-family: sans-serif;
+      font-size: 14pt;
+       font-weight: bold;
+        fill: black;
+	}
+
+.text1 {
+     font-family: sans-serif;
+      font-size: 14pt;
+       fill: black;
+       }
+
+.text2 {
+     font-family: sans-serif;
+      font-size: 12pt;
+       fill: black;
+       }
+
+.textSmall {
+     font-family: sans-serif;
+      font-size: 9pt;
+       font-weight: bold;
+        fill: black;
+	 stroke: none;
+	 }
+
+.guide1 {
+     stroke: red;
+      stroke-width: 1px;
+       fill: none;
+       }
+
+.guide2 {
+     stroke: green;
+      stroke-width: 1px;
+       fill: none;
+       }
+
+.superscript {
+     font-size: small;
+     }
+
+.subscript {
+     font-size: small;
+     }
+
+.button {
+    fill: LightGrey ;
+    stroke: Silver;
+    }
+
+.button:hover {
+    cursor: pointer;
+    }
+
+.button:active {
+    fill: DarkGrey;
+    stroke: black;
+    }
