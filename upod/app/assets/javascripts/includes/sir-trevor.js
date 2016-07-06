@@ -13,7 +13,7 @@
       SirTrevor;
 
   SirTrevor = root.SirTrevor = {};
-  SirTrevor.DEBUG = false;
+  SirTrevor.DEBUG = true;
   SirTrevor.SKIP_VALIDATION = false;
 
   SirTrevor.version = "0.3.0";
