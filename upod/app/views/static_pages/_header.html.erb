@@ -1,45 +1,39 @@
-<!-- Fixed navbar -->
-
-<nav class="navbar navbar-default headerContent">
-  <div class="container">
-    <!--
+<nav class="navbar navbar-inverse navbar-static-top">
+      <div class="container">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-	            <span class="sr-only">Toggle navigation</span>
-	            <span class="icon-bar"></span>
-	            <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-	        </button>
-            <div class="icon-menu">
-                <img src="../resources/menuIcon.png" width="42" height="42">
-            </div>
-            <a class="navbar-brand" href="home.html">UPOD</a>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <%= link_to root_path, class: 'navbar-brand' do %>
+            <%= image_tag 'upod_logo_color_v2.png', width: 100 %>
+          <% end %>
         </div>
-<<<<<<< HEAD
-        -->
-    <!-- <div id="navbar" class="collapse navbar-collapse"> -->
-    <ul class="nav navbar-nav navbar-left">
-      <!-- <li class="active">
-        <div class="icon-menu"> <img src="../resources/menuIcon.png" width="42" height="42"> </div>
-      </li>
-      -->
-      <%= link_to root_path do %>
-
-      <li> <%= image_tag("upod_logo_color_v2.png", style: "width:28% ; height:14%") %> </li>
-      <% end %>
-    </ul>
-    <!--search -->
-    <br />
-    <div class="col-sm-3 col-md-3 pull-right">
-      <form class="navbar-form" role="search">
-        <div class="input-group">
-          <input type="text" class="form-control" placeholder="Search" name="q">
-          <div class="input-group-btn">
-            <button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-search"></span></button>
-          </div>
-        </div>
-      </form>
-    </div>
-    <!--search end -->
-  </div>
-</nav>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="../navbar/">Default</a></li>
+            <li class="active"><a href="./">Static top <span class="sr-only">(current)</span></a></li>
+            <li><a href="../navbar-fixed-top/">Fixed top</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>

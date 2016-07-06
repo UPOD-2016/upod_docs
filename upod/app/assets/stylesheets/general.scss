@@ -1,31 +1,37 @@
-
 /*General page styling*/
-html, body {
-   height: 100%;
+
+html {
+  height: 100%;
 }
 
-body{
-    background-color: white;
-    left: 0;
-    margin: 0;
-    overflow: auto;
-	padding: 0;
-    overflow-x: hidden;
-    position: relative;
+body {
+  height: 100%;
+  background-color: white;
+  left: 0;
+  margin: 0;
+  overflow: auto;
+  padding: 0;
+  overflow-x: hidden;
+  position: relative;
 }
-h1{
+
+h1 {
   font-size: 50px;
 }
-h2{
+
+h2 {
   font-size: 40px;
 }
-h3{
+
+h3 {
   font-size: 30px;
 }
-h4{
+
+h4 {
   font-size: 20px;
 }
-p{
+
+p {
   font-size: 12px;
 }
 
@@ -33,46 +39,50 @@ p{
   margin-top: -20px;
 }
 
-.footerContent{
-  color:#ffcc00;
+.footerContent {
+  color: #ffcc00;
   background-color: #330072;
   text-align: center;
   padding: 3px;
 }
-.headerContent{
-  color:#ffcc00;
+
+.headerContent {
+  color: #ffcc00;
   background-color: #330072;
 }
-.jumbotron {
-    background-color: #f5f5f5;
-}
-.options-panel{
+
+.jumbotron, .options-panel {
   background-color: #f5f5f5;
 }
+
 /* homepage styling */
+
 .homeBody {
-    left: 0;
-    margin: 0;
-    overflow: hidden;
-    position: relative;
-    background-color: #330072;
-	color:#330072
+  left: 0;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  background-color: #330072;
+  color: #330072;
 }
-.homeJumbotron{
+
+.homeJumbotron {
   background-color: #330072;
 }
 
 /*aboutpage styling*/
-.aboutBody {
-	margin-top: 30px;
-	background-color: #FFFFFF;
-}
-.aboutCommentBox{
-	margin-bottom: 30px;
 
+.aboutBody {
+  margin-top: 30px;
+  background-color: #FFFFFF;
+}
+
+.aboutCommentBox {
+  margin-bottom: 30px;
 }
 
 /* Login Page Sytle */
+
 .login-page {
   width: 360px;
   padding: 8% 0 0;
@@ -89,33 +99,39 @@ p{
   padding: 45px;
   text-align: center;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  input {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: white;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+  button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #ffcc00;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    &:hover {
+      background: #e6b800;
+    }
+  }
 }
 
-.loginForm input {
-  font-family: "Roboto", sans-serif;
-  outline: 0;
-  background: white;
-  width: 100%;
-  border: 0;
-  margin: 0 0 15px;
-  padding: 15px;
-  box-sizing: border-box;
-  font-size: 14px;
+.form button {
+  &:active, &:focus {
+    background: #e6b800;
+  }
 }
-.loginForm button {
-  font-family: "Roboto", sans-serif;
-  text-transform: uppercase;
-  outline: 0;
-  background: #ffcc00;
-  width: 100%;
-  border: 0;
-  padding: 15px;
-  color: #FFFFFF;
-  font-size: 14px;
-}
-.loginForm button:hover,.form button:active,.form button:focus {
-  background: #e6b800;
-}
+
 .loginForm .loginMessage {
   margin: 15px 0 0;
   color: #e6b800;
@@ -126,85 +142,97 @@ p{
   position: relative;
   z-index: 1;
   margin: 0 auto;
+  &:before, &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
 }
-.loginContainer:before, .loginContainer:after {
-  content: "";
-  display: block;
-  clear: both;
-}
+
 /**********************************************
 *               New push menu                 *
 ***********************************************/
+
 #menuContainer {
-   display: flex;
-   min-height: 100%;
+  display: flex;
+  min-height: 100%;
 }
+
 input[type=checkbox] {
-   position: absolute;
-   opacity: 0;
+  position: absolute;
+  opacity: 0;
 }
+
 label {
-   position: absolute;
-   top: 2%;
-   left: 1%;
-   z-index: 1;
-   display: block;
-   font-size:3em;
-   color: #ffcc00;
-   cursor: pointer;
-   transform: translate3d(0, 0, 0);
-   transition: transform .4s;
+  position: absolute;
+  top: 2%;
+  left: 1%;
+  z-index: 1;
+  display: block;
+  font-size: 3em;
+  color: #ffcc00;
+  cursor: pointer;
+  transform: translate3d(0, 0, 0);
+  transition: transform .4s;
 }
+
 input[type=checkbox]:checked ~ label {
-   transform: translate3d(250px, 0, 0) rotate(90deg);
+  transform: translate3d(250px, 0, 0) rotate(90deg);
 }
+
 .page-content {
-   width:100%;
-   background: inherit;
-   transform: translate3d(0, 0, 0);
-   transition: transform .4s;
+  width: 100%;
+  background: inherit;
+  transform: translate3d(0, 0, 0);
+  transition: transform .4s;
 }
-input[type=checkbox]:checked ~ .page-content {
-   transform: translate3d(250px, 0, 0);
+
+input[type=checkbox]:checked ~ {
+  .page-content {
+    transform: translate3d(250px, 0, 0);
+  }
+  .slide-menu {
+    transform: translate3d(0, 0, 0);
+    .menu li {
+      width: 100%;
+    }
+  }
 }
-input[type=checkbox]:checked ~ .slide-menu {
-   transform: translate3d(0, 0, 0);
-}
-input[type=checkbox]:checked ~ .slide-menu .menu li {
-   width: 100%;
-}
+
 .slide-menu {
-   transform: translate3d(-250px, 0, 0);
-   position: absolute;
-   width: 250px;
-   background: #800080;
-   color: #ddd;
-   left: 0;
-   height: 100%;
-   transition: all .4s;
+  transform: translate3d(-250px, 0, 0);
+  position: absolute;
+  width: 250px;
+  background: #800080;
+  color: #ddd;
+  left: 0;
+  height: 100%;
+  transition: all .4s;
+  h1 {
+    margin: 10px;
+    text-shadow: 1px 1px 1px #000;
+  }
 }
-.slide-menu h1 {
-   margin: 10px;
-   text-shadow: 1px 1px 1px #000;
-}
+
 .menu {
-   list-style: none;
-   padding: 0;
-   margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  #menuLink {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1em;
+    padding: 15px;
+    background: #800080;
+    border-bottom: 1px solid #ffffff;
+    &:hover {
+      background: #4d004d;
+      box-shadow: inset 0px 1px 1px #475059;
+    }
+  }
 }
-.menu #menuLink {
-   display: block;
-   text-decoration: none;
-   color: #fff;
-   font-size: 1.1em;
-   padding: 15px;
-   background: #800080;
-   border-bottom: 1px solid #ffffff;
-}
-.menu #menuLink:hover {
-   background: #4d004d;
-   box-shadow: inset 0px 1px 1px #475059;
-}
+
 /*
 .menu {
     background: #202024 url('../resources/menuBack.png') repeat left top;
@@ -257,101 +285,139 @@ input[type=checkbox]:checked ~ .slide-menu .menu li {
 }
 */
 /* More dropdown menu */
+
 .dropbtn {
-    background-color: #FFFFFF;
-    color: purple;
-    padding: 15px 30px;       /* default: 16px */
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    margin-right: 130px;
-    margin-top: 60px;
+  background-color: #FFFFFF;
+  color: purple;
+  padding: 15px 30px;
+  /* default: 16px */
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  margin-right: 130px;
+  margin-top: 60px;
 }
 
 .dropdown {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 
 .dropdown-content {
-    display: none;
-    position: absolute;
-	right: 0;
-    background-color: #F5F5DC; /* default: #f9f9f9 */
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    margin-right: 130px;
-
-}
-
-.dropdown-content a {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #F5F5DC;
+  /* default: #f9f9f9 */
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  margin-right: 130px;
+  a {
     color: purple;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-
+    &:hover {
+      background-color: #f9f9f9;
+    }
+  }
 }
 
-.dropdown-content a:hover {background-color: #f9f9f9}  /*default: #f1f1f1 */
+/*default: #f1f1f1 */
 
-.dropdown:hover .dropdown-content {
+.dropdown:hover {
+  .dropdown-content {
     display: block;
-}
-
-.dropdown:hover .dropbtn {
-    background-color: #F5DEB3; /*default: #3e8e41 */
+  }
+  .dropbtn {
+    background-color: #F5DEB3;
+    /*default: #3e8e41 */
+  }
 }
 
 /*           admin_page                 */
 
-
 #header_button_container {
-    position: absolute;
-    right: 0px;
+  position: absolute;
+  right: 0px;
 }
 
-
 body {
-    margin: 0;
+  margin: 0;
 }
 
 #header {
-    background-image: url("../resources/Bullet_Image_Crop1.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    color: black;
-    background-size: cover;
-    position: relative;
-    width: 100%;
-    height: 500px;
+  background-image: url("../resources/Bullet_Image_Crop1.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: black;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 500px;
 }
 
 #header_title {
-    text-align: center;
-    padding: 180px;
-    font-size: 25px;
-	color: white;
+  text-align: center;
+  padding: 180px;
+  font-size: 25px;
+  color: white;
 }
 
 #body_text {
-    margin: auto;
-    width: 70%;
-    font-size: 20px;
+  margin: auto;
+  width: 70%;
+  font-size: 20px;
 }
 
 #input {
-    font-size: 20px;
-    font-family: "Times New Roman";
-    border-style: none;
-    border-color: Transparent;
-    overflow-y:hidden;
+  font-size: 20px;
+  font-family: "Times New Roman";
+  border-style: none;
+  border-color: Transparent;
+  overflow-y: hidden;
 }
 
 #footer {
-    text-align: center;
-    padding: 50px 0;
-    width: 100%;
-    height: 120px;
-    background-color: green;
-
+  text-align: center;
+  padding: 50px 0;
+  width: 100%;
+  height: 120px;
+  background-color: green;
+}
+.st-text-block {
+  line-height: 1.6;
+}
+.st-text-block--heading {
+  color: #000000;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+.st-block-replacer-controls__button {
+  color: #4A4A4A;
+  font-family: 'Proxima Nova';
+  font-weight: 700;
+}
+.st-block[data-type="quote"] {
+  position: relative;
+  &:before {
+    background: url('../icons/quote-open.svg') no-repeat;
+    width: 54px;
+    height: 49px;
+    position: absolute;
+    top: 0.5em;
+    content: "";
+    display: block;
+    left: 56px;
+  }
+  &:after {
+    background: url('../icons/quote-close.svg') no-repeat;
+    width: 54px;
+    height: 49px;
+    position: absolute;
+    bottom: 7.6875em;
+    content: "";
+    display: block;
+    right: 56px;
+  }
 }

@@ -9,7 +9,9 @@
     <div class="jumbotron homeJumbotron">
       <div id = "content" style="margin-top:5%" class="row row-centered">
         <center>
-          <a href="home.html"> <img src="../resources/logo.png"> </a>
+          <%= link_to root_path do %>
+            <%= image_tag 'logo.png' %>
+          <% end %>
         </center>
         <div class="form-group-lg col-md-3"></div>
         <div class="form-group-lg col-md-5">
