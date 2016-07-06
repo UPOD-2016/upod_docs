@@ -1,3 +1,11 @@
+GIT
+  remote: git://github.com/cschiewek/devise_ldap_authenticatable.git
+  revision: 8c980a55981c1ccd9f284779bbe77d1209355252
+  specs:
+    devise_ldap_authenticatable (0.8.6)
+      devise (>= 3.4.1)
+      net-ldap (>= 0.6.0, <= 0.11)
+
 GEM
   remote: https://rubygems.org/
   remote: https://rails-assets.org/
@@ -49,6 +57,7 @@ GEM
     arel (6.0.3)
     autoprefixer-rails (6.3.6.2)
       execjs
+    bcrypt (3.1.11)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
     bootstrap-sass (3.3.6)
@@ -66,6 +75,12 @@ GEM
     coffee-script-source (1.10.0)
     concurrent-ruby (1.0.2)
     debug_inspector (0.0.2)
+    devise (4.2.0)
+      bcrypt (~> 3.0)
+      orm_adapter (~> 0.1)
+      railties (>= 4.1.0, < 5.1)
+      responders
+      warden (~> 1.2.3)
     diff-lcs (1.2.5)
     elasticsearch (1.0.18)
       elasticsearch-api (= 1.0.18)
@@ -113,8 +128,10 @@ GEM
     multi_json (1.12.1)
     multipart-post (2.0.0)
     mysql2 (0.3.20)
+    net-ldap (0.11)
     nokogiri (1.6.7.2)
       mini_portile2 (~> 2.0.0.rc2)
+    orm_adapter (0.5.0)
     rack (1.6.4)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -149,6 +166,8 @@ GEM
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
     rake (11.1.2)
+    responders (2.2.0)
+      railties (>= 4.2.0, < 5.1)
     rspec-core (3.4.4)
       rspec-support (~> 3.4.0)
     rspec-expectations (3.4.0)
@@ -196,6 +215,8 @@ GEM
       thread_safe (~> 0.1)
     uglifier (3.0.0)
       execjs (>= 0.3.0, < 3)
+    warden (1.2.6)
+      rack (>= 1.0)
     web-console (2.3.0)
       activemodel (>= 4.0)
       binding_of_caller (>= 0.7.2)
@@ -211,6 +232,8 @@ DEPENDENCIES
   annotate
   bootstrap-sass
   byebug
+  devise
+  devise_ldap_authenticatable!
   elasticsearch
   elasticsearch-extensions
   elasticsearch-model
