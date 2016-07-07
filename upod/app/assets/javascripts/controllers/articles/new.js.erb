@@ -2,21 +2,25 @@
 
 
 $(function(){
- // SirTrevor.DEBUG = true;
-  // SirTrevor.scribeDebug = true;
-  // SirTrevor.language = "en";
+
   SirTrevor.setDefaults({
     iconUrl: "<%= asset_path('sir-trevor-icons.svg') %>",
     // uploadUrl: "/api/upload"
   });
+  SirTrevor.config.debug = true;
+  SirTrevor.config.scribeDebug = true;
+  SirTrevor.config.language = "en";
 
-  new SirTrevor.Editor({
+  window.editor = new SirTrevor.Editor({
     el: $(".js-sir-trevor-instance").get(0),
     blockTypes: [
       "Heading",
+      "Text",
       "List",
+      "Quote",
       "Image",
       "Video",
+      "Tweet"
     ]
   });
 });
