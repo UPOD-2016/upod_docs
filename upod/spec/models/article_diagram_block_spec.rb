@@ -1,5 +1,8 @@
 require 'rails_helper'
 
 RSpec.describe ArticleDiagramBlock, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+
+    it { should belong_to(:diagram) }
+    it { is_expected.to act_as(:article_block) }
+
 end
