@@ -3,7 +3,8 @@ require 'rails_helper'
 RSpec.describe ArticleLinkBlock, type: :model do
 
 # uses shoulda matcher along with RSpec to validate and test the presence of
-# the url and label in the ArticleLinkBlock
+# the url, source and video id in the ArticleLinkBlock. As well as if it
+# acts as an article_block
   it { is_expected.to validate_presence_of(:url) }
   it { is_expected.to validate_presence_of(:source) }
   it { is_expected.to validate_presence_of(:video_id) }
@@ -24,4 +25,5 @@ RSpec.describe ArticleLinkBlock, type: :model do
       is_at_most(255).
       on(:create)
   end
+
 end

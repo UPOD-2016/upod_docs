@@ -14,8 +14,9 @@ RSpec.describe Article, type: :model do
       on(:create)
   end
 
+# uses rspec to test whether article has many blocks
   it do
 	should have_many :blocks
   end
-  
+
 end
