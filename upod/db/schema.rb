@@ -33,7 +33,7 @@ ActiveRecord::Schema.define(version: 20160706003010) do
 
   create_table "article_link_blocks", force: :cascade do |t|
     t.string "url",      limit: 255
-    t.string "source",   limit: 256, null: false
+    t.string "source",   limit: 255
     t.string "video_id", limit: 255, null: false
   end
 
