@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160707005257) do
+ActiveRecord::Schema.define(version: 20160707011536) do
 
   create_table "article_blocks", force: :cascade do |t|
     t.integer "position",     limit: 4
@@ -24,6 +24,12 @@ ActiveRecord::Schema.define(version: 20160707005257) do
 
   create_table "article_constant_blocks", force: :cascade do |t|
     t.integer "constant_id", limit: 4
+  end
+
+  create_table "article_diagram_blocks", force: :cascade do |t|
+    t.integer  "diagram_id", limit: 4
+    t.datetime "created_at",           null: false
+    t.datetime "updated_at",           null: false
   end
 
   create_table "article_equation_blocks", force: :cascade do |t|
@@ -60,6 +66,13 @@ ActiveRecord::Schema.define(version: 20160707005257) do
     t.integer  "article_id", limit: 4
     t.datetime "created_at",           null: false
     t.datetime "updated_at",           null: false
+  end
+
+  create_table "diagrams", force: :cascade do |t|
+    t.text     "body",       limit: 65535
+    t.string   "label",      limit: 255
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
   end
 
   create_table "sessions", force: :cascade do |t|
