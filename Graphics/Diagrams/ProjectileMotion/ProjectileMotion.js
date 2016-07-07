@@ -20,8 +20,11 @@ function launch() {
     var X2 = ((Distance.toFixed(0)/1)+100);
     var Y  = (500-2*MaxHeight.toFixed(0));
     var path = "M 100 500 Q " + X1+" "+Y+" "+X2+" 500";
-
+    //curve.style.stroke-dasharray = curve.getTotalLength();
+    
     TimeOut.textContent = TimeOfFlight.toFixed(2);
+    //TimeOut.textContent = curve.getTotalLength();
+
     DistanceOut.textContent = Distance.toFixed(2);
     HeightOut.textContent = MaxHeight.toFixed(2);
     EndText.textContent = Distance.toFixed(2);
