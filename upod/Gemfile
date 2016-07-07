@@ -50,6 +50,9 @@ gem "rails-erd"
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+gem "administrate", "~> 0.2.2"
+gem "bourbon"
+
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
