@@ -1,11 +1,19 @@
 #!/bin/bash
 # AUTHOR:   Robert Morouney
-# EMAIL:    robert@morouney.com 
+# EMAIL:    robert@morouney.com
 # FILE:     update_stats.sh
 # CREATED:  2016-07-07 18:31:30
-# MODIFIED: 2016-07-07 18:34:29
+# MODIFIED: 2016-07-07 18:48:08
 
 echo 'UPDATEING STATS.......'
-git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all >rev_hist_master.txt
-echo './rev_hist_master.txt Updated'
+# stdout version
+git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all >rev_hist_master.out
+echo './rev_hist.out Updated'
 
+#Text Version
+git log --graph --oneline --decorate --date=relative --all >rev_hist_master.txt
+echo './rev_hist.txt Updated'
+
+#HTML Version
+git log --all --date=relative --pretty=format:'<a href="http://github.com/UPOD-2016/UPOD/commit/%H"><b>%aD</b></a><br/><li><i> %s</i> -<b>%an</b> </li><br/> ' >rev_hist.html 
+echo './rev_hist.html Updated'
