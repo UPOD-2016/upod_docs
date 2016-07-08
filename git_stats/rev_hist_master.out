@@ -1,0 +1,1041 @@
+* [1;34m7b6a291[m - [1;36mThu, 7 Jul 2016 19:01:37 -0400[m [1;32m(25 minutes ago)[m[1;33m (HEAD -> master, origin/master, origin/HEAD)[m
+|           [37mI thought I could do better, and did (added html format)[m [2;37m- rmoro[m
+* [1;34mb9ba5a6[m - [1;36mThu, 7 Jul 2016 18:35:58 -0400[m [1;32m(50 minutes ago)[m[1;33m[m
+|           [37mwrote script to update stats for dbrown each week, run with ./update_stats.sh[m [2;37m- rmoro[m
+* [1;34mc13d6dd[m - [1;36mThu, 7 Jul 2016 18:25:25 -0400[m [1;32m(61 minutes ago)[m[1;33m[m
+|           [37madded some devise options[m [2;37m- rmoro[m
+* [1;34mb554bde[m - [1;36mThu, 7 Jul 2016 18:11:53 -0400[m [1;32m(74 minutes ago)[m[1;33m[m
+|           [37mAdded some views for user login[m [2;37m- rmoro[m
+* [1;34mbafc461[m - [1;36mThu, 7 Jul 2016 17:23:52 -0400[m [1;32m(2 hours ago)[m[1;33m[m
+|           [37mfixed up the document[m [2;37m- franco-wong[m
+* [1;34mfee46ef[m - [1;36mThu, 7 Jul 2016 04:50:41 +0000[m [1;32m(19 hours ago)[m[1;33m[m
+|           [37mEdit view of user dashboard[m [2;37m- Kieran O'Driscoll[m
+* [1;34m262c1ac[m - [1;36mThu, 7 Jul 2016 04:45:54 +0000[m [1;32m(19 hours ago)[m[1;33m[m
+|           [37mAdd inital admin panel[m [2;37m- Kieran O'Driscoll[m
+* [1;34m44649f5[m - [1;36mThu, 7 Jul 2016 03:06:39 +0000[m [1;32m(20 hours ago)[m[1;33m[m
+|           [37mAdd comments to tests[m [2;37m- Kieran O'Driscoll[m
+* [1;34m45db21b[m - [1;36mWed, 6 Jul 2016 22:31:27 -0400[m [1;32m(21 hours ago)[m[1;33m[m
+|           [37mtest commit record[m [2;37m- Eric Jiang[m
+* [1;34m177555b[m - [1;36mThu, 7 Jul 2016 01:47:52 +0000[m [1;32m(22 hours ago)[m[1;33m[m
+|           [37mAdd more testing and fix article_diagram_block.rb[m [2;37m- Kieran O'Driscoll[m
+*   [1;34mb9e2bfe[m - [1;36mThu, 7 Jul 2016 01:19:50 +0000[m [1;32m(22 hours ago)[m[1;33m[m
+|\            [37mMerge branch 'master' of github.com:UPOD-2016/UPOD[m [2;37m- Mike Roher[m
+| * [1;34m8f1f3d5[m - [1;36mWed, 6 Jul 2016 21:16:51 -0400[m [1;32m(22 hours ago)[m[1;33m[m
+| |           [37mremove general files - no use for these, and in the wrong file format in any case.[m [2;37m- Tom[m
+* | [1;34m175d049[m - [1;36mThu, 7 Jul 2016 01:19:44 +0000[m [1;32m(22 hours ago)[m[1;33m[m
+|/            [37madded diagram table[m [2;37m- Mike Roher[m
+* [1;34m2e24b96[m - [1;36mThu, 7 Jul 2016 01:12:41 +0000[m [1;32m(22 hours ago)[m[1;33m[m
+|           [37msirtrevor small fixes[m [2;37m- Mike Roher[m
+*   [1;34mf49a70d[m - [1;36mThu, 7 Jul 2016 00:59:13 +0000[m [1;32m(22 hours ago)[m[1;33m[m
+|\            [37mMerge branch 'master' of github.com:UPOD-2016/UPOD[m [2;37m- Mike Roher[m
+| * [1;34mfb0138f[m - [1;36mWed, 6 Jul 2016 20:52:54 -0400[m [1;32m(23 hours ago)[m[1;33m[m
+| |           [37mremoved migration mistake[m [2;37m- rmoro[m
+* | [1;34me00535e[m - [1;36mThu, 7 Jul 2016 00:59:04 +0000[m [1;32m(22 hours ago)[m[1;33m[m
+| |           [37madded contributor method[m [2;37m- Mike Roher[m
+* |   [1;34m80614e8[m - [1;36mThu, 7 Jul 2016 00:46:02 +0000[m [1;32m(23 hours ago)[m[1;33m[m
+|\ \            [37mMerge branch 'master' of github.com:UPOD-2016/UPOD[m [2;37m- Mike Roher[m
+| |/  
+| *   [1;34ma656ce1[m - [1;36mWed, 6 Jul 2016 19:59:43 -0400[m [1;32m(23 hours ago)[m[1;33m[m
+| |\            [37mMerge branch 'master' of https://github.com/UPOD-2016/UPOD[m [2;37m- rmoro[m
+| | * [1;34m1f181f6[m - [1;36mWed, 6 Jul 2016 19:45:39 -0400[m [1;32m(24 hours ago)[m[1;33m[m
+| | |           [37mUpdate database.yml[m [2;37m- Robert Morouney[m
+| | * [1;34me49c5d2[m - [1;36mWed, 6 Jul 2016 19:42:48 -0400[m [1;32m(24 hours ago)[m[1;33m[m
+| | |           [37mUpdate database.yml[m [2;37m- Robert Morouney[m
+| * | [1;34m8f20df8[m - [1;36mWed, 6 Jul 2016 19:59:28 -0400[m [1;32m(23 hours ago)[m[1;33m[m
+| |/            [37madded a session model[m [2;37m- rmoro[m
+| * [1;34m7877bbc[m - [1;36mWed, 6 Jul 2016 19:22:01 -0400[m [1;32m(24 hours ago)[m[1;33m[m
+| |           [37mdatabase additions for users and session tracking[m [2;37m- rmoro[m
+| * [1;34m2ff59cb[m - [1;36mWed, 6 Jul 2016 19:20:25 -0400[m [1;32m(24 hours ago)[m[1;33m[m
+| |           [37msession tracking[m [2;37m- rmoro[m
+| * [1;34md1853b5[m - [1;36mWed, 6 Jul 2016 19:19:19 -0400[m [1;32m(24 hours ago)[m[1;33m[m
+| |           [37madding session table[m [2;37m- rmoro[m
+| * [1;34mfd9e7ed[m - [1;36mWed, 6 Jul 2016 19:19:02 -0400[m [1;32m(24 hours ago)[m[1;33m[m
+| |           [37madding session table[m [2;37m- rmoro[m
+| * [1;34m09c3320[m - [1;36mWed, 6 Jul 2016 16:58:43 -0400[m [1;32m(26 hours ago)[m[1;33m[m
+| |           [37madded alert and notice areas to application layout[m [2;37m- rmoro[m
+| * [1;34mc76192c[m - [1;36mWed, 6 Jul 2016 16:19:33 -0400[m [1;32m(27 hours ago)[m[1;33m[m
+| |           [37madded user model and LDAP models[m [2;37m- rmoro[m
+| * [1;34m84fa2d4[m - [1;36mWed, 6 Jul 2016 14:26:10 -0400[m [1;32m(29 hours ago)[m[1;33m[m
+| |           [37mdeleted the back end RD .doc files[m [2;37m- Clive Shen[m
+* | [1;34me875344[m - [1;36mThu, 7 Jul 2016 00:45:58 +0000[m [1;32m(23 hours ago)[m[1;33m[m
+| |           [37mcleaning up html[m [2;37m- Mike Roher[m
+| | * [1;34m71c6eac[m - [1;36mWed, 6 Jul 2016 20:58:40 +0000[m [1;32m(26 hours ago)[m[1;33m (origin/administrate)[m
+| | |           [37mNew article redirect[m [2;37m- Kieran O'Driscoll[m
+| | * [1;34m1ff69ae[m - [1;36mWed, 6 Jul 2016 20:35:25 +0000[m [1;32m(27 hours ago)[m[1;33m[m
+| |/            [37mAdd administate gem[m [2;37m- Kieran O'Driscoll[m
+| * [1;34mf4af4b5[m - [1;36mWed, 6 Jul 2016 12:55:57 -0400[m [1;32m(31 hours ago)[m[1;33m[m
+| |           [37mRemoved spaces from name[m [2;37m- Tom West[m
+| * [1;34m2b6ca90[m - [1;36mWed, 6 Jul 2016 12:55:27 -0400[m [1;32m(31 hours ago)[m[1;33m[m
+| |           [37mRemoved spaces from name[m [2;37m- Tom West[m
+| * [1;34m8dc0900[m - [1;36mWed, 6 Jul 2016 12:54:57 -0400[m [1;32m(31 hours ago)[m[1;33m[m
+| |           [37mRemoved spaces from name[m [2;37m- Tom West[m
+| * [1;34mdff5ab9[m - [1;36mWed, 6 Jul 2016 12:52:57 -0400[m [1;32m(31 hours ago)[m[1;33m[m
+| |           [37mRemoved spaces from name[m [2;37m- Tom West[m
+| * [1;34m219084b[m - [1;36mWed, 6 Jul 2016 09:50:22 -0400[m [1;32m(34 hours ago)[m[1;33m[m
+| |           [37mVersion 1 of fundamentals research in modular form[m [2;37m- Kevzys[m
+| * [1;34me1b6f79[m - [1;36mTue, 5 Jul 2016 21:48:55 -0400[m [1;32m(2 days ago)[m[1;33m[m
+| |           [37mupdated optics[m [2;37m- JeffChung2[m
+| * [1;34m3b74d91[m - [1;36mTue, 5 Jul 2016 21:21:53 -0400[m [1;32m(2 days ago)[m[1;33m[m
+| |           [37mUSE GDOCS TIME TRACKING[m [2;37m- Mike Roher[m
+| * [1;34mee328af[m - [1;36mTue, 5 Jul 2016 21:09:28 -0400[m [1;32m(2 days ago)[m[1;33m[m
+| |           [37mAdd files via upload[m [2;37m- viss3240[m
+| * [1;34me64714e[m - [1;36mTue, 5 Jul 2016 21:04:10 -0400[m [1;32m(2 days ago)[m[1;33m[m
+| |           [37mAdd files via upload[m [2;37m- giacrom[m
+| * [1;34maae328e[m - [1;36mTue, 5 Jul 2016 21:01:12 -0400[m [1;32m(2 days ago)[m[1;33m[m
+| |           [37mUpdate free_body.html[m [2;37m- josephvannelli[m
+| * [1;34mfec2b99[m - [1;36mTue, 5 Jul 2016 21:01:02 -0400[m [1;32m(2 days ago)[m[1;33m[m
+| |           [37mDelete svg.css[m [2;37m- viss3240[m
+| * [1;34me0c6908[m - [1;36mTue, 5 Jul 2016 21:00:22 -0400[m [1;32m(2 days ago)[m[1;33m[m
+|/            [37mDelete elastic_collision.html[m [2;37m- giacrom[m
+*   [1;34m8fb7eb5[m - [1;36mWed, 6 Jul 2016 00:59:04 +0000[m [1;32m(2 days ago)[m[1;33m[m
+|\            [37mMerge branch 'master' of github.com:UPOD-2016/UPOD[m [2;37m- Mike Roher[m
+| * [1;34mf6a8f58[m - [1;36mTue, 5 Jul 2016 20:55:39 -0400[m [1;32m(2 days ago)[m[1;33m[m
+| |           [37mAdd files via upload[m [2;37m- giacrom[m
+* |   [1;34mec2394a[m - [1;36mWed, 6 Jul 2016 00:58:55 +0000[m [1;32m(2 days ago)[m[1;33m[m
+|\ \            [37mfixed merge conflicts[m [2;37m- Mike Roher[m
+| |/  
+| * [1;34m0bd0010[m - [1;36mTue, 5 Jul 2016 20:51:01 -0400[m [1;32m(2 days ago)[m[1;33m[m
+| |           [37mUpdate readme.txt[m [2;37m- giacrom[m
+| * [1;34m9eb2f7a[m - [1;36mTue, 5 Jul 2016 20:49:59 -0400[m [1;32m(2 days ago)[m[1;33m[m
+| |           [37mCompleted Hierarchy and Tag List for entire Physics Research[m [2;37m- Aman Kumar[m
+| * [1;34m71c5eb8[m - [1;36mTue, 5 Jul 2016 20:48:53 -0400[m [1;32m(2 days ago)[m[1;33m[m
+| |           [37mAdded link blocks to article editor and changed the link_block model[m [2;37m- swar8080[m
+| * [1;34m7a14f7b[m - [1;36mWed, 6 Jul 2016 00:31:22 +0000[m [1;32m(2 days ago)[m[1;33m[m
+| |           [37mMigration to change acttable attributes[m [2;37m- Kieran O'Driscoll[m
+| * [1;34m5b328b5[m - [1;36mTue, 5 Jul 2016 20:11:24 -0400[m [1;32m(2 days ago)[m[1;33m[m
+| |           [37mCompleted standard template for classical mechanics[m [2;37m- Aman Kumar[m
+* | [1;34mbff532b[m - [1;36mWed, 6 Jul 2016 00:49:18 +0000[m [1;32m(2 days ago)[m[1;33m[m
+|/            [37mNew Navbar, Updated Sir Trevor, Started Implmentation of Image Blcok[m [2;37m- Mike Roher[m
+* [1;34m878ab03[m - [1;36mTue, 5 Jul 2016 16:38:50 -0400[m [1;32m(2 days ago)[m[1;33m[m
+|           [37mupdate frontendJS.js (redundant lines)[m [2;37m- Vik Sharma[m
+* [1;34m3433e01[m - [1;36mTue, 5 Jul 2016 16:22:45 -0400[m [1;32m(2 days ago)[m[1;33m[m
+|           [37mnested collapsable articles in admin page[m [2;37m- tudorbertiean[m
+* [1;34m213d49f[m - [1;36mTue, 5 Jul 2016 14:02:50 -0400[m [1;32m(2 days ago)[m[1;33m[m
+|           [37mFixed an issue where the header wouldn't show on all pages[m [2;37m- Ryan[m
+* [1;34mb4ce7a2[m - [1;36mTue, 5 Jul 2016 13:53:37 -0400[m [1;32m(2 days ago)[m[1;33m[m
+|           [37mAdd files via upload[m [2;37m- viss3240[m
+* [1;34m45d4a0c[m - [1;36mTue, 5 Jul 2016 13:49:24 -0400[m [1;32m(2 days ago)[m[1;33m[m
+|           [37mUpdate readme.txt[m [2;37m- viss3240[m
+* [1;34m74cbb15[m - [1;36mTue, 5 Jul 2016 13:43:31 -0400[m [1;32m(2 days ago)[m[1;33m[m
+|           [37madded drop down menu to article page[m [2;37m- vsutaria[m
+* [1;34md9f7935[m - [1;36mTue, 5 Jul 2016 13:40:49 -0400[m [1;32m(2 days ago)[m[1;33m[m
+|           [37mUpdate Diagrams.csv[m [2;37m- viss3240[m
+* [1;34m42facf3[m - [1;36mTue, 5 Jul 2016 12:19:54 -0400[m [1;32m(2 days ago)[m[1;33m[m
+|           [37mUpdated version of concave mirror[m [2;37m- Ensieh Mollazadeh[m
+* [1;34m3d1420b[m - [1;36mTue, 5 Jul 2016 10:01:49 -0400[m [1;32m(2 days ago)[m[1;33m[m
+|           [37mdeleted editor for another one[m [2;37m- Omid[m
+* [1;34mad9eef5[m - [1;36mSun, 3 Jul 2016 23:42:58 -0400[m [1;32m(4 days ago)[m[1;33m[m
+|           [37mfixed an entry[m [2;37m- ghiyo[m
+* [1;34mc0fc21a[m - [1;36mTue, 5 Jul 2016 06:46:43 -0400[m [1;32m(3 days ago)[m[1;33m[m
+|           [37mmake slide menu easier to maintain and update template.html[m [2;37m- Vik Sharma[m
+* [1;34mf8ef430[m - [1;36mMon, 4 Jul 2016 12:31:12 -0400[m [1;32m(3 days ago)[m[1;33m[m
+|           [37mFixed an issue of the push menu cutting off before end of page[m [2;37m- Ryan[m
+*   [1;34m0bd9e18[m - [1;36mMon, 4 Jul 2016 11:32:30 -0400[m [1;32m(3 days ago)[m[1;33m[m
+|\            [37mMerge branch 'master' of https://github.com/UPOD-2016/UPOD[m [2;37m- muttahirzia@gmail.com[m
+| * [1;34mdf50f2e[m - [1;36mMon, 4 Jul 2016 11:27:39 -0400[m [1;32m(3 days ago)[m[1;33m[m
+| |           [37mCreate readme.txt[m [2;37m- ematiss[m
+| * [1;34mdffafb5[m - [1;36mMon, 4 Jul 2016 11:26:38 -0400[m [1;32m(3 days ago)[m[1;33m[m
+| |           [37mCreate readme.txt[m [2;37m- ematiss[m
+* | [1;34m932d8af[m - [1;36mMon, 4 Jul 2016 11:24:57 -0400[m [1;32m(3 days ago)[m[1;33m[m
+|/            [37mSQA/SQA.html[m [2;37m- muttahirzia@gmail.com[m
+* [1;34mb3c0940[m - [1;36mMon, 4 Jul 2016 11:19:01 -0400[m [1;32m(3 days ago)[m[1;33m[m
+|           [37mSQA/SQA.html[m [2;37m- muttahirzia@gmail.com[m
+*   [1;34m2ea7b2b[m - [1;36mMon, 4 Jul 2016 11:05:21 -0400[m [1;32m(3 days ago)[m[1;33m[m
+|\            [37mMerge branch 'master' of https://github.com/UPOD-2016/UPOD[m [2;37m- muttahirzia@gmail.com[m
+| * [1;34mb31c7a7[m - [1;36mMon, 4 Jul 2016 15:01:20 +0000[m [1;32m(3 days ago)[m[1;33m[m
+| |           [37mFixing recent changes by various contributors - made tests pass, removed unused files, made new templates show content from database again instead of static content[m [2;37m- Mike Roher[m
+* | [1;34mf54038f[m - [1;36mMon, 4 Jul 2016 11:02:17 -0400[m [1;32m(3 days ago)[m[1;33m[m
+|/            [37madd SQA/SQA.html[m [2;37m- muttahirzia@gmail.com[m
+* [1;34m9c5d70d[m - [1;36mMon, 4 Jul 2016 05:15:39 +0000[m [1;32m(4 days ago)[m[1;33m[m
+|           [37mFix Article_block_spec.rb[m [2;37m- Kieran O'Driscoll[m
+* [1;34m02cbb59[m - [1;36mMon, 4 Jul 2016 05:12:46 +0000[m [1;32m(4 days ago)[m[1;33m[m
+|           [37mFix article_spec.rb[m [2;37m- Kieran O'Driscoll[m
+*   [1;34m9524ffe[m - [1;36mMon, 4 Jul 2016 05:11:08 +0000[m [1;32m(4 days ago)[m[1;33m[m
+|\            [37mMerge association_tests branch[m [2;37m- Kieran O'Driscoll[m
+| * [1;34m14b9b39[m - [1;36mMon, 4 Jul 2016 05:04:18 +0000[m [1;32m(4 days ago)[m[1;33m[m
+| |           [37mAdd require line to rails helper[m [2;37m- Kieran O'Driscoll[m
+| * [1;34ma9af780[m - [1;36mMon, 4 Jul 2016 04:55:54 +0000[m [1;32m(4 days ago)[m[1;33m[m
+| |           [37mAdded MTI validations[m [2;37m- Kieran O'Driscoll[m
+| * [1;34mbaea3f9[m - [1;36mWed, 29 Jun 2016 19:24:55 +0000[m [1;32m(8 days ago)[m[1;33m[m
+| |           [37mFix DB and Remove migration[m [2;37m- Kieran O'Driscoll[m
+| * [1;34mdfabd4f[m - [1;36mWed, 29 Jun 2016 18:06:55 +0000[m [1;32m(8 days ago)[m[1;33m[m
+| |           [37mAdd association and belongs to tests to RSpec[m [2;37m- Kieran O'Driscoll[m
+* |   [1;34m6eaed17[m - [1;36mSun, 3 Jul 2016 22:06:15 -0400[m [1;32m(4 days ago)[m[1;33m[m
+|\ \            [37mMerge branch 'master' of https://github.com/UPOD-2016/UPOD[m [2;37m- swar8080[m
+| * | [1;34m6b578b6[m - [1;36mSun, 3 Jul 2016 19:54:00 -0400[m [1;32m(4 days ago)[m[1;33m[m
+| | |           [37mFixed a bug on Mod Page[m [2;37m- Ryan Mak[m
+* | | [1;34m5e39812[m - [1;36mSun, 3 Jul 2016 22:05:40 -0400[m [1;32m(4 days ago)[m[1;33m[m
+|/ /            [37madded FactoryGirl gem for testing[m [2;37m- swar8080[m
+* | [1;34mdfd1110[m - [1;36mSun, 3 Jul 2016 15:56:34 -0400[m [1;32m(4 days ago)[m[1;33m[m
+| |           [37madded jquery to admin menu[m [2;37m- tudorbertiean[m
+* |   [1;34md25dd40[m - [1;36mSun, 3 Jul 2016 15:11:49 -0400[m [1;32m(4 days ago)[m[1;33m[m
+|\ \            [37mMerge branch 'master' of https://github.com/UPOD-2016/UPOD[m [2;37m- tudorbertiean[m
+| * | [1;34meec2630[m - [1;36mSun, 3 Jul 2016 15:02:33 -0400[m [1;32m(4 days ago)[m[1;33m[m
+| | |           [37mfixed the alignment of the text area[m [2;37m- ghiyo[m
+| * | [1;34mc917c2f[m - [1;36mSun, 3 Jul 2016 14:12:59 -0400[m [1;32m(4 days ago)[m[1;33m[m
+| | |           [37madded text editor for mod page[m [2;37m- ghiyo[m
+* | | [1;34m7d6289a[m - [1;36mSun, 3 Jul 2016 15:11:21 -0400[m [1;32m(4 days ago)[m[1;33m[m
+|/ /            [37mcollapsable side bar for admin page[m [2;37m- tudorbertiean[m
+* | [1;34m3845d10[m - [1;36mSun, 3 Jul 2016 04:26:07 -0400[m [1;32m(5 days ago)[m[1;33m[m
+| |           [37mlibrary for text editor[m [2;37m- ghiyo[m
+* | [1;34mdc31d16[m - [1;36mSun, 3 Jul 2016 01:00:38 -0400[m [1;32m(5 days ago)[m[1;33m[m
+| |           [37mUpdated Gantt chart - image was missing lowest 2 lines[m [2;37m- Tom[m
+* | [1;34mede7fdd[m - [1;36mSat, 2 Jul 2016 20:29:15 -0400[m [1;32m(5 days ago)[m[1;33m[m
+| |           [37mCreate 1.txt[m [2;37m- Wallise Wu[m
+* |   [1;34m09584c2[m - [1;36mSat, 2 Jul 2016 18:03:32 -0400[m [1;32m(5 days ago)[m[1;33m[m
+|\ \            [37mMerge branch 'master' of https://github.com/UPOD-2016/UPOD[m [2;37m- Tom[m
+| * | [1;34ma194644[m - [1;36mSat, 2 Jul 2016 14:24:01 -0400[m [1;32m(5 days ago)[m[1;33m[m
+| | |           [37mCentered the user case diagram[m [2;37m- ghiyo[m
+* | | [1;34m0724cf4[m - [1;36mSat, 2 Jul 2016 17:59:46 -0400[m [1;32m(5 days ago)[m[1;33m[m
+|/ /            [37mUpdated SPMP to proper .html style[m [2;37m- Tom[m
+* | [1;34m70a8c0f[m - [1;36mFri, 1 Jul 2016 18:03:19 -0400[m [1;32m(6 days ago)[m[1;33m[m
+| |           [37mAdd files via upload[m [2;37m- TheCocoManEd[m
+* |   [1;34m5589289[m - [1;36mFri, 1 Jul 2016 19:49:45 +0000[m [1;32m(6 days ago)[m[1;33m[m
+|\ \            [37mMerge branch 'master' of https://github.com/UPOD-2016/UPOD[m [2;37m- Roman Lipisiy[m
+| * | [1;34mec0952a[m - [1;36mFri, 1 Jul 2016 15:17:26 -0400[m [1;32m(6 days ago)[m[1;33m[m
+| | |           [37madded UML diagram and made edits based on SQA[m [2;37m- ghiyo[m
+* | | [1;34ma1a0f4d[m - [1;36mFri, 1 Jul 2016 19:48:33 +0000[m [1;32m(6 days ago)[m[1;33m[m
+|/ /            [37mAdd time tracking[m [2;37m- Roman Lipisiy[m
+* | [1;34mfd039c8[m - [1;36mFri, 1 Jul 2016 18:59:23 +0000[m [1;32m(6 days ago)[m[1;33m[m
+| |           [37mRemove some of the old javascript links to clean up pages[m [2;37m- Roman Lipisiy[m
+* | [1;34m94b1250[m - [1;36mFri, 1 Jul 2016 18:50:32 +0000[m [1;32m(6 days ago)[m[1;33m[m
+| |           [37mMerge html pages and stylesheets from vapourware to ruby on rails[m [2;37m- Roman Lipisiy[m
+* | [1;34m8d19a32[m - [1;36mFri, 1 Jul 2016 13:10:04 -0400[m [1;32m(6 days ago)[m[1;33m[m
+| |           [37mredesigned subcategories page[m [2;37m- vsutaria[m
+* | [1;34mb79cd8e[m - [1;36mFri, 1 Jul 2016 12:00:22 -0400[m [1;32m(6 days ago)[m[1;33m[m
+| |           [37mAll front end .docx files have already been removed. Please do not add any more again[m [2;37m- Tom[m
+* |   [1;34m8c1f96e[m - [1;36mFri, 1 Jul 2016 01:23:54 -0400[m [1;32m(7 days ago)[m[1;33m[m
+|\ \            [37mMerge branch 'master' of https://github.com/UPOD-2016/UPOD[m [2;37m- ghiyo[m
+| * | [1;34m4a48e1c[m - [1;36mFri, 1 Jul 2016 00:30:28 -0400[m [1;32m(7 days ago)[m[1;33m[m
+| | |           [37mUpdated revision number due to previous error[m [2;37m- Tom[m
+| * | [1;34m23e6016[m - [1;36mFri, 1 Jul 2016 00:06:53 -0400[m [1;32m(7 days ago)[m[1;33m[m
+| | |           [37mRename UPOD SRS - Web Design (Front End).html to UPOD SRS - Front End.html[m [2;37m- Tom West[m
+| * | [1;34m4c56a21[m - [1;36mFri, 1 Jul 2016 00:06:06 -0400[m [1;32m(7 days ago)[m[1;33m[m
+| | |           [37mUpdated Front End RD .html, minor edit to Back End RD formatting[m [2;37m- Tom[m
+| * | [1;34m8710fd3[m - [1;36mThu, 30 Jun 2016 21:04:14 -0400[m [1;32m(7 days ago)[m[1;33m[m
+| | |           [37mUpdate README.md[m [2;37m- Mike Roher[m
+| * | [1;34m9b5494e[m - [1;36mFri, 1 Jul 2016 00:55:53 +0000[m [1;32m(7 days ago)[m[1;33m[m
+| | |           [37minitial version of sir trevor working!!!!! model method might need minor refactoring later on but it works! we can now create articles![m [2;37m- Mike Roher[m
+| * | [1;34m13f03cf[m - [1;36mFri, 1 Jul 2016 00:25:43 +0000[m [1;32m(7 days ago)[m[1;33m[m
+| | |           [37mremoving about helper/controller as it was breaking the entire app[m [2;37m- Mike Roher[m
+| * | [1;34mc655bdb[m - [1;36mThu, 30 Jun 2016 19:21:02 -0400[m [1;32m(7 days ago)[m[1;33m[m
+| | |           [37mDelete docx. files[m [2;37m- stevenlusonggao[m
+| * | [1;34ma7c90b9[m - [1;36mThu, 30 Jun 2016 19:20:49 -0400[m [1;32m(7 days ago)[m[1;33m[m
+| | |           [37mDelete docx. files[m [2;37m- stevenlusonggao[m
+| * | [1;34m04bd77c[m - [1;36mThu, 30 Jun 2016 19:20:17 -0400[m [1;32m(7 days ago)[m[1;33m[m
+| | |           [37mDelete docx. files[m [2;37m- stevenlusonggao[m
+| * | [1;34m7f9e1d9[m - [1;36mThu, 30 Jun 2016 19:19:58 -0400[m [1;32m(7 days ago)[m[1;33m[m
+| | |           [37mDelete docx. files[m [2;37m- stevenlusonggao[m
+| * | [1;34md0b13c4[m - [1;36mThu, 30 Jun 2016 19:18:33 -0400[m [1;32m(7 days ago)[m[1;33m[m
+| | |           [37mUpdate UPOD RD - Graphics-Animation.html[m [2;37m- stevenlusonggao[m
+| * | [1;34m4178aeb[m - [1;36mThu, 30 Jun 2016 15:42:12 -0400[m [1;32m(7 days ago)[m[1;33m[m
+| | |           [37mAdd files via upload[m [2;37m- TheCocoManEd[m
+* | | [1;34m0b43960[m - [1;36mThu, 30 Jun 2016 11:35:56 -0400[m [1;32m(7 days ago)[m[1;33m[m
+|/ /            [37mfixed a name[m [2;37m- ghiyo[m
+* | [1;34m3c09ced[m - [1;36mThu, 30 Jun 2016 00:56:51 -0400[m [1;32m(8 days ago)[m[1;33m[m
+| |           [37mconcave mirror updated[m [2;37m- Ensieh Mollazadeh[m
+* | [1;34mbbc4b01[m - [1;36mThu, 30 Jun 2016 00:49:54 -0400[m [1;32m(8 days ago)[m[1;33m[m
+| |           [37mUpdated all doc to HTML[m [2;37m- Anderszz[m
+* | [1;34m2901bdd[m - [1;36mWed, 29 Jun 2016 22:45:42 -0400[m [1;32m(8 days ago)[m[1;33m[m
+| |           [37mformat edit[m [2;37m- Eric Jiang[m
+* | [1;34m3077ad3[m - [1;36mWed, 29 Jun 2016 22:41:51 -0400[m [1;32m(8 days ago)[m[1;33m[m
+| |           [37mRemoved all Front End .doc files[m [2;37m- Tom[m
+* | [1;34m417fccf[m - [1;36mWed, 29 Jun 2016 22:34:24 -0400[m [1;32m(8 days ago)[m[1;33m[m
+| |           [37mfinal edits for HTML[m [2;37m- Eric Jiang[m
+* | [1;34m7d61fd3[m - [1;36mWed, 29 Jun 2016 21:24:03 -0400[m [1;32m(8 days ago)[m[1;33m[m
+| |           [37mUpdate UPOD RD - Graphics-Animation.html[m [2;37m- stevenlusonggao[m
+* | [1;34m284c613[m - [1;36mWed, 29 Jun 2016 14:36:15 -0400[m [1;32m(8 days ago)[m[1;33m[m
+|/            [37mEdited based on SQA feedback[m [2;37m- Clive Shen[m
+* [1;34md3695fc[m - [1;36mWed, 29 Jun 2016 13:06:08 -0400[m [1;32m(8 days ago)[m[1;33m[m
+|           [37mAdd Gantt Chart to doc[m [2;37m- K-ODriscoll[m
+* [1;34mfc48704[m - [1;36mWed, 29 Jun 2016 12:35:33 -0400[m [1;32m(8 days ago)[m[1;33m[m
+|           [37mChanged UML Diagrams to match class discussion[m [2;37m- Ryan Mak[m
+*   [1;34mc755bb7[m - [1;36mWed, 29 Jun 2016 12:00:40 -0400[m [1;32m(8 days ago)[m[1;33m[m
+|\            [37mMerge branch 'master' of https://github.com/UPOD-2016/UPOD[m [2;37m- kcolletripp[m
+| * [1;34mb188f77[m - [1;36mWed, 29 Jun 2016 10:49:14 -0400[m [1;32m(8 days ago)[m[1;33m[m
+| |           [37mFormatting changes[m [2;37m- Eric Jiang[m
+| * [1;34mbb7bdf8[m - [1;36mWed, 29 Jun 2016 10:47:21 -0400[m [1;32m(8 days ago)[m[1;33m[m
+| |           [37mupdated file[m [2;37m- JeffChung2[m
+* | [1;34m4631cda[m - [1;36mWed, 29 Jun 2016 12:00:25 -0400[m [1;32m(8 days ago)[m[1;33m[m
+|/            [37mRemoved ability to reset password, now done through AD[m [2;37m- kcolletripp[m
+* [1;34mbb67e4a[m - [1;36mWed, 29 Jun 2016 08:20:07 -0400[m [1;32m(8 days ago)[m[1;33m[m
+|           [37mUpdated Concave Mirror[m [2;37m- Ensieh Mollazadeh[m
+* [1;34m90af30a[m - [1;36mWed, 29 Jun 2016 00:43:49 -0400[m [1;32m(9 days ago)[m[1;33m[m
+|           [37mActually fixed gantt path[m [2;37m- Tom West[m
+* [1;34m29f9cf3[m - [1;36mWed, 29 Jun 2016 00:41:43 -0400[m [1;32m(9 days ago)[m[1;33m[m
+|           [37mUpdate SPMP.html[m [2;37m- Tom West[m
+* [1;34md4f4ac1[m - [1;36mWed, 29 Jun 2016 00:40:32 -0400[m [1;32m(9 days ago)[m[1;33m[m
+|           [37mAdd SPMP + Gantt[m [2;37m- Tom[m
+* [1;34m5e594e6[m - [1;36mWed, 29 Jun 2016 00:36:34 -0400[m [1;32m(9 days ago)[m[1;33m[m
+|           [37mfixed small errors[m [2;37m- ghiyo[m
+*   [1;34m757aae2[m - [1;36mWed, 29 Jun 2016 00:35:08 -0400[m [1;32m(9 days ago)[m[1;33m[m
+|\            [37mMerge branch 'master' of https://github.com/UPOD-2016/UPOD[m [2;37m- Brian Oh[m
+| * [1;34m7326c93[m - [1;36mWed, 29 Jun 2016 00:33:12 -0400[m [1;32m(9 days ago)[m[1;33m[m
+| |           [37mTemplate for analysis document in HTML[m [2;37m- ghiyo[m
+| * [1;34mea6019a[m - [1;36mTue, 28 Jun 2016 23:47:37 -0400[m [1;32m(9 days ago)[m[1;33m[m
+| |           [37mAdd files via upload[m [2;37m- Aman Kumar[m
+* | [1;34m9ad6c12[m - [1;36mWed, 29 Jun 2016 00:31:49 -0400[m [1;32m(9 days ago)[m[1;33m[m
+|/            [37mUpdated[m [2;37m- Brian Oh[m
+*   [1;34mad823f2[m - [1;36mTue, 28 Jun 2016 23:19:05 -0400[m [1;32m(9 days ago)[m[1;33m[m
+|\            [37mMerge branch 'master' of https://github.com/UPOD-2016/UPOD[m [2;37m- Brian Oh[m
+| * [1;34md640d2c[m - [1;36mTue, 28 Jun 2016 23:16:50 -0400[m [1;32m(9 days ago)[m[1;33m[m
+| |           [37mRevert "Reorganized physics files and folders and renamed files to follow standard naming convention"[m [2;37m- Aman Kumar[m
+* | [1;34m467e500[m - [1;36mTue, 28 Jun 2016 23:18:54 -0400[m [1;32m(9 days ago)[m[1;33m[m
+| |           [37mv.03[m [2;37m- Brian Oh[m
+* | [1;34md80843d[m - [1;36mTue, 28 Jun 2016 23:18:25 -0400[m [1;32m(9 days ago)[m[1;33m[m
+|/            [37mv.02[m [2;37m- Brian Oh[m
+* [1;34mc641a50[m - [1;36mTue, 28 Jun 2016 22:58:11 -0400[m [1;32m(9 days ago)[m[1;33m[m
+|           [37mSearchCoreUml[m [2;37m- Jimmyqlx[m
+* [1;34m6531448[m - [1;36mTue, 28 Jun 2016 22:54:05 -0400[m [1;32m(9 days ago)[m[1;33m[m
+|           [37mReorganized physics files and folders and renamed files to follow standard naming convention[m [2;37m- Aman Kumar[m
+* [1;34mf81e724[m - [1;36mTue, 28 Jun 2016 20:36:32 -0400[m [1;32m(9 days ago)[m[1;33m[m
+|           [37mAdd files via upload[m [2;37m- Pillip Lee[m
+* [1;34mcd727fb[m - [1;36mTue, 28 Jun 2016 20:34:55 -0400[m [1;32m(9 days ago)[m[1;33m[m
+|           [37mAdd files via upload[m [2;37m- Pillip Lee[m
+* [1;34m81aab8a[m - [1;36mTue, 28 Jun 2016 20:32:39 -0400[m [1;32m(9 days ago)[m[1;33m[m
+|           [37mAdd files via upload[m [2;37m- Pillip Lee[m
+* [1;34m3d0a38f[m - [1;36mTue, 28 Jun 2016 20:30:52 -0400[m [1;32m(9 days ago)[m[1;33m[m
+|           [37mAdd files via upload[m [2;37m- Pillip Lee[m
+* [1;34m36fa4a3[m - [1;36mTue, 28 Jun 2016 21:58:33 +0000[m [1;32m(9 days ago)[m[1;33m[m
+|           [37mUpdate Schema.db[m [2;37m- Kieran O'Driscoll[m
+* [1;34mcf93977[m - [1;36mTue, 28 Jun 2016 21:55:28 +0000[m [1;32m(9 days ago)[m[1;33m[m
+|           [37mFix Schema[m [2;37m- Kieran O'Driscoll[m
+* [1;34mb54e7a7[m - [1;36mTue, 28 Jun 2016 17:17:27 -0400[m [1;32m(9 days ago)[m[1;33m[m
+|           [37mreorganized UML folder contents in Diagrams folder[m [2;37m- swar8080[m
+*   [1;34mf5faed7[m - [1;36mTue, 28 Jun 2016 17:13:30 -0400[m [1;32m(9 days ago)[m[1;33m[m
+|\            [37mMerge branch 'master' of https://github.com/UPOD-2016/UPOD[m [2;37m- swar8080[m
+| *   [1;34md153f30[m - [1;36mTue, 28 Jun 2016 19:20:07 +0000[m [1;32m(9 days ago)[m[1;33m[m
+| |\            [37mMerge branch 'rspec_testing'[m [2;37m- Kieran O'Driscoll[m
+| | * [1;34mc300aa2[m - [1;36mTue, 28 Jun 2016 04:21:23 +0000[m [1;32m(10 days ago)[m[1;33m[m
+| | |           [37mMigration for equation block table[m [2;37m- Kieran O'Driscoll[m
+| | * [1;34m1b551de[m - [1;36mTue, 28 Jun 2016 03:09:49 +0000[m [1;32m(10 days ago)[m[1;33m[m
+| | |           [37mUpdate equation block .rb and spec[m [2;37m- Kieran O'Driscoll[m
+| | * [1;34m00d2ecc[m - [1;36mTue, 28 Jun 2016 02:55:23 +0000[m [1;32m(10 days ago)[m[1;33m[m
+| | |           [37mAdd comments for RSpec/Shoulda matcher tests[m [2;37m- Kieran O'Driscoll[m
+| | * [1;34m5a99e3a[m - [1;36mMon, 27 Jun 2016 21:31:01 +0000[m [1;32m(10 days ago)[m[1;33m[m
+| | |           [37mAdd more RSpec and Shoulda Matchers Tests[m [2;37m- Kieran O'Driscoll[m
+| | * [1;34md75f45e[m - [1;36mMon, 27 Jun 2016 21:06:11 +0000[m [1;32m(10 days ago)[m[1;33m[m
+| | |           [37mAdd Rspec Testing to models[m [2;37m- Kieran O'Driscoll[m
+| | * [1;34m4ab5940[m - [1;36mMon, 27 Jun 2016 17:42:41 +0000[m [1;32m(10 days ago)[m[1;33m[m
+| | |           [37mInstall Rspec and Shoulda Matcher[m [2;37m- Kieran O'Driscoll[m
+* | | [1;34m84e97af[m - [1;36mTue, 28 Jun 2016 17:12:47 -0400[m [1;32m(9 days ago)[m[1;33m[m
+|/ /            [37madded BCE diagram and cleaned up diagram folders[m [2;37m- swar8080[m
+* | [1;34m45d9d7e[m - [1;36mTue, 28 Jun 2016 15:02:24 -0400[m [1;32m(9 days ago)[m[1;33m[m
+| |           [37mAdded Object Diagram[m [2;37m- Ryan[m
+* | [1;34m4fc9ee8[m - [1;36mTue, 28 Jun 2016 14:53:54 -0400[m [1;32m(9 days ago)[m[1;33m[m
+| |           [37mUpdate Diagrams.csv[m [2;37m- josephvannelli[m
+* | [1;34md343907[m - [1;36mTue, 28 Jun 2016 13:51:00 -0400[m [1;32m(9 days ago)[m[1;33m[m
+| |           [37madmin action bar align[m [2;37m- tudorbertiean[m
+* | [1;34m15fbccd[m - [1;36mTue, 28 Jun 2016 13:27:37 -0400[m [1;32m(9 days ago)[m[1;33m[m
+| |           [37mnew css for admin page[m [2;37m- tudorbertiean[m
+* |   [1;34mcd8c3f4[m - [1;36mTue, 28 Jun 2016 13:04:13 -0400[m [1;32m(9 days ago)[m[1;33m[m
+|\ \            [37mMerge branch 'master' of https://github.com/UPOD-2016/UPOD[m [2;37m- tudorbertiean[m
+| * | [1;34mf490d36[m - [1;36mTue, 28 Jun 2016 12:31:21 -0400[m [1;32m(9 days ago)[m[1;33m[m
+| | |           [37mFixed Diagrams[m [2;37m- Ryan[m
+| * | [1;34mfe38a87[m - [1;36mTue, 28 Jun 2016 12:29:22 -0400[m [1;32m(9 days ago)[m[1;33m[m
+| | |           [37mDelete freebodymovement.js[m [2;37m- josephvannelli[m
+| * | [1;34mc038e9a[m - [1;36mTue, 28 Jun 2016 12:29:05 -0400[m [1;32m(9 days ago)[m[1;33m[m
+| | |           [37mDelete free_body.html[m [2;37m- josephvannelli[m
+| * | [1;34me9cf682[m - [1;36mTue, 28 Jun 2016 12:27:40 -0400[m [1;32m(9 days ago)[m[1;33m[m
+| | |           [37mUpdate readme.txt[m [2;37m- josephvannelli[m
+| * | [1;34m30369d9[m - [1;36mTue, 28 Jun 2016 12:24:29 -0400[m [1;32m(9 days ago)[m[1;33m[m
+| | |           [37mAdded frontend .png[m [2;37m- Ryan[m
+| * | [1;34mdd77ef3[m - [1;36mTue, 28 Jun 2016 12:24:07 -0400[m [1;32m(9 days ago)[m[1;33m[m
+| | |           [37mCombined diagram files, added README with info about updating UML diagrams, combined StarUML files to include User classes[m [2;37m- swar8080[m
+| * | [1;34m351bd01[m - [1;36mTue, 28 Jun 2016 12:21:03 -0400[m [1;32m(9 days ago)[m[1;33m[m
+| | |           [37mCombined diagram files, added README with info about updating UML diagrams, combined StarUML files to include User classes[m [2;37m- swar8080[m
+| * |   [1;34m61d0657[m - [1;36mTue, 28 Jun 2016 12:19:29 -0400[m [1;32m(9 days ago)[m[1;33m[m
+| |\ \            [37mMerge branch 'master' of https://github.com/UPOD-2016/UPOD[m [2;37m- swar8080[m
+| | * | [1;34mb43a3ba[m - [1;36mTue, 28 Jun 2016 12:18:44 -0400[m [1;32m(9 days ago)[m[1;33m[m
+| | | |           [37mAdd files via upload[m [2;37m- josephvannelli[m
+| | * | [1;34m71811d1[m - [1;36mTue, 28 Jun 2016 12:15:15 -0400[m [1;32m(9 days ago)[m[1;33m[m
+| | | |           [37mUpdate Diagrams.csv[m [2;37m- josephvannelli[m
+| | * | [1;34m7cf7cf6[m - [1;36mTue, 28 Jun 2016 12:14:42 -0400[m [1;32m(9 days ago)[m[1;33m[m
+| | | |           [37mUpdate Diagrams.csv[m [2;37m- josephvannelli[m
+| | * |   [1;34ma172378[m - [1;36mTue, 28 Jun 2016 12:10:39 -0400[m [1;32m(9 days ago)[m[1;33m[m
+| | |\ \            [37mMerge branch 'master' of https://github.com/UPOD-2016/UPOD[m [2;37m- Ryan[m
+| | * | | [1;34m1e34396[m - [1;36mTue, 28 Jun 2016 12:10:26 -0400[m [1;32m(9 days ago)[m[1;33m[m
+| | | | |           [37mChanged Website Hierarchy names[m [2;37m- Ryan[m
+| * | | | [1;34mdc0e9da[m - [1;36mTue, 28 Jun 2016 12:17:16 -0400[m [1;32m(9 days ago)[m[1;33m[m
+| | |/ /            [37mcombined diagram files, added README to backend UML directory, and combined StarUML files to include User classes[m [2;37m- swar8080[m
+| |/| |   
+| * | | [1;34m514918c[m - [1;36mTue, 28 Jun 2016 12:01:48 -0400[m [1;32m(9 days ago)[m[1;33m[m
+| | | |           [37mAdd files via upload[m [2;37m- JeffChung2[m
+| * | |   [1;34meab0bdd[m - [1;36mTue, 28 Jun 2016 15:55:09 +0000[m [1;32m(9 days ago)[m[1;33m[m
+| |\ \ \            [37mmerged scaffold[m [2;37m- Mike Roher[m
+| | |/ /  
+| |/| |   
+| | * |   [1;34m2c60531[m - [1;36mTue, 28 Jun 2016 15:49:38 +0000[m [1;32m(9 days ago)[m[1;33m[m
+| | |\ \            [37mMerge branch 'scaffold' of github.com:UPOD-2016/UPOD into scaffold[m [2;37m- Mike Roher[m
+| | | * | [1;34m71e5f2e[m - [1;36mMon, 27 Jun 2016 23:28:40 -0400[m [1;32m(10 days ago)[m[1;33m[m
+| | | | |           [37mAdd routing for about page into rails version[m [2;37m- WillDetlor[m
+| | | * | [1;34meca5635[m - [1;36mMon, 27 Jun 2016 22:31:26 -0400[m [1;32m(10 days ago)[m[1;33m[m
+| | | | |           [37mUser UML[m [2;37m- franco-wong[m
+| | | * | [1;34med51e58[m - [1;36mMon, 27 Jun 2016 22:03:36 -0400[m [1;32m(10 days ago)[m[1;33m[m
+| | | | |           [37mRemoved CategoryBlock from Category section in UML[m [2;37m- chan6240[m
+| | | * | [1;34m638bfaf[m - [1;36mMon, 27 Jun 2016 18:26:50 -0400[m [1;32m(10 days ago)[m[1;33m[m
+| | | | |           [37mchanged category and article relationship[m [2;37m- swar8080[m
+| | | * | [1;34m4fd589f[m - [1;36mMon, 27 Jun 2016 12:22:55 -0400[m [1;32m(10 days ago)[m[1;33m[m
+| | | |/            [37mAdded Article to Catagory relation[m [2;37m- Derek Cruise[m
+| | | * [1;34mfa5d582[m - [1;36mMon, 27 Jun 2016 08:13:06 -0400[m [1;32m(10 days ago)[m[1;33m[m
+| | | |           [37madded generalization for classes performing operations that are restricted by user permissions[m [2;37m- swar8080[m
+| | | * [1;34m3ccc6a9[m - [1;36mMon, 27 Jun 2016 02:31:09 -0400[m [1;32m(11 days ago)[m[1;33m[m
+| | | |           [37mUpdated HTML docs[m [2;37m- chan6240[m
+| | | *   [1;34m1a4b883[m - [1;36mMon, 27 Jun 2016 02:23:02 -0400[m [1;32m(11 days ago)[m[1;33m[m
+| | | |\            [37mMerge remote-tracking branch 'origin/scaffold' into scaffold[m [2;37m- chan6240[m
+| | | | * [1;34m5b91749[m - [1;36mMon, 27 Jun 2016 00:11:32 -0400[m [1;32m(11 days ago)[m[1;33m[m
+| | | | |           [37mchanged relation between article and user classes[m [2;37m- swar8080[m
+| | | * | [1;34m5addddf[m - [1;36mMon, 27 Jun 2016 02:21:26 -0400[m [1;32m(11 days ago)[m[1;33m[m
+| | | |/            [37mFlushed out Categories in UML.[m [2;37m- chan6240[m
+| | | * [1;34m1f3f647[m - [1;36mSun, 26 Jun 2016 20:11:20 -0400[m [1;32m(11 days ago)[m[1;33m[m
+| | | |           [37mAdded StarUML UML diagram file and auto-generated HTML files to view them[m [2;37m- swar8080[m
+| | * | [1;34mbdaa693[m - [1;36mTue, 28 Jun 2016 15:49:25 +0000[m [1;32m(9 days ago)[m[1;33m[m
+| | |/            [37mstarting to integrate backend[m [2;37m- Mike Roher[m
+| | *   [1;34ma0059b7[m - [1;36mSun, 26 Jun 2016 18:07:57 +0000[m [1;32m(11 days ago)[m[1;33m[m
+| | |\            [37mmerge with randy searcing[m [2;37m- Mike Roher[m
+| | | * [1;34m7973d5d[m - [1;36mFri, 24 Jun 2016 16:42:20 -0400[m [1;32m(13 days ago)[m[1;33m[m
+| | | |           [37mupdated article tet block[m [2;37m- rmoro[m
+| | | * [1;34m598fe26[m - [1;36mThu, 23 Jun 2016 12:27:31 -0400[m [1;32m(2 weeks ago)[m[1;33m[m
+| | | |           [37mstarted to move elastic to module[m [2;37m- rmoro[m
+| | | *   [1;34m6344347[m - [1;36mThu, 23 Jun 2016 15:51:14 +0000[m [1;32m(2 weeks ago)[m[1;33m[m
+| | | |\            [37mAdd validations to models[m [2;37m- Kieran O'Driscoll[m
+| | | | * [1;34mc83e3c0[m - [1;36mWed, 22 Jun 2016 23:44:57 +0000[m [1;32m(2 weeks ago)[m[1;33m[m
+| | | | |           [37mAdd validations to models[m [2;37m- Kieran O'Driscoll[m
+| | | | * [1;34m1fad66b[m - [1;36mWed, 22 Jun 2016 23:40:15 +0000[m [1;32m(2 weeks ago)[m[1;33m[m
+| | | | |           [37mAdd validations under models[m [2;37m- Kieran O'Driscoll[m
+| | * | | [1;34mbcd10ec[m - [1;36mSun, 26 Jun 2016 18:07:09 +0000[m [1;32m(11 days ago)[m[1;33m[m
+| | |/ /            [37madd sir trevor[m [2;37m- Mike Roher[m
+| | * | [1;34m6ee483d[m - [1;36mWed, 22 Jun 2016 16:24:39 -0400[m [1;32m(2 weeks ago)[m[1;33m[m
+| | | |           [37m+elastic search[m [2;37m- rmoro[m
+| | * | [1;34mb7f11d2[m - [1;36mWed, 22 Jun 2016 15:54:58 -0400[m [1;32m(2 weeks ago)[m[1;33m[m
+| | |/            [37mAdded gems for elasticsearch #blingbling[m [2;37m- rmoro[m
+| | * [1;34m5744785[m - [1;36mWed, 22 Jun 2016 02:50:10 +0000[m [1;32m(2 weeks ago)[m[1;33m[m
+| | |           [37madd interface to interact with blocks[m [2;37m- Mike Roher[m
+| | * [1;34m1ba995d[m - [1;36mWed, 22 Jun 2016 02:17:34 +0000[m [1;32m(2 weeks ago)[m[1;33m[m
+| | |           [37madd acts as list scoped[m [2;37m- Mike Roher[m
+| | * [1;34m5d12198[m - [1;36mTue, 21 Jun 2016 17:44:04 +0000[m [1;32m(2 weeks ago)[m[1;33m[m
+| | |           [37madding constants, links, and equations[m [2;37m- Mike Roher[m
+| | * [1;34m2bf07b2[m - [1;36mMon, 20 Jun 2016 20:20:51 +0000[m [1;32m(2 weeks ago)[m[1;33m[m
+| | |           [37mestablish relationship between article, articleblock and articletextblock[m [2;37m- Mike Roher[m
+| | * [1;34m0d65b57[m - [1;36mMon, 20 Jun 2016 19:39:33 +0000[m [1;32m(2 weeks ago)[m[1;33m[m
+| | |           [37mstarting initial article nodes[m [2;37m- Mike Roher[m
+| | * [1;34mb1aeb0f[m - [1;36mSun, 5 Jun 2016 16:05:01 -0400[m [1;32m(5 weeks ago)[m[1;33m[m
+| | |           [37mno longer needed[m [2;37m- swar8080[m
+| | * [1;34mb276b4b[m - [1;36mSun, 5 Jun 2016 15:54:26 -0400[m [1;32m(5 weeks ago)[m[1;33m[m
+| | |           [37mVersioning for https://www.lucidchart.com/documents/edit/d0833e5f-c854-44cf-bb23-9112f854ba80?shared=true&#[m [2;37m- swar8080[m
+| | * [1;34m3c7e69f[m - [1;36mSun, 5 Jun 2016 15:51:35 -0400[m [1;32m(5 weeks ago)[m[1;33m[m
+| | |           [37mAdded tzinfo gem to fix rails s command for windows[m [2;37m- swar8080[m
+| | * [1;34meaf9947[m - [1;36mWed, 1 Jun 2016 16:26:34 -0400[m [1;32m(5 weeks ago)[m[1;33m[m
+| | |           [37mSite is ready to be deployed with current frontend skeleton.  YOU MUST RUN bundle install then UPDATE config/database.yml and RUN rake db:create then RUN rails s to use[m [2;37m- rmoro[m
+| | * [1;34mf822a6e[m - [1;36mWed, 1 Jun 2016 16:16:11 -0400[m [1;32m(5 weeks ago)[m[1;33m[m
+| | |           [37mdid a little more work on the scaffold. site is ready to be deployed after mysql is set up[m [2;37m- rmoro[m
+| | * [1;34m152ba79[m - [1;36mWed, 1 Jun 2016 14:18:25 -0400[m [1;32m(5 weeks ago)[m[1;33m[m
+| | |           [37mbasic framework scaffold[m [2;37m- rmoro[m
+| * | [1;34me25dbc1[m - [1;36mTue, 28 Jun 2016 11:49:18 -0400[m [1;32m(9 days ago)[m[1;33m[m
+| | |           [37mModified Use Case Diagram[m [2;37m- Ryan[m
+| * | [1;34m784c976[m - [1;36mTue, 28 Jun 2016 11:48:16 -0400[m [1;32m(9 days ago)[m[1;33m[m
+| | |           [37mcategories and sub categories page[m [2;37m- vsutaria[m
+| * | [1;34mbe1e7ae[m - [1;36mTue, 28 Jun 2016 11:29:02 -0400[m [1;32m(9 days ago)[m[1;33m[m
+| | |           [37mAdded .png version of use case diagram[m [2;37m- Ryan[m
+| * | [1;34mec7bda9[m - [1;36mTue, 28 Jun 2016 11:25:41 -0400[m [1;32m(9 days ago)[m[1;33m[m
+| | |           [37mModified use case diagram[m [2;37m- Ryan[m
+* | | [1;34mc2cc833[m - [1;36mTue, 28 Jun 2016 13:03:38 -0400[m [1;32m(9 days ago)[m[1;33m[m
+|/ /            [37madmin html refactoring and color change[m [2;37m- tudorbertiean[m
+* | [1;34md73b8fd[m - [1;36mTue, 28 Jun 2016 08:41:49 -0400[m [1;32m(9 days ago)[m[1;33m[m
+| |           [37mCreate readme.txt[m [2;37m- ematiss[m
+* | [1;34m0db20b2[m - [1;36mTue, 28 Jun 2016 08:39:31 -0400[m [1;32m(9 days ago)[m[1;33m[m
+| |           [37mCreate readme.txt[m [2;37m- ematiss[m
+* | [1;34m13a8e67[m - [1;36mTue, 28 Jun 2016 08:38:49 -0400[m [1;32m(9 days ago)[m[1;33m[m
+| |           [37mCreate readme.txt[m [2;37m- ematiss[m
+* | [1;34m055cb43[m - [1;36mTue, 28 Jun 2016 06:45:56 -0400[m [1;32m(10 days ago)[m[1;33m[m
+| |           [37madded a optics animation[m [2;37m- JeffChung2[m
+* | [1;34mab877e4[m - [1;36mTue, 28 Jun 2016 00:13:38 -0400[m [1;32m(10 days ago)[m[1;33m[m
+| |           [37mUpdated formatting of Analysis Doc + Added revision history[m [2;37m- Tom[m
+* | [1;34ma1f7b80[m - [1;36mTue, 28 Jun 2016 00:05:19 -0400[m [1;32m(10 days ago)[m[1;33m[m
+| |           [37mUpdate readme.txt[m [2;37m- ematiss[m
+* | [1;34m39e495b[m - [1;36mTue, 28 Jun 2016 00:04:38 -0400[m [1;32m(10 days ago)[m[1;33m[m
+| |           [37mModified use cases[m [2;37m- Ryan Mak[m
+* | [1;34m580f9d3[m - [1;36mTue, 28 Jun 2016 00:04:29 -0400[m [1;32m(10 days ago)[m[1;33m[m
+| |           [37mUpdate Diagrams.csv[m [2;37m- ematiss[m
+* | [1;34m803d8d7[m - [1;36mTue, 28 Jun 2016 00:04:11 -0400[m [1;32m(10 days ago)[m[1;33m[m
+| |           [37mUpdate Diagrams.csv[m [2;37m- ematiss[m
+* | [1;34m7beaa61[m - [1;36mTue, 28 Jun 2016 00:03:36 -0400[m [1;32m(10 days ago)[m[1;33m[m
+| |           [37mAdd files via upload[m [2;37m- ematiss[m
+* | [1;34m4a07e4c[m - [1;36mMon, 27 Jun 2016 23:47:16 -0400[m [1;32m(10 days ago)[m[1;33m[m
+| |           [37mCreate readme.txt[m [2;37m- ematiss[m
+* | [1;34m8214340[m - [1;36mMon, 27 Jun 2016 23:43:34 -0400[m [1;32m(10 days ago)[m[1;33m[m
+| |           [37mCreate Embedded_js_svg_sample.svg[m [2;37m- ematiss[m
+* | [1;34m93f0862[m - [1;36mMon, 27 Jun 2016 23:43:13 -0400[m [1;32m(10 days ago)[m[1;33m[m
+| |           [37mDelete template (Revised).txt[m [2;37m- ohxx5810[m
+* | [1;34mb1b8185[m - [1;36mMon, 27 Jun 2016 23:42:10 -0400[m [1;32m(10 days ago)[m[1;33m[m
+| |           [37mUpdated the Animation Diagram document for Fundamentals II[m [2;37m- wuxx4780[m
+* | [1;34meae87e9[m - [1;36mMon, 27 Jun 2016 23:40:11 -0400[m [1;32m(10 days ago)[m[1;33m[m
+| |           [37mInput time for Front End Requirements over the last two weeks[m [2;37m- Tom[m
+* | [1;34m35e8280[m - [1;36mMon, 27 Jun 2016 23:22:18 -0400[m [1;32m(10 days ago)[m[1;33m[m
+| |           [37mUpdate in progress[m [2;37m- Anderszz[m
+* | [1;34m8d798a9[m - [1;36mMon, 27 Jun 2016 22:49:22 -0400[m [1;32m(10 days ago)[m[1;33m[m
+| |           [37mAdd files via upload[m [2;37m- Wallise Wu[m
+* | [1;34meb2196d[m - [1;36mTue, 28 Jun 2016 02:45:57 +0000[m [1;32m(10 days ago)[m[1;33m[m
+| |           [37mMost recent time tracking spreadsheet[m [2;37m- Kieran O'Driscoll[m
+* | [1;34m830bbed[m - [1;36mMon, 27 Jun 2016 22:31:30 -0400[m [1;32m(10 days ago)[m[1;33m[m
+| |           [37mCreated Use Case Diagrams[m [2;37m- Ryan Mak[m
+* | [1;34m1a4d9bd[m - [1;36mMon, 27 Jun 2016 22:31:00 -0400[m [1;32m(10 days ago)[m[1;33m[m
+| |           [37mAdd files via upload[m [2;37m- Wallise Wu[m
+* | [1;34m969bacd[m - [1;36mTue, 28 Jun 2016 02:25:22 +0000[m [1;32m(10 days ago)[m[1;33m[m
+| |           [37mUpdate Backend UML[m [2;37m- Kieran O'Driscoll[m
+* |   [1;34mfc2293e[m - [1;36mTue, 28 Jun 2016 02:21:03 +0000[m [1;32m(10 days ago)[m[1;33m[m
+|\ \            [37mMerge branch 'master' of https://github.com/UPOD-2016/UPOD[m [2;37m- Kieran O'Driscoll[m
+| * | [1;34m46befb0[m - [1;36mMon, 27 Jun 2016 22:20:32 -0400[m [1;32m(10 days ago)[m[1;33m[m
+| | |           [37mAdd files via upload[m [2;37m- Wallise Wu[m
+* | | [1;34m7ad1092[m - [1;36mTue, 28 Jun 2016 02:20:33 +0000[m [1;32m(10 days ago)[m[1;33m[m
+|/ /            [37mUpdate Backend UML Diagram[m [2;37m- Kieran O'Driscoll[m
+* | [1;34m404e0a9[m - [1;36mMon, 27 Jun 2016 22:03:49 -0400[m [1;32m(10 days ago)[m[1;33m[m
+| |           [37mUpdated to proper format[m [2;37m- ghiyo[m
+* | [1;34m0a2687a[m - [1;36mMon, 27 Jun 2016 21:30:23 -0400[m [1;32m(10 days ago)[m[1;33m[m
+| |           [37mCreated Hierarchy and Tag List for physics topics[m [2;37m- Aman Kumar[m
+* |   [1;34m138646f[m - [1;36mMon, 27 Jun 2016 21:21:50 -0400[m [1;32m(10 days ago)[m[1;33m[m
+|\ \            [37mMerge branch 'master' of https://github.com/UPOD-2016/UPOD combine css files into one file[m [2;37m- gstarmvp[m
+| * | [1;34m40fc8d6[m - [1;36mMon, 27 Jun 2016 21:03:19 -0400[m [1;32m(10 days ago)[m[1;33m[m
+| | |           [37mDeleted a mistakenly copied folder and updated web design document (edited)[m [2;37m- ghiyo[m
+* | | [1;34m0e9dde4[m - [1;36mMon, 27 Jun 2016 21:10:39 -0400[m [1;32m(10 days ago)[m[1;33m[m
+|/ /            [37mcommit operation[m [2;37m- gstarmvp[m
+* | [1;34m25603fc[m - [1;36mMon, 27 Jun 2016 20:51:35 -0400[m [1;32m(10 days ago)[m[1;33m[m
+| |           [37mSQA feed back[m [2;37m- ghiyo[m
+* |   [1;34m06cb0e7[m - [1;36mMon, 27 Jun 2016 20:40:06 -0400[m [1;32m(10 days ago)[m[1;33m[m
+|\ \            [37mMerge branch 'master' of https://github.com/UPOD-2016/UPOD[m [2;37m- Brian Oh[m
+| * | [1;34mf66274a[m - [1;36mMon, 27 Jun 2016 20:26:56 -0400[m [1;32m(10 days ago)[m[1;33m[m
+| | |           [37mAdded User UML[m [2;37m- franco-wong[m
+* | | [1;34mb04e27b[m - [1;36mMon, 27 Jun 2016 20:39:31 -0400[m [1;32m(10 days ago)[m[1;33m[m
+| | |           [37mFormat to Template.html format with appendix to other requirements (not final)[m [2;37m- Brian Oh[m
+* | | [1;34m575ea57[m - [1;36mMon, 27 Jun 2016 20:03:18 -0400[m [1;32m(10 days ago)[m[1;33m[m
+|/ /            [37mFix name[m [2;37m- Brian Oh[m
+* | [1;34md21592f[m - [1;36mMon, 27 Jun 2016 19:48:48 -0400[m [1;32m(10 days ago)[m[1;33m[m
+| |           [37mCreate elastic_collision.html[m [2;37m- giacrom[m
+* | [1;34m47aa2d6[m - [1;36mMon, 27 Jun 2016 19:34:04 -0400[m [1;32m(10 days ago)[m[1;33m[m
+| |           [37mAdd files via upload[m [2;37m- josephvannelli[m
+* | [1;34ma2a4213[m - [1;36mMon, 27 Jun 2016 19:31:02 -0400[m [1;32m(10 days ago)[m[1;33m[m
+| |           [37mElastic Collision[m [2;37m- giacrom[m
+* | [1;34mf7552e6[m - [1;36mMon, 27 Jun 2016 19:13:00 -0400[m [1;32m(10 days ago)[m[1;33m[m
+| |           [37mAdd files via upload[m [2;37m- viss3240[m
+* | [1;34ma5fda5b[m - [1;36mMon, 27 Jun 2016 17:47:28 -0400[m [1;32m(10 days ago)[m[1;33m[m
+| |           [37mSQA document to keep track of SQA work done by group mates[m [2;37m- ghiyo[m
+* | [1;34med94ff4[m - [1;36mMon, 27 Jun 2016 16:43:00 -0400[m [1;32m(10 days ago)[m[1;33m[m
+| |           [37mSQA feedback[m [2;37m- ghiyo[m
+* | [1;34m5a24499[m - [1;36mMon, 27 Jun 2016 16:39:56 -0400[m [1;32m(10 days ago)[m[1;33m[m
+| |           [37mNew template regarding analysis and requirement documents[m [2;37m- ghiyo[m
+* | [1;34mb6a4178[m - [1;36mMon, 27 Jun 2016 16:07:27 -0400[m [1;32m(10 days ago)[m[1;33m[m
+| |           [37madded jumbotron inside column div/ renamed old category page to new category page[m [2;37m- vsutaria[m
+* | [1;34ma0885d0[m - [1;36mMon, 27 Jun 2016 15:42:48 -0400[m [1;32m(10 days ago)[m[1;33m[m
+| |           [37mAdd files via upload[m [2;37m- TheCocoManEd[m
+* | [1;34maa8d5cb[m - [1;36mMon, 27 Jun 2016 15:41:40 -0400[m [1;32m(10 days ago)[m[1;33m[m
+| |           [37mAdd files via upload[m [2;37m- stevenlusonggao[m
+* | [1;34m7d7e677[m - [1;36mMon, 27 Jun 2016 15:33:02 -0400[m [1;32m(10 days ago)[m[1;33m[m
+| |           [37mThe concave mirror until now[m [2;37m- Ensieh Mollazadeh[m
+* |   [1;34mc0d0c84[m - [1;36mMon, 27 Jun 2016 15:29:13 -0400[m [1;32m(10 days ago)[m[1;33m[m
+|\ \            [37mMerge branch 'master' of http://github.com/UPOD-2016/UPOD[m [2;37m- Ensieh Mollazadeh[m
+| * | [1;34m483c720[m - [1;36mMon, 27 Jun 2016 19:26:58 +0000[m [1;32m(10 days ago)[m[1;33m[m
+| | |           [37mAdd WIP Analysis Doc[m [2;37m- Kieran O'Driscoll[m
+| * | [1;34m3c13fd2[m - [1;36mMon, 27 Jun 2016 19:25:06 +0000[m [1;32m(10 days ago)[m[1;33m[m
+| | |           [37mOrganization of files[m [2;37m- Kieran O'Driscoll[m
+| * | [1;34m674ee50[m - [1;36mMon, 27 Jun 2016 15:19:18 -0400[m [1;32m(10 days ago)[m[1;33m[m
+| | |           [37mRename the Magnetic Field lines to the Magnetic Field lines.html[m [2;37m- wu wen[m
+| * | [1;34m7d31889[m - [1;36mMon, 27 Jun 2016 15:18:16 -0400[m [1;32m(10 days ago)[m[1;33m[m
+| | |           [37mthe Magnetic Field lines.html[m [2;37m- wu wen[m
+| * | [1;34mec8cae0[m - [1;36mMon, 27 Jun 2016 15:15:22 -0400[m [1;32m(10 days ago)[m[1;33m[m
+| | |           [37mReadover/Edits made[m [2;37m- Eric Jiang[m
+| * | [1;34mcbdc39c[m - [1;36mMon, 27 Jun 2016 15:05:08 -0400[m [1;32m(10 days ago)[m[1;33m[m
+| | |           [37mRevert "Revert "Remade Frontend UML Diagram""[m [2;37m- Tom West[m
+| * | [1;34m0a35f9d[m - [1;36mMon, 27 Jun 2016 14:59:12 -0400[m [1;32m(10 days ago)[m[1;33m[m
+| | |           [37mRevert "Remade Frontend UML Diagram"[m [2;37m- Tom West[m
+| * | [1;34m7200bb1[m - [1;36mMon, 27 Jun 2016 14:55:29 -0400[m [1;32m(10 days ago)[m[1;33m[m
+| | |           [37mOrganizing requirements folder for analysis phase[m [2;37m- Tom West[m
+| * | [1;34m6b01beb[m - [1;36mMon, 27 Jun 2016 14:36:32 -0400[m [1;32m(10 days ago)[m[1;33m[m
+| | |           [37mRemade Frontend UML Diagram[m [2;37m- Ryan[m
+| * | [1;34m447df94[m - [1;36mMon, 27 Jun 2016 14:27:03 -0400[m [1;32m(10 days ago)[m[1;33m[m
+| | |           [37mRedesign categories pages[m [2;37m- vsutaria[m
+| * | [1;34m176b866[m - [1;36mMon, 27 Jun 2016 11:14:05 -0400[m [1;32m(10 days ago)[m[1;33m[m
+| | |           [37mdeleted trash[m [2;37m- kcolletripp[m
+| * | [1;34md1d03c7[m - [1;36mMon, 27 Jun 2016 10:59:24 -0400[m [1;32m(10 days ago)[m[1;33m[m
+| | |           [37mMathJax[m [2;37m- Jimmyqlx[m
+| * | [1;34mf1cb966[m - [1;36mMon, 27 Jun 2016 05:43:20 -0400[m [1;32m(11 days ago)[m[1;33m[m
+| | |           [37mAdd files via upload[m [2;37m- JeffChung2[m
+| * | [1;34ma2b6f8b[m - [1;36mMon, 27 Jun 2016 05:41:35 -0400[m [1;32m(11 days ago)[m[1;33m[m
+| | |           [37mUpdate UPOD RD - Graphics-Animation.html[m [2;37m- JeffChung2[m
+| * | [1;34mbb2ec7b[m - [1;36mSun, 26 Jun 2016 23:20:51 -0400[m [1;32m(11 days ago)[m[1;33m[m
+| | |           [37mModified Hierarchy[m [2;37m- Ryan Mak[m
+| * | [1;34m2739dac[m - [1;36mSun, 26 Jun 2016 22:19:11 -0400[m [1;32m(11 days ago)[m[1;33m[m
+| | |           [37mAdded page hierarchy for the website[m [2;37m- Ryan Mak[m
+| * | [1;34mea2c012[m - [1;36mSun, 26 Jun 2016 22:10:56 -0400[m [1;32m(11 days ago)[m[1;33m[m
+| | |           [37mAdded animation diagrams document[m [2;37m- Aman Kumar[m
+| * | [1;34m80c683a[m - [1;36mSun, 26 Jun 2016 22:03:20 -0400[m [1;32m(11 days ago)[m[1;33m[m
+| | |           [37mRevert "Create Physics Research Folder to organize content"[m [2;37m- Aman Kumar[m
+| * | [1;34mcf03040[m - [1;36mSun, 26 Jun 2016 21:58:21 -0400[m [1;32m(11 days ago)[m[1;33m[m
+| | |           [37mCreate Physics Research Folder to organize content[m [2;37m- Aman Kumar[m
+| * | [1;34m704600e[m - [1;36mSun, 26 Jun 2016 21:49:12 -0400[m [1;32m(11 days ago)[m[1;33m[m
+| | |           [37mRevert "Created Subfolder to organize physics research"[m [2;37m- Aman Kumar[m
+| * | [1;34m4237900[m - [1;36mSun, 26 Jun 2016 21:46:45 -0400[m [1;32m(11 days ago)[m[1;33m[m
+| | |           [37mCreated Subfolder to organize physics research[m [2;37m- Aman Kumar[m
+| * | [1;34m83a42e4[m - [1;36mSun, 26 Jun 2016 16:49:42 -0400[m [1;32m(11 days ago)[m[1;33m[m
+| | |           [37mEdited Physics HTML document[m [2;37m- Anderszz[m
+| * | [1;34m8d48202[m - [1;36mSun, 26 Jun 2016 03:44:27 -0400[m [1;32m(12 days ago)[m[1;33m[m
+| | |           [37mAdmin Page Layout[m [2;37m- QamarFarooq[m
+| * | [1;34m99308be[m - [1;36mSun, 26 Jun 2016 00:09:23 -0400[m [1;32m(12 days ago)[m[1;33m[m
+| | |           [37mRevised and edited Table of Contents and indexing added Revision History[m [2;37m- Brian Oh[m
+| * | [1;34mbd91e12[m - [1;36mSun, 26 Jun 2016 00:02:35 -0400[m [1;32m(12 days ago)[m[1;33m[m
+| | |           [37mRevised and added Revision History[m [2;37m- Brian Oh[m
+| * | [1;34m504213a[m - [1;36mSat, 25 Jun 2016 23:51:16 -0400[m [1;32m(12 days ago)[m[1;33m[m
+| | |           [37mRevised and converted to proper HTML Template.  Added Revision History[m [2;37m- Brian Oh[m
+| * |   [1;34mc09b1a6[m - [1;36mSat, 25 Jun 2016 23:22:20 -0400[m [1;32m(12 days ago)[m[1;33m[m
+| |\ \            [37mMerge branch 'master' of https://github.com/UPOD-2016/UPOD[m [2;37m- Brian Oh[m
+| | * | [1;34m4eb994a[m - [1;36mSat, 25 Jun 2016 20:50:20 -0400[m [1;32m(12 days ago)[m[1;33m[m
+| | | |           [37mAdd files via upload[m [2;37m- ghiyo[m
+| * | | [1;34mcd2147f[m - [1;36mSat, 25 Jun 2016 23:18:15 -0400[m [1;32m(12 days ago)[m[1;33m[m
+| |/ /            [37mRevised Back End Requirements and properly formatted into HTML template[m [2;37m- Brian Oh[m
+| * | [1;34me41153f[m - [1;36mSat, 25 Jun 2016 20:41:45 -0400[m [1;32m(12 days ago)[m[1;33m[m
+| | |           [37mAdded Revision History table. PLEASE FILL APPROPRIATELY[m [2;37m- Brian Oh[m
+| * | [1;34m0bdd8a6[m - [1;36mSat, 25 Jun 2016 18:14:41 -0400[m [1;32m(12 days ago)[m[1;33m[m
+| | |           [37mRevised Physics.html[m [2;37m- Brian Oh[m
+| * | [1;34me57df05[m - [1;36mFri, 24 Jun 2016 23:12:51 -0400[m [1;32m(13 days ago)[m[1;33m[m
+| | |           [37mUpdated Edited Physics RD[m [2;37m- Anderszz[m
+| * | [1;34m46babc0[m - [1;36mFri, 24 Jun 2016 23:07:10 -0400[m [1;32m(13 days ago)[m[1;33m[m
+| | |           [37mChanged template to Physics RD[m [2;37m- Anderszz[m
+| * | [1;34md3ab32e[m - [1;36mFri, 24 Jun 2016 23:01:05 -0400[m [1;32m(13 days ago)[m[1;33m[m
+| | |           [37mAdded new physics HTML[m [2;37m- Anderszz[m
+* | | [1;34m5615e83[m - [1;36mMon, 27 Jun 2016 15:25:14 -0400[m [1;32m(10 days ago)[m[1;33m[m
+|/ /            [37mThe concave mirror untill now[m [2;37m- Ensieh Mollazadeh[m
+* | [1;34mdbc436f[m - [1;36mFri, 24 Jun 2016 17:31:57 -0400[m [1;32m(13 days ago)[m[1;33m[m
+| |           [37mUseful websites and a textbook for svg[m [2;37m- Ensieh Mollazadeh[m
+* | [1;34mbd95e3a[m - [1;36mFri, 24 Jun 2016 14:05:16 -0400[m [1;32m(13 days ago)[m[1;33m[m
+| |           [37mAdd files via upload[m [2;37m- josephvannelli[m
+* | [1;34m4fdda5f[m - [1;36mFri, 24 Jun 2016 14:00:55 -0400[m [1;32m(13 days ago)[m[1;33m[m
+| |           [37mAdd files via upload[m [2;37m- giacrom[m
+* | [1;34m88b6354[m - [1;36mFri, 24 Jun 2016 13:10:42 -0400[m [1;32m(13 days ago)[m[1;33m[m
+| |           [37mshapes.html[m [2;37m- moll7720[m
+* | [1;34m6c72717[m - [1;36mFri, 24 Jun 2016 13:06:17 -0400[m [1;32m(13 days ago)[m[1;33m[m
+| |           [37mDelete library.html[m [2;37m- moll7720[m
+* | [1;34mec28c2a[m - [1;36mFri, 24 Jun 2016 12:38:21 -0400[m [1;32m(13 days ago)[m[1;33m[m
+| |           [37mCreate library.html[m [2;37m- moll7720[m
+* | [1;34m638b757[m - [1;36mFri, 24 Jun 2016 01:31:01 -0400[m [1;32m(2 weeks ago)[m[1;33m[m
+| |           [37mUpdate Template.html[m [2;37m- ghiyo[m
+* | [1;34m3aa5a21[m - [1;36mFri, 24 Jun 2016 01:30:15 -0400[m [1;32m(2 weeks ago)[m[1;33m[m
+| |           [37mUpdate Template.html[m [2;37m- ghiyo[m
+* | [1;34m67b4fba[m - [1;36mFri, 24 Jun 2016 01:26:51 -0400[m [1;32m(2 weeks ago)[m[1;33m[m
+| |           [37mUpdate Template.html[m [2;37m- ghiyo[m
+* | [1;34ma448d51[m - [1;36mThu, 23 Jun 2016 16:51:25 -0400[m [1;32m(2 weeks ago)[m[1;33m[m
+| |           [37mAdd files via upload[m [2;37m- Pillip Lee[m
+* | [1;34m1e206b1[m - [1;36mThu, 23 Jun 2016 16:15:15 -0400[m [1;32m(2 weeks ago)[m[1;33m[m
+| |           [37mAdd files via upload[m [2;37m- ematiss[m
+* | [1;34mc436ec5[m - [1;36mWed, 22 Jun 2016 14:59:55 -0400[m [1;32m(2 weeks ago)[m[1;33m[m
+| |           [37madd bootstrap breadcrumbs to categories and entry pages[m [2;37m- Vik Sharma[m
+* | [1;34macdbc37[m - [1;36mWed, 22 Jun 2016 13:47:39 -0400[m [1;32m(2 weeks ago)[m[1;33m[m
+| |           [37mmove position of slide menu button to the far left and add a few links to the menu[m [2;37m- Vik Sharma[m
+* | [1;34m7804ae5[m - [1;36mWed, 22 Jun 2016 12:22:16 -0400[m [1;32m(2 weeks ago)[m[1;33m[m
+| |           [37mUpdated revision history[m [2;37m- muttahirzia@gmail.com[m
+* | [1;34mf395ab7[m - [1;36mWed, 22 Jun 2016 12:12:06 -0400[m [1;32m(2 weeks ago)[m[1;33m[m
+| |           [37mSQA Review of Front-end and Back-end Requirements[m [2;37m- Student[m
+* | [1;34m99b4138[m - [1;36mWed, 22 Jun 2016 10:32:41 -0400[m [1;32m(2 weeks ago)[m[1;33m[m
+| |           [37mCreate TEMP[m [2;37m- ematiss[m
+* | [1;34m3c015b0[m - [1;36mWed, 22 Jun 2016 10:16:45 -0400[m [1;32m(2 weeks ago)[m[1;33m[m
+| |           [37mUpdate readme.txt[m [2;37m- ematiss[m
+* | [1;34m8478aca[m - [1;36mWed, 22 Jun 2016 10:14:04 -0400[m [1;32m(2 weeks ago)[m[1;33m[m
+| |           [37mAdd files via upload[m [2;37m- ematiss[m
+* | [1;34me3fa66c[m - [1;36mWed, 22 Jun 2016 09:44:23 -0400[m [1;32m(2 weeks ago)[m[1;33m[m
+| |           [37mDelete q1[m [2;37m- TheCocoManEd[m
+* | [1;34m105492a[m - [1;36mWed, 22 Jun 2016 09:44:05 -0400[m [1;32m(2 weeks ago)[m[1;33m[m
+| |           [37mAdd files via upload[m [2;37m- TheCocoManEd[m
+* | [1;34mf73405a[m - [1;36mWed, 22 Jun 2016 09:42:19 -0400[m [1;32m(2 weeks ago)[m[1;33m[m
+| |           [37mCreate q1[m [2;37m- TheCocoManEd[m
+* | [1;34ma2a0abc[m - [1;36mWed, 22 Jun 2016 09:40:59 -0400[m [1;32m(2 weeks ago)[m[1;33m[m
+| |           [37mDelete Quantum-Research[m [2;37m- TheCocoManEd[m
+* | [1;34m21dd650[m - [1;36mWed, 22 Jun 2016 09:40:38 -0400[m [1;32m(2 weeks ago)[m[1;33m[m
+| |           [37mCreate Quantum-Research[m [2;37m- TheCocoManEd[m
+* | [1;34m848b2ea[m - [1;36mTue, 21 Jun 2016 19:35:10 -0400[m [1;32m(2 weeks ago)[m[1;33m[m
+| |           [37mAdd files via upload[m [2;37m- giacrom[m
+* | [1;34m4268158[m - [1;36mTue, 21 Jun 2016 11:22:10 -0400[m [1;32m(2 weeks ago)[m[1;33m[m
+| |           [37mremoved drop-down menu[m [2;37m- kcolletripp[m
+* | [1;34m752108d[m - [1;36mMon, 20 Jun 2016 20:13:09 -0400[m [1;32m(2 weeks ago)[m[1;33m[m
+| |           [37mDelete ball.js[m [2;37m- ematiss[m
+* | [1;34m950a5d0[m - [1;36mMon, 20 Jun 2016 20:13:03 -0400[m [1;32m(2 weeks ago)[m[1;33m[m
+| |           [37mDelete ball.html[m [2;37m- ematiss[m
+* | [1;34m6c85664[m - [1;36mMon, 20 Jun 2016 20:12:51 -0400[m [1;32m(2 weeks ago)[m[1;33m[m
+| |           [37mCreate ball.js[m [2;37m- ematiss[m
+* | [1;34m6bf59b1[m - [1;36mMon, 20 Jun 2016 20:12:19 -0400[m [1;32m(2 weeks ago)[m[1;33m[m
+| |           [37mCreate ball.html[m [2;37m- ematiss[m
+* | [1;34mfa03152[m - [1;36mMon, 20 Jun 2016 20:11:34 -0400[m [1;32m(2 weeks ago)[m[1;33m[m
+| |           [37mDelete Sandbox[m [2;37m- ematiss[m
+* | [1;34m7a970ac[m - [1;36mMon, 20 Jun 2016 20:11:23 -0400[m [1;32m(2 weeks ago)[m[1;33m[m
+| |           [37mCreate Sandbox[m [2;37m- ematiss[m
+* | [1;34m86659d9[m - [1;36mMon, 20 Jun 2016 20:09:56 -0400[m [1;32m(2 weeks ago)[m[1;33m[m
+| |           [37mCreate ball.html[m [2;37m- ematiss[m
+* | [1;34m57d5bfd[m - [1;36mMon, 20 Jun 2016 20:09:09 -0400[m [1;32m(2 weeks ago)[m[1;33m[m
+| |           [37mCreate ball.js[m [2;37m- ematiss[m
+* | [1;34m41eed59[m - [1;36mMon, 20 Jun 2016 18:33:59 -0400[m [1;32m(2 weeks ago)[m[1;33m[m
+| |           [37mAdd files via upload[m [2;37m- viss3240[m
+* | [1;34me5a09bc[m - [1;36mMon, 20 Jun 2016 18:32:46 -0400[m [1;32m(2 weeks ago)[m[1;33m[m
+| |           [37mAdd files via upload[m [2;37m- josephvannelli[m
+* | [1;34mff202bf[m - [1;36mMon, 20 Jun 2016 18:32:11 -0400[m [1;32m(2 weeks ago)[m[1;33m[m
+| |           [37mAdd files via upload[m [2;37m- josephvannelli[m
+* | [1;34m8ee6e07[m - [1;36mMon, 20 Jun 2016 18:31:29 -0400[m [1;32m(2 weeks ago)[m[1;33m[m
+| |           [37mCreate readme.txt[m [2;37m- ematiss[m
+* | [1;34mce57da2[m - [1;36mMon, 20 Jun 2016 17:19:24 -0400[m [1;32m(2 weeks ago)[m[1;33m[m
+| |           [37mChanged all pages to use the new push menu[m [2;37m- Ryan[m
+* | [1;34mc3168aa[m - [1;36mMon, 20 Jun 2016 13:51:34 -0400[m [1;32m(2 weeks ago)[m[1;33m[m
+| |           [37mRemade Push Menu[m [2;37m- Ryan[m
+* | [1;34m06ca857[m - [1;36mMon, 20 Jun 2016 05:58:56 -0400[m [1;32m(3 weeks ago)[m[1;33m[m
+| |           [37mmade edits based on the edited srs[m [2;37m- JeffChung2[m
+* | [1;34m7fbb7d0[m - [1;36mMon, 20 Jun 2016 01:33:14 -0400[m [1;32m(3 weeks ago)[m[1;33m[m
+| |           [37mMade updates to Web Design SRS & updated .html version[m [2;37m- Tom[m
+* | [1;34m487841b[m - [1;36mSun, 19 Jun 2016 17:29:54 -0400[m [1;32m(3 weeks ago)[m[1;33m[m
+| |           [37mHTML file for edited Physics RD[m [2;37m- Anderszz[m
+* |   [1;34me2f17ab[m - [1;36mSun, 19 Jun 2016 17:24:31 -0400[m [1;32m(3 weeks ago)[m[1;33m[m
+|\ \            [37mMerge pull request #10 from UPOD-2016/SQA-Feedback-on-SRS[m [2;37m- ghiyo[m
+| | | * [1;34m3fb9113[m - [1;36mMon, 27 Jun 2016 02:58:58 -0400[m [1;32m(11 days ago)[m[1;33m (origin/SQA-Feedback-on-SRS)[m
+| | |/            [37mAdded additional graphics SQA commentary[m [2;37m- chan6240[m
+| |/|   
+| * | [1;34m2a15bfe[m - [1;36mSun, 19 Jun 2016 17:23:00 -0400[m [1;32m(3 weeks ago)[m[1;33m[m
+|/ /            [37mWe should store the edited documents for reference[m [2;37m- ghiyo[m
+* | [1;34m29c5aae[m - [1;36mSun, 19 Jun 2016 17:20:09 -0400[m [1;32m(3 weeks ago)[m[1;33m[m
+| |           [37mnew template[m [2;37m- Anderszz[m
+* | [1;34m0c16aa3[m - [1;36mSun, 19 Jun 2016 13:47:29 -0400[m [1;32m(3 weeks ago)[m[1;33m[m
+| |           [37madded log files[m [2;37m- rmoro[m
+* | [1;34m001eb77[m - [1;36mSat, 18 Jun 2016 19:08:16 -0400[m [1;32m(3 weeks ago)[m[1;33m[m
+| |           [37mUpdated based on the template[m [2;37m- Clive Shen[m
+* | [1;34m096d39b[m - [1;36mSat, 18 Jun 2016 15:08:22 -0400[m [1;32m(3 weeks ago)[m[1;33m[m
+| |           [37mAdd files via upload[m [2;37m- Wallise Wu[m
+* | [1;34m37e990c[m - [1;36mSat, 18 Jun 2016 11:36:43 -0400[m [1;32m(3 weeks ago)[m[1;33m[m
+| |           [37mWhite background[m [2;37m- Brian Oh[m
+* | [1;34md2e4daf[m - [1;36mSat, 18 Jun 2016 03:27:19 -0400[m [1;32m(3 weeks ago)[m[1;33m[m
+| |           [37mAdd files via upload[m [2;37m- JeffChung2[m
+* | [1;34mcf18c16[m - [1;36mSat, 18 Jun 2016 03:00:01 -0400[m [1;32m(3 weeks ago)[m[1;33m[m
+| |           [37mAdd files via upload[m [2;37m- JeffChung2[m
+* |   [1;34m2d44da5[m - [1;36mSat, 18 Jun 2016 02:00:46 -0400[m [1;32m(3 weeks ago)[m[1;33m[m
+|\ \            [37mMerge branch 'master' of https://github.com/UPOD-2016/UPOD[m [2;37m- Brian Oh[m
+| * | [1;34m2bcad1d[m - [1;36mSat, 18 Jun 2016 01:57:39 -0400[m [1;32m(3 weeks ago)[m[1;33m[m
+| | |           [37mConverted to html copy.[m [2;37m- ohxx5810[m
+* | | [1;34m2ba8272[m - [1;36mSat, 18 Jun 2016 01:59:59 -0400[m [1;32m(3 weeks ago)[m[1;33m[m
+|/ /            [37mFixed formatting and indents[m [2;37m- Brian Oh[m
+* |   [1;34mf222549[m - [1;36mSat, 18 Jun 2016 01:53:25 -0400[m [1;32m(3 weeks ago)[m[1;33m[m
+|\ \            [37mMerge remote-tracking branch 'refs/remotes/origin/master'[m [2;37m- Brian Oh[m
+| * | [1;34m7563726[m - [1;36mSat, 18 Jun 2016 01:28:16 -0400[m [1;32m(3 weeks ago)[m[1;33m[m
+| | |           [37mUpdated based on new template[m [2;37m- Clive Shen[m
+| * | [1;34m0c7d3ce[m - [1;36mSat, 18 Jun 2016 00:40:33 -0400[m [1;32m(3 weeks ago)[m[1;33m[m
+| | |           [37mNew Physics Content[m [2;37m- Ryan Mak[m
+* | | [1;34md1d03cb[m - [1;36mSat, 18 Jun 2016 01:48:30 -0400[m [1;32m(3 weeks ago)[m[1;33m[m
+| | |           [37mFINAL TEMPLATE TO USE IN HTML[m [2;37m- Brian Oh[m
+* | | [1;34m8e106ee[m - [1;36mFri, 17 Jun 2016 23:37:12 -0400[m [1;32m(3 weeks ago)[m[1;33m[m
+|/ /            [37mAdded Table of Contents and edited format[m [2;37m- Brian Oh[m
+* |   [1;34m44d98f9[m - [1;36mFri, 17 Jun 2016 20:28:57 -0400[m [1;32m(3 weeks ago)[m[1;33m[m
+|\ \            [37mMerge remote-tracking branch 'refs/remotes/origin/master'[m [2;37m- Brian Oh[m
+| * | [1;34m82e3abe[m - [1;36mFri, 17 Jun 2016 12:44:42 -0400[m [1;32m(3 weeks ago)[m[1;33m[m
+| | |           [37mAdd files via upload[m [2;37m- TheCocoManEd[m
+| * | [1;34md3b7deb[m - [1;36mFri, 17 Jun 2016 12:35:29 -0400[m [1;32m(3 weeks ago)[m[1;33m[m
+| | |           [37mAdd files via upload[m [2;37m- TheCocoManEd[m
+* | | [1;34m6c362c0[m - [1;36mFri, 17 Jun 2016 20:28:34 -0400[m [1;32m(3 weeks ago)[m[1;33m[m
+|/ /            [37mPhysics document Version 0.2 in html[m [2;37m- Brian Oh[m
+* | [1;34m6462e69[m - [1;36mFri, 17 Jun 2016 01:58:21 -0400[m [1;32m(3 weeks ago)[m[1;33m[m
+| |           [37mEdited margin for MORE drop-down[m [2;37m- Brian Oh[m
+* |   [1;34maf1d59f[m - [1;36mFri, 17 Jun 2016 01:49:30 -0400[m [1;32m(3 weeks ago)[m[1;33m[m
+|\ \            [37mMerge branch 'master' of https://github.com/UPOD-2016/UPOD[m [2;37m- Brian Oh[m
+| * \   [1;34m5bac010[m - [1;36mFri, 17 Jun 2016 01:31:46 -0400[m [1;32m(3 weeks ago)[m[1;33m[m
+| |\ \            [37mMerge branch 'master' of https://github.com/UPOD-2016/UPOD[m [2;37m- Tom[m
+| * | | [1;34m08e803a[m - [1;36mFri, 17 Jun 2016 01:30:44 -0400[m [1;32m(3 weeks ago)[m[1;33m[m
+| | | |           [37mResolved highlighted fields on RD - Web Design[m [2;37m- Tom[m
+| * | | [1;34m426ccdd[m - [1;36mFri, 17 Jun 2016 01:27:08 -0400[m [1;32m(3 weeks ago)[m[1;33m[m
+| | | |           [37mAdded RD - General, Updated RD - Web Design based on SQA feedback[m [2;37m- Tom[m
+* | | | [1;34m7c9d8ce[m - [1;36mFri, 17 Jun 2016 01:49:19 -0400[m [1;32m(3 weeks ago)[m[1;33m[m
+| |/ /            [37mAdded More drop-down menu with links[m [2;37m- Brian Oh[m
+|/| |   
+* | | [1;34m907b95e[m - [1;36mFri, 17 Jun 2016 00:58:13 -0400[m [1;32m(3 weeks ago)[m[1;33m[m
+| | |           [37mEdited About page[m [2;37m- Brian Oh[m
+* | |   [1;34m5a8683c[m - [1;36mFri, 17 Jun 2016 00:03:31 -0400[m [1;32m(3 weeks ago)[m[1;33m[m
+|\ \ \            [37mMerge branch 'master' of https://github.com/UPOD-2016/UPOD[m [2;37m- Brian Oh[m
+| * | | [1;34m45852d9[m - [1;36mWed, 15 Jun 2016 00:46:03 -0400[m [1;32m(3 weeks ago)[m[1;33m[m
+| | | |           [37mAdded indepth explanation of interactive animated diagram[m [2;37m- Kevzys[m
+| * | | [1;34md9abb52[m - [1;36mTue, 14 Jun 2016 00:36:15 -0400[m [1;32m(3 weeks ago)[m[1;33m[m
+| | | |           [37mRename UPOD RD - Web Design.html to UPOD SRS - Web Design (Front End).html[m [2;37m- ghiyo[m
+| * | | [1;34m46d0e9a[m - [1;36mTue, 14 Jun 2016 00:30:16 -0400[m [1;32m(3 weeks ago)[m[1;33m[m
+| |/ /            [37mUpdate Template.html[m [2;37m- ghiyo[m
+| * | [1;34m3ec31b9[m - [1;36mMon, 13 Jun 2016 16:59:35 -0400[m [1;32m(3 weeks ago)[m[1;33m[m
+| | |           [37madded Vishrut's hours[m [2;37m- kcolletripp[m
+* | | [1;34m2820eb0[m - [1;36mFri, 17 Jun 2016 00:02:33 -0400[m [1;32m(3 weeks ago)[m[1;33m[m
+| | |           [37mAdded More drop-down menu with active links to connect to[m [2;37m- Brian Oh[m
+* | | [1;34m4b0bd26[m - [1;36mThu, 16 Jun 2016 21:56:15 -0400[m [1;32m(3 weeks ago)[m[1;33m[m
+| | |           [37mDelete comment in about.html[m [2;37m- Brian Oh[m
+* | | [1;34m6ad9a66[m - [1;36mThu, 16 Jun 2016 21:51:25 -0400[m [1;32m(3 weeks ago)[m[1;33m[m
+| | |           [37mAdded comment in about.html[m [2;37m- Brian Oh[m
+* | | [1;34meeea399[m - [1;36mThu, 16 Jun 2016 21:49:38 -0400[m [1;32m(3 weeks ago)[m[1;33m[m
+| | |           [37mSet to original about.html[m [2;37m- Brian Oh[m
+* | | [1;34m14fb112[m - [1;36mThu, 16 Jun 2016 21:46:41 -0400[m [1;32m(3 weeks ago)[m[1;33m[m
+|/ /            [37mabout.html comment added[m [2;37m- Brian Oh[m
+* | [1;34mce6dc98[m - [1;36mMon, 13 Jun 2016 15:21:20 -0400[m [1;32m(3 weeks ago)[m[1;33m[m
+| |           [37mTemplate for Requirements[m [2;37m- ohxx5810[m
+* | [1;34m895b777[m - [1;36mMon, 13 Jun 2016 15:18:23 -0400[m [1;32m(3 weeks ago)[m[1;33m[m
+| |           [37mDelete template[m [2;37m- ohxx5810[m
+* | [1;34mf7207b5[m - [1;36mMon, 13 Jun 2016 02:59:44 -0400[m [1;32m(4 weeks ago)[m[1;33m[m
+| |           [37mCommit message[m [2;37m- ghiyo[m
+* | [1;34m99b6acf[m - [1;36mSun, 12 Jun 2016 16:27:11 -0400[m [1;32m(4 weeks ago)[m[1;33m[m
+| |           [37mAdded a people tracker[m [2;37m- kcolletripp[m
+* | [1;34ma6b88bd[m - [1;36mSun, 12 Jun 2016 14:47:11 -0400[m [1;32m(4 weeks ago)[m[1;33m[m
+| |           [37mcentered text[m [2;37m- kcolletripp[m
+* |   [1;34m192a248[m - [1;36mSun, 12 Jun 2016 14:30:29 -0400[m [1;32m(4 weeks ago)[m[1;33m[m
+|\ \            [37mMerge branch 'master' of https://github.com/UPOD-2016/UPOD[m [2;37m- kcolletripp[m
+| * | [1;34m24a772e[m - [1;36mSun, 12 Jun 2016 14:23:47 -0400[m [1;32m(4 weeks ago)[m[1;33m[m
+| | |           [37mAdded UPOD Logo to header[m [2;37m- Ryan[m
+| * | [1;34m09b6c9d[m - [1;36mSun, 12 Jun 2016 13:51:46 -0400[m [1;32m(4 weeks ago)[m[1;33m[m
+| | |           [37mForgot to update Revision history[m [2;37m- Ryan[m
+| * | [1;34m9d14645[m - [1;36mSun, 12 Jun 2016 13:46:38 -0400[m [1;32m(4 weeks ago)[m[1;33m[m
+| | |           [37mUpdated holes in requirements[m [2;37m- Ryan[m
+* | | [1;34mcf1369f[m - [1;36mSun, 12 Jun 2016 14:30:08 -0400[m [1;32m(4 weeks ago)[m[1;33m[m
+|/ /            [37mmade 404 page[m [2;37m- kcolletripp[m
+* | [1;34mc8362c1[m - [1;36mSun, 12 Jun 2016 13:42:58 -0400[m [1;32m(4 weeks ago)[m[1;33m[m
+| |           [37mPut content in div[m [2;37m- kcolletripp[m
+* | [1;34mbb584c2[m - [1;36mSat, 11 Jun 2016 19:53:23 -0400[m [1;32m(4 weeks ago)[m[1;33m[m
+| |           [37mTemplate for Requirements[m [2;37m- ohxx5810[m
+* | [1;34m3a2b44d[m - [1;36mWed, 8 Jun 2016 14:46:25 -0400[m [1;32m(4 weeks ago)[m[1;33m[m
+| |           [37madded new tracking site[m [2;37m- rmoro[m
+* | [1;34mecd28af[m - [1;36mMon, 6 Jun 2016 14:52:00 -0400[m [1;32m(4 weeks ago)[m[1;33m[m
+| |           [37mAdd files via upload[m [2;37m- JeffChung2[m
+* | [1;34mc2eb1e4[m - [1;36mMon, 6 Jun 2016 13:56:30 -0400[m [1;32m(4 weeks ago)[m[1;33m[m
+| |           [37mAdded "Forgot Password" section[m [2;37m- Ryan Mak[m
+* | [1;34m80dd30a[m - [1;36mSun, 5 Jun 2016 22:50:26 -0400[m [1;32m(5 weeks ago)[m[1;33m[m
+| |           [37mAdd files via upload[m [2;37m- wuxx4780[m
+* | [1;34m4ab94b6[m - [1;36mSun, 5 Jun 2016 03:55:47 -0400[m [1;32m(5 weeks ago)[m[1;33m[m
+| |           [37mmade a few additions to uml diagram again[m [2;37m- rmoro[m
+* | [1;34mc59f3dc[m - [1;36mSun, 5 Jun 2016 03:36:59 -0400[m [1;32m(5 weeks ago)[m[1;33m[m
+| |           [37mmade a few additions to uml diagram[m [2;37m- rmoro[m
+* | [1;34m2418422[m - [1;36mSun, 5 Jun 2016 03:33:17 -0400[m [1;32m(5 weeks ago)[m[1;33m[m
+| |           [37madded a quick mock up for the backend UML in hopes of getting the database set up tomorrow.[m [2;37m- rmoro[m
+* | [1;34me4d3581[m - [1;36mThu, 2 Jun 2016 22:12:46 -0400[m [1;32m(5 weeks ago)[m[1;33m[m
+| |           [37mallowed for scrolling[m [2;37m- kcolletripp[m
+* | [1;34mb84c685[m - [1;36mThu, 2 Jun 2016 21:44:50 -0400[m [1;32m(5 weeks ago)[m[1;33m[m
+| |           [37mremoved <head> tags in code snippets[m [2;37m- kcolletripp[m
+* | [1;34ma8ed59b[m - [1;36mThu, 2 Jun 2016 21:43:57 -0400[m [1;32m(5 weeks ago)[m[1;33m[m
+| |           [37mdeleted unused files[m [2;37m- kcolletripp[m
+* | [1;34m511b9c7[m - [1;36mThu, 2 Jun 2016 15:27:30 -0400[m [1;32m(5 weeks ago)[m[1;33m[m
+| |           [37madd push menu to all the other pages[m [2;37m- Vik Sharma[m
+* |   [1;34m505b448[m - [1;36mThu, 2 Jun 2016 12:31:39 -0400[m [1;32m(5 weeks ago)[m[1;33m[m
+|\ \            [37mmerge[m [2;37m- Vik Sharma[m
+| * | [1;34m73a249e[m - [1;36mWed, 1 Jun 2016 22:59:55 -0400[m [1;32m(5 weeks ago)[m[1;33m[m
+| | |           [37mfix styling and merge login styles into main style sheet[m [2;37m- romanlipisiy[m
+| * |   [1;34mb5ea9d4[m - [1;36mWed, 1 Jun 2016 21:02:44 -0400[m [1;32m(5 weeks ago)[m[1;33m[m
+| |\ \            [37mfix footer styling[m [2;37m- romanlipisiy[m
+| | * | [1;34me1ebbe4[m - [1;36mWed, 1 Jun 2016 20:34:43 -0400[m [1;32m(5 weeks ago)[m[1;33m[m
+| | | |           [37madmin side-panel changes[m [2;37m- tudorbertiean[m
+| | * | [1;34m74b8e58[m - [1;36mWed, 1 Jun 2016 20:18:27 -0400[m [1;32m(5 weeks ago)[m[1;33m[m
+| | | |           [37mUpdated notes[m [2;37m- Ryan Mak[m
+| * | | [1;34ma61d96a[m - [1;36mWed, 1 Jun 2016 20:57:46 -0400[m [1;32m(5 weeks ago)[m[1;33m[m
+| |/ /            [37mfix footer styling[m [2;37m- romanlipisiy[m
+| * | [1;34m19f03ca[m - [1;36mWed, 1 Jun 2016 19:51:46 -0400[m [1;32m(5 weeks ago)[m[1;33m[m
+| | |           [37mfix styling issues[m [2;37m- romanlipisiy[m
+* | | [1;34m22483bf[m - [1;36mThu, 2 Jun 2016 12:29:01 -0400[m [1;32m(5 weeks ago)[m[1;33m[m
+|/ /            [37madd push menu to search-result.html, reorganize and add push menu to header[m [2;37m- Vik Sharma[m
+* |   [1;34m46afe31[m - [1;36mWed, 1 Jun 2016 19:03:57 -0400[m [1;32m(5 weeks ago)[m[1;33m[m
+|\ \            [37mfix styling on all pages[m [2;37m- romanlipisiy[m
+| * | [1;34m91f472d[m - [1;36mWed, 1 Jun 2016 18:36:15 -0400[m [1;32m(5 weeks ago)[m[1;33m[m
+| | |           [37mFile rename[m [2;37m- Ryan Mak[m
+| * | [1;34m06be7b1[m - [1;36mWed, 1 Jun 2016 18:09:34 -0400[m [1;32m(5 weeks ago)[m[1;33m[m
+| | |           [37mAdded links to other pages[m [2;37m- Ryan Mak[m
+* | | [1;34m4b55666[m - [1;36mWed, 1 Jun 2016 18:51:21 -0400[m [1;32m(5 weeks ago)[m[1;33m[m
+|/ /            [37mfix styling of all pages[m [2;37m- romanlipisiy[m
+* | [1;34m2e2bc83[m - [1;36mWed, 1 Jun 2016 16:54:45 -0400[m [1;32m(5 weeks ago)[m[1;33m[m
+| |           [37mfix comment box[m [2;37m- romanlipisiy[m
+* | [1;34mc0b97a7[m - [1;36mWed, 1 Jun 2016 16:06:43 -0400[m [1;32m(5 weeks ago)[m[1;33m[m
+| |           [37mrefactored names to meet standards[m [2;37m- kcolletripp[m
+* | [1;34m88939bf[m - [1;36mWed, 1 Jun 2016 16:04:45 -0400[m [1;32m(5 weeks ago)[m[1;33m[m
+| |           [37mchanged background from purple to white[m [2;37m- kcolletripp[m
+* |   [1;34m26b396f[m - [1;36mWed, 1 Jun 2016 15:25:56 -0400[m [1;32m(5 weeks ago)[m[1;33m[m
+|\ \            [37mMerge branch 'master' of https://github.com/UPOD-2016/UPOD[m [2;37m- rmoro[m
+| * | [1;34m560e329[m - [1;36mWed, 1 Jun 2016 15:10:10 -0400[m [1;32m(5 weeks ago)[m[1;33m[m
+| |/            [37mAdd files via upload[m [2;37m- Wallise Wu[m
+* | [1;34m0d66de0[m - [1;36mWed, 1 Jun 2016 14:45:57 -0400[m [1;32m(5 weeks ago)[m[1;33m[m
+|/            [37mAdded a Logo[m [2;37m- rmoro[m
+* [1;34mb455be3[m - [1;36mWed, 1 Jun 2016 14:14:37 -0400[m [1;32m(5 weeks ago)[m[1;33m[m
+|           [37mAdded an alternative Menu Back[m [2;37m- rmoro[m
+* [1;34m4598dfa[m - [1;36mWed, 1 Jun 2016 14:13:27 -0400[m [1;32m(5 weeks ago)[m[1;33m[m
+|           [37mAdded an alternative icon[m [2;37m- rmoro[m
+* [1;34mcfe19e4[m - [1;36mWed, 1 Jun 2016 12:53:11 -0400[m [1;32m(5 weeks ago)[m[1;33m[m
+|           [37mfixed header, fixed css import[m [2;37m- Delia[m
+* [1;34mf2b12f6[m - [1;36mWed, 1 Jun 2016 00:58:44 -0400[m [1;32m(5 weeks ago)[m[1;33m[m
+|           [37mAdd files via upload[m [2;37m- Kevzys[m
+* [1;34m4c4b05f[m - [1;36mWed, 1 Jun 2016 00:09:43 -0400[m [1;32m(5 weeks ago)[m[1;33m[m
+|           [37mUpdated formatting and prepped for release[m [2;37m- Tom[m
+* [1;34m88d531d[m - [1;36mTue, 31 May 2016 23:10:32 -0400[m [1;32m(5 weeks ago)[m[1;33m[m
+|           [37mmove script tags to the bottom[m [2;37m- Vikrant Sharma[m
+*   [1;34mcf32e95[m - [1;36mTue, 31 May 2016 22:57:11 -0400[m [1;32m(5 weeks ago)[m[1;33m[m
+|\            [37mmerge[m [2;37m- Vikrant Sharma[m
+| * [1;34md8a9ac8[m - [1;36mTue, 31 May 2016 19:50:17 -0400[m [1;32m(5 weeks ago)[m[1;33m[m
+| |           [37mUpdate README.md[m [2;37m- Robert Morouney[m
+| * [1;34mfd20ff0[m - [1;36mTue, 31 May 2016 19:20:11 -0400[m [1;32m(5 weeks ago)[m[1;33m[m
+| |           [37mAdded the Optics Section[m [2;37m- ryanmak[m
+| * [1;34md050610[m - [1;36mTue, 31 May 2016 03:01:02 -0400[m [1;32m(5 weeks ago)[m[1;33m[m
+| |           [37mAdd actors and use cases[m [2;37m- Clive Shen[m
+| * [1;34mecbe0cb[m - [1;36mTue, 31 May 2016 19:00:03 -0400[m [1;32m(5 weeks ago)[m[1;33m[m
+| |           [37mAdd files via upload[m [2;37m- akuma6620[m
+| * [1;34m7ea5943[m - [1;36mTue, 31 May 2016 15:23:13 -0400[m [1;32m(5 weeks ago)[m[1;33m[m
+| |           [37mrefactor tabs and name-name variables[m [2;37m- tudorbertiean[m
+| * [1;34m63b50d7[m - [1;36mTue, 31 May 2016 13:09:32 -0400[m [1;32m(5 weeks ago)[m[1;33m[m
+| |           [37madd container to title[m [2;37m- romanlipisiy[m
+| * [1;34m3fa142b[m - [1;36mTue, 31 May 2016 12:58:42 -0400[m [1;32m(5 weeks ago)[m[1;33m[m
+| |           [37madd search results title[m [2;37m- romanlipisiy[m
+| * [1;34ma8fde3c[m - [1;36mTue, 31 May 2016 11:28:41 -0400[m [1;32m(5 weeks ago)[m[1;33m[m
+| |           [37madd list group to search results[m [2;37m- romanlipisiy[m
+* | [1;34m5f7b3e9[m - [1;36mTue, 31 May 2016 22:53:32 -0400[m [1;32m(5 weeks ago)[m[1;33m[m
+|/            [37mcreate push menu, add push menu to homepage.html and restyle homepage.html and footer.html[m [2;37m- Vikrant Sharma[m
+* [1;34ma121557[m - [1;36mMon, 30 May 2016 23:48:19 -0400[m [1;32m(5 weeks ago)[m[1;33m[m
+|           [37madmin side-panel reformatting[m [2;37m- tudorbertiean[m
+* [1;34m0e70368[m - [1;36mMon, 30 May 2016 22:49:27 -0400[m [1;32m(5 weeks ago)[m[1;33m[m
+|           [37mAdd files via upload[m [2;37m- Kevzys[m
+* [1;34m8ed4c61[m - [1;36mMon, 30 May 2016 22:42:06 -0400[m [1;32m(5 weeks ago)[m[1;33m[m
+|           [37mCreate team-info.txt[m [2;37m- Kevzys[m
+*   [1;34m6009788[m - [1;36mMon, 30 May 2016 22:28:15 -0400[m [1;32m(5 weeks ago)[m[1;33m[m
+|\            [37mMerge branch 'master' of https://github.com/UPOD-2016/UPOD[m [2;37m- tudorbertiean[m
+| * [1;34m8084a81[m - [1;36mMon, 30 May 2016 21:35:18 -0400[m [1;32m(5 weeks ago)[m[1;33m[m
+| |           [37madd jumbotron and title and description to the search result[m [2;37m- romanlipisiy[m
+| * [1;34m3e066c9[m - [1;36mMon, 30 May 2016 21:27:14 -0400[m [1;32m(5 weeks ago)[m[1;33m[m
+| |           [37mfix submit button[m [2;37m- romanlipisiy[m
+| * [1;34m7b2b7b0[m - [1;36mMon, 30 May 2016 20:04:24 -0400[m [1;32m(5 weeks ago)[m[1;33m[m
+| |           [37madd jumbotron to about.html page and dummy text[m [2;37m- romanlipisiy[m
+| * [1;34m8fc31de[m - [1;36mMon, 30 May 2016 17:44:56 -0400[m [1;32m(5 weeks ago)[m[1;33m[m
+| |           [37mspelling and grammer[m [2;37m- rmoro[m
+| * [1;34mf4c253c[m - [1;36mMon, 30 May 2016 17:31:50 -0400[m [1;32m(5 weeks ago)[m[1;33m[m
+| |           [37mfixed spacing[m [2;37m- rmoro[m
+| * [1;34m1cae4b4[m - [1;36mMon, 30 May 2016 17:28:13 -0400[m [1;32m(5 weeks ago)[m[1;33m[m
+| |           [37mfixed tabbing[m [2;37m- rmoro[m
+* | [1;34mec3a0a7[m - [1;36mMon, 30 May 2016 22:27:56 -0400[m [1;32m(5 weeks ago)[m[1;33m[m
+|/            [37madmin page footer & header refactor[m [2;37m- tudorbertiean[m
+* [1;34m65672a4[m - [1;36mMon, 30 May 2016 17:14:33 -0400[m [1;32m(5 weeks ago)[m[1;33m[m
+|           [37madmin page started[m [2;37m- tudorbertiean[m
+* [1;34ma1a8b6d[m - [1;36mMon, 30 May 2016 15:28:54 -0400[m [1;32m(5 weeks ago)[m[1;33m[m
+|           [37madd new simple guide for git[m [2;37m- Kieran O'Driscoll[m
+* [1;34m0027fa9[m - [1;36mMon, 30 May 2016 14:51:49 -0400[m [1;32m(5 weeks ago)[m[1;33m[m
+|           [37mAdded topics to dicuss for back-end requirements[m [2;37m- swar8080[m
+* [1;34m62d13e0[m - [1;36mMon, 30 May 2016 13:14:59 -0400[m [1;32m(5 weeks ago)[m[1;33m[m
+|           [37mvapourware/html/portal.html[m [2;37m- Ensieh Mollazadeh[m
+* [1;34m8a64f02[m - [1;36mMon, 30 May 2016 13:08:15 -0400[m [1;32m(5 weeks ago)[m[1;33m[m
+|           [37mAdd portal file[m [2;37m- Ensieh Mollazadeh[m
+* [1;34m1efef2e[m - [1;36mMon, 30 May 2016 12:38:46 -0400[m [1;32m(5 weeks ago)[m[1;33m[m
+|           [37mAdd files via upload[m [2;37m- Anderszz[m
+* [1;34m524a428[m - [1;36mMon, 30 May 2016 11:58:32 -0400[m [1;32m(5 weeks ago)[m[1;33m[m
+|           [37madded a file to learn github[m [2;37m- Ensieh Mollazadeh[m
+* [1;34mfc2a59f[m - [1;36mMon, 30 May 2016 11:49:04 -0400[m [1;32m(5 weeks ago)[m[1;33m[m
+|           [37mremoved test file[m [2;37m- rmoro[m
+* [1;34mcf7baa2[m - [1;36mMon, 30 May 2016 11:48:31 -0400[m [1;32m(5 weeks ago)[m[1;33m[m
+|           [37mAdded file for tutorial[m [2;37m- rmoro[m
+* [1;34m1de2c38[m - [1;36mMon, 30 May 2016 11:45:28 -0400[m [1;32m(5 weeks ago)[m[1;33m[m
+|           [37madd folder for organization[m [2;37m- Kieran O'Driscoll[m
+* [1;34m96e5ef4[m - [1;36mMon, 30 May 2016 11:01:22 -0400[m [1;32m(5 weeks ago)[m[1;33m[m
+|           [37mAdded category page[m [2;37m- kcolletripp[m
+* [1;34mf5e0a10[m - [1;36mMon, 30 May 2016 10:35:27 -0400[m [1;32m(5 weeks ago)[m[1;33m[m
+|           [37madjusted header/footer loading[m [2;37m- kcolletripp[m
+* [1;34m16a0e4e[m - [1;36mMon, 30 May 2016 01:06:54 -0400[m [1;32m(6 weeks ago)[m[1;33m[m
+|           [37mFixed Homepage Issue[m [2;37m- ryanmak[m
+* [1;34m17f0207[m - [1;36mMon, 30 May 2016 00:33:20 -0400[m [1;32m(6 weeks ago)[m[1;33m[m
+|           [37mAdd files via upload[m [2;37m- Delia[m
+* [1;34m344763e[m - [1;36mMon, 30 May 2016 00:32:53 -0400[m [1;32m(6 weeks ago)[m[1;33m[m
+|           [37mAdd files via upload[m [2;37m- Delia[m
+* [1;34m6651542[m - [1;36mMon, 30 May 2016 00:17:43 -0400[m [1;32m(6 weeks ago)[m[1;33m[m
+|           [37mExtra folder deleted[m [2;37m- Delia[m
+* [1;34mf1676eb[m - [1;36mMon, 30 May 2016 00:02:27 -0400[m [1;32m(6 weeks ago)[m[1;33m[m
+|           [37madded dynamic loading of header/footer[m [2;37m- kcolletripp[m
+* [1;34m63aa03b[m - [1;36mSun, 29 May 2016 23:56:04 -0400[m [1;32m(6 weeks ago)[m[1;33m[m
+|           [37mfix issue #5[m [2;37m- Vikrant Sharma[m
+* [1;34m4f63367[m - [1;36mSun, 29 May 2016 21:40:45 -0400[m [1;32m(6 weeks ago)[m[1;33m[m
+|           [37m- Changed User/Article relationship so each user can have zero-many   articles - Added some preliminary permissions that user groups can have - Added unique index to email and article title - Added index to article title to speed up search[m [2;37m- swar8080[m
+* [1;34m3359a39[m - [1;36mSun, 29 May 2016 20:28:15 -0400[m [1;32m(6 weeks ago)[m[1;33m[m
+|           [37mAdd files via upload[m [2;37m- chan6240[m
+* [1;34m107360d[m - [1;36mSun, 29 May 2016 20:27:35 -0400[m [1;32m(6 weeks ago)[m[1;33m[m
+|           [37mDelete empty[m [2;37m- chan6240[m
+* [1;34md6558ae[m - [1;36mSun, 29 May 2016 20:27:18 -0400[m [1;32m(6 weeks ago)[m[1;33m[m
+|           [37mAdd files via upload[m [2;37m- chan6240[m
+* [1;34me132d85[m - [1;36mSun, 29 May 2016 20:26:18 -0400[m [1;32m(6 weeks ago)[m[1;33m[m
+|           [37mCreate empty[m [2;37m- chan6240[m
+* [1;34m9cee64b[m - [1;36mSun, 29 May 2016 17:54:12 -0400[m [1;32m(6 weeks ago)[m[1;33m[m
+|           [37madd search results page[m [2;37m- romanlipisiy[m
+* [1;34m31a7b2b[m - [1;36mSun, 29 May 2016 16:37:13 -0400[m [1;32m(6 weeks ago)[m[1;33m[m
+|           [37madded entry.html[m [2;37m- kcolletripp[m
+* [1;34m45493c8[m - [1;36mSun, 29 May 2016 16:31:44 -0400[m [1;32m(6 weeks ago)[m[1;33m[m
+|           [37mupdated homepage[m [2;37m- kcolletripp[m
+* [1;34m0f5a5ae[m - [1;36mSun, 29 May 2016 16:03:27 -0400[m [1;32m(6 weeks ago)[m[1;33m[m
+|           [37madded a few comments[m [2;37m- kcolletripp[m
+* [1;34mb5f3c28[m - [1;36mSun, 29 May 2016 15:48:12 -0400[m [1;32m(6 weeks ago)[m[1;33m[m
+|           [37madded search bar[m [2;37m- kcolletripp[m
+* [1;34mf42d5ec[m - [1;36mSun, 29 May 2016 15:39:56 -0400[m [1;32m(6 weeks ago)[m[1;33m[m
+|           [37mrefactored a bit[m [2;37m- kcolletripp[m
+* [1;34m7eacba7[m - [1;36mSun, 29 May 2016 15:34:34 -0400[m [1;32m(6 weeks ago)[m[1;33m[m
+|           [37mresources folder for pictures[m [2;37m- ryanmak[m
+* [1;34mf75fc61[m - [1;36mSun, 29 May 2016 15:33:44 -0400[m [1;32m(6 weeks ago)[m[1;33m[m
+|           [37mAdd files via upload[m [2;37m- ryanmak[m
+* [1;34me63177b[m - [1;36mSun, 29 May 2016 15:14:08 -0400[m [1;32m(6 weeks ago)[m[1;33m[m
+|           [37madded header/footer as imports[m [2;37m- kcolletripp[m
+* [1;34m54bf04d[m - [1;36mSun, 29 May 2016 15:06:07 -0400[m [1;32m(6 weeks ago)[m[1;33m[m
+|           [37mupdated TODO[m [2;37m- kcolletripp[m
+* [1;34m7129f2d[m - [1;36mSun, 29 May 2016 14:51:25 -0400[m [1;32m(6 weeks ago)[m[1;33m[m
+|           [37mAdd files via upload[m [2;37m- Delia[m
+* [1;34m64d3b9e[m - [1;36mSun, 29 May 2016 14:49:08 -0400[m [1;32m(6 weeks ago)[m[1;33m[m
+|           [37mAdd files via upload[m [2;37m- Delia[m
+* [1;34mc06d48b[m - [1;36mSun, 29 May 2016 14:48:44 -0400[m [1;32m(6 weeks ago)[m[1;33m[m
+|           [37mCreate login.html[m [2;37m- Delia[m
+* [1;34m43fe875[m - [1;36mSun, 29 May 2016 14:48:02 -0400[m [1;32m(6 weeks ago)[m[1;33m[m
+|           [37madd nav bar and footer[m [2;37m- romanlipisiy[m
+* [1;34m9e42c0a[m - [1;36mSun, 29 May 2016 14:39:42 -0400[m [1;32m(6 weeks ago)[m[1;33m[m
+|           [37madd comment section[m [2;37m- romanlipisiy[m
+* [1;34mfb8e9bc[m - [1;36mSun, 29 May 2016 14:23:18 -0400[m [1;32m(6 weeks ago)[m[1;33m[m
+|           [37mheader/footer WIP in index.html[m [2;37m- kcolletripp[m
+*   [1;34m845df9e[m - [1;36mSun, 29 May 2016 13:27:06 -0400[m [1;32m(6 weeks ago)[m[1;33m[m
+|\            [37mMerge branch 'master' of https://github.com/UPOD-2016/UPOD[m [2;37m- kcolletripp[m
+| * [1;34m512f80c[m - [1;36mSun, 29 May 2016 13:20:35 -0400[m [1;32m(6 weeks ago)[m[1;33m[m
+| |           [37madd about.html[m [2;37m- romanlipisiy[m
+* | [1;34m2699e50[m - [1;36mSun, 29 May 2016 13:26:45 -0400[m [1;32m(6 weeks ago)[m[1;33m[m
+|/            [37mUpdated TODO, started work on header/footer[m [2;37m- kcolletripp[m
+* [1;34m69bd516[m - [1;36mSun, 29 May 2016 13:08:10 -0400[m [1;32m(6 weeks ago)[m[1;33m[m
+|           [37mRemoved style.css[m [2;37m- kcolletripp[m
+* [1;34m0ced66f[m - [1;36mSun, 29 May 2016 13:05:41 -0400[m [1;32m(6 weeks ago)[m[1;33m[m
+|           [37mUpdated TODO[m [2;37m- kcolletripp[m
+* [1;34m64e5761[m - [1;36mSun, 29 May 2016 12:59:00 -0400[m [1;32m(6 weeks ago)[m[1;33m[m
+|           [37mUpdated TODO[m [2;37m- kcolletripp[m
+* [1;34mbcef8aa[m - [1;36mSun, 29 May 2016 12:56:55 -0400[m [1;32m(6 weeks ago)[m[1;33m[m
+|           [37mAdded working TODO doc[m [2;37m- kcolletripp[m
+* [1;34mee1eaa9[m - [1;36mSun, 29 May 2016 12:52:48 -0400[m [1;32m(6 weeks ago)[m[1;33m[m
+|           [37mAdded bootstrap[m [2;37m- kcolletripp[m
+* [1;34m81bc86b[m - [1;36mSun, 29 May 2016 12:51:05 -0400[m [1;32m(6 weeks ago)[m[1;33m[m
+|           [37mAdded file and structure for vapourware[m [2;37m- kcolletripp[m
+* [1;34m911c84e[m - [1;36mSun, 29 May 2016 12:30:59 -0400[m [1;32m(6 weeks ago)[m[1;33m[m
+|           [37mAdd files via upload[m [2;37m- Delia[m
+* [1;34me1c40d5[m - [1;36mThu, 26 May 2016 23:32:23 -0400[m [1;32m(6 weeks ago)[m[1;33m[m
+|           [37mSecond HLR update with Product Description[m [2;37m- Tom[m
+* [1;34m92c77fd[m - [1;36mThu, 26 May 2016 22:49:04 -0400[m [1;32m(6 weeks ago)[m[1;33m[m
+|           [37mUpdated High Level Requirements on Web Design[m [2;37m- Tom[m
+* [1;34m9592d7d[m - [1;36mSun, 22 May 2016 16:57:27 -0400[m [1;32m(7 weeks ago)[m[1;33m[m
+|           [37mAdded requirements - first draft[m [2;37m- Tom[m
+* [1;34m1237409[m - [1;36mThu, 19 May 2016 12:38:53 -0400[m [1;32m(7 weeks ago)[m[1;33m[m
+|           [37mupdate README.md[m [2;37m- romanlipisiy[m
+*   [1;34m4e2a091[m - [1;36mFri, 6 May 2016 12:06:08 -0400[m [1;32m(9 weeks ago)[m[1;33m (origin/development)[m
+|\            [37mMerge pull request #3 from mikeroher/patch-1[m [2;37m- Robert Morouney[m
+| * [1;34m7515196[m - [1;36mFri, 6 May 2016 11:52:18 -0400[m [1;32m(9 weeks ago)[m[1;33m[m
+|/            [37mEditing README[m [2;37m- Mike Roher[m
+* [1;34mf364e62[m - [1;36mWed, 4 May 2016 15:35:33 -0400[m [1;32m(9 weeks ago)[m[1;33m[m
+|           [37mUpdate Readme.md[m [2;37m- KODrizzle[m
+*   [1;34m6998965[m - [1;36mWed, 4 May 2016 15:23:34 -0400[m [1;32m(9 weeks ago)[m[1;33m[m
+|\            [37mMerge pull request #2 from KODrizzle/development[m [2;37m- Robert Morouney[m
+| * [1;34m56411e6[m - [1;36mTue, 3 May 2016 22:46:33 -0400[m [1;32m(9 weeks ago)[m[1;33m[m
+|/            [37mUpdate README.md[m [2;37m- KODrizzle[m
+* [1;34mf6eec87[m - [1;36mTue, 3 May 2016 21:34:51 -0400[m [1;32m(9 weeks ago)[m[1;33m[m
+|           [37mUpdate README.md[m [2;37m- Robert Morouney[m
+*   [1;34ma5596cb[m - [1;36mTue, 3 May 2016 14:00:36 -0400[m [1;32m(9 weeks ago)[m[1;33m[m
+|\            [37mMerge pull request #1 from WillDetlor/development[m [2;37m- Robert Morouney[m
+| * [1;34m5cebb79[m - [1;36mTue, 3 May 2016 11:16:07 -0400[m [1;32m(9 weeks ago)[m[1;33m[m
+| |           [37mfix url[m [2;37m- WillDetlor[m
+| * [1;34m28c817b[m - [1;36mTue, 3 May 2016 11:12:57 -0400[m [1;32m(9 weeks ago)[m[1;33m[m
+|/            [37mupdate readme[m [2;37m- WillDetlor[m
+* [1;34me1c2a26[m - [1;36mMon, 2 May 2016 13:45:29 -0400[m [1;32m(9 weeks ago)[m[1;33m[m
+            [37mInitial commit[m [2;37m- Robert Morouney[m
+* [1;34m1509b46[m - [1;36mTue, 31 May 2016 22:41:30 -0400[m [1;32m(5 weeks ago)[m[1;33m (origin/gh-pages)[m
+|           [37mEdited rules to remove pronouns[m [2;37m- Mike Roher[m
+* [1;34mf213aca[m - [1;36mTue, 31 May 2016 19:59:01 -0400[m [1;32m(5 weeks ago)[m[1;33m[m
+|           [37mCreate gh-pages branch via GitHub[m [2;37m- Robert Morouney[m
+* [1;34mf399792[m - [1;36mTue, 31 May 2016 19:57:49 -0400[m [1;32m(5 weeks ago)[m[1;33m[m
+|           [37mCreate gh-pages branch via GitHub[m [2;37m- Robert Morouney[m
+* [1;34m32d2831[m - [1;36mTue, 31 May 2016 19:49:35 -0400[m [1;32m(5 weeks ago)[m[1;33m[m
+|           [37mCreate gh-pages branch via GitHub[m [2;37m- Robert Morouney[m
+* [1;34mb20b112[m - [1;36mTue, 31 May 2016 18:56:58 -0400[m [1;32m(5 weeks ago)[m[1;33m[m
+            [37mCreate gh-pages branch via GitHub[m [2;37m- Robert Morouney[m

@@ -35,8 +35,8 @@ class Article < ActiveRecord::Base
     data.each do |block|
       if block['type'] == 'text'
         article.create_text_block(body: block['data']['text'])
-      elsif block['type'] == 'link'
-		    article.create_link_block(url: block['data']['url'], source: block['data']['source'], video_id: block['data']['video_id'])
+      elsif block['type'] == 'video'
+		    article.create_link_block(source: block['data']['source'], video_id: block['data']['remote_id'])
 	    end
     end
 

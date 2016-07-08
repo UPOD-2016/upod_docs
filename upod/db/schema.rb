@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160707011536) do
+ActiveRecord::Schema.define(version: 20160707225155) do
 
   create_table "article_blocks", force: :cascade do |t|
     t.integer "position",     limit: 4
@@ -38,8 +38,7 @@ ActiveRecord::Schema.define(version: 20160707011536) do
   end
 
   create_table "article_link_blocks", force: :cascade do |t|
-    t.string "url",      limit: 255
-    t.string "source",   limit: 255
+    t.string "source",   limit: 256, null: false
     t.string "video_id", limit: 255, null: false
   end
 
