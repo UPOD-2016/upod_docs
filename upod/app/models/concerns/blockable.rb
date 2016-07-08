@@ -5,8 +5,8 @@ module Blockable
     article_block = ArticleTextBlock.new(body: body)
     assign_article_id_and_save!(article_block)
   end
-  def create_link_block(url:, source:, video_id:)
-    article_block = ArticleLinkBlock.new(url: url, source: source, video_id: video_id)
+  def create_link_block(source:, video_id:)
+    article_block = ArticleLinkBlock.new(source: source, video_id: video_id)
     assign_article_id_and_save!(article_block)
   end
   def create_equation_block(equation:, description: nil)
