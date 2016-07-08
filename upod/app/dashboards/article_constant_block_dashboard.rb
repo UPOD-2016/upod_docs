@@ -1,6 +1,6 @@
 require "administrate/base_dashboard"
 
-class ConstantDashboard < Administrate::BaseDashboard
+class ArticleConstantBlockDashboard < Administrate::BaseDashboard
   # ATTRIBUTE_TYPES
   # a hash that describes the type of each of the model's fields.
   #
@@ -8,13 +8,11 @@ class ConstantDashboard < Administrate::BaseDashboard
   # which determines how the attribute is displayed
   # on pages throughout the dashboard.
   ATTRIBUTE_TYPES = {
-    article_constant_blocks: Field::HasMany,
+    actable: Field::Polymorphic,
+    article: Field::BelongsTo,
+    constant: Field::BelongsTo,
+    article_block: Field::HasOne,
     id: Field::Number,
-    name: Field::String,
-    description: Field::Text,
-    value: Field::String.with_options(searchable: false),
-    created_at: Field::DateTime,
-    updated_at: Field::DateTime,
   }.freeze
 
   # COLLECTION_ATTRIBUTES
@@ -23,38 +21,37 @@ class ConstantDashboard < Administrate::BaseDashboard
   # By default, it's limited to four items to reduce clutter on index pages.
   # Feel free to add, remove, or rearrange items.
   COLLECTION_ATTRIBUTES = [
-    #:article_constant_blocks,
     :id,
-    :name,
-    :value,
+    :constant,
+    #:article,
+    #:actable,
+    #:article_block,
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
   # an array of attributes that will be displayed on the model's show page.
   SHOW_PAGE_ATTRIBUTES = [
     :id,
-    :name,
-    :value,
-    :description,
-    :article_constant_blocks,
-    #:created_at,
-    #:updated_at,
+    :constant,
+    :article,
+    #:actable,
+    :article_block,
   ].freeze
 
   # FORM_ATTRIBUTES
   # an array of attributes that will be displayed
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = [
-    #:article_constant_blocks,
-    :name,
-    :value,
-    :description,
+    :constant,
+    #:actable,
+    :article,
+    #:article_block,
   ].freeze
 
-  # Overwrite this method to customize how constants are displayed
+  # Overwrite this method to customize how article constant blocks are displayed
   # across all pages of the admin dashboard.
   #
-  # def display_resource(constant)
-  #   "Constant ##{constant.id}"
+  # def display_resource(article_constant_block)
+  #   "ArticleConstantBlock ##{article_constant_block.id}"
   # end
 end

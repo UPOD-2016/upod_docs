@@ -1,24 +1,19 @@
 module Admin
-  class ArticlesController < Admin::ApplicationController
+  class SessionsController < Admin::ApplicationController
     # To customize the behavior of this controller,
     # simply overwrite any of the RESTful actions. For example:
     #
     # def index
     #   super
-    #   @resources = Article.all.paginate(10, params[:page])
+    #   @resources = Session.all.paginate(10, params[:page])
     # end
 
     # Define a custom finder by overriding the `find_resource` method:
     # def find_resource(param)
-    #   Article.find_by!(slug: param)
+    #   Session.find_by!(slug: param)
     # end
 
     # See https://administrate-docs.herokuapp.com/customizing_controller_actions
     # for more information
-
-    def new
-      redirect_to articles_path
-    end
-
   end
 end
