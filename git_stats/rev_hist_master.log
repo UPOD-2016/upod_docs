@@ -1,5 +1,4 @@
-* 7b6a291 (HEAD -> master, origin/master, origin/HEAD) I thought I could do better, and did (added html format)
-* b9ba5a6 wrote script to update stats for dbrown each week, run with ./update_stats.sh
+* b9ba5a6 (HEAD -> master, origin/master, origin/HEAD) wrote script to update stats for dbrown each week, run with ./update_stats.sh
 * c13d6dd added some devise options
 * b554bde Added some views for user login
 * bafc461 fixed up the document
