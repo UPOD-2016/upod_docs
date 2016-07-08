@@ -12,7 +12,6 @@ class ArticleLinkBlockDashboard < Administrate::BaseDashboard
     article: Field::BelongsTo,
     article_block: Field::HasOne,
     id: Field::Number,
-    url: Field::String,
     source: Field::String,
     video_id: Field::String,
   }.freeze
@@ -24,18 +23,17 @@ class ArticleLinkBlockDashboard < Administrate::BaseDashboard
   # Feel free to add, remove, or rearrange items.
   COLLECTION_ATTRIBUTES = [
     :id
-    :url
+    :source
+    :video_id
     #:actable,
-    :article,
+    #:article,
     #:article_block,
-    #:id,
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
   # an array of attributes that will be displayed on the model's show page.
   SHOW_PAGE_ATTRIBUTES = [
-    :id
-    :url,
+    :id,
     #:actable,
     :source,
     :video_id,
@@ -48,8 +46,8 @@ class ArticleLinkBlockDashboard < Administrate::BaseDashboard
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = [
     #:actable,
-    :url,
     :source,
+    :video_id,
     :article,
     #:article_block,
     #:video_id,
