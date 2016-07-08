@@ -1,14 +1,13 @@
 <body style="background-color:#330072;">
-<!--start content section-->
-	<div class="container-fluid" style="padding-left:10%;">
+	<div class="container-fluid" style="margin-bottom:10%"> <!--image/search bar-->
     <div class="row">
       <div class="col-md-12">
         <%= link_to root_path do %>
           <%= image_tag('logo.png', :class => "center-block", :style => "margin-top: 5%; margin-bottom: 40px;")%>
         <% end %>
       </div>
-    </div>
-    <div class="row">
+    </div> 
+    <div class="row"> <!-- Search bar -->
       <div class="col-md-6 col-md-offset-3">
         <div class="form-group" style="display:inline;">
           <div class="input-group">
@@ -17,7 +16,38 @@
           </div>
         </div>
       </div>
-    </div>
-  </div>
-<!--end content section-->
+    </div> <!-- end Search bar -->
+  </div> <!--end image/search bar-->
+
+	
+	<div class="container"> <!-- 6 categories -->
+
+		<div class="row"> <!-- first row -->
+		  <div class="col-md-4 col-md-offset-0 col-sm-offset-3">
+		    <%= image_tag('logo.png', :class => "thumbnail") %>
+		  </div>
+			<div class="col-md-4 col-md-offset-0 col-sm-offset-3">
+		    <%= image_tag('logo.png', :class => "thumbnail") %>
+		  </div>
+			<div class="col-md-4 col-md-offset-0 col-sm-offset-3">
+		    <%= image_tag('logo.png', :class => "thumbnail") %>
+		  </div>
+		</div> <!-- end first row -->
+		
+		<div class="row"> <!-- second row -->
+		  <div class="col-md-4 col-md-offset-0 col-sm-offset-3">
+		    <%= image_tag('logo.png', :class => "thumbnail") %>
+		  </div>
+			<div class="col-md-4 col-md-offset-0 col-sm-offset-3">
+		    <%= image_tag('logo.png', :class => "thumbnail") %>
+		  </div>
+			<div class="col-md-4 col-md-offset-0 col-sm-offset-3">
+		    <%= image_tag('logo.png', :class => "thumbnail") %>
+		  </div>
+		</div> <!-- end second row -->
+
+	</div> <!-- end 6 categories -->
+	
+
+
 <body>
