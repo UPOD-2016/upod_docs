@@ -13,7 +13,8 @@
 <body>
   <%= render partial: "static_pages/header" %>
   <%= yield %>
-  <%= render partial: "static_pages/menu" %>
   <%= render partial: "static_pages/footer" %>
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
 </body>
 </html>

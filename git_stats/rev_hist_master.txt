@@ -1,1074 +1,623 @@
-commit 001eb77bbcecd89a05122583469b1aa40e176fe1
-Author: Clive Shen <CliveShen@Clive-2.local>
-Date:   Sat Jun 18 19:08:16 2016 -0400
-
-    Updated based on the template
-
-commit 096d39b069671050b081073a3d065102bb6d33b3
-Author: Wallise Wu <wuxx6070@mylaurier.ca>
-Date:   Sat Jun 18 15:08:22 2016 -0400
-
-    Add files via upload
-
-commit 37e990c63c5f565122edde772e4b0c079cff3b3c
-Author: Brian Oh <ohxx5810@mylaurier.ca>
-Date:   Sat Jun 18 11:36:43 2016 -0400
-
-    White background
-
-commit d2e4daf9f03522ca2ddea8b1935af9aaafb88a50
-Author: JeffChung2 <jeffreychung6@gmail.com>
-Date:   Sat Jun 18 03:27:19 2016 -0400
-
-    Add files via upload
-
-commit cf18c16552c4a389961355fe88cd11b7b6eeee27
-Author: JeffChung2 <jeffreychung6@gmail.com>
-Date:   Sat Jun 18 03:00:01 2016 -0400
-
-    Add files via upload
-    
-    Follows ne template
-
-commit 2d44da5e4dbcfa583666667d1e7432c8e4929748
-Merge: 2ba8272 2bcad1d
-Author: Brian Oh <ohxx5810@mylaurier.ca>
-Date:   Sat Jun 18 02:00:46 2016 -0400
-
-    Merge branch 'master' of https://github.com/UPOD-2016/UPOD
-
-commit 2ba8272f1201f64cdfa5831997d754e0323b5723
-Author: Brian Oh <ohxx5810@mylaurier.ca>
-Date:   Sat Jun 18 01:59:59 2016 -0400
-
-    Fixed formatting and indents
-
-commit 2bcad1dde9b35bea085a42cd396275af03670f59
-Author: ohxx5810 <ohxx5810@mylaurier.ca>
-Date:   Sat Jun 18 01:57:39 2016 -0400
-
-    Converted to html copy.
-    
-    Do not need this file anymore.
-
-commit f22254992f44b8f6ffa9170057919143de9b7972
-Merge: d1d03cb 7563726
-Author: Brian Oh <ohxx5810@mylaurier.ca>
-Date:   Sat Jun 18 01:53:25 2016 -0400
-
-    Merge remote-tracking branch 'refs/remotes/origin/master'
-
-commit d1d03cbaf963373155fabacb1d208e2c54e44a63
-Author: Brian Oh <ohxx5810@mylaurier.ca>
-Date:   Sat Jun 18 01:48:30 2016 -0400
-
-    FINAL TEMPLATE TO USE IN HTML
-
-commit 756372660dce01b36efec0650d4e873f7ace7000
-Author: Clive Shen <steven@steventekiMacBook-Air.local>
-Date:   Sat Jun 18 01:28:16 2016 -0400
-
-    Updated based on new template
-
-commit 0c7d3ceb73d27a96cb99ed1cd353e799455ba29c
-Author: Ryan Mak <makx1280@mylaurier.ca>
-Date:   Sat Jun 18 00:40:33 2016 -0400
-
-    New Physics Content
-    
-    Added formula sheet and updated constants
-
-commit 8e106eefb2d99144e860d4f5c2ee96f5c7d2036f
-Author: Brian Oh <ohxx5810@mylaurier.ca>
-Date:   Fri Jun 17 23:37:12 2016 -0400
-
-    Added Table of Contents and edited format
-
-commit 44d98f92852fec14d31610ccb3a5c9550a55a43b
-Merge: 6c362c0 82e3abe
-Author: Brian Oh <ohxx5810@mylaurier.ca>
-Date:   Fri Jun 17 20:28:57 2016 -0400
-
-    Merge remote-tracking branch 'refs/remotes/origin/master'
-
-commit 6c362c08ff204d4c6f176510d2c21b310f171601
-Author: Brian Oh <ohxx5810@mylaurier.ca>
-Date:   Fri Jun 17 20:28:34 2016 -0400
-
-    Physics document Version 0.2 in html
-
-commit 82e3abef4b9b39b05f555693a4a3f1e5daecb9f6
-Author: TheCocoManEd <pere0030@mylaurier.ca>
-Date:   Fri Jun 17 12:44:42 2016 -0400
-
-    Add files via upload
-
-commit d3b7debfed197b9e7c9eaf8b173af6b80aad3e9f
-Author: TheCocoManEd <pere0030@mylaurier.ca>
-Date:   Fri Jun 17 12:35:29 2016 -0400
-
-    Add files via upload
-
-commit 6462e69bf13baa3b5c2be08b1511aa9fa0af1f28
-Author: Brian Oh <ohxx5810@mylaurier.ca>
-Date:   Fri Jun 17 01:58:21 2016 -0400
-
-    Edited margin for MORE drop-down
-
-commit af1d59fe59b1bcfefee4d7a01ef08e4375445043
-Merge: 7c9d8ce 5bac010
-Author: Brian Oh <ohxx5810@mylaurier.ca>
-Date:   Fri Jun 17 01:49:30 2016 -0400
-
-    Merge branch 'master' of https://github.com/UPOD-2016/UPOD
-
-commit 7c9d8ce6512c84658a427513ed116f1abf9ff679
-Author: Brian Oh <ohxx5810@mylaurier.ca>
-Date:   Fri Jun 17 01:49:19 2016 -0400
-
-    Added More drop-down menu with links
-
-commit 5bac01084e4e92f862e8c55c05d94fc77d4f4a76
-Merge: 08e803a 907b95e
-Author: Tom <tom.w.est.94@gmail.com>
-Date:   Fri Jun 17 01:31:46 2016 -0400
-
-    Merge branch 'master' of https://github.com/UPOD-2016/UPOD
-
-commit 08e803a91f6c83e498f1fcbd7eaa9ed7fde785bb
-Author: Tom <tom.w.est.94@gmail.com>
-Date:   Fri Jun 17 01:30:44 2016 -0400
-
-    Resolved highlighted fields on RD - Web Design
-
-commit 426ccdda371b9a2bb2df5c4a27348b966b5fe577
-Author: Tom <tom.w.est.94@gmail.com>
-Date:   Fri Jun 17 01:27:08 2016 -0400
-
-    Added RD - General, Updated RD - Web Design based on SQA feedback
-
-commit 907b95e81cf6063e41f4ea1e3e4379279a1a3572
-Author: Brian Oh <ohxx5810@mylaurier.ca>
-Date:   Fri Jun 17 00:58:13 2016 -0400
-
-    Edited About page
-
-commit 5a8683c46cc92edd27243b1c229e05ba93e9d02a
-Merge: 2820eb0 45852d9
-Author: Brian Oh <ohxx5810@mylaurier.ca>
-Date:   Fri Jun 17 00:03:31 2016 -0400
-
-    Merge branch 'master' of https://github.com/UPOD-2016/UPOD
-
-commit 2820eb0d5c72eb3203cb3e2c4c7127325635cf24
-Author: Brian Oh <ohxx5810@mylaurier.ca>
-Date:   Fri Jun 17 00:02:33 2016 -0400
-
-    Added More drop-down menu with active links to connect to
-
-commit 4b0bd26bf374904081c8c8555ed9c2e3c5be0fac
-Author: Brian Oh <ohxx5810@mylaurier.ca>
-Date:   Thu Jun 16 21:56:15 2016 -0400
-
-    Delete comment in about.html
-
-commit 6ad9a668ffa59d9ef8fcc9a327908f52547978d9
-Author: Brian Oh <ohxx5810@mylaurier.ca>
-Date:   Thu Jun 16 21:51:25 2016 -0400
-
-    Added comment in about.html
-
-commit eeea3995b910b0aa41074f73ce678e5651087bc9
-Author: Brian Oh <ohxx5810@mylaurier.ca>
-Date:   Thu Jun 16 21:49:38 2016 -0400
-
-    Set to original about.html
-
-commit 14fb1125c7ac1aa280078821cd31a4a021643018
-Author: Brian Oh <ohxx5810@mylaurier.ca>
-Date:   Thu Jun 16 21:46:41 2016 -0400
-
-    about.html comment added
-
-commit 45852d99fe2b903c7e3edd7bcba177df7838352d
-Author: Kevzys <meht0360@mylaurier.ca>
-Date:   Wed Jun 15 00:46:03 2016 -0400
-
-    Added indepth explanation of interactive animated diagram
-    
-    Also updated some research
-
-commit d9abb52d4cc80c63f661c77a9a63a906b03c66d5
-Author: ghiyo <ghiy2250@mylaurier.ca>
-Date:   Tue Jun 14 00:36:15 2016 -0400
-
-    Rename UPOD RD - Web Design.html to UPOD SRS - Web Design (Front End).html
-    
-    SRS stands for System Requirement Specification
-
-commit 46d0e9afe293219f0bace3e421204b5f902c9925
-Author: ghiyo <ghiy2250@mylaurier.ca>
-Date:   Tue Jun 14 00:30:16 2016 -0400
-
-    Update Template.html
-    
-    updated so it matches the latest template discussed.
-
-commit 3ec31b9ab376f407f694ad9a30e9698d1af16a69
-Author: kcolletripp <kcolletripp@gmail.com>
-Date:   Mon Jun 13 16:59:35 2016 -0400
-
-    added Vishrut's hours
-
-commit ce6dc98358c9d62bb59f4fc0308ad5cfdffc5f15
-Author: ohxx5810 <ohxx5810@mylaurier.ca>
-Date:   Mon Jun 13 15:21:20 2016 -0400
-
-    Template for Requirements
-    
-    Instructions have been sent to SQA members.
-
-commit 895b77748dc2c6ef1113a7b76481c0c62ffb995a
-Author: ohxx5810 <ohxx5810@mylaurier.ca>
-Date:   Mon Jun 13 15:18:23 2016 -0400
-
-    Delete template
-
-commit f7207b53ca63c24938e554d969f51f9bec7424a0
-Author: ghiyo <ghiy2250@mylaurier.ca>
-Date:   Mon Jun 13 02:59:44 2016 -0400
-
-    Commit message
-
-commit 99b6acfd75034cbde250ee96e08b1d9df857a15f
-Author: kcolletripp <kcolletripp@gmail.com>
-Date:   Sun Jun 12 16:27:11 2016 -0400
-
-    Added a people tracker
-
-commit a6b88bde16de26c11b189a2410bc514632330a0a
-Author: kcolletripp <kcolletripp@gmail.com>
-Date:   Sun Jun 12 14:47:11 2016 -0400
-
-    centered text
-
-commit 192a2484811403fdabc42e48a1a326c5c171f1f7
-Merge: cf1369f 24a772e
-Author: kcolletripp <kcolletripp@gmail.com>
-Date:   Sun Jun 12 14:30:29 2016 -0400
-
-    Merge branch 'master' of https://github.com/UPOD-2016/UPOD
-
-commit cf1369fa19920136b4c48e4cd60179d2282fcac7
-Author: kcolletripp <kcolletripp@gmail.com>
-Date:   Sun Jun 12 14:30:08 2016 -0400
-
-    made 404 page
-
-commit 24a772ef55d3c291f1d23ed5811f20f2cf65b06e
-Author: Ryan <ryan1110mak@yahoo.ca>
-Date:   Sun Jun 12 14:23:47 2016 -0400
-
-    Added UPOD Logo to header
-    
-    Edited upod logo to look better on purple background and added logo to
-    header
-
-commit 09b6c9dd4e8684255c1e01a49094a9062194928b
-Author: Ryan <ryan1110mak@yahoo.ca>
-Date:   Sun Jun 12 13:51:46 2016 -0400
-
-    Forgot to update Revision history
-    
-    updated revision history
-
-commit 9d146458ad380e26e4dc1f680b3d79777de5e874
-Author: Ryan <ryan1110mak@yahoo.ca>
-Date:   Sun Jun 12 13:46:38 2016 -0400
-
-    Updated holes in requirements
-    
-    Set standard font type and sizes to use on all pages
-
-commit c8362c121bd5aee72f9a702e8f454b7d5a9e351d
-Author: kcolletripp <kcolletripp@gmail.com>
-Date:   Sun Jun 12 13:42:58 2016 -0400
-
-    Put content in div
-
-commit bb584c211dfaff5713ec061b2c45f517e4c5273f
-Author: ohxx5810 <ohxx5810@mylaurier.ca>
-Date:   Sat Jun 11 19:53:23 2016 -0400
-
-    Template for Requirements
-    
-    Please fill out appropriate requirements for each group into the template provided.  (By Wednesday June 15th).
-
-commit 3a2b44d84d24c08d00417eff51e03a842a7fa88b
-Author: rmoro <moro1422@mylaurier.ca>
-Date:   Wed Jun 8 14:46:25 2016 -0400
-
-    added new tracking site
-
-commit ecd28afc484ad473e0c040b5f823720e7b32b978
-Author: JeffChung2 <jeffreychung6@gmail.com>
-Date:   Mon Jun 6 14:52:00 2016 -0400
-
-    Add files via upload
-    
-    this is an incomplete version of optics tag
-
-commit c2eb1e4dfefeea413b86092f6f2f30b22718770e
-Author: Ryan Mak <makx1280@mylaurier.ca>
-Date:   Mon Jun 6 13:56:30 2016 -0400
-
-    Added "Forgot Password" section
-    
-    Created a link from the login page to the "forgot password" page. Added
-    a "forgot password" page consisting of an email input box and a send
-    button
-
-commit 80dd30a8dfb14d658aa8bbf7fb8571305abde9df
-Author: wuxx4780 <wuxx4780@mylaurier.ca>
-Date:   Sun Jun 5 22:50:26 2016 -0400
-
-    Add files via upload
-    
-    Document of the Physics Research - Fundamentals Part II. Includes the interactive diagram ideas and tags for the relative topics + subtopics. Prepared by Brian (Chun Hung) Wu.
-
-commit 4ab94b6883c47d0a4c62702d6535a0d8e5cd0254
-Author: rmoro <moro1422@mylaurier.ca>
-Date:   Sun Jun 5 03:55:47 2016 -0400
-
-    made a few additions to uml diagram again
-
-commit c59f3dce5eecd253741d47aaa0c8bd06e9ac152c
-Author: rmoro <moro1422@mylaurier.ca>
-Date:   Sun Jun 5 03:36:59 2016 -0400
-
-    made a few additions to uml diagram
-
-commit 2418422ab83fe6a6a4145dafd116c3592bded054
-Author: rmoro <moro1422@mylaurier.ca>
-Date:   Sun Jun 5 03:33:17 2016 -0400
-
-    added a quick mock up for the backend UML in hopes of getting the database set up tomorrow.
-
-commit e4d3581a50d8387af4ca83f535f34d3c5ff9de0b
-Author: kcolletripp <kcolletripp@gmail.com>
-Date:   Thu Jun 2 22:12:46 2016 -0400
-
-    allowed for scrolling
-
-commit b84c685aa7cb0ee70976f4fd1474f61213261d77
-Author: kcolletripp <kcolletripp@gmail.com>
-Date:   Thu Jun 2 21:44:50 2016 -0400
-
-    removed <head> tags in code snippets
-
-commit a8ed59b237b3cdac7b7fdcfb55543963108d4936
-Author: kcolletripp <kcolletripp@gmail.com>
-Date:   Thu Jun 2 21:43:57 2016 -0400
-
-    deleted unused files
-
-commit 511b9c753be20319a536d71c15dbecc2368b680e
-Author: Vik Sharma <shar6770@mylaurier.ca>
-Date:   Thu Jun 2 15:27:30 2016 -0400
-
-    add push menu to all the other pages
-
-commit 505b448c24291ceecf51b020779f2aa73203eaf0
-Merge: 22483bf 73a249e
-Author: Vik Sharma <shar6770@mylaurier.ca>
-Date:   Thu Jun 2 12:31:39 2016 -0400
-
-    merge
-
-commit 22483bfcd7841fd6d8c649d0503eb6c474a20536
-Author: Vik Sharma <shar6770@mylaurier.ca>
-Date:   Thu Jun 2 12:29:01 2016 -0400
-
-    add push menu to search-result.html, reorganize and add push menu to header
-
-commit 73a249e21ab6a8656ba484c1739936e179cf6b9a
-Author: romanlipisiy <lipi4200@mylaurier.ca>
-Date:   Wed Jun 1 22:59:55 2016 -0400
-
-    fix styling and merge login styles into main style sheet
-
-commit b5ea9d4e549bd95f16006b769363a5889ca947b5
-Merge: a61d96a e1ebbe4
-Author: romanlipisiy <lipi4200@mylaurier.ca>
-Date:   Wed Jun 1 21:02:44 2016 -0400
-
-    fix footer styling
-
-commit a61d96a82d1612e4511ef00982ed9e7c0e7c02e4
-Author: romanlipisiy <lipi4200@mylaurier.ca>
-Date:   Wed Jun 1 20:57:46 2016 -0400
-
-    fix footer styling
-
-commit e1ebbe4d5f74ed4d1067c04cb0a74030a929639e
-Author: tudorbertiean <tudorbertiean@hotmail.com>
-Date:   Wed Jun 1 20:34:43 2016 -0400
-
-    admin side-panel changes
-
-commit 74b8e583832f590ba33bbaf46157ba1fe34b36c9
-Author: Ryan Mak <makx1280@mylaurier.ca>
-Date:   Wed Jun 1 20:18:27 2016 -0400
-
-    Updated notes
-    
-    Just minor changes, added a few constants and identified which note
-    correspond to which topic.
-
-commit 19f03ca14959f4d38fc478a5c89a211700951ae4
-Author: romanlipisiy <lipi4200@mylaurier.ca>
-Date:   Wed Jun 1 19:51:46 2016 -0400
-
-    fix styling issues
-
-commit 46afe31d5ce02ab1cbc883fee83f3ca1279fd91b
-Merge: 4b55666 91f472d
-Author: romanlipisiy <lipi4200@mylaurier.ca>
-Date:   Wed Jun 1 19:03:57 2016 -0400
-
-    fix styling on all pages
-
-commit 4b556662d9ef857c7fe8cd9bab041c311404ba2c
-Author: romanlipisiy <lipi4200@mylaurier.ca>
-Date:   Wed Jun 1 18:51:21 2016 -0400
-
-    fix styling of all pages
-
-commit 91f472d97f3c33ab6f0467f029002c6706d00d94
-Author: Ryan Mak <makx1280@mylaurier.ca>
-Date:   Wed Jun 1 18:36:15 2016 -0400
-
-    File rename
-
-commit 06be7b1ac7520fcde33aebf1f31fc4726d6a9285
-Author: Ryan Mak <makx1280@mylaurier.ca>
-Date:   Wed Jun 1 18:09:34 2016 -0400
-
-    Added links to other pages
-    
-    Pages can now link to other pages when clicking on them.
-
-commit 2e2bc83d417aba4ca6e4429bc165dc058f1f5b21
-Author: romanlipisiy <lipi4200@mylaurier.ca>
-Date:   Wed Jun 1 16:54:45 2016 -0400
-
-    fix comment box
-
-commit c0b97a7d034dc760d3bd603e4504fdba523d4dc5
-Author: kcolletripp <kcolletripp@gmail.com>
-Date:   Wed Jun 1 16:06:43 2016 -0400
-
-    refactored names to meet standards
-
-commit 88939bff7ab6cfd02f8efe77dc141817b627361b
-Author: kcolletripp <kcolletripp@gmail.com>
-Date:   Wed Jun 1 16:04:45 2016 -0400
-
-    changed background from purple to white
-
-commit 26b396f9bf5ea94d51d96b99f1b433d05836719e
-Merge: 0d66de0 560e329
-Author: rmoro <moro1422@mylaurier.ca>
-Date:   Wed Jun 1 15:25:56 2016 -0400
-
-    Merge branch 'master' of https://github.com/UPOD-2016/UPOD
-
-commit 560e3291e4a8535b7b76bbfa543aac33f12965a7
-Author: Wallise Wu <wuxx6070@mylaurier.ca>
-Date:   Wed Jun 1 15:10:10 2016 -0400
-
-    Add files via upload
-
-commit 0d66de04e0ee5eff7a513292ef4bd2c8bbc2503f
-Author: rmoro <moro1422@mylaurier.ca>
-Date:   Wed Jun 1 14:45:57 2016 -0400
-
-    Added a Logo
-
-commit b455be37f11f2664f2ae61c3630767fd6af8f088
-Author: rmoro <moro1422@mylaurier.ca>
-Date:   Wed Jun 1 14:14:37 2016 -0400
-
-    Added an alternative Menu Back
-
-commit 4598dfaf30a17018362f1028d63807bab7b765a1
-Author: rmoro <moro1422@mylaurier.ca>
-Date:   Wed Jun 1 14:13:27 2016 -0400
-
-    Added an alternative icon
-
-commit cfe19e417b1d0d7745955e0de008f10ecccca740
-Author: Delia <epicdelia@gmail.com>
-Date:   Wed Jun 1 12:53:11 2016 -0400
-
-    fixed header, fixed css import
-
-commit f2b12f6f36047ae411f66b1500239ec8e328a352
-Author: Kevzys <meht0360@mylaurier.ca>
-Date:   Wed Jun 1 00:58:44 2016 -0400
-
-    Add files via upload
-    
-    Rough list of topics and subtopics for tomorrows meeting
-
-commit 4c4b05fbf0bc375ac65eda1e4f6ee6c50115c2d0
-Author: Tom <tom.w.est.94@gmail.com>
-Date:   Wed Jun 1 00:09:43 2016 -0400
-
-    Updated formatting and prepped for release
-
-commit 88d531d33aa31485bef67a983bcd665c40d0c9f8
-Author: Vikrant Sharma <robinsharma@Viks-Air.lan>
-Date:   Tue May 31 23:10:32 2016 -0400
-
-    move script tags to the bottom
-
-commit cf32e9587d2d0bfeaf799c901a2e817986aabb6d
-Merge: 5f7b3e9 d8a9ac8
-Author: Vikrant Sharma <robinsharma@Viks-Air.lan>
-Date:   Tue May 31 22:57:11 2016 -0400
-
-    merge
-
-commit 5f7b3e94431ba5cf036a2aed8cf67164c16c4994
-Author: Vikrant Sharma <robinsharma@Viks-Air.lan>
-Date:   Tue May 31 22:53:32 2016 -0400
-
-    create push menu, add push menu to homepage.html and restyle homepage.html and footer.html
-
-commit d8a9ac81fb8b56a1a31284b3bc50babe9166f0f2
-Author: Robert Morouney <dan.morouney@gmail.com>
-Date:   Tue May 31 19:50:17 2016 -0400
-
-    Update README.md
-
-commit fd20ff0ee20aa391cd0bb2c9cdccfd60247bb6a7
-Author: ryanmak <ryan1110mak@yahoo.ca>
-Date:   Tue May 31 19:20:11 2016 -0400
-
-    Added the Optics Section
-    
-    All things related to optics are in here, including PC237 course notes
-
-commit d050610880a5f3dea7d47bbe5c97a849ec5ebf0f
-Author: Clive Shen <CliveShen@Clive-2.local>
-Date:   Tue May 31 03:01:02 2016 -0400
-
-    Add actors and use cases
-
-commit ecbe0cbe17b7f6a99b367001fc33c87b73f1a267
-Author: akuma6620 <kuma6620@mylaurier.ca>
-Date:   Tue May 31 19:00:03 2016 -0400
-
-    Add files via upload
-
-commit 7ea5943bd6ab3527596a6ecf3987cb9b40c315b8
-Author: tudorbertiean <tudorbertiean@hotmail.com>
-Date:   Tue May 31 15:23:13 2016 -0400
-
-    refactor tabs and name-name variables
-
-commit 63b50d7ee6984c2f97a10bec6e154de5f50d4343
-Author: romanlipisiy <lipi4200@mylaurier.ca>
-Date:   Tue May 31 13:09:32 2016 -0400
-
-    add container to title
-
-commit 3fa142bdfc3a260e9a55cf5053e3aaa141afde7a
-Author: romanlipisiy <lipi4200@mylaurier.ca>
-Date:   Tue May 31 12:58:42 2016 -0400
-
-    add search results title
-
-commit a8fde3cb5a7bb509d5dcea0f2d9f551bc4b536c5
-Author: romanlipisiy <lipi4200@mylaurier.ca>
-Date:   Tue May 31 11:28:41 2016 -0400
-
-    add list group to search results
-
-commit a121557afc89be1f90e864c1fb91270995265027
-Author: tudorbertiean <tudorbertiean@hotmail.com>
-Date:   Mon May 30 23:48:19 2016 -0400
-
-    admin side-panel reformatting
-
-commit 0e70368d7fc29edccc529934a3e57e536af16f91
-Author: Kevzys <meht0360@mylaurier.ca>
-Date:   Mon May 30 22:49:27 2016 -0400
-
-    Add files via upload
-
-commit 8ed4c6117c9498797eb1fd40cd8e3320277d3610
-Author: Kevzys <meht0360@mylaurier.ca>
-Date:   Mon May 30 22:42:06 2016 -0400
-
-    Create team-info.txt
-
-commit 6009788beea26e38ff3b37006ce140d3a77f0e03
-Merge: ec3a0a7 8084a81
-Author: tudorbertiean <tudorbertiean@hotmail.com>
-Date:   Mon May 30 22:28:15 2016 -0400
-
-    Merge branch 'master' of https://github.com/UPOD-2016/UPOD
-
-commit ec3a0a7073366ecc609e14d84a5efc2a1fc38ee5
-Author: tudorbertiean <tudorbertiean@hotmail.com>
-Date:   Mon May 30 22:27:56 2016 -0400
-
-    admin page footer & header refactor
-
-commit 8084a8156d4f4d04e2fa9f4f8dc6b25a51f4be8f
-Author: romanlipisiy <lipi4200@mylaurier.ca>
-Date:   Mon May 30 21:35:18 2016 -0400
-
-    add jumbotron and title and description to the search result
-
-commit 3e066c9dc6c74af185144620757efed116878c6b
-Author: romanlipisiy <lipi4200@mylaurier.ca>
-Date:   Mon May 30 21:27:14 2016 -0400
-
-    fix submit button
-
-commit 7b2b7b08c6f8cdab86e5273a1464d8d2e997823f
-Author: romanlipisiy <lipi4200@mylaurier.ca>
-Date:   Mon May 30 20:04:24 2016 -0400
-
-    add jumbotron to about.html page and dummy text
-
-commit 8fc31de9909e177724fef34dbde60694e3207987
-Author: rmoro <moro1422@mylaurier.ca>
-Date:   Mon May 30 17:44:56 2016 -0400
-
-    spelling and grammer
-
-commit f4c253c2fa4dc4ff0b59ac2cfd99d08cda624bdd
-Author: rmoro <moro1422@mylaurier.ca>
-Date:   Mon May 30 17:31:50 2016 -0400
-
-    fixed spacing
-
-commit 1cae4b4df239bb33d9a493c47640b1377a7ba0fd
-Author: rmoro <moro1422@mylaurier.ca>
-Date:   Mon May 30 17:28:13 2016 -0400
-
-    fixed tabbing
-
-commit 65672a4eed75f13cab4c8219e5d785a304a89a96
-Author: tudorbertiean <tudorbertiean@hotmail.com>
-Date:   Mon May 30 17:14:33 2016 -0400
-
-    admin page started
-
-commit a1a8b6d8f4f8167048f8a33f48a3bb1baa1f9751
-Author: Kieran O'Driscoll <oxdr1700@mylaurier.ca>
-Date:   Mon May 30 15:28:54 2016 -0400
-
-    add new simple guide for git
-
-commit 0027fa97819dfbbbecf9033bc1efd95a7b27350c
-Author: swar8080 <stevenswartz@live.ca>
-Date:   Mon May 30 14:51:49 2016 -0400
-
-    Added topics to dicuss for back-end requirements
-
-commit 62d13e05b647252981cb038738d8e604a4abf51a
-Author: Ensieh Mollazadeh <moll7720@mylaurier.ca>
-Date:   Mon May 30 13:14:59 2016 -0400
-
-    vapourware/html/portal.html
-
-commit 8a64f028ed1fbe86d64f2996be363f66d68a1556
-Author: Ensieh Mollazadeh <moll7720@mylaurier.ca>
-Date:   Mon May 30 13:08:15 2016 -0400
-
-    Add portal file
-
-commit 1efef2edd922ebcf3cb52c96a6ba02ce5e745ed7
-Author: Anderszz <lamx7320@mylaurier.ca>
-Date:   Mon May 30 12:38:46 2016 -0400
-
-    Add files via upload
-    
-    Physics Requirements Document - Updated
-
-commit 524a428032167e72d49e0b4011cd57cd157d9711
-Author: Ensieh Mollazadeh <moll7720@mylaurier.ca>
-Date:   Mon May 30 11:58:32 2016 -0400
-
-    added a file to learn github
-
-commit fc2a59f9144ea04603e489677536bc5530b358b1
-Author: rmoro <moro1422@mylaurier.ca>
-Date:   Mon May 30 11:49:04 2016 -0400
-
-    removed test file
-
-commit cf7baa2bffd4108f09405262d2b47ef0df972480
-Author: rmoro <moro1422@mylaurier.ca>
-Date:   Mon May 30 11:48:31 2016 -0400
-
-    Added file for tutorial
-
-commit 1de2c38927b58222a13740fc48abb951e81394ca
-Author: Kieran O'Driscoll <oxdr1700@mylaurier.ca>
-Date:   Mon May 30 11:45:28 2016 -0400
-
-    add folder for organization
-
-commit 96e5ef4c9636a4947f28672d5ec21f08bf9b7232
-Author: kcolletripp <kcolletripp@gmail.com>
-Date:   Mon May 30 11:01:22 2016 -0400
-
-    Added category page
-
-commit f5e0a10ba99cf3f36cde3da140f868577036e151
-Author: kcolletripp <kcolletripp@gmail.com>
-Date:   Mon May 30 10:35:27 2016 -0400
-
-    adjusted header/footer loading
-
-commit 16a0e4ea71c7178bb2261fcf786ca86445f4926a
-Author: ryanmak <ryan1110mak@yahoo.ca>
-Date:   Mon May 30 01:06:54 2016 -0400
-
-    Fixed Homepage Issue
-    
-    Background is fixed; only shows light gray instead of light gray with white sections.
-
-commit 17f0207d09cc0424e2b7fcf581a7d0b64e522197
-Author: Delia <laza6510@mylaurier.ca>
-Date:   Mon May 30 00:33:20 2016 -0400
-
-    Add files via upload
-    
-    Admin login page css
-
-commit 344763e1f6eb694773ee453c778cf14c7efb3287
-Author: Delia <laza6510@mylaurier.ca>
-Date:   Mon May 30 00:32:53 2016 -0400
-
-    Add files via upload
-    
-    Admin login html
-
-commit 6651542a0ec08bf5d0b419a8c29c84cb42d24261
-Author: Delia <epicdelia@gmail.com>
-Date:   Mon May 30 00:17:43 2016 -0400
-
-    Extra folder deleted
-
-commit f1676eb81604f3f2855464a5850cbed1be9cd07c
-Author: kcolletripp <kcolletripp@gmail.com>
-Date:   Mon May 30 00:02:27 2016 -0400
-
-    added dynamic loading of header/footer
-
-commit 63aa03b6b70ab940f9c3570b60eac9770c763281
-Author: Vikrant Sharma <robinsharma@Viks-MacBook-Air.local>
-Date:   Sun May 29 23:56:04 2016 -0400
-
-    fix issue #5
-
-commit 4f63367ccba15b9c21b31cdace03952ebaff79d0
-Author: swar8080 <stevenswartz@live.ca>
-Date:   Sun May 29 21:40:45 2016 -0400
-
-    - Changed User/Article relationship so each user can have zero-many
-      articles
-    - Added some preliminary permissions that user groups can have
-    - Added unique index to email and article title
-    - Added index to article title to speed up search
-
-commit 3359a39401e88142ed0bdff0b66ea13c22b5e377
-Author: chan6240 <chan6240@mylaurier.ca>
-Date:   Sun May 29 20:28:15 2016 -0400
-
-    Add files via upload
-
-commit 107360d75c268a334dbd20949026e3b097636050
-Author: chan6240 <chan6240@mylaurier.ca>
-Date:   Sun May 29 20:27:35 2016 -0400
-
-    Delete empty
-
-commit d6558ae05a609e1c1b640b85580d235c68c65189
-Author: chan6240 <chan6240@mylaurier.ca>
-Date:   Sun May 29 20:27:18 2016 -0400
-
-    Add files via upload
-
-commit e132d85e059eeda98952eeb3a7badd5baf2c35a1
-Author: chan6240 <chan6240@mylaurier.ca>
-Date:   Sun May 29 20:26:18 2016 -0400
-
-    Create empty
-
-commit 9cee64b66069d23dc945580d54b9e423449eed5c
-Author: romanlipisiy <lipi4200@mylaurier.ca>
-Date:   Sun May 29 17:54:12 2016 -0400
-
-    add search results page
-
-commit 31a7b2be38b9fc16eb19d98f923c95e2fc03d768
-Author: kcolletripp <kcolletripp@gmail.com>
-Date:   Sun May 29 16:37:13 2016 -0400
-
-    added entry.html
-
-commit 45493c8187e1b4627edcb132d33267ad1118dbda
-Author: kcolletripp <kcolletripp@gmail.com>
-Date:   Sun May 29 16:31:44 2016 -0400
-
-    updated homepage
-
-commit 0f5a5aef2369e7f8ed6f48e5062eb33820371976
-Author: kcolletripp <kcolletripp@gmail.com>
-Date:   Sun May 29 16:03:27 2016 -0400
-
-    added a few comments
-
-commit b5f3c28f5eb2b9f17d216b4ee8d6b1b00b1b5cce
-Author: kcolletripp <kcolletripp@gmail.com>
-Date:   Sun May 29 15:48:12 2016 -0400
-
-    added search bar
-
-commit f42d5ec30424c6f5d1d0f456e4211a569d4ba997
-Author: kcolletripp <kcolletripp@gmail.com>
-Date:   Sun May 29 15:39:56 2016 -0400
-
-    refactored a bit
-
-commit 7eacba778dbc5a29060a6140bf41db4e92bdb55b
-Author: ryanmak <ryan1110mak@yahoo.ca>
-Date:   Sun May 29 15:34:34 2016 -0400
-
-    resources folder for pictures
-
-commit f75fc61013d51d66cbb3e41f3f7c394924d3140d
-Author: ryanmak <ryan1110mak@yahoo.ca>
-Date:   Sun May 29 15:33:44 2016 -0400
-
-    Add files via upload
-
-commit e63177b3b17af30f0ddcf2fd04611e9c51112db6
-Author: kcolletripp <kcolletripp@gmail.com>
-Date:   Sun May 29 15:14:08 2016 -0400
-
-    added header/footer as imports
-
-commit 54bf04d036f1b7173bc1c0a55f784ea6a9dfaaaf
-Author: kcolletripp <kcolletripp@gmail.com>
-Date:   Sun May 29 15:06:07 2016 -0400
-
-    updated TODO
-
-commit 7129f2d7dd9fa406aec78d8eb8a860197e4951c4
-Author: Delia <laza6510@mylaurier.ca>
-Date:   Sun May 29 14:51:25 2016 -0400
-
-    Add files via upload
-    
-    CSS sheet for admin login
-
-commit 64d3b9ed2c686d5d398b574c7cc8098a5a24b2fd
-Author: Delia <laza6510@mylaurier.ca>
-Date:   Sun May 29 14:49:08 2016 -0400
-
-    Add files via upload
-
-commit c06d48b2093856393c9294e9b86a1a3166fde477
-Author: Delia <laza6510@mylaurier.ca>
-Date:   Sun May 29 14:48:44 2016 -0400
-
-    Create login.html
-    
-    Admin login
-
-commit 43fe8754513cc67ce303708be756b5c394884ba3
-Author: romanlipisiy <lipi4200@mylaurier.ca>
-Date:   Sun May 29 14:48:02 2016 -0400
-
-    add nav bar and footer
-
-commit 9e42c0aab57589a9645d423af3c66109fa33c128
-Author: romanlipisiy <lipi4200@mylaurier.ca>
-Date:   Sun May 29 14:39:42 2016 -0400
-
-    add comment section
-
-commit fb8e9bc81b11708a014f345b8968fce6bdbecbc8
-Author: kcolletripp <kcolletripp@gmail.com>
-Date:   Sun May 29 14:23:18 2016 -0400
-
-    header/footer WIP in index.html
-
-commit 845df9e486ac8bb41024d5f7b8814386e091a6f3
-Merge: 2699e50 512f80c
-Author: kcolletripp <kcolletripp@gmail.com>
-Date:   Sun May 29 13:27:06 2016 -0400
-
-    Merge branch 'master' of https://github.com/UPOD-2016/UPOD
-
-commit 2699e5091e1a387f0fd87461e96388b17f2ea04f
-Author: kcolletripp <kcolletripp@gmail.com>
-Date:   Sun May 29 13:26:45 2016 -0400
-
-    Updated TODO, started work on header/footer
-
-commit 512f80c08884486c36799be9dd2d536e738d4690
-Author: romanlipisiy <lipi4200@mylaurier.ca>
-Date:   Sun May 29 13:20:35 2016 -0400
-
-    add about.html
-
-commit 69bd51687af78e914fd7a65e707454362470269f
-Author: kcolletripp <kcolletripp@gmail.com>
-Date:   Sun May 29 13:08:10 2016 -0400
-
-    Removed style.css
-
-commit 0ced66f86deb1697ea3c858d9a241b41fe9694ae
-Author: kcolletripp <kcolletripp@gmail.com>
-Date:   Sun May 29 13:05:41 2016 -0400
-
-    Updated TODO
-
-commit 64e576169a809d464a5c95553b321e4a7d5448de
-Author: kcolletripp <kcolletripp@gmail.com>
-Date:   Sun May 29 12:59:00 2016 -0400
-
-    Updated TODO
-
-commit bcef8aa3bbe3d7e23f78cd5652350dd9424ee114
-Author: kcolletripp <kcolletripp@gmail.com>
-Date:   Sun May 29 12:56:55 2016 -0400
-
-    Added working TODO doc
-
-commit ee1eaa9759c4de7a1dce84bc7991f992c02aba43
-Author: kcolletripp <kcolletripp@gmail.com>
-Date:   Sun May 29 12:52:48 2016 -0400
-
-    Added bootstrap
-
-commit 81bc86b4c8205cdf2e46e6719a5578726e5cf683
-Author: kcolletripp <kcolletripp@gmail.com>
-Date:   Sun May 29 12:51:05 2016 -0400
-
-    Added file and structure for vapourware
-
-commit 911c84ed2acdd52feddc675669a73e757ce79c80
-Author: Delia <laza6510@mylaurier.ca>
-Date:   Sun May 29 12:30:59 2016 -0400
-
-    Add files via upload
-    
-    Simple Header and Footer
-
-commit e1c40d5df6f0c4a2021da9e63e40a160b8a407c1
-Author: Tom <tom.w.est.94@gmail.com>
-Date:   Thu May 26 23:32:23 2016 -0400
-
-    Second HLR update with Product Description
-
-commit 92c77fd884087ca229da9152a51fba4aaa811e40
-Author: Tom <tom.w.est.94@gmail.com>
-Date:   Thu May 26 22:49:04 2016 -0400
-
-    Updated High Level Requirements on Web Design
-
-commit 9592d7d75b84f87cd97f7b0d7085f47b9e2f42c6
-Author: Tom <tom.w.est.94@gmail.com>
-Date:   Sun May 22 16:57:27 2016 -0400
-
-    Added requirements - first draft
-
-commit 1237409e3068d455a80f8c4ee4bfd80ac167b857
-Author: romanlipisiy <lipi4200@mylaurier.ca>
-Date:   Thu May 19 12:38:53 2016 -0400
-
-    update README.md
-
-commit 4e2a091b456df4f2cb1e3eec85673ffee15cfa39
-Merge: f364e62 7515196
-Author: Robert Morouney <dan.morouney@gmail.com>
-Date:   Fri May 6 12:06:08 2016 -0400
-
-    Merge pull request #3 from mikeroher/patch-1
-    
-    Editing README
-
-commit 751519630b3b817f9eaea864d0e3d61a84175308
-Author: Mike Roher <mikeroher@users.noreply.github.com>
-Date:   Fri May 6 11:52:18 2016 -0400
-
-    Editing README
-    
-    Just creating a pull request
-
-commit f364e62d3bed68c303178bacf9527745fe0c4297
-Author: KODrizzle <KODrizzle@users.noreply.github.com>
-Date:   Wed May 4 15:35:33 2016 -0400
-
-    Update Readme.md
-    
-    Edit format
-
-commit 6998965eea90a9ac92e9a516c46276977b5fb5cc
-Merge: f6eec87 56411e6
-Author: Robert Morouney <dan.morouney@gmail.com>
-Date:   Wed May 4 15:23:34 2016 -0400
-
-    Merge pull request #2 from KODrizzle/development
-    
-    Update README.md
-
-commit 56411e6e15e3c8f03c87f08cc3afee58ae638cd6
-Author: KODrizzle <KODrizzle@users.noreply.github.com>
-Date:   Tue May 3 22:46:33 2016 -0400
-
-    Update README.md
-
-commit f6eec87b79630ee7b5583ef92a57e8b3701025d2
-Author: Robert Morouney <dan.morouney@gmail.com>
-Date:   Tue May 3 21:34:51 2016 -0400
-
-    Update README.md
-
-commit a5596cb7f4b14ca9419a5601acef119220b7eb73
-Merge: e1c2a26 5cebb79
-Author: Robert Morouney <dan.morouney@gmail.com>
-Date:   Tue May 3 14:00:36 2016 -0400
-
-    Merge pull request #1 from WillDetlor/development
-    
-    Development
-
-commit 5cebb7914f3dcd26d10888c09d24f75d361d4199
-Author: WillDetlor <detl8600@mylaurier.ca>
-Date:   Tue May 3 11:16:07 2016 -0400
-
-    fix url
-
-commit 28c817bafe368a7a8da4ad56fb9f6e2b1f6486b2
-Author: WillDetlor <detl8600@mylaurier.ca>
-Date:   Tue May 3 11:12:57 2016 -0400
-
-    update readme
-
-commit e1c2a2626fb247f7c4f0af398cc88e966677b634
-Author: Robert Morouney <dan.morouney@gmail.com>
-Date:   Mon May 2 13:45:29 2016 -0400
-
-    Initial commit
+* 7b6a291 (HEAD -> master, origin/master, origin/HEAD) I thought I could do better, and did (added html format)
+* b9ba5a6 wrote script to update stats for dbrown each week, run with ./update_stats.sh
+* c13d6dd added some devise options
+* b554bde Added some views for user login
+* bafc461 fixed up the document
+* fee46ef Edit view of user dashboard
+* 262c1ac Add inital admin panel
+* 44649f5 Add comments to tests
+* 45db21b test commit record
+* 177555b Add more testing and fix article_diagram_block.rb
+*   b9e2bfe Merge branch 'master' of github.com:UPOD-2016/UPOD
+|\  
+| * 8f1f3d5 remove general files - no use for these, and in the wrong file format in any case.
+* | 175d049 added diagram table
+|/  
+* 2e24b96 sirtrevor small fixes
+*   f49a70d Merge branch 'master' of github.com:UPOD-2016/UPOD
+|\  
+| * fb0138f removed migration mistake
+* | e00535e added contributor method
+* |   80614e8 Merge branch 'master' of github.com:UPOD-2016/UPOD
+|\ \  
+| |/  
+| *   a656ce1 Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+| |\  
+| | * 1f181f6 Update database.yml
+| | * e49c5d2 Update database.yml
+| * | 8f20df8 added a session model
+| |/  
+| * 7877bbc database additions for users and session tracking
+| * 2ff59cb session tracking
+| * d1853b5 adding session table
+| * fd9e7ed adding session table
+| * 09c3320 added alert and notice areas to application layout
+| * c76192c added user model and LDAP models
+| * 84fa2d4 deleted the back end RD .doc files
+* | e875344 cleaning up html
+| | * 71c6eac (origin/administrate) New article redirect
+| | * 1ff69ae Add administate gem
+| |/  
+| * f4af4b5 Removed spaces from name
+| * 2b6ca90 Removed spaces from name
+| * 8dc0900 Removed spaces from name
+| * dff5ab9 Removed spaces from name
+| * 219084b Version 1 of fundamentals research in modular form
+| * e1b6f79 updated optics
+| * 3b74d91 USE GDOCS TIME TRACKING
+| * ee328af Add files via upload
+| * e64714e Add files via upload
+| * aae328e Update free_body.html
+| * fec2b99 Delete svg.css
+| * e0c6908 Delete elastic_collision.html
+|/  
+*   8fb7eb5 Merge branch 'master' of github.com:UPOD-2016/UPOD
+|\  
+| * f6a8f58 Add files via upload
+* |   ec2394a fixed merge conflicts
+|\ \  
+| |/  
+| * 0bd0010 Update readme.txt
+| * 9eb2f7a Completed Hierarchy and Tag List for entire Physics Research
+| * 71c5eb8 Added link blocks to article editor and changed the link_block model
+| * 7a14f7b Migration to change acttable attributes
+| * 5b328b5 Completed standard template for classical mechanics
+* | bff532b New Navbar, Updated Sir Trevor, Started Implmentation of Image Blcok
+|/  
+* 878ab03 update frontendJS.js (redundant lines)
+* 3433e01 nested collapsable articles in admin page
+* 213d49f Fixed an issue where the header wouldn't show on all pages
+* b4ce7a2 Add files via upload
+* 45d4a0c Update readme.txt
+* 74cbb15 added drop down menu to article page
+* d9f7935 Update Diagrams.csv
+* 42facf3 Updated version of concave mirror
+* 3d1420b deleted editor for another one
+* ad9eef5 fixed an entry
+* c0fc21a make slide menu easier to maintain and update template.html
+* f8ef430 Fixed an issue of the push menu cutting off before end of page
+*   0bd9e18 Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+|\  
+| * df50f2e Create readme.txt
+| * dffafb5 Create readme.txt
+* | 932d8af SQA/SQA.html
+|/  
+* b3c0940 SQA/SQA.html
+*   2ea7b2b Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+|\  
+| * b31c7a7 Fixing recent changes by various contributors - made tests pass, removed unused files, made new templates show content from database again instead of static content
+* | f54038f add SQA/SQA.html
+|/  
+* 9c5d70d Fix Article_block_spec.rb
+* 02cbb59 Fix article_spec.rb
+*   9524ffe Merge association_tests branch
+|\  
+| * 14b9b39 Add require line to rails helper
+| * a9af780 Added MTI validations
+| * baea3f9 Fix DB and Remove migration
+| * dfabd4f Add association and belongs to tests to RSpec
+* |   6eaed17 Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+|\ \  
+| * | 6b578b6 Fixed a bug on Mod Page
+* | | 5e39812 added FactoryGirl gem for testing
+|/ /  
+* | dfd1110 added jquery to admin menu
+* |   d25dd40 Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+|\ \  
+| * | eec2630 fixed the alignment of the text area
+| * | c917c2f added text editor for mod page
+* | | 7d6289a collapsable side bar for admin page
+|/ /  
+* | 3845d10 library for text editor
+* | dc31d16 Updated Gantt chart - image was missing lowest 2 lines
+* | ede7fdd Create 1.txt
+* |   09584c2 Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+|\ \  
+| * | a194644 Centered the user case diagram
+* | | 0724cf4 Updated SPMP to proper .html style
+|/ /  
+* | 70a8c0f Add files via upload
+* |   5589289 Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+|\ \  
+| * | ec0952a added UML diagram and made edits based on SQA
+* | | a1a0f4d Add time tracking
+|/ /  
+* | fd039c8 Remove some of the old javascript links to clean up pages
+* | 94b1250 Merge html pages and stylesheets from vapourware to ruby on rails
+* | 8d19a32 redesigned subcategories page
+* | b79cd8e All front end .docx files have already been removed. Please do not add any more again
+* |   8c1f96e Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+|\ \  
+| * | 4a48e1c Updated revision number due to previous error
+| * | 23e6016 Rename UPOD SRS - Web Design (Front End).html to UPOD SRS - Front End.html
+| * | 4c56a21 Updated Front End RD .html, minor edit to Back End RD formatting
+| * | 8710fd3 Update README.md
+| * | 9b5494e initial version of sir trevor working!!!!! model method might need minor refactoring later on but it works! we can now create articles!
+| * | 13f03cf removing about helper/controller as it was breaking the entire app
+| * | c655bdb Delete docx. files
+| * | a7c90b9 Delete docx. files
+| * | 04bd77c Delete docx. files
+| * | 7f9e1d9 Delete docx. files
+| * | d0b13c4 Update UPOD RD - Graphics-Animation.html
+| * | 4178aeb Add files via upload
+* | | 0b43960 fixed a name
+|/ /  
+* | 3c09ced concave mirror updated
+* | bbc4b01 Updated all doc to HTML
+* | 2901bdd format edit
+* | 3077ad3 Removed all Front End .doc files
+* | 417fccf final edits for HTML
+* | 7d61fd3 Update UPOD RD - Graphics-Animation.html
+* | 284c613 Edited based on SQA feedback
+|/  
+* d3695fc Add Gantt Chart to doc
+* fc48704 Changed UML Diagrams to match class discussion
+*   c755bb7 Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+|\  
+| * b188f77 Formatting changes
+| * bb7bdf8 updated file
+* | 4631cda Removed ability to reset password, now done through AD
+|/  
+* bb67e4a Updated Concave Mirror
+* 90af30a Actually fixed gantt path
+* 29f9cf3 Update SPMP.html
+* d4f4ac1 Add SPMP + Gantt
+* 5e594e6 fixed small errors
+*   757aae2 Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+|\  
+| * 7326c93 Template for analysis document in HTML
+| * ea6019a Add files via upload
+* | 9ad6c12 Updated
+|/  
+*   ad823f2 Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+|\  
+| * d640d2c Revert "Reorganized physics files and folders and renamed files to follow standard naming convention"
+* | 467e500 v.03
+* | d80843d v.02
+|/  
+* c641a50 SearchCoreUml
+* 6531448 Reorganized physics files and folders and renamed files to follow standard naming convention
+* f81e724 Add files via upload
+* cd727fb Add files via upload
+* 81aab8a Add files via upload
+* 3d0a38f Add files via upload
+* 36fa4a3 Update Schema.db
+* cf93977 Fix Schema
+* b54e7a7 reorganized UML folder contents in Diagrams folder
+*   f5faed7 Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+|\  
+| *   d153f30 Merge branch 'rspec_testing'
+| |\  
+| | * c300aa2 Migration for equation block table
+| | * 1b551de Update equation block .rb and spec
+| | * 00d2ecc Add comments for RSpec/Shoulda matcher tests
+| | * 5a99e3a Add more RSpec and Shoulda Matchers Tests
+| | * d75f45e Add Rspec Testing to models
+| | * 4ab5940 Install Rspec and Shoulda Matcher
+* | | 84e97af added BCE diagram and cleaned up diagram folders
+|/ /  
+* | 45d9d7e Added Object Diagram
+* | 4fc9ee8 Update Diagrams.csv
+* | d343907 admin action bar align
+* | 15fbccd new css for admin page
+* |   cd8c3f4 Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+|\ \  
+| * | f490d36 Fixed Diagrams
+| * | fe38a87 Delete freebodymovement.js
+| * | c038e9a Delete free_body.html
+| * | e9cf682 Update readme.txt
+| * | 30369d9 Added frontend .png
+| * | dd77ef3 Combined diagram files, added README with info about updating UML diagrams, combined StarUML files to include User classes
+| * | 351bd01 Combined diagram files, added README with info about updating UML diagrams, combined StarUML files to include User classes
+| * |   61d0657 Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+| |\ \  
+| | * | b43a3ba Add files via upload
+| | * | 71811d1 Update Diagrams.csv
+| | * | 7cf7cf6 Update Diagrams.csv
+| | * |   a172378 Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+| | |\ \  
+| | * | | 1e34396 Changed Website Hierarchy names
+| * | | | dc0e9da combined diagram files, added README to backend UML directory, and combined StarUML files to include User classes
+| | |/ /  
+| |/| |   
+| * | | 514918c Add files via upload
+| * | |   eab0bdd merged scaffold
+| |\ \ \  
+| | |/ /  
+| |/| |   
+| | * |   2c60531 Merge branch 'scaffold' of github.com:UPOD-2016/UPOD into scaffold
+| | |\ \  
+| | | * | 71e5f2e Add routing for about page into rails version
+| | | * | eca5635 User UML
+| | | * | ed51e58 Removed CategoryBlock from Category section in UML
+| | | * | 638bfaf changed category and article relationship
+| | | * | 4fd589f Added Article to Catagory relation
+| | | |/  
+| | | * fa5d582 added generalization for classes performing operations that are restricted by user permissions
+| | | * 3ccc6a9 Updated HTML docs
+| | | *   1a4b883 Merge remote-tracking branch 'origin/scaffold' into scaffold
+| | | |\  
+| | | | * 5b91749 changed relation between article and user classes
+| | | * | 5addddf Flushed out Categories in UML.
+| | | |/  
+| | | * 1f3f647 Added StarUML UML diagram file and auto-generated HTML files to view them
+| | * | bdaa693 starting to integrate backend
+| | |/  
+| | *   a0059b7 merge with randy searcing
+| | |\  
+| | | * 7973d5d updated article tet block
+| | | * 598fe26 started to move elastic to module
+| | | *   6344347 Add validations to models
+| | | |\  
+| | | | * c83e3c0 Add validations to models
+| | | | * 1fad66b Add validations under models
+| | * | | bcd10ec add sir trevor
+| | |/ /  
+| | * | 6ee483d +elastic search
+| | * | b7f11d2 Added gems for elasticsearch #blingbling
+| | |/  
+| | * 5744785 add interface to interact with blocks
+| | * 1ba995d add acts as list scoped
+| | * 5d12198 adding constants, links, and equations
+| | * 2bf07b2 establish relationship between article, articleblock and articletextblock
+| | * 0d65b57 starting initial article nodes
+| | * b1aeb0f no longer needed
+| | * b276b4b Versioning for https://www.lucidchart.com/documents/edit/d0833e5f-c854-44cf-bb23-9112f854ba80?shared=true&#
+| | * 3c7e69f Added tzinfo gem to fix rails s command for windows
+| | * eaf9947 Site is ready to be deployed with current frontend skeleton.  YOU MUST RUN bundle install then UPDATE config/database.yml and RUN rake db:create then RUN rails s to use
+| | * f822a6e did a little more work on the scaffold. site is ready to be deployed after mysql is set up
+| | * 152ba79 basic framework scaffold
+| * | e25dbc1 Modified Use Case Diagram
+| * | 784c976 categories and sub categories page
+| * | be1e7ae Added .png version of use case diagram
+| * | ec7bda9 Modified use case diagram
+* | | c2cc833 admin html refactoring and color change
+|/ /  
+* | d73b8fd Create readme.txt
+* | 0db20b2 Create readme.txt
+* | 13a8e67 Create readme.txt
+* | 055cb43 added a optics animation
+* | ab877e4 Updated formatting of Analysis Doc + Added revision history
+* | a1f7b80 Update readme.txt
+* | 39e495b Modified use cases
+* | 580f9d3 Update Diagrams.csv
+* | 803d8d7 Update Diagrams.csv
+* | 7beaa61 Add files via upload
+* | 4a07e4c Create readme.txt
+* | 8214340 Create Embedded_js_svg_sample.svg
+* | 93f0862 Delete template (Revised).txt
+* | b1b8185 Updated the Animation Diagram document for Fundamentals II
+* | eae87e9 Input time for Front End Requirements over the last two weeks
+* | 35e8280 Update in progress
+* | 8d798a9 Add files via upload
+* | eb2196d Most recent time tracking spreadsheet
+* | 830bbed Created Use Case Diagrams
+* | 1a4d9bd Add files via upload
+* | 969bacd Update Backend UML
+* |   fc2293e Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+|\ \  
+| * | 46befb0 Add files via upload
+* | | 7ad1092 Update Backend UML Diagram
+|/ /  
+* | 404e0a9 Updated to proper format
+* | 0a2687a Created Hierarchy and Tag List for physics topics
+* |   138646f Merge branch 'master' of https://github.com/UPOD-2016/UPOD combine css files into one file
+|\ \  
+| * | 40fc8d6 Deleted a mistakenly copied folder and updated web design document (edited)
+* | | 0e9dde4 commit operation
+|/ /  
+* | 25603fc SQA feed back
+* |   06cb0e7 Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+|\ \  
+| * | f66274a Added User UML
+* | | b04e27b Format to Template.html format with appendix to other requirements (not final)
+* | | 575ea57 Fix name
+|/ /  
+* | d21592f Create elastic_collision.html
+* | 47aa2d6 Add files via upload
+* | a2a4213 Elastic Collision
+* | f7552e6 Add files via upload
+* | a5fda5b SQA document to keep track of SQA work done by group mates
+* | ed94ff4 SQA feedback
+* | 5a24499 New template regarding analysis and requirement documents
+* | b6a4178 added jumbotron inside column div/ renamed old category page to new category page
+* | a0885d0 Add files via upload
+* | aa8d5cb Add files via upload
+* | 7d7e677 The concave mirror until now
+* |   c0d0c84 Merge branch 'master' of http://github.com/UPOD-2016/UPOD
+|\ \  
+| * | 483c720 Add WIP Analysis Doc
+| * | 3c13fd2 Organization of files
+| * | 674ee50 Rename the Magnetic Field lines to the Magnetic Field lines.html
+| * | 7d31889 the Magnetic Field lines.html
+| * | ec8cae0 Readover/Edits made
+| * | cbdc39c Revert "Revert "Remade Frontend UML Diagram""
+| * | 0a35f9d Revert "Remade Frontend UML Diagram"
+| * | 7200bb1 Organizing requirements folder for analysis phase
+| * | 6b01beb Remade Frontend UML Diagram
+| * | 447df94 Redesign categories pages
+| * | 176b866 deleted trash
+| * | d1d03c7 MathJax
+| * | f1cb966 Add files via upload
+| * | a2b6f8b Update UPOD RD - Graphics-Animation.html
+| * | bb2ec7b Modified Hierarchy
+| * | 2739dac Added page hierarchy for the website
+| * | ea2c012 Added animation diagrams document
+| * | 80c683a Revert "Create Physics Research Folder to organize content"
+| * | cf03040 Create Physics Research Folder to organize content
+| * | 704600e Revert "Created Subfolder to organize physics research"
+| * | 4237900 Created Subfolder to organize physics research
+| * | 83a42e4 Edited Physics HTML document
+| * | 8d48202 Admin Page Layout
+| * | 99308be Revised and edited Table of Contents and indexing added Revision History
+| * | bd91e12 Revised and added Revision History
+| * | 504213a Revised and converted to proper HTML Template.  Added Revision History
+| * |   c09b1a6 Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+| |\ \  
+| | * | 4eb994a Add files via upload
+| * | | cd2147f Revised Back End Requirements and properly formatted into HTML template
+| |/ /  
+| * | e41153f Added Revision History table. PLEASE FILL APPROPRIATELY
+| * | 0bdd8a6 Revised Physics.html
+| * | e57df05 Updated Edited Physics RD
+| * | 46babc0 Changed template to Physics RD
+| * | d3ab32e Added new physics HTML
+* | | 5615e83 The concave mirror untill now
+|/ /  
+* | dbc436f Useful websites and a textbook for svg
+* | bd95e3a Add files via upload
+* | 4fdda5f Add files via upload
+* | 88b6354 shapes.html
+* | 6c72717 Delete library.html
+* | ec28c2a Create library.html
+* | 638b757 Update Template.html
+* | 3aa5a21 Update Template.html
+* | 67b4fba Update Template.html
+* | a448d51 Add files via upload
+* | 1e206b1 Add files via upload
+* | c436ec5 add bootstrap breadcrumbs to categories and entry pages
+* | acdbc37 move position of slide menu button to the far left and add a few links to the menu
+* | 7804ae5 Updated revision history
+* | f395ab7 SQA Review of Front-end and Back-end Requirements
+* | 99b4138 Create TEMP
+* | 3c015b0 Update readme.txt
+* | 8478aca Add files via upload
+* | e3fa66c Delete q1
+* | 105492a Add files via upload
+* | f73405a Create q1
+* | a2a0abc Delete Quantum-Research
+* | 21dd650 Create Quantum-Research
+* | 848b2ea Add files via upload
+* | 4268158 removed drop-down menu
+* | 752108d Delete ball.js
+* | 950a5d0 Delete ball.html
+* | 6c85664 Create ball.js
+* | 6bf59b1 Create ball.html
+* | fa03152 Delete Sandbox
+* | 7a970ac Create Sandbox
+* | 86659d9 Create ball.html
+* | 57d5bfd Create ball.js
+* | 41eed59 Add files via upload
+* | e5a09bc Add files via upload
+* | ff202bf Add files via upload
+* | 8ee6e07 Create readme.txt
+* | ce57da2 Changed all pages to use the new push menu
+* | c3168aa Remade Push Menu
+* | 06ca857 made edits based on the edited srs
+* | 7fbb7d0 Made updates to Web Design SRS & updated .html version
+* | 487841b HTML file for edited Physics RD
+* |   e2f17ab Merge pull request #10 from UPOD-2016/SQA-Feedback-on-SRS
+|\ \  
+| | | * 3fb9113 (origin/SQA-Feedback-on-SRS) Added additional graphics SQA commentary
+| | |/  
+| |/|   
+| * | 2a15bfe We should store the edited documents for reference
+|/ /  
+* | 29c5aae new template
+* | 0c16aa3 added log files
+* | 001eb77 Updated based on the template
+* | 096d39b Add files via upload
+* | 37e990c White background
+* | d2e4daf Add files via upload
+* | cf18c16 Add files via upload
+* |   2d44da5 Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+|\ \  
+| * | 2bcad1d Converted to html copy.
+* | | 2ba8272 Fixed formatting and indents
+|/ /  
+* |   f222549 Merge remote-tracking branch 'refs/remotes/origin/master'
+|\ \  
+| * | 7563726 Updated based on new template
+| * | 0c7d3ce New Physics Content
+* | | d1d03cb FINAL TEMPLATE TO USE IN HTML
+* | | 8e106ee Added Table of Contents and edited format
+|/ /  
+* |   44d98f9 Merge remote-tracking branch 'refs/remotes/origin/master'
+|\ \  
+| * | 82e3abe Add files via upload
+| * | d3b7deb Add files via upload
+* | | 6c362c0 Physics document Version 0.2 in html
+|/ /  
+* | 6462e69 Edited margin for MORE drop-down
+* |   af1d59f Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+|\ \  
+| * \   5bac010 Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+| |\ \  
+| * | | 08e803a Resolved highlighted fields on RD - Web Design
+| * | | 426ccdd Added RD - General, Updated RD - Web Design based on SQA feedback
+* | | | 7c9d8ce Added More drop-down menu with links
+| |/ /  
+|/| |   
+* | | 907b95e Edited About page
+* | |   5a8683c Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+|\ \ \  
+| * | | 45852d9 Added indepth explanation of interactive animated diagram
+| * | | d9abb52 Rename UPOD RD - Web Design.html to UPOD SRS - Web Design (Front End).html
+| * | | 46d0e9a Update Template.html
+| |/ /  
+| * | 3ec31b9 added Vishrut's hours
+* | | 2820eb0 Added More drop-down menu with active links to connect to
+* | | 4b0bd26 Delete comment in about.html
+* | | 6ad9a66 Added comment in about.html
+* | | eeea399 Set to original about.html
+* | | 14fb112 about.html comment added
+|/ /  
+* | ce6dc98 Template for Requirements
+* | 895b777 Delete template
+* | f7207b5 Commit message
+* | 99b6acf Added a people tracker
+* | a6b88bd centered text
+* |   192a248 Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+|\ \  
+| * | 24a772e Added UPOD Logo to header
+| * | 09b6c9d Forgot to update Revision history
+| * | 9d14645 Updated holes in requirements
+* | | cf1369f made 404 page
+|/ /  
+* | c8362c1 Put content in div
+* | bb584c2 Template for Requirements
+* | 3a2b44d added new tracking site
+* | ecd28af Add files via upload
+* | c2eb1e4 Added "Forgot Password" section
+* | 80dd30a Add files via upload
+* | 4ab94b6 made a few additions to uml diagram again
+* | c59f3dc made a few additions to uml diagram
+* | 2418422 added a quick mock up for the backend UML in hopes of getting the database set up tomorrow.
+* | e4d3581 allowed for scrolling
+* | b84c685 removed <head> tags in code snippets
+* | a8ed59b deleted unused files
+* | 511b9c7 add push menu to all the other pages
+* |   505b448 merge
+|\ \  
+| * | 73a249e fix styling and merge login styles into main style sheet
+| * |   b5ea9d4 fix footer styling
+| |\ \  
+| | * | e1ebbe4 admin side-panel changes
+| | * | 74b8e58 Updated notes
+| * | | a61d96a fix footer styling
+| |/ /  
+| * | 19f03ca fix styling issues
+* | | 22483bf add push menu to search-result.html, reorganize and add push menu to header
+|/ /  
+* |   46afe31 fix styling on all pages
+|\ \  
+| * | 91f472d File rename
+| * | 06be7b1 Added links to other pages
+* | | 4b55666 fix styling of all pages
+|/ /  
+* | 2e2bc83 fix comment box
+* | c0b97a7 refactored names to meet standards
+* | 88939bf changed background from purple to white
+* |   26b396f Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+|\ \  
+| * | 560e329 Add files via upload
+| |/  
+* | 0d66de0 Added a Logo
+|/  
+* b455be3 Added an alternative Menu Back
+* 4598dfa Added an alternative icon
+* cfe19e4 fixed header, fixed css import
+* f2b12f6 Add files via upload
+* 4c4b05f Updated formatting and prepped for release
+* 88d531d move script tags to the bottom
+*   cf32e95 merge
+|\  
+| * d8a9ac8 Update README.md
+| * fd20ff0 Added the Optics Section
+| * d050610 Add actors and use cases
+| * ecbe0cb Add files via upload
+| * 7ea5943 refactor tabs and name-name variables
+| * 63b50d7 add container to title
+| * 3fa142b add search results title
+| * a8fde3c add list group to search results
+* | 5f7b3e9 create push menu, add push menu to homepage.html and restyle homepage.html and footer.html
+|/  
+* a121557 admin side-panel reformatting
+* 0e70368 Add files via upload
+* 8ed4c61 Create team-info.txt
+*   6009788 Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+|\  
+| * 8084a81 add jumbotron and title and description to the search result
+| * 3e066c9 fix submit button
+| * 7b2b7b0 add jumbotron to about.html page and dummy text
+| * 8fc31de spelling and grammer
+| * f4c253c fixed spacing
+| * 1cae4b4 fixed tabbing
+* | ec3a0a7 admin page footer & header refactor
+|/  
+* 65672a4 admin page started
+* a1a8b6d add new simple guide for git
+* 0027fa9 Added topics to dicuss for back-end requirements
+* 62d13e0 vapourware/html/portal.html
+* 8a64f02 Add portal file
+* 1efef2e Add files via upload
+* 524a428 added a file to learn github
+* fc2a59f removed test file
+* cf7baa2 Added file for tutorial
+* 1de2c38 add folder for organization
+* 96e5ef4 Added category page
+* f5e0a10 adjusted header/footer loading
+* 16a0e4e Fixed Homepage Issue
+* 17f0207 Add files via upload
+* 344763e Add files via upload
+* 6651542 Extra folder deleted
+* f1676eb added dynamic loading of header/footer
+* 63aa03b fix issue #5
+* 4f63367 - Changed User/Article relationship so each user can have zero-many   articles - Added some preliminary permissions that user groups can have - Added unique index to email and article title - Added index to article title to speed up search
+* 3359a39 Add files via upload
+* 107360d Delete empty
+* d6558ae Add files via upload
+* e132d85 Create empty
+* 9cee64b add search results page
+* 31a7b2b added entry.html
+* 45493c8 updated homepage
+* 0f5a5ae added a few comments
+* b5f3c28 added search bar
+* f42d5ec refactored a bit
+* 7eacba7 resources folder for pictures
+* f75fc61 Add files via upload
+* e63177b added header/footer as imports
+* 54bf04d updated TODO
+* 7129f2d Add files via upload
+* 64d3b9e Add files via upload
+* c06d48b Create login.html
+* 43fe875 add nav bar and footer
+* 9e42c0a add comment section
+* fb8e9bc header/footer WIP in index.html
+*   845df9e Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+|\  
+| * 512f80c add about.html
+* | 2699e50 Updated TODO, started work on header/footer
+|/  
+* 69bd516 Removed style.css
+* 0ced66f Updated TODO
+* 64e5761 Updated TODO
+* bcef8aa Added working TODO doc
+* ee1eaa9 Added bootstrap
+* 81bc86b Added file and structure for vapourware
+* 911c84e Add files via upload
+* e1c40d5 Second HLR update with Product Description
+* 92c77fd Updated High Level Requirements on Web Design
+* 9592d7d Added requirements - first draft
+* 1237409 update README.md
+*   4e2a091 (origin/development) Merge pull request #3 from mikeroher/patch-1
+|\  
+| * 7515196 Editing README
+|/  
+* f364e62 Update Readme.md
+*   6998965 Merge pull request #2 from KODrizzle/development
+|\  
+| * 56411e6 Update README.md
+|/  
+* f6eec87 Update README.md
+*   a5596cb Merge pull request #1 from WillDetlor/development
+|\  
+| * 5cebb79 fix url
+| * 28c817b update readme
+|/  
+* e1c2a26 Initial commit
+* 1509b46 (origin/gh-pages) Edited rules to remove pronouns
+* f213aca Create gh-pages branch via GitHub
+* f399792 Create gh-pages branch via GitHub
+* 32d2831 Create gh-pages branch via GitHub
+* b20b112 Create gh-pages branch via GitHub

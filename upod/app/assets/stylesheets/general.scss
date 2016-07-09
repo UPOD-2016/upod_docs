@@ -15,6 +15,12 @@ body {
   position: relative;
 }
 
+.thumbnail {
+    border: 0 none;
+    box-shadow: none;
+		background-color: transparent;
+}
+
 h1 {
   font-size: 50px;
 }
@@ -57,18 +63,7 @@ p {
 
 /* homepage styling */
 
-.homeBody {
-  left: 0;
-  margin: 0;
-  overflow: hidden;
-  position: relative;
-  background-color: #330072;
-  color: #330072;
-}
 
-.homeJumbotron {
-  background-color: #330072;
-}
 
 /*aboutpage styling*/
 

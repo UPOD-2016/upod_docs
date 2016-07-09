@@ -19,6 +19,7 @@
           </div>
           <div class = "col-xs-6 col-md-offset-4">
             <% @article.blocks.each do |block| %>
+                  <script>console.log("<%= block.slug %>")</script>
                   <%= render partial: "articles/blocks/#{block.slug}", locals: {block: block.specific} %>
             <% end %>
           </div>

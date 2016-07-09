@@ -14,8 +14,17 @@ gem 'elasticsearch-extensions'
 gem 'elasticsearch-model'
 gem 'elasticsearch-rails'
 
+#AD LDAP / DEVISE GEMS
+gem 'activerecord-session_store', github: 'rails/activerecord-session_store'
+gem "net-ldap"
+gem "devise"
+gem "devise_ldap_authenticatable", :git => "git://github.com/cschiewek/devise_ldap_authenticatable.git"
+
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
+group :assets do
+  gem 'coffee-rails'
+end
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
@@ -40,6 +49,15 @@ gem "rails-erd"
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+
+#Use Administrate for admin panel
+gem "administrate", "~> 0.2.2"
+gem "bourbon"
+
+gem 'carrierwave'
+gem "mini_magick"
+#Use YARD for documentation generation
+gem "yard"
 
 
 group :development do

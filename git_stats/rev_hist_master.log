@@ -1,0 +1,622 @@
+* b9ba5a6 (HEAD -> master, origin/master, origin/HEAD) wrote script to update stats for dbrown each week, run with ./update_stats.sh
+* c13d6dd added some devise options
+* b554bde Added some views for user login
+* bafc461 fixed up the document
+* fee46ef Edit view of user dashboard
+* 262c1ac Add inital admin panel
+* 44649f5 Add comments to tests
+* 45db21b test commit record
+* 177555b Add more testing and fix article_diagram_block.rb
+*   b9e2bfe Merge branch 'master' of github.com:UPOD-2016/UPOD
+|\  
+| * 8f1f3d5 remove general files - no use for these, and in the wrong file format in any case.
+* | 175d049 added diagram table
+|/  
+* 2e24b96 sirtrevor small fixes
+*   f49a70d Merge branch 'master' of github.com:UPOD-2016/UPOD
+|\  
+| * fb0138f removed migration mistake
+* | e00535e added contributor method
+* |   80614e8 Merge branch 'master' of github.com:UPOD-2016/UPOD
+|\ \  
+| |/  
+| *   a656ce1 Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+| |\  
+| | * 1f181f6 Update database.yml
+| | * e49c5d2 Update database.yml
+| * | 8f20df8 added a session model
+| |/  
+| * 7877bbc database additions for users and session tracking
+| * 2ff59cb session tracking
+| * d1853b5 adding session table
+| * fd9e7ed adding session table
+| * 09c3320 added alert and notice areas to application layout
+| * c76192c added user model and LDAP models
+| * 84fa2d4 deleted the back end RD .doc files
+* | e875344 cleaning up html
+| | * 71c6eac (origin/administrate) New article redirect
+| | * 1ff69ae Add administate gem
+| |/  
+| * f4af4b5 Removed spaces from name
+| * 2b6ca90 Removed spaces from name
+| * 8dc0900 Removed spaces from name
+| * dff5ab9 Removed spaces from name
+| * 219084b Version 1 of fundamentals research in modular form
+| * e1b6f79 updated optics
+| * 3b74d91 USE GDOCS TIME TRACKING
+| * ee328af Add files via upload
+| * e64714e Add files via upload
+| * aae328e Update free_body.html
+| * fec2b99 Delete svg.css
+| * e0c6908 Delete elastic_collision.html
+|/  
+*   8fb7eb5 Merge branch 'master' of github.com:UPOD-2016/UPOD
+|\  
+| * f6a8f58 Add files via upload
+* |   ec2394a fixed merge conflicts
+|\ \  
+| |/  
+| * 0bd0010 Update readme.txt
+| * 9eb2f7a Completed Hierarchy and Tag List for entire Physics Research
+| * 71c5eb8 Added link blocks to article editor and changed the link_block model
+| * 7a14f7b Migration to change acttable attributes
+| * 5b328b5 Completed standard template for classical mechanics
+* | bff532b New Navbar, Updated Sir Trevor, Started Implmentation of Image Blcok
+|/  
+* 878ab03 update frontendJS.js (redundant lines)
+* 3433e01 nested collapsable articles in admin page
+* 213d49f Fixed an issue where the header wouldn't show on all pages
+* b4ce7a2 Add files via upload
+* 45d4a0c Update readme.txt
+* 74cbb15 added drop down menu to article page
+* d9f7935 Update Diagrams.csv
+* 42facf3 Updated version of concave mirror
+* 3d1420b deleted editor for another one
+* ad9eef5 fixed an entry
+* c0fc21a make slide menu easier to maintain and update template.html
+* f8ef430 Fixed an issue of the push menu cutting off before end of page
+*   0bd9e18 Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+|\  
+| * df50f2e Create readme.txt
+| * dffafb5 Create readme.txt
+* | 932d8af SQA/SQA.html
+|/  
+* b3c0940 SQA/SQA.html
+*   2ea7b2b Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+|\  
+| * b31c7a7 Fixing recent changes by various contributors - made tests pass, removed unused files, made new templates show content from database again instead of static content
+* | f54038f add SQA/SQA.html
+|/  
+* 9c5d70d Fix Article_block_spec.rb
+* 02cbb59 Fix article_spec.rb
+*   9524ffe Merge association_tests branch
+|\  
+| * 14b9b39 Add require line to rails helper
+| * a9af780 Added MTI validations
+| * baea3f9 Fix DB and Remove migration
+| * dfabd4f Add association and belongs to tests to RSpec
+* |   6eaed17 Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+|\ \  
+| * | 6b578b6 Fixed a bug on Mod Page
+* | | 5e39812 added FactoryGirl gem for testing
+|/ /  
+* | dfd1110 added jquery to admin menu
+* |   d25dd40 Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+|\ \  
+| * | eec2630 fixed the alignment of the text area
+| * | c917c2f added text editor for mod page
+* | | 7d6289a collapsable side bar for admin page
+|/ /  
+* | 3845d10 library for text editor
+* | dc31d16 Updated Gantt chart - image was missing lowest 2 lines
+* | ede7fdd Create 1.txt
+* |   09584c2 Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+|\ \  
+| * | a194644 Centered the user case diagram
+* | | 0724cf4 Updated SPMP to proper .html style
+|/ /  
+* | 70a8c0f Add files via upload
+* |   5589289 Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+|\ \  
+| * | ec0952a added UML diagram and made edits based on SQA
+* | | a1a0f4d Add time tracking
+|/ /  
+* | fd039c8 Remove some of the old javascript links to clean up pages
+* | 94b1250 Merge html pages and stylesheets from vapourware to ruby on rails
+* | 8d19a32 redesigned subcategories page
+* | b79cd8e All front end .docx files have already been removed. Please do not add any more again
+* |   8c1f96e Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+|\ \  
+| * | 4a48e1c Updated revision number due to previous error
+| * | 23e6016 Rename UPOD SRS - Web Design (Front End).html to UPOD SRS - Front End.html
+| * | 4c56a21 Updated Front End RD .html, minor edit to Back End RD formatting
+| * | 8710fd3 Update README.md
+| * | 9b5494e initial version of sir trevor working!!!!! model method might need minor refactoring later on but it works! we can now create articles!
+| * | 13f03cf removing about helper/controller as it was breaking the entire app
+| * | c655bdb Delete docx. files
+| * | a7c90b9 Delete docx. files
+| * | 04bd77c Delete docx. files
+| * | 7f9e1d9 Delete docx. files
+| * | d0b13c4 Update UPOD RD - Graphics-Animation.html
+| * | 4178aeb Add files via upload
+* | | 0b43960 fixed a name
+|/ /  
+* | 3c09ced concave mirror updated
+* | bbc4b01 Updated all doc to HTML
+* | 2901bdd format edit
+* | 3077ad3 Removed all Front End .doc files
+* | 417fccf final edits for HTML
+* | 7d61fd3 Update UPOD RD - Graphics-Animation.html
+* | 284c613 Edited based on SQA feedback
+|/  
+* d3695fc Add Gantt Chart to doc
+* fc48704 Changed UML Diagrams to match class discussion
+*   c755bb7 Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+|\  
+| * b188f77 Formatting changes
+| * bb7bdf8 updated file
+* | 4631cda Removed ability to reset password, now done through AD
+|/  
+* bb67e4a Updated Concave Mirror
+* 90af30a Actually fixed gantt path
+* 29f9cf3 Update SPMP.html
+* d4f4ac1 Add SPMP + Gantt
+* 5e594e6 fixed small errors
+*   757aae2 Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+|\  
+| * 7326c93 Template for analysis document in HTML
+| * ea6019a Add files via upload
+* | 9ad6c12 Updated
+|/  
+*   ad823f2 Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+|\  
+| * d640d2c Revert "Reorganized physics files and folders and renamed files to follow standard naming convention"
+* | 467e500 v.03
+* | d80843d v.02
+|/  
+* c641a50 SearchCoreUml
+* 6531448 Reorganized physics files and folders and renamed files to follow standard naming convention
+* f81e724 Add files via upload
+* cd727fb Add files via upload
+* 81aab8a Add files via upload
+* 3d0a38f Add files via upload
+* 36fa4a3 Update Schema.db
+* cf93977 Fix Schema
+* b54e7a7 reorganized UML folder contents in Diagrams folder
+*   f5faed7 Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+|\  
+| *   d153f30 Merge branch 'rspec_testing'
+| |\  
+| | * c300aa2 Migration for equation block table
+| | * 1b551de Update equation block .rb and spec
+| | * 00d2ecc Add comments for RSpec/Shoulda matcher tests
+| | * 5a99e3a Add more RSpec and Shoulda Matchers Tests
+| | * d75f45e Add Rspec Testing to models
+| | * 4ab5940 Install Rspec and Shoulda Matcher
+* | | 84e97af added BCE diagram and cleaned up diagram folders
+|/ /  
+* | 45d9d7e Added Object Diagram
+* | 4fc9ee8 Update Diagrams.csv
+* | d343907 admin action bar align
+* | 15fbccd new css for admin page
+* |   cd8c3f4 Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+|\ \  
+| * | f490d36 Fixed Diagrams
+| * | fe38a87 Delete freebodymovement.js
+| * | c038e9a Delete free_body.html
+| * | e9cf682 Update readme.txt
+| * | 30369d9 Added frontend .png
+| * | dd77ef3 Combined diagram files, added README with info about updating UML diagrams, combined StarUML files to include User classes
+| * | 351bd01 Combined diagram files, added README with info about updating UML diagrams, combined StarUML files to include User classes
+| * |   61d0657 Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+| |\ \  
+| | * | b43a3ba Add files via upload
+| | * | 71811d1 Update Diagrams.csv
+| | * | 7cf7cf6 Update Diagrams.csv
+| | * |   a172378 Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+| | |\ \  
+| | * | | 1e34396 Changed Website Hierarchy names
+| * | | | dc0e9da combined diagram files, added README to backend UML directory, and combined StarUML files to include User classes
+| | |/ /  
+| |/| |   
+| * | | 514918c Add files via upload
+| * | |   eab0bdd merged scaffold
+| |\ \ \  
+| | |/ /  
+| |/| |   
+| | * |   2c60531 Merge branch 'scaffold' of github.com:UPOD-2016/UPOD into scaffold
+| | |\ \  
+| | | * | 71e5f2e Add routing for about page into rails version
+| | | * | eca5635 User UML
+| | | * | ed51e58 Removed CategoryBlock from Category section in UML
+| | | * | 638bfaf changed category and article relationship
+| | | * | 4fd589f Added Article to Catagory relation
+| | | |/  
+| | | * fa5d582 added generalization for classes performing operations that are restricted by user permissions
+| | | * 3ccc6a9 Updated HTML docs
+| | | *   1a4b883 Merge remote-tracking branch 'origin/scaffold' into scaffold
+| | | |\  
+| | | | * 5b91749 changed relation between article and user classes
+| | | * | 5addddf Flushed out Categories in UML.
+| | | |/  
+| | | * 1f3f647 Added StarUML UML diagram file and auto-generated HTML files to view them
+| | * | bdaa693 starting to integrate backend
+| | |/  
+| | *   a0059b7 merge with randy searcing
+| | |\  
+| | | * 7973d5d updated article tet block
+| | | * 598fe26 started to move elastic to module
+| | | *   6344347 Add validations to models
+| | | |\  
+| | | | * c83e3c0 Add validations to models
+| | | | * 1fad66b Add validations under models
+| | * | | bcd10ec add sir trevor
+| | |/ /  
+| | * | 6ee483d +elastic search
+| | * | b7f11d2 Added gems for elasticsearch #blingbling
+| | |/  
+| | * 5744785 add interface to interact with blocks
+| | * 1ba995d add acts as list scoped
+| | * 5d12198 adding constants, links, and equations
+| | * 2bf07b2 establish relationship between article, articleblock and articletextblock
+| | * 0d65b57 starting initial article nodes
+| | * b1aeb0f no longer needed
+| | * b276b4b Versioning for https://www.lucidchart.com/documents/edit/d0833e5f-c854-44cf-bb23-9112f854ba80?shared=true&#
+| | * 3c7e69f Added tzinfo gem to fix rails s command for windows
+| | * eaf9947 Site is ready to be deployed with current frontend skeleton.  YOU MUST RUN bundle install then UPDATE config/database.yml and RUN rake db:create then RUN rails s to use
+| | * f822a6e did a little more work on the scaffold. site is ready to be deployed after mysql is set up
+| | * 152ba79 basic framework scaffold
+| * | e25dbc1 Modified Use Case Diagram
+| * | 784c976 categories and sub categories page
+| * | be1e7ae Added .png version of use case diagram
+| * | ec7bda9 Modified use case diagram
+* | | c2cc833 admin html refactoring and color change
+|/ /  
+* | d73b8fd Create readme.txt
+* | 0db20b2 Create readme.txt
+* | 13a8e67 Create readme.txt
+* | 055cb43 added a optics animation
+* | ab877e4 Updated formatting of Analysis Doc + Added revision history
+* | a1f7b80 Update readme.txt
+* | 39e495b Modified use cases
+* | 580f9d3 Update Diagrams.csv
+* | 803d8d7 Update Diagrams.csv
+* | 7beaa61 Add files via upload
+* | 4a07e4c Create readme.txt
+* | 8214340 Create Embedded_js_svg_sample.svg
+* | 93f0862 Delete template (Revised).txt
+* | b1b8185 Updated the Animation Diagram document for Fundamentals II
+* | eae87e9 Input time for Front End Requirements over the last two weeks
+* | 35e8280 Update in progress
+* | 8d798a9 Add files via upload
+* | eb2196d Most recent time tracking spreadsheet
+* | 830bbed Created Use Case Diagrams
+* | 1a4d9bd Add files via upload
+* | 969bacd Update Backend UML
+* |   fc2293e Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+|\ \  
+| * | 46befb0 Add files via upload
+* | | 7ad1092 Update Backend UML Diagram
+|/ /  
+* | 404e0a9 Updated to proper format
+* | 0a2687a Created Hierarchy and Tag List for physics topics
+* |   138646f Merge branch 'master' of https://github.com/UPOD-2016/UPOD combine css files into one file
+|\ \  
+| * | 40fc8d6 Deleted a mistakenly copied folder and updated web design document (edited)
+* | | 0e9dde4 commit operation
+|/ /  
+* | 25603fc SQA feed back
+* |   06cb0e7 Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+|\ \  
+| * | f66274a Added User UML
+* | | b04e27b Format to Template.html format with appendix to other requirements (not final)
+* | | 575ea57 Fix name
+|/ /  
+* | d21592f Create elastic_collision.html
+* | 47aa2d6 Add files via upload
+* | a2a4213 Elastic Collision
+* | f7552e6 Add files via upload
+* | a5fda5b SQA document to keep track of SQA work done by group mates
+* | ed94ff4 SQA feedback
+* | 5a24499 New template regarding analysis and requirement documents
+* | b6a4178 added jumbotron inside column div/ renamed old category page to new category page
+* | a0885d0 Add files via upload
+* | aa8d5cb Add files via upload
+* | 7d7e677 The concave mirror until now
+* |   c0d0c84 Merge branch 'master' of http://github.com/UPOD-2016/UPOD
+|\ \  
+| * | 483c720 Add WIP Analysis Doc
+| * | 3c13fd2 Organization of files
+| * | 674ee50 Rename the Magnetic Field lines to the Magnetic Field lines.html
+| * | 7d31889 the Magnetic Field lines.html
+| * | ec8cae0 Readover/Edits made
+| * | cbdc39c Revert "Revert "Remade Frontend UML Diagram""
+| * | 0a35f9d Revert "Remade Frontend UML Diagram"
+| * | 7200bb1 Organizing requirements folder for analysis phase
+| * | 6b01beb Remade Frontend UML Diagram
+| * | 447df94 Redesign categories pages
+| * | 176b866 deleted trash
+| * | d1d03c7 MathJax
+| * | f1cb966 Add files via upload
+| * | a2b6f8b Update UPOD RD - Graphics-Animation.html
+| * | bb2ec7b Modified Hierarchy
+| * | 2739dac Added page hierarchy for the website
+| * | ea2c012 Added animation diagrams document
+| * | 80c683a Revert "Create Physics Research Folder to organize content"
+| * | cf03040 Create Physics Research Folder to organize content
+| * | 704600e Revert "Created Subfolder to organize physics research"
+| * | 4237900 Created Subfolder to organize physics research
+| * | 83a42e4 Edited Physics HTML document
+| * | 8d48202 Admin Page Layout
+| * | 99308be Revised and edited Table of Contents and indexing added Revision History
+| * | bd91e12 Revised and added Revision History
+| * | 504213a Revised and converted to proper HTML Template.  Added Revision History
+| * |   c09b1a6 Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+| |\ \  
+| | * | 4eb994a Add files via upload
+| * | | cd2147f Revised Back End Requirements and properly formatted into HTML template
+| |/ /  
+| * | e41153f Added Revision History table. PLEASE FILL APPROPRIATELY
+| * | 0bdd8a6 Revised Physics.html
+| * | e57df05 Updated Edited Physics RD
+| * | 46babc0 Changed template to Physics RD
+| * | d3ab32e Added new physics HTML
+* | | 5615e83 The concave mirror untill now
+|/ /  
+* | dbc436f Useful websites and a textbook for svg
+* | bd95e3a Add files via upload
+* | 4fdda5f Add files via upload
+* | 88b6354 shapes.html
+* | 6c72717 Delete library.html
+* | ec28c2a Create library.html
+* | 638b757 Update Template.html
+* | 3aa5a21 Update Template.html
+* | 67b4fba Update Template.html
+* | a448d51 Add files via upload
+* | 1e206b1 Add files via upload
+* | c436ec5 add bootstrap breadcrumbs to categories and entry pages
+* | acdbc37 move position of slide menu button to the far left and add a few links to the menu
+* | 7804ae5 Updated revision history
+* | f395ab7 SQA Review of Front-end and Back-end Requirements
+* | 99b4138 Create TEMP
+* | 3c015b0 Update readme.txt
+* | 8478aca Add files via upload
+* | e3fa66c Delete q1
+* | 105492a Add files via upload
+* | f73405a Create q1
+* | a2a0abc Delete Quantum-Research
+* | 21dd650 Create Quantum-Research
+* | 848b2ea Add files via upload
+* | 4268158 removed drop-down menu
+* | 752108d Delete ball.js
+* | 950a5d0 Delete ball.html
+* | 6c85664 Create ball.js
+* | 6bf59b1 Create ball.html
+* | fa03152 Delete Sandbox
+* | 7a970ac Create Sandbox
+* | 86659d9 Create ball.html
+* | 57d5bfd Create ball.js
+* | 41eed59 Add files via upload
+* | e5a09bc Add files via upload
+* | ff202bf Add files via upload
+* | 8ee6e07 Create readme.txt
+* | ce57da2 Changed all pages to use the new push menu
+* | c3168aa Remade Push Menu
+* | 06ca857 made edits based on the edited srs
+* | 7fbb7d0 Made updates to Web Design SRS & updated .html version
+* | 487841b HTML file for edited Physics RD
+* |   e2f17ab Merge pull request #10 from UPOD-2016/SQA-Feedback-on-SRS
+|\ \  
+| | | * 3fb9113 (origin/SQA-Feedback-on-SRS) Added additional graphics SQA commentary
+| | |/  
+| |/|   
+| * | 2a15bfe We should store the edited documents for reference
+|/ /  
+* | 29c5aae new template
+* | 0c16aa3 added log files
+* | 001eb77 Updated based on the template
+* | 096d39b Add files via upload
+* | 37e990c White background
+* | d2e4daf Add files via upload
+* | cf18c16 Add files via upload
+* |   2d44da5 Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+|\ \  
+| * | 2bcad1d Converted to html copy.
+* | | 2ba8272 Fixed formatting and indents
+|/ /  
+* |   f222549 Merge remote-tracking branch 'refs/remotes/origin/master'
+|\ \  
+| * | 7563726 Updated based on new template
+| * | 0c7d3ce New Physics Content
+* | | d1d03cb FINAL TEMPLATE TO USE IN HTML
+* | | 8e106ee Added Table of Contents and edited format
+|/ /  
+* |   44d98f9 Merge remote-tracking branch 'refs/remotes/origin/master'
+|\ \  
+| * | 82e3abe Add files via upload
+| * | d3b7deb Add files via upload
+* | | 6c362c0 Physics document Version 0.2 in html
+|/ /  
+* | 6462e69 Edited margin for MORE drop-down
+* |   af1d59f Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+|\ \  
+| * \   5bac010 Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+| |\ \  
+| * | | 08e803a Resolved highlighted fields on RD - Web Design
+| * | | 426ccdd Added RD - General, Updated RD - Web Design based on SQA feedback
+* | | | 7c9d8ce Added More drop-down menu with links
+| |/ /  
+|/| |   
+* | | 907b95e Edited About page
+* | |   5a8683c Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+|\ \ \  
+| * | | 45852d9 Added indepth explanation of interactive animated diagram
+| * | | d9abb52 Rename UPOD RD - Web Design.html to UPOD SRS - Web Design (Front End).html
+| * | | 46d0e9a Update Template.html
+| |/ /  
+| * | 3ec31b9 added Vishrut's hours
+* | | 2820eb0 Added More drop-down menu with active links to connect to
+* | | 4b0bd26 Delete comment in about.html
+* | | 6ad9a66 Added comment in about.html
+* | | eeea399 Set to original about.html
+* | | 14fb112 about.html comment added
+|/ /  
+* | ce6dc98 Template for Requirements
+* | 895b777 Delete template
+* | f7207b5 Commit message
+* | 99b6acf Added a people tracker
+* | a6b88bd centered text
+* |   192a248 Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+|\ \  
+| * | 24a772e Added UPOD Logo to header
+| * | 09b6c9d Forgot to update Revision history
+| * | 9d14645 Updated holes in requirements
+* | | cf1369f made 404 page
+|/ /  
+* | c8362c1 Put content in div
+* | bb584c2 Template for Requirements
+* | 3a2b44d added new tracking site
+* | ecd28af Add files via upload
+* | c2eb1e4 Added "Forgot Password" section
+* | 80dd30a Add files via upload
+* | 4ab94b6 made a few additions to uml diagram again
+* | c59f3dc made a few additions to uml diagram
+* | 2418422 added a quick mock up for the backend UML in hopes of getting the database set up tomorrow.
+* | e4d3581 allowed for scrolling
+* | b84c685 removed <head> tags in code snippets
+* | a8ed59b deleted unused files
+* | 511b9c7 add push menu to all the other pages
+* |   505b448 merge
+|\ \  
+| * | 73a249e fix styling and merge login styles into main style sheet
+| * |   b5ea9d4 fix footer styling
+| |\ \  
+| | * | e1ebbe4 admin side-panel changes
+| | * | 74b8e58 Updated notes
+| * | | a61d96a fix footer styling
+| |/ /  
+| * | 19f03ca fix styling issues
+* | | 22483bf add push menu to search-result.html, reorganize and add push menu to header
+|/ /  
+* |   46afe31 fix styling on all pages
+|\ \  
+| * | 91f472d File rename
+| * | 06be7b1 Added links to other pages
+* | | 4b55666 fix styling of all pages
+|/ /  
+* | 2e2bc83 fix comment box
+* | c0b97a7 refactored names to meet standards
+* | 88939bf changed background from purple to white
+* |   26b396f Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+|\ \  
+| * | 560e329 Add files via upload
+| |/  
+* | 0d66de0 Added a Logo
+|/  
+* b455be3 Added an alternative Menu Back
+* 4598dfa Added an alternative icon
+* cfe19e4 fixed header, fixed css import
+* f2b12f6 Add files via upload
+* 4c4b05f Updated formatting and prepped for release
+* 88d531d move script tags to the bottom
+*   cf32e95 merge
+|\  
+| * d8a9ac8 Update README.md
+| * fd20ff0 Added the Optics Section
+| * d050610 Add actors and use cases
+| * ecbe0cb Add files via upload
+| * 7ea5943 refactor tabs and name-name variables
+| * 63b50d7 add container to title
+| * 3fa142b add search results title
+| * a8fde3c add list group to search results
+* | 5f7b3e9 create push menu, add push menu to homepage.html and restyle homepage.html and footer.html
+|/  
+* a121557 admin side-panel reformatting
+* 0e70368 Add files via upload
+* 8ed4c61 Create team-info.txt
+*   6009788 Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+|\  
+| * 8084a81 add jumbotron and title and description to the search result
+| * 3e066c9 fix submit button
+| * 7b2b7b0 add jumbotron to about.html page and dummy text
+| * 8fc31de spelling and grammer
+| * f4c253c fixed spacing
+| * 1cae4b4 fixed tabbing
+* | ec3a0a7 admin page footer & header refactor
+|/  
+* 65672a4 admin page started
+* a1a8b6d add new simple guide for git
+* 0027fa9 Added topics to dicuss for back-end requirements
+* 62d13e0 vapourware/html/portal.html
+* 8a64f02 Add portal file
+* 1efef2e Add files via upload
+* 524a428 added a file to learn github
+* fc2a59f removed test file
+* cf7baa2 Added file for tutorial
+* 1de2c38 add folder for organization
+* 96e5ef4 Added category page
+* f5e0a10 adjusted header/footer loading
+* 16a0e4e Fixed Homepage Issue
+* 17f0207 Add files via upload
+* 344763e Add files via upload
+* 6651542 Extra folder deleted
+* f1676eb added dynamic loading of header/footer
+* 63aa03b fix issue #5
+* 4f63367 - Changed User/Article relationship so each user can have zero-many   articles - Added some preliminary permissions that user groups can have - Added unique index to email and article title - Added index to article title to speed up search
+* 3359a39 Add files via upload
+* 107360d Delete empty
+* d6558ae Add files via upload
+* e132d85 Create empty
+* 9cee64b add search results page
+* 31a7b2b added entry.html
+* 45493c8 updated homepage
+* 0f5a5ae added a few comments
+* b5f3c28 added search bar
+* f42d5ec refactored a bit
+* 7eacba7 resources folder for pictures
+* f75fc61 Add files via upload
+* e63177b added header/footer as imports
+* 54bf04d updated TODO
+* 7129f2d Add files via upload
+* 64d3b9e Add files via upload
+* c06d48b Create login.html
+* 43fe875 add nav bar and footer
+* 9e42c0a add comment section
+* fb8e9bc header/footer WIP in index.html
+*   845df9e Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+|\  
+| * 512f80c add about.html
+* | 2699e50 Updated TODO, started work on header/footer
+|/  
+* 69bd516 Removed style.css
+* 0ced66f Updated TODO
+* 64e5761 Updated TODO
+* bcef8aa Added working TODO doc
+* ee1eaa9 Added bootstrap
+* 81bc86b Added file and structure for vapourware
+* 911c84e Add files via upload
+* e1c40d5 Second HLR update with Product Description
+* 92c77fd Updated High Level Requirements on Web Design
+* 9592d7d Added requirements - first draft
+* 1237409 update README.md
+*   4e2a091 (origin/development) Merge pull request #3 from mikeroher/patch-1
+|\  
+| * 7515196 Editing README
+|/  
+* f364e62 Update Readme.md
+*   6998965 Merge pull request #2 from KODrizzle/development
+|\  
+| * 56411e6 Update README.md
+|/  
+* f6eec87 Update README.md
+*   a5596cb Merge pull request #1 from WillDetlor/development
+|\  
+| * 5cebb79 fix url
+| * 28c817b update readme
+|/  
+* e1c2a26 Initial commit
+* 1509b46 (origin/gh-pages) Edited rules to remove pronouns
+* f213aca Create gh-pages branch via GitHub
+* f399792 Create gh-pages branch via GitHub
+* 32d2831 Create gh-pages branch via GitHub
+* b20b112 Create gh-pages branch via GitHub

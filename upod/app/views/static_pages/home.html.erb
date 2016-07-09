@@ -1,33 +1,53 @@
-<div id="menuContainer">
-  <input id="toggle" type="checkbox">
-  <label for="toggle">&equiv;</label>
-  <div class="page-content">
-    <!--start content section-->
-
-    <br>
-    <br>
-    <div class="jumbotron homeJumbotron">
-      <div id = "content" style="margin-top:5%" class="row row-centered">
-        <center>
-          <%= link_to root_path do %>
-            <%= image_tag 'logo.png' %>
-          <% end %>
-        </center>
-        <div class="form-group-lg col-md-3"></div>
-        <div class="form-group-lg col-md-5">
-        <br>
-        <br>
-          <label for="search"></label>
-          <input type="text" class="form-control" id="search" style="border:2px solid #330072";>
-        </div>
-        <br>
-        <br>
-        <div class="form-group-lg col-md-4"></div>
-        <input type="button" class="btn btn-warning btn-lg" value="Search">
+<body style="background-color:#330072;">
+	<div class="container-fluid" style="margin-bottom:10%"> <!--image/search bar-->
+    <div class="row">
+      <div class="col-md-12">
+        <%= link_to root_path do %>
+          <%= image_tag('logo.png', :class => "center-block", :style => "margin-top: 5%; margin-bottom: 40px;")%>
+        <% end %>
       </div>
-    </div>
-    <br>
+    </div> 
+    <div class="row"> <!-- Search bar -->
+      <div class="col-md-6 col-md-offset-3">
+        <div class="form-group" style="display:inline;">
+          <div class="input-group">
+            <input type="text" class="form-control input-lg">
+            <span class="input-group-addon"><span class="glyphicon glyphicon-search"></span></span>
+          </div>
+        </div>
+      </div>
+    </div> <!-- end Search bar -->
+  </div> <!--end image/search bar-->
 
-    <!--end content section-->
-  </div>
-</div>
+	
+	<div class="container"> <!-- 6 categories -->
+
+		<div class="row" style="margin-top:10%"> <!-- first row -->
+		  <div class="col-md-4 col-md-offset-0 col-sm-offset-3">
+		    <%= image_tag('logo.png', :class => "thumbnail") %>
+		  </div>
+			<div class="col-md-4 col-md-offset-0 col-sm-offset-3">
+		    <%= image_tag('logo.png', :class => "thumbnail") %>
+		  </div>
+			<div class="col-md-4 col-md-offset-0 col-sm-offset-3">
+		    <%= image_tag('logo.png', :class => "thumbnail") %>
+		  </div>
+		</div> <!-- end first row -->
+		
+		<div class="row" style="margin-top:10%"> <!-- second row -->
+		  <div class="col-md-4 col-md-offset-0 col-sm-offset-3">
+		    <%= image_tag('logo.png', :class => "thumbnail") %>
+		  </div>
+			<div class="col-md-4 col-md-offset-0 col-sm-offset-3">
+		    <%= image_tag('logo.png', :class => "thumbnail") %>
+		  </div>
+			<div class="col-md-4 col-md-offset-0 col-sm-offset-3">
+		    <%= image_tag('logo.png', :class => "thumbnail") %>
+		  </div>
+		</div> <!-- end second row -->
+
+	</div> <!-- end 6 categories -->
+	
+
+
+<body>

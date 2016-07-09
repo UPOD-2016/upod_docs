@@ -1,6 +1,11 @@
 <!-- Fixed navbar -->
+<head>
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
 
-<nav class="navbar navbar-default headerContent">
+</head>
+<nav class="navbar navbar-inverse navbar-static-top">
   <div class="container"> 
     <!--
         <div class="navbar-header">
@@ -18,27 +23,56 @@
 <<<<<<< HEAD
         --> 
     <!-- <div id="navbar" class="collapse navbar-collapse"> -->
-    <ul class="nav navbar-nav navbar-left">
+	<div class="navbad-header">
       <!-- <li class="active">
         <div class="icon-menu"> <img src="../resources/menuIcon.png" width="42" height="42"> </div>
       </li>
       -->
-      <a href="home.html">
-      <li><img src="../resources/upod_logo_color_v2.png" style="width:28% ; height:14%"/></li>
-      </a>
-    </ul>
+		<a class="navbar-brand" style="padding:0;" href="home.html">
+			<img width="100" src="../resources/upod_logo_color_v2.png">
+		</a>
     <!--search --> 
-    <br />
-    <div class="col-sm-3 col-md-3 pull-right">
-      <form class="navbar-form" role="search">
-        <div class="input-group">
-          <input type="text" class="form-control" placeholder="Search" name="q">
-          <div class="input-group-btn">
-            <button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-search"></span></button>
-          </div>
-        </div>
-      </form>
-    </div>
+		<div class="nav navbar-nav">
+			<li>
+				<a href="about.html">About</a>
+			</li>
+			<li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categories <span class="caret"></span>
+				</a>
+				<ul class="dropdown-menu">
+					<li>
+						<a href="#">Fundementals</a>
+					</li>
+					<li>
+						<a href="#">Classical Mechanics</a>
+					</li>
+					<li>
+						<a href="#">Optics</a>
+					</li>
+					<li>
+						<a href="#">Electricity and Magnetism</a>
+					</li>
+					<li>
+						<a href="#">Quantum Mechanics</a>
+					</li>
+					<li>
+						<a href="#">Statistical Mechanics</a>
+					</li>
+				</ul>
+			</li>
+				
+		</div>
+		<ul class="nav navbar-nav navbar-right">
+			<form class="navbar-form" role="search">
+				<ul class="input-group">
+					<input type="text" class="form-control" placeholder="Search" name="q">
+					<li class="input-group-btn">
+						<button class="btn btn-default" type="submit">Go</button>
+					</li>
+				</ul>
+			</form>
+		</ul>
+	</div>
     <!--search end --> 
   </div>
 </nav>
