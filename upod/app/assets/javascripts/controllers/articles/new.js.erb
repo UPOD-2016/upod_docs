@@ -1,6 +1,11 @@
+//= require includes/MathJaxConfig
+//= require includes/MathJax
 //= require includes/sir-trevor
+//= require ./equation.js
 
 $(document).on('ready page:load', function(){
+
+  MathJax.Hub.Configured(); //Tell mathjax to start configuration
 
   SirTrevor.setDefaults({
     iconUrl: "<%= asset_path('sir-trevor-icons.svg') %>",
@@ -25,7 +30,7 @@ $(document).on('ready page:load', function(){
       "Quote",
       "Image",
       "Video",
-      "Tweet"
+      "Equation"
     ]
   });
 });
