@@ -1,11 +1,18 @@
 Rails.application.routes.draw do
 
-
   namespace :admin do
     resources :articles
-    resources :users
     resources :constants
-    resources :contributors
+    resources :users
+#resources :article_text_blocks
+#resources :article_blocks
+#resources :article_constant_blocks
+#resources :article_diagram_blocks
+#resources :article_equation_blocks
+#resources :article_link_blocks
+#resources :contributors
+#resources :diagrams
+#resources :sessions
 
     root to: "articles#index"
   end

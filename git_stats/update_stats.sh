@@ -3,7 +3,7 @@
 # EMAIL:    robert@morouney.com
 # FILE:     update_stats.sh
 # CREATED:  2016-07-07 18:31:30
-# MODIFIED: 2016-07-07 18:48:08
+# MODIFIED: 2016-07-07 19:26:16
 
 echo 'UPDATEING STATS.......'
 # stdout version
@@ -17,3 +17,7 @@ echo './rev_hist.txt Updated'
 #HTML Version
 git log --all --date=relative --pretty=format:'<a href="http://github.com/UPOD-2016/UPOD/commit/%H"><b>%aD</b></a><br/><li><i> %s</i> -<b>%an</b> </li><br/> ' >rev_hist.html 
 echo './rev_hist.html Updated'
+
+#short log
+git shortlog -s -n >rev_hist_short.txt
+echo './rev_hist_short.txt Updated'

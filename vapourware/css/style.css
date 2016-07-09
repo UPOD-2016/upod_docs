@@ -373,12 +373,39 @@ body {
 
 
 /* for article page */
-.dropdown:hover .dropbtn {
-    background-color: #ffd700;
+
+/* Dropdown Button */
+.art_dropbtn {
+    background-color: transparent;
+    color: black;
+    
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
 }
 
-/*padding test for article page*/ 
-#pad{
-    padding-left: 50%;
-    
+/* Dropdown Content (Hidden by Default) */
+.art_dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+/* Links inside the dropdown */
+.art_dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+/* Change color of dropdown links on hover */
+.art_dropdown-content a:hover {background-color: lightgray}
+/* Show the dropdown menu on hover */
+.dropdown:hover .art_dropdown-content {
+    display: block;
+}
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .art_dropbtn {
+    background-color: transparent;
 }

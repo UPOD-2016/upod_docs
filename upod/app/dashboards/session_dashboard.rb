@@ -1,6 +1,6 @@
 require "administrate/base_dashboard"
 
-class ConstantDashboard < Administrate::BaseDashboard
+class SessionDashboard < Administrate::BaseDashboard
   # ATTRIBUTE_TYPES
   # a hash that describes the type of each of the model's fields.
   #
@@ -8,11 +8,9 @@ class ConstantDashboard < Administrate::BaseDashboard
   # which determines how the attribute is displayed
   # on pages throughout the dashboard.
   ATTRIBUTE_TYPES = {
-    article_constant_blocks: Field::HasMany,
     id: Field::Number,
-    name: Field::String,
-    description: Field::Text,
-    value: Field::String.with_options(searchable: false),
+    session_id: Field::String,
+    data: Field::Text,
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
   }.freeze
@@ -23,20 +21,18 @@ class ConstantDashboard < Administrate::BaseDashboard
   # By default, it's limited to four items to reduce clutter on index pages.
   # Feel free to add, remove, or rearrange items.
   COLLECTION_ATTRIBUTES = [
-    #:article_constant_blocks,
-    :id,
-    :name,
-    :value,
+    #:id,
+    #:session_id,
+    #:data,
+    #:created_at,
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
   # an array of attributes that will be displayed on the model's show page.
   SHOW_PAGE_ATTRIBUTES = [
-    :id,
-    :name,
-    :value,
-    :description,
-    :article_constant_blocks,
+    #:id,
+    #:session_id,
+    #:data,
     #:created_at,
     #:updated_at,
   ].freeze
@@ -45,16 +41,14 @@ class ConstantDashboard < Administrate::BaseDashboard
   # an array of attributes that will be displayed
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = [
-    #:article_constant_blocks,
-    :name,
-    :value,
-    :description,
+    #:session_id,
+    #:data,
   ].freeze
 
-  # Overwrite this method to customize how constants are displayed
+  # Overwrite this method to customize how sessions are displayed
   # across all pages of the admin dashboard.
   #
-  # def display_resource(constant)
-  #   "Constant ##{constant.id}"
+  # def display_resource(session)
+  #   "Session ##{session.id}"
   # end
 end

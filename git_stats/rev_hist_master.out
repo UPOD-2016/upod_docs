@@ -1,20 +1,22 @@
-* [1;34mb9ba5a6[m - [1;36mThu, 7 Jul 2016 18:35:58 -0400[m [1;32m(25 minutes ago)[m[1;33m (HEAD -> master, origin/master, origin/HEAD)[m
+* [1;34m7b6a291[m - [1;36mThu, 7 Jul 2016 19:01:37 -0400[m [1;32m(25 minutes ago)[m[1;33m (HEAD -> master, origin/master, origin/HEAD)[m
+|           [37mI thought I could do better, and did (added html format)[m [2;37m- rmoro[m
+* [1;34mb9ba5a6[m - [1;36mThu, 7 Jul 2016 18:35:58 -0400[m [1;32m(50 minutes ago)[m[1;33m[m
 |           [37mwrote script to update stats for dbrown each week, run with ./update_stats.sh[m [2;37m- rmoro[m
-* [1;34mc13d6dd[m - [1;36mThu, 7 Jul 2016 18:25:25 -0400[m [1;32m(36 minutes ago)[m[1;33m[m
+* [1;34mc13d6dd[m - [1;36mThu, 7 Jul 2016 18:25:25 -0400[m [1;32m(61 minutes ago)[m[1;33m[m
 |           [37madded some devise options[m [2;37m- rmoro[m
-* [1;34mb554bde[m - [1;36mThu, 7 Jul 2016 18:11:53 -0400[m [1;32m(49 minutes ago)[m[1;33m[m
+* [1;34mb554bde[m - [1;36mThu, 7 Jul 2016 18:11:53 -0400[m [1;32m(74 minutes ago)[m[1;33m[m
 |           [37mAdded some views for user login[m [2;37m- rmoro[m
 * [1;34mbafc461[m - [1;36mThu, 7 Jul 2016 17:23:52 -0400[m [1;32m(2 hours ago)[m[1;33m[m
 |           [37mfixed up the document[m [2;37m- franco-wong[m
-* [1;34mfee46ef[m - [1;36mThu, 7 Jul 2016 04:50:41 +0000[m [1;32m(18 hours ago)[m[1;33m[m
+* [1;34mfee46ef[m - [1;36mThu, 7 Jul 2016 04:50:41 +0000[m [1;32m(19 hours ago)[m[1;33m[m
 |           [37mEdit view of user dashboard[m [2;37m- Kieran O'Driscoll[m
-* [1;34m262c1ac[m - [1;36mThu, 7 Jul 2016 04:45:54 +0000[m [1;32m(18 hours ago)[m[1;33m[m
+* [1;34m262c1ac[m - [1;36mThu, 7 Jul 2016 04:45:54 +0000[m [1;32m(19 hours ago)[m[1;33m[m
 |           [37mAdd inital admin panel[m [2;37m- Kieran O'Driscoll[m
 * [1;34m44649f5[m - [1;36mThu, 7 Jul 2016 03:06:39 +0000[m [1;32m(20 hours ago)[m[1;33m[m
 |           [37mAdd comments to tests[m [2;37m- Kieran O'Driscoll[m
 * [1;34m45db21b[m - [1;36mWed, 6 Jul 2016 22:31:27 -0400[m [1;32m(21 hours ago)[m[1;33m[m
 |           [37mtest commit record[m [2;37m- Eric Jiang[m
-* [1;34m177555b[m - [1;36mThu, 7 Jul 2016 01:47:52 +0000[m [1;32m(21 hours ago)[m[1;33m[m
+* [1;34m177555b[m - [1;36mThu, 7 Jul 2016 01:47:52 +0000[m [1;32m(22 hours ago)[m[1;33m[m
 |           [37mAdd more testing and fix article_diagram_block.rb[m [2;37m- Kieran O'Driscoll[m
 *   [1;34mb9e2bfe[m - [1;36mThu, 7 Jul 2016 01:19:50 +0000[m [1;32m(22 hours ago)[m[1;33m[m
 |\            [37mMerge branch 'master' of github.com:UPOD-2016/UPOD[m [2;37m- Mike Roher[m
@@ -26,18 +28,18 @@
 |           [37msirtrevor small fixes[m [2;37m- Mike Roher[m
 *   [1;34mf49a70d[m - [1;36mThu, 7 Jul 2016 00:59:13 +0000[m [1;32m(22 hours ago)[m[1;33m[m
 |\            [37mMerge branch 'master' of github.com:UPOD-2016/UPOD[m [2;37m- Mike Roher[m
-| * [1;34mfb0138f[m - [1;36mWed, 6 Jul 2016 20:52:54 -0400[m [1;32m(22 hours ago)[m[1;33m[m
+| * [1;34mfb0138f[m - [1;36mWed, 6 Jul 2016 20:52:54 -0400[m [1;32m(23 hours ago)[m[1;33m[m
 | |           [37mremoved migration mistake[m [2;37m- rmoro[m
 * | [1;34me00535e[m - [1;36mThu, 7 Jul 2016 00:59:04 +0000[m [1;32m(22 hours ago)[m[1;33m[m
 | |           [37madded contributor method[m [2;37m- Mike Roher[m
-* |   [1;34m80614e8[m - [1;36mThu, 7 Jul 2016 00:46:02 +0000[m [1;32m(22 hours ago)[m[1;33m[m
+* |   [1;34m80614e8[m - [1;36mThu, 7 Jul 2016 00:46:02 +0000[m [1;32m(23 hours ago)[m[1;33m[m
 |\ \            [37mMerge branch 'master' of github.com:UPOD-2016/UPOD[m [2;37m- Mike Roher[m
 | |/  
 | *   [1;34ma656ce1[m - [1;36mWed, 6 Jul 2016 19:59:43 -0400[m [1;32m(23 hours ago)[m[1;33m[m
 | |\            [37mMerge branch 'master' of https://github.com/UPOD-2016/UPOD[m [2;37m- rmoro[m
-| | * [1;34m1f181f6[m - [1;36mWed, 6 Jul 2016 19:45:39 -0400[m [1;32m(23 hours ago)[m[1;33m[m
+| | * [1;34m1f181f6[m - [1;36mWed, 6 Jul 2016 19:45:39 -0400[m [1;32m(24 hours ago)[m[1;33m[m
 | | |           [37mUpdate database.yml[m [2;37m- Robert Morouney[m
-| | * [1;34me49c5d2[m - [1;36mWed, 6 Jul 2016 19:42:48 -0400[m [1;32m(23 hours ago)[m[1;33m[m
+| | * [1;34me49c5d2[m - [1;36mWed, 6 Jul 2016 19:42:48 -0400[m [1;32m(24 hours ago)[m[1;33m[m
 | | |           [37mUpdate database.yml[m [2;37m- Robert Morouney[m
 | * | [1;34m8f20df8[m - [1;36mWed, 6 Jul 2016 19:59:28 -0400[m [1;32m(23 hours ago)[m[1;33m[m
 | |/            [37madded a session model[m [2;37m- rmoro[m
@@ -55,21 +57,21 @@
 | |           [37madded user model and LDAP models[m [2;37m- rmoro[m
 | * [1;34m84fa2d4[m - [1;36mWed, 6 Jul 2016 14:26:10 -0400[m [1;32m(29 hours ago)[m[1;33m[m
 | |           [37mdeleted the back end RD .doc files[m [2;37m- Clive Shen[m
-* | [1;34me875344[m - [1;36mThu, 7 Jul 2016 00:45:58 +0000[m [1;32m(22 hours ago)[m[1;33m[m
+* | [1;34me875344[m - [1;36mThu, 7 Jul 2016 00:45:58 +0000[m [1;32m(23 hours ago)[m[1;33m[m
 | |           [37mcleaning up html[m [2;37m- Mike Roher[m
 | | * [1;34m71c6eac[m - [1;36mWed, 6 Jul 2016 20:58:40 +0000[m [1;32m(26 hours ago)[m[1;33m (origin/administrate)[m
 | | |           [37mNew article redirect[m [2;37m- Kieran O'Driscoll[m
-| | * [1;34m1ff69ae[m - [1;36mWed, 6 Jul 2016 20:35:25 +0000[m [1;32m(26 hours ago)[m[1;33m[m
+| | * [1;34m1ff69ae[m - [1;36mWed, 6 Jul 2016 20:35:25 +0000[m [1;32m(27 hours ago)[m[1;33m[m
 | |/            [37mAdd administate gem[m [2;37m- Kieran O'Driscoll[m
-| * [1;34mf4af4b5[m - [1;36mWed, 6 Jul 2016 12:55:57 -0400[m [1;32m(30 hours ago)[m[1;33m[m
+| * [1;34mf4af4b5[m - [1;36mWed, 6 Jul 2016 12:55:57 -0400[m [1;32m(31 hours ago)[m[1;33m[m
 | |           [37mRemoved spaces from name[m [2;37m- Tom West[m
-| * [1;34m2b6ca90[m - [1;36mWed, 6 Jul 2016 12:55:27 -0400[m [1;32m(30 hours ago)[m[1;33m[m
+| * [1;34m2b6ca90[m - [1;36mWed, 6 Jul 2016 12:55:27 -0400[m [1;32m(31 hours ago)[m[1;33m[m
 | |           [37mRemoved spaces from name[m [2;37m- Tom West[m
-| * [1;34m8dc0900[m - [1;36mWed, 6 Jul 2016 12:54:57 -0400[m [1;32m(30 hours ago)[m[1;33m[m
+| * [1;34m8dc0900[m - [1;36mWed, 6 Jul 2016 12:54:57 -0400[m [1;32m(31 hours ago)[m[1;33m[m
 | |           [37mRemoved spaces from name[m [2;37m- Tom West[m
-| * [1;34mdff5ab9[m - [1;36mWed, 6 Jul 2016 12:52:57 -0400[m [1;32m(30 hours ago)[m[1;33m[m
+| * [1;34mdff5ab9[m - [1;36mWed, 6 Jul 2016 12:52:57 -0400[m [1;32m(31 hours ago)[m[1;33m[m
 | |           [37mRemoved spaces from name[m [2;37m- Tom West[m
-| * [1;34m219084b[m - [1;36mWed, 6 Jul 2016 09:50:22 -0400[m [1;32m(33 hours ago)[m[1;33m[m
+| * [1;34m219084b[m - [1;36mWed, 6 Jul 2016 09:50:22 -0400[m [1;32m(34 hours ago)[m[1;33m[m
 | |           [37mVersion 1 of fundamentals research in modular form[m [2;37m- Kevzys[m
 | * [1;34me1b6f79[m - [1;36mTue, 5 Jul 2016 21:48:55 -0400[m [1;32m(2 days ago)[m[1;33m[m
 | |           [37mupdated optics[m [2;37m- JeffChung2[m

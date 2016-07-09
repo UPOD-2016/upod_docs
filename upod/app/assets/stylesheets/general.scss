@@ -15,6 +15,12 @@ body {
   position: relative;
 }
 
+.thumbnail {
+    border: 0 none;
+    box-shadow: none;
+		background-color: transparent;
+}
+
 h1 {
   font-size: 50px;
 }
