@@ -52,7 +52,8 @@ gem "rails-erd"
 
 gem "administrate", "~> 0.2.2"
 gem "bourbon"
-
+gem 'carrierwave'
+gem "mini_magick"
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views

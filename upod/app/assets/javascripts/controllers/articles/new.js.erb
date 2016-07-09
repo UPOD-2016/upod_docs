@@ -1,11 +1,16 @@
 //= require includes/sir-trevor
 
-
-$(function(){
+$(document).on('ready page:load', function(){
 
   SirTrevor.setDefaults({
     iconUrl: "<%= asset_path('sir-trevor-icons.svg') %>",
-    // uploadUrl: "/api/upload"
+    uploadUrl: "/images",
+    ajaxOptions: {
+      headers: {
+        "X-CSRF-Token": document.querySelector('meta[name=csrf-token]').getAttribute('content')
+      },
+      credentials: 'same-origin'
+    }
   });
   SirTrevor.config.debug = true;
   SirTrevor.config.scribeDebug = true;
