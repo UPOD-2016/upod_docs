@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'categories/new'
+
   namespace :admin do
     resources :articles
     resources :constants
