@@ -1,8 +1,44 @@
+<div class="container">
+
+  <div class="row">
+
+      <div class="col-lg-12">
+          <h1 class="page-header">Categories</h1>
+      </div> 
+
+      <div class="col-md-4 col-xs-6 thumb">
+					<%= link_to image_tag("http://placehold.it/400x300", :class => "img-responsive"),"articles", :class => "thumbnail" %>
+      </div>
+      <div class="col-md-4 col-xs-6 thumb">
+					<%= link_to image_tag("http://placehold.it/400x300", :class => "img-responsive"),"articles", :class => "thumbnail" %>
+      </div>
+      <div class="col-md-4 col-xs-6 thumb">
+					<%= link_to image_tag("http://placehold.it/400x300", :class => "img-responsive"),"articles", :class => "thumbnail" %>
+      </div>
+			<div class="col-md-4 col-xs-6 thumb">
+					<%= link_to image_tag("http://placehold.it/400x300", :class => "img-responsive"),"articles", :class => "thumbnail" %>
+      </div>
+			<div class="col-md-4 col-xs-6 thumb">
+					<%= link_to image_tag("http://placehold.it/400x300", :class => "img-responsive"),"articles", :class => "thumbnail" %>
+      </div>
+			<div class="col-md-4 col-xs-6 thumb">
+					<%= link_to image_tag("http://placehold.it/400x300", :class => "img-responsive"),"articles", :class => "thumbnail" %>
+      </div>
+  </div>
+</div>
+<!--
 <h1>All UPOD Categories</h1>
 <ul class = "categories">
-  <% @categories.each do |category| %>
+<% @categories.each do |category| %>
   <li>
     <%= link_to category.name, category %>
+    <ul>
+    	<% @subcategories.each do |sub| sub.category_id=category.id %>
+    		<li>
+    			<%= link_to sub.name, sub %>
+    		</li>
+    	<% end %>
+    </ul>
   </li>
 <% end %>
-</ul>
+</ul> -->

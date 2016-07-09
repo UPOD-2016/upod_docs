@@ -7,6 +7,7 @@ Rails.application.routes.draw do
     resources :constants
     resources :users
     resources :categories
+    resources :subcategories
 #resources :article_text_blocks
 #resources :article_blocks
 #resources :article_constant_blocks
@@ -27,4 +28,5 @@ Rails.application.routes.draw do
   resources :images, only: :create
   #categories
   resources :categories
+  resources :subcategories
 end

@@ -1,6 +1,6 @@
 require "administrate/base_dashboard"
 
-class CategoryDashboard < Administrate::BaseDashboard
+class SubcategoryDashboard < Administrate::BaseDashboard
   # ATTRIBUTE_TYPES
   # a hash that describes the type of each of the model's fields.
   #
@@ -8,12 +8,12 @@ class CategoryDashboard < Administrate::BaseDashboard
   # which determines how the attribute is displayed
   # on pages throughout the dashboard.
   ATTRIBUTE_TYPES = {
-    subcategories: Field::HasMany,
+    category: Field::BelongsTo,
     id: Field::Number,
     name: Field::String,
+    description: Field::Text,
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
-    description: Field::String,
   }.freeze
 
   # COLLECTION_ATTRIBUTES
@@ -22,36 +22,36 @@ class CategoryDashboard < Administrate::BaseDashboard
   # By default, it's limited to four items to reduce clutter on index pages.
   # Feel free to add, remove, or rearrange items.
   COLLECTION_ATTRIBUTES = [
-    :subcategories,
+    :category,
     :id,
     :name,
-    :created_at,
+    :description,
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
   # an array of attributes that will be displayed on the model's show page.
   SHOW_PAGE_ATTRIBUTES = [
-    :subcategories,
+    :category,
     :id,
     :name,
+    :description,
     :created_at,
     :updated_at,
-    :description,
   ].freeze
 
   # FORM_ATTRIBUTES
   # an array of attributes that will be displayed
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = [
-    :subcategories,
+    :category,
     :name,
     :description,
   ].freeze
 
-  # Overwrite this method to customize how categories are displayed
+  # Overwrite this method to customize how subcategories are displayed
   # across all pages of the admin dashboard.
   #
-  # def display_resource(category)
-  #   "Category ##{category.id}"
+  # def display_resource(subcategory)
+  #   "Subcategory ##{subcategory.id}"
   # end
 end
