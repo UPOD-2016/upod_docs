@@ -1,3 +1,11 @@
+var main = function() {
+    $("#footerContent").load("footer.html"); // load footer
+    $("#slideMenuContent").load("slideMenu.html"); // load slide menu    
+	$("#headerContent").load("header.html"); // load header/nav-bar
+	
+};
+$(document).ready(main);
+/* using new slide menu so dont need below code
 (function() {
     $("#headerContent").load("header.html", function(){
         $('.icon-menu').click(function() {
@@ -22,6 +30,7 @@
         });        
     }); // load header/nav-bar
     $("#footerContent").load("footer.html"); // load footer
+    $("#slideMenuContent").load("slideMenu.html"); // load slide menu
     $("#pushmenuContent").load("push-menu.html", function() {
         $('.icon-menu').click(function() {
             $('.menu').animate({
@@ -43,4 +52,4 @@
             }, 200);    
         }); 
     }); // load push menu
-})();
+})(); */

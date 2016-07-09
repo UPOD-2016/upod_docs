@@ -1,3 +1,13 @@
+$navbar-inverse-bg: #330072;
+$navbar-inverse-link-color: #ffcc00;
+$navbar-inverse-color: #ffcc00;
+
+.navbar-brand {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "sir-trevor-icons.css";

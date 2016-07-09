@@ -1,0 +1,24 @@
+// require underscore
+// require includes/eventable
+//= require includes/sir-trevor
+
+
+$(function(){
+ // SirTrevor.DEBUG = true;
+  // SirTrevor.scribeDebug = true;
+  // SirTrevor.language = "en";
+  SirTrevor.setDefaults({
+    iconUrl: "<%= asset_path('sir-trevor-icons.svg') %>",
+    // uploadUrl: "/api/upload"
+  });
+
+  new SirTrevor.Editor({
+    el: $(".js-sir-trevor-instance").get(0),
+    blockTypes: [
+      "Heading",
+      "List",
+      "Image",
+      "Video",
+    ]
+  });
+});

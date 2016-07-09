@@ -37,10 +37,11 @@
         if(bMouseDragging) {
 			
 			var r=0;
-			var pole=3000;
+			var pole=3430;
 			var h0=800;
-			//var d0=2500;
-			var FPointX=pole-Fpoint.getAttribute("cx"); //1000
+			var y_Obj=200;
+			var Hground=1000;    //the height from top of the page to the ground
+			var FPointX=pole-Fpoint.getAttribute("cx");  //x coordinate of focal point
 			
 			//console.log(FPoint);
             if(object) {
@@ -51,66 +52,60 @@
 				var n =  p.x - nMouseOffsetX;
 				var d0=pole-n;
 				var di=1/((1/FPointX)-(1/d0));
-				var s=pole-di;
-			    var NewRatio=di/d0;   //the new ratio of the height of them image to the height of the object
+				var s=pole-di;                             //the distance of the image from the vertical line passing point(0,0)
+			    var NewRatio=di/d0;                        //the new ratio of the height of them image to the height of the object
 				
 				var hi=NewRatio*h0; //the height of the image
-				lineObj.setAttribute("y2",1000+hi);
-				lineImage.setAttribute("y2", 200);
+				lineObj.setAttribute("y2",Hground+hi);
+				
 				var y = image.getAttribute("y");
-				lineImage.setAttribute("y1",((y * NewRatio)+h0*NewRatio));
-				ground2.setAttribute("y1",((y * NewRatio)+h0*NewRatio));
-				ground2.setAttribute("y2",((y * NewRatio)+h0*NewRatio));
+				//console.log("image y: "+ y);
 				
-				//var y2 = ball.getAttribute("y");
-				//y2 = ball.getAttribute("y");
-				//console.log(y2);
+				lineImage.setAttribute("y1",((Hground)+h0*NewRatio)); 
+				lineImage.setAttribute("y2", y_Obj);
+				lineObj.setAttribute("x2", pole);
+				ground2.setAttribute("y1",((Hground)+h0*NewRatio));
+				ground2.setAttribute("y2",((Hground)+h0*NewRatio));
 				
-				//var OldRatio=y/800;  //the previous ratio of the height of them image to the height of the object
-				//var SetRatio=NewRatio/OldRatio;  //the ratio of the new ratio to the old one, since scale set the scale to the previous image height and not the object height
-						
-				//console.log(y-1100);
+				
 				trans = "translate(" + n + ")";
 				
-				//console.log(trans); 
+				
 				object.setAttribute("x", n);
 				
                 var x = image.getAttribute("x");
 				 
 				
-                //var q = x / 1500;
-				//console.log(q);
-                image.setAttribute("transform", "scale(" + NewRatio+ ")");
-				//circle.setAttribute("transform", "scale(" + 0.625+ ")");
+                
+                image.setAttribute("transform", "scale(" + NewRatio+ ")");          //scale the image by the ratio
+				
 				
 				var y = image.getAttribute("y");
 				var lineImage_x1=lineImage.getAttribute("x1") ;
 				
-				console.log("lineImage_x1: "+lineImage_x1);
-				console.log("s: "+s);
-				console.log("Ratio: " + NewRatio);
-				image.setAttribute("x", ((s/NewRatio)+100));
-				console.log("image x: " + image.getAttribute("x"))
+				var Im_x=(s)/NewRatio;
+				image.setAttribute("x", (Im_x));
+				lineImage.setAttribute("x1",s );
 				
-				var k=1000/NewRatio ;
-				//var k=1000/0.625;
+			
+				
+				var k=Hground/NewRatio ;                       //to make the image moving on a ground line, since after using scale its position changes as well as its size
+				
 				image.setAttribute("y", k);	
 					
 				//ball.setAttribute("cx",evt.clientX);
 				
 				lineObj.setAttribute("x1",n);
-				//lineObj.setAttribute("y2",((y * q)+800*q));
 				
-				lineImage.setAttribute("x1",s+100);
 				var x1 = lineImage.getAttribute("x1");
 				
-				//lineImage.setAttribute("y1",((y * NewRatio)+800*NewRatio));
+				
 				var lineImage_y1=lineImage.getAttribute("y1") ;
 				
-				//lineImage.setAttribute("y1",lineImage_y1*0.625) ;
 				
 				
-				//circle.setAttribute("r",r+(p.x - nMouseOffsetX));
+				
+				
 				
 			}
 		}
