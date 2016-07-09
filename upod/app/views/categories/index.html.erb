@@ -41,9 +41,16 @@
 <!--
 <h1>All UPOD Categories</h1>
 <ul class = "categories">
-  <% @categories.each do |category| %>
+<% @categories.each do |category| %>
   <li>
     <%= link_to category.name, category %>
+    <ul>
+    	<% @subcategories.each do |sub| sub.category_id=category.id %>
+    		<li>
+    			<%= link_to sub.name, sub %>
+    		</li>
+    	<% end %>
+    </ul>
   </li>
 <% end %>
 </ul> -->
