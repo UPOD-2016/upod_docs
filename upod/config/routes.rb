@@ -6,6 +6,7 @@ Rails.application.routes.draw do
     resources :articles
     resources :constants
     resources :users
+    resources :categories
 #resources :article_text_blocks
 #resources :article_blocks
 #resources :article_constant_blocks
