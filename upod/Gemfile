@@ -50,8 +50,12 @@ gem "rails-erd"
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+#Use Administrate for admin panel
 gem "administrate", "~> 0.2.2"
 gem "bourbon"
+
+#Use YARD for documentation generation
+gem "yard"
 
 
 group :development do
