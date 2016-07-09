@@ -9,6 +9,10 @@ module Blockable
     article_block = ArticleLinkBlock.new(source: source, video_id: video_id)
     assign_article_id_and_save!(article_block)
   end
+  def create_image_block(source:, video_id:)
+    article_block = ArticleImageBlock.new(image: image)
+    assign_article_id_and_save!(article_block)
+  end
   def create_equation_block(equation:, description: nil)
     article_block = ArticleEquationBlock.new(equation: equation, description: description)
     assign_article_id_and_save!(article_block)
