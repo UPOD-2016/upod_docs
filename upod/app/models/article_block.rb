@@ -1,7 +1,7 @@
 # An article is made up for many ArticleBlocks. This class is the parent
 # class of various types of article blocks (ArticleBlock is actable). Other
 # article blocks inherit ArticleBlock's attributes, methods and validations.
-# Each ArtcleBlock has a one-to-one connection with an Article
+# Each ArtcleBlock has a one-to-one connection with an {Article}
 # @see Article
 # @see ArticleConstantBlock
 # @see ArticleDiagramBlock

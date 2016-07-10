@@ -1,4 +1,4 @@
-# ArticleEquationBlock is a more specific ArticleBlock. ArticleEquationBlock acts as an article block
+# ArticleEquationBlock is a more specific {ArticleBlock}. ArticleEquationBlock acts as an article block
 # and it contains an equation (eg. E=mc^2). It inherits ArticleBlock's attributes, methods and validations.
 # @see ArticleBlock
 #

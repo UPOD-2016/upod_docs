@@ -1,8 +1,8 @@
-# ArticleConstantBlock is a more specific ArticleBlock.
+# ArticleConstantBlock is a more specific {ArticleBlock}.
 # It contains a constant ID which links to a specific constant (eg. gravity).
 # ArticleConstantBlock belongs to Consant and acts as an article block.
 # It inherits ArticleBlock's attributes, methods and validations. Has a one-to-one
-# connection with Constant.
+# connection with {Constant}.
 # @see Constant
 # @see ArticleBlock
 #

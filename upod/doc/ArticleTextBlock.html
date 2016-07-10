@@ -111,18 +111,33 @@
 <h2>Overview</h2><div class="docstring">
   <div class="discussion">
     
+<p>ArticleTestBlock is a more specific <span class='object_link'><a href="ArticleBlock.html" title="ArticleBlock (class)">ArticleBlock</a></span>. It contains an id and
+the body.. ArticleTextBlock acts as an article block It inherits
+ArticleBlock&#39;s attributes, methods and validations. The body of the
+text block is <span class='object_link'><a href="Searchable.html" title="Searchable (module)">Searchable</a></span></p>
+
 <h2 id="label-Schema+Information">Schema Information</h2>
 
 <p>Table name: article_text_blocks</p>
 
 <pre class="code ruby"><code class="ruby">id   :integer          not null, primary key
-body :text(65535)</code></pre>
+ - represents the id of the text block
+
+body :text(65535)
+ - represents the body of the text block. This contains the users text inputs</code></pre>
 
 
   </div>
 </div>
 <div class="tags">
   
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><span class='object_link'><a href="ArticleBlock.html" title="ArticleBlock (class)">ArticleBlock</a></span></li>
+    
+  </ul>
 
 </div>
 
@@ -144,7 +159,7 @@ body :text(65535)</code></pre>
 </div>
 
       <div id="footer">
-  Generated on Sun Jul 10 20:50:29 2016 by
+  Generated on Sun Jul 10 21:33:33 2016 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.0 (ruby-2.3.1).
 </div>
