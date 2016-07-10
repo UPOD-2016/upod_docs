@@ -1,7 +1,6 @@
-# Article is the completed post for the physics website. It has many blocks ranging
-# from text blocks to equations to images. It contains all the pieces that make up
-# the completed version of a post. The blocks make up the body of the article
-# An article can be edited by many contributors. As well an Article is {Blockable} as well as {Searchable}
+# An Article is made up of many blocks and is the complete model. It contains various blocks that make up
+# its' look and feel.
+# An Article is {Blockable} as well as {Searchable}
 #
 # == Schema Information
 #

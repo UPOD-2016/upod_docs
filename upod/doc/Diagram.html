@@ -103,7 +103,39 @@
   
 </div>
 
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>A diagram has many <span class='object_link'><a href="ArticleDiagramBlock.html" title="ArticleDiagramBlock (class)">ArticleDiagramBlock</a></span>. This is so a diagram can be
+reused in many articles.</p>
 
+<h2 id="label-Schema+Information">Schema Information</h2>
+
+<p>Table name: diagrams</p>
+
+<pre class="code ruby"><code class="ruby">body             :text(65535)          primary key
+ - represents the diagram
+
+label            :string(255)
+ - represents the label for the diagram
+
+created_at         :datetime         not null
+updated_at         :datetime         not null</code></pre>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><span class='object_link'><a href="ArticleDiagramBlock.html" title="ArticleDiagramBlock (class)">ArticleDiagramBlock</a></span></li>
+    
+  </ul>
+
+</div>
 
 
 
@@ -116,7 +148,7 @@
 </div>
 
       <div id="footer">
-  Generated on Sun Jul 10 21:33:33 2016 by
+  Generated on Sun Jul 10 23:41:34 2016 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.0 (ruby-2.3.1).
 </div>
