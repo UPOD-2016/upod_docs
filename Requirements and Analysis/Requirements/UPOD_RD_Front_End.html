@@ -58,10 +58,10 @@
 				<h1 style="text-align:right;font-size:320%">Software Requirements Specification</h3>
 				<h2 style="text-align:right;font-size:200%">for</h3>
 				<h1 style="text-align:right;font-size:320%">UPOD-Web Design</h3>
-				<h3 style="text-align:right;font-size:140%">Version 0.5</h3>
+				<h3 style="text-align:right;font-size:140%">Version 0.6</h3>
 				<h3 style="text-align:right;font-size:140%">Prepared by Tom West</h3>
 				<h3 style="text-align:right;font-size:140%">Wilfrid Laurier University, CP317</h3>
-				<h3 style="text-align:right;font-size:140%">29/06/2016</h3>
+				<h3 style="text-align:right;font-size:140%">10/07/2016</h3>
 			</div>
 		<br>
 		
@@ -75,40 +75,22 @@
 			<th>Version</th>
 		  </tr>
 		  <tr>
+			<td>Brian Oh</td>
+			<td>10/07/16</td>
+			<td>Minor SQA revisions fixed formatting</td>
+			<td>v0.6</td>
+		  </tr>
+		  <tr>
 			<td>Tom West</td>
 			<td>29/06/16</td>
 			<td>Edits made based on SQA feedback</td>
 			<td>v0.5</td>
 		  </tr>
 		  <tr>
-			<td>Omid Ghiyasian</td>
-			<td>25/06/16</td>
-			<td>SQA feedback</td>
-			<td>v0.4</td>
-		  </tr>
-		  <tr>
-			<td>Muttahir Zia</td>
-			<td>22/06/16</td>
-			<td>SQA feedback</td>
-			<td>v0.4</td>
-		  </tr>
-		  <tr>
-			<td>Omid Ghiyasian</td>
-			<td>19/06/16</td>
-			<td>SQA feedback</td>
-			<td>v0.4</td>
-		  </tr>
-		  <tr>
 			<td>Tom West</td>
 			<td>15/06/16</td>
 			<td>Make edits based on SQA feedback</td>
 			<td>v0.4</td>
-		  </tr>
-		  <tr>
-			<td>Omid Ghiyasian</td>
-			<td>13/06/16</td>
-			<td>SQA feedback</td>
-			<td>v0.3</td>
 		  </tr>
 		  <tr>
 			<td>Tom West</td>
@@ -153,10 +135,8 @@
 					<a id="indent" href="#Constraints">2.3 Constraints</a><br>
 
 				<a href="#Specific Requirements">3. Specific Requirements</a></br>
-					<a id="indent" href="#External Interfaces"><strike>3.1 External Interfaces</strike></a><br>
 					<a id="indent" href="#Functions">3.1 Functions</a><br>
 					<a id="indent" href="#Performance Requirements">3.2 Performance Requirements</a><br>
-					<a id="indent" href="#Logical Database Requirements"><strike>3.4 Logical Database Requirements</strike></a><br>
 					<a id="indent" href="#Software System Attributes">3.3 Software System Attributes</a><br>
 						<a id="indent2" href="#Reliability">3.3.1 Reliability</a><br>
 						<a id="indent2" href="#Availability">3.3.2 Availability</a><br>
@@ -165,12 +145,8 @@
 						<a id="indent2" href="#Portability">3.3.5 Portability</a><br>
 					<a id="indent" href="#Organizing the Specific Requirements">3.4 Organizing Specific Requirements</a><br>
 						<a id="indent2" href="#System Mode">3.4.1 System Modes</a><br>
-						<a id="indent2" href="#User Classes"><strike>3.6.2 User Classes</strike></a><br>
-						<a id="indent2" href="#Objects"><strike>3.6.3 Objects</strike></a><br>
-						<a id="indent2" href="#Features">3.4.2 Features</a><br>
-						<a id="indent2" href="#Functional Hierarchy"><strike>3.6.5 Functional Hierarchy</strike></a><br>
+						<a id="indent2" href="#User Classes"><strike>3.4.2 Features</strike></a><br>
 				<a href="#Supporting Information">4. Supporting Information</a></br>
-					<a id="indent" href="#Appendixes">Appendixes</a><br>
 					<a id="indent" href="#Index">Index</a>
 				
 			</ol> 
@@ -236,20 +212,23 @@
 				<h3><a name="Product Perspective">2.1 Product Perspective</a></h3>
 				<p id="categoryHeading">Web Design relates to the front end of the UPOD system - the components that users will interact with on the website. Since the front end is only a part of the entire system, other features supported by the site are outlined in different requirement documents. Interface between the various sections of the project is under section 2.1.3 of this requirement document. More detail will be added during the analysis phase and as the project develops.</p>
 					<h4><a name="System Interfaces">2.1.1 System Interfaces</a></h4>
-						<p id="subcategoryHeading">UPOD content operates on modern and standard browsers.</p>
+						<p id="categoryHeading">UPOD content operates on modern and standard browsers.</p>
 						<li id="subcategoryHeading">Google Chrome - version 51</li>
 						<li id="subcategoryHeading">Mozilla Firefox - version 47</li>
 						<li id="subcategoryHeading">Internet Explorer - version 11</li>
 						<li id="subcategoryHeading">Microsoft Edge - version 38</li>
 						<li id="subcategoryHeading">Safari - version 9.1</li>
 					<h4><a name="User Interfaces">2.1.2 User Interfaces</a></h4>
-						<p id="subcategoryHeading">Users are expected to interact with UPOD with a mouse and keyboard, and priority will be given to ensuring proper interaction via this method. Interaction with UPOD by touchscreen for Android and iPhone will be added if time allows.</p>
+						<li id="subcategoryHeading">Users are expected to interact with UPOD with a mouse and keyboard, and priority will be given to ensure proper interaction via this method.</li>
+						<li id="subcategoryHeading">Interaction with UPOD by touchscreen for Android and iPhone will be added if time allows.</li>	
 					<h4><a name="Software Interfaces">2.1.3 Software Interfaces</a></h4>
 						<li id="subcategoryHeading">The front end will contain information contained in a MySQL database. Animations and diagrams displaying physics content is to be implemented using animation software (SVG).</li>
 					<h4><a name="Communications Interfaces">2.1.4 Communications Interfaces</a></h4>
-						<li id="subcategoryHeading">UPOD will remain responsive across internet service providers. More detail to be added later with respect to Laurier network restrictions and accessible ports.</li>
+						<li id="subcategoryHeading">UPOD will remain responsive across internet service providers.</li>
+						<li id="subcategoryHeading">More detail in Analysis phase with respect to Laurier network restrictions and accessible ports.</li>
 					<h4><a name="Memory">2.1.5 Memory</a></h4>
-						<li id="subcategoryHeading">Memory constraints will be at the  very top 50MB for each page. We estimated this amount by observing the average amount of memory used by other websites (i.e. Wikipedia, Facebook).</li>
+						<li id="subcategoryHeading">Memory constraints will be at the  very top 50MB for each page.</li>
+						<li id="subcategoryHeading">Estimated this amount by observing the average amount of memory used by other websites (i.e. Wikipedia, Facebook).</li>
 				<h3><a name="Actors and Use Cases">2.2 Actors and Use Cases</a></h3>
 					<li id="categoryHeading">As of now there are only two actors.</li>
 					<h4><a name="Actors">2.2.1 Actors</a></h4>
@@ -269,18 +248,14 @@
 		<br>
 		<div>
 			<h1><a name="Specific Requirements">3. Specific Requirements</a></h1>
-			<div id="mainHeading">
-				<h3><a name="External Interfaces"><strike>3.1 External Interfaces</strike></a></h2>
-					<li id="categoryHeading">None identified at this point.</li>			
+			<div id="mainHeading">			
 				<h3><a name="Functions">3.1 Functions</a></h2>
 					<li id="categoryHeading">UPOD must be searchable by text and support navigation through site content (i.e. category(s)/subcategory(s)/articles structure). </li>
 					<li id="categoryHeading">UPOD's web interface will contain both static and animated diagrams that users can view to improve their understanding of concepts.</li>
-					<li id="categoryHeading">UPOD will allow for site moderators to add, delete, and modify <strike>pages</strike> articles, categories and subcategories when required. These modifications to the site content will be done through a GUI.  </li>
+					<li id="categoryHeading">UPOD will allow for site moderators to add, delete, and modify articles, categories and subcategories when required. These modifications to the site content will be done through a GUI.  </li>
 					<li id="categoryHeading">A built in login process for site moderators to be utilized on UPOD, preventing unauthorized modifications and edits.</li>
 				<h3><a name="Performance Requirements">3.2 Performance Requirements</a></h2>
-					<li id="categoryHeading">Searches should be satisfied within two seconds of the search query. More detail will be added at a later date. Performance of the site under heavy load will not be a concern.</li>
-				<h3><a name="Logical Database Requirements"><strike>3.4 Logical Database Requirements</strike></a></h3>
-					<li id="categoryHeading"><strike>All physics content and diagrams will be stored in a relational database. More information pertaining to database structure  can be found in the Back End requirement document.</strike></li>
+					<li id="categoryHeading">Searches should be satisfied within two seconds of the search query.</li>
 				<h3><a name="Software System Attributes">3.3 Software System Attributes</a></h3>
 					<h4><a name="Reliability">3.3.1 Reliability</a></h4>
 						<li id="subcategoryHeading">UPOD expected to be available as a permanent reference tool, with maintenance conducted in a development environment and copied to production environment live.</li>
@@ -295,38 +270,26 @@
 				<h3><a name="Organizing the Specific Requirements">3.4 Organizing Specific Requirements</a></h2>
 					<h4><a name="System Mode">3.4.1 System Mode</a></h4>
 						<li id="subcategoryHeading">UPOD's functionality will be the same for all users, however, there will be an additional moderator mode (development environment) where content can be added, removed, or edited. </li>
-					<h4><a name="User Classes"><strike>3.6.2 User Classes</strike></a></h4>
-						<p id="categoryHeading"><span style="text-decoration: underline;"><strike>Moderator</strike></span></p>
-								<li id="subcategoryHeading"><strike>Login/Logout</strike> </li>
-								<li id="subcategoryHeading"><strike>Add/Delete/Modify <i>Categories</i>, <i>Sub-Categories</i> and <i>Articles</i></strike></li>
-						<p id="categoryHeading"><span style="text-decoration: underline;"><strike>User</strike></span></p>
-								<li id="subcategoryHeading"><strike>Search for <i>Articles</i> or <i>Categories</i> </li>
-								<li id="subcategoryHeading">View <i>Articles</i> or <i>Categories</i> </strike></li>
-								<li id="subcategoryHeading"><strike>Interact with <i>Diagrams</i></strike></li>
-					<h4><a name="Objects"><strike>3.6.3 Objects</strike></a></h4>
-						<li id="subcategoryHeading"><strike>To be completed in the analysis phase. </strike></li>
 					<h4><a name="Features">3.4.2 Features</a></h4>
 						<p id="categoryHeading"><span style="text-decoration: underline;">Landing Page </span></p>
-							<li id="subcategoryHeading">The UPOD <i>Landing Page</i> is the first thing users will see when accessing UPOD. The UPOD design philosophy will encourage users to search the site quickly - the focus on and size of the search bar on the landing page will promote a quick search for whatever term the  user is looking for. (i.e. - similar to the Google Search page.)</li>
+							<li id="subcategoryHeading">The UPOD <i>Landing Page</i> is the first thing users will see when accessing UPOD. The UPOD design philosophy encourages users to search the site quickly - the focus on and size of the search bar on the landing page promotes a quick search for whatever term the  user is looking for. (i.e. - similar to the Google Search page.)</li>
 						<p id="categoryHeading"><span style="text-decoration: underline;">Category Page </span></p>
-							<li id="subcategoryHeading">The <i>Category</i> page will act as a template for the splash page of each physics discipline. Each discipline is to be shown on its own <i>Category page</i>, which will display a summary of the physics discipline as well as contain a list of all <i>Article</i> pages that fall under that discipline. </li>
+							<li id="subcategoryHeading">The <i>Category</i> page acts as a template for the splash page of each physics discipline. Each discipline is shown on its own <i>Category page</i>, which displays a summary of the physics discipline as well as contains a list of all <i>Article</i> pages that fall under that discipline. </li>
 						<p id="categoryHeading"><span style="text-decoration: underline;">Article Page </span></p>
-							<li id="subcategoryHeading">The <i>Article page</i> will act as a template for creation of the majority of UPOD's content. Each concept or law shown on its own <i>Article</i> page will display background information, important formulas, and link users to relevant information. Relevant links will be displayed at the bottom of the page, similar to the "See Also" section of Wikipedia pages. </li>
+							<li id="subcategoryHeading">The <i>Article page</i> acts as a template for creation of the majority of UPOD's content. Each concept or law shown on its own <i>Article</i> page displays background information, important formulas, and links users to relevant information. Relevant links are displayed at the bottom of the page, similar to the "See Also" section of Wikipedia pages. </li>
 						<p id="categoryHeading"><span style="text-decoration: underline;">About UPOD Page </span></p>
-							<li id="subcategoryHeading">This page will outline the purpose of UPOD: making accurate and easy to understand physics content accessible to undergraduate students. It will also contain a section to give credit to those who contributed to the creation of the site. </li>
-							<li id="subcategoryHeading">This is also where users will be able to contact UPOD moderators by email to report missing, incorrect, or broken content. </li>
+							<li id="subcategoryHeading">This page outlines the purpose of UPOD: making accurate and easy to understand physics content accessible to undergraduate students. It also contains a section to give credit to those who contributed to the creation of the site. </li>
+							<li id="subcategoryHeading">This is also where users are able to contact UPOD moderators by email to report missing, incorrect, or broken content. </li>
 						<p id="categoryHeading"><span style="text-decoration: underline;">Moderator Login Page </span></p>
-							<li id="subcategoryHeading">Site moderators will need to enter credentials on this page to gain access to the site's edit mode - the URL for this page will be given only to moderators (i.e. no direct link to moderator portal.) Successful login will allow the moderator to access the UPOD development environment </li>
+							<li id="subcategoryHeading">Site moderators need to enter credentials on this page to gain access to the site's edit mode - the URL for this page is given only to moderators (i.e. no direct link to moderator portal.) Successful login allows the moderator to access the UPOD development environment </li>
 						<p id="categoryHeading"><span style="text-decoration: underline;">Search Results Page </span></p>
-							<li id="subcategoryHeading">Topic searches should contain enough relevant information to satisfy the user's search. Since some information can apply to many different disciplines, (i.e. Speed of Light in both Classical Mechanics as well as Optics) a search for terms should list all <i>Article</i> pages that refer to that term. Results should be displayed with an <i>Article</i> page heading as well as a brief preview of the info contained on the <i>Article</i> page. (i.e. similar to a general Google Search) </li>
+							<li id="subcategoryHeading">Topic searches contain enough relevant information to satisfy the user's search. Since some information can apply to many different disciplines, (i.e. Speed of Light in both Classical Mechanics as well as Optics) a search for terms should list all <i>Article</i> pages that refer to that term. Results should be displayed with an <i>Article</i> page heading as well as a brief preview of the info contained on the <i>Article</i> page. (i.e. similar to a general Google Search) </li>
 						<p id="categoryHeading"><span style="text-decoration: underline;">Search Bar </span></p>
-							<li id="subcategoryHeading">UPOD will features a search bar that is always accessible. It will be featured in the center of the landing page, and present in the top right hand corner all other web pages. Searches will return results on the <i>Search Results Page</i>. </li>
+							<li id="subcategoryHeading">UPOD features a search bar that is always accessible. It is featured in the center of the landing page, and present in the top right hand corner all other web pages. Searches return results on the <i>Search Results Page</i>. </li>
 						<p id="categoryHeading"><span style="text-decoration: underline;">Slide Menu </span></p>
-							<li id="subcategoryHeading">The menu will also be accessible from each area of the website. It will feature links to each <i>Category</i> page, as well as a link to the <i>Landing Page</i> and the <i>About UPOD</i> page.</li>
+							<li id="subcategoryHeading">The menu is accessible from each area of the website. It features links to each <i>Category</i> page, as well as a link to the <i>Landing Page</i> and the <i>About UPOD</i> page.</li>
 						<p id="categoryHeading"><span style="text-decoration: underline;">Diagrams </span></p>
-							<li id="subcategoryHeading">Various <i>Article</i> pages will feature diagrams that illustrate concepts. <i>Diagrams</i> will be created in SVG, and be either static or dynamic. Dynamic <i>Diagrams</i> may also support user interaction. Further information can be found in the Graphics and Animation requirements document. </li>
-					<h4><a name="Functional Hierarchy"><strike>3.6.5 Functional Hierarchy</strike></a></h4>
-						<li id="subcategoryHeading"><strike>To be completed in the analysis phase. </strike></li>
+							<li id="subcategoryHeading">Various <i>Article</i> pages feature diagrams that illustrate concepts. <i>Diagrams</i> are created in SVG, and either static or dynamic. Dynamic <i>Diagrams</i> also support user interaction. Further information can be found in the Graphics and Animation requirements document. </li>
 			</div>
 			
 		</div>
@@ -335,12 +298,10 @@
 			<h1><a name="Supporting Information">4. Supporting Information</a></h1>
 			
 		</div>
-		<h3><a name="Appendixes">4.1 External Interfaces</a></h2>			
-			<a href="UPOD RD - Back End.html">Back End Requirements</a><br>
-			<a href="UPOD RD - Graphics-Animation.html">Graphics-Animation Requirements</a><br>
-			<a href="UPOD RD- Physics.html">Physics</a><br>
-		<h3><a name="Index">4.2 Index</a></h2>	
-			<li id="categoryHeading">TBA</li>
+		<h3><a name="Appendixes">Index</a></h2>			
+			<a href="UPOD_RD_Back_End.html">Back End Requirements</a><br>
+			<a href="UPOD_RD_Physics.html">Physics</a><br>
+			<a href="UPOD_RD_Graphics_and_Animation.html">Graphics-Animation Requirements</a><br>
 			
 		</div>
 	</body>
