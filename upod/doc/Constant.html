@@ -106,14 +106,27 @@
 <h2>Overview</h2><div class="docstring">
   <div class="discussion">
     
+<p>A constant is a non-changing value. In physics, for example, gravity is
+definited as 9.8m/s^2. Each constant can be reused and therefore each
+constant can have many <span class='object_link'><a href="ArticleConstantBlock.html" title="ArticleConstantBlock (class)">ArticleConstantBlock</a></span> Each constant has an id,
+name, description and value</p>
+
 <h2 id="label-Schema+Information">Schema Information</h2>
 
 <p>Table name: constants</p>
 
 <pre class="code ruby"><code class="ruby">id          :integer          not null, primary key
+ - represents the ID of the constant
+
 name        :string(255)
+ - represents the name of the constant
+
 description :text(65535)
+ - represents the description of the constant
+
 value       :decimal(10, )
+ - represnts the value of the constant (eg. g = 9.8m/s^2)
+
 created_at  :datetime         not null
 updated_at  :datetime         not null</code></pre>
 
@@ -122,6 +135,13 @@ updated_at  :datetime         not null</code></pre>
 </div>
 <div class="tags">
   
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><span class='object_link'><a href="ArticleConstantBlock.html" title="ArticleConstantBlock (class)">ArticleConstantBlock</a></span></li>
+    
+  </ul>
 
 </div>
 
@@ -136,7 +156,7 @@ updated_at  :datetime         not null</code></pre>
 </div>
 
       <div id="footer">
-  Generated on Sun Jul 10 20:50:29 2016 by
+  Generated on Sun Jul 10 21:33:33 2016 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.0 (ruby-2.3.1).
 </div>

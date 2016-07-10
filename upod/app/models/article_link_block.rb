@@ -1,4 +1,4 @@
-# ArticleLinkBlock is a more specific ArticleBlock.
+# ArticleLinkBlock is a more specific {ArticleBlock}.
 # It contains an id, a source and a video id. ArticleLinkBlock acts as an article block
 # It inherits ArticleBlock's attributes, methods and validations.
 # @see ArticleBlock

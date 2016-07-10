@@ -1,14 +1,21 @@
+# Article is the completed post for the physics website. It has many blocks ranging
+# from text blocks to equations to images. It contains all the pieces that make up
+# the completed version of a post. The blocks make up the body of the article
+# An article can be edited by many contributors. As well an Article is {Blockable} as well as {Searchable}
+#
 # == Schema Information
 #
 # Table name: articles
 #
 #  id         :integer          not null, primary key
+#   - represents the id of the article
+#
 #  title      :string(255)
+#   - represents the tile of the article.
+#
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #
-
-
 class Article < ActiveRecord::Base
   has_many :blocks, class_name: 'ArticleBlock', foreign_key: :article_id
   has_many :contributions, class_name: 'Contributor', foreign_key: :article_id
@@ -23,6 +30,10 @@ class Article < ActiveRecord::Base
 # validates the title and it's length
   validates :title, presence: true, length: { maximum: 255 }
 
+# Creates the Articles blocks using sir trevor
+#
+# @todo Document method
+# @todo complete image handling
   def self.create_from_sir_trevor sir_trevor_content
     data = JSON.parse(sir_trevor_content)['data']
 

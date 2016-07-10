@@ -108,7 +108,35 @@
   
 </div>
 
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>Article is the completed post for the physics website. It has many blocks
+ranging from text blocks to equations to images. It contains all the pieces
+that make up the completed version of a post. The blocks make up the body
+of the article An article can be edited by many contributors. As well an
+Article is <span class='object_link'><a href="Blockable.html" title="Blockable (module)">Blockable</a></span> as well as <span class='object_link'><a href="Searchable.html" title="Searchable (module)">Searchable</a></span></p>
 
+<h2 id="label-Schema+Information">Schema Information</h2>
+
+<p>Table name: articles</p>
+
+<pre class="code ruby"><code class="ruby">id         :integer          not null, primary key
+ - represents the id of the article
+
+title      :string(255)
+ - represents the tile of the article.
+
+created_at :datetime         not null
+updated_at :datetime         not null</code></pre>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
 
 
 
@@ -183,21 +211,36 @@
   
 
   
-</h3><table class="source_code">
+</h3><div class="docstring">
+  <div class="discussion">
+    
+  <div class="note todo">
+    <strong>TODO:</strong>
+    <div class='inline'>
+<p>Document method</p>
+</div>
+  </div>
+
+  <div class="note todo">
+    <strong>TODO:</strong>
+    <div class='inline'>
+<p>complete image handling</p>
+</div>
+  </div>
+
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-26
-27
-28
-29
-30
-31
-32
-33
-34
 35
 36
 37
@@ -215,10 +258,19 @@
 49
 50
 51
-52</pre>
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'app/models/article.rb', line 26</span>
+      <pre class="code"><span class="info file"># File 'app/models/article.rb', line 35</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_create_from_sir_trevor'>create_from_sir_trevor</span> <span class='id identifier rubyid_sir_trevor_content'>sir_trevor_content</span>
   <span class='id identifier rubyid_data'>data</span> <span class='op'>=</span> <span class='const'>JSON</span><span class='period'>.</span><span class='id identifier rubyid_parse'>parse</span><span class='lparen'>(</span><span class='id identifier rubyid_sir_trevor_content'>sir_trevor_content</span><span class='rparen'>)</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>data</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span>
@@ -257,7 +309,7 @@
 </div>
 
       <div id="footer">
-  Generated on Sun Jul 10 20:50:29 2016 by
+  Generated on Sun Jul 10 21:33:33 2016 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.0 (ruby-2.3.1).
 </div>
