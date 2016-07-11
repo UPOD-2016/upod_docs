@@ -17,4 +17,8 @@
 class ArticleImageBlock < ActiveRecord::Base
   belongs_to :image
   acts_as :article_block
+
+  def image_url(size = :large)
+    image.body.url(size)
+  end
 end

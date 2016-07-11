@@ -1,6 +1,6 @@
 #//////////////////////////////////////////////////////////////////
 # AUTHOR:   Robert Morouney
-# EMAIL:    robert@morouney.com 
+# EMAIL:    robert@morouney.com
 # FILE:     .gitignore
 # CREATED:  2016-07-11 12:12:56
 # MODIFIED: 2016-07-11 12:14:40
@@ -19,3 +19,6 @@ public/uploads/*
 
 #testing server using nohup
 nohup.out
+
+/doc
+.yardoc/
