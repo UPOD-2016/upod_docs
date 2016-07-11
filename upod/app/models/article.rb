@@ -1,14 +1,20 @@
+# An Article is made up of many blocks and is the complete model. It contains various blocks that make up
+# its' look and feel.
+# An Article is {Blockable} as well as {Searchable}
+#
 # == Schema Information
 #
 # Table name: articles
 #
 #  id         :integer          not null, primary key
+#   - represents the id of the article
+#
 #  title      :string(255)
+#   - represents the tile of the article.
+#
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #
-
-
 class Article < ActiveRecord::Base
   has_many :blocks, class_name: 'ArticleBlock', foreign_key: :article_id
   has_many :contributions, class_name: 'Contributor', foreign_key: :article_id
@@ -23,6 +29,10 @@ class Article < ActiveRecord::Base
 # validates the title and it's length
   validates :title, presence: true, length: { maximum: 255 }
 
+# Creates the Articles blocks using sir trevor
+#
+# @todo Document method
+# @todo complete image handling
   def self.create_from_sir_trevor sir_trevor_content
     data = JSON.parse(sir_trevor_content)['data']
 
@@ -33,9 +43,17 @@ class Article < ActiveRecord::Base
     article = Article.create(title: "blank for now #{Time.now}")
 
     data.each do |block|
-      if block['type'] == 'text'
+      case block['type'].to_sym
+      when :text
         article.create_text_block(body: block['data']['text'])
-      elsif block['type'] == 'video'
+      when :image
+        # This needs to be changed. Right now, the issue is that the
+        # images are uploaded aysycnrhousnously - that is the images
+        # are uploaded before the articles are created. So, there needs
+        # to be a way to find the image or notify from the ImagesController.
+        # TO COME BACK TO THIS. Moving on for now. THIS IS NOT FINISHED!
+        article.create_image_block(Image.last)
+      when :video
 		    article.create_link_block(source: block['data']['source'], video_id: block['data']['remote_id'])
 	    end
     end

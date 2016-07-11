@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Class: Article
+  
+    &mdash; Documentation by YARD 0.9.0
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  pathId = "Article";
+  relpath = '';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="class_list.html"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="_index.html">Index (A)</a> &raquo;
+    
+    
+    <span class="title">Article</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <iframe id="search_frame" src="class_list.html"></iframe>
+
+      <div id="content"><h1>Class: Article
+  
+  
+  
+</h1>
+<div class="box_info">
+  
+  <dl>
+    <dt>Inherits:</dt>
+    <dd>
+      <span class="inheritName">ActiveRecord::Base</span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next">ActiveRecord::Base</li>
+          
+            <li class="next">Article</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+    </dd>
+  </dl>
+  
+
+  
+  
+  
+  
+  <dl>
+      <dt>Includes:</dt>
+      <dd><span class='object_link'><a href="Blockable.html" title="Blockable (module)">Blockable</a></span>, <span class='object_link'><a href="Searchable.html" title="Searchable (module)">Searchable</a></span></dd>
+  </dl>
+  
+  
+
+  
+
+  
+  <dl>
+    <dt>Defined in:</dt>
+    <dd>app/models/article.rb</dd>
+  </dl>
+  
+</div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>An Article is made up of many blocks and is the complete model. It contains
+various blocks that make up its&#39; look and feel. An Article is
+<span class='object_link'><a href="Blockable.html" title="Blockable (module)">Blockable</a></span> as well as <span class='object_link'><a href="Searchable.html" title="Searchable (module)">Searchable</a></span></p>
+
+<h2 id="label-Schema+Information">Schema Information</h2>
+
+<p>Table name: articles</p>
+
+<pre class="code ruby"><code class="ruby">id         :integer          not null, primary key
+ - represents the id of the article
+
+title      :string(255)
+ - represents the tile of the article.
+
+created_at :datetime         not null
+updated_at :datetime         not null</code></pre>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+
+
+
+
+
+
+  
+    <h2>
+      Class Method Summary
+      <small><a href="#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#create_from_sir_trevor-class_method" title="create_from_sir_trevor (class method)">.<strong>create_from_sir_trevor</strong>(sir_trevor_content)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Creates the Articles blocks using sir trevor.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="Blockable.html" title="Blockable (module)">Blockable</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Blockable.html#create_constant_block-instance_method" title="Blockable#create_constant_block (method)">#create_constant_block</a></span>, <span class='object_link'><a href="Blockable.html#create_equation_block-instance_method" title="Blockable#create_equation_block (method)">#create_equation_block</a></span>, <span class='object_link'><a href="Blockable.html#create_image_block-instance_method" title="Blockable#create_image_block (method)">#create_image_block</a></span>, <span class='object_link'><a href="Blockable.html#create_link_block-instance_method" title="Blockable#create_link_block (method)">#create_link_block</a></span>, <span class='object_link'><a href="Blockable.html#create_text_block-instance_method" title="Blockable#create_text_block (method)">#create_text_block</a></span></p>
+
+  
+  
+
+  <div id="class_method_details" class="method_details_list">
+    <h2>Class Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="create_from_sir_trevor-class_method">
+  
+    .<strong>create_from_sir_trevor</strong>(sir_trevor_content)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+  <div class="note todo">
+    <strong>TODO:</strong>
+    <div class='inline'>
+<p>Document method</p>
+</div>
+  </div>
+
+  <div class="note todo">
+    <strong>TODO:</strong>
+    <div class='inline'>
+<p>complete image handling</p>
+</div>
+  </div>
+
+
+<p>Creates the Articles blocks using sir trevor</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/models/article.rb', line 36</span>
+
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_create_from_sir_trevor'>create_from_sir_trevor</span> <span class='id identifier rubyid_sir_trevor_content'>sir_trevor_content</span>
+  <span class='id identifier rubyid_data'>data</span> <span class='op'>=</span> <span class='const'>JSON</span><span class='period'>.</span><span class='id identifier rubyid_parse'>parse</span><span class='lparen'>(</span><span class='id identifier rubyid_sir_trevor_content'>sir_trevor_content</span><span class='rparen'>)</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>data</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span>
+
+  <span class='comment'># If there are no blocks provided, we have to throw an error
+</span>  <span class='kw'>return</span> <span class='kw'>if</span> <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_empty?'>empty?</span>
+
+  <span class='comment'>#Otherwise, create the block
+</span>  <span class='id identifier rubyid_article'>article</span> <span class='op'>=</span> <span class='const'>Article</span><span class='period'>.</span><span class='id identifier rubyid_create'>create</span><span class='lparen'>(</span><span class='label'>title:</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>blank for now </span><span class='embexpr_beg'>#{</span><span class='const'>Time</span><span class='period'>.</span><span class='id identifier rubyid_now'>now</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+
+  <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_block'>block</span><span class='op'>|</span>
+    <span class='kw'>case</span> <span class='id identifier rubyid_block'>block</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>type</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_to_sym'>to_sym</span>
+    <span class='kw'>when</span> <span class='symbol'>:text</span>
+      <span class='id identifier rubyid_article'>article</span><span class='period'>.</span><span class='id identifier rubyid_create_text_block'>create_text_block</span><span class='lparen'>(</span><span class='label'>body:</span> <span class='id identifier rubyid_block'>block</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>data</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>text</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span><span class='rparen'>)</span>
+    <span class='kw'>when</span> <span class='symbol'>:image</span>
+      <span class='comment'># This needs to be changed. Right now, the issue is that the
+</span>      <span class='comment'># images are uploaded aysycnrhousnously - that is the images
+</span>      <span class='comment'># are uploaded before the articles are created. So, there needs
+</span>      <span class='comment'># to be a way to find the image or notify from the ImagesController.
+</span>      <span class='comment'># TO COME BACK TO THIS. Moving on for now. THIS IS NOT FINISHED!
+</span>      <span class='id identifier rubyid_article'>article</span><span class='period'>.</span><span class='id identifier rubyid_create_image_block'>create_image_block</span><span class='lparen'>(</span><span class='const'>Image</span><span class='period'>.</span><span class='id identifier rubyid_last'>last</span><span class='rparen'>)</span>
+    <span class='kw'>when</span> <span class='symbol'>:video</span>
+    <span class='id identifier rubyid_article'>article</span><span class='period'>.</span><span class='id identifier rubyid_create_link_block'>create_link_block</span><span class='lparen'>(</span><span class='label'>source:</span> <span class='id identifier rubyid_block'>block</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>data</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>source</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span><span class='comma'>,</span> <span class='label'>video_id:</span> <span class='id identifier rubyid_block'>block</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>data</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>remote_id</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span><span class='rparen'>)</span>
+   <span class='kw'>end</span>
+  <span class='kw'>end</span>
+
+  <span class='id identifier rubyid_article'>article</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+      <div id="footer">
+  Generated on Mon Jul 11 00:19:58 2016 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.0 (ruby-2.3.1).
+</div>
+
+    </div>
+  </body>
+</html>

@@ -1,12 +1,21 @@
+# ArticleEquationBlock is a more specific {ArticleBlock}. ArticleEquationBlock acts as an article block
+# and it contains an equation (eg. E=mc^2) and a description of that equation.
+# It inherits ArticleBlock's attributes, methods and validations.
+# @see ArticleBlock
+#
 # == Schema Information
 #
 # Table name: article_equation_blocks
 #
 #  id          :integer          not null, primary key
-#  equation    :string(255)
-#  description :string(255)
+#   - represents the id of the equation block
 #
-
+#  equation    :string(255)
+#   - represents the equation stored in the block
+#
+#  description :string(255)
+#   - represents the description of the equation
+#
 class ArticleEquationBlock < ActiveRecord::Base
   acts_as :article_block
 

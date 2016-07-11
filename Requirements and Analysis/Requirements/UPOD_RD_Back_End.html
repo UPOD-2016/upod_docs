@@ -2,54 +2,11 @@
 <!-- Created by: Omid Ghiyasian -->
 <!-- Creation Date: 2016-06-13 -->
 <!-- Modification by: Brian Oh -->
-<!-- Modification date: 2016-06-18 -->
+<!-- Modification date: 2016-07-10 -->
 <html lang="en">
 	<head>
-		<link rel="stylesheet" type="text/css" href="/css/style.css">
-	
+		<LINK href="styles.css" rel="stylesheet" type="text/css">
 		<title>System Requirement Specification Template</title>
-		<style>
-		table, th, td {
-			border: 1px solid black;
-		}
-		
-		h1 {
-			font-size: 120%;
-		}
-		h4 {
-			margin-left: 40px;
-		}
-		#p {
-		margin-top: 100px;
-		margin-bottom: 100px;
-		margin-right: 240px;
-		margin-left: 80px;
-		}
-		#categoryHeading {
-			margin-left:40px;
-			margin-right:25px;
-		}
-		#subcategoryHeading {
-			margin-left: 75px;
-			margin-right: 25px;
-		}
-		* {
-			font-size: 100%;
-			font-family: 'Open Sans', sans-serif;
-		}
-
-		#indent {
-			padding-left: 20px;			
-		}
-		#indent3 {
-			padding-left: 78px;			
-		}
-
-		#tableMargin {
-		line-height: 24px;
-		}
-
-		</style>
 	</head>
 	
 	<body  id="p">
@@ -58,10 +15,10 @@
 				<h1 style="text-align:right;font-size:320%">Software Requirements Specification</h3>
 				<h2 style="text-align:right;font-size:200%">for</h3>
 				<h1 style="text-align:right;font-size:320%">UPOD-Back End</h3>
-				<h3 style="text-align:right;font-size:140%">Version 0.6</h3>
+				<h3 style="text-align:right;font-size:140%">Version 0.8</h3>
 				<h3 style="text-align:right;font-size:140%">Prepared by Clive Shen</h3>
 				<h3 style="text-align:right;font-size:140%">Wilfrid Laurier University, CP317</h3>
-				<h3 style="text-align:right;font-size:140%">29/06/2016</h3>
+				<h3 style="text-align:right;font-size:140%">10/07/2016</h3>
 			</div>
 		<br>
 		
@@ -72,6 +29,20 @@
 			<th>Date</th>
 			<th>Reason for Changes</th>
 			<th>Version</th>
+		  </tr>
+
+          <tr>
+		  	<td>Clive Shen</td>
+		  	<td>10/07/16</td>
+		  	<td>Updated scope, defintions, and functions</td>
+		  	<td>v0.8</td>
+		  </tr>
+            
+		  <tr>
+		  	<td>Will Detlor</td>
+		  	<td>04/07/16</td>
+		  	<td>Added content regarding requirements for categories and sub-categories</td>
+		  	<td>v0.7</td>
 		  </tr>
 
 		  <tr>
@@ -117,8 +88,6 @@
 			<td>v0.1</td>
 		  </tr>
 
-
-
 		</table>
 			
 			<h1>Table of Contents</h1>
@@ -149,7 +118,9 @@
 						<a id="indent" href="#Objects">3.5.1 Objects</a><br>
 						<a id="indent" href="#Feature">3.5.2 Feature</a><br>
 						<a id="indent" href="#Functional Hierarchy">3.5.3 Functional Hierarchy</a><br>
-				<a href="#Appendixes">Appendixes</a><br>
+					<a href="#Categories Information">3.6 Categories Information</a><br>
+						<a id="indent" href="#Categories Notes">3.6.1 Categories Notes</a><br>
+						<a id="indent" href="#Categories To Do List">3.6.2 Categories To Do List</a><br>
 				<a href="#Index">Index</a>
 				
 			</ol> 
@@ -158,16 +129,24 @@
 			<h1><a name="Introduction">1. Introduction</a></h1>
 				<div id="mainHeading">
 					<h2><a name="Scope">1.1 Scope</a></h2>
-					<li id="categoryHeading">Having a well-organized database and an efficient search engine help users to find the specific information they need in the shortest amount of time. By entering certain keywords in the search bar, articles related to those keywords should be shown. With the use of server-side scripting, administrators and moderators of UPOD can easily modify the contents of the articles. </li>
+					<p>UPOD's back end consists of three parts: a server, a database, and an application. The database stores data (i.e. categories, subcategories, and articles) in required data structures, and provides users access to the stored data through the use of search bar. </p>
 				</div>
 				<div id="mainHeading">
 					<h3><a name="Definitions">1.2 Definitions, Acronyms, and Abbreviations</a></h2>
-						<p id="categoryHeading"><span style="text-decoration: underline;">Administrator</span></p>
-						<li id="subcategoryHeading">An administrator can login, logout, reset password, create an account for a moderator, update a moderator's account status, alter permissions of moderators, list administrators, list moderators, add/delete/modify categories, and add/delete/modify articles. </li>
-						<p id="categoryHeading"><span style="text-decoration: underline;">Moderator</span></p>
-						<li id="subcategoryHeading">A moderator can login, logout, reset password, add/delete/modify categories, and add/delete/modify articles.</li>
-						<p id="categoryHeading"><span style="text-decoration: underline;">User</span></p>
-						<li id="subcategoryHeading">A user can view categories/articles, search for categories/articles, and interact with graphics. </li>
+						<p><span style="text-decoration: underline;">UPOD</span></p>
+						<li id="categoryHeading">Undergraduate Physics Online Database</li>
+						<p><span style="text-decoration: underline;">Moderator</span></p>
+						<li id="categoryHeading">A moderator can add/delete/edit categories, sub-categories, and articles.</li>
+						<p><span style="text-decoration: underline;">User</span></p>
+						<li id="categoryHeading">A user can view categories/sub-categories/articles, search for categories/sub-categories/articles, and interact with diagrams. </li>
+                        <p><span style="text-decoration: underline;">Category (and Sub-category)</span></p>
+						<li id="categoryHeading">A set of articles that fall into a definable block of information.</li>
+                        <p><span style="text-decoration: underline;">Article</span></p>
+						<li id="categoryHeading">Viewable page containing information, formulas, and diagrams related to a particular physics concept.</li>
+                        <p><span style="text-decoration: underline;">Diagram</span></p>
+						<li id="categoryHeading">Illustration of physics concept, which can be static or dynamic, and support interaction.</li>
+                        <p><span style="text-decoration: underline;">SVG (Scalable Vector Diagram</span></p>
+						<li id="categoryHeading">Image format for diagrams with support for animation and interaction.</li>
 				</div>
 				<div id="mainHeading">
 					<h3><a name="References">1.3 References</a></h2>
@@ -190,26 +169,21 @@
 				<h3><a name="Product Perspective">2.1 Product Perspective</a></h3>
 				<p id="categoryHeading">UPOD's back end implementation needs the collaboration of both front end and back end teams, as the functionalities provided by the database and scripting rely on the front-end design. </p>
 					<h4><a name="System Interfaces">2.1.1 System Interfaces</a></h4>
-						<p id="subcategoryHeading">UPOD operates on modern and standard browsers, including:</p>
-							<li id="subcategoryHeading">Safari</li>
-							<li id="subcategoryHeading">Google Chrome</li>
-							<li id="subcategoryHeading">Firefox</li>
-							<li id="subcategoryHeading">Internet Explorer (Microsoft Edge)</li>
+						<p id="categoryHeading">UPOD operates on modern and standard browsers, including:</p>
+							<li id="subcategoryHeading">Google Chrome - version 51</li>
+							<li id="subcategoryHeading">Mozilla Firefox - version 47</li>
+							<li id="subcategoryHeading">Internet Explorer - version 11</li>
+							<li id="subcategoryHeading">Microsoft Edge - version 38</li>
+                            <li id="subcategoryHeading">Safari - version 9.1</li>
 					<h4><a name="Software Interfaces">2.1.2 Software Interfaces</a></h4>
 						<p id="categoryHeading"><span style="text-decoration: underline;">Database</span></p>
-							<p id="categoryHeading">A database is used to store and organize data.<br>In the database of this website, the types of data stored include administration information table, formula variables, and articles.</p>
-							<li id="subcategoryHeading">Build connections between related articles. </li>
-							<li id="subcategoryHeading">Ensure information is always stored only once. </li>
-							<li id="subcategoryHeading">Improve the implementation of a search engine. </li>
-							<li id="subcategoryHeading">Potential issues of scalability and reliability can be minimized.</li>
-						<p id="categoryHeading"><span style="text-decoration: underline;">User Management Portal (UMP)</span></p>
-							<li id="subcategoryHeading">Allow administrators to manage moderators and modify permission of each moderator. </li>
-							<li id="subcategoryHeading">Add, delete, or edit articles layouts and contents. </li>
+							<p id="categoryHeading">A database is used to store and organize data.<br>In the database of UPOD, the types of data stored include categories, sub-categories, and articles.</p>
+							<li id="subcategoryHeading">Ensure information (i.e. categories, sub-categories, and articles) is always stored only once. </li>
+							<li id="subcategoryHeading">Transform any data entered by moderators into required data structures.</li>
+							<li id="subcategoryHeading">Enable multiple users to access the database simultaneously.</li>
+                            <li id="subcategoryHeading">Accept different moderators' requests through different network environments.</li>
 					<h4><a name="Memory">2.1.3 Communications Interfaces</a></h4>
-						<p id="categoryHeading"><span style="text-decoration: underline;">Hypertext Transfer Protocol (HTTP) </span></p>
-							<li id="subcategoryHeading">The underlying protocol used by the World Wide Web, which is a set of rules for transferring files. </li>
-						<p id="categoryHeading"><span style="text-decoration: underline;">Hypertext Transfer Protocol Secure (HTTPS) </span></p>
-							<li id="subcategoryHeading">A protocol for secure communication, which consists of communication over HTTP within a connection encrypted by Transport Layer Security (TLS) or Secure Sockets Layer (SSL).</li>
+						<li id="subcategoryHeading">UPOD will remain responsive across internet service providers.</li>
 					<h4><a name="Memory">2.1.4 Memory</a></h4>
 						<li id="subcategoryHeading">TBA (State the size of the Primary and Secondary memory that the database will be on)</li>
 				
@@ -224,33 +198,21 @@
 				<h3><a name="Functions">3.1 Functions</a></h2>
 				<p id="categoryHeading">The following is a list of use cases that are available for actors:</p>
 					<p id="categoryHeading"><span style="text-decoration: underline;">Login</span></p>
-							<li id="subcategoryHeading">In the User Management Portal, an administrator or a moderator needs to enter their username and password to authenticate their identity. </li>
+							<li id="subcategoryHeading">In the login page, a moderator needs to enter their username and password to authenticate their identity.</li>
 					<p id="categoryHeading"><span style="text-decoration: underline;">Logout</span></p>
-							<li id="subcategoryHeading">To terminate their section, an administrator or a moderator can click the Logout option. </li>
-					<p id="categoryHeading"><span style="text-decoration: underline;">Reset Password</span></p>
-							<li id="subcategoryHeading">By inputting the email address that is used to register the account, an email is sent with a link to the Reset Password Article where an administrator or a moderator can reset their password. </li>
-					<p id="categoryHeading"><span style="text-decoration: underline;">Create an Account for a Moderator </span></p>
-							<li id="subcategoryHeading">By inputting user name, email address, and permissions, an administrator can create an unverified account for a moderator. Then, an email is sent to the given email address with a link to the Account Registration Article, which allows the moderator to verify their account and set the password. </li>
-					<p id="categoryHeading"><span style="text-decoration: underline;">Update Moderator's Account Status</span></p>
-							<li id="subcategoryHeading">By entering a username, an administrator can update the account status of a particular moderator. There are three types of account status: unverified, verified or disabled. An unverified account requires a moderator to set their password in order to login to UPOD. Once the moderator finishes the registration process, their account status will change to verified, and the moderator can login to UPOD. A disabled account prevents a moderator from logging in to UPOD. </li>
-					<p id="categoryHeading"><span style="text-decoration: underline;">Alter a Moderator’s Permissions</span></p>
-							<li id="subcategoryHeading">By entering a username, an administrator can alter the permissions of a particular moderator. With a given permission, a moderator can add, delete, or modify the corresponding categories and articles. Note that an administrator has the right to add, delete, or modify all the categories and articles in UPOD. </li>
-					<p id="categoryHeading"><span style="text-decoration: underline;">List Administrators</span></p>
-							<li id="subcategoryHeading">An administrator has the option to list all the administrators. The displayed table contains usernames, email addresses, and corresponding account status as well as permissions.</li>
-					<p id="categoryHeading"><span style="text-decoration: underline;">List Moderators</span></p>
-							<li id="subcategoryHeading">An administrator has the option to list all the moderators. The displayed table contains usernames, email addresses, and corresponding account status as well as permissions. </li>
-					<p id="categoryHeading"><span style="text-decoration: underline;">Add/Delete/Modify Categories</span></p>
-							<li id="subcategoryHeading">An administrator or a moderator can add, delete, or modify categories in UPOD. </li>
+							<li id="subcategoryHeading">To terminate their section, a moderator can click the Logout option.</li>
+					<p id="categoryHeading"><span style="text-decoration: underline;">Add/Delete/Edit Categories (or Sub-Categories)</span></p>
+							<li id="subcategoryHeading">A moderator can add, delete, or edit categories/sub-categories in UPOD. </li>
 					<p id="categoryHeading"><span style="text-decoration: underline;">Add/Delete/Modify Articles</span></p>
-							<li id="subcategoryHeading">An administrator or a moderator can modify the content displayed on articles, and add/delete articles in UPOD. </li>
-					<p id="categoryHeading"><span style="text-decoration: underline;">View Categories</span></p>
-							<li id="subcategoryHeading">A user can view categories that are available in UPOD. </li>
-					<p id="categoryHeading"><span style="text-decoration: underline;">View Articles </span></p>
-							<li id="subcategoryHeading">A user can view articles that are available in UPOD. </li>		
-					<p id="categoryHeading"><span style="text-decoration: underline;">Search for Categories/Articles </span></p>
-							<li id="subcategoryHeading">By inputting keywords in the search bar, a user can view the related categories/articles in the search results article. </li>
-					<p id="categoryHeading"><span style="text-decoration: underline;">Interact with Graphs</span></p>
-							<li id="subcategoryHeading">A user can interact with graphs that are in SVG format. </li>
+							<li id="subcategoryHeading">A moderator can add, delete, or edit articles in UPOD. </li>
+					<p id="categoryHeading"><span style="text-decoration: underline;">View Categories/Sub-Categories</span></p>
+							<li id="subcategoryHeading">A user can view categories/sub-categories that are available in UPOD.</li>
+					<p id="categoryHeading"><span style="text-decoration: underline;">View Articles</span></p>
+							<li id="subcategoryHeading">A user can view articles that are available in UPOD.</li>		
+					<p id="categoryHeading"><span style="text-decoration: underline;">Search for Categories/Sub-Categories/Articles </span></p>
+							<li id="subcategoryHeading">By inputting keywords in the search bar, a user can view the related categories/sub-categories/articles in the search results page. </li>
+					<p id="categoryHeading"><span style="text-decoration: underline;">Interact with Diagrams</span></p>
+							<li id="subcategoryHeading">A user can interact with diagrams that are in SVG format. </li>
 							
 				
 				<h3><a name="Performance Requirements">3.2 Performance Requirements</a></h2>
@@ -264,8 +226,7 @@
 					<p id="categoryHeading"><span style="text-decoration: underline;">Frequency of use</span></p>
 						<li id="subcategoryHeading">TBA</li>
 					<p id="categoryHeading"><span style="text-decoration: underline;">Accessing capabilities</span></p>
-						<li id="subcategoryHeading">Administrators can access all moderator's attributes, except their passwords. </li>
-						<li id="subcategoryHeading">Moderators can view their own permissions (add, edit, or remove articles). </li>
+						<li id="subcategoryHeading">TBA</li>
 					<p id="categoryHeading"><span style="text-decoration: underline;">Data entities and their relationships</span></p>
 						<li id="subcategoryHeading">TBA</li>
 					<p id="categoryHeading"><span style="text-decoration: underline;">Integrity Constraints</span></p>
@@ -280,7 +241,7 @@
 						<li id="subcategoryHeading">The search engine should provide a list of articles that are contains the key words or are related to the key words. </li>
 					<h4><a name="Security">3.4.2 Security</a></h4>
 						<li id="subcategoryHeading">Account passwords of administrators and moderators accounts should be stored securely. </li>
-						<li id="subcategoryHeading">Without appropriate permissions, no articles should be added, removed, or edited. </li>
+						<li id="subcategoryHeading">Only moderators can add, delete, or edit categories/sub-categories/articles. </li>
 					<h4><a name="Maintainability">3.4.3 Maintainability</a></h4>
 						<li id="subcategoryHeading">Additional features may be added to the website in the future, so the whole software should be well documented and easy to maintain. </li>
 				
@@ -291,6 +252,37 @@
 						<li id="subcategoryHeading">TBA</li>
 					<h4><a name="Functional Hierarchy">3.5.3 Functional Hierarchy</a></h4>
 						<li id="subcategoryHeading">TBA</li>
+
+				<h3><a name="Categories Information">3.6 Categories Information</a></h2>
+					<h4><a name="Categories Notes">3.6.1 Categories Notes</a></h4>
+						<ul>
+							<li id="subcategoryHeading">Categories are top level in terms of hierarchy</li>
+							<li id="subcategoryHeading">Each sub-category will pertain to ONE category (foreign key stored in the sub-category table)</li>
+							<li id="subcategoryHeading">Each sub-category will contain a set of articles that relate to that topic</li>
+							<li id="subcategoryHeading">Each article can belong to ONE OR MORE sub-category</li>
+							<li id="subcategoryHeading">Each article MUST belong to at least one sub-category</li>
+							<li id="subcategoryHeading">Articles can only belong to sub-categories not categories (however the pertaining sub-category would belong to a parent category)</li>
+						</ul>
+					<h4><a name="Categories To Do List">3.6.2 Categories To Do List</a></h4>
+						<ol>
+							<li id="subcategoryHeading">Implement database schema for categories (category table, sub-category table (contains foreign key of category it pertains to), sub-category-to-article table)</li>
+							<li id="subcategoryHeading">Create category MODEL</li>
+							<li id="subcategoryHeading">Update category MODEL</li>
+							<li id="subcategoryHeading">Remove category MODEL (delete category and all sub-categories (call delete sub-category function listed below for each sub-category in the category to be deleted) within this category)</li>
+							<li id="subcategoryHeading">Create sub-category MODEL</li>
+							<li id="subcategoryHeading">Update sub-category MODEL</li>
+							<li id="subcategoryHeading">Remove sub-category MODEL (delete sub-category and all articles within this category. Need to check if article pertains to other sub-categories before deleting)</li>
+							<li id="subcategoryHeading">Get all categories MODEL</li>
+							<li id="subcategoryHeading">Get all categories with sub-categories and articles MODEL</li>
+							<li id="subcategoryHeading">Get all sub-categories with articles in specific category MODEL</li>
+							<li id="subcategoryHeading">Get all articles in specific sub-category MODEL</li>
+							<li id="subcategoryHeading">Add article to sub-category MODEL (create new record in sub-category-to-article table)</li>
+							<li id="subcategoryHeading">Update article to sub-category MODEL</li>
+							<li id="subcategoryHeading">Remove article to sub-category MODEL</li>
+							<li id="subcategoryHeading">Create VIEW/CONTROLLER to have a page to display list of all categories and sub-categories</li>
+							<li id="subcategoryHeading">Create VIEW/CONTROLLER to have a page to display list of all articles in a specific category</li>
+							<li id="subcategoryHeading">Integrate add/edit/delete category/sub-category functionality into create/edit article pages</li>
+						</ol>
 			</div>
 			
 		</div>
@@ -299,11 +291,11 @@
 			
 		</div>
 		<div id="mainHeading">
-			<h2><a name="Appendixes">Appendixes</a></h2><br>
-			<li id="categoryHeading">TBA</li>
-			<h2><a name="Index">Index</a></h2><br>
-			<li id="categoryHeading">TBA (make an index)</li>
+			<h2><a name="Index">Index</a></h2>
+            <a href="UPOD_RD_Front_End.html">Front End Requirements</a><br>
+			<a href="UPOD_RD_Physics.html">Physics Requirements</a><br>
+			<a href="UPOD_RD_Graphics_and_Animation.html">Graphics-Animation Requirements</a><br>
 		</div>
-	
+            
 	</body>
 </html>

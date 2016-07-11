@@ -1,11 +1,24 @@
+# A constant is a non-changing value. In physics, for example, gravity
+# is definited as 9.8m/s^2. Each constant can be reused and therefore
+# each constant can have many {ArticleConstantBlock}. Each constant has an id, name, description and value
+# @see ArticleConstantBlock
+#
 # == Schema Information
 #
 # Table name: constants
 #
 #  id          :integer          not null, primary key
+#   - represents the ID of the constant
+#
 #  name        :string(255)
+#   - represents the name of the constant
+#
 #  description :text(65535)
+#   - represents the description of the constant
+#
 #  value       :decimal(10, )
+#   - represnts the value of the constant (eg. g = 9.8m/s^2)
+#
 #  created_at  :datetime         not null
 #  updated_at  :datetime         not null
 #

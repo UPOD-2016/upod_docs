@@ -15,6 +15,12 @@ body {
   position: relative;
 }
 
+.thumbnail {
+    border: 0 none;
+    box-shadow: none;
+		background-color: transparent;
+}
+
 h1 {
   font-size: 50px;
 }
@@ -153,20 +159,8 @@ input[type=checkbox] {
 }
 
 label {
-  position: absolute;
-  top: 2%;
-  left: 1%;
-  z-index: 1;
-  display: block;
-  font-size: 3em;
+  font-size: 2em;
   color: #ffcc00;
-  cursor: pointer;
-  transform: translate3d(0, 0, 0);
-  transition: transform .4s;
-}
-
-input[type=checkbox]:checked ~ label {
-  transform: translate3d(250px, 0, 0) rotate(90deg);
 }
 
 .page-content {
@@ -174,18 +168,6 @@ input[type=checkbox]:checked ~ label {
   background: inherit;
   transform: translate3d(0, 0, 0);
   transition: transform .4s;
-}
-
-input[type=checkbox]:checked ~ {
-  .page-content {
-    transform: translate3d(250px, 0, 0);
-  }
-  .slide-menu {
-    transform: translate3d(0, 0, 0);
-    .menu li {
-      width: 100%;
-    }
-  }
 }
 
 .slide-menu {

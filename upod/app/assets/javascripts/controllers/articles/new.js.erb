@@ -1,11 +1,21 @@
+//= require includes/MathJaxConfig
+//= require includes/MathJax
 //= require includes/sir-trevor
+//= require ./equation.js
 
+$(document).on('ready page:load', function(){
 
-$(function(){
+  MathJax.Hub.Configured(); //Tell mathjax to start configuration
 
   SirTrevor.setDefaults({
     iconUrl: "<%= asset_path('sir-trevor-icons.svg') %>",
-    // uploadUrl: "/api/upload"
+    uploadUrl: "/images",
+    ajaxOptions: {
+      headers: {
+        "X-CSRF-Token": document.querySelector('meta[name=csrf-token]').getAttribute('content')
+      },
+      credentials: 'same-origin'
+    }
   });
   SirTrevor.config.debug = true;
   SirTrevor.config.scribeDebug = true;
@@ -20,7 +30,7 @@ $(function(){
       "Quote",
       "Image",
       "Video",
-      "Tweet"
+      "Equation"
     ]
   });
 });
