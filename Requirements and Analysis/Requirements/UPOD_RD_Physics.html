@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <!-- Created by: Omid Ghiyasian -->
 <!-- Creation Date: 2016-06-13 -->
 <!-- Modification by: Brian Oh -->
@@ -7,6 +7,7 @@
 	<head>
 		<LINK href="styles.css" rel="stylesheet" type="text/css">
 		<title>System Requirement Specification Template</title>
+		<meta charset="utf-8">
 	</head>
 	
 	<body  id="p">
@@ -15,7 +16,7 @@
 				<h1 style="text-align:right;font-size:320%">Software Requirements Specification</h3>
 				<h2 style="text-align:right;font-size:200%">for</h3>
 				<h1 style="text-align:right;font-size:320%">UPOD-Physics Requirements</h3>
-				<h3 style="text-align:right;font-size:140%">Version 0.5</h3>
+				<h3 style="text-align:right;font-size:140%">Version 0.6</h3>
 				<h3 style="text-align:right;font-size:140%">Prepared by Anders Lam</h3>
 				<h3 style="text-align:right;font-size:140%">Wilfrid Laurier University, CP317</h3>
 				<h3 style="text-align:right;font-size:140%">10-07-2016</h3>
@@ -30,6 +31,11 @@
 			<th>Reason for Changes</th>
 			<th>Version</th>
 		  </tr>
+		  <tr>
+		   	<td>Anders Lam </td>
+			<td>11/07/16</td>
+			<td>Edits with requests from David Brown</td>
+			<td>v0.6</td>
 		  <tr>
 			<td>Brian Oh</td>
 			<td>10/07/16</td>
@@ -111,15 +117,15 @@
 				<div id="mainHeading">
 					<h3><a name="Definitions">1.2 Definitions, Acronyms, and Abbreviations</a></h2>
 					<p id="categoryHeading"><span style="text-decoration: underline;">Fundamentals</span></p>
-					<li id="subcategoryHeading">basic materials, properties and forces in our world. It covers all sections of physics from mechanics to atomic physics, and gives a general understanding as to what physic properties governs our world.</li>
+					<li id="subcategoryHeading">Basic materials, properties and forces in our world. It covers all sections of physics from mechanics to atomic physics, and gives a general understanding as to what physic properties governs our world.</li>
 					<p id="categoryHeading"><span style="text-decoration: underline;">Classical Mechanics</span></p>
-					<li id="subcategoryHeading">physical laws that describe the motion of bodies under the influence of a system of forces.</li>
+					<li id="subcategoryHeading">Physical laws that describe the motion of bodies under the influence of a system of forces.</li>
 					<p id="categoryHeading"><span style="text-decoration: underline;">Optics</span></p>
-					<li id="subcategoryHeading">the properties and behaviour of light in conjunction with matter and the various instruments that either use or detect it.</li>
+					<li id="subcategoryHeading">The properties and behaviour of light in conjunction with matter and the various instruments that either use or detect it.</li>
 					<p id="categoryHeading"><span style="text-decoration: underline;">Electricity and Magnetism</span></p>
-					<li id="subcategoryHeading">physics that involves the electromagnetic force, which is an interaction that occurs between two electrically charged particles. Magnetism is the physical interaction that occurs as a result of a motion of electric charge that is usually a result of attractive and repulsive forces between objects.</li>
+					<li id="subcategoryHeading">Physics that involves the electromagnetic force, which is an interaction that occurs between two electrically charged particles. Magnetism is the physical interaction that occurs as a result of a motion of electric charge that is usually a result of attractive and repulsive forces between objects.</li>
 					<p id="categoryHeading"><span style="text-decoration: underline;">Quantum Mechanics</span></p>
-					<li id="subcategoryHeading">Quantum Mechanics is the specific branch of physics that deals with the very miniscule objects. It deals with the mathematical description of the motion and interaction of subatomic particles, which incorporates wave-particle duality, uncertainty principle, and concepts of quantization.</li>
+					<li id="subcategoryHeading">Specific branch of physics that deals with the very miniscule objects. It deals with the mathematical description of the motion and interaction of subatomic particles, which incorporates wave-particle duality, uncertainty principle, and concepts of quantization.</li>
 					<p id="categoryHeading"><span style="text-decoration: underline;">Statistical Mechanics</span></p>
 					<li id="subcategoryHeading">Statistical Mechanics is the study of the statistics of the behaviour of very large number of atoms or molecules. It takes into account the distribution of energy among the large number of molecules.</li>
 				</div>
@@ -146,9 +152,9 @@
 			<h1><a name="Overall Description">2. Overall Description</a></h1>
 			<div id="mainHeading">
 				<h3><a name="Product Perspective">2.1 Product Perspective</a></h3>
-				<p>Integrating physics research and information into the new UPOD website, will be more interactive and user friendly as well as containing more relevant information than current websites with similar functions. UPOD's implementation of the equations and other features will be done in collaboration with the MathJax, Animations, and Front-end team, as the functionality and availability of the physics information will only be made available and interactive through these other teams.</p>
+				<p>Integrating physics research and information into the new UPOD website, will be more interactive and user friendly as well as containing more relevant information than current websites with similar functions. UPOD&rsquos implementation of the equations and other features will be done in collaboration with the MathJax, Animations, and Front-end team, as the functionality and availability of the physics information will only be made available and interactive through these other teams.</p>
 					<h4><a name="System Interfaces">2.1.1 System Interfaces</a></h4>
-						<li id="subcategoryHeading">operates on the modern and standard browsers, including Google Chrome, Safari, Firefox, Internet Explorer and Microsoft Edge.</li>
+						<li id="subcategoryHeading">Operates on the modern and standard browsers, including Google Chrome, Safari, Firefox, Internet Explorer and Microsoft Edge.</li>
 					<h4><a name="User Interfaces">2.1.2 User Interfaces</a></h4>
 						<p id="categoryHeading">The Front-end team is responsible for the overall design and functionality of the UPOD website. This involves UI/UX implementation and developing guidelines for other teams to follow when designing assets for the website.  UPOD’s MathJax team creates the physics equations as assets to be implemented into the website that are shown to students.  The Graphics and Animations teams is responsible for developing the diagrams, and animated assets of the website. They follow any guidelines given by the Front-end team and match the physics requirements set out by the Physics team.</p>
 					<h4><a name="Software Interfaces">2.1.3 Software Interfaces</a></h4>
@@ -157,14 +163,9 @@
 							<li id="categoryHeading">Include various equations regarding the certain aspect of physics</li>
 							<li id="categoryHeading">Ensure that information is not redundant and stored only once</li>
 							<li id="categoryHeading">Include information and brief descriptions involving the aspect of physics</li>
-							<li id="categoryHeading">Improve the linkage between any physics information so that they can be used in unison with one another</li>
+							<li id="categoryHeading">Physic&rsquos information that is relevant to one another must be displayed accordingly and linked to one another in</li>
 						</ul>
-					<h4><a name="Communications Interfaces">2.1.4 Communications Interfaces</a></h4>
-						<p id="categoryHeading">Hypertext Transfer Protocol (HTTP)</p>
-						<li id="subcategoryHeading">HTTP is the underlying protocol used by the World Wide Web, which is a set of rules for transferring files.</li>
-					<h4><a name="Memory">2.1.5 Memory</a></h4>
-						<li id="subcategoryHeading">Is Memory relevant to physics information (the only problem would be exactly how to store all the phyiscs information and how much can be stored in linkage with ones that are related).</li>
-						<li id="subcategoryHeading">Most of the physics information is stored on Github for the time being which serves as a central database that contains all the data relevant to the six categories of physics covered by UPOD.</li>
+
 				<h3><a name="Constraints">2.2 Constraints</a></h3>
 				<li id="categoryHeading">The budget of UPOD is zero, so any software must be free to use.</li>
 		</div>
@@ -173,43 +174,38 @@
 			<h1><a name="Specific Requirements">3. Specific Requirements</a></h1>
 			<div id="mainHeading">
 				<h3><a name="External Interfaces">3.1 External Interfaces</a></h2>
-				<li id="categoryHeading">The physics information and research that is provided by the Physics Team is be used in conjunction with the MathJax and Animations Team to provide creative ways to help the user learn about the physics concepts.</li>
-				<li id="categoryHeading">The MathJax Team uses the physics information collected to showcase sample problems and show equations that the user can see and interact with</li>
-				<li id="categoryHeading">The Animations Team uses the physics information to provide the UPOD website with interactive diagrams and animations for the user to better understand the material.</li>
-				<h3><a name="Functions">3.2 Functions</a></h2>
-				<li id="categoryHeading">The physics information that includes equations and formulas as well as appropriate <br> information pertaining to the physics topic being covered must be correct.</li>
-				<li id="categoryHeading">The information is used by the MathJax and Animations Team to display certain <br> interactive diagrams and sample problems/links to videos that will help the user better <br> understand the topic at hand.</li>
-				<li id="categoryHeading">The equations that is displayed by the MathJax Team must allow users to rearrange <br> equations and formulas and use them in sample problems that are given.</li>
-				<li id="categoryHeading">The units and explanations for each variable for each equation must be displayed and remain <br> visible as to show the user exactly what each formula is related to and how it is useful in <br> the topic they are looking at.</li>
-				<li id="categoryHeading">The animations and videos that are linked to the physics topic covered must be relevant to the <br> physics topic that it is covering.</li>
+				<li id="categoryHeading">The information is used by the MathJax and Animations Team to display certain interactive diagrams and sample problems/links to videos that will help the user better understand the topic at hand.</li>
+				<li id="categoryHeading">The equations that is displayed by the MathJax Team must allow users to rearrange equations and formulas and use them in sample problems that are given.</li>
+				<li id="categoryHeading">The units and explanations for each variable of an equation must be displayed in that specific diagram relevant to the category that the user is interacting with.</li>
+				<li id="categoryHeading">The animations and videos that are linked to the physics topic covered must be relevant to the physics topic that it is covering.</li>
 				<li id="categoryHeading">Links to sample problems must also be visible under 'Suggestions' as to show possible additional help that the user can receive.</li>
 				<h3><a name="Performance Requirements">3.3 Performance Requirements</a></h2>
-				<li id="categoryHeading">The physics research and information collected from the Physics Team is used to as a basis for the whole UPOD website to function around.</li>
+				<li id="categoryHeading">The physics research and information collected from the Physics Team will be used to display certain categories of physics that the UPOD website will showcase.</li>
 				<li id="categoryHeading">Everything from the information projected to the libraries of information available on the UPOD website is supported by the physics information collected.</li>
 				<li id="categoryHeading">The equations and formulas produced by MathJax is focused on mainly presenting the equations and formulas of the physics concepts and topics that is covered by UPOD.</li>
-				<li id="categoryHeading">The Animations and the overall look of the UPOD website is derived from physics information and reflects the whole aspect of the six categories of physics that UPOD is currently covering.</li>
+				<li id="categoryHeading">Many of the interactive diagrams of the UPOD website will be derived from the six categories of physics and will be reflected by the information that is collected</li>
 				<h3><a name="Logical Database Requirements">3.4 Logical Database Requirements</a></h3>
 					<p id="categoryHeading"><span style="text-decoration: underline;">Types of information used by various functions</span></p>
 						<li id="subcategoryHeading">Physics team makes sure that all relevant physics information regarding the six categories of physics covered in the UPOD website is available</li>
 						<li id="subcategoryHeading">The information is used by the MathJax, Animations, and Front End team at all stages of their implementation</li>
-						<li id="subcategoryHeading">The physics information includes interactive diagrams when necessary</li>
+						<li id="subcategoryHeading">The physics information includes interactive diagrams that will help users understand the topics better</li>
 					<p id="categoryHeading"><span style="text-decoration: underline;">Frequency of use</span></p>
 						<li id="subcategoryHeading">The information is used at all stages of the UPOD project</li>
 					<p id="categoryHeading"><span style="text-decoration: underline;">Data entities and their relationships</span></p>
-					<li id="subcategoryHeading">It is crucial that any information regarding one aspect of physics that can be correlated to another aspect of physics can be presented in a way that can link them together</li>
-					<li id="subcategoryHeading">Any information that is relevant to another part of a physic information is important to include to show any similarities or comparisons</li>
+					<li id="subcategoryHeading">Any category of physics that is correlated to another physics category must be shown accordingly, whether it be through article linkages or through information dialogue</li>
 					<p id="categoryHeading"><span style="text-decoration: underline;">Types of Information Used by Various Functions</span></p>
-					<li id="subcategoryHeading">Global variables like constants are important to include (must be able to include all constant variables used) - e.g. Force of gravity (gravity = 9.81 m /s^2) or (e = mc^2)</li>
+					<li id="subcategoryHeading">Global variables and constants must be shown when displaying interactive diagrams - e.g. Force of gravity (gravity = 9.81 m /s^2) or (e = mc^2)</li>
+					<li id="subcategoryHeading"> Interactive diagrams must be display exactly what each global variable and constant represents and how they are derived
 					
 
 				<h3><a name="Software System Attributes">3.5 Software System Attributes</a></h3>
 					<h4><a name="Reliability">3.5.1 Reliability</a></h4>
-						<li id="subcategoryHeading">Database involving physics information must be up to date and include accurate and relevant information to the concept at hand</li>
+						<li id="subcategoryHeading">Any physics concepts explained must be accurate and concise, kept up to date, easy to read, and easy to understand by any user</li>
 						<li id="subcategoryHeading">No duplicate information is stored</li>
 						<li id="subcategoryHeading">The equations regarding the physics information must be correct and relevant to the topic</li>
-						<li id="subcategoryHeading">Any physics concepts explained must be correct and must be concise, easy to read, and easy to understand by any user</li>
+
 					<h4><a name="Availability">3.5.2 Availability</a></h4>
-						<li id="subcategoryHeading">Physics information must be available at all points of the UPOD system in order to ensure that it is easy to take information regarding the physics branch and implement it into the system.</li>
+						<li id="subcategoryHeading">Physics information must be available throughout any articles of the UPOD website in order to ensure that it is easy to take information regarding the physics branch and implement it into the system.</li>
 					<h4><a name="Security">3.5.3 Security</a></h4>
 						<li id="subcategoryHeading">Without appropriate permission and consent from the SQA team, the information regarding the physics information cannot be updated, edited, removed, or added.</li>
 					<h4><a name="Maintainability">3.5.4 Maintainability</a></h4>
@@ -217,7 +213,7 @@
 						<li id="subcategoryHeading">documentation and making sure that information are in correct components of the database ensure that the UPOD website is easy to maintain and can be easily changed in the future.</li>
 				<h3><a name="Organizing the Specific Requirements">3.6 Organizing the Specific Requirements</a></h2>
 					<h4><a name="Functional Hierarchy">3.6.1 Functional Hierarchy</a></h4>
-						<p id="categoryHeading">The six categories of physics will start the hierarchy that narrows into subcategories.</p>
+						<p id="categoryHeading">The six categories of the physics information covered includes a heirarchy of informationt that branches out to more specific subtopics of that topic of physics.</p>
 						
 						<p id="categoryHeading"><span style="text-decoration: underline;">Fundamentals</span></p>
 						<li id="subcategoryHeading">The Particle Model</li>
@@ -339,8 +335,8 @@
 		<div id="mainHeading">
 			<h2><a name="Appendixes">Appendixes</a></h2><br>
 			<li id="categoryHeading">Collected from a wide variety of different sources that have physics information regarding the six categories of physics covered in this website (will be taken down when all the information is taken down)</li>
-			<h2><a name="Index">Index</a></h2><br>
-			<li id="categoryHeading">TBA</li>
+			<li id ="categoryHeading"> TBA - give all appdenxies (or just give old UPOD website 2010)
+
 		</div>
 	
 	</body>
