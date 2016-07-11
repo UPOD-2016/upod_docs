@@ -16,6 +16,10 @@
 #  created_at  :datetime         not null
 #  updated_at  :datetime         not null
 #
+
+#needed for mount_uploader!!
+require 'carrierwave/orm/activerecord'
+
 class Category < ActiveRecord::Base
   mount_uploader :image, ImageUploader
   before_save { self.name = (name.downcase).titleize }
