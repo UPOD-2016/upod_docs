@@ -12,3 +12,7 @@
 !/log/.keep
 /tmp
 .DS_Store
+
+
+#### This drives me crazy when testing on my mac
+/config/database.yml
