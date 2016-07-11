@@ -72,6 +72,9 @@ GEM
       rails (~> 4.2)
       sass-rails (~> 5.0)
       selectize-rails (~> 0.6)
+    administrate-field-image (0.0.2)
+      administrate (>= 0.2.0.rc1, < 0.3.0)
+      rails (~> 4.2)
     annotate (2.7.1)
       activerecord (>= 3.2, < 6.0)
       rake (>= 10.4, < 12.0)
@@ -280,6 +283,7 @@ DEPENDENCIES
   activerecord-session_store!
   acts_as_list
   administrate (~> 0.2.2)
+  administrate-field-image
   annotate
   bootstrap-sass
   bourbon
