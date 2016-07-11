@@ -21,4 +21,9 @@
 #
 class Subcategory < ActiveRecord::Base
   belongs_to :category
+
+  validates :name, presence: true, length: {maximum: 255}
+  validates :description, length: {maximum: 65535}
+  validates :category_id, presence: true
+
 end

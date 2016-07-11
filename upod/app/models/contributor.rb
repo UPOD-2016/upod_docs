@@ -1,5 +1,4 @@
-# A contributor is a user who has edited an article. A contributor has a one-to-one connection
-# to {User} and has a many-to-many connection with {Article}.
+# A contributor is a user who has edited an article.
 # @see User
 #
 # == Schema Information
@@ -18,4 +17,7 @@
 class Contributor < ActiveRecord::Base
   belongs_to :user
   belongs_to :article
+
+  validates :user_id, presence: true
+  validates :article_id, presence: true
 end

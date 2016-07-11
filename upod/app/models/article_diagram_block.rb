@@ -1,6 +1,6 @@
-# ArticleConstantBlock is a more specific {ArticleBlock}.
-# It contains a constant ID which links to a specific constant (eg. gravity).
-# ArticleConstantBlock belongs to Consant and acts as an article block.
+# ArticleDiagramBlock is a more specific {ArticleBlock}.
+# It contains a diagram ID which links to a specific diagram
+# ArticleDigramBlock belongs to {Diagram} and acts as an article block.
 # It inherits ArticleBlock's attributes, methods and validations. As well
 # has a one-to-one connections with {Diagram}.
 # @see Diagram

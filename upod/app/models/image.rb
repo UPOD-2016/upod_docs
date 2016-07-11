@@ -15,4 +15,9 @@
 class Image < ActiveRecord::Base
   has_many :article_image_blocks
   mount_uploader :body, SirTrevorImageUploader
+
+  validates :body, presence: true, length: {maximum: 255}
+
+
+
 end

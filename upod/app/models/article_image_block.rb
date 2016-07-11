@@ -1,4 +1,4 @@
-# ArticleImageBlock is a more specific ArticleBlock.
+# ArticleImageBlock is a more specific {ArticleBlock}.
 # It inherits ArticleBlock's attributes, methods and validations. It also has a
 # one-to-one connection with {Image}
 # @see ArticleBlock

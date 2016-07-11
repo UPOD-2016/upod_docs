@@ -15,4 +15,9 @@
 #  updated_at         :datetime         not null
 #
 class Session < ActiveRecord::Base
+
+  validates :session_id, presence: true
+  validates :data,  length: {maximum: 65535}
+
+
 end
