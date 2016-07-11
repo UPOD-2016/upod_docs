@@ -8,12 +8,12 @@
 #
 # Table name: article_image_blocks
 #
-#  image_id           :integer(4)
-#   - represents the image id of the associated with the block
+#  id         :integer          not null, primary key
+#  image_id   :integer
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
 #
-#  created_at         :datetime         not null
-#  updated_at         :datetime         not null
-#
+
 class ArticleImageBlock < ActiveRecord::Base
   belongs_to :image
   acts_as :article_block

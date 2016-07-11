@@ -10,12 +10,12 @@
 #
 # Table name: article_diagram_blocks
 #
-#  diagram_id         :integer(4)       primary key
-#   - represents the diagram id of the associated with the block
+#  id         :integer          not null, primary key
+#  diagram_id :integer
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
 #
-#  created_at         :datetime         not null
-#  updated_at         :datetime         not null
-#
+
 class ArticleDiagramBlock < ActiveRecord::Base
   belongs_to :diagram
   acts_as :article_block

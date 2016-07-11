@@ -112,14 +112,11 @@
 
 <p>Table name: contributors</p>
 
-<pre class="code ruby"><code class="ruby">user_id          :integer(4)          primary key
- - represents the contributors user id
-
-artcle_id        :integer(4)
- - represents the articles associated with the contiburtor
-
-created_at         :datetime         not null
-updated_at         :datetime         not null</code></pre>
+<pre class="code ruby"><code class="ruby">id         :integer          not null, primary key
+user_id    :integer
+article_id :integer
+created_at :datetime         not null
+updated_at :datetime         not null</code></pre>
 
 
   </div>
@@ -147,7 +144,7 @@ updated_at         :datetime         not null</code></pre>
 </div>
 
       <div id="footer">
-  Generated on Mon Jul 11 00:19:58 2016 by
+  Generated on Mon Jul 11 15:17:15 2016 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.0 (ruby-2.3.1).
 </div>

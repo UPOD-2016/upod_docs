@@ -116,15 +116,9 @@ ArticleBlock has a one-to-one connection with an <span class='object_link'><a hr
 <p>Table name: article_blocks</p>
 
 <pre class="code ruby"><code class="ruby">id           :integer          not null, primary key
- - represents the id of the article block
-
 position     :integer
- - represents the position of the block in the article (eg. first position)
-
 article_id   :integer
- - represents the id of the aricle the block belongs to
-
-actable_id   :integer
+actable_id   :integer          not null
 actable_type :string(255)</code></pre>
 
 
@@ -227,12 +221,12 @@ actable_type :string(255)</code></pre>
       <pre class="lines">
 
 
-38
-39
-40</pre>
+34
+35
+36</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'app/models/article_block.rb', line 38</span>
+      <pre class="code"><span class="info file"># File 'app/models/article_block.rb', line 34</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_slug'>slug</span>
   <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_specific'>specific</span><span class='period'>.</span><span class='id identifier rubyid_class'>class</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='period'>.</span><span class='id identifier rubyid_underscore'>underscore</span><span class='period'>.</span><span class='id identifier rubyid_split'>split</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>article_</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_last'>last</span>
@@ -247,7 +241,7 @@ actable_type :string(255)</code></pre>
 </div>
 
       <div id="footer">
-  Generated on Mon Jul 11 00:19:58 2016 by
+  Generated on Mon Jul 11 15:17:15 2016 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.0 (ruby-2.3.1).
 </div>

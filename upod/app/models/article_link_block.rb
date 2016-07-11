@@ -7,14 +7,9 @@
 #
 # Table name: article_link_blocks
 #
-#  id    :integer          not null, primary key
-#   - represents the id of the link block
-#
-#  source :string(255)     not null
-#   - represents where the video is coming from which is used to construct the URL. (Either youtube or vimeo)
-#
-#  video_id :string        not null
-#   - represents the video id from the source which is used to construct the URL.
+#  id       :integer          not null, primary key
+#  source   :string(255)
+#  video_id :string(255)      not null
 #
 
 class ArticleLinkBlock < ActiveRecord::Base

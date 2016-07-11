@@ -4,7 +4,7 @@
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>
-  Class: SessionDashboard
+  Class: ArticleEquationBlockDashboard
   
     &mdash; Documentation by YARD 0.9.0
   
@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="css/common.css" type="text/css" charset="utf-8" />
 
 <script type="text/javascript" charset="utf-8">
-  pathId = "SessionDashboard";
+  pathId = "ArticleEquationBlockDashboard";
   relpath = '';
 </script>
 
@@ -36,10 +36,10 @@
       <div id="header">
         <div id="menu">
   
-    <a href="_index.html">Index (S)</a> &raquo;
+    <a href="_index.html">Index (A)</a> &raquo;
     
     
-    <span class="title">SessionDashboard</span>
+    <span class="title">ArticleEquationBlockDashboard</span>
   
 </div>
 
@@ -61,7 +61,7 @@
 
       <iframe id="search_frame" src="class_list.html"></iframe>
 
-      <div id="content"><h1>Class: SessionDashboard
+      <div id="content"><h1>Class: ArticleEquationBlockDashboard
   
   
   
@@ -78,7 +78,7 @@
           
             <li class="next">Administrate::BaseDashboard</li>
           
-            <li class="next">SessionDashboard</li>
+            <li class="next">ArticleEquationBlockDashboard</li>
           
         </ul>
         <a href="#" class="inheritanceTree">show all</a>
@@ -98,7 +98,7 @@
   
   <dl>
     <dt>Defined in:</dt>
-    <dd>app/dashboards/session_dashboard.rb</dd>
+    <dd>app/dashboards/article_equation_block_dashboard.rb</dd>
   </dl>
   
 </div>
@@ -127,11 +127,12 @@ dashboard.</p>
 </div>
       </dt>
       <dd><pre class="code"><span class='lbrace'>{</span>
+  <span class='label'>actable:</span> <span class='const'>Field</span><span class='op'>::</span><span class='const'>Polymorphic</span><span class='comma'>,</span>
+  <span class='label'>article:</span> <span class='const'>Field</span><span class='op'>::</span><span class='const'>BelongsTo</span><span class='comma'>,</span>
+  <span class='label'>article_block:</span> <span class='const'>Field</span><span class='op'>::</span><span class='const'>HasOne</span><span class='comma'>,</span>
   <span class='label'>id:</span> <span class='const'>Field</span><span class='op'>::</span><span class='const'>Number</span><span class='comma'>,</span>
-  <span class='label'>session_id:</span> <span class='const'>Field</span><span class='op'>::</span><span class='const'>String</span><span class='comma'>,</span>
-  <span class='label'>data:</span> <span class='const'>Field</span><span class='op'>::</span><span class='const'>Text</span><span class='comma'>,</span>
-  <span class='label'>created_at:</span> <span class='const'>Field</span><span class='op'>::</span><span class='const'>DateTime</span><span class='comma'>,</span>
-  <span class='label'>updated_at:</span> <span class='const'>Field</span><span class='op'>::</span><span class='const'>DateTime</span><span class='comma'>,</span>
+  <span class='label'>equation:</span> <span class='const'>Field</span><span class='op'>::</span><span class='const'>String</span><span class='comma'>,</span>
+  <span class='label'>label:</span> <span class='const'>Field</span><span class='op'>::</span><span class='const'>String</span><span class='comma'>,</span>
 <span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_freeze'>freeze</span></pre></dd>
     
       <dt id="COLLECTION_ATTRIBUTES-constant" class="">COLLECTION_ATTRIBUTES =
@@ -153,10 +154,10 @@ pages. Feel free to add, remove, or rearrange items.</p>
 </div>
       </dt>
       <dd><pre class="code"><span class='lbracket'>[</span>
-  <span class='comment'>#:id,
-</span>  <span class='comment'>#:session_id,
-</span>  <span class='comment'>#:data,
-</span>  <span class='comment'>#:created_at,
+  <span class='symbol'>:id</span><span class='comma'>,</span>
+  <span class='comment'>#:actable,
+</span>  <span class='symbol'>:article</span><span class='comma'>,</span>
+  <span class='comment'>#:article_block,
 </span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_freeze'>freeze</span></pre></dd>
     
       <dt id="SHOW_PAGE_ATTRIBUTES-constant" class="">SHOW_PAGE_ATTRIBUTES =
@@ -175,12 +176,13 @@ model&#39;s show page.</p>
 </div>
       </dt>
       <dd><pre class="code"><span class='lbracket'>[</span>
-  <span class='comment'>#:id,
-</span>  <span class='comment'>#:session_id,
-</span>  <span class='comment'>#:data,
-</span>  <span class='comment'>#:created_at,
-</span>  <span class='comment'>#:updated_at,
-</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_freeze'>freeze</span></pre></dd>
+  <span class='symbol'>:id</span><span class='comma'>,</span>
+  <span class='comment'>#:actable,
+</span>  <span class='symbol'>:equation</span><span class='comma'>,</span>
+  <span class='symbol'>:label</span><span class='comma'>,</span>
+  <span class='symbol'>:article</span><span class='comma'>,</span>
+  <span class='symbol'>:article_block</span><span class='comma'>,</span>
+<span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_freeze'>freeze</span></pre></dd>
     
       <dt id="FORM_ATTRIBUTES-constant" class="">FORM_ATTRIBUTES =
         <div class="docstring">
@@ -198,9 +200,12 @@ model&#39;s form (`new` and `edit`) pages.</p>
 </div>
       </dt>
       <dd><pre class="code"><span class='lbracket'>[</span>
-  <span class='comment'>#:session_id,
-</span>  <span class='comment'>#:data,
-</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_freeze'>freeze</span></pre></dd>
+  <span class='comment'>#:actable,
+</span>  <span class='comment'>#:article,
+</span>  <span class='comment'>#:article_block,
+</span>  <span class='symbol'>:equation</span><span class='comma'>,</span>
+  <span class='symbol'>:label</span><span class='comma'>,</span>
+<span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_freeze'>freeze</span></pre></dd>
     
   </dl>
 
@@ -216,7 +221,7 @@ model&#39;s form (`new` and `edit`) pages.</p>
 </div>
 
       <div id="footer">
-  Generated on Mon Jul 11 15:17:15 2016 by
+  Generated on Mon Jul 11 15:17:16 2016 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.0 (ruby-2.3.1).
 </div>

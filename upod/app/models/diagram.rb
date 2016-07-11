@@ -6,15 +6,13 @@
 #
 # Table name: diagrams
 #
-#  body             :text(65535)          primary key
-#   - represents the diagram
+#  id         :integer          not null, primary key
+#  body       :text(65535)
+#  label      :string(255)
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
 #
-#  label            :string(255)
-#   - represents the label for the diagram
-#
-#  created_at         :datetime         not null
-#  updated_at         :datetime         not null
-#
+
 class Diagram < ActiveRecord::Base
   has_many :article_diagram_blocks
 

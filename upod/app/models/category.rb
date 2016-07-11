@@ -7,15 +7,14 @@
 #
 # Table name: categories
 #
-#  name        :string(255)           primary key
-#   - represents the name of the category
-#
-#  description :string(255)
-#   - represents the description of the category
-#
+#  id          :integer          not null, primary key
+#  name        :string(255)
 #  created_at  :datetime         not null
 #  updated_at  :datetime         not null
+#  description :string(255)
+#  image       :string(255)
 #
+
 class Category < ActiveRecord::Base
   mount_uploader :image, ImageUploader
   before_save { self.name = (name.downcase).titleize }

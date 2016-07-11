@@ -7,15 +7,11 @@
 #
 # Table name: article_equation_blocks
 #
-#  id          :integer          not null, primary key
-#   - represents the id of the equation block
+#  id       :integer          not null, primary key
+#  equation :string(255)
+#  label    :string(255)
 #
-#  equation    :string(255)
-#   - represents the equation stored in the block
-#
-#  description :string(255)
-#   - represents the description of the equation
-#
+
 class ArticleEquationBlock < ActiveRecord::Base
   acts_as :article_block
 

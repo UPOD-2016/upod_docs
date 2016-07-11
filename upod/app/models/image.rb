@@ -6,12 +6,12 @@
 #
 # Table name: images
 #
-#  body             :string(255)          primary key
-#   - represents the image
+#  id         :integer          not null, primary key
+#  body       :string(255)
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
 #
-#  created_at         :datetime         not null
-#  updated_at         :datetime         not null
-#
+
 class Image < ActiveRecord::Base
   has_many :article_image_blocks
   mount_uploader :body, SirTrevorImageUploader

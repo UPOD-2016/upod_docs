@@ -133,6 +133,7 @@ dashboard.</p>
   <span class='label'>created_at:</span> <span class='const'>Field</span><span class='op'>::</span><span class='const'>DateTime</span><span class='comma'>,</span>
   <span class='label'>updated_at:</span> <span class='const'>Field</span><span class='op'>::</span><span class='const'>DateTime</span><span class='comma'>,</span>
   <span class='label'>description:</span> <span class='const'>Field</span><span class='op'>::</span><span class='const'>String</span><span class='comma'>,</span>
+  <span class='label'>image:</span> <span class='const'>Field</span><span class='op'>::</span><span class='const'>CarrierwaveField</span><span class='comma'>,</span>
 <span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_freeze'>freeze</span></pre></dd>
     
       <dt id="COLLECTION_ATTRIBUTES-constant" class="">COLLECTION_ATTRIBUTES =
@@ -154,11 +155,11 @@ pages. Feel free to add, remove, or rearrange items.</p>
 </div>
       </dt>
       <dd><pre class="code"><span class='lbracket'>[</span>
+  <span class='symbol'>:subcategories</span><span class='comma'>,</span>
   <span class='symbol'>:id</span><span class='comma'>,</span>
-  <span class='comment'>#:subcategories,
-</span>  <span class='symbol'>:name</span><span class='comma'>,</span>
-  <span class='comment'>#:created_at,
-</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_freeze'>freeze</span></pre></dd>
+  <span class='symbol'>:name</span><span class='comma'>,</span>
+  <span class='symbol'>:created_at</span><span class='comma'>,</span>
+<span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_freeze'>freeze</span></pre></dd>
     
       <dt id="SHOW_PAGE_ATTRIBUTES-constant" class="">SHOW_PAGE_ATTRIBUTES =
         <div class="docstring">
@@ -176,13 +177,13 @@ model&#39;s show page.</p>
 </div>
       </dt>
       <dd><pre class="code"><span class='lbracket'>[</span>
+  <span class='symbol'>:subcategories</span><span class='comma'>,</span>
   <span class='symbol'>:id</span><span class='comma'>,</span>
   <span class='symbol'>:name</span><span class='comma'>,</span>
+  <span class='symbol'>:created_at</span><span class='comma'>,</span>
+  <span class='symbol'>:updated_at</span><span class='comma'>,</span>
   <span class='symbol'>:description</span><span class='comma'>,</span>
-  <span class='symbol'>:subcategories</span><span class='comma'>,</span>
-  <span class='comment'>#:created_at,
-</span>  <span class='comment'>#:updated_at,
-</span>
+  <span class='symbol'>:image</span><span class='comma'>,</span>
 <span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_freeze'>freeze</span></pre></dd>
     
       <dt id="FORM_ATTRIBUTES-constant" class="">FORM_ATTRIBUTES =
@@ -201,9 +202,10 @@ model&#39;s form (`new` and `edit`) pages.</p>
 </div>
       </dt>
       <dd><pre class="code"><span class='lbracket'>[</span>
+  <span class='symbol'>:subcategories</span><span class='comma'>,</span>
   <span class='symbol'>:name</span><span class='comma'>,</span>
   <span class='symbol'>:description</span><span class='comma'>,</span>
-  <span class='symbol'>:subcategories</span><span class='comma'>,</span>
+  <span class='symbol'>:image</span><span class='comma'>,</span>
 <span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_freeze'>freeze</span></pre></dd>
     
   </dl>
@@ -220,7 +222,7 @@ model&#39;s form (`new` and `edit`) pages.</p>
 </div>
 
       <div id="footer">
-  Generated on Mon Jul 11 00:19:58 2016 by
+  Generated on Mon Jul 11 15:17:15 2016 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.0 (ruby-2.3.1).
 </div>

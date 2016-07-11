@@ -15,16 +15,12 @@
 # Table name: article_blocks
 #
 #  id           :integer          not null, primary key
-#   - represents the id of the article block
-#
 #  position     :integer
-#   - represents the position of the block in the article (eg. first position)
-#
 #  article_id   :integer
-#   - represents the id of the aricle the block belongs to
-#
-#  actable_id   :integer
+#  actable_id   :integer          not null
 #  actable_type :string(255)
+#
+
 class ArticleBlock < ActiveRecord::Base
 
   # sets ArticleBlock to actable

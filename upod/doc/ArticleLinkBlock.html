@@ -114,14 +114,9 @@ inherits ArticleBlock&#39;s attributes, methods and validations.</p>
 
 <p>Table name: article_link_blocks</p>
 
-<pre class="code ruby"><code class="ruby">id    :integer          not null, primary key
- - represents the id of the link block
-
-source :string(255)     not null
- - represents where the video is coming from which is used to construct the URL. (Either youtube or vimeo)
-
-video_id :string        not null
- - represents the video id from the source which is used to construct the URL.</code></pre>
+<pre class="code ruby"><code class="ruby">id       :integer          not null, primary key
+source   :string(255)
+video_id :string(255)      not null</code></pre>
 
 
   </div>
@@ -275,14 +270,14 @@ a valid video_id</p>
       <pre class="lines">
 
 
-43
-44
-45
-46
-47</pre>
+38
+39
+40
+41
+42</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'app/models/article_link_block.rb', line 43</span>
+      <pre class="code"><span class="info file"># File 'app/models/article_link_block.rb', line 38</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_video_id_must_match_pattern'>video_id_must_match_pattern</span>
 	<span class='kw'>if</span> <span class='cvar'>@@SOURCE_PATTERNS</span><span class='period'>.</span><span class='id identifier rubyid_has_key?'>has_key?</span><span class='lparen'>(</span><span class='id identifier rubyid_source'>source</span><span class='rparen'>)</span> <span class='kw'>and</span> <span class='op'>!</span><span class='cvar'>@@SOURCE_PATTERNS</span><span class='lbracket'>[</span><span class='id identifier rubyid_source'>source</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_match'>match</span><span class='lparen'>(</span><span class='id identifier rubyid_video_id'>video_id</span><span class='rparen'>)</span>
@@ -338,14 +333,14 @@ a valid video_id</p>
       <pre class="lines">
 
 
-35
-36
-37
-38
-39</pre>
+30
+31
+32
+33
+34</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'app/models/article_link_block.rb', line 35</span>
+      <pre class="code"><span class="info file"># File 'app/models/article_link_block.rb', line 30</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_video_source_must_be_in_list'>video_source_must_be_in_list</span>
 	<span class='kw'>if</span> <span class='op'>!</span><span class='cvar'>@@SOURCE_PATTERNS</span><span class='period'>.</span><span class='id identifier rubyid_has_key?'>has_key?</span><span class='lparen'>(</span><span class='id identifier rubyid_source'>source</span><span class='rparen'>)</span>
@@ -362,7 +357,7 @@ a valid video_id</p>
 </div>
 
       <div id="footer">
-  Generated on Mon Jul 11 00:19:58 2016 by
+  Generated on Mon Jul 11 15:17:15 2016 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.0 (ruby-2.3.1).
 </div>
