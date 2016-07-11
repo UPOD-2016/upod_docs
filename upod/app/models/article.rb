@@ -18,6 +18,8 @@
 class Article < ActiveRecord::Base
   has_many :blocks, class_name: 'ArticleBlock', foreign_key: :article_id
   has_many :contributions, class_name: 'Contributor', foreign_key: :article_id
+  has_many :categorizations
+  has_many :subcategories, :through => :categorizations
   # This include is defined in the blockable.rb concern. Essentially, it
   # provides a nice interface to interact with the various types of article
   # blocks. Instead of having to use the ArticleTextBlock, you can now use

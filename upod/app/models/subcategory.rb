@@ -17,6 +17,8 @@
 
 class Subcategory < ActiveRecord::Base
   belongs_to :category
+  has_many :categorizations
+  has_many :articles, :through => :categorizations
 
   validates :name, presence: true, length: {maximum: 255}
   validates :description, length: {maximum: 65535}

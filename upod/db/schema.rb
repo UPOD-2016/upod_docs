@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160711003115) do
+ActiveRecord::Schema.define(version: 20160711204025) do
 
   create_table "article_blocks", force: :cascade do |t|
     t.integer "position",     limit: 4
@@ -58,12 +58,26 @@ ActiveRecord::Schema.define(version: 20160711003115) do
     t.datetime "updated_at",             null: false
   end
 
+  create_table "catagorizations", force: :cascade do |t|
+    t.integer  "article_id",     limit: 4
+    t.integer  "subcatagory_id", limit: 4
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
+  end
+
   create_table "categories", force: :cascade do |t|
     t.string   "name",        limit: 255
     t.datetime "created_at",              null: false
     t.datetime "updated_at",              null: false
     t.string   "description", limit: 255
     t.string   "image",       limit: 255
+  end
+
+  create_table "categorizations", force: :cascade do |t|
+    t.integer  "article_id",     limit: 4
+    t.integer  "subcategory_id", limit: 4
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
   end
 
   create_table "constants", force: :cascade do |t|

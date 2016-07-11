@@ -15,9 +15,9 @@
    onload="init()"
    id="svg2"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="Concave.svg">
+   sodipodi:docname="convex.svg">
   <metadata
-     id="metadata51">
+     id="metadata52">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
@@ -28,7 +28,7 @@
     </rdf:RDF>
   </metadata>
   <defs
-     id="defs49" />
+     id="defs50" />
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -40,34 +40,42 @@
      inkscape:pageshadow="2"
      inkscape:window-width="1280"
      inkscape:window-height="657"
-     id="namedview47"
+     id="namedview48"
      showgrid="false"
-     inkscape:zoom="0.148"
-     inkscape:cx="1344.1826"
-     inkscape:cy="1968.4388"
+     inkscape:zoom="0.20930361"
+     inkscape:cx="1266.8345"
+     inkscape:cy="2321.0903"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg2" />
   <script
-     xlink:href="concave_func.js"
-     id="script4"
-     type="text/ecmascript" />
+     xlink:href="convex_func.js"
+     type="text/ecmascript"
+     id="script4" />
+	 
+	 
+	 
+	 
+	 
+	 <symbol id="convex_mirror" overflow="visible">
+	 
+	 
   <circle
      fill="none"
      stroke="black"
      stroke-width="20"
-     cx="1600"
+     cx="3500"
      cy="1000"
      r="2000"
-     id="circle6" />
+     id="circle46" />
   <ellipse
      style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     id="path4134"
-     cx="1212.1831"
-     cy="987.71246"
-     rx="2295.0667"
-     ry="2375.8789" />
+     id="path4133"
+     cx="3644.6301"
+     cy="1003.8751"
+     rx="1979.899"
+     ry="2262.7419" />
   <symbol
      id="symbol1"
      overflow="visible">
@@ -77,7 +85,7 @@
        cx="0"
        cy="100"
        r="100"
-       id="circle9" />
+       id="circle7" />
     <line
        x1="0"
        x2="0"
@@ -128,13 +136,13 @@
        cx="0"
        cy="700"
        r="100"
-       id="circle17" />
+       id="circle15" />
     <line
        x1="0"
        x2="0"
        y1="600"
        y2="300"
-       id="line19"
+       id="line17"
        stroke="black"
        stroke-width="5" />
     <line
@@ -142,7 +150,7 @@
        x2="-200"
        y1="550"
        y2="450"
-       id="line21"
+       id="line19"
        stroke="black"
        stroke-width="5" />
     <line
@@ -150,7 +158,7 @@
        x2="200"
        y1="550"
        y2="450"
-       id="line23"
+       id="line21"
        stroke="black"
        stroke-width="5" />
     <line
@@ -158,7 +166,7 @@
        x2="-100"
        y1="300"
        y2="0"
-       id="line25"
+       id="line23"
        stroke="black"
        stroke-width="5" />
     <line
@@ -166,37 +174,14 @@
        x2="100"
        y1="300"
        y2="0"
-       id="line27"
+       id="line25"
        stroke="black"
        stroke-width="5" />
   </symbol>
- 
-  <polyline
-     points="500 160 , 580 200 , 500 240 "
-     style="fill:red;stroke:black;stroke-opacity:1"
-     id="polyline24" />
-  <symbol
-     id="imagelineFlash"
-     overflow="visible">
-    <polyline
-       points="0 0 80 -50 80 50 "
-       style="fill:blue;stroke:black;stroke-opacity:1"
-       id="polyline27" />
-  </symbol>
-  
-  
-  
-   <path
-     style="fill:red;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     d="m 3140.6083,397.76068 55.5338,61.45918 1.0876,-3.37838 -99.4529,34.91134 z"
-      />
-  
-  
-  
   <line
      id="ground"
      fill="black"
-     x1="0"
+     x1="-800"
      x2="4000"
      y1="1000"
      y2="1000"
@@ -205,86 +190,216 @@
   <line
      id="roof"
      fill="black"
-     x1="0"
-     x2="3430"
+     x1="-800"
+     x2="1500"
      y1="200"
      y2="200"
      stroke="red"
      stroke-width="3" />
-  <line
-     id="PathObject"
-     x1="1600"
-     y1="200"
-     x2="3430"
-     y2="1800"
-     stroke-width="3"
-     stroke="blue"
-     fill="black" />
 	<line
-     id="Path_C"
-     x1="1600"
-     y1="200"
-     x2="1600"
-     y2="1800"
-     stroke-width="3"
+     id="contimageroof"
+     fill="black"
+     x1="1500"
+     x2="3000"
+     y1="600"
+     y2="600"
      stroke="blue"
-     fill="black" />
+	 stroke-dasharray="20"	 
+     stroke-width="5" />
+	 
+	  <line
+     id="imageroof"
+     fill="black"
+     x1="-500"
+     x2="1500"
+     y1="600"
+     y2="600"
+	 stroke="blue"
+     stroke-width="5"
+	 />
+	
+  <polyline
+     points="0 150 80 200  0 250  "
+     style="stroke: red; stroke-width: 3; fill:red; "
+     id="polyline29" />
   <line
      id="PathImage"
      fill="black"
-     x1="15"
-     y1="3185.79224973"
-     x2="3430"
-     y2="200"
-     stroke="red"
-     stroke-width="3" />
-  <line
-     id="ground2"
-     fill="black"
-     x1="0"
-     x2="4000"
-     y1="1800"
-     y2="1800"
-     stroke="blue"
-     stroke-width="3" />
-  <line
-     id="vertical"
-     fill="black"
-     x1="3430"
-     x2="3430"
-     y1="0"
-     y2="4000"
-     stroke="black"
+     x1="1500"
+     y1="200"
+     x2="2500"
+     y2="1000"
      stroke-dasharray="20"
+     stroke="red"
      stroke-width="5" />
+  <line
+     id="ContPathImage"
+     fill="black"
+     x1="1500"
+     y1="200"
+     x2="850"
+     y2="-300"
+     stroke="red"
+     stroke-width="5" />
+  <line
+     id="vertical line"
+     fill="black"
+     x1="1500"
+     x2="1500"
+     y1="-500"
+     y2="3000"
+     stroke-dasharray="20"
+     stroke="black"
+     stroke-width="3" />
+  <line
+     id="PathObject1"
+     fill="black"
+     x1="500"
+     y1="200"
+     x2="1500"
+     y2="1000"
+     stroke="black"
+     stroke-width="3" />
   <circle
      id="Focalpoint"
      fill="black"
-     cx="2515"
+     cx="2500"
      cy="1000"
      r="20" />
-	 
-	 
   <text
-     x="2600"
+     x="2485"
      y="1100"
      font-family="Verdana"
      font-size="70"
      fill="red"
-     id="text40">F</text>
+     id="text38">F</text>
   <circle
      id="Centerpoint"
      fill="black"
-     cx="1600"
+     cx="3500"
      cy="1000"
      r="20" />
   <text
-     x="1600"
+     x="3485"
      y="1100"
      font-family="Verdana"
      font-size="70"
      fill="red"
-     id="text43">C</text>
+     id="text41">C</text>
+  <text
+     x="-300"
+     y="1500"
+     font-size="100"
+     fill="red"
+     id="text33">di =</text>
+  <text
+     id="di_pos"
+     x="-100"
+     y="1500"
+     font-size="100"
+     fill="red">-500</text>
+  <text
+     x="-300"
+     y="1600"
+     font-size="100"
+     fill="red"
+     id="text36">d0 =</text>
+  <text
+     id="d0_pos"
+     x="-100"
+     y="1600"
+     font-size="100"
+     fill="red"> 1000</text>
+  <text
+     x="-300"
+     y="1700"
+     font-size="100"
+     fill="red"
+     id="text39">F = -1000</text>
+  <text
+     x="-300"
+     y="1800"
+     font-size="100"
+     fill="red"
+     id="text42">C = -2000</text>
+  <line
+     id="di_line"
+     x1="2000"
+     x2="1500"
+     y1="1040"
+     y2="1040"
+     stroke="blue"
+     stroke-width="5" />
+  <symbol
+     id="diRightFlash"
+     overflow="visible">
+    <polyline points="0 0 , 60 30 , 0 60 "
+       style="fill:#0000ff;stroke:black;stroke-opacity:1"
+       />
+  </symbol>
+  
+  
+  <symbol
+     id="diLeftFlash"
+     overflow="visible">
+    <polyline points="60 60 0 30 , 60 0 "
+       style="fill:#0000ff;stroke:black;stroke-opacity:1"
+       />
+  </symbol>
+  <symbol
+     id="imageroofFlash"
+     overflow="visible">
+    <polyline points="60 60 0 30 , 60 0 "
+       style="fill:blue;stroke:black;stroke-opacity:1"
+       />
+  </symbol>
+  
+  
+	<symbol
+     id="d0RightFlash"
+     overflow="visible">
+    <polyline points="0 0 , 60 30 , 0 60 "
+       style="fill:orange;stroke:black;stroke-opacity:1"
+       />
+  </symbol>
+	 
+	<symbol
+     id="d0LeftFlash"
+     overflow="visible">
+    <polyline points="60 60 0 30 , 60 0 "
+       style="fill:orange;stroke:black;stroke-opacity:1"
+       />
+  </symbol> 
+	 
+	 
+  <line
+     id="d0_line"
+     x1="500"
+     x2="1500"
+     y1="1040"
+     y2="1040"
+     stroke="orange"
+     stroke-width="5" />
+	 
+	 <text
+     x="1200"
+     y="1150"
+     font-size="100"
+     fill="black"
+     id="text33">d0</text>
+	 
+	  <text
+     x="1650"
+     y="1150"
+     font-size="100"
+     fill="black"
+     id="text33">di</text>
+	 
+	 
+	  <polyline points="1000 -120 , 1000 -185 , 1060 -200 "
+       style="fill:red;stroke:black;stroke-opacity:1"
+       />
+  
   <!-- 
     Circle of the mirror:
     cx="1600"
@@ -301,25 +416,74 @@ hi=500      //the height of the image( I did this by scaling)
 The reason that I put x=2200 and y=1600 is that after sacling the x and y also changes so they will become their original values: x=1375 and y=1500
  transform="scale(0.625,0.625)"
  
- <circle fill="none" stroke="black" stroke-width="20" cx="1600" cy="1000" r="2000" />
-  
+ 
+ <use
+     xlink:href="#convex_mirror"
+     x="500"
+     y="500"
+     id="convex_mirror" />
+	 
+	 
  -->
   <use
-     xlink:href="#symbol2"
-     x="1600"
-     y="1000"
+     xlink:href="#symbol1"
+     x="4000"
+     y="1200"
+     transform="scale(0.5)"
      id="image" />
   <use
      xlink:href="#symbol1"
-     x="1600"
+     x="500"
      y="200"
      transform="translate(0)"
      id="object" />
+	 
   <use
-     xlink:href="#imagelineFlash"
-     x="550"
-     y="1800"
-     id="imageline_Flash" />
+     xlink:href="#diRightFlash"
+     x="2000"
+     y="1010"
+     id="di_right_flash"
+     />
+	 
+	 <use
+     xlink:href="#diLeftFlash"
+     x="1500"
+     y="1010"
+     id="di_left_flash"
+     />
+	 
+	 <use
+     xlink:href="#d0RightFlash"
+     x="1440"
+     y="1010"
+     id="d0_right_flash"
+     />
+	 
+	 
+	 <use
+     xlink:href="#imageroofFlash"
+     x="0"
+     y="570"
+
+     id="imageroof_flash"
+     />
 	
+	 
+	  <use
+     xlink:href="#d0LeftFlash"
+     x="500"
+     y="1010"
+     id="d0_left_flash"
+     />
+	 
+	 </symbol>
+ 
+ 
+ <use
+     xlink:href="#convex_mirror"
+     x="500"
+     y="500"
+     id="convex_mirror" />
+ 
  
 </svg>
