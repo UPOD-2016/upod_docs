@@ -103,7 +103,54 @@
   
 </div>
 
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>User contains the information related to moderators and admins. It utilizes
+LDAP to gather information from Laurier&#39;s AD. Laurier&#39;s AD hanldes
+the authentication User&#39;s has many contributions</p>
 
+<h2 id="label-Schema+Information">Schema Information</h2>
+
+<p>Table name: users</p>
+
+<pre class="code ruby"><code class="ruby">email                      :string(255)          not null, primary key
+ - represents the user&#39;s email
+
+encrypted_password         :string(255)          not null, primary key
+ - represents the user&#39;s encrypted password
+
+reset_password_token       :string(255)
+ - represents the user&#39;s reset password toekn
+
+reset_password_sent_at     :datetime
+ - represents the time when the reset password token was sent
+
+sign_in_count              :integer(4)       not null
+ - represents the # of times the user has signe din
+
+current_sign_in_at         :datetime
+last_sign_in_at            :datetime
+current_sign_in_ip         :string(255)
+last_sign_in_ip            :string(255)
+remember_created_at        :datetime
+created_at                 :datetime         not null
+updated_at                 :datetime         not null</code></pre>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><span class='object_link'><a href="Contributor.html" title="Contributor (class)">Contributor</a></span></li>
+    
+  </ul>
+
+</div>
 
 
 
@@ -159,18 +206,35 @@
   
 
   
-</h3><table class="source_code">
+</h3><div class="docstring">
+  <div class="discussion">
+    
+  <div class="note todo">
+    <strong>TODO:</strong>
+    <div class='inline'>
+<p>document method</p>
+</div>
+  </div>
+
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-7
-8
-9</pre>
+40
+41
+42</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'app/models/user.rb', line 7</span>
+      <pre class="code"><span class="info file"># File 'app/models/user.rb', line 40</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_ldap_before_save'>ldap_before_save</span>
  <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_email'>email</span> <span class='op'>=</span> <span class='const'>Devise</span><span class='op'>::</span><span class='const'>LDAP</span><span class='op'>::</span><span class='const'>Adapter</span><span class='period'>.</span><span class='id identifier rubyid_get_ldap_param'>get_ldap_param</span><span class='lparen'>(</span><span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_username'>username</span><span class='comma'>,</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>mail</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_first'>first</span>
@@ -185,7 +249,7 @@
 </div>
 
       <div id="footer">
-  Generated on Sun Jul 10 21:33:33 2016 by
+  Generated on Mon Jul 11 00:19:58 2016 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.0 (ruby-2.3.1).
 </div>

@@ -1,5 +1,5 @@
 # ArticleTestBlock is a more specific {ArticleBlock}.
-# It contains an id and the body.. ArticleTextBlock acts as an article block
+# It contains an id and the body. ArticleTextBlock acts as an article block
 # It inherits ArticleBlock's attributes, methods and validations.
 # The body of the text block is {Searchable}
 # @see ArticleBlock

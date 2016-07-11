@@ -103,7 +103,45 @@
   
 </div>
 
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>SubCategories have a one-to-one connection with a category. Categories can
+have multiple subcategories. Articles fall under subcategories and
+categories for ease of searching for them and better organization of the
+articles.</p>
 
+<h2 id="label-Schema+Information">Schema Information</h2>
+
+<p>Table name: subcategories</p>
+
+<pre class="code ruby"><code class="ruby">name        :string(255)      primary key
+ - represents the name of the subcategory
+
+description :text(65535)
+ - represents the description of the subcategory</code></pre>
+
+<p>category_id  :integer(4)</p>
+
+<pre class="code ruby"><code class="ruby"> - represents the id of the category that the subcategory belongs to.
+
+created_at  :datetime         not null
+updated_at  :datetime         not null</code></pre>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><span class='object_link'><a href="Category.html" title="Category (class)">Category</a></span></li>
+    
+  </ul>
+
+</div>
 
 
 
@@ -116,7 +154,7 @@
 </div>
 
       <div id="footer">
-  Generated on Sun Jul 10 21:33:33 2016 by
+  Generated on Mon Jul 11 00:19:58 2016 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.0 (ruby-2.3.1).
 </div>

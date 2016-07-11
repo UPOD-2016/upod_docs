@@ -1,6 +1,6 @@
 # A constant is a non-changing value. In physics, for example, gravity
 # is definited as 9.8m/s^2. Each constant can be reused and therefore
-# each constant can have many {ArticleConstantBlock} Each constant has an id, name, description and value
+# each constant can have many {ArticleConstantBlock}. Each constant has an id, name, description and value
 # @see ArticleConstantBlock
 #
 # == Schema Information

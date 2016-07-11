@@ -103,7 +103,38 @@
   
 </div>
 
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>A contributor is a user who has edited an article.</p>
 
+<h2 id="label-Schema+Information">Schema Information</h2>
+
+<p>Table name: contributors</p>
+
+<pre class="code ruby"><code class="ruby">user_id          :integer(4)          primary key
+ - represents the contributors user id
+
+artcle_id        :integer(4)
+ - represents the articles associated with the contiburtor
+
+created_at         :datetime         not null
+updated_at         :datetime         not null</code></pre>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><span class='object_link'><a href="User.html" title="User (class)">User</a></span></li>
+    
+  </ul>
+
+</div>
 
 
 
@@ -116,7 +147,7 @@
 </div>
 
       <div id="footer">
-  Generated on Sun Jul 10 21:33:33 2016 by
+  Generated on Mon Jul 11 00:19:58 2016 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.0 (ruby-2.3.1).
 </div>

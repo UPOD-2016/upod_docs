@@ -103,7 +103,32 @@
   
 </div>
 
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>Sessions contains the data related to any active sessions of the site. It
+contains the session ID and any required data.</p>
 
+<h2 id="label-Schema+Information">Schema Information</h2>
+
+<p>Table name: sessions</p>
+
+<pre class="code ruby"><code class="ruby">session_id         :integer(4)       not null, primary key
+ - represents the diagram id of the associated with the block
+
+data                :text(65535)
+ - represents the session data
+
+created_at         :datetime         not null
+updated_at         :datetime         not null</code></pre>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
 
 
 
@@ -116,7 +141,7 @@
 </div>
 
       <div id="footer">
-  Generated on Sun Jul 10 21:33:33 2016 by
+  Generated on Mon Jul 11 00:19:58 2016 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.0 (ruby-2.3.1).
 </div>

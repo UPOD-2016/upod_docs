@@ -1,3 +1,21 @@
+# Categories have many subcategories. These categories and Subcategories are
+# the organization of all the articles. Articles are sorted under categories
+# and subcategories.
+# @see Subcategory
+#
+# == Schema Information
+#
+# Table name: categories
+#
+#  name        :string(255)           primary key
+#   - represents the name of the category
+#
+#  description :string(255)
+#   - represents the description of the category
+#
+#  created_at  :datetime         not null
+#  updated_at  :datetime         not null
+#
 class Category < ActiveRecord::Base
   mount_uploader :image, ImageUploader
   before_save { self.name = (name.downcase).titleize }
