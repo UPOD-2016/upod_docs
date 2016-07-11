@@ -8,6 +8,7 @@ Things you may want to cover:
 * Ruby version
 
 * System dependencies
+  -Default Vagrant package Michael has provided does not have ImageMagick installed. To install: sudo apt-get install imagemagick
 
 * Configuration
 

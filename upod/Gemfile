@@ -52,6 +52,7 @@ gem "rails-erd"
 
 #Use Administrate for admin panel
 gem "administrate", "~> 0.2.2"
+gem "administrate-field-image"
 gem "bourbon"
 
 gem 'carrierwave'

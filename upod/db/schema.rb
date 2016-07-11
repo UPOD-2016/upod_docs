@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160709181328) do
+ActiveRecord::Schema.define(version: 20160711003115) do
 
   create_table "article_blocks", force: :cascade do |t|
     t.integer "position",     limit: 4
@@ -63,6 +63,7 @@ ActiveRecord::Schema.define(version: 20160709181328) do
     t.datetime "created_at",              null: false
     t.datetime "updated_at",              null: false
     t.string   "description", limit: 255
+    t.string   "image",       limit: 255
   end
 
   create_table "constants", force: :cascade do |t|
