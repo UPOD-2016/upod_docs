@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="100%"
+   height="100%"
+   version="1.1"
+   viewBox="0 0 4000 3000"
+   onload="init()"
+   id="svg2"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="converging_lense.svg">
+  
+  <script
+     xlink:href="converging_func.js"
+     type="text/ecmascript"
+     id="script4" />
+	 
+	<symbol id="Converging_Lense" overflow="visible">
+	
+  <symbol
+     id="symbol1"
+     overflow="visible">
+    <circle
+       fill="green"
+       stroke="black"
+       cx="0"
+       cy="100"
+       r="100"
+       id="circle9" />
+    <line
+       x1="0"
+       x2="0"
+       y1="200"
+       y2="500"
+       id="body"
+       stroke="black"
+       stroke-width="5" />
+    <line
+       x1="0"
+       x2="-200"
+       y1="250"
+       y2="350"
+       id="lefthand"
+       stroke="black"
+       stroke-width="5" />
+    <line
+       x1="0"
+       x2="200"
+       y1="250"
+       y2="350"
+       id="righthand"
+       stroke="black"
+       stroke-width="5" />
+    <line
+       x1="0"
+       x2="-100"
+       y1="500"
+       y2="800"
+       id="leftleg"
+       stroke="black"
+       stroke-width="5" />
+    <line
+       x1="0"
+       x2="100"
+       y1="500"
+       y2="800"
+       id="rightleg"
+       stroke="black"
+       stroke-width="5" />
+  </symbol>
+  <symbol
+     id="symbol2"
+     overflow="visible">
+    <circle
+       fill="green"
+       stroke="black"
+       cx="0"
+       cy="700"
+       r="100"
+       id="circle17" />
+    <line
+       x1="0"
+       x2="0"
+       y1="600"
+       y2="300"
+       id="line19"
+       stroke="black"
+       stroke-width="5" />
+    <line
+       x1="0"
+       x2="-200"
+       y1="550"
+       y2="450"
+       id="line21"
+       stroke="black"
+       stroke-width="5" />
+    <line
+       x1="0"
+       x2="200"
+       y1="550"
+       y2="450"
+       id="line23"
+       stroke="black"
+       stroke-width="5" />
+    <line
+       x1="0"
+       x2="-100"
+       y1="300"
+       y2="0"
+       id="line25"
+       stroke="black"
+       stroke-width="5" />
+    <line
+       x1="0"
+       x2="100"
+       y1="300"
+       y2="0"
+       id="line27"
+       stroke="black"
+       stroke-width="5" />
+  </symbol>
+  <line
+     id="ground"
+     fill="black"
+     x1="-1000"
+     x2="4000"
+     y1="1000"
+     y2="1000"
+     stroke="black"
+     stroke-width="3" />
+  <line
+     id="roof"
+     fill="black"
+     x1="0"
+     x2="2000"
+     y1="200"
+     y2="200"
+     stroke="red"
+     stroke-width="3" />
+  <line
+     id="PathImage"
+     fill="black"
+     x1="2000"
+     x2="3000"
+     y1="200"
+     y2="1800"
+     stroke="red"
+     stroke-width="3" />
+  <line
+     id="PathObject"
+     x1="1000"
+     y1="200"
+     x2="3000"
+     y2="1800"
+     stroke-width="3"
+     stroke="blue"
+     fill="black" />
+  <polyline
+     points="1500 170 , 1580 200 , 1500 230  "
+     style="fill:red;stroke:black;stroke-opacity:1"
+     id="polyline22" />
+	 
+	<line
+     id="PathObject2"
+     x1="1000"
+     y1="200"
+     x2="2000"
+     y2="1800"
+     stroke-width="5"
+     stroke="orange"
+     fill="black" /> 
+	 
+  <line
+     id="ground2"
+     fill="black"
+     x1="2000"
+     x2="4000"
+     y1="1800"
+     y2="1800"
+     stroke="orange"
+     stroke-width="5" />
+	 
+	<symbol id= "image_Flash" overflow="visible"> 
+	  <polyline
+     points="0 -30 , 80 0 , 0 30  "
+     style="fill:orange;stroke:black;stroke-opacity:1"
+     id="polyline22" />
+	</symbol>
+	
+	 
+  <line
+     id="vertical"
+     fill="black"
+     x1="2000"
+     x2="2000"
+     y1="-200"
+     y2="4000"
+     stroke="black"
+     stroke-dasharray="20"
+     stroke-width="5" />
+  <circle
+     id="Focalpoint2"
+     fill="black"
+     cx="2500"
+     cy="1000"
+     r="20" />
+  <circle
+     id="Focalpoint"
+     fill="black"
+     cx="1500"
+     cy="1000"
+     r="20" />
+  <text
+     x="2510"
+     y="1100"
+     font-family="Verdana"
+     font-size="70"
+     fill="red"
+     id="text40">F</text>
+  <text
+     x="1510"
+     y="1100"
+     font-family="Verdana"
+     font-size="70"
+     fill="red"
+     id="text29">F</text>
+  <circle
+     id="Centerpoint"
+     fill="black"
+     cx="3000"
+     cy="1000"
+     r="20" />
+  <circle
+     id="circle32"
+     fill="black"
+     cx="1000"
+     cy="1000"
+     r="20" />
+  <text
+     x="3010"
+     y="1100"
+     font-family="Verdana"
+     font-size="70"
+     fill="red"
+     id="text43">C</text>
+  <text
+     x="1010"
+     y="1100"
+     font-family="Verdana"
+     font-size="70"
+     fill="red"
+     id="text35">C</text>
+  <!-- 
+    Circle of the mirror:
+    cx="1600"
+    cy="1000"
+    r="2000"
+    -->
+  <!--
+d0=2600     //the distance of object from the mirror
+The distance of object from origin: 400
+di=1625     //the distance of image from the mirror
+The distance of object from origin: 1375
+h0=800      //the height of the object
+hi=500      //the height of the image( I did this by scaling)
+The reason that I put x=2200 and y=1600 is that after sacling the x and y also changes so they will become their original values: x=1375 and y=1500
+ transform="scale(0.625,0.625)"
+ 
+ <circle fill="none" stroke="black" stroke-width="20" cx="1600" cy="1000" r="2000" />
+  
+ -->
+  <use
+     xlink:href="#symbol2"
+     x="3000"
+     y="1000"
+     id="image" />
+  <use
+     xlink:href="#symbol1"
+     x="1000"
+     y="200"
+     transform="translate(0)"
+     id="object" />
+  <use
+     xlink:href="#image_Flash"
+     x="2500"
+     y="1800"
+     id="imageFlash" />
+  <use
+     xlink:href="#concave_mirror"
+     x="100"
+     y="400"
+     id="use40" />
+  <ellipse
+     style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:7.74393702;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="path5929"
+     cx="1997.099"
+     cy="1406.6208"
+     rx="52.763744"
+     ry="1400.5122" />
+	 
+	 </symbol>
+	 
+	 <use
+     xlink:href="#Converging_Lense"
+     x="200"
+     y="150"
+     id="converging_lense" />
+	 
+</svg>
