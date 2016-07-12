@@ -33,7 +33,6 @@ class Article < ActiveRecord::Base
 # @todo complete image handling
   def self.create_from_sir_trevor sir_trevor_content
     data = JSON.parse(sir_trevor_content)['data']
-
     # If there are no blocks provided, we have to throw an error
     return if data.empty?
 
@@ -48,7 +47,9 @@ class Article < ActiveRecord::Base
         article.create_image_block(image: Image.find(block['data']['id']))
       when :video
 		    article.create_link_block(source: block['data']['source'], video_id: block['data']['remote_id'])
-	    end
+	  when :equation
+			article.create_equation_block(equation: block['data']['equation'], label: block['data']['label'])
+	  end
     end
 
     article
