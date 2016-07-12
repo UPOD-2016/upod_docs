@@ -1,6 +1,9 @@
 	var t=document.getElementById("top");
 	var b=document.getElementById("bottom");
 	var a=document.getElementById("arrow");
+	var distance=document.getElementById("dis");
+	var potential=document.getElementById("pe");
+	var k=document.getElementById("sfc");
     var position = 278;
     var tracker = 0;
 	
@@ -13,6 +16,7 @@ function stretch(){
 	b.setAttribute("x1", position);
 	t.setAttribute("x2", position);
     a.transform.baseVal.getItem(0).setTranslate(tracker, 0);
+    update();
 	};
 	
 	
@@ -25,6 +29,18 @@ function letgo(){
 	b.setAttribute("x1", position);
 	t.setAttribute("x2", position);
 	a.transform.baseVal.getItem(0).setTranslate(tracker, 0);
-
+    update();
 	};
+	
+function update(){
+
+    distance.textContent = tracker;
+    calculate();
+};
+
+function calculate(){
+    var potential_energy= (1/2)*tracker*k.textContent*k.textContent;
+    potential.textContent = potential_energy;
+
+};
 	
