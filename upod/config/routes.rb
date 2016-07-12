@@ -8,7 +8,7 @@ Rails.application.routes.draw do
     resources :users
     resources :categories
     resources :subcategories
-    resources :categorizations
+#resources :categorizations
 #resources :article_text_blocks
 #resources :article_blocks
 #resources :article_constant_blocks
