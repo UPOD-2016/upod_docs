@@ -73,18 +73,39 @@
 				
 				if (cont){
 					
+				var FToPole=3430-2515	  //=925   the distance from F to pole
+				var CToPole=3430-1600     //=1830  the distance from c to pole
+				console.log("m: "+((CToPole*(hi)/(CToPole-di))));
+				console.log("den: "+(CToPole-di));
+				if (di==CToPole){
+					lineImage.setAttribute("y2",3000);      
 					
-				lineImage.setAttribute("y1",Hground+(2500*hi/(di-925))); 
-				lineImage.setAttribute("y2", y_Obj);
+				}
+				else if (di<CToPole){
+					line_C.setAttribute("y2", Hground+(CToPole*(hi)/(CToPole-di)));
+					line_C.setAttribute("y1", y_Obj);
+					line_C.setAttribute("x1", n);
+					console.log("di<CToPole");
+				}
+				else if(di>CToPole){
+					line_C.setAttribute("y2", Hground+(CToPole*(hi)/(CToPole-di)));
+					line_C.setAttribute("y1", (Hground)+h0*NewRatio);
+					line_C.setAttribute("x1", s);
+					console.log("di>CToPole");
+				}
+				
 				lineImage.setAttribute("x1",15 );
+				lineImage.setAttribute("y1",Hground+(2500*hi/(di-FToPole)));       //2500 is the distance from x=15 to x=2515 , the focal point
+				lineImage.setAttribute("y2", y_Obj);
 				
 				lineObj.setAttribute("x1",n);
 				lineObj.setAttribute("x2", pole);
 				lineObj.setAttribute("y2",Hground+hi);
-				line_C.setAttribute("y2", 1000+(1830*(hi)/(1830-di)));
 				
-				line_C.setAttribute("x1", n);
+				
+				
 				line_C.setAttribute("x2", pole);
+				
 				ground2.setAttribute("y1",((Hground)+h0*NewRatio));
 				ground2.setAttribute("y2",((Hground)+h0*NewRatio));
 				
@@ -117,7 +138,6 @@
 				//ball.setAttribute("cx",evt.clientX);
 				
 				
-				//objline_Flash.setAttribute("x",500);
 				
 				
 				var x1 = lineImage.getAttribute("x1");

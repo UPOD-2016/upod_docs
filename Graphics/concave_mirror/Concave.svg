@@ -53,6 +53,9 @@
      xlink:href="concave_func.js"
      id="script4"
      type="text/ecmascript" />
+	 
+	 
+	 <symbol id="concave_mirror" overflow="visible">
   <circle
      fill="none"
      stroke="black"
@@ -320,6 +323,14 @@ The reason that I put x=2200 and y=1600 is that after sacling the x and y also c
      x="550"
      y="1800"
      id="imageline_Flash" />
+	 
+	</symbol>
+	
+	<use
+	xlink:href="#concave_mirror"
+	x="100"
+	y="400"
+	/>
 	
  
 </svg>
