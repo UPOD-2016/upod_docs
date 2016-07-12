@@ -1,35 +1,12 @@
-<style>
-  .button {
-  fill: LightGrey ;
-  stroke: Silver;
-  }
-
-  .button:hover {
-  cursor: pointer;
-  }
-
-  .button:active {
-  fill: DarkGrey;
-  stroke: black;
-  }
-
-  .textSmall {
-   font-family: sans-serif;
-   font-size: 9pt;
-   font-weight: bold;
-   fill: black;
-   stroke: none;
-  }
-
-  .curve {
-}
-</style>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
 <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
      xmlns:xlink="http://www.w3.org/1999/xlink"
      width="1200px" height="600px" xml:space="preserve" onload="calculate();">
 
      <!--Grid Lines -->
-     
+
      <g stroke="black" opacity="0.5">
        <!--Vertical Lines -->
        <line x1="150" y1="500" x2="150" y2="200"/>
@@ -53,7 +30,7 @@
        <line x1="1050" y1="500" x2="1050" y2="200"/>
        <line x1="1100" y1="500" x2="1100" y2="200"/>
        <line x1="1150" y1="500" x2="1150" y2="200"/>
-       
+
        <!--Horizontal Lines -->
        <line x1="100" y1="450" x2="1150" y2="450" />
        <line x1="100" y1="400" x2="1150" y2="400" />
@@ -95,7 +72,7 @@
 <text x="75" y="250" font-family="'Arial'" font-size="12">250</text>
 <text x="75" y="200" font-family="'Arial'" font-size="12">300</text>
 
-       
+
      </g>
      <line id="base" x1="100" y1="500" x2="1150" y2="500" stroke="black" />
      <line id="yaxis" x1="100" y1="500" x2="100" y2="200" stroke="black"/>
@@ -128,9 +105,9 @@
         class="button"/>
         <text class="textSmall" style="text-anchor:middle;" x="8"
         y="4">AngleUp</text>
-        </g>        
+        </g>
      </symbol>
-          
+
      <symbol id="DecreaseAngle" overflow="visible" class="button"
      onclick="DecreaseAngle();" >
      <g>
@@ -160,7 +137,7 @@
         y="4">VeloictyDown</text>
         </g>
      </symbol>
-     
+
      <symbol id="btnLaunch" overflow="visible" class="button"
      onclick="launch();" >
      <g>
@@ -171,7 +148,7 @@
         </g>
      </symbol>
      </defs>
-     
+
      <!--INPUTS-->
      <text id="vi" x="200" y="20" font-family="'Arial'"
            font-size="12">60</text>
@@ -187,13 +164,13 @@
      <text id="TimeOut" x="200" y="120" font-family="'Arial'"
            font-size="12"></text>
 
-     
+
      <g stroke="black" stroke-width="3" fill="black">
        <circle id="start" cx="100" cy="500" r="3" opacity="0" />
        <circle id="end" cx="400" cy="500" r="3" opacity="0"/>
        <circle id="mid" cx="400" cy="500" r="3" opacity="0"/>
      </g>
-     
+
      <!--
      <ellipse id="example" cx="50" cy="50" rx="20" ry="20" fill="red"></ellipse>
      -->
