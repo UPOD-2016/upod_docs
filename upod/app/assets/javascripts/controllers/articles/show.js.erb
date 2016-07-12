@@ -1,0 +1,8 @@
+//= require includes/MathJaxConfig
+//= require includes/MathJax
+
+$(document).on('ready page:load', function(){
+  MathJax.Hub.Configured(); //Tell mathjax to start configuration
+  MathJax.Hub.queue.Push(["Typeset",MathJax.Hub]);
+  
+});
