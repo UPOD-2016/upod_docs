@@ -3,15 +3,36 @@
 <head>
 
 
-Ball 1 initial Velocity: <input type="number" name="v1a"><br>
-Ball 2 initial Velocity: <input type="number" name="vlb"><tab>
-Ball 1 Mass (g): <input type="number" name="m1"><tab>
-Ball 2 Mass (g): <input type="number" name="m2"><br>
-<input type="submit" value="Submit">
+Ball 1 initial Velocity: <input type="number" id ="vel_1a" name="v1a"><tab>
+Ball 1 Mass (g): <input type="number" id = "mass1"  name="m1"><br>
+
+Ball 2 initial Velocity: <input type="number" id = "vel_2a" name="vlb"><tab>
+Ball 2 Mass (g): <input type="number" id = "mass2" name="m2"><br>
+
+Ball 1 Final Velocity:<p id="vfa"></p>
 <br>
-Ball 1 Final Velocity:<output name="v2a" for="a"></output>
+Ball 2 Final Velocity:<p id="vfb"></p>
 <br>
-Ball 2 Final Velocity:<output name="v2a" for="a"></output>
+
+<button onclick="get_final_velocities()">Submit</button>
+
+<br>
+<script>
+	function get_final_velocities(){
+		var v_a = document.getElementById("vel_1a") 
+		var v_b = document.getElementById("vel_2a")
+		var m_1 = document.getElementById("mass1")
+		var m_2 = document.getElementById("mass2")
+
+		var vf_a = (v_a* ((m_1 - m_2))/(m_1 + m_2)) + (v_b*((2*m_2)/(m_1+m_2)))
+
+		var vf_b = (v_a*((2*m_1)/(m_1 + m_2))) + (v_b*((m_2 - m_1) / (m_1 + m_2)) )
+		document.getElementById("vfa") = vf_a
+		document.getElementById("vfb") = vf_b	
+
+	}
+</script>
+
 
 </head>
 <body>
