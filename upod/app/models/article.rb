@@ -7,11 +7,7 @@
 # Table name: articles
 #
 #  id         :integer          not null, primary key
-#   - represents the id of the article
-#
 #  title      :string(255)
-#   - represents the tile of the article.
-#
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #

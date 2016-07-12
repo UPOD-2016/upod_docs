@@ -9,10 +9,7 @@
 # Table name: article_text_blocks
 #
 #  id   :integer          not null, primary key
-#   - represents the id of the text block
-#
 #  body :text(65535)
-#   - represents the body of the text block. This contains the users text inputs
 #
 class ArticleTextBlock < ActiveRecord::Base
   acts_as :article_block

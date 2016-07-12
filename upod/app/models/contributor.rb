@@ -1,4 +1,4 @@
-# A contributor is a user who has edited an article.
+# A contributor is a {User} who has edited an article.
 # @see User
 #
 # == Schema Information
