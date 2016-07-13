@@ -5,6 +5,7 @@ stroke: Silver;
 
 .button:hover {
 cursor: pointer;
+stroke:black;
 }
 
 .button:active {

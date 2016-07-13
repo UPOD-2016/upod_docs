@@ -1,190 +1,175 @@
 <head>
-<link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
-     xmlns:xlink="http://www.w3.org/1999/xlink"
-     width="1200px" height="600px" xml:space="preserve" onload="calculate();">
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200px" height="600px" xml:space="preserve" onload="calculate();">
 
-     <!--Grid Lines -->
+    <!--Grid Lines -->
 
-     <g stroke="black" opacity="0.5">
-       <!--Vertical Lines -->
-       <line x1="150" y1="500" x2="150" y2="200"/>
-       <line x1="200" y1="500" x2="200" y2="200"/>
-       <line x1="250" y1="500" x2="250" y2="200"/>
-       <line x1="300" y1="500" x2="300" y2="200"/>
-       <line x1="350" y1="500" x2="350" y2="200"/>
-       <line x1="400" y1="500" x2="400" y2="200"/>
-       <line x1="450" y1="500" x2="450" y2="200"/>
-       <line x1="500" y1="500" x2="500" y2="200"/>
-       <line x1="550" y1="500" x2="550" y2="200"/>
-       <line x1="600" y1="500" x2="600" y2="200"/>
-       <line x1="650" y1="500" x2="650" y2="200"/>
-       <line x1="700" y1="500" x2="700" y2="200"/>
-       <line x1="750" y1="500" x2="750" y2="200"/>
-       <line x1="800" y1="500" x2="800" y2="200"/>
-       <line x1="850" y1="500" x2="850" y2="200"/>
-       <line x1="900" y1="500" x2="900" y2="200"/>
-       <line x1="950" y1="500" x2="950" y2="200"/>
-       <line x1="1000" y1="500" x2="1000" y2="200"/>
-       <line x1="1050" y1="500" x2="1050" y2="200"/>
-       <line x1="1100" y1="500" x2="1100" y2="200"/>
-       <line x1="1150" y1="500" x2="1150" y2="200"/>
+    <g stroke="black" opacity="0.5">
+        <!--Vertical Lines -->
+        <line x1="150" y1="500" x2="150" y2="200" />
+        <line x1="200" y1="500" x2="200" y2="200" />
+        <line x1="250" y1="500" x2="250" y2="200" />
+        <line x1="300" y1="500" x2="300" y2="200" />
+        <line x1="350" y1="500" x2="350" y2="200" />
+        <line x1="400" y1="500" x2="400" y2="200" />
+        <line x1="450" y1="500" x2="450" y2="200" />
+        <line x1="500" y1="500" x2="500" y2="200" />
+        <line x1="550" y1="500" x2="550" y2="200" />
+        <line x1="600" y1="500" x2="600" y2="200" />
+        <line x1="650" y1="500" x2="650" y2="200" />
+        <line x1="700" y1="500" x2="700" y2="200" />
+        <line x1="750" y1="500" x2="750" y2="200" />
+        <line x1="800" y1="500" x2="800" y2="200" />
+        <line x1="850" y1="500" x2="850" y2="200" />
+        <line x1="900" y1="500" x2="900" y2="200" />
+        <line x1="950" y1="500" x2="950" y2="200" />
+        <line x1="1000" y1="500" x2="1000" y2="200" />
+        <line x1="1050" y1="500" x2="1050" y2="200" />
+        <line x1="1100" y1="500" x2="1100" y2="200" />
+        <line x1="1150" y1="500" x2="1150" y2="200" />
 
-       <!--Horizontal Lines -->
-       <line x1="100" y1="450" x2="1150" y2="450" />
-       <line x1="100" y1="400" x2="1150" y2="400" />
-       <line x1="100" y1="350" x2="1150" y2="350" />
-       <line x1="100" y1="300" x2="1150" y2="300" />
-       <line x1="100" y1="250" x2="1150" y2="250" />
-       <line x1="100" y1="200" x2="1150" y2="200" />
-     </g>
+        <!--Horizontal Lines -->
+        <line x1="100" y1="450" x2="1150" y2="450" />
+        <line x1="100" y1="400" x2="1150" y2="400" />
+        <line x1="100" y1="350" x2="1150" y2="350" />
+        <line x1="100" y1="300" x2="1150" y2="300" />
+        <line x1="100" y1="250" x2="1150" y2="250" />
+        <line x1="100" y1="200" x2="1150" y2="200" />
+    </g>
 
-     <!-- Grid Numbers -->
-     <g >
-       <text x="100" y="520" font-family="'Arial'" font-size="12">0</text>
-<text x="150" y="520" font-family="'Arial'" font-size="12">50</text>
-<text x="200" y="520" font-family="'Arial'" font-size="12">100</text>
-<text x="250" y="520" font-family="'Arial'" font-size="12">150</text>
-<text x="300" y="520" font-family="'Arial'" font-size="12">200</text>
-<text x="350" y="520" font-family="'Arial'" font-size="12">250</text>
-<text x="400" y="520" font-family="'Arial'" font-size="12">300</text>
-<text x="450" y="520" font-family="'Arial'" font-size="12">350</text>
-<text x="500" y="520" font-family="'Arial'" font-size="12">400</text>
-<text x="550" y="520" font-family="'Arial'" font-size="12">450</text>
-<text x="600" y="520" font-family="'Arial'" font-size="12">500</text>
-<text x="650" y="520" font-family="'Arial'" font-size="12">550</text>
-<text x="700" y="520" font-family="'Arial'" font-size="12">600</text>
-<text x="750" y="520" font-family="'Arial'" font-size="12">650</text>
-<text x="800" y="520" font-family="'Arial'" font-size="12">700</text>
-<text x="850" y="520" font-family="'Arial'" font-size="12">750</text>
-<text x="900" y="520" font-family="'Arial'" font-size="12">800</text>
-<text x="950" y="520" font-family="'Arial'" font-size="12">850</text>
-<text x="1000" y="520" font-family="'Arial'" font-size="12">900</text>
-<text x="1050" y="520" font-family="'Arial'" font-size="12">950</text>
-<text x="1100" y="520" font-family="'Arial'" font-size="12">1000</text>
-<text x="1150" y="520" font-family="'Arial'" font-size="12">1050</text>
+    <!-- Grid Numbers -->
+    <g>
+        <text x="100" y="520" font-family="'Arial'" font-size="12">0</text>
+        <text x="150" y="520" font-family="'Arial'" font-size="12">50</text>
+        <text x="200" y="520" font-family="'Arial'" font-size="12">100</text>
+        <text x="250" y="520" font-family="'Arial'" font-size="12">150</text>
+        <text x="300" y="520" font-family="'Arial'" font-size="12">200</text>
+        <text x="350" y="520" font-family="'Arial'" font-size="12">250</text>
+        <text x="400" y="520" font-family="'Arial'" font-size="12">300</text>
+        <text x="450" y="520" font-family="'Arial'" font-size="12">350</text>
+        <text x="500" y="520" font-family="'Arial'" font-size="12">400</text>
+        <text x="550" y="520" font-family="'Arial'" font-size="12">450</text>
+        <text x="600" y="520" font-family="'Arial'" font-size="12">500</text>
+        <text x="650" y="520" font-family="'Arial'" font-size="12">550</text>
+        <text x="700" y="520" font-family="'Arial'" font-size="12">600</text>
+        <text x="750" y="520" font-family="'Arial'" font-size="12">650</text>
+        <text x="800" y="520" font-family="'Arial'" font-size="12">700</text>
+        <text x="850" y="520" font-family="'Arial'" font-size="12">750</text>
+        <text x="900" y="520" font-family="'Arial'" font-size="12">800</text>
+        <text x="950" y="520" font-family="'Arial'" font-size="12">850</text>
+        <text x="1000" y="520" font-family="'Arial'" font-size="12">900</text>
+        <text x="1050" y="520" font-family="'Arial'" font-size="12">950</text>
+        <text x="1100" y="520" font-family="'Arial'" font-size="12">1000</text>
+        <text x="1150" y="520" font-family="'Arial'" font-size="12">1050</text>
 
-<text x="75" y="450" font-family="'Arial'" font-size="12">50</text>
-<text x="75" y="400" font-family="'Arial'" font-size="12">100</text>
-<text x="75" y="350" font-family="'Arial'" font-size="12">150</text>
-<text x="75" y="300" font-family="'Arial'" font-size="12">200</text>
-<text x="75" y="250" font-family="'Arial'" font-size="12">250</text>
-<text x="75" y="200" font-family="'Arial'" font-size="12">300</text>
+        <text x="75" y="450" font-family="'Arial'" font-size="12">50</text>
+        <text x="75" y="400" font-family="'Arial'" font-size="12">100</text>
+        <text x="75" y="350" font-family="'Arial'" font-size="12">150</text>
+        <text x="75" y="300" font-family="'Arial'" font-size="12">200</text>
+        <text x="75" y="250" font-family="'Arial'" font-size="12">250</text>
+        <text x="75" y="200" font-family="'Arial'" font-size="12">300</text>
 
 
-     </g>
-     <line id="base" x1="100" y1="500" x2="1150" y2="500" stroke="black" />
-     <line id="yaxis" x1="100" y1="500" x2="100" y2="200" stroke="black"/>
+    </g>
+    <line id="base" x1="100" y1="500" x2="1150" y2="500" stroke="black" />
+    <line id="yaxis" x1="100" y1="500" x2="100" y2="200" stroke="black" />
 
 
 
 
 
-     <path id="curve" d="" stroke="red" stroke-width="5" fill="none" class="curve" opacity="0.2">
-       </path>
+    <path id="curve" d="" stroke="red" stroke-width="5" fill="none" class="curve" opacity="0.2">
+    </path>
 
-     <!--LINE TAGS-->
-     <text x="50" y="20" font-family="'Arial'"
-           font-size="12">Initial Velocity(m/s): </text>
-     <text x="50" y="40" font-family="'Arial'"
-           font-size="12">Launch Angle(Degrees): </text>
+    <!--LINE TAGS-->
+    <text x="50" y="20" font-family="'Arial'" font-size="12">Initial Velocity(m/s): </text>
+    <text x="50" y="40" font-family="'Arial'" font-size="12">Launch Angle(Degrees): </text>
 
-     <text x="50" y="80" font-family="'Arial'"
-           font-size="12">Horizontal Distance(m): </text>
-     <text x="50" y="100" font-family="'Arial'"
-           font-size="12">Height(m): </text>
-     <text x="50" y="120" font-family="'Arial'"
-           font-size="12">Time Of Flight(s): </text>
+    <text x="50" y="80" font-family="'Arial'" font-size="12">Horizontal Distance(m): </text>
+    <text x="50" y="100" font-family="'Arial'" font-size="12">Height(m): </text>
+    <text x="50" y="120" font-family="'Arial'" font-size="12">Time Of Flight(s): </text>
 
-     <!--Buttons-->
-     <symbol id="IncreaseAngle" overflow="visible"
-     onclick="IncreaseAngle();" class="button" >
-     <g>
-        <rect x="-30" y="-10" rx="5" ry="5" width="80" height="20"
-        class="button"/>
-        <text class="textSmall" style="text-anchor:middle;" x="8"
-        y="4">AngleUp</text>
+    <!--Buttons-->
+    <!-- <label>
+        <input type="submit" name="image" value="one"> -->
+    <svg x="700" y="200" onclick="IncreaseAngle();" class="bluerect">
+        <g class="bluerect">
+            <rect x="0" y="0" rx="5" ry="5" width="80" height="20" />
+            <text class="textSmall" style="text-anchor:middle;" x="8" y="4">AngleUp</text>
         </g>
-     </symbol>
-
-     <symbol id="DecreaseAngle" overflow="visible" class="button"
-     onclick="DecreaseAngle();" >
-     <g>
-        <rect x="-30" y="-10" rx="5" ry="5" width="80" height="20"
-        class="button" />
-        <text class="textSmall" style="text-anchor:middle;" x="8"
-        y="4">AngleDown</text>
+    </svg>
+    <!-- </label> -->
+    <symbol id="IA" overflow="visible" onclick="IncreaseAngle();" class="button">
+        <g>
+            <rect x="-30" y="-10" rx="5" ry="5" width="80" height="20" class="button" />
+            <text class="textSmall" style="text-anchor:middle;" x="8" y="4">AngleUp</text>
         </g>
-     </symbol>
+    </symbol>
 
-     <symbol id="IncreaseVelocity" overflow="visible" class="button"
-     onclick="IncreaseVelocity();" >
-     <g>
-        <rect x="-30" y="-10" rx="5" ry="5" width="80" height="20"
-        class="button"/>
-        <text class="textSmall" style="text-anchor:middle;" x="8"
-        y="4">VelocityUp</text>
+    <symbol id="DecreaseAngle" overflow="visible" class="button" onclick="DecreaseAngle();">
+        <g>
+            <rect x="-30" y="-10" rx="5" ry="5" width="80" height="20" class="button" />
+            <text class="textSmall" style="text-anchor:middle;" x="8" y="4">AngleDown</text>
         </g>
-     </symbol>
-     <defs>
-     <symbol id="DecreaseVelocity" overflow="visible" class="button"
-     onclick="DecreaseVelocity();" >
-     <g>
-        <rect x="-30" y="-10" rx="5" ry="5" width="80" height="20"
-        class="button"/>
-        <text class="textSmall" style="text-anchor:middle;" x="10"
-        y="4">VeloictyDown</text>
+    </symbol>
+
+    <symbol id="IncreaseVelocity" overflow="visible" class="button" onclick="IncreaseVelocity();">
+        <g>
+            <rect x="-30" y="-10" rx="5" ry="5" width="80" height="20" class="button" />
+            <text class="textSmall" style="text-anchor:middle;" x="8" y="4">VelocityUp</text>
         </g>
-     </symbol>
+    </symbol>
+    <defs>
+        <symbol id="DecreaseVelocity" overflow="visible" class="button" onclick="DecreaseVelocity();">
+            <g>
+                <rect x="-30" y="-10" rx="5" ry="5" width="80" height="20" class="button" />
+                <text class="textSmall" style="text-anchor:middle;" x="10" y="4">VeloictyDown</text>
+            </g>
+        </symbol>
 
-     <symbol id="btnLaunch" overflow="visible" class="button"
-     onclick="launch();" >
-     <g>
-        <rect x="-30" y="-10" rx="5" ry="5" width="80" height="20"
-        class="button"/>
-        <text class="textSmall" style="text-anchor:middle;" x="8"
-        y="4">Launch</text>
-        </g>
-     </symbol>
-     </defs>
+        <symbol id="btnLaunch" overflow="visible" class="button" onclick="launch();">
+            <g>
+                <rect x="-30" y="-10" rx="5" ry="5" width="80" height="20" class="button" />
+                <text class="textSmall" style="text-anchor:middle;" x="8" y="4">Launch</text>
+            </g>
+        </symbol>
+    </defs>
 
-     <!--INPUTS-->
-     <text id="vi" x="200" y="20" font-family="'Arial'"
-           font-size="12">60</text>
-     <text id="LaunchAngle" x="200" y="40" font-family="'Arial'"
-           font-size="12">45</text>
-
-
-     <!--OUTPUTS-->
-     <text id="DistanceOut" x="200" y="80" font-family="'Arial'"
-           font-size="12"></text>
-     <text id="HeightOut" x="200" y="100" font-family="'Arial'"
-           font-size="12"></text>
-     <text id="TimeOut" x="200" y="120" font-family="'Arial'"
-           font-size="12"></text>
+    <!--INPUTS-->
+    <text id="vi" x="200" y="20" font-family="'Arial'" font-size="12">60</text>
+    <text id="LaunchAngle" x="200" y="40" font-family="'Arial'" font-size="12">45</text>
 
 
-     <g stroke="black" stroke-width="3" fill="black">
-       <circle id="start" cx="100" cy="500" r="3" opacity="0" />
-       <circle id="end" cx="400" cy="500" r="3" opacity="0"/>
-       <circle id="mid" cx="400" cy="500" r="3" opacity="0"/>
-     </g>
+    <!--OUTPUTS-->
+    <text id="DistanceOut" x="200" y="80" font-family="'Arial'" font-size="12"></text>
+    <text id="HeightOut" x="200" y="100" font-family="'Arial'" font-size="12"></text>
+    <text id="TimeOut" x="200" y="120" font-family="'Arial'" font-size="12"></text>
 
-     <!--
+
+    <g stroke="black" stroke-width="3" fill="black">
+        <circle id="start" cx="100" cy="500" r="3" opacity="0" />
+        <circle id="end" cx="400" cy="500" r="3" opacity="0" />
+        <circle id="mid" cx="400" cy="500" r="3" opacity="0" />
+    </g>
+
+    <!--
      <ellipse id="example" cx="50" cy="50" rx="20" ry="20" fill="red"></ellipse>
      -->
-     <text x="100" y="520" font-family="'Arial'"
-           font-size="12">0</text>
-     <text id="EndText" x="400" y="520" font-family="'Arial'"
-           font-size="12" opacity="0"></text>
+    <text x="100" y="520" font-family="'Arial'" font-size="12">0</text>
+    <text id="EndText" x="400" y="520" font-family="'Arial'" font-size="12" opacity="0"></text>
 
-     <use xlink:href="#IncreaseVelocity" x="335" y="20" />
-     <use xlink:href="#DecreaseVelocity" x="435" y="20" />
-     <use xlink:href="#IncreaseAngle" x="335" y="40" />
-     <use xlink:href="#DecreaseAngle" x="435" y="40" />
-     <use xlink:href="#btnLaunch" x="335" y="100" />
-  </svg>
+    <use xlink:href="#IncreaseVelocity" x="335" y="20" />
+    <use xlink:href="#DecreaseVelocity" x="435" y="20" />
+    <use id="IncreaseAngle" xlink:href="#IA" x="335" y="40" />
+    <use xlink:href="#DecreaseAngle" x="435" y="40" />
+    <use xlink:href="#btnLaunch" x="335" y="100" />
+</svg>
 <script src="ProjectileMotion.js"></script>
 <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="//cdn.jsdelivr.net/velocity/1.1.0/velocity.min.js"></script>
+<script src="svg4everybody/dist/svg4everybody.js"></script>
+<script src="svg4everybody/dist/svg4everybody.legacy.js"></script>
+<script>
+    svg4everybody();
+</script>
