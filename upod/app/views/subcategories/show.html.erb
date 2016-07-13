@@ -26,11 +26,13 @@
           </p>
         </div>
       </div>
-      <!--TO BE DONE - Need to get some dummy records in here to finalize this -->
-      <div>
-        <h3><a href="#">!Dummy!Article Title</a></h3>
-        <p>!Dummy!Content</p>
-      </div>
+
+    - <% @articles.each do |article| %>
+     -	<h5>
+     -		<%= link_to article.title, article %>
+     -	</h5>
+     -<% end %>
+     
 	</main>
 	<!-- work done by: Vishrut Sutaria-->
 	<footer id="footerContent"></footer>
