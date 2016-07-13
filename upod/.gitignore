@@ -1,10 +1,3 @@
-#//////////////////////////////////////////////////////////////////
-# AUTHOR:   Robert Morouney
-# EMAIL:    robert@morouney.com
-# FILE:     .gitignore
-# CREATED:  2016-07-11 12:12:56
-# MODIFIED: 2016-07-11 12:14:40
-#//////////////////////////////////////////////////////////////////
 /.bundle
 
 # Ignore all logfiles and tempfiles.
@@ -15,7 +8,7 @@
 public/uploads/*
 
 #Ignore the database.yml config file for testing
-/config/database.yml
+config/database.yml
 
 #testing server using nohup
 nohup.out
