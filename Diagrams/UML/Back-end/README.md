@@ -1,7 +1,7 @@
 ~Viewing the Diagrams~
 - The existing class diagrams can be viewed in your browser by opening Diagrams\UML\Back-end\html-docs\index.html
 - Within this file, you can select class diagrams to view on the left navigation pane
-- Class diagrams are indicated by this green symbol ![alt tag](https://gyazo.com/64005ab54de4ce9098734760e135ec22)
+- Class diagrams are indicated by this green symbol ![alt tag](https://i.gyazo.com/64005ab54de4ce9098734760e135ec22.png)
 
 ~Editing the Diagrams~
 - Download StarUML at http://staruml.io/download
