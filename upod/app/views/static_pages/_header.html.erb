@@ -18,7 +18,11 @@
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categories <span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <% @categories.each do |category| %>
+<<<<<<< HEAD
                   <li><%= link_to category.name, category %></li>
+=======
+                  <li><%= link_to category.name, category, id: "menuLink" %></li>
+>>>>>>> d77f1044320f4485e297edf5c0c8b9319df503f2
                 <% end %>
               </ul>
             </li>
