@@ -1,8 +1,13 @@
 <h1>
   <%= @category.name %>
 </h1>
+<h2>
+  <%= @category.description %>
+</h2>
 <% @subcategories.each do |sub| sub.category_id=@category.id %>
-	<h5>
-		<%= link_to sub.name, sub %>
-	</h5>
+  <div class="col-md-4 col-xs-6 thumb">
+    <h2>
+  		<%= link_to sub.name, sub %>
+  	</h2>
+  </div>
 <% end %>

@@ -11,32 +11,32 @@ Category.destroy_all
 categories = [
   {
     name: "Electricity & Magnetism",
-    description: "Electricity & Magnetism",
+    description: "Description for Electricity & Magnetism",
     remote_image_url: "http://lorempixel.com/200/200/",
   },
   {
     name: "Fundamentals",
-    description: "Fundamentals",
+    description: "Description for Fundamentals",
     remote_image_url: "http://lorempixel.com/200/200/",
   },
   {
     name: "Optics",
-    description: "Optics",
+    description: "Description for Optics",
     remote_image_url: "http://lorempixel.com/200/200/",
   },
   {
     name: "Quantum Physics",
-    description: "Quantum Physics",
+    description: "Description for Quantum Physics",
     remote_image_url: "http://lorempixel.com/200/200/",
   },
   {
     name: "Statistical Physics",
-    description: "Statistical Physics",
+    description: "Description for Statistical Physics",
     remote_image_url: "http://lorempixel.com/200/200/",
   },
   {
     name: "Thermodynamics",
-    description: "Thermodynamics",
+    description: "Description for Thermodynamics",
     remote_image_url: "http://lorempixel.com/200/200/",
   }
 ]
