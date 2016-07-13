@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160712020915) do
+ActiveRecord::Schema.define(version: 20160713022734) do
 
   create_table "article_blocks", force: :cascade do |t|
     t.integer "position",     limit: 4
@@ -44,7 +44,7 @@ ActiveRecord::Schema.define(version: 20160712020915) do
   end
 
   create_table "article_link_blocks", force: :cascade do |t|
-    t.string "source",   limit: 256, null: false
+    t.string "source",   limit: 255
     t.string "video_id", limit: 255, null: false
   end
 
@@ -69,8 +69,9 @@ ActiveRecord::Schema.define(version: 20160712020915) do
   create_table "categorizations", force: :cascade do |t|
     t.integer  "article_id",     limit: 4
     t.integer  "subcategory_id", limit: 4
-    t.datetime "created_at",               null: false
-    t.datetime "updated_at",               null: false
+    t.datetime "created_at",                 null: false
+    t.datetime "updated_at",                 null: false
+    t.string   "description",    limit: 255
   end
 
   create_table "constants", force: :cascade do |t|

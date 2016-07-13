@@ -13,6 +13,7 @@ class CategorizationDashboard < Administrate::BaseDashboard
     id: Field::Number,
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
+    description: Field::String,
   }.freeze
 
   # COLLECTION_ATTRIBUTES
@@ -35,6 +36,7 @@ class CategorizationDashboard < Administrate::BaseDashboard
     :id,
     :created_at,
     :updated_at,
+    :description,
   ].freeze
 
   # FORM_ATTRIBUTES
@@ -43,6 +45,7 @@ class CategorizationDashboard < Administrate::BaseDashboard
   FORM_ATTRIBUTES = [
     :article,
     :subcategory,
+    :description,
   ].freeze
 
   # Overwrite this method to customize how categorizations are displayed
