@@ -12,14 +12,7 @@ module Admin
     # def find_resource(param)
     #   Category.find_by!(slug: param)
     # end
-    def destory
-    end
 
-    def update
-    end
-
-    def show
-    end
     # See https://administrate-docs.herokuapp.com/customizing_controller_actions
     # for more information
   end

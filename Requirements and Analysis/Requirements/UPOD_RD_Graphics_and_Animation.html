@@ -1,55 +1,13 @@
 <!doctype html>
+<!-- Created by: Omid Ghiyasian --> 
+<!-- Creation Date: 2016-06-13 --> 
+<!-- Modification by: Brian Oh --> 
+<!-- Modification date: 2016-07-10 --> 
 
 <html lang="en">
 	<head>
-		<link rel="stylesheet" type="text/css" href="/css/style.css">
-	
+		<LINK href="styles.css" rel="stylesheet" type="text/css">
 		<title>System Requirement Specification Template</title>
-		<style>
-		table, th, td {
-			border: 1px solid black;
-		}
-		h1 {
-			font-size: 120%;
-		}
-		h4 {
-			margin-left: 40px;
-		}
-		#p {
-		margin-top: 100px;
-		margin-bottom: 100px;
-		margin-right: 240px;
-		margin-left: 80px;
-		}
-		#mainHeading { 
-			margin-left: 25px;
-			margin-right:25px;
-		}
-		#categoryHeading {
-			margin-left:40px;
-			margin-right:25px;
-		}
-		#subcategoryHeading {
-			margin-left: 75px;
-			margin-right: 25px;
-		}
-		* {
-			font-size: 100%;
-			font-family: 'Open Sans', sans-serif;
-		}
-
-		#indent {
-			padding-left: 20px;			
-		}
-		#indent3 {
-			padding-left: 78px;			
-		}
-
-		#tableMargin {
-		line-height: 24px;
-		}
-
-    </style>
 	</head>
 	
 	<body  id="p">
@@ -58,10 +16,10 @@
 				<h1 style="text-align:right;font-size:320%">Software Requirements Specification</h3>
 				<h2 style="text-align:right;font-size:200%">for</h3>
 				<h1 style="text-align:right;font-size:320%">UPOD-Graphics/Animations</h3>
-				<h3 style="text-align:right;font-size:140%">Version 0.3</h3>
+				<h3 style="text-align:right;font-size:140%">Version 0.4</h3>
 				<h3 style="text-align:right;font-size:140%">Prepared by Jeffrey Chung</h3>
 				<h3 style="text-align:right;font-size:140%">Wilfrid Laurier University, CP317</h3>
-				<h3 style="text-align:right;font-size:140%">27/06/2016</h3>
+				<h3 style="text-align:right;font-size:140%">10/07/2016</h3>
 			</div>
 			<br>
 			
@@ -74,10 +32,16 @@
 			<th>Version</th>
 		  </tr>
 		  <tr>
+			<td>Brian Oh</td>
+			<td>10/07/16</td>
+			<td>SQA minor revisions and formatting</td>
+			<td>v0.4</td>
+		  </tr>
+		  <tr>
 			<td>Jeffrey Chung</td>
-			<td>17/05/16</td>
-			<td>Initial Draft</td>
-			<td>v0.1</td>
+			<td>27/06/16</td>
+			<td>Change According to SQA</td>
+			<td>v0.3</td>
 		  </tr>
 		  <tr>
 			<td>Jeffrey Chung</td>
@@ -87,10 +51,12 @@
 		  </tr>
 		  <tr>
 			<td>Jeffrey Chung</td>
-			<td>27/06/16</td>
-			<td>Change According to SQA</td>
-			<td>v0.3</td>
+			<td>17/05/16</td>
+			<td>Initial Draft</td>
+			<td>v0.1</td>
 		  </tr>
+		  
+
 		</table>
 			
 			<h1>Table of Contents</h1>
@@ -122,11 +88,7 @@
 						<a id="indent" href="#Maintainability">3.5.4 Maintainability</a><br>
 						<a id="indent" href="#Portability">3.5.5 Portability</a><br>
 					<a href="#Organizing the Specific Requirements">3.6 Organizing the Specific Requirements</a><br>
-						<a id="indent" href="#Objects">3.6.1 Objects</a><br>
-						<a id="indent" href="#Feature">3.6.2 Feature</a><br>
-						<a id="indent" href="#Functional Hierarchy">3.6.3 Functional Hierarchy</a><br>
-				<a href="#Appendixes">Appendixes</a><br>
-				<a href="#Index">Index</a>
+						<a id="indent" href="#Functional Hierarchy">3.6.1 Functional Hierarchy</a><br>
 				
 			</ol> 
 			
@@ -134,15 +96,22 @@
 			<h1><a name="Introduction">1. Introduction</a></h1>
 				<div id="mainHeading">
 					<h2><a name="Scope">1.1 Scope</a></h2>
-					<p>The UPOD graphics & animation group creates animations and interactive diagrams with SVG which allows users to gain a better understanding of Physics concepts. 5-15 animations are created touching on each of the physics categories in UPOD. The specific diagrams that are animated are decided in tandem with the Physics Research group. </p>
+					<p>The UPOD Graphics and Animation group creates animations and interactive diagrams with SVG which allows users to gain a better understanding of Physics concepts. The specific diagrams that are animated are decided in tandem with the Physics Research group. </p>
 				</div>
 				<div id="mainHeading">
 					<h3><a name="Definitions">1.2 Definitions, Acronyms, and Abbreviations</a></h2>
-					<li id="categoryHeading">MVC is a software architectural pattern for implementing user interfaces on computers. Traditionally used for GUIs.</li>
-					<li id="categoryHeading">Model (MVC): Represents the equation or physics concept illustrated</li>
-					<li id="categoryHeading">View (MVC): Sliders, buttons, and other UI elements to interact with the model. Objects to reflect inputs and demonstrate the concepts</li>
-					<li id="categoryHeading">Controller (MVC):Liases and controls the view to reflect the model</li>
-					<li id="categoryHeading">SVG: Scalable Vector Graphics</li>
+					<p id="categoryHeading"><span style="text-decoration: underline;">G&A</span></p>
+					<li id="subcategoryHeading">Graphics and Animations</li>
+					<p id="categoryHeading"><span style="text-decoration: underline;">MVC</span></p>
+					<li id="subcategoryHeading">a software architectural pattern for implementing user interfaces on computers. Traditionally used for GUIs.</li>
+					<p id="categoryHeading"><span style="text-decoration: underline;">Model (MVC)</span></p>
+					<li id="subcategoryHeading">Represents the equation or physics concept illustrated.</li>
+					<p id="categoryHeading"><span style="text-decoration: underline;">View (MVC)</span></p>
+					<li id="subcategoryHeading">Sliders, buttons, and other UI elements to interact with the model. Objects to reflect inputs and demonstrate the concepts.</li>
+					<p id="categoryHeading"><span style="text-decoration: underline;">Controller (MVC)</span></p>
+					<li id="subcategoryHeading">Liases and controls the view to reflect the model.</li>
+					<p id="categoryHeading"><span style="text-decoration: underline;">SVC</span></p>
+					<li id="subcategoryHeading">Scalable Vector Graphics.</li>
 				</div>
 				<div id="mainHeading">
 					<h3><a name="References">1.3 References</a></h2>
@@ -152,9 +121,9 @@
 				<div id="mainHeading">
 					<h3><a name="Overview">1.4 Overview</a></h2>
 					<p>The UPOD Graphics/Animation Requirement document outlines the following:</p>
-					<li id="categoryHeading">Overall description of the graphics & animations</li>
-					<li id="categoryHeading">User's interaction with the graphics & animations</li>
-					<li id="categoryHeading">The software used to create the graphics & animations</li>
+					<li id="categoryHeading">Overall description of the G&A</li>
+					<li id="categoryHeading">User's interaction with the G&A</li>
+					<li id="categoryHeading">The software used to create the G&A</li>
 				</div>
 				
 		</div>
@@ -163,15 +132,16 @@
 			<h1><a name="Overall Description">2. Overall Description</a></h1>
 			<div id="mainHeading">
 				<h3><a name="Product Perspective">2.1 Product Perspective</a></h3>
-				<p id="categoryHeading">The graphics and animation group relates to the physics research group as it uses the information gathered by the physics group to create diagrams and animations. In addition, both groups collaborate to decide on what physics animations should be made and also what type of physics diagrams should be used. </p>
+				<p id="categoryHeading">G&A uses the information gathered by the Physics Research group to create diagrams and animations. In addition, both groups collaborate to decide on what physics animations should be made and also what type of physics diagrams should be used. </p>
 					<h4><a name="System Interfaces">2.1.1 System Interfaces</a></h4>
-						<p id="subcategoryHeading">The graphics and animations will operate on the following browsers</p>
+						<p id="categoryHeading">The graphics and animations will operate on the following browsers</p>
 						<li id="subcategoryHeading">Google Chrome</li>
 						<li id="subcategoryHeading">Mozilla Firefox</li>
 						<li id="subcategoryHeading">Internet Explorer</li>
 						<li id="subcategoryHeading">Safari</li>
 					<h4><a name="User Interfaces">2.1.2 User Interfaces</a></h4>
-						<li id="subcategoryHeading">Users can use a mouse to interact with certain animations or diagrams on UPOD. The keyboard can be used to input values to certain diagrams</li>
+						<li id="subcategoryHeading">Users can use a mouse to interact with certain animations or diagrams on UPOD.</li>
+						<li id="subcategoryHeading">The keyboard can be used to input values to certain diagrams.</li>
 					<h4><a name="Software Interfaces">2.1.3 Software Interfaces</a></h4>
 						<li id="subcategoryHeading">Animations and graphics displaying the physics content are created using javascript SVG.</li>
 					<h4><a name="Communications Interfaces">2.1.4 Communications Interfaces</a></h4>
@@ -179,7 +149,8 @@
 					<h4><a name="Memory">2.1.5 Memory</a></h4>
 						<li id="subcategoryHeading">Memory constraints should be expected while creating the graphics and animations. More information shall be added later.</li>
 				<h3><a name="Constraints">2.2 Constraints</a></h3>
-				<p id="categoryHeading">UPOD graphics and animations must be added onto the site before the end of the 2016 spring term (July 26, 2016). Budget is $0 so any software used to create the graphics and animations must be free to use.</p>
+				<li id="categoryHeading">UPOD graphics and animations must be added onto the site before the end of the 2016 spring term (July 26, 2016).</li>
+				<li id="categoryHeading">Budget is $0 so any software used to create the graphics and animations must be free to use.</li>
 		</div>
 		
 		<div>
@@ -190,40 +161,27 @@
 				<h3><a name="Functions">3.2 Functions</a></h2>
 				<li id="categoryHeading">Graphics and animations to be included on the UPOD web interface.</li>
 				<h3><a name="Performance Requirements">3.3 Performance Requirements</a></h2>
-				<li id="categoryHeading">Graphics and animations should be able to be seen and be intractable on different browsers. More detail will be added.</li>
+				<li id="categoryHeading">Graphics and animations should be able to be seen on different browsers.</li>
+				<li id="categoryHeading">More detail in Analysis phase.</li>
 				<h3><a name="Logical Database Requirements">3.4 Logical Database Requirements</a></h3>
-					<li id="categoryHeading">All physics content and graphics will be stored on a relational database.</li>
+					<li id="categoryHeading">All physics content and graphics will be stored on a relational database (see Back End Requirements).</li>
 				<h3><a name="Software System Attributes">3.5 Software System Attributes</a></h3>
 					<h4><a name="Reliability">3.5.1 Reliability</a></h4>
-						<p id="subcategoryHeading">UPOD Graphics and Animations are expected to be used permanently in the site. Maintenance should be expected and be announced before hand making UPOD unavailable.</p>
+						<li id="subcategoryHeading">UPOD Graphics and Animations are expected to be used permanently in the site.</li>
 					<h4><a name="Availability">3.5.2 Availability</a></h4>
-						<p id="subcategoryHeading">Software used to create Graphics and Animations must be supported across the previously listed browsers.</p>
+						<li id="subcategoryHeading">Software used to create Graphics and Animations must be supported across the previously listed browsers.</li>
 					<h4><a name="Security">3.5.3 Security</a></h4>
 						<li id="subcategoryHeading">All Graphics and animations on UPOD are free to use for all and therefore are no   major security constraints. </li>
 					<h4><a name="Maintainability">3.5.4 Maintainability</a></h4>
 						<li id="subcategoryHeading">Graphics and animations should be coded to standard protocols and should be well documented in order for future maintenance. UPOD is to be assumed available for the future; therefore having a set of individuals in charge of maintenance will not be constant.</li>
 					<h4><a name="Portability">3.5.5 Portability</a></h4>
-						<li id="subcategoryHeading">Graphics and animation will be developed on UNIX based software. Any new software to be installed on hopper will be communicated to David Brown once they are identified and validated.</li>
+						<li id="subcategoryHeading">Graphics and animation will be developed on UNIX based software. Any new software to be installed on hopper will be communicated to an Administrator once they are identified and validated.</li>
 				
 				<h3><a name="Organizing the Specific Requirements">3.6 Organizing the Specific Requirements</a></h3>
-					<h4><a name="Objects">3.6.1 Objects</a></h4>
-						<li id="categoryHeading">TBA</li>
-					<h4><a name="Feature">3.6.2 Feature</a></h4>
-						<li id="categoryHeading">TBA</li>
-					<h4><a name="Functional Hierarchy">3.6.3 Functional Hierarchy</a></h4>
-						<li id="categoryHeading">TBA</li>
+					<h4><a name="Functional Hierarchy">3.6.1 Functional Hierarchy</a></h4>
+						<li id="categoryHeading">There is an object(image) library that diagrams use. The library does not carry any pre-existing objects(images) but rather objects(images) designed by the graphics/animations group .</li>
 			</div>
 			
-		</div>
-		<div>
-			<h1><a name="Supporting Information">4. Supporting Information</a></h1>
-			
-		</div>
-		<div id="mainHeading">
-			<h2><a name="Appendixes">Appendixes</a></h2><br>
-			<li id="categoryHeading">TBA</li>
-			<h2><a name="Index">Index</a></h2><br>
-			<li id="categoryHeading">TBA</li>
 		</div>
 	
 	</body>

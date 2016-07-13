@@ -20,7 +20,9 @@ $(document).on('ready page:load', function(){
   SirTrevor.config.debug = true;
   SirTrevor.config.scribeDebug = true;
   SirTrevor.config.language = "en";
-
+  SirTrevor.Blocks.Heading.prototype.toolbarEnabled = true;
+  SirTrevor.Blocks.Quote.prototype.toolbarEnabled = true;
+  SirTrevor.Blocks.Text.prototype.toolbarEnabled = true;
   window.editor = new SirTrevor.Editor({
     el: $(".js-sir-trevor-instance").get(0),
     blockTypes: [

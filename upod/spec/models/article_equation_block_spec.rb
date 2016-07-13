@@ -1,3 +1,12 @@
+# == Schema Information
+#
+# Table name: article_equation_blocks
+#
+#  id       :integer          not null, primary key
+#  equation :string(255)
+#  label    :string(255)
+#
+
 require 'rails_helper'
 
 RSpec.describe ArticleEquationBlock, type: :model do

@@ -22,7 +22,7 @@ class ArticleBlockDashboard < Administrate::BaseDashboard
   COLLECTION_ATTRIBUTES = [
     :id,
     :position,
-    :article,
+    :article
     #:actable,
   ].freeze
 
@@ -31,7 +31,7 @@ class ArticleBlockDashboard < Administrate::BaseDashboard
   SHOW_PAGE_ATTRIBUTES = [
     :id,
     :position,
-    :article,
+    :article
     #:actable,
   ].freeze
 

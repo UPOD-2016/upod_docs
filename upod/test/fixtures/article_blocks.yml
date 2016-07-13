@@ -5,7 +5,7 @@
 #  id           :integer          not null, primary key
 #  position     :integer
 #  article_id   :integer
-#  actable_id   :integer
+#  actable_id   :integer          not null
 #  actable_type :string(255)
 #
 

@@ -5,3 +5,40 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+Category.destroy_all
+
+categories = [
+  {
+    name: "Electricity & Magnetism",
+    description: "Description for Electricity & Magnetism",
+    remote_image_url: "http://lorempixel.com/200/200/",
+  },
+  {
+    name: "Fundamentals",
+    description: "Description for Fundamentals",
+    remote_image_url: "http://lorempixel.com/200/200/",
+  },
+  {
+    name: "Optics",
+    description: "Description for Optics",
+    remote_image_url: "http://lorempixel.com/200/200/",
+  },
+  {
+    name: "Quantum Physics",
+    description: "Description for Quantum Physics",
+    remote_image_url: "http://lorempixel.com/200/200/",
+  },
+  {
+    name: "Statistical Physics",
+    description: "Description for Statistical Physics",
+    remote_image_url: "http://lorempixel.com/200/200/",
+  },
+  {
+    name: "Thermodynamics",
+    description: "Description for Thermodynamics",
+    remote_image_url: "http://lorempixel.com/200/200/",
+  }
+]
+
+Category.create!(categories)

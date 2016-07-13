@@ -12,8 +12,8 @@
 		//extensions: to_mathjax_path(["asciimath2jax.js","MathMenu.js","MathZoom.js","AssistiveMML.js"]),
 		extensions: ["asciimath2jax.js","MathMenu.js","MathZoom.js"],
 		delayStartupUntil: "configured",
-		skipStartupTypeset: false,
-		showProcessingMessages: true,
+		skipStartupTypeset: true,
+		showProcessingMessages: false,
 		showMathMenu: false,
 		displayAlign: "center"
 	};

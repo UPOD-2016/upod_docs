@@ -8,7 +8,7 @@ class CategoriesController < ApplicationController
   end
   def show
     @category = Category.find(params[:id])
-    @subcategories = Subcategory.all
+    @subcategories = Subcategory.where(category: params[:id])
   end
 
   def destroy
