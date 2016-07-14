@@ -12,6 +12,7 @@
 #  updated_at :datetime         not null
 #
 class Article < ActiveRecord::Base
+  include Searchable
   include Elasticsearch::Model
   include Elasticsearch::Model::Callbacks
   has_many :blocks, class_name: 'ArticleBlock', foreign_key: :article_id
