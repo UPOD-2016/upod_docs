@@ -15,11 +15,6 @@ class ArticleTextBlock < ActiveRecord::Base
   searchkick
   acts_as :article_block
 
-  mapping do
-    indexes :id, index: :not_analyized
-    indexes :body
-  end
-
 # validates the presence and length of the body of title block
   validates :body, presence: true, length: { maximum: 65535 }
 
