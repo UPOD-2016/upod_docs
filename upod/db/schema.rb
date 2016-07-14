@@ -33,8 +33,8 @@ ActiveRecord::Schema.define(version: 20160713022734) do
   end
 
   create_table "article_equation_blocks", force: :cascade do |t|
-    t.text   "equation", limit: 65535
-    t.string "label",    limit: 255
+    t.text   "equation",    limit: 65535
+    t.string "description", limit: 255
   end
 
   create_table "article_image_blocks", force: :cascade do |t|
