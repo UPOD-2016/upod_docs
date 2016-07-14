@@ -10,10 +10,9 @@ gem 'sass-rails', '~> 5.0'
 
 # Elastic search GEMS <<_>>.:.
 gem 'elasticsearch'
-gem 'elasticsearch-extensions'
 gem 'elasticsearch-model'
 gem 'elasticsearch-rails'
-
+gem 'searchkick'
 #AD LDAP / DEVISE GEMS
 gem 'activerecord-session_store', github: 'rails/activerecord-session_store'
 gem "net-ldap"
