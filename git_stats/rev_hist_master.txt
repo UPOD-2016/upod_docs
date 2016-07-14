@@ -1,80 +1,336 @@
-* 7b6a291 (HEAD -> master, origin/master, origin/HEAD) I thought I could do better, and did (added html format)
-* b9ba5a6 wrote script to update stats for dbrown each week, run with ./update_stats.sh
-* c13d6dd added some devise options
-* b554bde Added some views for user login
-* bafc461 fixed up the document
-* fee46ef Edit view of user dashboard
-* 262c1ac Add inital admin panel
-* 44649f5 Add comments to tests
-* 45db21b test commit record
-* 177555b Add more testing and fix article_diagram_block.rb
-*   b9e2bfe Merge branch 'master' of github.com:UPOD-2016/UPOD
-|\  
-| * 8f1f3d5 remove general files - no use for these, and in the wrong file format in any case.
-* | 175d049 added diagram table
-|/  
-* 2e24b96 sirtrevor small fixes
-*   f49a70d Merge branch 'master' of github.com:UPOD-2016/UPOD
-|\  
-| * fb0138f removed migration mistake
-* | e00535e added contributor method
-* |   80614e8 Merge branch 'master' of github.com:UPOD-2016/UPOD
-|\ \  
-| |/  
-| *   a656ce1 Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+* 04c1753 (HEAD -> master, origin/master, origin/HEAD) see last commit
+* 4c7f4c5 fixed the leaf in the logo so it doesnt look like it was chopped off
+* 7d4c1e2 linked home page to search and removed the awful looking search in header when on the front page.
+| *   7331b9c (refs/stash) WIP on master: ce27b8c accidentally had kept some elastic search mappings in this file
 | |\  
-| | * 1f181f6 Update database.yml
-| | * e49c5d2 Update database.yml
-| * | 8f20df8 added a session model
-| |/  
-| * 7877bbc database additions for users and session tracking
-| * 2ff59cb session tracking
-| * d1853b5 adding session table
-| * fd9e7ed adding session table
-| * 09c3320 added alert and notice areas to application layout
-| * c76192c added user model and LDAP models
-| * 84fa2d4 deleted the back end RD .doc files
-* | e875344 cleaning up html
-| | * 71c6eac (origin/administrate) New article redirect
-| | * 1ff69ae Add administate gem
-| |/  
-| * f4af4b5 Removed spaces from name
-| * 2b6ca90 Removed spaces from name
-| * 8dc0900 Removed spaces from name
-| * dff5ab9 Removed spaces from name
-| * 219084b Version 1 of fundamentals research in modular form
-| * e1b6f79 updated optics
-| * 3b74d91 USE GDOCS TIME TRACKING
-| * ee328af Add files via upload
-| * e64714e Add files via upload
-| * aae328e Update free_body.html
-| * fec2b99 Delete svg.css
-| * e0c6908 Delete elastic_collision.html
+|/ /  
+| * c8643fb index on master: ce27b8c accidentally had kept some elastic search mappings in this file
 |/  
-*   8fb7eb5 Merge branch 'master' of github.com:UPOD-2016/UPOD
+* ce27b8c accidentally had kept some elastic search mappings in this file
+* 1a503aa Added searchkick
+* 8f6ef1e switched to searchkick https://github.com/ankane/searchkick
+* 4c247a1 added a few mappings to searchable.rb (work in progress)
+* 8f4923e Added some elasticsearch mappings for testing
+* 8ab7b23 Added Matrix Treatment of Polarization part 2
+* 933b3a5 Added Matrix Treatment of Polarization
+* b2d2b4e Update .gitignore
+* 5e23acf Update README.md
+* 952aa66 updated UML viewing/editing instructions
+* c07d4f9 added more formulas
+* 4e1478d renamed to modular version
+* 3324e56 removed unnecessary files in last commit
+*   2b3cd2d updated electro physics research
 |\  
-| * f6a8f58 Add files via upload
-* |   ec2394a fixed merge conflicts
-|\ \  
+| *   03b8404 Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+| |\  
+| | * f9697c0 fix button cross browser, add max height constraint
+| * | ead18f5 Completed version of fundamentals research
+* | | 3b93acd updated electromag research
+* | | 6b2c962 added electromagnetism research
 | |/  
-| * 0bd0010 Update readme.txt
-| * 9eb2f7a Completed Hierarchy and Tag List for entire Physics Research
-| * 71c5eb8 Added link blocks to article editor and changed the link_block model
-| * 7a14f7b Migration to change acttable attributes
-| * 5b328b5 Completed standard template for classical mechanics
-* | bff532b New Navbar, Updated Sir Trevor, Started Implmentation of Image Blcok
+|/|   
+* | 08ce637 has created diverging lense
+* | 743cf59 Add files via upload
+* | 992ff3d more mathjax conversion
+* | a28985e Removed second subcategory category id check as it is not needed
+* | 01c37a5 Update Diagrams.csv
+* | cdfcb98 cripts at the Bottom to have better performence
+* | f10d9a5 Fixed _header
+* | cb87990 Added article linking back to subcategory page
+* |   bd667ad Fixed tag for header
+|\ \  
+| * | d77f104 Made categories for homepage dynamic, implemented frontend's mock up for subcategories page, will need frontend team to do tighten the look and feel
+* | | 2f6b252 Made categories for homepage dynamic, implemented frontend's mock up for subcategories page, will need frontend team to do tighten the look and feel
+|/ /  
+* | e1d61ff Update elastic_collision.html
+* | 432d214 Added description for categorization
+* | 73cf5b1 Updated the format, and added some UML diagrams.
+* | 1120783 fixed to fit requirements
+* | 6c0d289 Minor edits to Physics RD
+* | bbd59e3 redone subcategory page
+* | ccd9fbd replaced old article page with new
+* | 7e3bcdd The values for potential energy and distance moved now change as the bow is moved
+* | b92012f Update elastic_collision.html
+* | ac68d30 has created the converging lense
+* | 2344bad did some mathjax conversion
+* | 9c74a85 split css from html in projectile motion diagram
+* | e67b2ef fixed issue with multiple equations not rendering in artilces
+* | 4a5878e have changed concave mirror
+* |   a831fee Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+|\ \  
+| * \   bd35589 Merge branch 'master' of github.com:UPOD-2016/UPOD
+| |\ \  
+| * | | fc39343 Added nullify flag to Category and Subcategory, associated foreign key records are set to null instead of being destroyed
+* | | | 184e5f2 link block and equation block partials
+| |/ /  
+|/| |   
+* | | 4b9f362 equation blocks now properly render and save in the db
+|/ /  
+* | d636a02 More documentation, run annotate
+* | 45b5c72 Create category seed, fix category admin page
+* | 9898763 Updated UML diagrams
+* | 3b427d5 added subcategory pages
+* | f40aa21 updated text for about page
+* | 77a706c Images Almost Working We now have the "properly" set-up between the ArticleImageBlock, Image and Article. The issue is something with the upload directory I believe as the images aren't being loaded properly afterwards. To be continued. Also made minor changes to the equation javascript and reveretd the Articles#index page as it made testing significantly harder and was in the wrong place (the page design was for Article#Show but someone mistakenly put it in Article#Index).
+* |   2d0fc73 merged
+|\ \  
+| * | de9f155 made catagory page only show catagories belonging to them
+| * | 1b36149 Add Categorizations, can be added through admin page
+| * | db7953e have done some changes to concave mirror
+| * | c501ee2 fixed error in admin page
+| * | c000e2f made a mistake
+| * |   a7036ef Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+| |\ \  
+| | * | 339d92c Minor edits
+| | * | 6e202ea Final Edits from David Brown
+| * | | c0cf43a fixed include error
+| |/ /  
+| * |   9e81647 added .gitignore
+| |\ \  
+| | * | 833ae7e (origin/my_work) Convex mirror is created
+| | * | ea3f715 Re-adding create subcatagories
+| * | | d3822fe I hope this doesnt bother anyone
+* | | | 328f779 regenerated docs and annotated models
+| |/ /  
+|/| |   
+* | |   78cedf1 Merge branch 'master' of github.com:UPOD-2016/UPOD
+|\ \ \  
+| * \ \   93214f5 Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+| |\ \ \  
+| | * | | 1ee9b31 update readme
+| | * | |   e3e3985 Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+| | |\ \ \  
+| | * | | | 8846712 Minor edits
+| * | | | | c65467c real image path done
+| | |/ / /  
+| |/| | |   
+| * | | | 439bcd0 Fixed image path?
+| |/ / /  
+| * | | 886f079 Delete UPOD_Landing_Page_Prototype.jpg
+| * | | 84a4c22 fixed image type...derp
+| * | | 4d3f5c1 Add landing page prototype image to front end requirements
+* | | |   ad88a89 Merge branch 'master' of github.com:UPOD-2016/UPOD
+|\ \ \ \  
+| |/ / /  
+| * | | 8cde23f Add landing page prototype image
+| * | | 9d29592 Updated scope, definitions, and functions.
+* | | |   90efd79 Merge branch 'master' of github.com:UPOD-2016/UPOD
+|\ \ \ \  
+| |/ / /  
+| * | |   42ff373 Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+| |\ \ \  
+| * | | | 991fe88 Fix missing commas in dashboards
+* | | | | e5c7a54 removing the 7 commits for category image strings
+| |/ / /  
+|/| | |   
+* | | | c567fb6 Changed category images dimension sizes
+* | | | 52aa36b Uploaded category images to database, category page is now database driven
+* | | | 27e3428 Fixed Table of Contents and number for previous commit
+* | | |   9a50c1a Merge branch 'master' of github.com:UPOD-2016/UPOD
+|\ \ \ \  
+| |/ / /  
+| * | | c2aaef5 Add validations, rspec testing and further documetation fixes
+| * | | 4ada23e fixed the optics and quantum mechanics
+| * | | 5550518 added information to functional hierarchy
+| * | | 9692864 Documentation and fixes to RSpec tests
+| * | | 89fc10f Minor fixes, needs to be completed.
+| * | | 2b2c53a Revised v.05
+| * | | 9be0928 v.04 revised
+| * | | d38ee73 Final v.05
+| * | | becdc80 Added styles sheet for all requirements
+* | | | 4e37bdc Implemented Carrierwave field for Administrative, added image to category view
+|/ / /  
+* | | 7b9f19f Minor fixes, needs to be completed immediately.
+* | | df0ae84 Revised v.05
+* | |   40c943b Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+|\ \ \  
+| * | | d2a76bd added photos
+* | | |   5583abc Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+|\ \ \ \  
+| |/ / /  
+| * | | a6ca078 Fix article_image_block.rb and more documentation
+| * | | c756878 changed some tags names
+* | | | 3e9ce7f v.04 revised
+|/ / /  
+* | |   2d56e6a Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+|\ \ \  
+| * | | adfde67 Initial start at documentation and fixes to Admin Dashboards
+| * | | 192d0ec Added category images with text
+| * | | ee41a59 Add files via upload
+| * | | 90dda89 Delete readme.txt
+| * | | 993197e Update Diagrams.csv
+| * | | 53577f8 Update Diagrams.csv
+| * | | acf7e3e Update Diagrams.csv
+| * | | 55c8723 Update Diagrams.csv
+| * | | 0dec18c Create readme.txt
+* | | | 5527f70 Final v.05
+|/ / /  
+* | | 11eb72f Update Diagrams.csv
+* | | 416a621 Update readme.txt
+* | | 1514cdb Create bow.js
+* | | 0ed9d5e Create bow.html
+| |/  
+|/|   
+* | 79e74b8 Add files via upload
+* |   05ee7ef Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+|\ \  
+| * | 2ac6b22 Added ruby links so the categories lead to the article page, as a placeholder
+| * | f158679 added some links, cleaned it up a bit
+| * | 3e0ff0c cleaned up the page, fewer nested tags where possible
+| * | 99a020f Edited Graphics & Animation RD based on in-class feedback
+| * |   55d12db Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+| |\ \  
+| | * \   df75dee Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+| | |\ \  
+| | * | | 1d97e38 update categories index and show to include subcategories
+| * | | | 5776e16 fixed a bit
+| * | | | 3c172c6 Wasn't sure if "articles" was for each article or an index page, commented previous items
+| | |/ /  
+| |/| |   
+| * | |   af0e4ea Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+| |\ \ \  
+| | * | | aad1912 Added 6 images depicting categories
+| | |/ /  
+| | * | a310e72 create DB and Models for Subcategories. Add in description and define foreign key relationship for category
+| * | | 9f9f8c8 made categories page, needs images
+| |/ /  
+* | | 1950501 added mathjax and started working on equation block for article builder
+|/ /  
+* |   c9b1ddb (origin/categories) resolve merge conflicts
+|\ \  
+| * | 9cafd12 Show all categories
+| * | e1944fe Added category to Administrative
+| * | b02efea with show
+| * | 2478fa1 Category model - Test Record created
+| * | 99954ab Category model
+| * | 63919a0 Category model
+| * | f705509 Add files via upload
+| * | 3c66229 start initial implementation of article and image link up
+| * | 9899f04 ignore uploads
+| * |   bdec913 fix merge conflicts
+| |\ \  
+| | * | b8b1ddd Install yard for documentation generation
+| | * | 58d7a25 Improve look of diagram
+| | * | b5ac577 fixed up header bar a bit
+| | * | 76cfe77 changed some padding for the categories
+| | * | d5eac9a updated homepage to include a grid for categories, few QOL changes, WIP
+| | * | 24b86c6 fixed some tags and changed the header to have only logo, about link, categories drop down(does not work properly) and search bar
+| | * | 77d291b fixed button in article page
+| | |/  
+| | * 460121f Update link_block dashboard for attribute change
+| | *   efdb14d Generate more dashboards and update their views
+| | |\  
+| | | *   341124d Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+| | | |\  
+| | | | * 00e650a rotating dials and oscillating levers
+| | | | * dc01738 added the WLU auth server
+| | | | *   4322be2 Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+| | | | |\  
+| | | | | * 72ae9da Remove contributors dashboard
+| | | | * | 6039870 added short log
+| | | * | | da8a2bf link blocks are stored on article creation
+| | * | | | 650bdd2 Generate more dashboards, update views
+| * | | | | 121757d Initial Attempt At Image Uploads
+| | |_|_|/  
+| |/| | |   
+| * | | | b8a06b5 fixing homepage
+| * | | | 95e0e91 removed comments
+| * | | |   92be491 Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+| |\ \ \ \  
+| | | |_|/  
+| | |/| |   
+| | * | | 7b6a291 I thought I could do better, and did (added html format)
+| * | | |   cd7083e Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+| |\ \ \ \  
+| | |/ / /  
+| | * | | b9ba5a6 wrote script to update stats for dbrown each week, run with ./update_stats.sh
+| | * | | c13d6dd added some devise options
+| | * | | b554bde Added some views for user login
+| | | |/  
+| | |/|   
+| | * | bafc461 fixed up the document
+| | |/  
+| * | 5be1821 fixed up the home page, still a WIP
+| |/  
+| * fee46ef Edit view of user dashboard
+| * 262c1ac Add inital admin panel
+| * 44649f5 Add comments to tests
+| * 45db21b test commit record
+| * 177555b Add more testing and fix article_diagram_block.rb
+| *   b9e2bfe Merge branch 'master' of github.com:UPOD-2016/UPOD
+| |\  
+| | * 8f1f3d5 remove general files - no use for these, and in the wrong file format in any case.
+| * | 175d049 added diagram table
+| |/  
+| * 2e24b96 sirtrevor small fixes
+| *   f49a70d Merge branch 'master' of github.com:UPOD-2016/UPOD
+| |\  
+| | * fb0138f removed migration mistake
+| * | e00535e added contributor method
+| * |   80614e8 Merge branch 'master' of github.com:UPOD-2016/UPOD
+| |\ \  
+| | |/  
+| | *   a656ce1 Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+| | |\  
+| | | * 1f181f6 Update database.yml
+| | | * e49c5d2 Update database.yml
+| | * | 8f20df8 added a session model
+| | |/  
+| | * 7877bbc database additions for users and session tracking
+| | * 2ff59cb session tracking
+| | * d1853b5 adding session table
+| | * fd9e7ed adding session table
+| | * 09c3320 added alert and notice areas to application layout
+| | * c76192c added user model and LDAP models
+| | * 84fa2d4 deleted the back end RD .doc files
+| * | e875344 cleaning up html
+* | | 97d34e9 delete ds_store
+* | |   06fa32d Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+|\ \ \  
+* | | | 5d77679 Update time tracking sheet with latest contributions as well as backend requirements document with notes and to do list for categories
+| | | | * 71c6eac (origin/administrate) New article redirect
+| | | | * 1ff69ae Add administate gem
+| | | |/  
+| | | * f4af4b5 Removed spaces from name
+| | | * 2b6ca90 Removed spaces from name
+| | | * 8dc0900 Removed spaces from name
+| | | * dff5ab9 Removed spaces from name
+| | | * 219084b Version 1 of fundamentals research in modular form
+| | |/  
+| |/|   
+| * | e1b6f79 updated optics
+| * | 3b74d91 USE GDOCS TIME TRACKING
+| * | ee328af Add files via upload
+| * | e64714e Add files via upload
+| * | aae328e Update free_body.html
+| * | fec2b99 Delete svg.css
+| * | e0c6908 Delete elastic_collision.html
+| |/  
+| *   8fb7eb5 Merge branch 'master' of github.com:UPOD-2016/UPOD
+| |\  
+| | * f6a8f58 Add files via upload
+| * |   ec2394a fixed merge conflicts
+| |\ \  
+| | |/  
+| | * 0bd0010 Update readme.txt
+| | * 9eb2f7a Completed Hierarchy and Tag List for entire Physics Research
+| | * 71c5eb8 Added link blocks to article editor and changed the link_block model
+| | * 7a14f7b Migration to change acttable attributes
+| | * 5b328b5 Completed standard template for classical mechanics
+| * | bff532b New Navbar, Updated Sir Trevor, Started Implmentation of Image Blcok
+| |/  
+| * 878ab03 update frontendJS.js (redundant lines)
+| * 3433e01 nested collapsable articles in admin page
+| * 213d49f Fixed an issue where the header wouldn't show on all pages
+| * b4ce7a2 Add files via upload
+| * 45d4a0c Update readme.txt
+| * 74cbb15 added drop down menu to article page
+| * d9f7935 Update Diagrams.csv
+| * 42facf3 Updated version of concave mirror
+| * 3d1420b deleted editor for another one
+| * ad9eef5 fixed an entry
+| * c0fc21a make slide menu easier to maintain and update template.html
 |/  
-* 878ab03 update frontendJS.js (redundant lines)
-* 3433e01 nested collapsable articles in admin page
-* 213d49f Fixed an issue where the header wouldn't show on all pages
-* b4ce7a2 Add files via upload
-* 45d4a0c Update readme.txt
-* 74cbb15 added drop down menu to article page
-* d9f7935 Update Diagrams.csv
-* 42facf3 Updated version of concave mirror
-* 3d1420b deleted editor for another one
-* ad9eef5 fixed an entry
-* c0fc21a make slide menu easier to maintain and update template.html
 * f8ef430 Fixed an issue of the push menu cutting off before end of page
 *   0bd9e18 Merge branch 'master' of https://github.com/UPOD-2016/UPOD
 |\  
