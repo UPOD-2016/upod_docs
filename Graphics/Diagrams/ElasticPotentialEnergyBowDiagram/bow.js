@@ -6,6 +6,7 @@
 	var k=document.getElementById("sfc");
     var position = 278;
     var tracker = 0;
+    var springforceconstant=10;
 	
 	
 function stretch(){
@@ -44,3 +45,18 @@ function calculate(){
 
 };
 	
+function increase(){
+	if(springforceconstant<100){
+		springforceconstant=springforceconstant+1;
+	}
+	k.textContent = springforceconstant;
+	update();
+};
+
+function decrease(){
+	if(springforceconstant>=1){
+		springforceconstant=springforceconstant-1;
+	}
+	k.textContent = springforceconstant;
+	update();
+};
