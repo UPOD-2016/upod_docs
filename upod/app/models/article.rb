@@ -12,6 +12,8 @@
 #  updated_at :datetime         not null
 #
 class Article < ActiveRecord::Base
+  include Elasticsearch::Model
+  include Elasticsearch::Model::Callbacks
   has_many :blocks, class_name: 'ArticleBlock', foreign_key: :article_id
   has_many :contributions, class_name: 'Contributor', foreign_key: :article_id
   has_many :categorizations
@@ -22,7 +24,13 @@ class Article < ActiveRecord::Base
   # article.create_text_block, ArticleEquationBlock is now
   # article.create_equation_block and so on and so forth.
   include Blockable
-  include Searchable
+
+
+  mapping do
+      indexes :id, index: :not_analyized
+      indexes :title
+  end
+  #include Searchable
 
 # validates the title and it's length
   validates :title, presence: true, length: { maximum: 255 }

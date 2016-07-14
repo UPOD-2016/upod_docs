@@ -12,10 +12,16 @@
 #  body :text(65535)
 #
 class ArticleTextBlock < ActiveRecord::Base
+  include Elasticsearch::Model
+  include Elasticsearch::Model::Callbacks
   acts_as :article_block
+
+  mapping do
+      indexes :id, index: :not_analyized
+      indexes :body
+  end
 
 # validates the presence and length of the body of title block
   validates :body, presence: true, length: { maximum: 65535 }
 
- include Searchable
 end
