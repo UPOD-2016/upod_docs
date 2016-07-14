@@ -12,9 +12,10 @@
 #  updated_at :datetime         not null
 #
 class Article < ActiveRecord::Base
-  include Searchable
-  include Elasticsearch::Model
-  include Elasticsearch::Model::Callbacks
+  searchkick
+  #include Searchable
+  #include Elasticsearch::Model
+  #include Elasticsearch::Model::Callbacks
   has_many :blocks, class_name: 'ArticleBlock', foreign_key: :article_id
   has_many :contributions, class_name: 'Contributor', foreign_key: :article_id
   has_many :categorizations
@@ -27,10 +28,10 @@ class Article < ActiveRecord::Base
   include Blockable
 
 
-  mapping do
-      indexes :id, index: :not_analyized
-      indexes :title
-  end
+  #mapping do
+#      indexes :id, index: :not_analyized
+#      indexes :title
+#  end
   #include Searchable
 
 # validates the title and it's length

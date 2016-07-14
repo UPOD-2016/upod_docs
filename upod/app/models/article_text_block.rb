@@ -12,9 +12,7 @@
 #  body :text(65535)
 #
 class ArticleTextBlock < ActiveRecord::Base
-  include Searchable
-  #include Elasticsearch::Model
-  include Elasticsearch::Model::Callbacks
+  searchkick
   acts_as :article_block
 
   mapping do

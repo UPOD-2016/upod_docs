@@ -3,12 +3,8 @@ class ArticlesController < ApplicationController
 
   # GET /articles
   def index
-    @articles = Article.all
-
-    # work in progress for Elasticsearch, this should load only the articles
-    # which are found with a queery to q, otherwise it will load all the articles.
-
-    #@articles = Article.search((params[:q].present? ? params[:q] : '*')).records
+    Article.reindex
+    @articles = Article.search (params[:q].present? ? params[:q] : "*")
   end
 
   # GET /articles/1

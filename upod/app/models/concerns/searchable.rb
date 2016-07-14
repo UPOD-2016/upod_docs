@@ -1,3 +1,9 @@
+#
+#  Using searchkick now so this file is no longer needed.   However,
+#  it should demonstrate how it will be set up once everything is configured
+#
+#
+
 require 'elasticsearch/model'
 
 module Searchable
