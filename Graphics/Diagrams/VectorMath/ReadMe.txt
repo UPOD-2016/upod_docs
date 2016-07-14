@@ -1,1 +1,4 @@
-Update
+  -Jordan Visser
+  -Vector Math (addition and subtraction)
+  -Begining stages learning the math and matrix transformations
+  -Try here: http://hopper.wlu.ca/~viss3240/SVG/Vectors.svg
