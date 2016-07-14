@@ -23,6 +23,7 @@
               </ul>
             </li>
           </ul>
+          <% if request.env['PATH_INFO'] != '/' %>
           <ul class="nav navbar-nav navbar-right"> <!-- nav search -->
 						<form class="navbar-form" role="search">
 							<ul class="input-group">
@@ -33,6 +34,7 @@
 							</ul>
 						</form>
           </ul> <!-- end nav search -->
+          <% end %>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
