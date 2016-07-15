@@ -23,7 +23,7 @@ class ArticleTextBlockDashboard < Administrate::BaseDashboard
   COLLECTION_ATTRIBUTES = [
     :id,
     :article,
-    :actable,
+    #:actable,
     :article_block,
   ].freeze
 
@@ -31,9 +31,9 @@ class ArticleTextBlockDashboard < Administrate::BaseDashboard
   # an array of attributes that will be displayed on the model's show page.
   SHOW_PAGE_ATTRIBUTES = [
     :id,
-    :body,
     :article,
-    :actable,
+    :body,
+    #:actable,
     :article_block,
   ].freeze
 

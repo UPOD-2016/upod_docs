@@ -25,7 +25,7 @@ class ArticleLinkBlockDashboard < Administrate::BaseDashboard
     :id,
     :source,
     :video_id,
-    :actable,
+    #:actable,
     :article,
     :article_block,
   ].freeze
@@ -36,7 +36,7 @@ class ArticleLinkBlockDashboard < Administrate::BaseDashboard
     :id,
     :source,
     :video_id,
-    :actable,
+    #:actable,
     :article,
     :article_block,
   ].freeze

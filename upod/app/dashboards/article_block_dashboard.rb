@@ -21,8 +21,8 @@ class ArticleBlockDashboard < Administrate::BaseDashboard
   # Feel free to add, remove, or rearrange items.
   COLLECTION_ATTRIBUTES = [
     :id,
-    :position,
     :article,
+    :position,
     :actable,
   ].freeze
 
@@ -30,8 +30,8 @@ class ArticleBlockDashboard < Administrate::BaseDashboard
   # an array of attributes that will be displayed on the model's show page.
   SHOW_PAGE_ATTRIBUTES = [
     :id,
-    :position,
     :article,
+    :position,
     :actable,
   ].freeze
 

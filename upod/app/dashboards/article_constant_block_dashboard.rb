@@ -24,7 +24,7 @@ class ArticleConstantBlockDashboard < Administrate::BaseDashboard
     :id,
     :constant,
     :article,
-    :actable,
+    #:actable,
     :article_block,
   ].freeze
 
@@ -34,7 +34,7 @@ class ArticleConstantBlockDashboard < Administrate::BaseDashboard
     :id,
     :constant,
     :article,
-    :actable,
+    #:actable,
     :article_block,
   ].freeze
 

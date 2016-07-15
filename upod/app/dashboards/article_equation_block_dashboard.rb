@@ -23,7 +23,9 @@ class ArticleEquationBlockDashboard < Administrate::BaseDashboard
   # Feel free to add, remove, or rearrange items.
   COLLECTION_ATTRIBUTES = [
     :id,
-    :actable,
+    :equation,
+    :label,
+    #:actable,
     :article,
     :article_block,
   ].freeze
@@ -35,7 +37,7 @@ class ArticleEquationBlockDashboard < Administrate::BaseDashboard
     :equation,
     :label,
     :article,
-    :actable,
+    #:actable,
     :article_block,
   ].freeze
 

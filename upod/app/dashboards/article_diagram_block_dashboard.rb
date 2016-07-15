@@ -25,7 +25,7 @@ class ArticleDiagramBlockDashboard < Administrate::BaseDashboard
   COLLECTION_ATTRIBUTES = [
     :id,
     :diagram,
-    :actable,
+    #:actable,
     :article,
     :article_block,
   ].freeze
@@ -36,8 +36,8 @@ class ArticleDiagramBlockDashboard < Administrate::BaseDashboard
     :id,
     :article,
     :diagram,
+    #:actable,
     :article_block,
-    :actable,
     #:created_at,
     #:updated_at,
   ].freeze
