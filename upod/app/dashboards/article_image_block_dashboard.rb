@@ -1,6 +1,6 @@
 require "administrate/base_dashboard"
 
-class ArticleBlockDashboard < Administrate::BaseDashboard
+class ArticleImageBlockDashboard < Administrate::BaseDashboard
   # ATTRIBUTE_TYPES
   # a hash that describes the type of each of the model's fields.
   #
@@ -10,8 +10,12 @@ class ArticleBlockDashboard < Administrate::BaseDashboard
   ATTRIBUTE_TYPES = {
     actable: Field::Polymorphic,
     article: Field::BelongsTo,
+    image: Field::BelongsTo,
+    article_block: Field::HasOne,
     id: Field::Number,
-    position: Field::Number,
+    image_id: Field::Number,
+    created_at: Field::DateTime,
+    updated_at: Field::DateTime,
   }.freeze
 
   # COLLECTION_ATTRIBUTES
@@ -21,18 +25,24 @@ class ArticleBlockDashboard < Administrate::BaseDashboard
   # Feel free to add, remove, or rearrange items.
   COLLECTION_ATTRIBUTES = [
     :id,
-    :position,
-    :article,
+    :image_id,
+    :image,
     :actable,
+    :article,
+    :article_block,
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
   # an array of attributes that will be displayed on the model's show page.
   SHOW_PAGE_ATTRIBUTES = [
     :id,
-    :position,
+    :image_id,
+    :image,
     :article,
+    :article_block,
     :actable,
+    #:created_at,
+    #:updated_at,
   ].freeze
 
   # FORM_ATTRIBUTES
@@ -40,14 +50,15 @@ class ArticleBlockDashboard < Administrate::BaseDashboard
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = [
     #:actable,
-    #:article,
-    #:position,
+    :article,
+    :image,
+    #:article_block,
   ].freeze
 
-  # Overwrite this method to customize how article blocks are displayed
+  # Overwrite this method to customize how article diagram blocks are displayed
   # across all pages of the admin dashboard.
   #
-  # def display_resource(article_block)
-  #   "ArticleBlock ##{article_block.id}"
+  # def display_resource(article_diagram_block)
+  #   "ArticleDiagramBlock ##{article_diagram_block.id}"
   # end
 end
