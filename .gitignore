@@ -1,2 +1,17 @@
+/.bundle
 
+# Ignore all logfiles and tempfiles.
+/upod/log/*
+!/upod/log/.keep
+/upod/tmp
 .DS_Store
+upod/public/uploads/*
+
+#Ignore the database.yml config file for testing
+upod/config/database.yml
+
+#testing server using nohup
+upod/nohup.out
+
+upod/doc
+upod/.yardoc/
