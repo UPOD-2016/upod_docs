@@ -13,46 +13,39 @@ NUM_OF_ITERATIONS = 6
 puts "Starting to Seed Database. This takes a minute.".yellow
 puts "================================================".yellow
 puts "Removing current entries in database".blue
-Category.destroy_all
-Article.destroy_all
-User.destroy_all
-Contributor.destroy_all
-ArticleBlock.destroy_all
-Subcategory.destroy_all
-Categorization.destroy_all
-Session.destroy_all
-Image.destroy_all
+
+[Category, Article, User, Contributor, ArticleBlock, Subcategory, Categorization, Session, Image].map(&:destroy_all)
 
 categories = [
   {
     name: "Electricity",
     description: "Description for Electricity & Magnetism",
-    remote_image_url: "http://lorempixel.com/200/200/",
+    # remote_image_url: "http://lorempixel.com/200/200/",
   },
   {
     name: "Fundamentals",
     description: "Description for Fundamentals",
-    remote_image_url: "http://lorempixel.com/200/200/",
+    # remote_image_url: "http://lorempixel.com/200/200/",
   },
   {
     name: "Optics",
     description: "Description for Optics",
-    remote_image_url: "http://lorempixel.com/200/200/",
+    # remote_image_url: "http://lorempixel.com/200/200/",
   },
   {
     name: "Quantum",
     description: "Description for Quantum Physics",
-    remote_image_url: "http://lorempixel.com/200/200/",
+    # remote_image_url: "http://lorempixel.com/200/200/",
   },
   {
     name: "Statistical",
     description: "Description for Statistical Physics",
-    remote_image_url: "http://lorempixel.com/200/200/",
+    # remote_image_url: "http://lorempixel.com/200/200/",
   },
   {
     name: "Thermodynamics",
     description: "Description for Thermodynamics",
-    remote_image_url: "http://lorempixel.com/200/200/",
+    # remote_image_url: "http://lorempixel.com/200/200/",
   }
 ]
 
@@ -77,8 +70,8 @@ NUM_OF_ITERATIONS.times do |x|
   user = User.create(:email => Faker::Internet.email, :password => Faker::Internet.password(7))
   puts "Creating a user with the email: #{user.email} and the password: #{user.password}".blue
   Contributor.create(article: article, user: user)
-  puts "Creating a contributor with article #{article} and #{user}".blue
+  puts "Creating a contributor with article #{article.title} and #{user.email}".blue
   Categorization.create(article: article, subcategory: subcategory)
-  puts "Creating a categorization between #{article} and #{subcategory}".blue
+  puts "Creating a categorization between #{article.title} and #{subcategory.name}".blue
   puts "================================================".yellow
 end

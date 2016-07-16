@@ -41,6 +41,7 @@ source 'https://rails-assets.org' do
   gem 'rails-assets-underscore'
 end
 gem "rails-erd"
+gem 'js-routes'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

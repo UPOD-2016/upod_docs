@@ -10,10 +10,10 @@ $(document).on('turbolinks:load', function(){
   SirTrevor.setDefaults({
     defaultType: "Text",
     iconUrl: "<%= asset_path('sir-trevor-icons.svg') %>",
-    uploadUrl: "/images",
+    uploadUrl: Routes.images_path(),
     ajaxOptions: {
       headers: {
-        "X-CSRF-Token": document.querySelector('meta[name=csrf-token]').getAttribute('content')
+        "X-CSRF-Token": $('meta[name=csrf-token]').attr('content')
       },
       credentials: 'same-origin'
     }
@@ -35,5 +35,25 @@ $(document).on('turbolinks:load', function(){
       "Video",
       "Equation"
     ]
+  });
+  $('.sir-trevor-form').submit(function(e) {
+    e.preventDefault();
+
+    var $textarea = $(this).find('textarea');
+    var $additionalMetaForms = $('.additional-sir-trevor-form');
+
+    var json = JSON.parse($textarea.val());
+    json.meta = {};
+    json.meta.title = $('#title').val();
+    var $selectedSubcategories = $additionalMetaForms.find('input:checkbox:checked');
+
+    json.meta.subcategories = $.map($selectedSubcategories, function(el) {
+      return $(el).val();
+    });
+
+    $textarea.val(JSON.stringify(json));
+
+    //Prevent an infinite loop by submitting through javascript, not jQuery
+    this.submit();
   });
 });

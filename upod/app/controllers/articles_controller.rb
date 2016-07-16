@@ -3,12 +3,8 @@ class ArticlesController < ApplicationController
 
   # GET /articles
   def index
-    if params["NO_REINDEX"]
-      @articles = Article.all
-    else
-      Article.reindex
-      @articles = Article.search (params[:q].present? ? params[:q] : "*")
-    end
+    Article.reindex
+    @articles = Article.search (params[:q].present? ? params[:q] : "*")
   end
 
   # GET /articles/1
@@ -19,10 +15,7 @@ class ArticlesController < ApplicationController
   # GET /articles/new
   def new
     @article = Article.new
-  end
-
-  def add_title_and_categories
-    @article = Article.find(params[:id])
+    @test = "hello"
   end
 
   # GET /articles/1/edit
@@ -32,7 +25,7 @@ class ArticlesController < ApplicationController
   # POST /articles
   def create
     @article = Article.create_from_sir_trevor(params[:sir_trevor_content])
-    redirect_to add_title_and_categories
+    redirect_to @article
   end
 
   # PATCH/PUT /articles/1
