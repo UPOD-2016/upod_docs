@@ -28,7 +28,6 @@ Rails.application.routes.draw do
   get '/about' => 'static_pages#about'
   root to: 'static_pages#home'
   resources :articles
-  get 'article/metadata_form' => 'articles#metadata_form'
   resources :images, only: :create
   #categories
   resources :categories
