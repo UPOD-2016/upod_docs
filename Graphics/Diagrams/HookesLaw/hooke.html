@@ -1,0 +1,57 @@
+<svg version="1.0" width="640px" height="440px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+xml:space="preserve">
+
+<!--graph axis and slope-->
+<line id="yaxis" y2="265" x2="100" y1="65" x1="100" stroke-width="5" stroke="#000000" fill="none"/>
+    
+<line id="xaxis" y2="265" x2="320" y1="265" x1="100" stroke-width="5" stroke="#000000" fill="none"/>
+    
+<line y2="90" x2="300" y1="265" x1="100" stroke-width="5" stroke="#000000" fill="none"/>
+
+<symbol id="tracker">
+<circle r="20" stroke-width="8" stroke="red" fill="red" />
+</symbol>    
+
+<use xlink:href="#tracker">
+    <animateMotion 
+        path="M100 265 L300 90 Z"
+        dur="2s" 
+        repeatCount="indefinite"/>
+</use>
+
+<!--spring system-->
+<polyline stroke="black" stroke-width="4" fill="none">
+    <animate id = "a1" 
+         attributeName = "points"
+         from = "500 75 , 500 100 , 450 115 , 500 130 , 450 145 , 500 165, 500 180"
+         to = "500 75 , 500 100 , 450 125 , 500 150 , 450 175 , 500 205, 500 240"
+         dur = "1s"
+         begin = "0; a2.end"/>
+</polyline>     
+<polyline stroke="black" stroke-width="4" fill="none">
+    <animate id = "a2" 
+         attributeName = "points"
+         from = "500 75 , 500 100 , 450 125 , 500 150 , 450 175 , 500 205, 500 240"
+         to = "500 75 , 500 100 , 450 115 , 500 130 , 450 145 , 500 165, 500 180"
+         dur = "1s"
+         begin = "a1.end"/>
+</polyline>
+    
+<polyline stroke="black" stroke-width="5" fill="none">
+    <animate id = "b1" 
+         attributeName = "points"
+         from = "475 180, 525 180, 525 230, 475 230, 475 180"
+         to = "475 240, 525 240, 525 290, 475 290, 475 240"
+         dur = "1s"
+         begin = "0; b2.end"/>
+</polyline>      
+<polyline stroke="black" stroke-width="5" fill="none">
+    <animate id = "b2" 
+         attributeName = "points"
+         from = "475 240, 525 240, 525 290, 475 290, 475 240"
+         to = "475 180, 525 180, 525 230, 475 230, 475 180"
+         dur = "1s"
+         begin = "b1.end"/>
+</polyline>
+      
+</svg>
