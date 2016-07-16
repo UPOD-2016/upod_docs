@@ -10,7 +10,7 @@ Category.destroy_all
 
 categories = [
   {
-    name: "Electricity & Magnetism",
+    name: "Electricity",
     description: "Description for Electricity & Magnetism",
     remote_image_url: "http://lorempixel.com/200/200/",
   },
@@ -25,12 +25,12 @@ categories = [
     remote_image_url: "http://lorempixel.com/200/200/",
   },
   {
-    name: "Quantum Physics",
+    name: "Quantum",
     description: "Description for Quantum Physics",
     remote_image_url: "http://lorempixel.com/200/200/",
   },
   {
-    name: "Statistical Physics",
+    name: "Statistical",
     description: "Description for Statistical Physics",
     remote_image_url: "http://lorempixel.com/200/200/",
   },

@@ -13,7 +13,8 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><%= link_to "About", "about" %></li>
+            <li><%= link_to "About", about_path %></li>
+             <li><%= link_to "Articles", articles_path %></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categories <span class="caret"></span></a>
               <ul class="dropdown-menu">
@@ -23,7 +24,7 @@
               </ul>
             </li>
           </ul>
-          <% if request.env['PATH_INFO'] != '/' %>
+          <% unless current_page?(root_path) %>
           <ul class="nav navbar-nav navbar-right"> <!-- nav search -->
 						<form class="navbar-form" role="search">
 							<ul class="input-group">

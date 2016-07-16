@@ -1,13 +1,14 @@
 //= require includes/MathJaxConfig
 //= require includes/MathJax
 //= require includes/sir-trevor
-//= require ./equation.js
+//= require ./blocks/equation.js
 
-$(document).on('ready page:load', function(){
+$(document).on('turbolinks:load', function(){
 
   MathJax.Hub.Configured(); //Tell mathjax to start configuration
 
   SirTrevor.setDefaults({
+    defaultType: "Text",
     iconUrl: "<%= asset_path('sir-trevor-icons.svg') %>",
     uploadUrl: "/images",
     ajaxOptions: {
@@ -21,7 +22,7 @@ $(document).on('ready page:load', function(){
   SirTrevor.config.scribeDebug = true;
   SirTrevor.config.language = "en";
   SirTrevor.Blocks.Heading.prototype.toolbarEnabled = true;
-  SirTrevor.Blocks.Quote.prototype.toolbarEnabled = true;
+  // SirTrevor.Blocks.Quote.prototype.toolbarEnabled = true;
   SirTrevor.Blocks.Text.prototype.toolbarEnabled = true;
   window.editor = new SirTrevor.Editor({
     el: $(".js-sir-trevor-instance").get(0),

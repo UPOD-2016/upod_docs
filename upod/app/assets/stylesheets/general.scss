@@ -153,15 +153,6 @@ p {
   min-height: 100%;
 }
 
-input[type=checkbox] {
-  position: absolute;
-  opacity: 0;
-}
-
-label {
-  font-size: 2em;
-  color: #ffcc00;
-}
 
 .page-content {
   width: 100%;
@@ -170,92 +161,6 @@ label {
   transition: transform .4s;
 }
 
-.slide-menu {
-  transform: translate3d(-250px, 0, 0);
-  position: absolute;
-  width: 250px;
-  background: #800080;
-  color: #ddd;
-  left: 0;
-  height: 100%;
-  transition: all .4s;
-  h1 {
-    margin: 10px;
-    text-shadow: 1px 1px 1px #000;
-  }
-}
-
-.menu {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  #menuLink {
-    display: block;
-    text-decoration: none;
-    color: #fff;
-    font-size: 1.1em;
-    padding: 15px;
-    background: #800080;
-    border-bottom: 1px solid #ffffff;
-    &:hover {
-      background: #4d004d;
-      box-shadow: inset 0px 1px 1px #475059;
-    }
-  }
-}
-
-/*
-.menu {
-    background: #202024 url('../resources/menuBack.png') repeat left top;
-    left: -285px;
-    height: 100%;
-    position: fixed;
-    width: 285px;
-}
-
-.menu ul {
-    border-top: 1px solid #737373;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.menu li {
-    border-bottom: 1px solid #737373;
-    font-family: 'Open Sans', sans-serif;
-    line-height: 45px;
-    padding-bottom: 3px;
-    padding-left: 10px;
-    padding-top: 3px;
-}
-
-.menu a {
-    color: #fff;
-    font-size: 15px;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-.icon-close {
-    cursor: pointer;
-    padding-left: 10px;
-    padding-top: 10px;
-    padding-bottom: 5px;
-}
-
-.icon-menu {
-    color: #fff;
-    cursor: pointer;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    padding-bottom: 25px;
-    padding-left: 25px;
-    padding-top: 25px;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-*/
-/* More dropdown menu */
 
 .dropbtn {
   background-color: #FFFFFF;
@@ -391,4 +296,17 @@ body {
     display: block;
     right: 56px;
   }
+}
+/************************************************************
+*   CATEGORIES CHECKBOXES
+*************************************************************/
+.checkbox-list input[type="checkbox"] {
+  display: inline-block;
+  width: 10%;
+}
+
+.checkbox-list input[type="checkbox"] + label {
+  display: inline-block;
+  margin-left: 10%;
+  width: 80%;
 }

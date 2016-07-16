@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="row col-md-8">
+    <%= form_for @article do |f| %>
+      <%= f.text_box :title %>
+      <strong>Select Category(s)</strong>
+      <div class="checkbox-list">
+        <%= f.collection_check_boxes(:article, :categorizations, Category.all, :id, :name) %>
+      </div>
+    <% end %>
+  </div>
+</div>

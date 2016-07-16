@@ -25,7 +25,9 @@ Rails.application.routes.draw do
   devise_for :users
   get '/about' => 'static_pages#about'
   root to: 'static_pages#home'
-  resources :articles
+  resources :articles do
+    get 'add_title_and_categories'
+  end
   resources :images, only: :create
   #categories
   resources :categories
