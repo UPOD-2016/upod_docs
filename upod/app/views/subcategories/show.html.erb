@@ -1,51 +1,14 @@
-
-
-<div id="menuContainer">
-  <input id="toggle" type="checkbox">
-  <label for="toggle">&equiv;</label>
-  <article class="page-content">
-    <!--start content section-->
-	  <header id="headerContent"></header>
-    <ul class="breadcrumb">
-      <li><a href="#">Home</a></li>
-      <li><%= link_to "Categories", :controller => 'categories', :action => 'index'  %></li>
-      <li class="active"><%= @subcategory.name %></li>
-
-    </ul>
-	<!-- work done by: Vishrut Sutaria
-        split the  page in half using grids and the content is in div class jumbotron, left
-        half containing  a summary of the sub category and the right half has the arctiles
-        that are linked to the arctile page and above the links a small summary of those articles
-  -->
-	<main>
-      <div class="container">
-        <div class="jumbotron">
-          <h2><%= @subcategory.name %></h2>
-          <p>
-            <%= @subcategory.description %>
-          </p>
-        </div>
-      </div>
-
-    - <% @articles.each do |article| %>
-     -	<h5>
-     -		<%= link_to article.title, article %>
-     -	</h5>
-     -<% end %>
-     
-	</main>
-	<!-- work done by: Vishrut Sutaria-->
-	<footer id="footerContent"></footer>
-    <!--end content section-->
-  </article>
-  <div class="slide-menu">
-    <nav class="menu">
-      <li><a id="menuLink" href="#">Home</a></li>
-      <li><a id="menuLink" href="#">About</a></li>
-      <li><a id="menuLink" href="#">Contact</a></li>
-      <% @categories.each do |category| %>
-        <li><%= link_to category.name, category, id: "menuLink" %></li>
-      <% end %>
-    </nav>
+  <div class="container">
+    <div class="jumbotron">
+      <h2><%= @subcategory.name %></h2>
+      <p>
+        <%= @subcategory.description %>
+      </p>
+    </div>
   </div>
-</div>
+
+  <% @articles.each do |article| %>
+    <h5>
+    <%= link_to article.title, article %>
+    </h5>
+  <% end %>
