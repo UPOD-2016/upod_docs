@@ -8,16 +8,18 @@ Rails.application.routes.draw do
     resources :users
     resources :categories
     resources :subcategories
-#resources :categorizations
-#resources :article_text_blocks
-#resources :article_blocks
-#resources :article_constant_blocks
-#resources :article_diagram_blocks
-#resources :article_equation_blocks
-#resources :article_link_blocks
-#resources :contributors
-#resources :diagrams
-#resources :sessions
+resources :article_blocks
+resources :article_text_blocks
+resources :article_constant_blocks
+resources :article_image_blocks
+resources :article_diagram_blocks
+resources :article_equation_blocks
+resources :article_link_blocks
+resources :contributors
+resources :categorizations
+resources :diagrams
+resources :images
+resources :sessions
 
     root to: "articles#index"
   end

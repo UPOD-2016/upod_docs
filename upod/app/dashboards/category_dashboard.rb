@@ -37,8 +37,8 @@ class CategoryDashboard < Administrate::BaseDashboard
     #:created_at,
     #:updated_at,
     :description,
-    :image,
     :subcategories,
+    :image,
   ].freeze
 
   # FORM_ATTRIBUTES

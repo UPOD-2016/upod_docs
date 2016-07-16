@@ -1,5 +1,19 @@
-<svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-	width="1000px" height="1000px" xml:space="preserve" <onclick="loaded();">
+<?xml-stylesheet type="text/css" href="style.css"?>
+
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200px" height="600px" xml:space="preserve" onload="calculate();">
+ 	
+ 	<?Define Buttons?>
+    <defs>
+        <symbol id="button" overflow="visible">
+            <rect x="-30" y="-10" rx="5" ry="5" width="100" height="20"/>
+        </symbol>
+        
+        <symbol id="smallbutton" overflow="visible">
+            <rect x="-30" y="-10" rx="5" ry="10" width="10" height="10"/>
+        </symbol>
+        
+        
+    </defs>
  		
  	<?labels?>	
  	<text x="260" y="40" font-family="sans-serif" font-size="15px" fill="black" text-anchor="end">Elastic Potential Energy: </text>
@@ -62,64 +76,29 @@
 	<line id="bottom" x1="278" y1="330" x2="278.5" y2="484" stroke="black" fill="black" stroke-width="1" />
 
 	<?buttons?>
-	 <symbol id="out" overflow="visible"
-     onclick="stretch();" class="button" >
-     <g>
-        <rect x="-60" y="-10" rx="5" ry="5" width="120" height="20"
-        class="button"/>
-        <text class="textSmall" style="text-anchor:middle;" x="0"
-        y="4">Pull</text>
-        </g>        
-     </symbol>
-     
-	 <symbol id="in" overflow="visible"
-     onclick="letgo();" class="button" >
-     <g>
-        <rect x="-60" y="-10" rx="5" ry="5" width="120" height="20"
-        class="button"/>
-        <text class="textSmall" style="text-anchor:middle;" x="0"
-        y="4">Release</text>
-        </g>        
-     </symbol>
-     
-     <use xlink:href="#out" x="180" y="550" />
-     <use xlink:href="#in" x="310" y="550" />
+	
+	<g id="out" onclick="stretch();" class="button">
+        <use xlink:href="#button" x="190" y="550"/>
+        <text style="text-anchor:middle;" class="textSmall" x="210" y="555">Pull</text>
+    </g>
+	 
+	 <g id="in" onclick="letgo();" class="button">
+        <use xlink:href="#button" x="300" y="550"/>
+        <text style="text-anchor:middle;" class="textSmall" x="320" y="555">Release</text>
+    </g>
+    
+    <g id="increase" onclick="increase();" class="button">
+        <use xlink:href="#smallbutton" x="311" y="93"/>
+        <text style="text-anchor:middle;" class="textSmaller" x="286" y="90">▲</text>
+    </g>
+    
+    <g id="decrease" onclick="decrease();" class="button">
+        <use xlink:href="#smallbutton" x="311" y="107"/>
+        <text style="text-anchor:middle;" class="textSmaller" x="286" y="106">▼</text>
+    </g>
+
+     <script type="text/javascript" xlink:href="bow.js"></script>
 </svg>
 
-<style>
-  .button {
-  fill: LightGrey ;
-  stroke: Silver;
-  }
 
-  .button:hover {
-  cursor: pointer;
-  }
-
-  .button:active {
-  fill: DarkGrey;
-  stroke: black;
-  }
-
-  .textSmall {
-   font-family: sans-serif;
-   font-size: 9pt;
-   font-weight: bold;
-   fill: black;
-   stroke: none;
-  }
-
-  .curve {
-   stroke-dasharray: 100;
-   animation: dash 5s linear;
-  }
-
-@keyframes dash {
-  to {
-    stroke-dashoffset: 1000;
-  }
-}
-</style>
-
-<script src="bow.js"></script>
 
