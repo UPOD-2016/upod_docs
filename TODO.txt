@@ -1,5 +1,6 @@
 Home page - need to load images (category.image is empty)
 	-add dropdown to search bar, search for "all" or "category 1-6"
+	-search bar needs to be bigger
 Category page - get rid of index of categories, make a page for individual categories. Effective clone of subcategories
 Subcategories page - WIP
 Articles page - image loading error
