@@ -5,10 +5,15 @@
     <%= @subcategory.description %>
     </p>
   </div>
+  
+  <div class="container" style="margin-top:30px;text-align:center;padding:10px;">
+
+	<% @articles.each do |article| % class="col-sm-4" style="padding:10px;">
+	<h5>
+	<%= link_to article.title, article %>     
+	</h5>
+	<% end %>
+
+  </div>
 </div>
 
-<% @articles.each do |article| %>
-  <h5>
-  <%= link_to article.title, article %>     
-  </h5>
-<% end %>
