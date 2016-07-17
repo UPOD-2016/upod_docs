@@ -1,0 +1,25 @@
+Home page - need to load images (category.image is empty)
+	-add dropdown to search bar, search for "all" or "category 1-6"
+Category page - get rid of index of categories, make a page for individual categories. Effective clone of subcategories
+Subcategories page - WIP
+Articles page - image loading error
+	-index: will be search results, needs to be prettier
+
+Header - add dropdown to search bar, see above
+
+
+Need to implement some sort of category/subcategory tree, put in left hand of category/subcategory/article pages
+
+
+
+
+/app/views/device/first four:
+
+/confiramations:
+http://0.0.0.0:3000/users/sign_in		-		needs to be less ugly
+
+
+http://0.0.0.0:3000/users/password/new
+
+
+http://0.0.0.0:3000/users/sign_up
