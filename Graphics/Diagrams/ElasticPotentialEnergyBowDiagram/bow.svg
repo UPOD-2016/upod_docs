@@ -12,7 +12,6 @@
             <rect x="-30" y="-10" rx="5" ry="10" width="10" height="10"/>
         </symbol>
         
-        
     </defs>
  		
  	<?labels?>	
@@ -75,6 +74,11 @@
 	<line id="top" x1="281" y1="170" x2="278" y2="330" stroke="black" fill="black" stroke-width="1" />
 	<line id="bottom" x1="278" y1="330" x2="278.5" y2="484" stroke="black" fill="black" stroke-width="1" />
 
+
+	<?invisible ball for bow movement with the mouse?>
+	<circle id="ball" cx="278" cy="330" r="10" stroke="black" stroke-width="3" fill="red" opacity="0.0"/>
+	
+	
 	<?buttons?>
 	
 	<g id="out" onclick="stretch();" class="button">
