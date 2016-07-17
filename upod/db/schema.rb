@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160713022734) do
+ActiveRecord::Schema.define(version: 20160717004808) do
 
   create_table "article_blocks", force: :cascade do |t|
     t.integer "position",     limit: 4
@@ -28,8 +28,10 @@ ActiveRecord::Schema.define(version: 20160713022734) do
 
   create_table "article_diagram_blocks", force: :cascade do |t|
     t.integer  "diagram_id", limit: 4
-    t.datetime "created_at",           null: false
-    t.datetime "updated_at",           null: false
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
+    t.text     "code",       limit: 65535
+    t.string   "caption",    limit: 255
   end
 
   create_table "article_equation_blocks", force: :cascade do |t|
@@ -44,7 +46,7 @@ ActiveRecord::Schema.define(version: 20160713022734) do
   end
 
   create_table "article_link_blocks", force: :cascade do |t|
-    t.string "source",   limit: 255
+    t.string "source",   limit: 256, null: false
     t.string "video_id", limit: 255, null: false
   end
 

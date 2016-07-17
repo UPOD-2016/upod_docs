@@ -17,7 +17,8 @@ $(document).on('turbolinks:load', function() {
             title: function() {
                 return 'Equation';
             },
-            icon_name: 'equation',
+			//icon_name: 'equation',
+            icon_name: 'quote',
             pastable: true,
             formatable: false,
             textable: false,

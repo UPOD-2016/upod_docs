@@ -2,6 +2,7 @@
 //= require includes/MathJax
 //= require includes/sir-trevor
 //= require ./blocks/equation.js
+//= require ./blocks/diagram.js
 
 $(document).on('turbolinks:load', function(){
 
@@ -31,9 +32,9 @@ $(document).on('turbolinks:load', function(){
       "Text",
       "List",
       "Quote",
-      "Image",
       "Video",
-      "Equation"
+	  "Diagram",
+	  "Equation"
     ]
   });
   $('.sir-trevor-form').submit(function(e) {

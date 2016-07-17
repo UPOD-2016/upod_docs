@@ -62,6 +62,8 @@ class Article < ActiveRecord::Base
         article.create_link_block(source: block['data']['source'], video_id: block['data']['remote_id'])
       when :equation
         article.create_equation_block(equation: block['data']['equation'], label: block['data']['label'])
+	  when :diagram
+        article.create_diagram_block(code: block['data']['code'], caption: block['data']['caption'])
       end
     end
 

@@ -28,6 +28,7 @@ Rails.application.routes.draw do
   get '/about' => 'static_pages#about'
   root to: 'static_pages#home'
   resources :articles
+  resources :article_diagram_blocks, only: :show
   resources :images, only: :create
   #categories
   resources :categories
