@@ -59,7 +59,7 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
-    acts_as_list (0.7.5)
+    acts_as_list (0.7.6)
       activerecord (>= 3.0)
     administrate (0.2.2)
       autoprefixer-rails (~> 6.0)

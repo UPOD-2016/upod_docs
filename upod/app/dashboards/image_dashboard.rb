@@ -10,7 +10,7 @@ class ImageDashboard < Administrate::BaseDashboard
   ATTRIBUTE_TYPES = {
     article_image_blocks: Field::HasMany,
     id: Field::Number,
-    body: Field::Text,
+    body: Field::Image,
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
   }.freeze
@@ -21,33 +21,34 @@ class ImageDashboard < Administrate::BaseDashboard
   # By default, it's limited to four items to reduce clutter on index pages.
   # Feel free to add, remove, or rearrange items.
   COLLECTION_ATTRIBUTES = [
+    :article_image_blocks,
     :id,
     :body,
-    :article_image_blocks,
+    :created_at,
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
   # an array of attributes that will be displayed on the model's show page.
   SHOW_PAGE_ATTRIBUTES = [
+    :article_image_blocks,
     :id,
     :body,
-    :article_image_blocks,
-    #:created_at,
-    #:updated_at,
+    :created_at,
+    :updated_at,
   ].freeze
 
   # FORM_ATTRIBUTES
   # an array of attributes that will be displayed
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = [
-    #:article_diagram_blocks,
+    :article_image_blocks,
     :body,
   ].freeze
 
-  # Overwrite this method to customize how diagrams are displayed
+  # Overwrite this method to customize how images are displayed
   # across all pages of the admin dashboard.
   #
-  # def display_resource(diagram)
-  #   "Diagram ##{diagram.id}"
+  # def display_resource(image)
+  #   "Image ##{image.id}"
   # end
 end

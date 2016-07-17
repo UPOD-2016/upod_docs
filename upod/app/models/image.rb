@@ -16,13 +16,12 @@ class Image < ActiveRecord::Base
   has_many :article_image_blocks
   mount_uploader :body, SirTrevorImageUploader
 
-  validates :body, presence: true
+  #validates :body, presence: true
 
   def self.create_from_filepath(filepath)
     img = Image.new
     img.body = filepath
     img.save!
-
     img
   end
 
