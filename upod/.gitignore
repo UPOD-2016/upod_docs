@@ -9,6 +9,10 @@ public/uploads/*
 
 #Ignore the database.yml config file for testing
 config/database.yml
+upod/config/database.yml
+**/database.yml
+*/database.yml
+/upod/config/database.yml
 
 #testing server using nohup
 nohup.out
