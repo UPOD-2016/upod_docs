@@ -20,32 +20,32 @@ categories = [
   {
     name: "Electricity",
     description: "Description for Electricity & Magnetism",
-    # remote_image_url: "http://lorempixel.com/200/200/",
+    remote_image_url: "http://dummyimage.com/200/000/fff&text=PLACEHOLDER",
   },
   {
     name: "Fundamentals",
     description: "Description for Fundamentals",
-    # remote_image_url: "http://lorempixel.com/200/200/",
+    remote_image_url: "http://dummyimage.com/200/000/fff&text=PLACEHOLDER",
   },
   {
     name: "Optics",
     description: "Description for Optics",
-    # remote_image_url: "http://lorempixel.com/200/200/",
+    remote_image_url: "http://dummyimage.com/200/000/fff&text=PLACEHOLDER",
   },
   {
     name: "Quantum",
     description: "Description for Quantum Physics",
-    # remote_image_url: "http://lorempixel.com/200/200/",
+    remote_image_url: "http://dummyimage.com/200/000/fff&text=PLACEHOLDER",
   },
   {
     name: "Statistical",
     description: "Description for Statistical Physics",
-    # remote_image_url: "http://lorempixel.com/200/200/",
+    remote_image_url: "http://dummyimage.com/200/000/fff&text=PLACEHOLDER",
   },
   {
     name: "Thermodynamics",
     description: "Description for Thermodynamics",
-    # remote_image_url: "http://lorempixel.com/200/200/",
+    remote_image_url: "http://dummyimage.com/200/000/fff&text=PLACEHOLDER",
   }
 ]
 
@@ -63,7 +63,7 @@ NUM_OF_ITERATIONS.times do |x|
   puts "Creating an article with the title: #{article.title}".blue
   article.create_text_block(:body => Faker::Lorem.sentence(x))
   puts "Creating an article text block containing a random paragraph".blue
-  article.create_image_block(:image => Image.create(:remote_body_url => "http://lorempixel.com/400/400/"))
+  article.create_image_block(:image => Image.create(:remote_body_url => "http://dummyimage.com/200/000/fff&text=PLACEHOLDER"))
   puts "Creating an article image block containing a random image".blue
   article.create_equation_block(:equation => "E=mc^2", :label => "Sample Equation")
   puts "Creating an article equation block containg the equation E=mc^2".blue
