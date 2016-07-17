@@ -12,7 +12,6 @@
 #  body :text(65535)
 #
 class ArticleTextBlock < ActiveRecord::Base
-  searchkick
   acts_as :article_block
 
 # validates the presence and length of the body of title block

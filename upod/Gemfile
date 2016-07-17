@@ -13,6 +13,7 @@ gem 'elasticsearch'
 gem 'elasticsearch-model'
 gem 'elasticsearch-rails'
 gem 'searchkick'
+gem 'gemoji-parser'
 
 #AD LDAP / DEVISE GEMS
 gem 'activerecord-session_store', github: 'rails/activerecord-session_store'

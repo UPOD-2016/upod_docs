@@ -4,7 +4,23 @@ class ArticlesController < ApplicationController
   # GET /articles
   def index
     Article.reindex
-    @articles = Article.search (params[:q].present? ? params[:q] : "*")
+
+    search_options = {
+        fields: ["title^5",:body],
+        match: :word_start,
+        misspellings: {below: 2},
+        order: {_score: :desc},
+        suggest: ["title"]
+    }
+
+    if params[:q].present?
+        @articles = Article.search params[:q], search_options
+        @suggestion = @articles.suggestions
+    else
+        @articles = Article.all
+        @suggestion = []
+    end
+
   end
 
   # GET /articles/1

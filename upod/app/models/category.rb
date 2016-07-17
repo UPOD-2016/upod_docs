@@ -22,4 +22,9 @@ class Category < ActiveRecord::Base
   before_save { self.name = (name.downcase).titleize }
   validates :name, presence: true, length: {maximum: 255},uniqueness: { case_sensitive: false }
   has_many :subcategories, :dependent => :nullify
+  after_commit :reindex_category
+
+  def reindex_category
+    Article.reindex # or reindex_async
+  end
 end

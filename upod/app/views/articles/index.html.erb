@@ -11,6 +11,9 @@
   </thead>
 
   <tbody>
+
+        <p>Did you mean [<%= @suggestion %>]</p>
+
     <% @articles.each do |article| %>
       <tr>
         <td><%= article.title %></td>
@@ -19,6 +22,7 @@
         <td><%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
+
   </tbody>
 </table>
 <br>

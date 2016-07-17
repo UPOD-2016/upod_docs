@@ -12,14 +12,11 @@
 #  updated_at :datetime         not null
 #
 class Article < ActiveRecord::Base
-  searchkick
-  #include Searchable
-  #include Elasticsearch::Model
-  #include Elasticsearch::Model::Callbacks
   has_many :blocks, class_name: 'ArticleBlock', foreign_key: :article_id
   has_many :contributions, class_name: 'Contributor', foreign_key: :article_id
   has_many :categorizations
   has_many :subcategories, :through => :categorizations
+  has_many :searches
   # This include is defined in the blockable.rb concern. Essentially, it
   # provides a nice interface to interact with the various types of article
   # blocks. Instead of having to use the ArticleTextBlock, you can now use
@@ -28,11 +25,22 @@ class Article < ActiveRecord::Base
   include Blockable
 
 
-  #mapping do
-  #      indexes :id, index: :not_analyized
-  #      indexes :title
-  #  end
-  #include Searchable
+  searchkick searchable: ["title", "body"],
+    match: :word_start,
+    suggest: ["title"],
+    callbacks: :async,
+    conversions: "conversions"
+
+
+
+  def search_data
+      body = Article.first.blocks.select { |block| block.is_a? ArticleTextBlock}.map(&:body)
+      {
+          title: title,
+          body: body,
+          conversions: searches.group("query").count
+      }
+  end
 
   # validates the title and it's length
   validates :title, presence: true, length: { maximum: 255 }
