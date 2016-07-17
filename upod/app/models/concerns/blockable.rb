@@ -17,6 +17,10 @@ module Blockable
     article_block = ArticleEquationBlock.new(equation: equation, label: label)
     assign_article_id_and_save!(article_block)
   end
+  def create_diagram_block(code:, caption: nil)
+    article_block = ArticleDiagramBlock.new(code: code, caption: caption)
+    assign_article_id_and_save!(article_block)
+  end
   def create_constant_block(constant:)
     article_block = ArticleConstantBlock.new(constant: constant)
     assign_article_id_and_save!(article_block)
