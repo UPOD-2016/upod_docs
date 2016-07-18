@@ -2,9 +2,9 @@
 #
 # Table name: article_link_blocks
 #
-#  id    :integer          not null, primary key
-#  url   :string(255)
-#  label :string(255)
+#  id       :integer          not null, primary key
+#  source   :string(255)
+#  video_id :string(255)      not null
 #
 
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html

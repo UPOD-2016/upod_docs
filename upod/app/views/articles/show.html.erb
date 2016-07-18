@@ -1,37 +1,7 @@
-<div id="menuContainer">
-  <input id="toggle" type="checkbox">
-  <label for="toggle">&equiv;</label>
-  <div class="page-content">
-    <!--start content section-->
-    <ul class="breadcrumb">
-      <li><a href="home.html">Home</a></li>
-      <li><a href="categories.html">Categories</a></li>
-      <li class="active"><a href="entry.html">Entry</a></li>
-    </ul>
-    <div class="container">
-      <div class="jumbotron">
-        <div class = "row">
-          <div class = "col-xs-6 col-md-offset-1">
-            <h3 >title</h3>
-          </div>
-          <div class = "col-xs-6 col-md-offset-2">
-            <h4 >smaller sub title</h4>
-          </div>
-          <div class = "col-xs-6 col-md-offset-4">
-            <% @article.blocks.each do |block| %>
-                  <script>console.log("<%= block.slug %>")</script>
-                  <%= render partial: "articles/blocks/#{block.slug}", locals: {block: block.specific} %>
-            <% end %>
-          </div>
-        </div>
-      </div>
-      <div class="jumbotron" >
-        <h3 >Suggestions</h3>
-        <p> <a href="categories.html">Link 1</a></p>
-        <p ><a href="categories.html">Link 2</a></p>
-        <p ><a href="categories.html">Link 3</a>
-        <p>
-    <!--end content section-->
-  </div>
+<div class="container">
+  <h1 class="page-header"><%= @article.title %></h1>
+  <% @article.blocks.each do |block| %>
+  	<%= render partial: "articles/blocks/#{block.slug}", locals: {block: block.specific} %>
+  <% end %>
 </div>
-</body>
+

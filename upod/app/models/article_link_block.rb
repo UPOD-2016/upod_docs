@@ -7,14 +7,9 @@
 #
 # Table name: article_link_blocks
 #
-#  id    :integer          not null, primary key
-#   - represents the id of the link block
-#
-#  source :string(255)     not null
-#   - represents where the video is coming from which is used to construct the URL. (Either youtube or vimeo)
-#
-#  video_id :string        not null
-#   - represents the video id from the source which is used to construct the URL.
+#  id       :integer          not null, primary key
+#  source   :string(255)
+#  video_id :string(255)      not null
 #
 
 class ArticleLinkBlock < ActiveRecord::Base
@@ -26,14 +21,13 @@ class ArticleLinkBlock < ActiveRecord::Base
   validate :video_source_must_be_in_list,:video_id_must_match_pattern
 
 # contains the accetptable sources and their corresponding character set for a valid video_id
-	@@SOURCE_PATTERNS = Hash["youtube" => /^[A-Za-z0-9_-]{11}$/, "vimeo" => /^[0-9]*$/]
-
-
+  SOURCE_PATTERNS = Hash["youtube" => /^[A-Za-z0-9_-]{11}$/, "vimeo" => /^[0-9]*$/]
+  
 # Checks to see if the video source is either youtube or vimeo
 #
 # @return [Boolean] Whether the source was found in the hash
 	def video_source_must_be_in_list
-		if !@@SOURCE_PATTERNS.has_key?(source)
+		if !SOURCE_PATTERNS.has_key?(source)
 			errors.add(:source,"video is from an unsupported website")
 		end
 	end
@@ -41,8 +35,20 @@ class ArticleLinkBlock < ActiveRecord::Base
 #
 # @return [Boolean] Whether the video id is valid
 	def video_id_must_match_pattern
-		if @@SOURCE_PATTERNS.has_key?(source) and !@@SOURCE_PATTERNS[source].match(video_id)
+		if SOURCE_PATTERNS.has_key?(source) and !SOURCE_PATTERNS[source].match(video_id)
 			errors.add(:video_id,"invalid video link provided")
+		end
+	end
+	
+	
+	# Returns the url to use in iframes displaying this video
+	#
+	# @return [String] url to use in src of iframe
+	def get_iframe_src
+		if source == "youtube"
+			return "https://www.youtube.com/embed/" + video_id
+		elsif source == "vimeo"
+			return "https://player.vimeo.com/video/" + video_id
 		end
 	end
 

@@ -9,12 +9,16 @@ module Blockable
     article_block = ArticleLinkBlock.new(source: source, video_id: video_id)
     assign_article_id_and_save!(article_block)
   end
-  def create_image_block(source:, video_id:)
+  def create_image_block(image:)
     article_block = ArticleImageBlock.new(image: image)
     assign_article_id_and_save!(article_block)
   end
-  def create_equation_block(equation:, description: nil)
-    article_block = ArticleEquationBlock.new(equation: equation, description: description)
+  def create_equation_block(equation:, label: nil)
+    article_block = ArticleEquationBlock.new(equation: equation, label: label)
+    assign_article_id_and_save!(article_block)
+  end
+  def create_diagram_block(code:, caption: nil)
+    article_block = ArticleDiagramBlock.new(code: code, caption: caption)
     assign_article_id_and_save!(article_block)
   end
   def create_constant_block(constant:)

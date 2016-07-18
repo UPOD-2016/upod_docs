@@ -11,10 +11,7 @@
 # Table name: article_constant_blocks
 #
 #  id          :integer          not null, primary key
-#     - represents the id of the constant block
-#
 #  constant_id :integer
-#     - represents the id of the constant contained in the block
 #
 class ArticleConstantBlock < ActiveRecord::Base
   belongs_to :constant

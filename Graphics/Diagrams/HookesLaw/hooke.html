@@ -1,0 +1,67 @@
+<svg version="1.0" width="640px" height="440px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+xml:space="preserve">
+
+<!--graph axis and slope-->
+<line id="yaxis" y2="265" x2="100" y1="65" x1="100" stroke-width="5" stroke="#000000" fill="none"/>
+    
+<line id="xaxis" y2="265" x2="320" y1="265" x1="100" stroke-width="5" stroke="#000000" fill="none"/>
+    
+<line y2="90" x2="300" y1="265" x1="100" stroke-width="5" stroke="#000000" fill="none"/>
+
+<symbol id="tracker">
+<circle r="20" stroke-width="8" stroke="red" fill="red" />
+</symbol>    
+
+<use xlink:href="#tracker">
+    <animateMotion 
+        path="M100 265 L300 90 Z"
+        dur="2s" 
+        repeatCount="indefinite"/>
+</use>
+
+<!--spring system-->
+<polyline stroke="black" stroke-width="4" fill="none">
+    <animate id = "a1" 
+         attributeName = "points"
+         from = "500 75 , 500 100 , 450 115 , 500 130 , 450 145 , 500 165, 500 180"
+         to = "500 75 , 500 100 , 450 125 , 500 150 , 450 175 , 500 205, 500 220"
+         dur = "1s"
+         begin = "0; a2.end"/>
+</polyline>     
+<polyline stroke="black" stroke-width="4" fill="none">
+    <animate id = "a2" 
+         attributeName = "points"
+         from = "500 75 , 500 100 , 450 125 , 500 150 , 450 175 , 500 205, 500 220"
+         to = "500 75 , 500 100 , 450 115 , 500 130 , 450 145 , 500 165, 500 180"
+         dur = "1s"
+         begin = "a1.end"/>
+</polyline>
+    
+<polyline stroke="black" stroke-width="5" fill="none">
+    <animate id = "b1" 
+         attributeName = "points"
+         from = "475 180, 525 180, 525 230, 475 230, 475 180"
+         to = "475 220, 525 220, 525 270, 475 270, 475 220"
+         dur = "1s"
+         begin = "0; b2.end"/>
+</polyline>      
+<polyline stroke="black" stroke-width="5" fill="none">
+    <animate id = "b2" 
+         attributeName = "points"
+         from = "475 220, 525 220, 525 270, 475 270, 475 220"
+         to = "475 180, 525 180, 525 230, 475 230, 475 180"
+         dur = "1s"
+         begin = "b1.end"/>
+</polyline>
+
+<!--lables-->
+<text xml:space="preserve" text-anchor="middle" font-family="serif" font-size="20" y="50" x="100" stroke-width="0" stroke="#000000" fill="#000000">Force Applied (F)</text>
+
+<text xml:space="preserve" text-anchor="middle" font-family="serif" font-size="20" y="300" x="210" stroke-width="0" stroke="#000000" fill="#000000">Distance of Spring Displacement (x)</text>
+
+<text xml:space="preserve" text-anchor="middle" font-family="serif" font-size="20" y="200" x="290" stroke-width="0" stroke="#000000" fill="#000000">Slope = 1</text>
+    
+<text xml:space="preserve" text-anchor="middle" font-family="serif" font-size="20" y="300" x="500" stroke-width="0" stroke="#000000" fill="#000000">Spring System</text>
+
+<text xml:space="preserve" text-anchor="middle" font-family="serif" font-size="15" y="350" x="325" stroke-width="0" stroke="#000000" fill="#000000">Note: This property only applies to small displacements of the spring.</text>
+</svg>

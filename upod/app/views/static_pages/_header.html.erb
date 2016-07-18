@@ -13,19 +13,18 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><%= link_to "About", "about" %></li>
+            <li><%= link_to "About", about_path %></li>
+             <li><%= link_to "Articles", articles_path %></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categories <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><%= link_to "Category 1", "categories" %></li>
-                <li><%= link_to "Category 2", "categories" %></li>
-                <li><%= link_to "Category 3", "categories" %></li>
-                <li><%= link_to "Category 4", "categories" %></li>
-                <li><%= link_to "Category 5", "categories" %></li>
-                <li><%= link_to "Category 6", "categories" %></li>
+                <% @categories.each do |category| %>
+                  <li><%= link_to category.name, category %></li>
+                <% end %>
               </ul>
             </li>
           </ul>
+          <% unless current_page?(root_path) %>
           <ul class="nav navbar-nav navbar-right"> <!-- nav search -->
 						<form class="navbar-form" role="search">
 							<ul class="input-group">
@@ -36,6 +35,7 @@
 							</ul>
 						</form>
           </ul> <!-- end nav search -->
+          <% end %>
         </div><!--/.nav-collapse -->
       </div>
     </nav>

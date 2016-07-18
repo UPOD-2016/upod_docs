@@ -3,16 +3,35 @@ class ArticlesController < ApplicationController
 
   # GET /articles
   def index
-    @articles = Article.all
+    Article.reindex
+
+    search_options = {
+        fields: ["title^5",:body],
+        match: :word_start,
+        misspellings: {below: 2},
+        order: {_score: :desc},
+        suggest: ["title"]
+    }
+
+    if params[:q].present?
+        @articles = Article.search params[:q], search_options
+        @suggestion = @articles.suggestions
+    else
+        @articles = Article.all
+        @suggestion = []
+    end
+
   end
 
   # GET /articles/1
   def show
+    @article = Article.find(params[:id])
   end
 
   # GET /articles/new
   def new
     @article = Article.new
+    @test = "hello"
   end
 
   # GET /articles/1/edit
@@ -22,7 +41,7 @@ class ArticlesController < ApplicationController
   # POST /articles
   def create
     @article = Article.create_from_sir_trevor(params[:sir_trevor_content])
-    redirect_to articles_path
+    redirect_to @article
   end
 
   # PATCH/PUT /articles/1

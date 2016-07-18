@@ -7,20 +7,16 @@
 #
 # Table name: article_equation_blocks
 #
-#  id          :integer          not null, primary key
-#   - represents the id of the equation block
+#  id       :integer          not null, primary key
+#  equation :text
+#  label    :string(255)
 #
-#  equation    :string(255)
-#   - represents the equation stored in the block
-#
-#  description :string(255)
-#   - represents the description of the equation
-#
+
 class ArticleEquationBlock < ActiveRecord::Base
   acts_as :article_block
 
 # validates the length and presence of equation block and description
-  validates :equation, presence: true, length: {maximum: 255}
+  validates :equation, presence: true, length: {maximum: 65535}
   validates :label, presence: true, length: {maximum: 255}
 
 end

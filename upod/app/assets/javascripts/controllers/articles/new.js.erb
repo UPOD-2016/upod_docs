@@ -1,18 +1,20 @@
 //= require includes/MathJaxConfig
 //= require includes/MathJax
 //= require includes/sir-trevor
-//= require ./equation.js
+//= require ./blocks/equation.js
+//= require ./blocks/diagram.js
 
-$(document).on('ready page:load', function(){
+$(document).on('turbolinks:load', function(){
 
   MathJax.Hub.Configured(); //Tell mathjax to start configuration
 
   SirTrevor.setDefaults({
+    defaultType: "Text",
     iconUrl: "<%= asset_path('sir-trevor-icons.svg') %>",
-    uploadUrl: "/images",
+    uploadUrl: Routes.images_path(),
     ajaxOptions: {
       headers: {
-        "X-CSRF-Token": document.querySelector('meta[name=csrf-token]').getAttribute('content')
+        "X-CSRF-Token": $('meta[name=csrf-token]').attr('content')
       },
       credentials: 'same-origin'
     }
@@ -20,7 +22,9 @@ $(document).on('ready page:load', function(){
   SirTrevor.config.debug = true;
   SirTrevor.config.scribeDebug = true;
   SirTrevor.config.language = "en";
-
+  SirTrevor.Blocks.Heading.prototype.toolbarEnabled = true;
+  // SirTrevor.Blocks.Quote.prototype.toolbarEnabled = true;
+  SirTrevor.Blocks.Text.prototype.toolbarEnabled = true;
   window.editor = new SirTrevor.Editor({
     el: $(".js-sir-trevor-instance").get(0),
     blockTypes: [
@@ -28,9 +32,48 @@ $(document).on('ready page:load', function(){
       "Text",
       "List",
       "Quote",
-      "Image",
       "Video",
-      "Equation"
+	  "Diagram",
+	  "Equation"
     ]
+  });
+  $('.sir-trevor-form').submit(function(e) {
+    //1. Stop the default submission from occuring. This is so we can inject
+    //the necessary metadata information into the form.
+    e.preventDefault();
+
+    //2. The textarea stores the JSON that is submitted to the server. So, our
+    //first step is to find the textarea and store it in a variable. The additional
+    //meta forms are exactly what they sound like - additional forms on the page that
+    //are to be submitted with the sir trevor form.
+    var $textarea = $(this).find('textarea');
+    var $additionalMetaForms = $('.additional-sir-trevor-form');
+
+    //3. Parse the textarea's contents into a variable named json
+    var json = JSON.parse($textarea.val());
+
+    //4. Here we start creating what we want on the server - a meta dictionary with
+    //a Title (String) and Categories (Array)
+    json.meta = {};
+
+    //5. Grab the title and create the string.
+    json.meta.title = $('#title').val();
+
+    //6. Find all selected subcategories
+    var $selectedSubcategories = $additionalMetaForms.find('input:checkbox:checked');
+
+    //7. Loop through them and return an array of them (note: they are stored as strings,
+    //   and since Rails doesn't care, we don't care for now)
+    json.meta.subcategories = $.map($selectedSubcategories, function(el) {
+      return $(el).val();
+    });
+
+    //8. Finally, we can convert the json object back into JSON and replace the textarea's contents
+    //   with it. This is what's submitted to the server.
+    $textarea.val(JSON.stringify(json));
+
+    //9. Resubmit to the server
+    //   Prevent an infinite loop by submitting through javascript, not jQuery
+    this.submit();
   });
 });

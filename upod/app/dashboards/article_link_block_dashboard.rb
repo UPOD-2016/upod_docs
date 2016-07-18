@@ -26,17 +26,17 @@ class ArticleLinkBlockDashboard < Administrate::BaseDashboard
     :source,
     :video_id,
     #:actable,
-    #:article,
-    #:article_block,
+    :article,
+    :article_block,
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
   # an array of attributes that will be displayed on the model's show page.
   SHOW_PAGE_ATTRIBUTES = [
     :id,
-    #:actable,
     :source,
     :video_id,
+    #:actable,
     :article,
     :article_block,
   ].freeze

@@ -5,15 +5,13 @@
 #
 # Table name: sessions
 #
-#  session_id         :integer(4)       not null, primary key
-#   - represents the diagram id of the associated with the block
+#  id         :integer          not null, primary key
+#  session_id :string(255)      not null
+#  data       :text(65535)
+#  created_at :datetime
+#  updated_at :datetime
 #
-#  data                :text(65535)
-#   - represents the session data
-#
-#  created_at         :datetime         not null
-#  updated_at         :datetime         not null
-#
+
 class Session < ActiveRecord::Base
 
   validates :session_id, presence: true

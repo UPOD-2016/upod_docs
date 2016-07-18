@@ -1,19 +1,17 @@
-# A contributor is a user who has edited an article.
+# A contributor is a {User} who has edited an article.
 # @see User
 #
 # == Schema Information
 #
 # Table name: contributors
 #
-#  user_id          :integer(4)          primary key
-#   - represents the contributors user id
+#  id         :integer          not null, primary key
+#  user_id    :integer
+#  article_id :integer
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
 #
-#  artcle_id        :integer(4)
-#   - represents the articles associated with the contiburtor
-#
-#  created_at         :datetime         not null
-#  updated_at         :datetime         not null
-#
+
 class Contributor < ActiveRecord::Base
   belongs_to :user
   belongs_to :article

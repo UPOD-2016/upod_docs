@@ -27,7 +27,7 @@ class ArticleDiagramBlockDashboard < Administrate::BaseDashboard
     :diagram,
     #:actable,
     :article,
-    #:article_block,
+    :article_block,
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
@@ -36,8 +36,8 @@ class ArticleDiagramBlockDashboard < Administrate::BaseDashboard
     :id,
     :article,
     :diagram,
-    :article_block,
     #:actable,
+    :article_block,
     #:created_at,
     #:updated_at,
   ].freeze

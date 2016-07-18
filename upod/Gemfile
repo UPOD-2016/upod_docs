@@ -10,9 +10,10 @@ gem 'sass-rails', '~> 5.0'
 
 # Elastic search GEMS <<_>>.:.
 gem 'elasticsearch'
-gem 'elasticsearch-extensions'
 gem 'elasticsearch-model'
 gem 'elasticsearch-rails'
+gem 'searchkick'
+gem 'gemoji-parser'
 
 #AD LDAP / DEVISE GEMS
 gem 'activerecord-session_store', github: 'rails/activerecord-session_store'
@@ -41,6 +42,7 @@ source 'https://rails-assets.org' do
   gem 'rails-assets-underscore'
 end
 gem "rails-erd"
+gem 'js-routes'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -78,6 +80,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.4'
   gem 'factory_girl_rails'
   gem 'spring-commands-rspec'
+  gem 'faker'
 end
 
 group :test do

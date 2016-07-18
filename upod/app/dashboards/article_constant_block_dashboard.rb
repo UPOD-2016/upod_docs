@@ -23,9 +23,9 @@ class ArticleConstantBlockDashboard < Administrate::BaseDashboard
   COLLECTION_ATTRIBUTES = [
     :id,
     :constant,
-    #:article,
+    :article,
     #:actable,
-    #:article_block,
+    :article_block,
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES

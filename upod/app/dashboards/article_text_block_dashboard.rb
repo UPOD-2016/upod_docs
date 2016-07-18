@@ -22,20 +22,19 @@ class ArticleTextBlockDashboard < Administrate::BaseDashboard
   # Feel free to add, remove, or rearrange items.
   COLLECTION_ATTRIBUTES = [
     :id,
-    #:actable,
     :article,
-    #:article_block,
+    #:actable,
+    :article_block,
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
   # an array of attributes that will be displayed on the model's show page.
   SHOW_PAGE_ATTRIBUTES = [
     :id,
+    :article,
     :body,
     #:actable,
-    :article,
     :article_block,
-    #:id,
   ].freeze
 
   # FORM_ATTRIBUTES

@@ -7,20 +7,18 @@
 #
 # Table name: subcategories
 #
-#  name        :string(255)      primary key
-#   - represents the name of the subcategory
-#
+#  id          :integer          not null, primary key
+#  name        :string(255)
 #  description :text(65535)
-#   - represents the description of the subcategory
-#
-# category_id  :integer(4)
-#   - represents the id of the category that the subcategory belongs to.
-#
+#  category_id :integer
 #  created_at  :datetime         not null
 #  updated_at  :datetime         not null
 #
+
 class Subcategory < ActiveRecord::Base
   belongs_to :category
+  has_many :categorizations,  :dependent => :nullify
+  has_many :articles, :through => :categorizations
 
   validates :name, presence: true, length: {maximum: 255}
   validates :description, length: {maximum: 65535}

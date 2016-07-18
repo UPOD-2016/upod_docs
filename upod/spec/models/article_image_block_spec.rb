@@ -1,3 +1,13 @@
+# == Schema Information
+#
+# Table name: article_image_blocks
+#
+#  id         :integer          not null, primary key
+#  image_id   :integer
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
 require 'rails_helper'
 
 RSpec.describe ArticleImageBlock, type: :model do

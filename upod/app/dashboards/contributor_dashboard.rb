@@ -41,8 +41,8 @@ class ContributorDashboard < Administrate::BaseDashboard
   # an array of attributes that will be displayed
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = [
-    #:user,
-    #:article,
+    :user,
+    :article,
   ].freeze
 
   # Overwrite this method to customize how contributors are displayed
