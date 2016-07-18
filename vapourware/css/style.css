@@ -156,7 +156,8 @@ label {
    transform: translate3d(0, 0, 0);
    transition: transform .4s;
 }
-input[type=checkbox]:checked ~ label {
+
+label:hover ~  {
    transform: translate3d(250px, 0, 0) rotate(90deg);
 }
 .page-content {
@@ -165,13 +166,13 @@ input[type=checkbox]:checked ~ label {
    transform: translate3d(0, 0, 0);
    transition: transform .4s;
 }
-input[type=checkbox]:checked ~ .page-content {
+label:hover ~ .page-content {
    transform: translate3d(250px, 0, 0);
 }
-input[type=checkbox]:checked ~ .slide-menu {
+label:hover ~ .slide-menu {
    transform: translate3d(0, 0, 0);
 }
-input[type=checkbox]:checked ~ .slide-menu .menu li {
+label:hover ~ .slide-menu .menu li {
    width: 100%;
 }
 .slide-menu {
