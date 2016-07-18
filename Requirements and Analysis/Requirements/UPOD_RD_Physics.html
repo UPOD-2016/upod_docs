@@ -7,6 +7,8 @@
 	<head>
 		<LINK href="styles.css" rel="stylesheet" type="text/css">
 		<title>System Requirement Specification Template</title>
+		<meta charset="utf-8">
+		
 	</head>
 	
 	<body  id="p">
@@ -18,7 +20,7 @@
 				<h3 style="text-align:right;font-size:140%">Version 0.5</h3>
 				<h3 style="text-align:right;font-size:140%">Prepared by Anders Lam</h3>
 				<h3 style="text-align:right;font-size:140%">Wilfrid Laurier University, CP317</h3>
-				<h3 style="text-align:right;font-size:140%">10-07-2016</h3>
+				<h3 style="text-align:right;font-size:140%">18-07-2016</h3>
 			</div>
 			<br>
 			
@@ -174,42 +176,42 @@
 			<div id="mainHeading">
 				<h3><a name="External Interfaces">3.1 External Interfaces</a></h2>
 				<li id="categoryHeading">The physics information and research that is provided by the Physics Team is be used in conjunction with the MathJax and Animations Team to provide creative ways to help the user learn about the physics concepts.</li>
-				<li id="categoryHeading">The MathJax Team uses the physics information collected to showcase sample problems and show equations that the user can see and interact with</li>
+				<li id="categoryHeading">The MathJax Team uses the physics information collected to showcase sample problems and show equations that the user can interact with</li>
 				<li id="categoryHeading">The Animations Team uses the physics information to provide the UPOD website with interactive diagrams and animations for the user to better understand the material.</li>
 				<h3><a name="Functions">3.2 Functions</a></h2>
 				<li id="categoryHeading">The physics information that includes equations and formulas as well as appropriate <br> information pertaining to the physics topic being covered must be correct.</li>
 				<li id="categoryHeading">The information is used by the MathJax and Animations Team to display certain <br> interactive diagrams and sample problems/links to videos that will help the user better <br> understand the topic at hand.</li>
 				<li id="categoryHeading">The equations that is displayed by the MathJax Team must allow users to rearrange <br> equations and formulas and use them in sample problems that are given.</li>
-				<li id="categoryHeading">The units and explanations for each variable for each equation must be displayed and remain <br> visible as to show the user exactly what each formula is related to and how it is useful in <br> the topic they are looking at.</li>
 				<li id="categoryHeading">The animations and videos that are linked to the physics topic covered must be relevant to the <br> physics topic that it is covering.</li>
 				<li id="categoryHeading">Links to sample problems must also be visible under 'Suggestions' as to show possible additional help that the user can receive.</li>
 				<h3><a name="Performance Requirements">3.3 Performance Requirements</a></h2>
 				<li id="categoryHeading">The physics research and information collected from the Physics Team is used to as a basis for the whole UPOD website to function around.</li>
 				<li id="categoryHeading">Everything from the information projected to the libraries of information available on the UPOD website is supported by the physics information collected.</li>
 				<li id="categoryHeading">The equations and formulas produced by MathJax is focused on mainly presenting the equations and formulas of the physics concepts and topics that is covered by UPOD.</li>
-				<li id="categoryHeading">The Animations and the overall look of the UPOD website is derived from physics information and reflects the whole aspect of the six categories of physics that UPOD is currently covering.</li>
 				<h3><a name="Logical Database Requirements">3.4 Logical Database Requirements</a></h3>
 					<p id="categoryHeading"><span style="text-decoration: underline;">Types of information used by various functions</span></p>
-						<li id="subcategoryHeading">Physics team makes sure that all relevant physics information regarding the six categories of physics covered in the UPOD website is available</li>
+						<li id="subcategoryHeading">Physics team makes sure that all relevant physics information regarding the six categories of physics in the UPOD website is in the database</li>
 						<li id="subcategoryHeading">The information is used by the MathJax, Animations, and Front End team at all stages of their implementation</li>
-						<li id="subcategoryHeading">The physics information includes interactive diagrams when necessary</li>
+						<li id="subcategoryHeading">The physics information may include interactive diagrams</li>
+						<li id="subcategoryHeading">Global variables like constants are important to include (must be able to include all constants and variables used) - e.g. Force of gravity (gravity = 9.81 m /s^2) or (e = mc^2)</li>
 					<p id="categoryHeading"><span style="text-decoration: underline;">Frequency of use</span></p>
 						<li id="subcategoryHeading">The information is used at all stages of the UPOD project</li>
 					<p id="categoryHeading"><span style="text-decoration: underline;">Data entities and their relationships</span></p>
-					<li id="subcategoryHeading">It is crucial that any information regarding one aspect of physics that can be correlated to another aspect of physics can be presented in a way that can link them together</li>
-					<li id="subcategoryHeading">Any information that is relevant to another part of a physic information is important to include to show any similarities or comparisons</li>
-					<p id="categoryHeading"><span style="text-decoration: underline;">Types of Information Used by Various Functions</span></p>
-					<li id="subcategoryHeading">Global variables like constants are important to include (must be able to include all constant variables used) - e.g. Force of gravity (gravity = 9.81 m /s^2) or (e = mc^2)</li>
+					<li id="subcategoryHeading">It is crucial that any information regarding one aspect of physics correlated to another, can be presented in a way that can link them together</li>
+					<li id="subcategoryHeading">Any relevant physics information is important to include in order to show any similarities or comparisons</li>
+					
+					
 					
 
 				<h3><a name="Software System Attributes">3.5 Software System Attributes</a></h3>
 					<h4><a name="Reliability">3.5.1 Reliability</a></h4>
-						<li id="subcategoryHeading">Database involving physics information must be up to date and include accurate and relevant information to the concept at hand</li>
+						<li id="subcategoryHeading">Any physics concepts explained must be correct and must be concise, easy to read, and easy to understand by any user</li>
+						<li id="subcategoryHeading">Database involving physics information must be up to date and include accurate and relevant information</li>
 						<li id="subcategoryHeading">No duplicate information is stored</li>
 						<li id="subcategoryHeading">The equations regarding the physics information must be correct and relevant to the topic</li>
-						<li id="subcategoryHeading">Any physics concepts explained must be correct and must be concise, easy to read, and easy to understand by any user</li>
+						
 					<h4><a name="Availability">3.5.2 Availability</a></h4>
-						<li id="subcategoryHeading">Physics information must be available at all points of the UPOD system in order to ensure that it is easy to take information regarding the physics branch and implement it into the system.</li>
+						<li id="subcategoryHeading">Physics information must be available at all articles of the UPOD system in order to ensure that it is easy to take information regarding the physics branch and implement it into the system.</li>
 					<h4><a name="Security">3.5.3 Security</a></h4>
 						<li id="subcategoryHeading">Without appropriate permission and consent from the SQA team, the information regarding the physics information cannot be updated, edited, removed, or added.</li>
 					<h4><a name="Maintainability">3.5.4 Maintainability</a></h4>
@@ -217,7 +219,7 @@
 						<li id="subcategoryHeading">documentation and making sure that information are in correct components of the database ensure that the UPOD website is easy to maintain and can be easily changed in the future.</li>
 				<h3><a name="Organizing the Specific Requirements">3.6 Organizing the Specific Requirements</a></h2>
 					<h4><a name="Functional Hierarchy">3.6.1 Functional Hierarchy</a></h4>
-						<p id="categoryHeading">The six categories of physics will start the hierarchy that narrows into subcategories.</p>
+						<p id="categoryHeading">This shows the Categories, and their Subcategories.</p>
 						
 						<p id="categoryHeading"><span style="text-decoration: underline;">Fundamentals</span></p>
 						<li id="subcategoryHeading">The Particle Model</li>
@@ -324,7 +326,6 @@
 						<li id="subcategoryHeading">Heat</li>
 						<li id="subcategoryHeading">Entropy</li>
 						<li id="subcategoryHeading">Macroscopic Behaviour of Ideal Gases</li>
-						
 			</div>
 			
 		</div>
@@ -340,7 +341,9 @@
 			<h2><a name="Appendixes">Appendixes</a></h2><br>
 			<li id="categoryHeading">Collected from a wide variety of different sources that have physics information regarding the six categories of physics covered in this website (will be taken down when all the information is taken down)</li>
 			<h2><a name="Index">Index</a></h2><br>
-			<li id="categoryHeading">TBA</li>
+			<a href="UPOD_RD_Front_End.html">Front End Requirements</a><br>
+			<a href="UPOD_RD_Back_End.html">Back End Requirements</a><br>
+			<a href="UPOD_RD_Graphics_and_Animation.html">Graphics Requirements</a><br>
 		</div>
 	
 	</body>
