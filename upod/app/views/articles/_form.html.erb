@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-10">
+      <form class="additional-sir-trevor-form">
+        <div class="form-group">
+          <strong><%= text_field_tag :title, article.try(:title),class: 'form-control input-lg', placeholder: 'Enter Article Title Here' %></strong>
+        </div>
+      </form>
+      <%= form_tag articles_path, method: :post, class: 'sir-trevor-form' do %>
+        <%= text_area_tag :sir_trevor_content, article.try(:to_sir_trevor), class: 'js-sir-trevor-instance' %>
+        <%= submit_tag 'Save Article', class: 'btn btn-success btn-block' %>
+      <% end %>
+    </div>
+  <div class="col-md-2">
+    <form class="additional-sir-trevor-form">
+      <%= collection_check_boxes(:article, :categorizations, Subcategory.all, :id, :name) do |b| %>
+        <div class="checkbox">
+          <%= b.label do %>
+            <%= b.check_box %>
+            <%= b.text %>
+          <% end %>
+        </div>
+      <% end %>
+    </form>
+  </div>
+  </div>
+</div>
