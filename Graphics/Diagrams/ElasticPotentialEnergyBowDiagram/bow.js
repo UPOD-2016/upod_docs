@@ -79,6 +79,7 @@ function decrease(){
 function mouseDown(){
 	if (mousestatus == false){
 		mousestatus=true;
+		ball.setAttribute("r", "300");
 		}
 	
 };
@@ -87,6 +88,7 @@ function mouseDown(){
 function mouseUp(){
 	if (mousestatus == true){
 		mousestatus=false;
+		ball.setAttribute("r", "10");
 		}
 
 };
