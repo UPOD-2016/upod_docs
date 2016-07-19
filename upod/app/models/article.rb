@@ -27,15 +27,15 @@ class Article < ActiveRecord::Base
 
   searchkick searchable: ["title","body","label"],
     match: :word_start,
-    suggest: ["title"],
+    suggest: ["body"],
     callbacks: :async,
     conversions: :converstions
-    
+
   def search_data
     {
         title: title,
         body: blocks.map { |block| block.specific.body if block.specific.respond_to?(:body)}.as_json,
-        label: blocks.map { |block| block.specific.label if block.specific.respond_to?(:label)}.as_json
+        label: blocks.map { |block| block.specific.label if block.specific.respond_to?(:label)}.as_json,
         conversions: searches.group("query").count
     }
   end

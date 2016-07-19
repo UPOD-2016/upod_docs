@@ -9,9 +9,10 @@ class ArticlesController < ApplicationController
         search_options = {
             fields: ["title^5","body^5","label^1"],
             match: :word_start,
+            suggest: [:title,:body],
             misspellings: {below: 2},
-            order: {_score: :desc},
-            suggest: ["title","body"]
+            order: {_score: :desc}#,
+
         }
 
         if params[:q].present?
