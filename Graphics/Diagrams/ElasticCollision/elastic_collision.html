@@ -7,10 +7,17 @@
 </head>
 <body>
 
-
 <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
      xmlns:xlink="http://www.w3.org/1999/xlink"
      width="1200px" height="600px" xml:space="preserve" onload="calculate();">
+     
+    
+     <defs>
+        <symbol symbol id="button" overflow="visible"
+            <rect x="-30" y="-10" rx="5" ry="5" width="80" height="20"/>
+        </symbol>
+          
+    </defs>
 
     <ellipse id="example2" cx=1000 cy=400 rx=20 ry=20 fill="red"></ellipse>
     <ellipse id="example2" cx=100 cy=400 rx=20 ry=20 fill="black"></ellipse>
@@ -31,93 +38,72 @@ style="stroke:rgb(40,142,33);stroke-width:20" />
     <text x="50" y="140" font-family="'Arial'"
            font-size="12">Velocity Final Ball 2(m/s): </text>        
     <!--buttons-->
-	<symbol id="IncVi1" overflow="visible"
+	 
+    <g id="IncVi1" overflow="visible"
      onclick="increase_vi_1();" class="button" >
-     <g>
-        <rect x="-30" y="-10" rx="5" ry="5" width="80" height="20"
-        class="button"/>
-        <text class="textSmall" style="text-anchor:middle;" x="8"
-        y="4">Vi1 +</text>
-        </g>
-     </symbol>
+        <use xlink:href="#IncVi1" x="335" y="20" />
+        <text class="textSmall" style="text-anchor:middle;" x="8" y="4" fill = "white" >Vi1 +</text>
+    </g>
 
-    <symbol id="IncVi2" overflow="visible"
+   <g id="IncVi2" overflow="visible"
      onclick="increase_vi_2();" class="button" >
-     <g>
-        <rect x="-30" y="-10" rx="5" ry="5" width="80" height="20"
-        class="button"/>
-        <text class="textSmall" style="text-anchor:middle;" x="8"
-        y="4">Vi2 +</text>
-        </g>
-     </symbol>
-     
-     <symbol id="Incm1" overflow="visible"
+        <use xlink:href="#IncVi2" x="335" y="40" />
+        <text class="textSmall" style="text-anchor:middle;" x="8" y="4" fill = "white" >Vi2 +</text>
+    </g>
+    
+    <g id="Incm1" overflow="visible"
      onclick="increase_m_1();" class="button" >
-     <g>
-        <rect x="-30" y="-10" rx="5" ry="5" width="80" height="20"
-        class="button"/>
-        <text class="textSmall" style="text-anchor:middle;" x="8"
-        y="4">Mass 1 +</text>
-        </g>
-     </symbol>
+        <use xlink:href="#Incm1" x="335" y="80" />
+        <text class="textSmall" style="text-anchor:middle;" x="8" y="4" fill = "white" >Mass 1 +</text>
+    </g>
     
-    <symbol id="Incm2" overflow="visible"
+     <g id="Incm2" overflow="visible"
      onclick="increase_m_2();" class="button" >
-     <g>
-        <rect x="-30" y="-10" rx="5" ry="5" width="80" height="20"
-        class="button"/>
-        <text class="textSmall" style="text-anchor:middle;" x="8"
-        y="4">Mass 2 +</text>
-        </g>
-     </symbol> 
+        <use xlink:href="#Incm2" x="335" y="100" />
+        <text class="textSmall" style="text-anchor:middle;" x="8" y="4" fill = "white">Mass 2 +</text>
+    </g>
     
-    <symbol id="decVi1" overflow="visible"
-     onclick="decrease_vi_1();" class="button" >
-     <g>
-        <rect x="-30" y="-10" rx="5" ry="5" width="80" height="20"
-        class="button"/>
+    <g id="decVi1" overflow="visible"
+     onclick="decrease_vi_1();" class="button">
+        <use xlink:href="#decVi1" x="435" y="20" />
         <text class="textSmall" style="text-anchor:middle;" x="8"
-        y="4">Vi1 -</text>
-        </g>
-     </symbol>
-    
-    <symbol id="decVi2" overflow="visible"
-     onclick="decrease_vi_2();" class="button" >
-     <g>
-        <rect x="-30" y="-10" rx="5" ry="5" width="80" height="20"
-        class="button"/>
-        <text class="textSmall" style="text-anchor:middle;" x="8"
-        y="4">Vi2 -</text>
-        </g>
-     </symbol>
+        y="4" fill = "white">Vi1 -</text>
+    </g>
      
-     <symbol id="decm1" overflow="visible"
-     onclick="decrease_m_1();" class="button" >
-     <g>
-        <rect x="-30" y="-10" rx="5" ry="5" width="80" height="20"
-        class="button"/>
+
+     <g id="decVi2" overflow="visible"
+     onclick="decrease_vi_2();" class="button">
+        <use xlink:href="#decVi2" x="435" y="40" />
         <text class="textSmall" style="text-anchor:middle;" x="8"
-        y="4">Mass 1 -</text>
-        </g>
-     </symbol>
+        y="4" fill = "white">Vi2 -</text>
+    </g>
     
-    <symbol id="decm2" overflow="visible"
-     onclick="decrease_m_2();" class="button" >
-     <g>
-        <rect x="-30" y="-10" rx="5" ry="5" width="80" height="20"
-        class="button"/>
+     
+     
+     <g id="decm1" overflow="visible"
+     onclick="decrease_m_1();" class="button">
+        <use xlink:href="#decm1" x="435" y="80" />
         <text class="textSmall" style="text-anchor:middle;" x="8"
-        y="4">Mass 2 -</text>
-        </g>
-     </symbol>  
+        y="4" fill = "white">Mass 1 -</text>
+    </g>
+    
+    
+    
+    <g id="decm2" overflow="visible"
+     onclick="decrease_m_2();" class="button">
+        <use xlink:href="#decm2" x="435" y="100" />
+        <text class="textSmall" style="text-anchor:middle;" x="8"
+        y="4" fill = "white">Mass 2 -</text>
+    </g>
+     
 
       <!--INPUTS-->
-     <text id="vel_1i" x="200" y="20" font-family="'Arial'"
+    <text id="vel_1i" x="200" y="20" font-family="'Arial'"
            font-size="12">1</text>
     <text id="vel_2i" x="200" y="40" font-family="'Arial'"
            font-size="12">-1</text>
 
-     <text id="mass1" x="200" y="80" font-family="'Arial'"
+    <text id="mass1" x="200" y="80" font-family="'Arial'"
            font-size="12">1</text>
     <text id="mass2" x="200" y="100" font-family="'Arial'"
            font-size="12">1</text>
@@ -130,19 +116,10 @@ style="stroke:rgb(40,142,33);stroke-width:20" />
            font-size="12"></text>
 
 
-    <use xlink:href="#IncVi1" x="335" y="20" />
-    <use xlink:href="#decVi1" x="435" y="20" />
-    <use xlink:href="#IncVi2" x="335" y="40" />
-    <use xlink:href="#decVi2" x="435" y="40" />
-    <use xlink:href="#Incm1" x="335" y="80" />
-    <use xlink:href="#decm1" x="435" y="80" />
-    <use xlink:href="#Incm2" x="335" y="100" />
-    <use xlink:href="#decm2" x="435" y="100" />
-
      
-
+    <script src="elastic_collision.js"></script>
   </svg>
-<script src="elastic_collision.js"></script>
+
 <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="//cdn.jsdelivr.net/velocity/1.1.0/velocity.min.js"></script>
 <script src="svg4everybody/dist/svg4everybody.js"></script>
