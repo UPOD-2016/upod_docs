@@ -4,9 +4,9 @@ class SirTrevorImageUploader< CarrierWave::Uploader::Base
 
   # Include RMagick or MiniMagick support:
   include CarrierWave::MiniMagick
-  include CarrierWave::MimeTypes
+  # include CarrierWave::MimeTypes
 
-  process :set_content_type
+  # process :set_content_type
   process :optimize
 
   # Choose what kind of storage to use for this uploader:
@@ -19,10 +19,6 @@ class SirTrevorImageUploader< CarrierWave::Uploader::Base
     "uploads/editor".tap do |s|
       s.prepend "test_" if Rails.env.test?
     end
-  end
-
-  def filename
-     "#{secure_token(10)}.#{file.extension}" if original_filename.present?
   end
 
   def optimize
@@ -73,19 +69,13 @@ class SirTrevorImageUploader< CarrierWave::Uploader::Base
     %w(jpg jpeg gif png)
   end
 
-  # Override the filename of the uploaded files:
-  # Avoid using model.id or version_name here, see uploader/store.rb for details.
-  # def filename
-  #   "something.jpg" if original_filename
-  # end
-  def as_json(options = nil)
-    {
-      file: super["uploader"],
-      id: model.id
-    }
+  def filename
+     "#{secure_token(10)}.#{file.extension}" if original_filename.present?
   end
+
   protected
     def secure_token(length=16)
-      SecureRandom.hex(length/2)
+      var = :"@#{mounted_as}_secure_token"
+      model.instance_variable_get(var) or model.instance_variable_set(var, SecureRandom.hex(length/2))
     end
 end
