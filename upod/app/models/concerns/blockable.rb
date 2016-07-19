@@ -13,9 +13,16 @@ module Blockable
     article_block = ArticleImageBlock.new(image: image)
     assign_article_id_and_save!(article_block)
   end
-  def create_equation_block(equation:, label: nil)
+  def create_equation_block(equation:, label: nil, variables: nil)
     article_block = ArticleEquationBlock.new(equation: equation, label: label)
     assign_article_id_and_save!(article_block)
+	
+	#Add all variable relations to this equation block
+	variables.keys.each do |key|
+		variable = EquationBlockVariable.new(variable: variables[key]["variable"],description: variables[key]["description"])
+		variable.article_equation_block_id = article_block.id
+		variable.save!
+	end
   end
   def create_diagram_block(code:, caption: nil)
     article_block = ArticleDiagramBlock.new(code: code, caption: caption)

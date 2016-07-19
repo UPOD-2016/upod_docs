@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160717013407) do
+ActiveRecord::Schema.define(version: 20160718164954) do
 
   create_table "article_blocks", force: :cascade do |t|
     t.integer "position",     limit: 4
@@ -46,7 +46,7 @@ ActiveRecord::Schema.define(version: 20160717013407) do
   end
 
   create_table "article_link_blocks", force: :cascade do |t|
-    t.string "source",   limit: 255
+    t.string "source",   limit: 256, null: false
     t.string "video_id", limit: 255, null: false
   end
 
@@ -97,6 +97,16 @@ ActiveRecord::Schema.define(version: 20160717013407) do
     t.datetime "created_at",               null: false
     t.datetime "updated_at",               null: false
   end
+
+  create_table "equation_block_variables", force: :cascade do |t|
+    t.string   "variable",                  limit: 255
+    t.string   "description",               limit: 255
+    t.integer  "article_equation_block_id", limit: 4
+    t.datetime "created_at",                            null: false
+    t.datetime "updated_at",                            null: false
+  end
+
+  add_index "equation_block_variables", ["article_equation_block_id"], name: "index_equation_block_variables_on_article_equation_block_id", using: :btree
 
   create_table "images", force: :cascade do |t|
     t.text     "body",       limit: 65535
@@ -151,5 +161,6 @@ ActiveRecord::Schema.define(version: 20160717013407) do
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
 
+  add_foreign_key "equation_block_variables", "article_equation_blocks"
   add_foreign_key "subcategories", "categories"
 end
