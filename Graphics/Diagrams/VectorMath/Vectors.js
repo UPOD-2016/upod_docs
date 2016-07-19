@@ -7,5 +7,13 @@ var V2Stage2 = document.getElementById("V2Stage2");
 
 
 function loaded(){
-    V2Stage2.setAttribute("x", "200");
+    V2Stage2.setAttribute("x", "100");
+    sleep(500).then(()=>{
+      V2Stage2.setAttribute("x","150");
+    }
+
+  );
 };
+function sleep (time) {
+  return new Promise((resolve) => setTimeout(resolve, time));
+}

@@ -2,6 +2,24 @@
 //= require includes/MathJax
 
 $(document).ready(function(){
-  MathJax.Hub.Configured(); //Tell mathjax to start configuration
-  MathJax.Hub.queue.Push(["Typeset",MathJax.Hub]);
+ 
+  //check if math is included in this diagram before having mathjax search for it
+  var equations = document.getElementsByClassName("equation");
+  if (equations.length){
+	  MathJax.Hub.Configured(); //Tell mathjax to start configuration
+	  MathJax.Hub.queue.Push(["Typeset",MathJax.Hub,equations]);
+  }
+  
+  //Checking for support of sandboxed iframes:
+  if ("sandbox" in document.createElement("iframe")){
+	 $(".diagram").each(function(i){
+		//if supported, get the actual src from the placeholder src-a attribute and load the diagram
+		var src = $(this).attr("src-a");
+		$(this).attr("src",src);
+	 });
+  }
+  else {
+	$(".diagram").replaceWith("This diagram cannot be displayed in your browser");
+  }
+  
 });

@@ -115,9 +115,9 @@
         <circle id="mid" cx="400" cy="500" r="3" opacity="0"/>
     </g>
 
-    <!--
-     <ellipse id="example" cx="50" cy="50" rx="20" ry="20" fill="red"></ellipse>
-     -->
+
+     <ellipse id="ball" cx="50" cy="50" rx="20" ry="20" fill="red"></ellipse>
+
     <text x="100" y="520" font-family="'Arial'" font-size="12">0</text>
     <text id="EndText" x="400" y="520" font-family="'Arial'" font-size="12" opacity="0"></text>
 

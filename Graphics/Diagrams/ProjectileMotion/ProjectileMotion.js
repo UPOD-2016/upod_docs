@@ -9,6 +9,7 @@ var start = document.getElementById("start");
 var mid = document.getElementById("mid");
 var end = document.getElementById("end");
 var EndText = document.getElementById("EndText");
+var ball = document.getElementById("ball");
 var MaxHeight = 0;
 
 function reset() {
@@ -23,7 +24,8 @@ function launch() {
     start.setAttribute("opacity", "1");
     mid.setAttribute("opacity", "1");
     end.setAttribute("opacity", "1");
-    //animate();
+    animate();
+
 };
 
 function calculate() {
@@ -53,11 +55,15 @@ function calculate() {
     EndText.setAttribute("x", X2);
 };
 
-//function animate(){
-//    example.setAttribute("Stroke","Black");
-//    $ball.velocity({cy: "200",}, {duration: 300,easing: "linear"});
-//};
-//
+function animate(){
+  ball.velocity({
+   cy: "440",
+}, {
+   duration: 3000,
+   easing: "linear"
+});
+};
+
 function checkHeight() {
     if (MaxHeight > 300)
         return "false";

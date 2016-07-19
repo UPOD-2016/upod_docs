@@ -28,8 +28,8 @@ ActiveRecord::Schema.define(version: 20160719015833) do
 
   create_table "article_diagram_blocks", force: :cascade do |t|
     t.integer  "diagram_id", limit: 4
-    t.datetime "created_at",               null: false
-    t.datetime "updated_at",               null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
     t.text     "code",       limit: 65535
     t.string   "caption",    limit: 255
   end
@@ -41,8 +41,8 @@ ActiveRecord::Schema.define(version: 20160719015833) do
 
   create_table "article_image_blocks", force: :cascade do |t|
     t.integer  "image_id",   limit: 4
-    t.datetime "created_at",           null: false
-    t.datetime "updated_at",           null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "article_link_blocks", force: :cascade do |t|
@@ -56,14 +56,14 @@ ActiveRecord::Schema.define(version: 20160719015833) do
 
   create_table "articles", force: :cascade do |t|
     t.string   "title",      limit: 255
-    t.datetime "created_at",             null: false
-    t.datetime "updated_at",             null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "categories", force: :cascade do |t|
     t.string   "name",        limit: 255
-    t.datetime "created_at",              null: false
-    t.datetime "updated_at",              null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
     t.string   "description", limit: 255
     t.string   "image",       limit: 255
   end
@@ -71,31 +71,31 @@ ActiveRecord::Schema.define(version: 20160719015833) do
   create_table "categorizations", force: :cascade do |t|
     t.integer  "article_id",     limit: 4
     t.integer  "subcategory_id", limit: 4
-    t.datetime "created_at",                 null: false
-    t.datetime "updated_at",                 null: false
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
     t.string   "description",    limit: 255
   end
 
   create_table "constants", force: :cascade do |t|
     t.string   "name",        limit: 255
     t.text     "description", limit: 65535
-    t.decimal  "value",                     precision: 10
-    t.datetime "created_at",                               null: false
-    t.datetime "updated_at",                               null: false
+    t.decimal  "value",       precision: 10
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
   create_table "contributors", force: :cascade do |t|
     t.integer  "user_id",    limit: 4
     t.integer  "article_id", limit: 4
-    t.datetime "created_at",           null: false
-    t.datetime "updated_at",           null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "diagrams", force: :cascade do |t|
     t.text     "body",       limit: 65535
     t.string   "label",      limit: 255
-    t.datetime "created_at",               null: false
-    t.datetime "updated_at",               null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "images", force: :cascade do |t|
@@ -103,6 +103,9 @@ ActiveRecord::Schema.define(version: 20160719015833) do
     t.datetime "created_at",                      null: false
     t.datetime "updated_at",                      null: false
     t.string   "body_secure_token", limit: 255
+    t.text     "body",       limit: 65535
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "searches", force: :cascade do |t|
@@ -110,8 +113,8 @@ ActiveRecord::Schema.define(version: 20160719015833) do
     t.datetime "searched_at"
     t.datetime "converted_at"
     t.integer  "article_id",   limit: 4
-    t.datetime "created_at",               null: false
-    t.datetime "updated_at",               null: false
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
   end
 
   create_table "sessions", force: :cascade do |t|
@@ -128,8 +131,8 @@ ActiveRecord::Schema.define(version: 20160719015833) do
     t.string   "name",        limit: 255
     t.text     "description", limit: 65535
     t.integer  "category_id", limit: 4
-    t.datetime "created_at",                null: false
-    t.datetime "updated_at",                null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
   add_index "subcategories", ["category_id"], name: "index_subcategories_on_category_id", using: :btree
@@ -145,8 +148,8 @@ ActiveRecord::Schema.define(version: 20160719015833) do
     t.datetime "last_sign_in_at"
     t.string   "current_sign_in_ip",     limit: 255
     t.string   "last_sign_in_ip",        limit: 255
-    t.datetime "created_at",                                      null: false
-    t.datetime "updated_at",                                      null: false
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
