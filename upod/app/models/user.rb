@@ -25,5 +25,6 @@
 class User < ActiveRecord::Base
   has_many :contributions, class_name: 'Contributor', foreign_key: :user_id
   devise :registerable,:recoverable, :rememberable, :trackable, :validatable
+	attr_accessor :password
   # @todo document method
 end
