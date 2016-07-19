@@ -11,8 +11,8 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-
 ActiveRecord::Schema.define(version: 20160719015833) do
+
   create_table "article_blocks", force: :cascade do |t|
     t.integer "position",     limit: 4
     t.integer "article_id",   limit: 4
@@ -113,9 +113,6 @@ ActiveRecord::Schema.define(version: 20160719015833) do
     t.datetime "created_at",                      null: false
     t.datetime "updated_at",                      null: false
     t.string   "body_secure_token", limit: 255
-    t.text     "body",       limit: 65535
-    t.datetime "created_at",               null: false
-    t.datetime "updated_at",               null: false
   end
 
   create_table "searches", force: :cascade do |t|
