@@ -7,11 +7,11 @@ class ArticlesController < ApplicationController
         Article.reindex
 
         search_options = {
-            fields: ["title^5",:body],
+            fields: ["title^5","body^5","label^1"],
             match: :word_start,
             misspellings: {below: 2},
             order: {_score: :desc},
-            suggest: ["title"]
+            suggest: ["title","body"]
         }
 
         if params[:q].present?
@@ -19,7 +19,7 @@ class ArticlesController < ApplicationController
             @suggestion = @articles.suggestions
         else
             @articles = Article.all
-            @suggestion = "None"
+            @suggestion = []
     end
 
     end

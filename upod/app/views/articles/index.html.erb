@@ -11,9 +11,9 @@
   </thead>
 
   <tbody>
-
-        <p>Did you mean [<%= @suggestion %>]</p>
-
+        <% if @suggestion != [] %>
+            <p>Did you mean <%= @suggestion %></p>
+        <% end %>
     <% @articles.each do |article| %>
       <tr>
         <td><%= article.title %></td>
