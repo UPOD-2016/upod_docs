@@ -23,7 +23,7 @@ class Article < ActiveRecord::Base
   # article.create_text_block, ArticleEquationBlock is now
   # article.create_equation_block and so on and so forth.
   include Blockable
-
+  include SirTrevorable
 
   searchkick searchable: ["title", "body"],
     match: :word_start,
@@ -34,6 +34,8 @@ class Article < ActiveRecord::Base
 
 
   def search_data
+      # This will fail: Every block will be a ArticleBlock in this collection. To get the
+      # individual blocks, you'll need to call
       body = Article.first.blocks.select { |block| block.is_a? ArticleTextBlock}.map(&:body)
       {
           title: title,
