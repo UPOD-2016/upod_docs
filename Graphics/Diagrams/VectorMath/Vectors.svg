@@ -1,8 +1,8 @@
-<?xml-stylesheet type="text/css" href="style.css"?>
+<!-- <?xml-stylesheet type="text/css" href="style.css"?> -->
 
 <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
      xmlns:xlink="http://www.w3.org/1999/xlink" width="800px" height="250px"
-     xml:space="p\reserve" onload="loaded();">
+     xml:space="preserve" onload="loaded();">
   <text id="label1" x="20" y="100" >Vector 1</text>
   <text id="label2" x="130" y="100" >Vector 2</text>
   <defs>
@@ -24,6 +24,7 @@
   <use xlink:href="#Vector1" id="V1Stage1" transform="rotate(45 55 50)"/>
   <use xlink:href="#Vector2" id="V2Stage1" x="100" transform="rotate(20 155 50)"/>
   <use xlink:href="#Vector1" id="V1Stage2" x="250" transform="rotate(45 305 50)"/>
-  <use xlink:href="#Vector2" id="V2Stage2" x="327" y="45" transform="rotate
-								     (20 372 95)"/>
+  <use xlink:href="#Vector2" id="V2Stage2" x="327" y="45" transform="rotate(20 372 95)"/>
+
+  <script type="text/javascript" xlink:href="Vectors.js"></script>
 </svg>

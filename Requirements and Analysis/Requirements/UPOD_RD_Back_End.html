@@ -18,7 +18,7 @@
 				<h3 style="text-align:right;font-size:140%">Version 0.8</h3>
 				<h3 style="text-align:right;font-size:140%">Prepared by Clive Shen</h3>
 				<h3 style="text-align:right;font-size:140%">Wilfrid Laurier University, CP317</h3>
-				<h3 style="text-align:right;font-size:140%">10/07/2016</h3>
+				<h3 style="text-align:right;font-size:140%">18/07/2016</h3>
 			</div>
 		<br>
 		
@@ -103,24 +103,17 @@
 						<a id="indent" href="#System Interfaces">2.1.1 System Interfaces</a><br>
 						<a id="indent" href="#Software Interfaces">2.1.2 Software Interfaces</a><br>
 						<a id="indent" href="#Communications Interfaces">2.1.3 Communications Interfaces</a><br>
-						<a id="indent" href="#Memory">2.1.4 Memory</a><br>
 					<a href="#Constraints">2.2 Constraints</a><br>
 
 				<li><a href="#Specific Requirements">Specific Requirements</a></li>
 					<a href="#Functions">3.1 Functions</a><br>
-					<a href="#Performance Requirements">3.2 Performance Requirements</a><br>
-					<a href="#Logical Database Requirements">3.3 Logical Database Requirements</a><br>
-					<a href="#Software System Attributes">3.4 Software System Attributes</a><br>
-						<a id="indent" href="#Reliability">3.4.1 Reliability</a><br>
-						<a id="indent" href="#Security">3.4.2 Security</a><br>
-						<a id="indent" href="#Maintainability">3.4.3 Maintainability</a><br>
-					<a href="#Organizing the Specific Requirements">3.5 Organizing the Specific Requirements</a><br>
-						<a id="indent" href="#Objects">3.5.1 Objects</a><br>
-						<a id="indent" href="#Feature">3.5.2 Feature</a><br>
-						<a id="indent" href="#Functional Hierarchy">3.5.3 Functional Hierarchy</a><br>
-					<a href="#Categories Information">3.6 Categories Information</a><br>
-						<a id="indent" href="#Categories Notes">3.6.1 Categories Notes</a><br>
-						<a id="indent" href="#Categories To Do List">3.6.2 Categories To Do List</a><br>
+					<a href="#Software System Attributes">3.2 Software System Attributes</a><br>
+						<a id="indent" href="#Reliability">3.2.1 Reliability</a><br>
+						<a id="indent" href="#Security">3.2.2 Security</a><br>
+						<a id="indent" href="#Maintainability">3.2.3 Maintainability</a><br>
+					<a href="#Categories Information">3.3 Categories Information</a><br>
+						<a id="indent" href="#Categories Notes">3.3.1 Categories Notes</a><br>
+						<a id="indent" href="#Categories To Do List">3.3.2 Categories To Do List</a><br>
 				<a href="#Index">Index</a>
 				
 			</ol> 
@@ -145,7 +138,7 @@
 						<li id="categoryHeading">Viewable page containing information, formulas, and diagrams related to a particular physics concept.</li>
                         <p><span style="text-decoration: underline;">Diagram</span></p>
 						<li id="categoryHeading">Illustration of physics concept, which can be static or dynamic, and support interaction.</li>
-                        <p><span style="text-decoration: underline;">SVG (Scalable Vector Diagram)</span></p>
+                        <p><span style="text-decoration: underline;">SVG (Scalable Vector Diagram</span></p>
 						<li id="categoryHeading">Image format for diagrams with support for animation and interaction.</li>
 				</div>
 				<div id="mainHeading">
@@ -154,7 +147,7 @@
 				</div>
 				<div id="mainHeading">
 					<h3><a name="Overview">1.4 Overview</a></h2>
-					<p id="categoryHeading">The back end requirements document discusses the following topics: </p>
+					<p id="categoryHeading">The back end requirement discusses the following topics: </p>
 					<li id="subcategoryHeading">Interfaces of the UPOD Back End</li>
 					<li id="subcategoryHeading">Functions of the UPOD Back End</li>
 					<li id="subcategoryHeading">Requirements of the UPOD Back End</li>
@@ -177,15 +170,13 @@
                             <li id="subcategoryHeading">Safari - version 9.1</li>
 					<h4><a name="Software Interfaces">2.1.2 Software Interfaces</a></h4>
 						<p id="categoryHeading"><span style="text-decoration: underline;">Database</span></p>
-							<p id="categoryHeading">A database is used to store and organize data.<br>In the database of UPOD, the types of data stored include categories, sub-categories, and articles.</p>
+							<p id="categoryHeading">In the database of UPOD, the types of data stored include categories, sub-categories, and articles.</p>
 							<li id="subcategoryHeading">Ensure information (i.e. categories, sub-categories, and articles) is always stored only once. </li>
 							<li id="subcategoryHeading">Transform any data entered by moderators into required data structures.</li>
 							<li id="subcategoryHeading">Enable multiple users to access the database simultaneously.</li>
                             <li id="subcategoryHeading">Accept different moderators' requests through different network environments.</li>
 					<h4><a name="Memory">2.1.3 Communications Interfaces</a></h4>
 						<li id="subcategoryHeading">UPOD will remain responsive across internet service providers.</li>
-					<h4><a name="Memory">2.1.4 Memory</a></h4>
-						<li id="subcategoryHeading">TBA (State the size of the Primary and Secondary memory that the database will be on)</li>
 				
 				<h3><a name="Constraints">2.2 Constraints</a></h3>
 				<li id="categoryHeading">The budget of UPOD is $0, so any software must be free to use. </li>
@@ -201,77 +192,50 @@
 							<li id="subcategoryHeading">In the login page, a moderator needs to enter their username and password to authenticate their identity.</li>
 					<p id="categoryHeading"><span style="text-decoration: underline;">Logout</span></p>
 							<li id="subcategoryHeading">To terminate their section, a moderator can click the Logout option.</li>
-					<p id="categoryHeading"><span style="text-decoration: underline;">Add/Delete/Edit Category (or Sub-Category)</span></p>
+					<p id="categoryHeading"><span style="text-decoration: underline;">Add/Delete/Edit Categories (or Sub-Categories)</span></p>
 							<li id="subcategoryHeading">A moderator can add, delete, or edit categories/sub-categories in UPOD. </li>
-					<p id="categoryHeading"><span style="text-decoration: underline;">Add/Delete/Modify Article</span></p>
+					<p id="categoryHeading"><span style="text-decoration: underline;">Add/Delete/Modify Articles</span></p>
 							<li id="subcategoryHeading">A moderator can add, delete, or edit articles in UPOD. </li>
-					<p id="categoryHeading"><span style="text-decoration: underline;">View Category/Sub-Category</span></p>
+					<p id="categoryHeading"><span style="text-decoration: underline;">View Categories/Sub-Categories</span></p>
 							<li id="subcategoryHeading">A user can view categories/sub-categories that are available in UPOD.</li>
-					<p id="categoryHeading"><span style="text-decoration: underline;">View Article</span></p>
+					<p id="categoryHeading"><span style="text-decoration: underline;">View Articles</span></p>
 							<li id="subcategoryHeading">A user can view articles that are available in UPOD.</li>		
-					<p id="categoryHeading"><span style="text-decoration: underline;">Search for Category/Sub-Category/Article </span></p>
+					<p id="categoryHeading"><span style="text-decoration: underline;">Search for Categories/Sub-Categories/Articles </span></p>
 							<li id="subcategoryHeading">By inputting keywords in the search bar, a user can view the related categories/sub-categories/articles in the search results page. </li>
-					<p id="categoryHeading"><span style="text-decoration: underline;">Interact with Diagram</span></p>
+					<p id="categoryHeading"><span style="text-decoration: underline;">Interact with Diagrams</span></p>
 							<li id="subcategoryHeading">A user can interact with diagrams that are in SVG format. </li>
 							
-				
-				<h3><a name="Performance Requirements">3.2 Performance Requirements</a></h2>
-				<li id="categoryHeading">TBA</li>
-				<li id="categoryHeading">State the number of simultaneous users to be supported.</li>
-				<li id="categoryHeading">Amount and type of information to be handled.</li>
-				
-				<h3><a name="Logical Database Requirements">3.3 Logical Database Requirements</a></h3>
-					<p id="categoryHeading"><span style="text-decoration: underline;">Types of information used by various functions</span></p>
-						<li id="subcategoryHeading">TBA</li>
-					<p id="categoryHeading"><span style="text-decoration: underline;">Frequency of use</span></p>
-						<li id="subcategoryHeading">TBA</li>
-					<p id="categoryHeading"><span style="text-decoration: underline;">Accessing capabilities</span></p>
-						<li id="subcategoryHeading">TBA</li>
-					<p id="categoryHeading"><span style="text-decoration: underline;">Data entities and their relationships</span></p>
-						<li id="subcategoryHeading">TBA</li>
-					<p id="categoryHeading"><span style="text-decoration: underline;">Integrity constraints</span></p>
-						<li id="subcategoryHeading">TBA</li>
-					<p id="categoryHeading"><span style="text-decoration: underline;">Data retention requirements</span></p>
-						<li id="subcategoryHeading">TBA</li>
 						
-				<h3><a name="Software System Attributes">3.4 Software System Attributes</a></h3>
-					<h4><a name="Reliability">3.4.1 Reliability</a></h4>
+				<h3><a name="Software System Attributes">3.2 Software System Attributes</a></h3>
+					<h4><a name="Reliability">3.2.1 Reliability</a></h4>
 						<li id="subcategoryHeading">Database provides up-to-date, accurate information. </li>
 						<li id="subcategoryHeading">No duplicate information is stored in the database. </li>
 						<li id="subcategoryHeading">The search engine should provide a list of articles that are contains the key words or are related to the key words. </li>
-					<h4><a name="Security">3.4.2 Security</a></h4>
+					<h4><a name="Security">3.2.2 Security</a></h4>
 						<li id="subcategoryHeading">Account passwords of administrators and moderators accounts should be stored securely. </li>
 						<li id="subcategoryHeading">Only moderators can add, delete, or edit categories/sub-categories/articles. </li>
-					<h4><a name="Maintainability">3.4.3 Maintainability</a></h4>
+					<h4><a name="Maintainability">3.2.3 Maintainability</a></h4>
 						<li id="subcategoryHeading">Additional features may be added to the website in the future, so the whole software should be well documented and easy to maintain. </li>
-				
-				<h3><a name="Organizing the Specific Requirements">3.5 Organizing the Specific Requirements</a></h2>
-					<h4><a name="Objects">3.5.1 Objects</a></h4>
-						<li id="subcategoryHeading">TBA</li>
-					<h4><a name="Feature">3.5.2 Feature</a></h4>
-						<li id="subcategoryHeading">TBA</li>
-					<h4><a name="Functional Hierarchy">3.5.3 Functional Hierarchy</a></h4>
-						<li id="subcategoryHeading">TBA</li>
 
-				<h3><a name="Categories Information">3.6 Categories Information</a></h2>
-					<h4><a name="Categories Notes">3.6.1 Categories Notes</a></h4>
+				<h3><a name="Categories Information">3.3 Categories Information</a></h2>
+					<h4><a name="Categories Notes">3.3.1 Categories Notes</a></h4>
 						<ul>
 							<li id="subcategoryHeading">Categories are top level in terms of hierarchy</li>
-							<li id="subcategoryHeading">Each sub-category will pertain to ONE category (foreign key stored in the sub-category table)</li>
+							<li id="subcategoryHeading">Each sub-category will belong to ONE category (foreign key stored in the sub-category table)</li>
 							<li id="subcategoryHeading">Each sub-category will contain a set of articles that relate to that topic</li>
 							<li id="subcategoryHeading">Each article can belong to ONE OR MORE sub-category</li>
 							<li id="subcategoryHeading">Each article MUST belong to at least one sub-category</li>
-							<li id="subcategoryHeading">Articles can only belong to sub-categories not categories (however the pertaining sub-category would belong to a parent category)</li>
+							<li id="subcategoryHeading">Articles can only belong to sub-categories not categories (however the belonging sub-category would belong to a parent category)</li>
 						</ul>
-					<h4><a name="Categories To Do List">3.6.2 Categories To Do List</a></h4>
+					<h4><a name="Categories To Do List">3.3.2 Categories To Do List</a></h4>
 						<ol>
-							<li id="subcategoryHeading">Implement database schema for categories (category table, sub-category table (contains foreign key of category it pertains to), sub-category-to-article table)</li>
+							<li id="subcategoryHeading">Implement database schema for categories (category table, sub-category table (contains foreign key of category it belongs to), sub-category-to-article table)</li>
 							<li id="subcategoryHeading">Create category MODEL</li>
 							<li id="subcategoryHeading">Update category MODEL</li>
 							<li id="subcategoryHeading">Remove category MODEL (delete category and all sub-categories (call delete sub-category function listed below for each sub-category in the category to be deleted) within this category)</li>
 							<li id="subcategoryHeading">Create sub-category MODEL</li>
 							<li id="subcategoryHeading">Update sub-category MODEL</li>
-							<li id="subcategoryHeading">Remove sub-category MODEL (delete sub-category and all articles within this category. Need to check if article pertains to other sub-categories before deleting)</li>
+							<li id="subcategoryHeading">Remove sub-category MODEL (delete sub-category and all articles within this category. Need to check if article belongs to other sub-categories before deleting)</li>
 							<li id="subcategoryHeading">Get all categories MODEL</li>
 							<li id="subcategoryHeading">Get all categories with sub-categories and articles MODEL</li>
 							<li id="subcategoryHeading">Get all sub-categories with articles in specific category MODEL</li>

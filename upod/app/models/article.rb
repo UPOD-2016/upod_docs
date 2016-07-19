@@ -82,4 +82,7 @@ class Article < ActiveRecord::Base
     article
   end
 
+  def to_sir_trevor
+    {data: self.blocks.collect { |block| block.specific.as_json } }.to_json
+  end
 end

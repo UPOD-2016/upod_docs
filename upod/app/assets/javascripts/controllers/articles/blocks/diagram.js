@@ -1,8 +1,6 @@
 // Diagram Block
-
 $(document).on('turbolinks:load', function() {
     SirTrevor.Blocks.Diagram = (function() {
-	
 		var inputs, code_area, caption, preview_button;
 		var preview_area, preview_frame, preview_caption;
 		var block_data = { code: null, caption: null };
@@ -20,8 +18,8 @@ $(document).on('turbolinks:load', function() {
 
             editorHTML: function() {
 			   return "<div class='st-svg-inputs'> \
-					<p>Enter javascript, css, and html</p> \
-					<textarea class='st-svg-code' contenteditable='true' style='border:solid;'></textarea> \
+					<p>Enter javascript, css, and html:</p> \
+					<textarea class='st-svg-code' contenteditable='true' style='border:solid;width:100%'></textarea> \
 					<span>Add a caption:</span><input type='text' class='st-svg-caption'> \
 				</div> \
 				<button type='button' class='st-preview-button'>Preview</button> \
