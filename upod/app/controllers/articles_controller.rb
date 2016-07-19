@@ -7,7 +7,7 @@ class ArticlesController < ApplicationController
         Article.reindex
 
         search_options = {
-            fields: ["title^5",:body],
+            fields: ["title^5",:body,:equation_label],
             match: :word_start,
             misspellings: {below: 2},
             order: {_score: :desc},
@@ -27,6 +27,7 @@ class ArticlesController < ApplicationController
     # GET /articles/1
     def show
         @article = Article.find(params[:id])
+
     end
 
     # GET /articles/new

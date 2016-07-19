@@ -25,7 +25,7 @@ class Article < ActiveRecord::Base
   include Blockable
   include SirTrevorable
 
-  searchkick searchable: ["title", "body"],
+  searchkick searchable: ["title", "body", "equation_label"],
     match: :word_start,
     suggest: ["title"],
     callbacks: :async,
@@ -37,9 +37,11 @@ class Article < ActiveRecord::Base
       # This will fail: Every block will be a ArticleBlock in this collection. To get the
       # individual blocks, you'll need to call
       body = Article.first.blocks.select { |block| block.is_a? ArticleTextBlock}.map(&:body)
+      equation_label = Article.first.blocks.select{ |block| block.is_a? ArticleEquationBlock}.map(&:label)
       {
           title: title,
           body: body,
+          eqation_label: equation_label,
           conversions: searches.group("query").count
       }
   end

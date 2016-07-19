@@ -18,7 +18,7 @@ class ArticleImageBlock < ActiveRecord::Base
   belongs_to :image
   acts_as :article_block
 
-  def image_url(size=nil)
-    image.body.url(size)
+  def get_url(size=nil)
+    Image.first.body
   end
 end

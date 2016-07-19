@@ -24,4 +24,8 @@ class Image < ActiveRecord::Base
     image.save!
     image
   end
+
+  def self.get_body()
+    Image.body
+  end
 end
