@@ -19,10 +19,9 @@ class Image < ActiveRecord::Base
   #validates :body, presence: true
 
   def self.create_from_filepath(filepath)
-    img = Image.new
-    img.body = filepath
-    img.save!
-    img
+    image = Image.new
+    image.body = filepath
+    image.save!
+    image
   end
-
 end
