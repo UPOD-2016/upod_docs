@@ -63,20 +63,14 @@ NUM_OF_ITERATIONS.times do |x|
   puts "Creating an article with the title: #{article.title}".blue
   article.create_text_block(:body => Faker::Lorem.sentence(x))
   puts "Creating an article text block containing a random paragraph".blue
-  article.create_image_block(:image => Image.create(:body => "http://dummyimage.com/400/000/fff&text=PLACEHOLDER"))
+  article.create_image_block(:image => Image.create(:remote_body_url => "http://dummyimage.com/400/000/fff&text=PLACEHOLDER"))
   puts "Creating an article image block containing a random image".blue
   article.create_equation_block(:equation => "E=mc^2", :label => "Sample Equation")
   puts "Creating an article equation block containg the equation E=mc^2".blue
-
-  ### currently working on this part.  having an issue adding users with new set up
-
-  #user = User.create(:email => Faker::Internet.email, :encrypted_password => Faker::Internet.password(7))
-  #puts "Creating a user with the email: #{user.email} and the password: #{user.encrypted_password}".blue
-  #Contributor.create(article: article, user: user)
-  #puts "Creating a contributor with article #{article.title} and #{user.email}".blue
-  ###
-  
-
+  user = User.create(:email => Faker::Internet.email, :password => Faker::Internet.password(7))
+  puts "Creating a user with the email: #{user.email} and the password: #{user.password}".blue
+  Contributor.create(article: article, user: user)
+  puts "Creating a contributor with article #{article.title} and #{user.email}".blue
   Categorization.create(article: article, subcategory: subcategory)
   puts "Creating a categorization between #{article.title} and #{subcategory.name}".blue
   puts "================================================".yellow

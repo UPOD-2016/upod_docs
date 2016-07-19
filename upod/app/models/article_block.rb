@@ -30,10 +30,10 @@ class ArticleBlock < ActiveRecord::Base
   # The scope restricts it to the article id
   acts_as_list scope: :article_id
 
-  #after_commit :reindex_target
-  #def reindex_target
-#    article.reindex
- # end
+  after_commit :reindex_target
+  def reindex_target
+    article.reindex
+  end
 
   # Used to resolve partials in views e.g. ArticleTextBlock => text_block
   def slug
