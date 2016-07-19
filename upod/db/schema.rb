@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160719015833) do
+ActiveRecord::Schema.define(version: 20160719202639) do
 
   create_table "article_blocks", force: :cascade do |t|
     t.integer "position",     limit: 4

@@ -14,7 +14,7 @@
 
 class ArticleEquationBlock < ActiveRecord::Base
   acts_as :article_block
-  has_many :equation_block_variables
+  has_many :equation_block_variables, dependent: :destroy
 
 # validates the length and presence of equation block and description
   validates :equation, presence: true, length: {maximum: 65535}

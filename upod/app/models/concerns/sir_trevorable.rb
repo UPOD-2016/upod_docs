@@ -31,7 +31,18 @@ module SirTrevorable
         when :video
           article.create_link_block(source: block['data']['source'], video_id: block['data']['remote_id'])
         when :equation
-          article.create_equation_block(equation: block['data']['equation'], label: block['data']['label'], variables: block['data']['variables'])
+           equation_block = article.create_equation_block(equation: block['data']['equation'], label: block['data']['label'])
+		   
+		   #add any variables associated with this equation
+		   variables = block['data']['variables']
+		   if variables != nil
+				variables.keys.each do |key|
+				variable = EquationBlockVariable.new(variable: variables[key]["variable"],description: variables[key]["description"])
+				variable.article_equation_block_id = equation_block.id
+				variable.save!
+			end
+		end
+		   
       when :diagram
           article.create_diagram_block(code: block['data']['code'], caption: block['data']['caption'])
         end
