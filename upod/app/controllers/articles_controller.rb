@@ -1,72 +1,73 @@
 class ArticlesController < ApplicationController
-  before_action :set_article, only: [:show, :edit, :update, :destroy]
+    #include check_user
+    before_action :set_article, only: [:show, :edit, :update, :destroy]
+    before_action :authenticate_user!, except: [:index,:show]
+    # GET /articles
+    def index
+        Article.reindex
 
-  # GET /articles
-  def index
-    Article.reindex
+        search_options = {
+            fields: ["title^5",:body],
+            match: :word_start,
+            misspellings: {below: 2},
+            order: {_score: :desc},
+            suggest: ["title"]
+        }
 
-    search_options = {
-        fields: ["title^5",:body],
-        match: :word_start,
-        misspellings: {below: 2},
-        order: {_score: :desc},
-        suggest: ["title"]
-    }
-
-    if params[:q].present?
-        @articles = Article.search params[:q], search_options
-        @suggestion = @articles.suggestions
-    else
-        @articles = Article.all
-        @suggestion = []
+        if params[:q].present?
+            @articles = Article.search params[:q], search_options
+            @suggestion = @articles.suggestions
+        else
+            @articles = Article.all
+            @suggestion = "None"
     end
 
-  end
-
-  # GET /articles/1
-  def show
-    @article = Article.find(params[:id])
-  end
-
-  # GET /articles/new
-  def new
-    @article = Article.new
-    @test = "hello"
-  end
-
-  # GET /articles/1/edit
-  def edit
-  end
-
-  # POST /articles
-  def create
-    @article = Article.create_from_sir_trevor(params[:sir_trevor_content])
-    redirect_to @article
-  end
-
-  # PATCH/PUT /articles/1
-  def update
-    if @article.update(article_params)
-      redirect_to @article, notice: 'Article was successfully updated.'
-    else
-      render :edit
     end
-  end
 
-  # DELETE /articles/1
-  def destroy
-    @article.destroy
-    redirect_to articles_url, notice: 'Article was successfully destroyed.'
-  end
+    # GET /articles/1
+    def show
+        @article = Article.find(params[:id])
+    end
 
-  private
+    # GET /articles/new
+    def new
+        @article = Article.new
+        @test = "hello"
+    end
+
+    # GET /articles/1/edit
+    def edit
+    end
+
+    # POST /articles
+    def create
+        @article = Article.create_from_sir_trevor(params[:sir_trevor_content])
+        redirect_to @article
+    end
+
+    # PATCH/PUT /articles/1
+    def update
+        if @article.update(article_params)
+            redirect_to @article, notice: 'Article was successfully updated.'
+        else
+            render :edit
+        end
+    end
+
+    # DELETE /articles/1
+        def destroy
+            @article.destroy
+        redirect_to articles_url, notice: 'Article was successfully destroyed.'
+    end
+
+    private
     # Use callbacks to share common setup or constraints between actions.
     def set_article
-      @article = Article.find(params[:id])
+        @article = Article.find(params[:id])
     end
 
     # Only allow a trusted parameter "white list" through.
     def article_params
-      params[:article]
+        params[:article]
     end
 end
