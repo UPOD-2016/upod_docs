@@ -11,9 +11,8 @@ class ArticleEquationBlockDashboard < Administrate::BaseDashboard
     actable: Field::Polymorphic,
     article: Field::BelongsTo,
     article_block: Field::HasOne,
-    equation_block_variables: Field::HasMany,
     id: Field::Number,
-    equation: Field::Text,
+    equation: Field::String,
     label: Field::String,
   }.freeze
 
@@ -26,7 +25,6 @@ class ArticleEquationBlockDashboard < Administrate::BaseDashboard
     :id,
     :equation,
     :label,
-    :equation_block_variables,
     #:actable,
     :article,
     :article_block,
@@ -38,7 +36,6 @@ class ArticleEquationBlockDashboard < Administrate::BaseDashboard
     :id,
     :equation,
     :label,
-    :equation_block_variables,
     :article,
     #:actable,
     :article_block,
