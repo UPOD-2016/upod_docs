@@ -1,41 +1,95 @@
 <nav class="navbar navbar-inverse navbar-static-top">
-      <div class="container">
+    <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-          </button>
-          <%= link_to root_path, class: 'navbar-brand' do %>
+            </button>
+            <%= link_to root_path, class: 'navbar-brand' do %>
             <%= image_tag 'upod_logo_color_v2.png', width: 100 %>
-          <% end %>
+            <% end %>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li><%= link_to "About", about_path %></li>
-             <li><%= link_to "Articles", articles_path %></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categories <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <% @categories.each do |category| %>
-                  <li><%= link_to category.name, category %></li>
-                <% end %>
-              </ul>
-            </li>
-          </ul>
-          <% unless current_page?(root_path) %>
-          <ul class="nav navbar-nav navbar-right"> <!-- nav search -->
-						<form class="navbar-form" role="search">
-							<ul class="input-group">
-								<input type="text" class="form-control" placeholder="Search" name="q">
-								<li class="input-group-btn">
-									<button class="btn btn-default" type="submit">Go</button>
-								</li>
-							</ul>
-						</form>
-          </ul> <!-- end nav search -->
-          <% end %>
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
+            <ul class="nav navbar-nav">
+                <li class="dropdown mega-dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Collection</a>
+                    <ul class="dropdown-menu mega-dropdown-menu row">
+                        <li class="col-sm-3">
+                            <ul>
+                                <li class="dropdown-header">Dresses</li>
+                                <li><a href="#">Unique Features</a></li>
+                                <li><a href="#">Image Responsive</a></li>
+                                <li><a href="#">Auto Carousel</a></li>
+                                <li><a href="#">Newsletter Form</a></li>
+                                <li><a href="#">Four columns</a></li>
+                                <li class="divider"></li>
+                                <li class="dropdown-header">Tops</li>
+                                <li><a href="#">Good Typography</a></li>
+                            </ul>
+                        </li>
+                        <li class="col-sm-3">
+                            <ul>
+                                <li class="dropdown-header">Jackets</li>
+                                <li><a href="#">Easy to customize</a></li>
+                                <li><a href="#">Glyphicons</a></li>
+                                <li><a href="#">Pull Right Elements</a></li>
+                                <li class="divider"></li>
+                                <li class="dropdown-header">Pants</li>
+                                <li><a href="#">Coloured Headers</a></li>
+                                <li><a href="#">Primary Buttons & Default</a></li>
+                                <li><a href="#">Calls to action</a></li>
+                            </ul>
+                        </li>
+                        <li class="col-sm-3">
+                            <ul>
+                                <li class="dropdown-header">Accessories</li>
+                                <li><a href="#">Default Navbar</a></li>
+                                <li><a href="#">Lovely Fonts</a></li>
+                                <li><a href="#">Responsive Dropdown </a></li>
+                                <li class="divider"></li>
+                                <li class="dropdown-header">Newsletter</li>
+                                <form class="form" role="form">
+                                    <div class="form-group">
+                                        <label class="sr-only" for="email">Email address</label>
+                                        <input type="email" class="form-control" id="email" placeholder="Enter email">                                                              
+                                    </div>
+                                    <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+                                </form>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><%= link_to "About", about_path %></li>
+                <li><%= link_to "Articles", articles_path %></li>
+
+                <!--
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categories <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <% @categories.each do |category| %>
+                          <li><%= link_to category.name, category %></li>
+                        <% end %>
+                      </ul>
+                    </li>
+                    -->
+            </ul>
+            <% unless current_page?(root_path) %>
+            <ul class="nav navbar-nav navbar-right">
+                <!-- nav search -->
+                <form class="navbar-form" role="search">
+                    <ul class="input-group">
+                        <input type="text" class="form-control" placeholder="Search" name="q">
+                        <li class="input-group-btn">
+                            <button class="btn btn-default" type="submit">Go</button>
+                        </li>
+                    </ul>
+                </form>
+            </ul>
+            <!-- end nav search -->
+            <% end %>
+        </div>
+        <!--/.nav-collapse -->
+    </div>
+</nav>
