@@ -31,19 +31,12 @@ class Article < ActiveRecord::Base
     callbacks: :async,
     conversions: :converstions
 
-    before_save :update_slug
-
     extend FriendlyId
     friendly_id :title, use: [:slugged, :finders]
 
     def should_generate_new_friendly_id?
       new_record?
     end
-
-    def update_slug
-      self.slug = title.parameterize
-    end
-
 
   def search_data
     {
