@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160719202639) do
+ActiveRecord::Schema.define(version: 20160721163639) do
 
   create_table "article_blocks", force: :cascade do |t|
     t.integer "position",     limit: 4
@@ -124,16 +124,6 @@ ActiveRecord::Schema.define(version: 20160719202639) do
     t.datetime "updated_at",               null: false
   end
 
-  create_table "sessions", force: :cascade do |t|
-    t.string   "session_id", limit: 255,   null: false
-    t.text     "data",       limit: 65535
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "sessions", ["session_id"], name: "index_sessions_on_session_id", unique: true, using: :btree
-  add_index "sessions", ["updated_at"], name: "index_sessions_on_updated_at", using: :btree
-
   create_table "subcategories", force: :cascade do |t|
     t.string   "name",        limit: 255
     t.text     "description", limit: 65535
@@ -155,6 +145,10 @@ ActiveRecord::Schema.define(version: 20160719202639) do
     t.datetime "last_sign_in_at"
     t.string   "current_sign_in_ip",     limit: 255
     t.string   "last_sign_in_ip",        limit: 255
+    t.string   "confirmation_token",     limit: 255
+    t.datetime "confirmed_at"
+    t.datetime "confirmation_sent_at"
+    t.string   "unconfirmed_email",      limit: 255
     t.datetime "created_at",                                      null: false
     t.datetime "updated_at",                                      null: false
   end

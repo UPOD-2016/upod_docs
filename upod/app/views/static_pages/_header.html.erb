@@ -15,6 +15,8 @@
           <ul class="nav navbar-nav">
             <li><%= link_to "About", about_path %></li>
              <li><%= link_to "Articles", articles_path %></li>
+             <li><%= link_to "Sign Up", new_user_registration_path %></li>
+            <li><%= link_to "Sign In", new_session_path(:user) %></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categories <span class="caret"></span></a>
               <ul class="dropdown-menu">
@@ -25,16 +27,16 @@
             </li>
           </ul>
           <% unless current_page?(root_path) %>
-          <ul class="nav navbar-nav navbar-right"> <!-- nav search -->
-						<form class="navbar-form" role="search">
-							<ul class="input-group">
-								<input type="text" class="form-control" placeholder="Search" name="q">
-								<li class="input-group-btn">
-									<button class="btn btn-default" type="submit">Go</button>
-								</li>
-							</ul>
-						</form>
-          </ul> <!-- end nav search -->
+            <ul class="nav navbar-nav navbar-right"> <!-- nav search -->
+  						<form class="navbar-form" role="search">
+  							<ul class="input-group">
+  								<input type="text" class="form-control" placeholder="Search" name="q">
+  								<li class="input-group-btn">
+  									<button class="btn btn-default" type="submit">Go</button>
+  								</li>
+  							</ul>
+  						</form>
+            </ul> <!-- end nav search -->
           <% end %>
         </div><!--/.nav-collapse -->
       </div>

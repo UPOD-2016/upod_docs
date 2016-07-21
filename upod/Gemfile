@@ -15,11 +15,7 @@ gem 'elasticsearch-rails'
 gem 'searchkick'
 gem 'gemoji-parser'
 
-#AD LDAP / DEVISE GEMS
-gem 'activerecord-session_store', github: 'rails/activerecord-session_store'
-gem "net-ldap"
 gem "devise"
-gem "devise_ldap_authenticatable", :git => "git://github.com/cschiewek/devise_ldap_authenticatable.git"
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
