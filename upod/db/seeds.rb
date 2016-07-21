@@ -16,7 +16,7 @@ puts "Starting to Seed Database. This takes a minute.".yellow
 puts "================================================".yellow
 puts "Removing current entries in database".blue
 
-[Category, Article, User, Contributor, ArticleBlock, Subcategory, Categorization, Session, Image].map(&:destroy_all)
+[Category, Article, User, Contributor, EquationBlockVariable, ArticleBlock, Subcategory, Categorization, Session, Image].map(&:destroy_all)
 
 categories = [
   {
@@ -249,13 +249,13 @@ NUM_OF_ARTICLES.times do |x|
   article.create_image_block(:image => Image.create(:remote_body_url => "https://unsplash.it/400/400/?random"))
   puts "Creating an article image block containing a random image".blue
   contrib = Contributor.create(article: article, user: User.order("RAND()").first)
-  puts "Creating a contributor with article: #{article.title} and user: #{contrib.user.email}".blue
   puts "Creating an article equation block containing E=mc^2".blue
   equation_block = article.create_equation_block(:equation => "E=mc^2", :label => "Sample Equation")
   puts "Creating article equation variable blocks for the equation block containing E=mc^2".blue
   EquationBlockVariable.create(:variable => "E", :description => "Kinetic Energy", article_equation_block: equation_block)
   EquationBlockVariable.create(:variable => "m", :description => "Mass", article_equation_block: equation_block)
   EquationBlockVariable.create(:variable => "c", :description => "Speed of Light", article_equation_block: equation_block)
+  puts "Creating a contributor with article: #{article.title} and user: #{contrib.user.email}".blue
   categorization = Categorization.create(article: article, subcategory: Subcategory.order("RAND()").first)
   puts "Creating a categorization between article: #{article.title} and subcategory: #{categorization.subcategory.name}".blue
   puts "================================================".yellow

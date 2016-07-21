@@ -14,6 +14,7 @@ Rails.application.routes.draw do
     resources :article_image_blocks
     resources :article_diagram_blocks
     resources :article_equation_blocks
+    resources :equation_block_variables
     resources :article_link_blocks
     resources :contributors
     resources :categorizations

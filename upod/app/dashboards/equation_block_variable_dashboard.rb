@@ -1,6 +1,6 @@
 require "administrate/base_dashboard"
 
-class ArticleEquationBlockDashboard < Administrate::BaseDashboard
+class EquationBlockVariableDashboard < Administrate::BaseDashboard
   # ATTRIBUTE_TYPES
   # a hash that describes the type of each of the model's fields.
   #
@@ -8,13 +8,13 @@ class ArticleEquationBlockDashboard < Administrate::BaseDashboard
   # which determines how the attribute is displayed
   # on pages throughout the dashboard.
   ATTRIBUTE_TYPES = {
-    actable: Field::Polymorphic,
-    article: Field::BelongsTo,
-    article_block: Field::HasOne,
-    equation_block_variables: Field::HasMany,
+    article_equation_block: Field::BelongsTo,
     id: Field::Number,
-    equation: Field::Text,
-    label: Field::String,
+    variable: Field::String,
+    description: Field::String,
+    article_equation_block_id: Field::String,
+    created_at: Field::DateTime,
+    updated_at: Field::DateTime,
   }.freeze
 
   # COLLECTION_ATTRIBUTES
@@ -24,41 +24,38 @@ class ArticleEquationBlockDashboard < Administrate::BaseDashboard
   # Feel free to add, remove, or rearrange items.
   COLLECTION_ATTRIBUTES = [
     :id,
-    :equation,
-    :label,
-    :equation_block_variables,
-    #:actable,
-    :article,
-    :article_block,
+    :variable,
+    :description,
+    :article_equation_block_id,
+    :article_equation_block,
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
   # an array of attributes that will be displayed on the model's show page.
   SHOW_PAGE_ATTRIBUTES = [
     :id,
-    :equation,
-    :label,
-    :equation_block_variables,
-    :article,
-    #:actable,
-    :article_block,
+    :variable,
+    :description,
+    :article_equation_block_id,
+    :article_equation_block,
+    :created_at,
+    :updated_at,
   ].freeze
 
   # FORM_ATTRIBUTES
   # an array of attributes that will be displayed
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = [
-    #:actable,
-    #:article,
-    #:article_block,
-    :equation,
-    :label,
+    :variable,
+    :description,
+    :article_equation_block_id,
+    :article_equation_block,
   ].freeze
 
-  # Overwrite this method to customize how article equation blocks are displayed
+  # Overwrite this method to customize how contributors are displayed
   # across all pages of the admin dashboard.
   #
-  # def display_resource(article_equation_block)
-  #   "ArticleEquationBlock ##{article_equation_block.id}"
+  # def display_resource(contributor)
+  #   "Contributor ##{contributor.id}"
   # end
 end
