@@ -1,19 +1,25 @@
-var label1 = document.getElementById("label1");
-var label2 = document.getElementById("label2");
-var V1Stage1 = document.getElementById("V1Stage1");
-var V2Stage1 = document.getElementById("V2Stage1");
-var V1Stage2 = document.getElementById("V1Stage2");
-var V2Stage2 = document.getElementById("V2Stage2");
+var Addition = document.getElementById("Addition");
+var Subtraction = document.getElementById("Subtraction");
+var Vector2 = document.getElementById("Vector2");
+var NegVector2 = document.getElementById("-Vector2");
 
 
 function loaded(){
-    V2Stage2.setAttribute("x", "100");
-    sleep(500).then(()=>{
-      V2Stage2.setAttribute("x","150");
-    }
-
-  );
+    Addition.setAttribute("opacity","0");
+    Subtraction.setAttribute("opacity","0");
+    NegVector2.setAttribute("opacity","0");
 };
-function sleep (time) {
-  return new Promise((resolve) => setTimeout(resolve, time));
-}
+
+function Add(){
+    Vector2.setAttribute("opacity","1");
+    Addition.setAttribute("opacity","1");
+    Subtraction.setAttribute("opacity","0");
+    NegVector2.setAttribute("opacity","0");
+};
+
+function Subtract(){
+    Vector2.setAttribute("opacity","0");
+    Addition.setAttribute("opacity","0");
+    Subtraction.setAttribute("opacity","1");
+    NegVector2.setAttribute("opacity","1");
+};
