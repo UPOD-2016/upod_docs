@@ -31,6 +31,13 @@ class Article < ActiveRecord::Base
     callbacks: :async,
     conversions: :converstions
 
+    extend FriendlyId
+    friendly_id :title, use: [:slugged, :finders]
+
+    def should_generate_new_friendly_id?
+      new_record?
+    end
+
   def search_data
     {
         title: title,
