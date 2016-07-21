@@ -76,6 +76,7 @@ group :development do
 end
 
 group :development, :test do
+  gem 'friendly_id', '~> 5.1.0'
   gem 'byebug'
   gem 'rspec-rails', '~> 3.4'
   gem 'factory_girl_rails'
