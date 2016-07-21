@@ -77,7 +77,7 @@
     <line id="base" x1="100" y1="500" x2="1150" y2="500" stroke="black"/>
     <line id="yaxis" x1="100" y1="500" x2="100" y2="200" stroke="black"/>
 
-    <path id="curve" d="" stroke="red" stroke-width="5" fill="none" class="curve" opacity="0.2"></path>
+    <path id="curve" d="" stroke="red" stroke-width="2" fill="none" class="curve" opacity="0.2"></path>
 
     <!--LINE TAGS-->
     <text x="50" y="20" font-family="'Arial'" font-size="12">Initial Velocity(m/s):
@@ -109,14 +109,14 @@
     <text id="HeightOut" x="200" y="100" font-family="'Arial'" font-size="12"></text>
     <text id="TimeOut" x="200" y="120" font-family="'Arial'" font-size="12"></text>
 
-    <g stroke="black" stroke-width="3" fill="black">
+    <g stroke="black" stroke-width="1" fill="black">
         <circle id="start" cx="100" cy="500" r="3" opacity="0"/>
         <circle id="end" cx="400" cy="500" r="3" opacity="0"/>
         <circle id="mid" cx="400" cy="500" r="3" opacity="0"/>
     </g>
 
 
-     <ellipse id="ball" cx="50" cy="50" rx="20" ry="20" fill="red"></ellipse>
+    <circle id="ball" cx="100" cy="500" r="5" fill="blue" opacity="0"/>
 
     <text x="100" y="520" font-family="'Arial'" font-size="12">0</text>
     <text id="EndText" x="400" y="520" font-family="'Arial'" font-size="12" opacity="0"></text>

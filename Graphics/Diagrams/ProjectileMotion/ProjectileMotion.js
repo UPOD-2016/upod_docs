@@ -11,20 +11,31 @@ var end = document.getElementById("end");
 var EndText = document.getElementById("EndText");
 var ball = document.getElementById("ball");
 var MaxHeight = 0;
+var iteration = 0;
+var animation;
 
 function reset() {
+    clearInterval(animation);
     curve.setAttribute("opacity", "0.2");
     start.setAttribute("opacity", "0");
     mid.setAttribute("opacity", "0");
     end.setAttribute("opacity", "0");
+    ball.setAttribute("opacity","0");
+    ball.setAttribute("cx","100");
+    ball.setAttribute("cy","500");
+    iteration=0;
 };
 
 function launch() {
+    clearInterval(animation);
+    iteration=0;
     curve.setAttribute("opacity", "1");
     start.setAttribute("opacity", "1");
     mid.setAttribute("opacity", "1");
     end.setAttribute("opacity", "1");
-    animate();
+
+    ball.setAttribute("opacity","1");
+    animation = setInterval(function(){animate()}, 5);
 
 };
 
@@ -39,10 +50,8 @@ function calculate() {
     var X2 = ((Distance.toFixed(0) / 1) + 100);
     var Y = (500 - 2 * MaxHeight.toFixed(0));
     var path = "M 100 500 Q " + X1 + " " + Y + " " + X2 + " 500";
-    //curve.style.stroke-dasharray = curve.getTotalLength();
 
     TimeOut.textContent = TimeOfFlight.toFixed(2);
-    //TimeOut.textContent = curve.getTotalLength();
 
     DistanceOut.textContent = Distance.toFixed(2);
     HeightOut.textContent = MaxHeight.toFixed(2);
@@ -56,13 +65,18 @@ function calculate() {
 };
 
 function animate(){
-  ball.velocity({
-   cy: "440",
-}, {
-   duration: 3000,
-   easing: "linear"
-});
+   iteration+=1;
+   if(iteration==1000){
+       clearInterval(animation);
+   }
+   var length = curve.getTotalLength();
+   var increment = length/1000;
+   var pointlength = increment*iteration;
+   var point = curve.getPointAtLength(pointlength);
+   ball.setAttribute("cx",point.x);
+   ball.setAttribute("cy",point.y);
 };
+
 
 function checkHeight() {
     if (MaxHeight > 300)
