@@ -12,6 +12,14 @@
 		<form role="search" action="/articles/">
         <div class="form-group" style="display:inline;">
           <div class="input-group">
+	    <li class="input-group-btn">
+		<a href="#" class="dropdown-toggle btn btn-default" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Select <span class="caret"></span></a>
+		<ul class="dropdown-menu">
+                        <% @categories.each do |category| %>
+                    	<li><%= category.name %></li>
+                        <% end %>
+                </ul>
+	    </li>
             <input type="text" class="form-control" name="q">
             <span class="input-group-btn">
 				<button type="submit" class="btn btn-default">

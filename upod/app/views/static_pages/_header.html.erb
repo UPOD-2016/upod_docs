@@ -80,6 +80,14 @@
                 <!-- nav search -->
                 <form class="navbar-form" role="search">
                     <ul class="input-group">
+			<li class="input-group-btn">
+			    <a href="#" class="dropdown-toggle btn btn-default" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Select <span class="caret"></span></a>
+			    <ul class="dropdown-menu">
+                        	<% @categories.each do |category| %>
+                          	  <li><%= category.name %></li>
+                        	<% end %>
+                      	    </ul>
+			</li>
                         <input type="text" class="form-control" placeholder="Search" name="q">
                         <li class="input-group-btn">
                             <button class="btn btn-default" type="submit">Go</button>
