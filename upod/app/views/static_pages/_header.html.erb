@@ -16,7 +16,19 @@
                 <li class="dropdown mega-dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Collection</a>
                     <ul class="dropdown-menu mega-dropdown-menu row">
-                        <li class="col-sm-3">
+												<% @categories.each do |category| %>
+														<li class="col-sm-2">
+																<ul>
+																		<li><%= link_to category.name, category, :class => "dropdown-header" %></li>
+																		<% @categories.each do |subcategory| %>
+																				<li><%= link_to subcategory.name, subcategory %></li>
+																		<% end %>
+																</ul>
+														</li>
+                  					<li><%= link_to category.name, category %></li>
+                				<% end %>
+<!--
+                        <li class="col-sm-2">
                             <ul>
                                 <li class="dropdown-header">Dresses</li>
                                 <li><a href="#">Unique Features</a></li>
@@ -59,8 +71,10 @@
                                 </form>
                             </ul>
                         </li>
+-->
                     </ul>
                 </li>
+
                 <li><%= link_to "About", about_path %></li>
                 <li><%= link_to "Articles", articles_path %></li>
 
@@ -96,6 +110,7 @@
                 </form>
             </ul>
             <!-- end nav search -->
+
             <% end %>
         </div>
         <!--/.nav-collapse -->
