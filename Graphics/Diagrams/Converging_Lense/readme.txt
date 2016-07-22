@@ -1,1 +1,3 @@
-The converging lense animation has been done by Ensieh Mollazadeh.
+Diagram: Converging lense
+Drag the object and move it to see the changes in its image
+Name: Ensieh Mollazadeh
