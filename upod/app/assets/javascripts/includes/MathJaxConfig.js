@@ -10,11 +10,25 @@
 		//jax: to_mathjax_path(["input/AsciiMath","output/CommonHTML"]),
 		jax: ["input/AsciiMath","output/CommonHTML"],
 		//extensions: to_mathjax_path(["asciimath2jax.js","MathMenu.js","MathZoom.js","AssistiveMML.js"]),
-		extensions: ["asciimath2jax.js","MathMenu.js","MathZoom.js"],
+		extensions: ["asciimath2jax.js"],
 		delayStartupUntil: "configured",
 		skipStartupTypeset: true,
 		showProcessingMessages: false,
 		showMathMenu: false,
-		displayAlign: "center"
+		//http://docs.mathjax.org/en/latest/reference/CSS-styles.html#css-style-objects
+		//style information http://docs.mathjax.org/en/latest/options/CommonHTML.html
+		styles: {
+			".MathJax_CHTML": {
+				"text-align": "center",
+				"font-size" : "150%"
+			}
+		},
+		displayAlign: "center",
+		CommonHTML: {
+			scale: 1000
+		},
+		linebreaks: {
+			automatic: true
+		}
 	};
 })();
