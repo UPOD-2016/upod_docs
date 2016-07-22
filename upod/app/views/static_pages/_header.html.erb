@@ -20,12 +20,11 @@
 														<li class="col-sm-2">
 																<ul>
 																		<li><%= link_to category.name, category, :class => "dropdown-header" %></li>
-																		<% @categories.each do |subcategory| %>
+																		<% category.subcategories.each do |subcategory| %>
 																				<li><%= link_to subcategory.name, subcategory %></li>
 																		<% end %>
 																</ul>
 														</li>
-                  					<li><%= link_to category.name, category %></li>
                 				<% end %>
 <!--
                         <li class="col-sm-2">
