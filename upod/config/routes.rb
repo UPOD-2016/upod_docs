@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  devise_for :users
   get 'categories/new'
 
   namespace :admin do
@@ -24,8 +25,6 @@ Rails.application.routes.draw do
 
     root to: "articles#index"
   end
-
-  devise_for :users
   get '/about' => 'static_pages#about'
   root to: 'static_pages#home'
   resources :articles

@@ -20,7 +20,7 @@ class ArticleLinkBlock < ActiveRecord::Base
   validates :video_id, presence: true, length: {maximum: 255}
   validate :video_source_must_be_in_list,:video_id_must_match_pattern
 
-# contains the accetptable sources and their corresponding character set for a valid video_id
+# contains the acceptable sources and their corresponding character set for a valid video_id
   SOURCE_PATTERNS = Hash["youtube" => /^[A-Za-z0-9_-]{11}$/, "vimeo" => /^[0-9]*$/]
   
 # Checks to see if the video source is either youtube or vimeo
@@ -41,15 +41,38 @@ class ArticleLinkBlock < ActiveRecord::Base
 	end
 	
 	
-	# Returns the url to use in iframes displaying this video
+	# Returns the url to use when embedding the video in an iframe
 	#
 	# @return [String] url to use in src of iframe
-	def get_iframe_src
+	def embeddable_url
 		if source == "youtube"
 			return "https://www.youtube.com/embed/" + video_id
 		elsif source == "vimeo"
 			return "https://player.vimeo.com/video/" + video_id
 		end
+	end
+	
+	# Returns the direct url to this video
+	#
+	# @return [String] url to use in src of iframe
+	def direct_url
+		if source == "youtube"
+			return "https://www.youtube.com/watch?v=" + video_id
+		elsif source == "vimeo"
+			return "https://vimeo.com/" + video_id
+		end
+	end
+	
+	# Used by SirTrevor for editing this block
+	def as_json
+	{
+		type: :link,
+		data: {
+			source: source,
+			video_id: video_id,
+			url: self.direct_url()
+		}
+	}
 	end
 
 

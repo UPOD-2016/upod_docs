@@ -1,22 +1,3 @@
-GIT
-  remote: git://github.com/cschiewek/devise_ldap_authenticatable.git
-  revision: 8c980a55981c1ccd9f284779bbe77d1209355252
-  specs:
-    devise_ldap_authenticatable (0.8.6)
-      devise (>= 3.4.1)
-      net-ldap (>= 0.6.0, <= 0.11)
-
-GIT
-  remote: git://github.com/rails/activerecord-session_store.git
-  revision: 7eebb4463a7495bd7f277f4a53482510aaf811fa
-  specs:
-    activerecord-session_store (1.0.0)
-      actionpack (>= 4.0, < 5.1)
-      activerecord (>= 4.0, < 5.1)
-      multi_json (~> 1.11, >= 1.11.2)
-      rack (>= 1.5.2, < 3)
-      railties (>= 4.0, < 5.1)
-
 GEM
   remote: https://rubygems.org/
   remote: https://rails-assets.org/
@@ -141,6 +122,8 @@ GEM
       i18n (~> 0.5)
     faraday (0.9.2)
       multipart-post (>= 1.2, < 3)
+    friendly_id (5.1.0)
+      activerecord (>= 4.0.0)
     gemoji (2.1.0)
     gemoji-parser (1.3.1)
       gemoji (>= 2.1.0)
@@ -178,7 +161,6 @@ GEM
     neat (1.8.0)
       sass (>= 3.3)
       thor (~> 0.19)
-    net-ldap (0.11)
     nokogiri (1.6.8)
       mini_portile2 (~> 2.1.0)
       pkg-config (~> 1.1.7)
@@ -287,7 +269,6 @@ PLATFORMS
 
 DEPENDENCIES
   active_record-acts_as
-  activerecord-session_store!
   acts_as_list
   administrate (~> 0.2.2)
   administrate-field-image
@@ -298,18 +279,17 @@ DEPENDENCIES
   carrierwave
   coffee-rails
   devise
-  devise_ldap_authenticatable!
   elasticsearch
   elasticsearch-model
   elasticsearch-rails
   factory_girl_rails
   faker
+  friendly_id (~> 5.1.0)
   gemoji-parser
   jquery-rails
   js-routes
   mini_magick
   mysql2 (~> 0.3.18)
-  net-ldap
   rails (= 4.2.4)
   rails-assets-underscore!
   rails-erd

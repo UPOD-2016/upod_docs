@@ -6,8 +6,12 @@ $(document).ready(function(){
   //check if math is included in this diagram before having mathjax search for it
   var equations = document.getElementsByClassName("equation");
   if (equations.length){
+	  $(".equation-block").hide(); //hide equation block container until the math renders
 	  MathJax.Hub.Configured(); //Tell mathjax to start configuration
-	  MathJax.Hub.queue.Push(["Typeset",MathJax.Hub,equations]);
+	  MathJax.Hub.queue.Push(
+		["Typeset",MathJax.Hub,equations],
+		function (){ $(".equation-block").show(); }
+	  );
   }
   
   //Checking for support of sandboxed iframes:
