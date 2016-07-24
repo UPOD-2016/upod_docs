@@ -25,4 +25,16 @@ class ArticleDiagramBlock < ActiveRecord::Base
   validates :code, presence: true, length: {maximum: 65535}
   validates :caption, presence: true, length: {maximum: 255}
   
+  # Used by SirTrevor for editing this block
+  def as_json
+	{
+		type: :diagram,
+		data: {
+			code: code,
+			caption: caption
+		}
+	}
+  end
+  
+  
 end

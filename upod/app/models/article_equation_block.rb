@@ -20,7 +20,21 @@ class ArticleEquationBlock < ActiveRecord::Base
   validates :equation, presence: true, length: {maximum: 65535}
   validates :label, presence: true, length: {maximum: 255}
   
+  # Used by SirTrevor for editing this block
+  def as_json
   
-  
+	#Get each variable associated with this equation and add each of their hashes to the variables hash
+	variables = Hash.new
+	self.equation_block_variables.each_with_index {|variable,index| variables[index] = variable.as_json}
+	
+	{
+		type: :equation,
+		data: {
+			equation: equation,
+			label: label,
+			variables: variables
+		}
+	}
+  end
 
 end

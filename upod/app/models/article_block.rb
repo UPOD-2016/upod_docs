@@ -34,6 +34,6 @@ class ArticleBlock < ActiveRecord::Base
   def slug
     self.specific.class.to_s.underscore.split('article_').last
   end
-
+  
 
 end
