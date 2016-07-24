@@ -14,7 +14,14 @@ $(document).on('turbolinks:load', function() {
             icon_name: 'image',
             formatable: false,
 			textable: false,
-
+			
+			//Updates the object sent to the server
+			toData: function(){
+				var dataObj = {}
+				dataObj.code = code_area.val();
+				dataObj.caption = caption.val();
+				this.setData(dataObj);
+			},
 
             editorHTML: function() {
 			   return "<div class='st-svg-inputs'> \
@@ -30,41 +37,59 @@ $(document).on('turbolinks:load', function() {
             },
 
 		  
+			/* DOM elements are stored as variables
+			 * Fields are populated with any data passed to the loadData function when this block was initalized by sir trevor
+			 * Events are added to inputs to update the preview and data object sent to server
+			 * Events added to toggle preview of the diagram
+			*/
             onBlockRender: function() {
 				var this_block = this;
-				
+
+				//User inputs (code_area and caption)
 				inputs = $(this.el).find(".st-svg-inputs");
+				
+				//Where user enters the diagram code
 				code_area = $(this.el).find(".st-svg-code");
+				
+				//Where user enters the caption for diagram
 				caption = $(this.el).find(".st-svg-caption");
+				
+				//See preview of diagram
 				preview_button = $(this.el).find(".st-preview-button");
 				
+				//Container for diagram preview
 				preview_area = $(this.el).find(".st-preview");
+				
+				//Iframe the diagram is inserted into
 				preview_frame = $(this.el).find(".st-preview-content");
 				preview_caption = $(this.el).find(".st-preview-caption");
-		
+
+				//Check if data has been loaded by sir trevor using the loadData method
+				var preloaded_data = this.getBlockData();
+				if (!jQuery.isEmptyObject(preloaded_data)){
+					//add data to inputs and preview area using preloaded_data
+					this.setBlock(preloaded_data.code,preloaded_data.caption);
+				}
+				
+				//User inputs diagram code, update the iframe preview
 				code_area.on("change",function(){
-					this_block.setDiagram($(this).val(),preview_frame[0]);
+					var code = $(this).val();
+					this_block.setDiagram(code,preview_frame[0]);
 				});
 				
-				
+				//User inputs a caption, update the caption in the preview
 				caption.on("change",function(){
-					this_block.setCaption($(this).val());
+					var caption = $(this).val()
+					this_block.setCaption(caption);
 				});
 				
 				preview_button.on("click",function(e){
 					e.preventDefault();
-					
 					//Show preview of code and hide inputs
-					if (preview_area.css("display") == "none"){
-						//add the text from the textarea as the html to the preview iframe
-						
-						//add a caption to the diagram
-						this_block.setCaption(caption.val());
-						
+					if (preview_area.css("display") == "none"){						
 						//Display the preview button and hide the input fields
 						preview_area.css("display","block");
 						inputs.css("display","none");
-		
 						$(this).text("Edit");
 					}
 					//Hide preview and show inputs
@@ -77,20 +102,29 @@ $(document).on('turbolinks:load', function() {
 				
             },
 			
+			//used to initialize block with preloaded-data
+			setBlock: function(code,caption_text){
+				code_area.val(code);
+				this.setDiagram(code);
+				caption.val(caption_text);
+				this.setCaption(caption_text);
+			},
+			
 			setDiagram: function(html){
+				//write the html int the iframe preview
 				var doc = preview_frame[0].contentWindow.document;
 				doc.open();
 				doc.write(html);
 				doc.close();
 				
-				block_data.code = html;
-				this.setData(block_data);
+				//Update object sent to server
+				this.toData(); 
 			},
 			
 			setCaption: function(caption_text){
 				preview_caption.text(caption_text);
-				block_data.caption = caption_text;
-				this.setData(block_data);
+				//Update object sent to server
+				this.toData();
 			}
         })
     })(jQuery);
