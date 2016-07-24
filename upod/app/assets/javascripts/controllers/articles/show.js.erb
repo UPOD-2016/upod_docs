@@ -2,7 +2,7 @@
 //= require includes/MathJax
 
 $(document).ready(function(){
- 
+
   //check if math is included in this diagram before having mathjax search for it
   var equations = document.getElementsByClassName("equation");
   if (equations.length){
@@ -13,7 +13,7 @@ $(document).ready(function(){
 		function (){ $(".equation-block").show(); }
 	  );
   }
-  
+
   //Checking for support of sandboxed iframes:
   if ("sandbox" in document.createElement("iframe")){
 	 $(".diagram").each(function(i){
@@ -25,5 +25,5 @@ $(document).ready(function(){
   else {
 	$(".diagram").replaceWith("This diagram cannot be displayed in your browser");
   }
-  
+
 });

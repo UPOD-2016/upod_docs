@@ -14,7 +14,6 @@ gem 'elasticsearch-model'
 gem 'elasticsearch-rails'
 gem 'searchkick'
 gem 'gemoji-parser'
-
 gem "devise"
 
 # Use Uglifier as compressor for JavaScript assets
@@ -55,6 +54,8 @@ gem "bourbon"
 
 gem 'carrierwave'
 gem "mini_magick"
+gem 'quiet_assets'
+gem 'jquery-turbolinks'
 #Use YARD for documentation generation
 gem "yard"
 
