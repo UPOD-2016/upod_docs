@@ -1,6 +1,17 @@
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
 
-<svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200px" height="600px" xml:space="preserve" onload="calculate();" onclick="move();">
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200px" height="600px" xml:space="preserve" onload="animate();">
 	
+	<?defining the buttons?>
+	<defs>
+        <symbol id="button" overflow="visible">
+            <rect x="-30" y="-10" rx="5" ry="5" width="100" height="20"/>
+        </symbol>
+    </defs>
+	
+	<?the green car?>
 	<g id="car" transform="translate(70.000000,80.000000) scale(0.010000,-0.010000)" fill="#09721E" stroke="none" opacity="1.0">
 		<path d="M1320 3311 c-8 -5 -17 -8 -21 -5 -4 2 -38 -1 -76 -6 -37 -6 -128 -15
 		-201 -19 -121 -8 -139 -12 -190 -39 -93 -50 -173 -89 -244 -121 -65 -28 -68
@@ -56,7 +67,8 @@
 		
     </g>
 
-	<g transform="translate(70.000000,150.000000) scale(0.010000,-0.010000)" fill="#3336FF" stroke="none">
+	<?the blue car?>
+	<g id="car2" transform="translate(70.000000,150.000000) scale(0.010000,-0.010000)" fill="#3336FF" stroke="none">
 		<path d="M1320 3311 c-8 -5 -17 -8 -21 -5 -4 2 -38 -1 -76 -6 -37 -6 -128 -15
 		-201 -19 -121 -8 -139 -12 -190 -39 -93 -50 -173 -89 -244 -121 -65 -28 -68
 		-32 -115 -113 -29 -51 -77 -113 -124 -160 -68 -68 -79 -85 -109 -165 -39 -106
@@ -110,7 +122,8 @@
 		<circle cx="6670" cy="670" r="675" fill="black"/>
     </g>
 
-	<g transform="translate(70.000000,220.000000) scale(0.010000,-0.010000)" fill="#FF3333" stroke="none">
+	<?the red car?>
+	<g id="car3" transform="translate(70.000000,220.000000) scale(0.010000,-0.010000)" fill="#FF3333" stroke="none">
 		<path d="M1320 3311 c-8 -5 -17 -8 -21 -5 -4 2 -38 -1 -76 -6 -37 -6 -128 -15
 		-201 -19 -121 -8 -139 -12 -190 -39 -93 -50 -173 -89 -244 -121 -65 -28 -68
 		-32 -115 -113 -29 -51 -77 -113 -124 -160 -68 -68 -79 -85 -109 -165 -39 -106
@@ -163,7 +176,28 @@
 		<circle cx="6670" cy="670" r="675" fill="black"/>
    </g>
    
-	<line id="test" x1="50" y1="80" x2="1000" y2="80" stroke="black"/>
+   <?The three lines that the cars drive on?>
+	<line x1="50" y1="80" x2="1000" y2="80" stroke="black"/>
+	<line x1="50" y1="150" x2="1000" y2="150" stroke="black"/>
+	<line x1="50" y1="220" x2="1000" y2="220" stroke="black"/>
+	
+	<?Symbols for the light?>
+	<rect x="150" y="5"  width="60" height="25" fill="yellow" stroke="black" stroke-width="1"/>
+	<circle id="l1" cx="163" cy="17.5" r="6" fill="red" opacity="0.0"/>
+	<circle id="l2" cx="180" cy="17.5" r="6" fill="red" opacity="0.0"/>
+	<circle id="l3" cx="197" cy="17.5" r="6" fill="green" opacity="0.0"/>
+	
+	<?buttons?>
+	<g id="out" onclick="start();" class="button">
+        <use xlink:href="#button" x="80" y="280"/>
+        <text style="text-anchor:middle;" class="textSmall" x="100" y="285">Start Race</text>
+    </g>
+    
+    <g id="out" onclick="reset();" class="button">
+        <use xlink:href="#button" x="187" y="280"/>
+        <text style="text-anchor:middle;" class="textSmall" x="205" y="285">Reset</text>
+    </g>
+    
   </svg>
 
 
