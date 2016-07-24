@@ -3,8 +3,8 @@
 #
 # Examples:
 #
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+#   cities = City.create!([{ name: 'Chicago' }, { name: 'Copenhagen' }])
+#   Mayor.create!(name: 'Emanuel', city: cities.first)
 
 require 'colourize.rb'
 
@@ -221,9 +221,9 @@ puts "================================================".yellow
 NUM_OF_CATEGORIES.times do |x|
   puts "Iteration #{x+1} of #{NUM_OF_CATEGORIES}".green
   puts "================================================".yellow
-  category = Category.create(categories.at(x))
+  category = Category.create!(categories.at(x))
   puts "Creating #{category.name} and the associated subcategories".blue
-  category.subcategories.create(subcategories.at(x))
+  category.subcategories.create!(subcategories.at(x))
   puts "================================================".yellow
 end
 
@@ -232,7 +232,7 @@ puts "Starting to create #{NUM_OF_USERS} users".yellow
 NUM_OF_USERS.times do |x|
   puts "Iteration #{x+1} of #{NUM_OF_USERS}".green
   puts "================================================".yellow
-  user = User.create(:email => Faker::Internet.email, :password => Faker::Internet.password(7))
+  user = User.create!(:email => Faker::Internet.email, :password => Faker::Internet.password(7))
   puts "Creating a user with the email: #{user.email} and the password: #{user.password}".blue
   puts "================================================".yellow
 end
@@ -242,21 +242,21 @@ puts "Starting to create #{NUM_OF_ARTICLES} articles".yellow
 NUM_OF_ARTICLES.times do |x|
   puts "Iteration #{x+1} of #{NUM_OF_ARTICLES}".green
   puts "================================================".yellow
-  article = Article.create(:title => Faker::Beer.name)
+  article = Article.create!(:title => Faker::Beer.name)
   puts "Creating an article with the title: #{article.title}".blue
   article.create_text_block(:body => Faker::Lorem.sentence(x))
   puts "Creating an article text block containing a random paragraph".blue
-  article.create_image_block(:image => Image.create(:remote_body_url => "https://unsplash.it/400/400/?random"))
+  article.create_image_block(:image => Image.create!(:remote_body_url => "https://unsplash.it/400/400/?random"))
   puts "Creating an article image block containing a random image".blue
-  contrib = Contributor.create(article: article, user: User.order("RAND()").first)
+  contrib = Contributor.create!(article: article, user: User.order("RAND()").first)
   puts "Creating an article equation block containing E=mc^2".blue
   equation_block = article.create_equation_block(:equation => "E=mc^2", :label => "Sample Equation")
   puts "Creating article equation variable blocks for the equation block containing E=mc^2".blue
-  EquationBlockVariable.create(:variable => "E", :description => "Kinetic Energy", article_equation_block: equation_block)
-  EquationBlockVariable.create(:variable => "m", :description => "Mass", article_equation_block: equation_block)
-  EquationBlockVariable.create(:variable => "c", :description => "Speed of Light", article_equation_block: equation_block)
+  EquationBlockVariable.create!(:variable => "E", :description => "Kinetic Energy", article_equation_block: equation_block)
+  EquationBlockVariable.create!(:variable => "m", :description => "Mass", article_equation_block: equation_block)
+  EquationBlockVariable.create!(:variable => "c", :description => "Speed of Light", article_equation_block: equation_block)
   puts "Creating a contributor with article: #{article.title} and user: #{contrib.user.email}".blue
-  categorization = Categorization.create(article: article, subcategory: Subcategory.order("RAND()").first)
+  categorization = Categorization.create!(article: article, subcategory: Subcategory.order("RAND()").first)
   puts "Creating a categorization between article: #{article.title} and subcategory: #{categorization.subcategory.name}".blue
   puts "================================================".yellow
 end
