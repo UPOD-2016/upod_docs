@@ -15,10 +15,10 @@
 				<h1 style="text-align:right;font-size:320%">Software Requirements Specification</h3>
 				<h2 style="text-align:right;font-size:200%">for</h3>
 				<h1 style="text-align:right;font-size:320%">UPOD-Back End</h3>
-				<h3 style="text-align:right;font-size:140%">Version 0.8</h3>
+				<h3 style="text-align:right;font-size:140%">Version 0.9</h3>
 				<h3 style="text-align:right;font-size:140%">Prepared by Clive Shen</h3>
 				<h3 style="text-align:right;font-size:140%">Wilfrid Laurier University, CP317</h3>
-				<h3 style="text-align:right;font-size:140%">18/07/2016</h3>
+				<h3 style="text-align:right;font-size:140%">24/07/2016</h3>
 			</div>
 		<br>
 		
@@ -29,6 +29,12 @@
 			<th>Date</th>
 			<th>Reason for Changes</th>
 			<th>Version</th>
+		  </tr>
+		  <tr>
+		  	<td>Anders Lam</td>
+		  	<td>24/07/16</td>
+		  	<td>SQA entire document - made minor changes</td>
+		  	<td>v0.9</td>
 		  </tr>
 
           <tr>
@@ -135,10 +141,10 @@
                         <p><span style="text-decoration: underline;">Category (and Sub-category)</span></p>
 						<li id="categoryHeading">A set of articles that fall into a definable block of information.</li>
                         <p><span style="text-decoration: underline;">Article</span></p>
-						<li id="categoryHeading">Viewable page containing information, formulas, and diagrams related to a particular physics concept.</li>
+						<li id="categoryHeading">Viewable page containing information, formulas, and diagrams relating to a particular physics concept.</li>
                         <p><span style="text-decoration: underline;">Diagram</span></p>
-						<li id="categoryHeading">Illustration of physics concept, which can be static or dynamic, and support interaction.</li>
-                        <p><span style="text-decoration: underline;">SVG (Scalable Vector Diagram</span></p>
+						<li id="categoryHeading">Illustration of physics concepts, which can be static or dynamic, and also supports user interaction.</li>
+                        <p><span style="text-decoration: underline;">SVG (Scalable Vector Diagram)</span></p>
 						<li id="categoryHeading">Image format for diagrams with support for animation and interaction.</li>
 				</div>
 				<div id="mainHeading">
@@ -208,9 +214,9 @@
 						
 				<h3><a name="Software System Attributes">3.2 Software System Attributes</a></h3>
 					<h4><a name="Reliability">3.2.1 Reliability</a></h4>
-						<li id="subcategoryHeading">Database provides up-to-date, accurate information. </li>
+						<li id="subcategoryHeading">Database provides up-to-date, and accurate information. </li>
 						<li id="subcategoryHeading">No duplicate information is stored in the database. </li>
-						<li id="subcategoryHeading">The search engine should provide a list of articles that are contains the key words or are related to the key words. </li>
+						<li id="subcategoryHeading">The search engine should provide a list of articles that contains the key words or are related to the key words. </li>
 					<h4><a name="Security">3.2.2 Security</a></h4>
 						<li id="subcategoryHeading">Account passwords of administrators and moderators accounts should be stored securely. </li>
 						<li id="subcategoryHeading">Only moderators can add, delete, or edit categories/sub-categories/articles. </li>
@@ -220,14 +226,14 @@
 				<h3><a name="Categories Information">3.3 Categories Information</a></h2>
 					<h4><a name="Categories Notes">3.3.1 Categories Notes</a></h4>
 						<ul>
-							<li id="subcategoryHeading">Categories are top level in terms of hierarchy</li>
-							<li id="subcategoryHeading">Each sub-category will belong to ONE category (foreign key stored in the sub-category table)</li>
-							<li id="subcategoryHeading">Each sub-category will contain a set of articles that relate to that topic</li>
-							<li id="subcategoryHeading">Each article can belong to ONE OR MORE sub-category</li>
-							<li id="subcategoryHeading">Each article MUST belong to at least one sub-category</li>
-							<li id="subcategoryHeading">Articles can only belong to sub-categories not categories (however the belonging sub-category would belong to a parent category)</li>
+							<li id="subcategoryHeading">Categories are top level in terms of hierarchy.</li>
+							<li id="subcategoryHeading">Each sub-category will belong to ONE category (foreign key stored in the sub-category table).</li>
+							<li id="subcategoryHeading">Each sub-category will contain a set of articles that relate to that topic.</li>
+							<li id="subcategoryHeading">Each article can belong to ONE OR MORE sub-category.</li>
+							<li id="subcategoryHeading">Each article MUST belong to at least one sub-category.</li>
+							<li id="subcategoryHeading">Articles can only belong to sub-categories but not categories (however the belonging sub-category would belong to a parent category).</li>
 						</ul>
-					<h4><a name="Categories To Do List">3.3.2 Categories To Do List</a></h4>
+					<h4><a name="Categories To Do List">3.3.2 Categories To-Do List</a></h4>
 						<ol>
 							<li id="subcategoryHeading">Implement database schema for categories (category table, sub-category table (contains foreign key of category it belongs to), sub-category-to-article table)</li>
 							<li id="subcategoryHeading">Create category MODEL</li>
