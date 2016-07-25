@@ -24,6 +24,13 @@ class Category < ActiveRecord::Base
   has_many :subcategories, :dependent => :nullify
   after_commit :reindex_category
 
+  extend FriendlyId
+  friendly_id :name, use: [:slugged, :finders]
+
+  def should_generate_new_friendly_id?
+  new_record?
+  end
+
   def reindex_category
     Article.reindex # or reindex_async
   end

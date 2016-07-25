@@ -20,6 +20,13 @@ class Subcategory < ActiveRecord::Base
   has_many :categorizations,  :dependent => :nullify
   has_many :articles, :through => :categorizations
 
+  extend FriendlyId
+  friendly_id :name, use: [:slugged, :finders]
+
+  def should_generate_new_friendly_id?
+  new_record?
+  end
+
   validates :name, presence: true, length: {maximum: 255}
   validates :description, length: {maximum: 65535}
   validates :category_id, presence: true
