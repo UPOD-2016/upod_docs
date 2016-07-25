@@ -19,10 +19,10 @@
 				<h1 style="text-align:right;font-size:320%">Software Requirements Specification</h3>
 				<h2 style="text-align:right;font-size:200%">for</h3>
 				<h1 style="text-align:right;font-size:320%">UPOD-Web Design</h3>
-				<h3 style="text-align:right;font-size:140%">Version 0.6</h3>
+				<h3 style="text-align:right;font-size:140%">Version 0.7</h3>
 				<h3 style="text-align:right;font-size:140%">Prepared by Tom West</h3>
 				<h3 style="text-align:right;font-size:140%">Wilfrid Laurier University, CP317</h3>
-				<h3 style="text-align:right;font-size:140%">10/07/2016</h3>
+				<h3 style="text-align:right;font-size:140%">24/07/2016</h3>
 			</div>
 		<br>
 		
@@ -34,6 +34,12 @@
 			<th>Date</th>
 			<th>Reason for Changes</th>
 			<th>Version</th>
+		  </tr>
+		  <tr>
+			<td>Anders Lam</td>
+			<td>24/07/16</td>
+			<td>SQA revisions</td>
+			<td>v0.7</td>
 		  </tr>
 		  <tr>
 			<td>Brian Oh</td>
@@ -113,12 +119,12 @@
 			<h1><a name="Introduction">1. Introduction</a></h1>
 				<div id="mainHeading">
 					<h2><a name="Scope">1.1 Scope</a></h2>
-					<p id="categoryHeading">UPOD's web design promotes positive user experience, given that current physics resources (i.e. HyperPhysics) feature poor designs. As such, the front end of UPOD will emphasize user friendly navigation.</p>
+					<p id="categoryHeading">UPOD's web design promotes positive user experience, given that current physics resources (i.e. HyperPhysics) features poor design. As such, the front end of UPOD will emphasize user friendly navigation.</p>
 				</div>
 				<div id="mainHeading">
 					<h3><a name="Definitions">1.2 Definitions, Acronyms, and Abbreviations</a></h2>
 						<p id="categoryHeading"><span style="text-decoration: underline;">UPOD</span></p>
-							<li id="subcategoryHeading">Undergraduate Physics Online Database </li>
+							<li id="subcategoryHeading">Undergraduate Physics Online Database. </li>
 						<p id="categoryHeading"><span style="text-decoration: underline;">Web Design</span></p>
 							<li id="subcategoryHeading">Pages, features, and functions that users will interact with and make use of while navigating the UPOD site. </li>
 						<p id="categoryHeading"><span style="text-decoration: underline;">Moderator</span></p>
@@ -136,7 +142,7 @@
 						<p id="categoryHeading"><span style="text-decoration: underline;">SVG</span></p>
 							<li id="subcategoryHeading">Scalable Vector Diagram - image format for diagrams with support for animation and interaction. </li>
 						<p id="categoryHeading"><span style="text-decoration: underline;">UML</span></p>
-							<li id="subcategoryHeading">Unified Markup Language - modeling language to visualize design of a system.</li>
+							<li id="subcategoryHeading">Unified Modeling Language - modeling language to visualize design of a system.</li>
 						<p id="categoryHeading"><span style="text-decoration: underline;">AD</span></p>
 							<li id="subcategoryHeading">Active Directory - moderator login verification through LDAP in order to allow moderators to access restricted operations. </li>
 						<p id="categoryHeading"><span style="text-decoration: underline;">LDAP</span></p>
@@ -208,29 +214,29 @@
 			<h1><a name="Specific Requirements">3. Specific Requirements</a></h1>
 			<div id="mainHeading">			
 				<h3><a name="Functions">3.1 Functions</a></h2>
-					<li id="categoryHeading">UPOD must be searchable by text and support navigation through site content (i.e. category(s)/subcategory(s)/articles structure). </li>
+					<li id="categoryHeading">UPOD must be searchable by text and support navigation through site content (i.e. category(s)/subcategory(s)/article(s) structure). </li>
 					<li id="categoryHeading">UPOD's web interface will contain both static and animated diagrams that users can view to improve their understanding of concepts.</li>
 					<li id="categoryHeading">UPOD will allow for site moderators to add, delete, and modify articles, categories and subcategories when required. These modifications to the site content will be done through a GUI.  </li>
-					<li id="categoryHeading">A built in login process for site moderators to be utilized on UPOD, preventing unauthorized modifications and edits.</li>
+					<li id="categoryHeading">A built in login process for site moderators will be utilized on UPOD, preventing unauthorized modifications and edits.</li>
 				<h3><a name="Performance Requirements">3.2 Performance Requirements</a></h2>
 					<li id="categoryHeading">Searches should be satisfied within two seconds of the search query.</li>
 				<h3><a name="Software System Attributes">3.3 Software System Attributes</a></h3>
 					<h4><a name="Reliability">3.3.1 Reliability</a></h4>
-						<li id="subcategoryHeading">UPOD expected to be available as a permanent reference tool, with maintenance conducted in a development environment and copied to production environment live.</li>
+						<li id="subcategoryHeading">UPOD is expected to be available as a permanent reference tool, with maintenance conducted in a development environment and copied to a live production environment.</li>
 					<h4><a name="Availability">3.3.2 Availability</a></h4>
 						<li id="subcategoryHeading">Software used in UPOD's front end must be supported across the previously listed browsers, and commonly available for users to set up if required. (i.e. if their browser requires a plug-in or runtime to display diagrams, etc.)</li>
 					<h4><a name="Security">3.3.3 Security</a></h4>
-						<li id="subcategoryHeading">All physics content on UPOD is free for all to use, and therefore there are no major security constraints. Login page for moderators will be available through a URL address known to moderators only. Login information and authorization will be handled by the WLU AD.</li>
+						<li id="subcategoryHeading">All physics content on UPOD is free for all to use, and therefore there are no major security constraints. Login page for moderators will be available through a URL address known only to moderators. Login information and authorization will be handled by the WLU AD.</li>
 					<h4><a name="Maintainability">3.3.4 Maintainability</a></h4>
 						<li id="subcategoryHeading">Code should follow Google HTML/CSS style standards and be well documented for future maintainability. UPOD is assumed to be available for the foreseeable future, therefore the set of individuals in charge of maintenance will not be constant.</li>
 					<h4><a name="Portability">3.3.5 Portability</a></h4>
-						<li id="subcategoryHeading">Development will take place on a Unix based server. UPOD will always be on Hopper and therefore any reasonable requirements for software to be installed will be communicated to Mr. David Brown as soon as they are identified and validated.</li>
+						<li id="subcategoryHeading">Development will take place on a Unix based server. UPOD will always be on Hopper and therefore, any reasonable requirements for software to be installed will be communicated to Mr. David Brown as soon as they are identified and validated.</li>
 				<h3><a name="Organizing the Specific Requirements">3.4 Organizing Specific Requirements</a></h2>
 					<h4><a name="System Mode">3.4.1 System Mode</a></h4>
 						<li id="subcategoryHeading">UPOD's functionality will be the same for all users, however, there will be an additional moderator mode (development environment) where content can be added, removed, or edited. </li>
 					<h4><a name="Features">3.4.2 Features</a></h4>
 						<p id="categoryHeading"><span style="text-decoration: underline;">Landing Page </span></p>
-							<li id="subcategoryHeading">The UPOD <i>Landing Page</i> is the first thing users will see when accessing UPOD. The UPOD design philosophy encourages users to search the site quickly - the focus on and size of the search bar on the landing page promotes a quick search for whatever term the  user is looking for. (i.e. - similar to the Google Search page.)</li>
+							<li id="subcategoryHeading">The UPOD <i>Landing Page</i> is the first thing users will see when accessing UPOD. The UPOD design philosophy encourages users to search the site quickly - the size and the focus on the search bar on the landing page promotes a quick search for whatever key term the user is looking for (i.e. - similar to the Google Search page).</li>
 						<p id="categoryHeading"><span style="text-decoration: underline;">Category Page </span></p>
 							<li id="subcategoryHeading">The <i>Category</i> page acts as a template for the splash page of each physics discipline. Each discipline is shown on its own <i>Category page</i>, which displays a summary of the physics discipline as well as contains a list of all <i>Article</i> pages that fall under that discipline. </li>
 						<p id="categoryHeading"><span style="text-decoration: underline;">Article Page </span></p>
@@ -247,7 +253,7 @@
 						<p id="categoryHeading"><span style="text-decoration: underline;">Slide Menu </span></p>
 							<li id="subcategoryHeading">The menu is accessible from each area of the website. It features links to each <i>Category</i> page, as well as a link to the <i>Landing Page</i> and the <i>About UPOD</i> page.</li>
 						<p id="categoryHeading"><span style="text-decoration: underline;">Diagrams </span></p>
-							<li id="subcategoryHeading">Various <i>Article</i> pages feature diagrams that illustrate concepts. <i>Diagrams</i> are created in SVG, and either static or dynamic. Dynamic <i>Diagrams</i> also support user interaction. Further information can be found in the Graphics and Animation requirements document. </li>
+							<li id="subcategoryHeading">Various <i>Article</i> pages feature diagrams that illustrate concepts. <i>Diagrams</i> are created in SVG, and are either static or dynamic. Dynamic <i>Diagrams</i> support user interaction while static <i>Diagrams</i> do not. Further information can be found in the Graphics and Animation requirements document. </li>
 			</div>
 			
 		</div>
