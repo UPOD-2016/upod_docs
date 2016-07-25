@@ -16,10 +16,10 @@
 				<h1 style="text-align:right;font-size:320%">Software Requirements Specification</h3>
 				<h2 style="text-align:right;font-size:200%">for</h3>
 				<h1 style="text-align:right;font-size:320%">UPOD-Graphics</h3>
-				<h3 style="text-align:right;font-size:140%">Version 0.4</h3>
+				<h3 style="text-align:right;font-size:140%">Version 0.5</h3>
 				<h3 style="text-align:right;font-size:140%">Prepared by Jeffrey Chung</h3>
 				<h3 style="text-align:right;font-size:140%">Wilfrid Laurier University, CP317</h3>
-				<h3 style="text-align:right;font-size:140%">18/07/2016</h3>
+				<h3 style="text-align:right;font-size:140%">24/07/2016</h3>
 			</div>
 			<br>
 			
@@ -30,6 +30,12 @@
 			<th>Date</th>
 			<th>Reason for Changes</th>
 			<th>Version</th>
+		  </tr>
+		  <tr>
+			<td>Anders Lam</td>
+			<td>24/07/16</td>
+			<td>SQA revisions on entire document</td>
+			<td>v0.5</td>
 		  </tr>
 		  <tr>
 			<td>Brian Oh</td>
@@ -101,7 +107,7 @@
 				<div id="mainHeading">
 					<h3><a name="Definitions">1.2 Definitions, Acronyms, and Abbreviations</a></h2>
 					<p id="categoryHeading"><span style="text-decoration: underline;">MVC</span></p>
-					<li id="subcategoryHeading">a software architectural pattern for implementing user interfaces on computers. Traditionally used for GUIs.</li>
+					<li id="subcategoryHeading">A software architectural pattern for implementing user interfaces on computers. Traditionally used for GUIs.</li>
 					<p id="categoryHeading"><span style="text-decoration: underline;">Model (MVC)</span></p>
 					<li id="subcategoryHeading">Represents the equation or physics concept illustrated.</li>
 					<p id="categoryHeading"><span style="text-decoration: underline;">View (MVC)</span></p>
@@ -125,29 +131,30 @@
 				</div>
 				
 		</div>
-		
+		<br>
 		<div>
 			<h1><a name="Overall Description">2. Overall Description</a></h1>
 			<div id="mainHeading">
 				<h3><a name="Product Perspective">2.1 Product Perspective</a></h3>
 				<p id="categoryHeading">Graphics uses the information gathered by the Physics Research group to create diagrams and animations. In addition, both groups collaborate to decide on what physics animations should be made and also what type of physics diagrams should be used. </p>
 					<h4><a name="System Interfaces">2.1.1 System Interfaces</a></h4>
-						<p id="categoryHeading">The graphics will operate on the following browsers</p>
-						<li id="subcategoryHeading">Google Chrome</li>
-						<li id="subcategoryHeading">Mozilla Firefox</li>
-						<li id="subcategoryHeading">Internet Explorer</li>
-						<li id="subcategoryHeading">Safari</li>
+						<p id="categoryHeading">UPOD content operates on modern and standard browsers.</p>
+						<li id="subcategoryHeading">Google Chrome - version 51</li>
+						<li id="subcategoryHeading">Mozilla Firefox - version 47</li>
+						<li id="subcategoryHeading">Internet Explorer - version 11</li>
+						<li id="subcategoryHeading">Microsoft Edge - version 38</li>
+						<li id="subcategoryHeading">Safari - version 9.1</li>
 					<h4><a name="User Interfaces">2.1.2 User Interfaces</a></h4>
 						<li id="subcategoryHeading">Users can use a mouse to interact with certain animations or diagrams on UPOD.</li>
 						<li id="subcategoryHeading">The keyboard can be used to input values to certain diagrams.</li>
 					<h4><a name="Software Interfaces">2.1.3 Software Interfaces</a></h4>
 						<li id="subcategoryHeading">Animations and graphics displaying the physics content are created using SVG and Javascript.</li>
 					<h4><a name="Communications Interfaces">2.1.4 Communications Interfaces</a></h4>
-						<li id="subcategoryHeading">Graphics in UPOD is portable across internet browsers.</li>
+						<li id="subcategoryHeading">Graphics in UPOD is portable across the available internet browsers.</li>
 					<h4><a name="Memory">2.1.5 Memory</a></h4>
 						<li id="subcategoryHeading">Memory constraints should be expected while creating the graphics. More information shall be added later.</li>
 				<h3><a name="Constraints">2.2 Constraints</a></h3>
-				<li id="categoryHeading">UPOD graphics must be added onto the site before the end of the 2016 spring term (July 26, 2016).</li>
+				<li id="categoryHeading">UPOD graphics must be added onto the site before the end of the 2016 spring term (August 10, 2016).</li>
 				<li id="categoryHeading">Budget is $0 so any software used to create the graphics must be free to use.</li>
 		</div>
 		
@@ -169,9 +176,9 @@
 					<h4><a name="Availability">3.5.2 Availability</a></h4>
 						<li id="subcategoryHeading">Software used to create Graphics must be supported across the previously listed browsers.</li>
 					<h4><a name="Security">3.5.3 Security</a></h4>
-						<li id="subcategoryHeading">All Graphics on UPOD are free to use for all and therefore are no   major security constraints. </li>
+						<li id="subcategoryHeading">All Graphics on UPOD are free to use for all and therefore, there are no major security constraints. </li>
 					<h4><a name="Maintainability">3.5.4 Maintainability</a></h4>
-						<li id="subcategoryHeading">Graphics should be coded to standard protocols and should be well documented in order for future maintenance. UPOD is to be assumed available for the future; therefore having a set of individuals in charge of maintenance will not be constant.</li>
+						<li id="subcategoryHeading">Graphics should be coded to standard protocols and should be well documented for any future maintenance. UPOD is to be assumed available for the future; therefore having a set of individuals in charge of maintenance will not be constant.</li>
 					<h4><a name="Portability">3.5.5 Portability</a></h4>
 						<li id="subcategoryHeading">Graphics can be run on anything since it is using SVG. Any new software to be installed on hopper will be communicated to an Administrator once they are identified and validated.</li>
 				
