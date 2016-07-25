@@ -2,7 +2,7 @@ Name: Joseph Vannelli
 
 Diagram: Velocity and Acceleration Car Diagram
 
-Status: I have animated the three cars and now I just have to add in a description about the acceleration and velocity of each of the cars
+Status: I have animated the three cars with different speeds to demonstrate velocity and acceleration
 
 File descriptions: 
      1. cars.html: This file creates the images for the cars
