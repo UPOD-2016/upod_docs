@@ -15,9 +15,4 @@ require 'rails_helper'
 
 RSpec.describe Categorization, type: :model do
 
-  it do
-    should validate_length_of(:description).
-      is_at_most(255).
-      on(:create)
-  end
 end

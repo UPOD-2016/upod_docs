@@ -21,14 +21,6 @@ RSpec.describe ArticleEquationBlock, type: :model do
   it { is_expected.to act_as(:article_block) }
 
 # uses shoulda matcher along with rspec to test and validate the length of
-# the equation in the ArticleEquationBlock
-  it do
-    should validate_length_of(:equation).
-      is_at_most(255).
-      on(:create)
-  end
-
-# uses shoulda matcher along with rspec to test and validate the length of
 # the label in the ArticleEquationBlock
   it do
     should validate_length_of(:label).

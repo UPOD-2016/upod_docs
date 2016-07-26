@@ -8,14 +8,14 @@ Rails.application.routes.draw do
     resources :users
     resources :categories
     resources :subcategories
-    resources :article_blocks
-    resources :article_text_blocks
-    resources :article_image_blocks
-    resources :article_diagram_blocks
-    resources :article_equation_blocks
-    resources :equation_block_variables
-    resources :article_link_blocks
-    resources :contributors
+    resources :article_blocks, only:[:index,:show]
+    resources :article_text_blocks, only:[:index,:show]
+    resources :article_image_blocks, only:[:index,:show]
+    resources :article_diagram_blocks, only:[:index,:show]
+    resources :article_equation_blocks, only:[:index,:show]
+    resources :equation_block_variables, only:[:index,:show]
+    resources :article_link_blocks, only:[:index,:show]
+    resources :contributors, only:[:index,:show]
     resources :categorizations
     resources :diagrams
     resources :images

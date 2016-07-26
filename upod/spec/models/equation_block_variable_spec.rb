@@ -8,11 +8,6 @@ RSpec.describe EquationBlockVariable, type: :model do
   it { is_expected.to validate_presence_of(:variable) }
   it { is_expected.to validate_presence_of(:description) }
 
-  it do
-    should validate_length_of(:variable).
-      is_at_most(255).
-      on(:create)
-  end
 
   it do
     should validate_length_of(:description).
