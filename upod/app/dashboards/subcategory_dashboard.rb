@@ -54,4 +54,9 @@ class SubcategoryDashboard < Administrate::BaseDashboard
   # def display_resource(subcategory)
   #   "Subcategory ##{subcategory.id}"
   # end
+
+  def display_resource(subcategory)
+  subcategory.name
+  end
+
 end

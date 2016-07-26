@@ -58,7 +58,4 @@ class ArticleEquationBlockDashboard < Administrate::BaseDashboard
   # Overwrite this method to customize how article equation blocks are displayed
   # across all pages of the admin dashboard.
   #
-  # def display_resource(article_equation_block)
-  #   "ArticleEquationBlock ##{article_equation_block.id}"
-  # end
 end

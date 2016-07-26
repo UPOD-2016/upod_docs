@@ -58,7 +58,4 @@ class ArticleImageBlockDashboard < Administrate::BaseDashboard
   # Overwrite this method to customize how article diagram blocks are displayed
   # across all pages of the admin dashboard.
   #
-  # def display_resource(article_diagram_block)
-  #   "ArticleDiagramBlock ##{article_diagram_block.id}"
-  # end
 end

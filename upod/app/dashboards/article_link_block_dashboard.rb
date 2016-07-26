@@ -56,7 +56,4 @@ class ArticleLinkBlockDashboard < Administrate::BaseDashboard
   # Overwrite this method to customize how article link blocks are displayed
   # across all pages of the admin dashboard.
   #
-  # def display_resource(article_link_block)
-  #   "ArticleLinkBlock ##{article_link_block.id}"
-  # end
 end

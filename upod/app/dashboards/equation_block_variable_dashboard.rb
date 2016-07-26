@@ -55,7 +55,4 @@ class EquationBlockVariableDashboard < Administrate::BaseDashboard
   # Overwrite this method to customize how contributors are displayed
   # across all pages of the admin dashboard.
   #
-  # def display_resource(contributor)
-  #   "Contributor ##{contributor.id}"
-  # end
 end
