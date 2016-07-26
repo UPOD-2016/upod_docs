@@ -24,7 +24,7 @@ class SubcategoryDashboard < Administrate::BaseDashboard
   COLLECTION_ATTRIBUTES = [
     :id,
     :name,
-    #:category,
+    :category,
     :description,
   ].freeze
 

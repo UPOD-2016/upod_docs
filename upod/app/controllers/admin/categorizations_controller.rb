@@ -15,5 +15,14 @@ module Admin
 
     # See https://administrate-docs.herokuapp.com/customizing_controller_actions
     # for more information
+
+    def new
+      redirect_to new_article_url
+    end
+
+    def edit
+      redirect_to edit_article_url
+    end
+
   end
 end

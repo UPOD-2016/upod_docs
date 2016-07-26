@@ -51,8 +51,4 @@ class CategorizationDashboard < Administrate::BaseDashboard
   # Overwrite this method to customize how categorizations are displayed
   # across all pages of the admin dashboard.
   #
-  def display_resource(article,subcategory)
-    article.title
-    subcategory.name
-  end
 end
