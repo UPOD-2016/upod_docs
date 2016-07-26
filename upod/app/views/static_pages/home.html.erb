@@ -14,7 +14,7 @@
             <div class="input-group">
       	     <span class="input-group-btn" style="padding:0px;">
               <%= select_tag "category_search", options_from_collection_for_select(Category.all, "id", "name"),
-                {prompt: "Filter by Category"} %>
+                {prompt: "Filter by Category", :class => "btn btn-default", :style => "-moz-appearance: none; -webkit-appearance: none;"} %>
       	     </span>
               <%= text_field_tag :q, params[:q], class: 'form-control' %>
               <span class="input-group-btn">
@@ -34,13 +34,15 @@
 		<!-- categories -->
 		<div class="row">
 			<% @categories.each do |category| %>
-        <div class="col-md-4 col-xs-6 thumb">
-          <%= link_to image_tag(category.image, :class => "img-responsive"), category, :class => "thumbnail" %>
-        </div>
-        <div class="caption">
-          <strong><%= category.name %></strong>
-        </div>
-      <% end %>
+        			<div class="col-md-4 col-xs-6 thumb">
+					<div class="caption" align=center >
+          					<h4 style="color:#ffcc00;"><strong><%= category.name %></strong></h4>
+        				</div>
+          				<%= link_to image_tag(category.image, :class => "img-responsive"), category, :class => "thumbnail" %>
+					
+        			</div>
+        			
+      			<% end %>
 		</div>
 	</div>
 	<!-- end categories -->

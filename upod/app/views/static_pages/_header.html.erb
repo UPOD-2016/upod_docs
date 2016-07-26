@@ -14,19 +14,19 @@
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 <li class="dropdown mega-dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Categories<span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" style="width:auto;" data-toggle="dropdown">Categories <span class="caret"></span></a>
                     <ul class="dropdown-menu mega-dropdown-menu row">
-												<% @categories.each do |category| %>
-														<li class="col-sm-2">
-																<ul>
-																		<li><%= link_to category.name, category, :class => "dropdown-header" %></li>
-																		<% category.subcategories.each do |subcategory| %>
-																				<li><%= link_to subcategory.name, subcategory %></li>
-																		<% end %>
-																</ul>
-														</li>
-                				<% end %>
-<!--
+			<% @categories.each do |category| %>
+			<li class="col-sm-2">
+				<ul>
+				     <li><%= link_to category.name, category, :class => "dropdown-header" %></li>
+					<% category.subcategories.each do |subcategory| %>
+						<li><%= link_to subcategory.name, subcategory %></li>
+					<% end %>
+				</ul>
+			</li>
+                	<% end %>
+			<!--
                         <li class="col-sm-2">
                             <ul>
                                 <li class="dropdown-header">Dresses</li>
@@ -70,12 +70,12 @@
                                 </form>
                             </ul>
                         </li>
--->
+			-->
                     </ul>
                 </li>
 
-                <li><%= link_to "About", about_path %></li>
-                <li><%= link_to "Articles", articles_path %></li>
+                <li><%= link_to "About", about_path, :style => "width:auto;" %></li>
+                <li><%= link_to "Articles", articles_path, :style => "width:auto;" %></li>
 
                 <!--
                     <li class="dropdown">
@@ -94,16 +94,14 @@
                 <form class="navbar-form" role="search">
                     <ul class="input-group">
 			<li class="input-group-btn" style="padding:0px;">
-			    <select class="btn btn-default" style="-moz-appearance:none;">
-				<option>Select</option>
-                        	<% @categories.each do |category| %>
-                          	  <option><%= category.name %></option>
-                        	<% end %>
-                      	    </select>
+			    <%= select_tag "category_search", options_from_collection_for_select(Category.all, "id", "name"),
+                {prompt: "Filter by Category", :class => "btn btn-default", :style => "-moz-appearance: none; -webkit-appearance: none;"}%>
 			</li>
-                        <input type="text" class="form-control" placeholder="Search" name="q">
+                        <%= text_field_tag :q, params[:q], class: 'form-control' %>
                         <li class="input-group-btn">
-                            <button class="btn btn-default" type="submit">Go</button>
+                            <%= button_tag(type: :submit, class: 'btn btn-default') do %>
+      				<span class="glyphicon glyphicon-search"> </span>
+      			    <% end %>
                         </li>
                     </ul>
                 </form>
