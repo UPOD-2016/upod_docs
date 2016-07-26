@@ -17,7 +17,11 @@ module Admin
     # for more information
 
     def new
-      redirect_to articles_path
+      redirect_to new_article_url
+    end
+
+    def edit
+      redirect_to edit_article_url
     end
 
   end
