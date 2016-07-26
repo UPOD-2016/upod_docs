@@ -5,9 +5,9 @@ Rails.application.routes.draw do
 
   namespace :admin do
     resources :articles
-    resources :users
-    resources :categories
-    resources :subcategories
+    resources :users, only:[:index,:show,:new,:edit,:create,:destroy,:update]
+    resources :categories, only:[:index,:show,:new,:edit,:create,:destroy,:update]
+    resources :subcategories, only:[:index,:show,:new,:edit,:create,:destroy,:update]
     resources :article_blocks, only:[:index,:show]
     resources :article_text_blocks, only:[:index,:show]
     resources :article_image_blocks, only:[:index,:show]
@@ -16,9 +16,9 @@ Rails.application.routes.draw do
     resources :equation_block_variables, only:[:index,:show]
     resources :article_link_blocks, only:[:index,:show]
     resources :contributors, only:[:index,:show]
-    resources :categorizations
-    resources :diagrams
-    resources :images
+    resources :categorizations, only:[:index,:show]
+    resources :diagrams, only:[:index,:show]
+    resources :images, only:[:index,:show]
 
     root to: "articles#index"
   end
