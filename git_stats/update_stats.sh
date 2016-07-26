@@ -1,5 +1,5 @@
 #!/bin/bash
-# AUTHOR:   Robert Morouney
+# AUTHOR:   Robert Morouney and Michael Roher (only Excel version)
 # EMAIL:    robert@morouney.com
 # FILE:     update_stats.sh
 # CREATED:  2016-07-07 18:31:30
@@ -21,3 +21,7 @@ echo './rev_hist.html Updated'
 #short log
 git shortlog -s -n >rev_hist_short.txt
 echo './rev_hist_short.txt Updated'
+
+#Excel version
+git log --date=iso --pretty=format:'"%an","%ad","%s"' > rev_hist.csv
+echo './rev_hist_excel Updated'
