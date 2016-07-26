@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160721163639) do
+ActiveRecord::Schema.define(version: 20160725234750) do
 
   create_table "article_blocks", force: :cascade do |t|
     t.integer "position",     limit: 4
@@ -21,10 +21,6 @@ ActiveRecord::Schema.define(version: 20160721163639) do
   end
 
   add_index "article_blocks", ["actable_id"], name: "index_article_blocks_on_actable_id", using: :btree
-
-  create_table "article_constant_blocks", force: :cascade do |t|
-    t.integer "constant_id", limit: 4
-  end
 
   create_table "article_diagram_blocks", force: :cascade do |t|
     t.integer  "diagram_id", limit: 4
@@ -69,7 +65,10 @@ ActiveRecord::Schema.define(version: 20160721163639) do
     t.datetime "updated_at",              null: false
     t.string   "description", limit: 255
     t.string   "image",       limit: 255
+    t.string   "slug",        limit: 255
   end
+
+  add_index "categories", ["slug"], name: "index_categories_on_slug", using: :btree
 
   create_table "categorizations", force: :cascade do |t|
     t.integer  "article_id",     limit: 4
@@ -77,14 +76,6 @@ ActiveRecord::Schema.define(version: 20160721163639) do
     t.datetime "created_at",                 null: false
     t.datetime "updated_at",                 null: false
     t.string   "description",    limit: 255
-  end
-
-  create_table "constants", force: :cascade do |t|
-    t.string   "name",        limit: 255
-    t.text     "description", limit: 65535
-    t.decimal  "value",                     precision: 10
-    t.datetime "created_at",                               null: false
-    t.datetime "updated_at",                               null: false
   end
 
   create_table "contributors", force: :cascade do |t|
@@ -146,9 +137,11 @@ ActiveRecord::Schema.define(version: 20160721163639) do
     t.integer  "category_id", limit: 4
     t.datetime "created_at",                null: false
     t.datetime "updated_at",                null: false
+    t.string   "slug",        limit: 255
   end
 
   add_index "subcategories", ["category_id"], name: "index_subcategories_on_category_id", using: :btree
+  add_index "subcategories", ["slug"], name: "index_subcategories_on_slug", using: :btree
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  limit: 255, default: "", null: false

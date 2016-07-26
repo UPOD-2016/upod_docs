@@ -3,7 +3,6 @@
 # article blocks inherit ArticleBlock's attributes, methods and validations.
 # Each ArticleBlock has a one-to-one connection with an {Article}
 # @see Article
-# @see ArticleConstantBlock
 # @see ArticleDiagramBlock
 # @see ArticleEquationBlock
 # @see ArticleImageBlock
@@ -34,6 +33,6 @@ class ArticleBlock < ActiveRecord::Base
   def slug
     self.specific.class.to_s.underscore.split('article_').last
   end
-  
+
 
 end

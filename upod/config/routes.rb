@@ -5,13 +5,11 @@ Rails.application.routes.draw do
 
   namespace :admin do
     resources :articles
-    resources :constants
     resources :users
     resources :categories
     resources :subcategories
     resources :article_blocks
     resources :article_text_blocks
-    resources :article_constant_blocks
     resources :article_image_blocks
     resources :article_diagram_blocks
     resources :article_equation_blocks

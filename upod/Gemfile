@@ -36,7 +36,6 @@ gem 'bootstrap-sass'
 source 'https://rails-assets.org' do
   gem 'rails-assets-underscore'
 end
-gem "rails-erd"
 gem 'js-routes'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -70,6 +69,7 @@ end
 
 group :development do
 	gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
+  gem 'railroady'
 end
 
 group :development, :test do
