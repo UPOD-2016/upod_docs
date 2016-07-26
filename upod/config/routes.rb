@@ -19,7 +19,6 @@ Rails.application.routes.draw do
     resources :categorizations
     resources :diagrams
     resources :images
-    resources :sessions
 
     root to: "articles#index"
   end

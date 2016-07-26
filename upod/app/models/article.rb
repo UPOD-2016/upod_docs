@@ -2,7 +2,7 @@
 # its' look and feel.
 # An Article is {Blockable} as well as {Searchable}
 #
-# author: Mike Roheer, Kieran O'Driscoll (Validations), Steven Swartz
+# author: Michael Roher, Kieran O'Driscoll (Validations), Steven Swartz
 #
 # == Schema Information
 #

@@ -1,5 +1,5 @@
 #
-# author: Mike Roheer, Kieran O'Driscoll (Validations), Steven Swartz
+# author: Michael Roher, Kieran O'Driscoll (Validations), Steven Swartz
 #
 class EquationBlockVariable < ActiveRecord::Base
   belongs_to :article_equation_block, dependent: :destroy

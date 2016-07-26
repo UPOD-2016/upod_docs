@@ -1,5 +1,5 @@
 #
-# author: Mike Roheer, Kieran O'Driscoll, Steven Swartz
+# author: Michael Roher, Kieran O'Driscoll, Steven Swartz
 #
 require 'rails_helper'
 

@@ -4,7 +4,7 @@
 # @see ArticleBlock
 # @see Image
 #
-# author: Mike Roheer, Kieran O'Driscoll (Validations)
+# author: Michael Roher, Kieran O'Driscoll (Validations)
 #
 #
 # == Schema Information
