@@ -1,3 +1,5 @@
+# author: Kieran O'Driscoll(Organization and overriding methods)
+
 require "administrate/base_dashboard"
 
 class ArticleLinkBlockDashboard < Administrate::BaseDashboard

@@ -1,3 +1,5 @@
+# author: Kieran O'Driscoll(Organization and overriding methods)
+
 require "administrate/base_dashboard"
 
 class CategorizationDashboard < Administrate::BaseDashboard
@@ -25,7 +27,7 @@ class CategorizationDashboard < Administrate::BaseDashboard
     :id,
     :article,
     :subcategory,
-    :created_at,
+    #:created_at,
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
