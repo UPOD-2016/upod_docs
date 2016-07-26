@@ -5,20 +5,20 @@ Rails.application.routes.draw do
 
   namespace :admin do
     resources :articles
-    resources :users, only:[:index,:show,:new,:edit,:create,:destroy,:update]
-    resources :categories, only:[:index,:show,:new,:edit,:create,:destroy,:update]
-    resources :subcategories, only:[:index,:show,:new,:edit,:create,:destroy,:update]
-    resources :article_blocks, only:[:index,:show]
-    resources :article_text_blocks, only:[:index,:show]
-    resources :article_image_blocks, only:[:index,:show]
-    resources :article_diagram_blocks, only:[:index,:show]
-    resources :article_equation_blocks, only:[:index,:show]
-    resources :equation_block_variables, only:[:index,:show]
-    resources :article_link_blocks, only:[:index,:show]
-    resources :contributors, only:[:index,:show]
-    resources :categorizations, only:[:index,:show]
-    resources :diagrams, only:[:index,:show]
-    resources :images, only:[:index,:show]
+    resources :users
+    resources :categories
+    resources :subcategories
+    resources :article_blocks
+    resources :article_text_blocks
+    resources :article_image_blocks
+    resources :article_diagram_blocks
+    resources :article_equation_blocks
+    resources :equation_block_variables
+    resources :article_link_blocks
+    resources :contributors
+    resources :categorizations
+    resources :diagrams
+    resources :images
 
     root to: "articles#index"
   end
