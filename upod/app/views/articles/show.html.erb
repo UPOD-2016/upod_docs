@@ -1,7 +1,10 @@
 <div class="container">
   <h1 class="page-header"><%= @article.title %></h1>
-  <% @article.blocks.each do |block| %>
-  	<%= render partial: "articles/blocks/#{block.slug}", locals: {block: block.specific} %>
-  <% end %>
+  <div class="col-md-12">
+	  <% @article.blocks.each do |block| %>
+	  	<%= render partial: "articles/blocks/#{block.slug}", locals: {block: block.specific} %>
+		<hr>
+	  <% end %>
+  <div>
 </div>
 
