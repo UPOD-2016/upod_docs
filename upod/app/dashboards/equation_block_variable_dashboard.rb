@@ -1,3 +1,5 @@
+# author: Kieran O'Driscoll(Organization and overriding methods)
+
 require "administrate/base_dashboard"
 
 class EquationBlockVariableDashboard < Administrate::BaseDashboard
@@ -38,8 +40,8 @@ class EquationBlockVariableDashboard < Administrate::BaseDashboard
     :description,
     :article_equation_block_id,
     :article_equation_block,
-    :created_at,
-    :updated_at,
+    #:created_at,
+    #:updated_at,
   ].freeze
 
   # FORM_ATTRIBUTES

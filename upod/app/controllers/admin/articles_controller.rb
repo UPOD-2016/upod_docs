@@ -1,3 +1,5 @@
+# author: Kieran O'Driscoll(Organization and overriding methods)
+
 module Admin
   class ArticlesController < Admin::ApplicationController
     # To customize the behavior of this controller,
