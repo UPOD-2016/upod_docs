@@ -20,7 +20,9 @@ ActiveRecord::Schema.define(version: 20160725234750) do
     t.string  "actable_type", limit: 255
   end
 
+  add_index "article_blocks", ["actable_id", "actable_type"], name: "index_article_blocks_on_actable_id_and_actable_type", using: :btree
   add_index "article_blocks", ["actable_id"], name: "index_article_blocks_on_actable_id", using: :btree
+  add_index "article_blocks", ["article_id"], name: "index_article_blocks_on_article_id", using: :btree
 
   create_table "article_diagram_blocks", force: :cascade do |t|
     t.integer  "diagram_id", limit: 4

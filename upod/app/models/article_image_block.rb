@@ -24,4 +24,15 @@ class ArticleImageBlock < ActiveRecord::Base
   def image_url(size=nil)
     image.body.url(size)
   end
+
+  def as_json
+    {
+      type: :image,
+      data: {
+        file: {
+          url: self.image_url
+        }
+      }
+    }
+  end
 end
