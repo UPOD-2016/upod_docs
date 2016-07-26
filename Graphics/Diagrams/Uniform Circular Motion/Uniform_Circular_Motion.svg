@@ -1,0 +1,68 @@
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200px" height="600px" xml:space="preserve" onload="calculateForce();">
+    <!-- <path  d="M 300,100 A100,100"/> -->
+    <path id="pathCircle" d="M 300 300 a 100 100 0 1 1  .001 0 z" fill="blue" />
+    <circle id="testCircle" cx='300' cy='300' r="5" fill="red"/>
+    <defs>
+      <!-- <path id="pathCircle" d="M 300 300 A 100 100 0 1  299 299 z" fill="blue" /> -->
+        <!--Define symbols used-->
+
+        <!--Library Objects, only for testing  -->
+        <symbol id="button-up" overflow="visible">
+            <g>
+                <rect x="1" y="1" rx="1" ry="1" width="10" height="10" style="fill:white;stroke:black;stroke-width:2;"/>
+                <polyline points="6,3 3,9 9,9"/>
+            </g>
+        </symbol>
+        <symbol id="button-down" overflow="visible">
+            <g>
+                <rect x="1" y="1" rx="1" ry="1" width="10" height="10" style="fill:white;stroke:black;stroke-width:2;"/>
+                <polyline points="6,9 3,3 9,3"/>
+            </g>
+        </symbol>
+
+    </defs>
+    <!--Setup control panel text-->
+    <text class="textMed" x="700" y="20">Control Panel</text>
+    <text class="textSmall" x="600" y="60">Radius</text>
+    <text class="textSmall" x="600" y="80">Velocity</text>
+    <text class="textSmall" x="600" y="100">Mass</text>
+    <text class="textSmall" x="800" y="80">Centripital Force</text>
+    <text id="radiusCircle" class="textSmall" x="680" y="60">5</text>
+    <text id="velocityProjectile" class="textSmall" x="680" y="80">5</text>
+    <text id="massProjectile" class="textSmall" x="680" y="100">5</text>
+    <text id="centripitalForce" class="textSmall" x="920" y="80"></text>
+    <text id="debug" class="textSmall" x="500" y="300"></text>
+    <!--Setup Diagram  -->
+    <!-- <circle id="mainCircle" cx='300' cy='300' r="100"/> -->
+    <circle id='projectile' cx='300' cy='200' r="5">
+    <!-- <animateMotion dur="5s" repeatCount="indefinite">
+        <mpath xlink:href="#pathCircle"/>
+     </animateMotion> -->
+    </circle>
+
+<!--Setup control panel buttons-->
+<g id="increaseRadius" onclick="increaseRadius();" class="button-up">
+    <use xlink:href="#button-up" x="700" y="50"/>
+</g>
+<g id="decreaseRadius" onclick="decreaseRadius();" class="button-down">
+    <use xlink:href="#button-down" x="720" y="50"/>
+</g>
+
+<g id="increaseVelocity" onclick="increaseVelocity();" class="button-up">
+    <use xlink:href="#button-up" x="700" y="70"/>
+</g>
+<g id="decreaseVelocity" onclick="decreaseVelocity();" class="button-down">
+    <use xlink:href="#button-down" x="720" y="70"/>
+</g>
+
+<g id="increaseMass" onclick="increaseMass();" class="button-up">
+    <use xlink:href="#button-up" x="700" y="90"/>
+</g>
+<g id="decreaseMass" onclick="decreaseMass();" class="button-down">
+    <use xlink:href="#button-down" x="720" y="90"/>
+</g>
+
+<script type="text/javascript" xlink:href="UniformCircularMotion.js"></script>
+<script type="text/javascript" xlink:href="//code.jquery.com/jquery-2.1.1.min.js"></script>
+
+</svg>

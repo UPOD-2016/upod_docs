@@ -1,0 +1,29 @@
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200px" height="1000px" xml:space="preserve">
+    <defs>
+        <symbol id="button" overflow="visible">
+            <rect x="-30" y="-10" rx="5" ry="5" width="80" height="20"/>
+        </symbol>
+
+        <symbol id="button-up" overflow="visiable">
+            <g>
+              <rect x="5" y="5" rx="5" ry="5" width="40" height="40" style="fill:white;stroke:black;stroke-width:2;" />
+              <polyline points="25,8 8,40 42,40" />
+            </g>
+        </symbol>
+        <symbol id="button-down" overflow="visiable">
+            <g>
+              <rect x="5" y="5" rx="5" ry="5" width="40" height="40" style="fill:white;stroke:black;stroke-width:2;" />
+              <polyline points="25,40 8,10 42,10" />
+            </g>
+        </symbol>
+
+    </defs>
+
+    <!--TEST AREA  -->
+    <g id="IncreaseVelocity" onclick="IncreaseVelocity();" class="button">
+        <use xlink:href="#button" x="335" y="15"/>
+        <text style="text-anchor:middle;" class="textSmall" x="343" y="19">VelocityUp</text>
+    </g>
+    <use xlink:href="#button-up" x="200" y="200"/>
+    <use xlink:href="#button-down" x="300" y="200"/>
+</svg>
