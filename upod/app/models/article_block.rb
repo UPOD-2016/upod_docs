@@ -9,6 +9,8 @@
 # @see ArticleLinkBlock
 # @see ArticleTextBlock
 #
+# author: Mike Roheer, Kieran O'Driscoll (Validations), Steven Swartz
+#
 # == Schema Information
 #
 # Table name: article_blocks

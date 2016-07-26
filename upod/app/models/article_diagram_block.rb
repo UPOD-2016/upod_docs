@@ -6,6 +6,8 @@
 # @see Diagram
 # @see ArticleBlock
 #
+# author: Mike Roheer, Kieran O'Driscoll (Validations), Steven Swartz
+#
 # == Schema Information
 #
 # Table name: article_diagram_blocks
@@ -21,10 +23,10 @@
 class ArticleDiagramBlock < ActiveRecord::Base
   belongs_to :diagram
   acts_as :article_block
-  
+
   validates :code, presence: true, length: {maximum: 65535}
   validates :caption, presence: true, length: {maximum: 255}
-  
+
   # Used by SirTrevor for editing this block
   def as_json
 	{
@@ -35,6 +37,6 @@ class ArticleDiagramBlock < ActiveRecord::Base
 		}
 	}
   end
-  
-  
+
+
 end

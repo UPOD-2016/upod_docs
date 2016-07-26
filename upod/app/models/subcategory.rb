@@ -3,6 +3,8 @@
 # of searching for them and better organization of the articles.
 # @see Category
 #
+# author: Kieran O'Driscoll (Validations)
+#
 # == Schema Information
 #
 # Table name: subcategories

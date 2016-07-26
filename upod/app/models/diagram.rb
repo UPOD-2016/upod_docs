@@ -2,6 +2,8 @@
 # many articles.
 # @see ArticleDiagramBlock
 #
+# Author: Kieran O'Driscoll (Validations)
+#
 # == Schema Information
 #
 # Table name: diagrams

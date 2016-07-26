@@ -4,6 +4,8 @@
 # The body of the text block is {Searchable}
 # @see ArticleBlock
 #
+# author: Mike Roheer, Kieran O'Driscoll (Validations), Steven Swartz
+#
 # == Schema Information
 #
 # Table name: article_text_blocks

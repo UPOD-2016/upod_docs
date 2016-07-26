@@ -3,6 +3,8 @@
 # It inherits ArticleBlock's attributes, methods and validations.
 # @see ArticleBlock
 #
+# author: Mike Roheer, Kieran O'Driscoll (Validations), Steven Swartz
+#
 # == Schema Information
 #
 # Table name: article_link_blocks
@@ -22,7 +24,7 @@ class ArticleLinkBlock < ActiveRecord::Base
 
 # contains the acceptable sources and their corresponding character set for a valid video_id
   SOURCE_PATTERNS = Hash["youtube" => /^[A-Za-z0-9_-]{11}$/, "vimeo" => /^[0-9]*$/]
-  
+
 # Checks to see if the video source is either youtube or vimeo
 #
 # @return [Boolean] Whether the source was found in the hash
@@ -39,8 +41,8 @@ class ArticleLinkBlock < ActiveRecord::Base
 			errors.add(:video_id,"invalid video link provided")
 		end
 	end
-	
-	
+
+
 	# Returns the url to use when embedding the video in an iframe
 	#
 	# @return [String] url to use in src of iframe
@@ -51,7 +53,7 @@ class ArticleLinkBlock < ActiveRecord::Base
 			return "https://player.vimeo.com/video/" + video_id
 		end
 	end
-	
+
 	# Returns the direct url to this video
 	#
 	# @return [String] url to use in src of iframe
@@ -62,7 +64,7 @@ class ArticleLinkBlock < ActiveRecord::Base
 			return "https://vimeo.com/" + video_id
 		end
 	end
-	
+
 	# Used by SirTrevor for editing this block
 	def as_json
 	{

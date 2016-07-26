@@ -2,6 +2,8 @@
 # articles. The uploader used is {SirTrevorImageUploader}.
 # @see ArticleImageBlock
 #
+# author: Mike Roher
+#
 # == Schema Information
 #
 # Table name: images

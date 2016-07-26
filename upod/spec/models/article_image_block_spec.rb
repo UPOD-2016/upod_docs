@@ -1,3 +1,6 @@
+#
+# author: Mike Roheer, Kieran O'Driscoll, Steven Swartz
+#
 # == Schema Information
 #
 # Table name: article_image_blocks
