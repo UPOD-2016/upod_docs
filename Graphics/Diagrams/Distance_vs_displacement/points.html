@@ -1,0 +1,73 @@
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200px" height="600px" xml:space="preserve" onload="animate();">
+	
+	<?defining the buttons?>
+	<defs>
+        <symbol id="button" overflow="visible">
+            <rect x="-30" y="-10" rx="5" ry="5" width="100" height="20"/>
+        </symbol>
+    </defs>
+	
+	<?Create the rectangle, points A and B on that rectangle, and the side lengths of the rectangle?>
+	<rect x="150" y="80"  width="300" height="150" fill="white" stroke="black" stroke-width="1"/>
+	<text x="127" y="245" font-family="Verdana" font-size="22">A</text>
+	<text x="460" y="85" font-family="Verdana" font-size="22">B</text>
+	<text id="two" x="127" y="160" font-family="Verdana" font-size="16" fill="black">2</text>
+	<text x="460" y="160" font-family="Verdana" font-size="16">2</text>
+	<text id="four" x="295" y="71" font-family="Verdana" font-size="16" fill="black">4</text>
+	<text x="295" y="252" font-family="Verdana" font-size="16">4</text>
+
+	<?Create the lines that will be animated to show distance?>	
+	<line id="line1" x1="150" y1="230" x2="150" y2="230" stroke="black" stroke-width="5"/>
+	<line id="line2" x1="150" y1="80" x2="150" y2="80" stroke="black" stroke-width="5"/>
+
+	<?Create the line that will be animated to show displacement?>	
+	<line id="line3" x1="150" y1="230" x2="150" y2="230" stroke="black" stroke-width="5"/>
+
+	<?Create the red circles on each of the corners of the rectangle?>		
+	<circle id="p1" cx="150" cy="80" r="3" fill="red" opacity="1.0"/>
+	<circle id="p2" cx="450" cy="80" r="3" fill="red" opacity="1.0"/>
+	<circle id="p3" cx="150" cy="230" r="3" fill="red" opacity="1.0"/>
+	<circle id="p4" cx="450" cy="230" r="3" fill="red" opacity="1.0"/>
+
+	<?Create the text that will appear if the user clicks distance?>	
+	<text id="disttitle" x="40" y="360" font-family="Verdana" font-size="22" fill="black" opacity="0.0">Distance from A to B:</text>
+	<text id="two2" x="250" y="415" font-family="Verdana" font-size="20" fill="black" opacity="0.0">2</text>
+	<text id="plus" x="270" y="415" font-family="Verdana" font-size="20" fill="black" opacity="0.0">+</text>
+	<text id="four2" x="293" y="415" font-family="Verdana" font-size="20" fill="black" opacity="0.0">4</text>
+	<text id="equal" x="310" y="415" font-family="Verdana" font-size="20" fill="black" opacity="0.0">= 6</text>
+	<text id="disttext" x="50" y="445" font-family="Verdana" font-size="12" fill="black" opacity="0.0">Distance is a scalar quantity that refers to the collective movements of an object</text>
+	<text id="disttext2" x="140" y="465" font-family="Verdana" font-size="12" fill="black" opacity="0.0">up until the object reaches its final destination.</text>
+
+	<?Create the text that will appear if the user clicks displacement?>	
+	<text id="disptitle" x="40" y="360" font-family="Verdana" font-size="22" fill="black" opacity="0.0">Displacement from A to B:</text>
+	<text id="equation" x="130" y="415" font-family="Verdana" font-size="20" fill="black" opacity="0.0">2<tspan baseline-shift="super">2</tspan> + 4<tspan baseline-shift="super">2</tspan> = d<tspan baseline-shift="super">2</tspan> = sqrt(20) = 4.47</text>
+	<text id="disptext" x="70" y="445" font-family="Verdana" font-size="12" fill="black" opacity="0.0">Displacement is a vector quality that refers to singular change in the objects </text>
+	<text id="disptext2" x="200" y="465" font-family="Verdana" font-size="12" fill="black" opacity="0.0">location from the starting point.</text>
+
+	<?buttons?>
+	<g id="out" onclick="displacement();" class="button">
+        <use xlink:href="#button" x="220" y="300"/>
+        <text style="text-anchor:middle;" class="textSmall" x="240" y="305">Displacement</text>
+    </g>
+    
+	<g id="out" onclick="distance();" class="button">
+        <use xlink:href="#button" x="328" y="300"/>
+        <text style="text-anchor:middle;" class="textSmall" x="347" y="305">Distance</text>
+    </g>
+    
+    <g id="out" onclick="reset();" class="button">
+        <use xlink:href="#button" x="480" y="20"/>
+        <text style="text-anchor:middle;" class="textSmall" x="500" y="25">Reset</text>
+    </g>
+  
+  </svg>
+
+
+
+<script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="//cdn.jsdelivr.net/velocity/1.1.0/velocity.min.js"></script>
+<script src="points.js"></script>
