@@ -5,14 +5,18 @@ var massProjectile = document.getElementById('massProjectile').textContent;
 var velocityProjectile = document.getElementById('velocityProjectile').textContent;
 var forceProjectile = document.getElementById('centripitalForce').textContent;
 var pathCircle = document.getElementById('pathCircle');
+var motionPath = document.getElementById('motionPath');
 var debugText = document.getElementById('debug').textContent;
+var debugText = document.getElementById('debug2').textContent;
+var $projectileCircle = $('#projectile');
 
 function increaseRadius() {
   var tempRadius = parseInt(radiusCircle);
   tempRadius += 1;
   document.getElementById('radiusCircle').textContent = tempRadius;
   radiusCircle = tempRadius;
-  transformShape(tempRadius);
+
+  // transformShape(tempRadius);
   calculateForce();
 }
 
@@ -21,8 +25,9 @@ function decreaseRadius() {
   tempRadius -= 1;
   document.getElementById('radiusCircle').textContent = tempRadius;
   radiusCircle = tempRadius;
-  transformShape(tempRadius);
-  calculateForce();
+
+  // transformShape(tempRadius);
+  // calculateForce();
 }
 
 function increaseVelocity() {
@@ -76,16 +81,14 @@ function calculateForce() {
   var velocity = parseInt(velocityProjectile);
   var force = Math.round(mass * velocity * velocity / radius * 100) / 100;
   document.getElementById('centripitalForce').textContent = force;
-  // parseString(pathCircle.getAttribute('d'));
+  parseString(pathCircle.getAttribute('d'));
 }
 
 function parseString(string) {
   var stringArray = string.split(' ');
   var radius = parseInt(radiusCircle);
   var newString = '';
-
-  stringArray[1] = 15 * radius - 5;
-  stringArray[2] = 5 * radius + 5;
+  stringArray[2] = radius * 20 + 300;
   stringArray[4] = realRadiusCalculate(radius);
   stringArray[5] = stringArray[4];
   for (i = 0; i < stringArray.length; i++) {
@@ -94,5 +97,6 @@ function parseString(string) {
   }
 
   pathCircle.setAttribute('d', newString);
+  document.getElementById('debug2').textContent = motionPath.getAttribute('d');
   document.getElementById('debug').textContent = pathCircle.getAttribute('d');
 }

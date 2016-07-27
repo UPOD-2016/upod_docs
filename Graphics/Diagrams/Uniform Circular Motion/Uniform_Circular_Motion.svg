@@ -1,6 +1,6 @@
 <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200px" height="600px" xml:space="preserve" onload="calculateForce();">
     <!-- <path  d="M 300,100 A100,100"/> -->
-    <path id="pathCircle" d="M 300 300 a 100 100 0 1 1  .001 0 z" fill="blue" />
+    <path id="pathCircle" d="M 300 400 a 100 100 0 1 1  .001 0 z" stroke="blue" fill="none" />
     <circle id="testCircle" cx='300' cy='300' r="5" fill="red"/>
     <defs>
       <!-- <path id="pathCircle" d="M 300 300 A 100 100 0 1  299 299 z" fill="blue" /> -->
@@ -32,13 +32,16 @@
     <text id="massProjectile" class="textSmall" x="680" y="100">5</text>
     <text id="centripitalForce" class="textSmall" x="920" y="80"></text>
     <text id="debug" class="textSmall" x="500" y="300"></text>
+    <text id="debug2" class="textSmall" x="500" y="320">test</text>
     <!--Setup Diagram  -->
-    <!-- <circle id="mainCircle" cx='300' cy='300' r="100"/> -->
-    <circle id='projectile' cx='300' cy='200' r="5">
-    <!-- <animateMotion dur="5s" repeatCount="indefinite">
+
+    <circle id='projectile' cx='0' cy='0' r="5">
+    <!-- </g> -->
+    <animateMotion id='motionPath' dur="5s" repeatCount="indefinite">
         <mpath xlink:href="#pathCircle"/>
-     </animateMotion> -->
-    </circle>
+     </animateMotion>
+   </circle>
+
 
 <!--Setup control panel buttons-->
 <g id="increaseRadius" onclick="increaseRadius();" class="button-up">
@@ -62,7 +65,8 @@
     <use xlink:href="#button-down" x="720" y="90"/>
 </g>
 
-<script type="text/javascript" xlink:href="UniformCircularMotion.js"></script>
 <script type="text/javascript" xlink:href="//code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" xlink:href="//cdn.jsdelivr.net/velocity/1.1.0/velocity.min.js"></script>
+<script type="text/javascript" xlink:href="UniformCircularMotion.js"></script>
 
 </svg>
