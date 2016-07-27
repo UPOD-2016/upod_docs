@@ -1,11 +1,17 @@
 <?xml-stylesheet type="text/css" href="style.css"?>
 
+<!--
+Name: ProjectileMotion.svg
+Created By: viss3240 - Jordan Visser
+WLU ID: 120513240
+Date: July 27, 2016
+
+This Diagram will show a basic projectile motion problem. On page load call calculate(); from ProjectileMotion.js
+inputs: initial velocity and lanuch angle
+outputs: max height, time of flight and horizontal distance
+-->
+
 <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200px" height="600px" xml:space="preserve" onload="calculate();">
-
-  <!-- <script src="ProjectileMotion.js"></script>
-
-  <script src="svg4everybody/dist/svg4everybody.js"></script>
-  <script src="svg4everybody/dist/svg4everybody.legacy.js"></script> -->
     <!--Grid Lines -->
 
     <g stroke="black" opacity="0.5">
@@ -40,8 +46,11 @@
         <line x1="100" y1="250" x2="1150" y2="250"/>
         <line x1="100" y1="200" x2="1150" y2="200"/>
     </g>
-
-    <!-- Grid Numbers -->
+	<!-- x and y axis are darker than the other gridlines  -->
+	<line id="xaxis" x1="100" y1="500" x2="1150" y2="500" stroke="black"/>
+    <line id="yaxis" x1="100" y1="500" x2="100" y2="200" stroke="black"/>
+    
+	<!-- Grid Numbers -->
     <g>
         <text x="100" y="520" font-family="'Arial'" font-size="12">0</text>
         <text x="150" y="520" font-family="'Arial'" font-size="12">50</text>
@@ -74,12 +83,11 @@
         <text x="75" y="200" font-family="'Arial'" font-size="12">300</text>
 
     </g>
-    <line id="base" x1="100" y1="500" x2="1150" y2="500" stroke="black"/>
-    <line id="yaxis" x1="100" y1="500" x2="100" y2="200" stroke="black"/>
-
+    
+	<!-- The curve that represents the projectiles motion-->
     <path id="curve" d="" stroke="red" stroke-width="2" fill="none" class="curve" opacity="0.2"></path>
 
-    <!--LINE TAGS-->
+    <!--Descriptor tags-->
     <text x="50" y="20" font-family="'Arial'" font-size="12">Initial Velocity(m/s):
     </text>
     <text x="50" y="40" font-family="'Arial'" font-size="12">Launch Angle(Degrees):
@@ -92,56 +100,62 @@
     <text x="50" y="120" font-family="'Arial'" font-size="12">Time Of Flight(s):
     </text>
 
-    <!--Buttons-->
+    <!--Button definition-->
     <defs>
         <symbol id="button" overflow="visible">
             <rect x="-30" y="-10" rx="5" ry="5" width="80" height="20"/>
         </symbol>
-
     </defs>
 
-    <!--INPUTS-->
+    <!--Inputs-->
     <text id="vi" x="200" y="20" font-family="'Arial'" font-size="12">60</text>
     <text id="LaunchAngle" x="200" y="40" font-family="'Arial'" font-size="12">45</text>
 
-    <!--OUTPUTS-->
+    <!--Outputs-->
     <text id="DistanceOut" x="200" y="80" font-family="'Arial'" font-size="12"></text>
     <text id="HeightOut" x="200" y="100" font-family="'Arial'" font-size="12"></text>
     <text id="TimeOut" x="200" y="120" font-family="'Arial'" font-size="12"></text>
-
+	
+	<!-- three black dots at important positons
+	start: (0,0) starting position
+	mid: (half of horizontal, max height) point at maximum height
+	end: (horizontal distance, 0) ending position
+	-->
     <g stroke="black" stroke-width="1" fill="black">
         <circle id="start" cx="100" cy="500" r="3" opacity="0"/>
         <circle id="end" cx="400" cy="500" r="3" opacity="0"/>
         <circle id="mid" cx="400" cy="500" r="3" opacity="0"/>
     </g>
 
-
+	<!-- projectile that will fallow the curve-->
     <circle id="ball" cx="100" cy="500" r="5" fill="blue" opacity="0"/>
 
     <text x="100" y="520" font-family="'Arial'" font-size="12">0</text>
-    <text id="EndText" x="400" y="520" font-family="'Arial'" font-size="12" opacity="0"></text>
-
+	
+	<!-- When this button is pressed increase the velocity-->
     <g id="IncreaseVelocity" onclick="IncreaseVelocity();" class="button">
         <use xlink:href="#button" x="335" y="15"/>
         <text style="text-anchor:middle;" class="textSmall" x="343" y="19">VelocityUp</text>
     </g>
+	<!-- When this button is pressed decrease the velocity-->
     <g id="DecreaseVelocity" onclick="DecreaseVelocity();" class="button">
         <use xlink:href="#button" x="435" y="15"/>
         <text style="text-anchor:middle;" class="textSmall" x="445" y="19">VelocityDown</text>
     </g>
+	<!-- When this button is pressed increase the launch angle-->
     <g id="IncreaseAngle" onclick="IncreaseAngle();" class="button">
         <use xlink:href="#button" x="335" y="40"/>
         <text style="text-anchor:middle;" class="textSmall" x="343" y="44">AngleUp</text>
     </g>
+	<!-- When this button is pressed decrease the launch angle-->
     <g id="DecreaseAngle" onclick="DecreaseAngle();" class="button">
         <use xlink:href="#button" x="435" y="40"/>
         <text style="text-anchor:middle;" class="textSmall" x="445" y="44">AngleDown</text>
     </g>
+	<!-- Launch the projectile at the given angle and initial velocity-->
     <g id="Launch" onclick="launch();" class="button">
         <use xlink:href="#button" x="335" y="100"/>
         <text style="text-anchor:middle;" class="textSmall" x="343" y="104">Launch</text>
     </g>
     <script type="text/javascript" xlink:href="ProjectileMotion.js"></script>
-    <script type="text/javascript" xlink:href="//code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" xlink:href="//cdn.jsdelivr.net/velocity/1.1.0/velocity.min.js"></script>
 </svg>

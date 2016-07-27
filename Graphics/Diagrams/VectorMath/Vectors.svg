@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?xml-stylesheet type="text/css" href="style.css"?><!-- Created with Inkscape (http://www.inkscape.org/) -->
+<!--
+Name: Vectors.svg
+Created By: viss3240 - Jordan Visser
+WLU ID: 120513240
+Date: July 27, 2016
 
+This Diagram will show the difference between vector addition and vector subtraction using a simple 2D example
+V1=[5,-2] V2=[-1,3]
+The vectors were created using inkscape
+-->
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
@@ -17,7 +26,7 @@
    version="1.1"
    inkscape:version="0.91 r13725"
    sodipodi:docname="Vectors.svg"
-   onload="loaded();">
+   onload="loaded();"><!-- On page load run the loaded function -->
   <defs
      id="defs4">
     <marker
@@ -410,6 +419,7 @@
    style="fill:#00ff00;fill-opacity:1">[6,-5]</tspan></tspan></text>
     </g>
   </g>
+  <!--When this button is pressed show the result for vector addition-->
   <g
      id="AddBtn"
      onclick="Add();"
@@ -426,6 +436,7 @@
        y="139"
        id="text4208">Add</text>
   </g>
+  <!--When this button is pressed show the result for vector Subtraction-->
   <g
      id="SubBtn"
      onclick="Subtract();"
