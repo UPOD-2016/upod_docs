@@ -1,0 +1,215 @@
+start()
+//start
+function start(){
+$("#Rubber") 
+    .delay(2000)
+    .velocity({ x: "+=66"})
+$("#pole11")
+    .delay(2000)
+    .velocity({ x: "+=66"})    
+$("#pole12")
+.delay(2000)
+    .velocity({ x: "+=66"})   
+$("#pole13")
+.delay(2000)
+    .velocity({ x: "+=66"})   
+$("#pole14")
+.delay(2000)
+    .velocity({ x: "+=66"})   
+$("#pole15")
+   .delay(2000)
+    .velocity({ x: "+=66"})   
+$("#pole16")
+    .delay(2000)
+    .velocity({ x: "+=66"}) 
+$("#pole21")
+    .delay(2000)
+    .velocity({ x: "+=66"})    
+$("#pole22")
+    .delay(2000)
+    .velocity({ x: "+=66"})   
+$("#pole23")
+   .delay(2000)
+    .velocity({ x: "+=66"})   
+$("#pole24")
+    .delay(2000)
+    .velocity({ x: "+=66"})   
+$("#pole25")
+    .delay(2000)
+    .velocity({ x: "+=66"})   
+$("#pole26")
+    .delay(2000)
+    .velocity({ x: "+=66"}) 
+touch()
+}
+
+//rubber touch sphere
+function touch(){
+$("#pole16")
+    .delay(1000)
+    .velocity({ x: "+=40"})    
+    .velocity({  x: "+=20",y: "-=32"})
+$("#pole26")
+    .delay(1000)
+    .velocity({ x: "+=40"})    
+    .velocity({  x: "+=20",y: "+=32"})
+$("#pole15")
+    .delay(1300)
+    .velocity({ x: "+=90"})    
+    .velocity({  x: "+=20",y: "-=16"})
+$("#pole25")
+    .delay(1300)
+    .velocity({ x: "+=90"})    
+    .velocity({  x: "+=20",y: "+=16"})
+$("#pole14")
+    .delay(1500)
+    .velocity({ x: "+=120"})    
+      
+$("#pole24")
+    .delay(1500)
+    .velocity({ x: "+=120"})    
+ $("#pole11")
+    .delay(1700)
+    .velocity({ x: "+=175"})    
+$("#pole12")
+    .delay(1700)
+    .velocity({ x: "+=175"})   
+$("#pole13")
+    .delay(1700)
+    .velocity({ x: "+=160"})  
+    .velocity({ y: "-=16"})  
+$("#pole21")
+    .delay(1700)
+    .velocity({ x: "+=175"})    
+$("#pole22")
+    .delay(1700)
+    .velocity({ x: "+=175"})   
+$("#pole23")
+    .delay(1700)
+    .velocity({ x: "+=160"})  
+   .velocity({ y: "+=16"})  
+left()
+}
+//left the sphere
+function left(){
+  $("#Rubber")
+    .delay(4000)
+    .velocity({ x: "-=66"})
+ $("#pole11")
+   .delay(2000)
+    .velocity({ x: "-=175"})    
+$("#pole12")
+  .delay(2000)
+    .velocity({ x: "-=125"})   
+$("#pole21")
+ .delay(2000)
+    .velocity({ x: "-=125"})    
+$("#pole22")
+ .delay(2000)
+    .velocity({ x: "-=75"})   
+
+$("#pole15")
+ .delay(2000)
+    .velocity({ x: "+=70",y : "-=15"})  
+$("#pole25")
+ .delay(2000)
+    .velocity({ x: "+=75",y : "+=15"}) 
+$("#pole16")
+ .delay(2000)
+    .velocity({ x: "+=33",y : "-=18"})  
+$("#pole26")
+ .delay(2000)
+    .velocity({ x: "+=33",y : "+=23"})
+$("#pole24")
+ .delay(2000)
+    .velocity({ x: "+=110",y : "-=10"})
+$("#pole14")
+ .delay(2000)
+    .velocity({ y : "+=10"})
+$("#pole23")
+ .delay(2000)
+    .velocity({ x: "+=10",y : "+=15"})
+$("#pole13")
+ .delay(2000)
+ .velocity({ x: "+=10",y : "-=15"})
+resert()
+}
+
+//resert all and begin
+ function resert(){
+    $("#pole11")
+    
+     .velocity({ opacity: 0 })
+     .velocity({ x: 80,y : 120})
+     .velocity({ opacity: 1 })
+   
+     $("#pole12")
+     
+     .velocity({ opacity: 0 })
+     .velocity({ x: 120,y : 120})
+     .velocity({ opacity: 1 })
+   
+     $("#pole13")
+     
+     .velocity({ opacity: 0 })
+     .velocity({ x:160,y : 120})
+     .velocity({ opacity: 1 })
+    
+     $("#pole14")
+     
+    .velocity({ opacity: 0 })
+     .velocity({ x: 200,y : 120})
+     .velocity({ opacity: 1 })
+    
+     $("#pole15")
+     
+    .velocity({ opacity: 0 })
+     .velocity({ x: 240,y : 120})
+     .velocity({ opacity: 1 })
+   
+     $("#pole16")
+     
+    .velocity({ opacity: 0 })
+     .velocity({ x: 280,y : 120})
+     .velocity({ opacity: 1 })
+   
+     $("#pole21")
+     
+     .velocity({ opacity: 0 })
+     .velocity({ x: 80,y : 140})
+     .velocity({ opacity: 1 })
+   
+     $("#pole22")
+     
+     .velocity({ opacity: 0 })
+     .velocity({ x: 120,y : 140})
+     .velocity({ opacity: 1 })
+     
+     $("#pole23")
+     
+    .velocity({ opacity: 0 })
+     .velocity({ x: 160,y : 140})
+     .velocity({ opacity: 1 })
+     
+      $("#pole24")
+      
+     .velocity({ opacity: 0 })
+     .velocity({ x: 200,y : 140})
+      .velocity({ opacity: 1 })
+      
+       $("#pole25")
+       
+     .velocity({ opacity: 0 })
+     .velocity({ x: 240,y : 140})
+         .velocity({ opacity: 1 })
+     $("#pole26")
+      .delay(2000)
+     .velocity({ opacity: 0 })
+     .velocity({ x: 280,y : 140})
+      .velocity({ opacity: 1 },{complete:start}) 
+       
+ }   
+ 
+
+    
+ 
