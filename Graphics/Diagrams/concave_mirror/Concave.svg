@@ -143,19 +143,129 @@
   <polyline
      points="500 160 , 580 200 , 500 240 "
      style="fill:red;stroke:black;stroke-opacity:1"
-     id="polyline24" />
+     id="Object_flash" />
   <symbol
      id="imagelineFlash"
      overflow="visible">
     <polyline
        points="0 0 80 -50 80 50 "
        style="fill:blue;stroke:black;stroke-opacity:1"
-       id="polyline27" />
+       id="image_flash" />
+  </symbol>
+  
+  
+   <text
+     x="-600"
+     y="1500"
+     font-size="100"
+     fill="red"
+     id="text33">di =</text>
+  <text
+     id="di_pos"
+     x="-400"
+     y="1500"
+     font-size="100"
+     fill="red">1600</text>
+  <text
+     x="-600"
+     y="1600"
+     font-size="100"
+     fill="red"
+     id="text36">d0 =</text>
+  <text
+     id="d0_pos"
+     x="-400"
+     y="1600"
+     font-size="100"
+     fill="red"> 1600</text>
+  <text
+     x="-600"
+     y="1700"
+     font-size="100"
+     fill="red"
+     id="text39">F = 1000</text>
+  <text
+     x="-600"
+     y="1800"
+     font-size="100"
+     fill="red"
+     id="text42">C = 1600</text>
+  
+  <line
+     id="di_line"
+     x1="1600"
+     x2="3600"
+     y1="1040"
+     y2="1040"
+     stroke="orange"
+     stroke-width="5" />
+	 
+  <symbol
+     id="diRightFlash"
+     overflow="visible">
+    <polyline points="0 0 , 60 30 , 0 60 "
+       style="fill:orange;stroke:black;stroke-opacity:1"
+       />
+  </symbol>
+  
+  
+  <symbol
+     id="diLeftFlash"
+     overflow="visible">
+    <polyline points="60 60 0 30 , 60 0 "
+       style="fill:orange;stroke:black;stroke-opacity:1"
+       />
   </symbol>
   
   
   
-   <path
+  <symbol
+     id="d0RightFlash"
+     overflow="visible">
+    <polyline points="0 0 , 60 30 , 0 60 "
+       style="fill:yellow;stroke:black;stroke-opacity:1"
+       />
+  </symbol>
+	 
+	<symbol
+     id="d0LeftFlash"
+     overflow="visible">
+    <polyline points="60 60 0 30 , 60 0 "
+       style="fill:yellow;stroke:black;stroke-opacity:1"
+       />
+  </symbol> 
+	 
+  
+  <line
+     id="d0_line"
+     x1="1600"
+     x2="3600"
+     y1="960"
+     y2="960"
+     stroke="yellow"
+     stroke-width="5" />
+	 
+	 <text
+     x="1900"
+     y="900"
+     font-size="100"
+     fill="black"
+     id="text33">d0</text>
+	 
+	  <text
+     x="1900"
+     y="1150"
+     font-size="100"
+     fill="black"
+     id="text33">di</text>
+	 
+  
+  
+  
+  
+  
+   <path 
+	 id ="Mirror_Curve"
      style="fill:red;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="m 3140.6083,397.76068 55.5338,61.45918 1.0876,-3.37838 -99.4529,34.91134 z"
       />
@@ -226,16 +336,16 @@
      stroke="black"
      stroke-dasharray="20"
      stroke-width="5" />
+	 
   <circle
      id="Focalpoint"
      fill="black"
      cx="2515"
      cy="1000"
      r="20" />
-	 
-	 
+
   <text
-     x="2600"
+     x="2500"
      y="1100"
      font-family="Verdana"
      font-size="70"
@@ -290,7 +400,39 @@ The reason that I put x=2200 and y=1600 is that after sacling the x and y also c
      y="1800"
      id="imageline_Flash" />
 	 
-	</symbol>
+	
+	
+	 <use
+     xlink:href="#diRightFlash"
+     x="3550"
+     y="1010"
+     id="di_right_flash"
+     />
+	 
+	 <use
+     xlink:href="#diLeftFlash"
+     x="1600"
+     y="1010"
+     id="di_left_flash"
+     />
+	 
+	 
+	  <use
+     xlink:href="#d0RightFlash"
+     x="3550"
+     y="930"
+     id="d0_right_flash"
+     />
+	 
+	 <use
+     xlink:href="#d0LeftFlash"
+     x="1600"
+     y="930"
+     id="d0_left_flash"
+     />
+	 
+	 
+	 </symbol>
 	
 	<use
 	xlink:href="#concave_mirror"
