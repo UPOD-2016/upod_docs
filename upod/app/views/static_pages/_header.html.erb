@@ -50,100 +50,49 @@
                 <li class="dropdown mega-dropdown">
                     <a href="#" class="dropdown-toggle" style="width:auto;" data-toggle="dropdown">Categories <span class="caret"></span></a>
                     <ul class="dropdown-menu mega-dropdown-menu row">
-			<% @categories.each do |category| %>
-			<li class="col-sm-2">
-				<ul>
-				     <li><%= link_to category.name, category, :class => "dropdown-header" %></li>
-					<% category.subcategories.each do |subcategory| %>
-						<li><%= link_to subcategory.name, subcategory %></li>
-					<% end %>
-				</ul>
-			</li>
-                	<% end %>
-			<!--
-                        <li class="col-sm-2">
-                            <ul>
-                                <li class="dropdown-header">Dresses</li>
-                                <li><a href="#">Unique Features</a></li>
-                                <li><a href="#">Image Responsive</a></li>
-                                <li><a href="#">Auto Carousel</a></li>
-                                <li><a href="#">Newsletter Form</a></li>
-                                <li><a href="#">Four columns</a></li>
-                                <li class="divider"></li>
-                                <li class="dropdown-header">Tops</li>
-                                <li><a href="#">Good Typography</a></li>
-                            </ul>
-                        </li>
-                        <li class="col-sm-3">
-                            <ul>
-                                <li class="dropdown-header">Jackets</li>
-                                <li><a href="#">Easy to customize</a></li>
-                                <li><a href="#">Glyphicons</a></li>
-                                <li><a href="#">Pull Right Elements</a></li>
-                                <li class="divider"></li>
-                                <li class="dropdown-header">Pants</li>
-                                <li><a href="#">Coloured Headers</a></li>
-                                <li><a href="#">Primary Buttons & Default</a></li>
-                                <li><a href="#">Calls to action</a></li>
-                            </ul>
-                        </li>
-                        <li class="col-sm-3">
-                            <ul>
-                                <li class="dropdown-header">Accessories</li>
-                                <li><a href="#">Default Navbar</a></li>
-                                <li><a href="#">Lovely Fonts</a></li>
-                                <li><a href="#">Responsive Dropdown </a></li>
-                                <li class="divider"></li>
-                                <li class="dropdown-header">Newsletter</li>
-                                <form class="form" role="form">
-                                    <div class="form-group">
-                                        <label class="sr-only" for="email">Email address</label>
-                                        <input type="email" class="form-control" id="email" placeholder="Enter email">
-                                    </div>
-                                    <button type="submit" class="btn btn-primary btn-block">Sign in</button>
-                                </form>
-                            </ul>
-                        </li>
-			-->
+                			<% @categories.each do |category| %>
+                  			<li class="col-sm-2">
+                  				<ul>
+                  				   <li><%= link_to category.name, category, :class => "dropdown-header" %></li>
+                  					      <% category.subcategories.each do |subcategory| %>
+                  						          <li>
+                                          <%= link_to subcategory.name, subcategory %>
+                                        </li>
+                  					      <% end %>
+                  				</ul>
+                  			</li>
+                      <% end %>
+
                     </ul>
                 </li>
 
-                <li><%= link_to "About", about_path, :style => "width:auto;" %></li>
-                <li><%= link_to "Articles", articles_path, :style => "width:auto;" %></li>
-
-                <!--
-                    <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categories <span class="caret"></span></a>
-                      <ul class="dropdown-menu">
-                        <% @categories.each do |category| %>
-                          <li><%= link_to category.name, category %></li>
-                        <% end %>
-                      </ul>
-                    </li>
-                    -->
-            </ul>
-            <% unless current_page?(root_path) %>
-            <ul class="nav navbar-nav navbar-right">
+                <li>
+                  <%= link_to "About", about_path, :style => "width:auto;" %>
+                </li>
+                <li>
+                  <%= link_to "Articles", articles_path, :style => "width:auto;" %>
+                </li>
+              </ul>
+              <% unless current_page?(root_path) %>
+                <ul class="nav navbar-nav navbar-right">
                 <!-- nav search -->
-                <form class="navbar-form" role="search" style="margin-right:auto;margin-left:auto;">
+                  <form class="navbar-form" role="search" style="margin-right:auto;margin-left:auto;">
                     <ul class="input-group">
-			<span class="input-group-btn">
-			    <%= select_tag "category_search", options_from_collection_for_select(Category.all, "id", "name"),
-                {prompt: "Filter", :class => "btn btn-select resizeselect", :style => "width: 60px; -moz-appearance: none; -webkit-appearance: none;"}%>
-			</span>
-                        <%= text_field_tag :q, params[:q], class: 'form-control' %>
-                        <span class="input-group-btn">
-                            <%= button_tag(type: :submit, class: 'btn btn-default') do %>
-      				<span class="glyphicon glyphicon-search"> </span>
-      			    <% end %>
-                        </span>
+			                <span class="input-group-btn">
+		                     <%= select_tag :filter, options_from_collection_for_select(Category.all, :name, :name),
+                         {prompt: "Filter", :class => "btn btn-select resizeselect", :style => "width: 60px; -moz-appearance: none; -webkit-appearance: none;"}%>
+			                </span>
+                      <%= text_field_tag :q, params[:q], class: 'form-control' %>
+                      <span class="input-group-btn">
+                        <%= button_tag(type: :submit, class: 'btn btn-default') do %>
+      				              <span class="glyphicon glyphicon-search">
+                            </span>
+      			            <% end %>
+                      </span>
                     </ul>
                 </form>
-            </ul>
-            <!-- end nav search -->
-
+              </ul>
             <% end %>
         </div>
-        <!--/.nav-collapse -->
     </div>
 </nav>

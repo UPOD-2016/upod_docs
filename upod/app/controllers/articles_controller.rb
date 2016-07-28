@@ -7,12 +7,12 @@ class ArticlesController < ApplicationController
         Article.reindex
 
         search_options = {
-            fields: ["title^5","body^5","label^1"],
+            fields: ["name^10","title^5","body^5","label^1"],
             match: :word_start,
-            suggest: [:title,:body],
+            suggest: true,
             misspellings: {below: 2},
             order: {_score: :desc}#,
-
+            where: {name: params[:filter].present? ? params[:filter] : "*"}
         }
 
         if params[:q].present?

@@ -13,7 +13,7 @@
           <div class="form-group" style="display:inline;">
             <div class="input-group">
       	     <span class="input-group-btn">
-              <%= select_tag "category_search", options_from_collection_for_select(Category.all, "id", "name"),
+              <%= select_tag :filter, options_from_collection_for_select(Category.all, :name, :name),
                 {prompt: "Filter", :class => "btn btn-default resizeselect", :style => "-moz-appearance: none; -webkit-appearance: none;"} %>
       	     </span>
               <%= text_field_tag :q, params[:q], class: 'form-control' %>

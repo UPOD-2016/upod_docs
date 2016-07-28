@@ -27,9 +27,9 @@ class Article < ActiveRecord::Base
   include Blockable
   include SirTrevorable
 
-  searchkick searchable: ["title","body","label"],
+  searchkick searchable: ["name","title","body","label"],
     match: :word_start,
-    suggest: ["body"],
+    suggest: ["title"],
     callbacks: :async,
     conversions: :converstions
 
@@ -43,6 +43,7 @@ class Article < ActiveRecord::Base
   def search_data
     {
         title: title,
+        name: blocks.map { |block| block.specific.body if block.specific.respond_to?(:name)}.as_json,
         body: blocks.map { |block| block.specific.body if block.specific.respond_to?(:body)}.as_json,
         label: blocks.map { |block| block.specific.label if block.specific.respond_to?(:label)}.as_json,
         conversions: searches.group("query").count
