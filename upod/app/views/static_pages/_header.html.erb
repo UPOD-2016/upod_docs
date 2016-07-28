@@ -1,3 +1,4 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <nav class="navbar navbar-inverse navbar-static-top">
     <div class="container">
         <div class="navbar-header">
@@ -91,18 +92,18 @@
             <% unless current_page?(root_path) %>
             <ul class="nav navbar-nav navbar-right">
                 <!-- nav search -->
-                <form class="navbar-form" role="search">
+                <form class="navbar-form" role="search" style="margin-right:auto;margin-left:auto;">
                     <ul class="input-group">
-			<li class="input-group-btn" style="padding:0px;">
+			<span class="input-group-btn">
 			    <%= select_tag "category_search", options_from_collection_for_select(Category.all, "id", "name"),
                 {prompt: "Filter by Category", :class => "btn btn-default", :style => "-moz-appearance: none; -webkit-appearance: none;"}%>
-			</li>
+			</span>
                         <%= text_field_tag :q, params[:q], class: 'form-control' %>
-                        <li class="input-group-btn">
+                        <span class="input-group-btn">
                             <%= button_tag(type: :submit, class: 'btn btn-default') do %>
       				<span class="glyphicon glyphicon-search"> </span>
       			    <% end %>
-                        </li>
+                        </span>
                     </ul>
                 </form>
             </ul>
