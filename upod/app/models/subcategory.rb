@@ -26,7 +26,7 @@ class Subcategory < ActiveRecord::Base
   friendly_id :name, use: [:slugged, :finders]
 
   def should_generate_new_friendly_id?
-  new_record?
+    new_record?
   end
 
   validates :name, presence: true, length: {maximum: 255}

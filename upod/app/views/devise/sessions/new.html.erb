@@ -3,6 +3,8 @@
 	<form class="form-signin">
 		<h2>Sign in</h2>
 		<br />
+<p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
 		<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
 		  <div class="field">
 		    <%= f.label :email, :class => "sr-only" %>

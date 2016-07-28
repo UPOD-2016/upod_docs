@@ -16,3 +16,4 @@
 //= require bootstrap
 //= require turbolinks
 //= require js-routes
+//= require resize-header
