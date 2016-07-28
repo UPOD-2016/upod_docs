@@ -1,37 +1,37 @@
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>
-	(function($, window){
-	  var arrowWidth = 30;
+  (function($, window){
+    var arrowWidth = 30;
 
-	  $.fn.resizeselect = function(settings) {  
-	    return this.each(function() { 
+    $.fn.resizeselect = function(settings) {
+      return this.each(function() {
 
-	      $(this).change(function(){
-		var $this = $(this);
+        $(this).change(function(){
+          var $this = $(this);
 
-		// create test element
-		var text = $this.find("option:selected").text();
-		var $test = $("<span>").html(text);
+          // create test element
+          var text = $this.find("option:selected").text();
+          var $test = $("<span>").html(text);
 
-		// add to body, get width, and get out
-		$test.appendTo('body');
-		var width = $test.width();
-		$test.remove();
+          // add to body, get width, and get out
+          $test.appendTo('body');
+          var width2 = $test.width();
+          $test.remove();
 
-		// set select width
-		$this.width(width + arrowWidth);
+          // set select width
+          $this.width(width2 + arrowWidth);
 
-		// run on start
-	      }).change();
+          // run on start
+        }).change();
 
-	    });
-	  };
+      });
+    };
 
-	  // run by default
-	  $("select.resizeselect").resizeselect();                       
+    // run by default
+    $("select.resizeselect").resizeselect();
 
-	})(jQuery, window);
+  })(jQuery, window);
 </script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <nav class="navbar navbar-inverse navbar-static-top">
     <div class="container">
         <div class="navbar-header">
