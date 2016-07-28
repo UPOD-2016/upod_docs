@@ -25,7 +25,6 @@
 
       });
     };
-
     // run by default
     $("select.resizeselect").resizeselect();
     $this.reload(true);
@@ -80,7 +79,7 @@
                     <ul class="input-group">
 			                <span class="input-group-btn">
 		                     <%= select_tag :filter, options_from_collection_for_select(Category.all, :name, :name),
-                         {prompt: "Filter", :class => "btn btn-select resizeselect", :style => "width: 60px; -moz-appearance: none; -webkit-appearance: none;"}%>
+                         {prompt: params[:filter].present? ? params[:filter] : "Filter", :class => "btn btn-select resizeselect", :style => "width: 60px; -moz-appearance: none; -webkit-appearance: none;"}%>
 			                </span>
                       <%= text_field_tag :q, params[:q], class: 'form-control' %>
                       <span class="input-group-btn">

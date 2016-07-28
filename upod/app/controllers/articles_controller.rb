@@ -16,7 +16,7 @@ class ArticlesController < ApplicationController
         }
 
         if params[:filter].present?
-          search_options[:where] = {name: params[:filter]}
+          search_options[:where] = {name: /^#{params[:filter]} +./}
         end
 
         if params[:q].present?
