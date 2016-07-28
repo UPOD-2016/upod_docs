@@ -2,8 +2,8 @@ var v_a = document.getElementById("vel_1i").textContent;
 var v_b = document.getElementById("vel_2i").textContent;
 var m_1 = document.getElementById("mass1").textContent;
 var m_2 = document.getElementById("mass2").textContent;
-var vf_a = document.getElementById("vel_1f").textContent; 
-var vf_b = document.getElementById("vel_2f").textContent;
+var vf_a = document.getElementById("vel_1f"); 
+var vf_b = document.getElementById("vel_2f");
 
 function reset(){
 
@@ -12,17 +12,14 @@ function launch () {
     
 }
 function get_final_velocities(){
-    var v1i = parseInt(v_a);
-    var v2i = parseInt(v_b);
-    var m1 = parseInt(m_1);
-    var m2 = parseInt(m_2);
-    
-    
-    var v_final_1 = (v1i* ((m1 - m2))/(m1 + m2)) + (vb *((2*m2)/(m1+m2)));
-    
-    var v_final_2 = (v1i*((2*m1)/(m1 + m2))) + (v2i * ((m2 - m1) / (m1 + m2)));
-    document.getElementById("vel_1f").textContent = v_final_1.toFixed(2);
-    document.getElementById("vel_2f").textContent = v_final_2.toFixed(2);
+   var v1i = parseInt(v_a);
+   var v2i = parseInt(v_b);
+   var m1 = parseInt(m_1);
+   var m2 = parseInt(m_2);
+   var v_final_1 = (v1i*((m1-m2))/(m1+m2))+(v2i*((2*m2)/(m1+m2)));
+   var v_final_2 = (v1i*((2*m1)/(m1+m2)))+(v2i*((m2-m1)/(m1+m2)));
+   vf_a.textContent = v_final_1.toFixed(2);
+   vf_b.textContent = v_final_2.toFixed(2);
     
 }
 function increase_vi_1(){
