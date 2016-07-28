@@ -4,10 +4,9 @@ class ArticleDiagramBlocksController < ApplicationController
 
   #Renders a diagram or html which is used in a sandboxed iframe when rendering this block's partial in an article
   def show
-	@article_diagram_block = ArticleDiagramBlock.find(params[:id])
-	render layout: false #don't add default layouts
+	 render layout: false #don't add default layouts
   end
-  
+
    private
     # Use callbacks to share common setup or constraints between actions.
     def set_article_diagram_block
