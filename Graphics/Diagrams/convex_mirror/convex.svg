@@ -13,6 +13,8 @@
    version="1.1"
    viewBox="0 0 4000 3000"
    onload="init()"
+   onmouseup="mouseUp(evt)"
+    onmousemove="mouseMove(evt)"
    id="svg2"
    inkscape:version="0.91 r13725"
    sodipodi:docname="convex.svg">
