@@ -1,3 +1,36 @@
+<script>
+	(function($, window){
+	  var arrowWidth = 30;
+
+	  $.fn.resizeselect = function(settings) {  
+	    return this.each(function() { 
+
+	      $(this).change(function(){
+		var $this = $(this);
+
+		// create test element
+		var text = $this.find("option:selected").text();
+		var $test = $("<span>").html(text);
+
+		// add to body, get width, and get out
+		$test.appendTo('body');
+		var width = $test.width();
+		$test.remove();
+
+		// set select width
+		$this.width(width + arrowWidth);
+
+		// run on start
+	      }).change();
+
+	    });
+	  };
+
+	  // run by default
+	  $("select.resizeselect").resizeselect();                       
+
+	})(jQuery, window);
+</script>
 <body style="background-color:#330072;">
 	<div class="container-fluid" style="margin-bottom:10%"> <!--image/search bar-->
     <div class="row">
@@ -12,9 +45,9 @@
         <%= form_tag articles_path, method: :get, role: 'search' do %>
           <div class="form-group" style="display:inline;">
             <div class="input-group">
-      	     <span class="input-group-btn" style="padding:0px;">
+      	     <span class="input-group-btn">
               <%= select_tag "category_search", options_from_collection_for_select(Category.all, "id", "name"),
-                {prompt: "Filter by Category", :class => "btn btn-default", :style => "-moz-appearance: none; -webkit-appearance: none;"} %>
+                {prompt: "Filter", :class => "btn btn-default resizeselect", :style => "-moz-appearance: none; -webkit-appearance: none;"} %>
       	     </span>
               <%= text_field_tag :q, params[:q], class: 'form-control' %>
               <span class="input-group-btn">

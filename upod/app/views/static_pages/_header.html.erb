@@ -1,4 +1,37 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+	(function($, window){
+	  var arrowWidth = 30;
+
+	  $.fn.resizeselect = function(settings) {  
+	    return this.each(function() { 
+
+	      $(this).change(function(){
+		var $this = $(this);
+
+		// create test element
+		var text = $this.find("option:selected").text();
+		var $test = $("<span>").html(text);
+
+		// add to body, get width, and get out
+		$test.appendTo('body');
+		var width = $test.width();
+		$test.remove();
+
+		// set select width
+		$this.width(width + arrowWidth);
+
+		// run on start
+	      }).change();
+
+	    });
+	  };
+
+	  // run by default
+	  $("select.resizeselect").resizeselect();                       
+
+	})(jQuery, window);
+</script>
 <nav class="navbar navbar-inverse navbar-static-top">
     <div class="container">
         <div class="navbar-header">
@@ -96,7 +129,7 @@
                     <ul class="input-group">
 			<span class="input-group-btn">
 			    <%= select_tag "category_search", options_from_collection_for_select(Category.all, "id", "name"),
-                {prompt: "Filter by Category", :class => "btn btn-select", :style => "width: 60px; -moz-appearance: none; -webkit-appearance: none;"}%>
+                {prompt: "Filter", :class => "btn btn-select resizeselect", :style => "-moz-appearance: none; -webkit-appearance: none;"}%>
 			</span>
                         <%= text_field_tag :q, params[:q], class: 'form-control' %>
                         <span class="input-group-btn">
