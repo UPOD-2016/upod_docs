@@ -11,8 +11,8 @@ class ArticlesController < ApplicationController
             match: :word_start,
             suggest: true,
             misspellings: {below: 2},
-            order: {_score: :desc}#,
-            where: {name: params[:filter].present? ? params[:filter] : "*"}
+            order: { _score: :desc },
+            where: { name: params[:filter].present? ? params[:filter] : "*" }
         }
 
         if params[:q].present?

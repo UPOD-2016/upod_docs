@@ -33,18 +33,13 @@ gem 'active_record-acts_as'
 gem 'acts_as_list'
 gem 'annotate'
 gem 'bootstrap-sass'
+
+# Required for sir trevor
 source 'https://rails-assets.org' do
   gem 'rails-assets-underscore'
 end
+
 gem 'js-routes'
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
-
-# Use Unicorn as the app server
-# gem 'unicorn'
-
-# Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
 
 #Use Administrate for admin panel
 gem "administrate", "~> 0.2.2"

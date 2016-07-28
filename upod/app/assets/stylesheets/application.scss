@@ -7,6 +7,14 @@ $navbar-inverse-color: #ffcc00;
   padding-bottom: 0 !important;
 }
 
+.alert {
+  margin-bottom: 0 !important;
+}
+
+.turbolinks-progress-bar {
+  // height: 5px;
+  background-color: #ffcc00;
+}
 
 @import "bootstrap-sprockets";
 @import "bootstrap";

@@ -16,7 +16,7 @@
               <%= select_tag :filter, options_from_collection_for_select(Category.all, :name, :name),
                 {prompt: "Filter", :class => "btn btn-default resizeselect", :style => "-moz-appearance: none; -webkit-appearance: none;"} %>
       	     </span>
-              <%= text_field_tag :q, params[:q], class: 'form-control' %>
+              <%= text_field_tag :q, params[:q], class: 'form-control', autofocus: true %>
               <span class="input-group-btn">
                 <%= button_tag(type: :submit, class: 'btn btn-default') do %>
       					 <span class="glyphicon glyphicon-search"> </span>

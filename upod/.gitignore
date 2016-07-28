@@ -19,3 +19,4 @@ nohup.out
 
 /doc
 .yardoc/
+.byebug_history

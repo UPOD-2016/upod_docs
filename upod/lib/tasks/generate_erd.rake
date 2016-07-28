@@ -1,4 +1,4 @@
-namespace :db do
+namespace :wlu do
   desc 'Generate Entity Relationship Diagram'
   task :generate_erd do
     system "bundle exec railroady -a -M | dot -Tpng > models.png"

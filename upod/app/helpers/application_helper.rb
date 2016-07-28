@@ -1,13 +1,17 @@
 module ApplicationHelper
+  def title(page_title)
+    content_for(:title) { "#{page_title} - UPOD" }
+  end
+
   BOOTSTRAP_FLASH_MSG = {
     success: 'alert-success',
     error: 'alert-error',
-    alert: 'alert-block',
+    alert: 'alert-warning',
     notice: 'alert-info'
   }
 
   def bootstrap_class_for(flash_type)
-    BOOTSTRAP_FLASH_MSG.fetch(flash_type, flash_type.to_s)
+    BOOTSTRAP_FLASH_MSG[flash_type.to_sym]
   end
 
   def flash_messages(opts = {})

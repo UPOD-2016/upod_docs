@@ -49,9 +49,13 @@ puts "Starting to create #{NUM_OF_USERS} users".yellow
   puts "Creating a user with the email: #{user.email} and the password: #{user.password}".blue
   puts "================================================".yellow
 end
+puts "Iteration #{NUM_OF_USERS} of #{NUM_OF_USERS}".green
+puts "================================================".yellow
 active_user = User.new(email: 'a@a.a', password: '123456')
 active_user.skip_confirmation!
 active_user.save!
+puts "Creating a user with the email: #{active_user.email} and the password: #{active_user.password}".blue
+puts "================================================".yellow
 
 puts ""
 puts "Starting to create #{NUM_OF_ARTICLES} articles".yellow
