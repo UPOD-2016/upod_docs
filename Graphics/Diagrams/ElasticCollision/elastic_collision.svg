@@ -28,7 +28,26 @@
     <text x="50" y="120" font-family="'Arial'"
            font-size="12">Velocity Final Ball 1(m/s): </text>
     <text x="50" y="140" font-family="'Arial'"
-           font-size="12">Velocity Final Ball 2(m/s): </text>        
+           font-size="12">Velocity Final Ball 2(m/s): </text>  
+
+
+             <!--INPUTS-->
+    <text id="vel_1i" x="200" y="20" font-family="'Arial'"
+           font-size="12">1</text>
+    <text id="vel_2i" x="200" y="40" font-family="'Arial'"
+           font-size="12">-1</text>
+
+    <text id="mass1" x="200" y="80" font-family="'Arial'"
+           font-size="12">1</text>
+    <text id="mass2" x="200" y="100" font-family="'Arial'"
+           font-size="12">1</text>
+
+
+     <!--OUTPUTS-->
+     <text id="vel_1f" x="200" y="120" font-family="'Arial'"
+           font-size="12"></text>
+     <text id="vel_2f" x="200" y="140" font-family="'Arial'"
+           font-size="12"></text>      
     <!--buttons-->
 	 
      <g id="IncVi1" overflow="visible"
@@ -85,28 +104,14 @@
         <text class="textSmall" style="text-anchor:middle;" x="437"
         y="102">Mass 2 -</text>
     </g>
-     
 
-      <!--INPUTS-->
-    <text id="vel_1i" x="200" y="20" font-family="'Arial'"
-           font-size="12">1</text>
-    <text id="vel_2i" x="200" y="40" font-family="'Arial'"
-           font-size="12">-1</text>
+    <g id="launch" overflow="visible"
+     onclick="launch();" class="button">
+        <use xlink:href="#launch" x="435" y="160" />
+        <text class="textSmall" style="text-anchor:middle;" x="437"
+        y="162">Mass 2 -</text>
+    </g>
 
-    <text id="mass1" x="200" y="80" font-family="'Arial'"
-           font-size="12">1</text>
-    <text id="mass2" x="200" y="100" font-family="'Arial'"
-           font-size="12">1</text>
-
-
-     <!--OUTPUTS-->
-     <text id="vel_1f" x="200" y="120" font-family="'Arial'"
-           font-size="12"></text>
-     <text id="vel_2f" x="200" y="140" font-family="'Arial'"
-           font-size="12"></text>
-
-
-     
-    
+     <script type="text/javascript" xlink:href="elastic_collision.js"></script>
   </svg>
-   <script type="text/javascript" xlink:href="elastic_collision.js"></script>
+  
