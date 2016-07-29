@@ -23,7 +23,7 @@ module SirTrevorable
       article = Article.create(title: meta['title'])
       data.each do |block|
         case block['type'].to_sym
-        when :text
+        when :equation_text
           article.create_text_block(body: block['data']['text'])
         when :image
           uploaded_image = Image.find(block['data']['id'])

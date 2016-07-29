@@ -2,15 +2,23 @@
 //= require includes/MathJax
 
 $(document).ready(function(){
+  MathJax.Hub.Configured(); //Tell mathjax to start configuration
 
-  //check if math is included in this diagram before having mathjax search for it
-  var equations = document.getElementsByClassName("equation");
-  if (equations.length){
-	  $(".equation-block").hide(); //hide equation block container until the math renders
-	  MathJax.Hub.Configured(); //Tell mathjax to start configuration
+  //Get a list of all elements on this page to be typeset by MathJax 
+  var $block_equations = $(".equation");
+  var $inline_equations = $(".equation-text-block");
+  var $equations = $().add($block_equations).add($inline_equations);
+  
+  if ($equations.length){
+	  //hide equation containers until the math renders
+	  $equations.hide();
+	  
+
+	  //Typeset all equations and then display elements containing them upon completion
+	  var show_equations = function(){$equations.show();}
 	  MathJax.Hub.queue.Push(
-		["Typeset",MathJax.Hub,equations],
-		function (){ $(".equation-block").show(); }
+		["Typeset",MathJax.Hub,$equations.get()],
+		show_equations
 	  );
   }
 

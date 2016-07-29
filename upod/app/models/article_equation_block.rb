@@ -3,7 +3,7 @@
 # It inherits ArticleBlock's attributes, methods and validations.
 # @see ArticleBlock
 #
-# author: Michael Roher, Kieran O'Driscoll (Validations), Steven Swartz
+# author: Michael Roher, Kieran O'Driscoll (Validations), Steven Swartz (Implementation)
 #
 # == Schema Information
 #
@@ -20,7 +20,7 @@ class ArticleEquationBlock < ActiveRecord::Base
 
 # validates the length and presence of equation block and description
   validates :equation, presence: true, length: {maximum: 65535}
-  validates :label, presence: true, length: {maximum: 255}
+  validates :label, length: {maximum: 255}
 
   # Used by SirTrevor for editing this block
   def as_json

@@ -9,9 +9,11 @@
 	window.MathJax = {
 		//jax: to_mathjax_path(["input/AsciiMath","output/CommonHTML"]),
 		jax: ["input/AsciiMath","output/CommonHTML"],
-		//extensions: to_mathjax_path(["asciimath2jax.js","MathMenu.js","MathZoom.js","AssistiveMML.js"]),
 		extensions: ["asciimath2jax.js"],
 		delayStartupUntil: "configured",
+		asciimath2jax: {
+			delimiters: [['`','`']]
+		},
 		skipStartupTypeset: true,
 		showProcessingMessages: false,
 		showMathMenu: false,
@@ -20,12 +22,12 @@
 		styles: {
 			".MathJax_CHTML": {
 				"text-align": "center",
-				"font-size" : "150%"
+				"font-size" : "100%"
 			}
 		},
 		displayAlign: "center",
 		CommonHTML: {
-			scale: 1000
+			scale: 100
 		},
 		linebreaks: {
 			automatic: true

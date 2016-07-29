@@ -1,8 +1,7 @@
-// Diagram Block
 $(document).on('turbolinks:load', function() {
     SirTrevor.Blocks.Diagram = (function() {
-		var inputs, code_area, caption, preview_button;
-		var preview_area, preview_frame, preview_caption;
+		var $inputs, $code_area, $caption, $preview_button;
+		var $preview_area, $preview_frame, $preview_caption;
 		var block_data = { code: null, caption: null };
 	
         return SirTrevor.Block.extend({
@@ -14,12 +13,21 @@ $(document).on('turbolinks:load', function() {
             icon_name: 'image',
             formatable: false,
 			textable: false,
+			validations: ["codeMustNotBeEmpty"],
+			
+			codeMustNotBeEmpty: function(){
+				var code = $code_area[0]; //need to send setError a plain js element
+				if (code.value === ""){
+					this.setError(code,"Code area cannot be empty");
+				}
+			},
+			
 			
 			//Updates the object sent to the server
 			toData: function(){
 				var dataObj = {}
-				dataObj.code = code_area.val();
-				dataObj.caption = caption.val();
+				dataObj.code = $code_area.val();
+				dataObj.caption = $caption.val();
 				this.setData(dataObj);
 			},
 
@@ -46,23 +54,23 @@ $(document).on('turbolinks:load', function() {
 				var this_block = this;
 
 				//User inputs (code_area and caption)
-				inputs = $(this.el).find(".st-svg-inputs");
+				$inputs = $(this.el).find(".st-svg-inputs");
 				
 				//Where user enters the diagram code
-				code_area = $(this.el).find(".st-svg-code");
+				$code_area = $(this.el).find(".st-svg-code");
 				
 				//Where user enters the caption for diagram
-				caption = $(this.el).find(".st-svg-caption");
+				$caption = $(this.el).find(".st-svg-caption");
 				
 				//See preview of diagram
-				preview_button = $(this.el).find(".st-preview-button");
+				$preview_button = $(this.el).find(".st-preview-button");
 				
 				//Container for diagram preview
-				preview_area = $(this.el).find(".st-preview");
+				$preview_area = $(this.el).find(".st-preview");
 				
 				//Iframe the diagram is inserted into
-				preview_frame = $(this.el).find(".st-preview-content");
-				preview_caption = $(this.el).find(".st-preview-caption");
+				$preview_frame = $(this.el).find(".st-preview-content");
+				$preview_caption = $(this.el).find(".st-preview-caption");
 
 				//Check if data has been loaded by sir trevor using the loadData method
 				var preloaded_data = this.getBlockData();
@@ -72,30 +80,30 @@ $(document).on('turbolinks:load', function() {
 				}
 				
 				//User inputs diagram code, update the iframe preview
-				code_area.on("change",function(){
+				$code_area.on("change",function(){
 					var code = $(this).val();
-					this_block.setDiagram(code,preview_frame[0]);
+					this_block.setDiagram(code,$preview_frame[0]);
 				});
 				
 				//User inputs a caption, update the caption in the preview
-				caption.on("change",function(){
+				$caption.on("change",function(){
 					var caption = $(this).val()
 					this_block.setCaption(caption);
 				});
 				
-				preview_button.on("click",function(e){
+				$preview_button.on("click",function(e){
 					e.preventDefault();
 					//Show preview of code and hide inputs
-					if (preview_area.css("display") == "none"){						
+					if ($preview_area.css("display") == "none"){						
 						//Display the preview button and hide the input fields
-						preview_area.css("display","block");
-						inputs.css("display","none");
+						$preview_area.css("display","block");
+						$inputs.css("display","none");
 						$(this).text("Edit");
 					}
 					//Hide preview and show inputs
 					else {
-						preview_area.css("display","none");
-						inputs.css("display","block");
+						$preview_area.css("display","none");
+						$inputs.css("display","block");
 						$(this).text("Preview");
 					}
 				});
@@ -104,15 +112,15 @@ $(document).on('turbolinks:load', function() {
 			
 			//used to initialize block with preloaded-data
 			setBlock: function(code,caption_text){
-				code_area.val(code);
+				$code_area.val(code);
 				this.setDiagram(code);
-				caption.val(caption_text);
+				$caption.val(caption_text);
 				this.setCaption(caption_text);
 			},
 			
 			setDiagram: function(html){
-				//write the html int the iframe preview
-				var doc = preview_frame[0].contentWindow.document;
+				//write the html into the iframe preview
+				var doc = $preview_frame[0].contentWindow.document;
 				doc.open();
 				doc.write(html);
 				doc.close();
@@ -122,7 +130,8 @@ $(document).on('turbolinks:load', function() {
 			},
 			
 			setCaption: function(caption_text){
-				preview_caption.text(caption_text);
+				//add a caption below the diagram
+				$preview_caption.text(caption_text);
 				//Update object sent to server
 				this.toData();
 			}

@@ -1,6 +1,7 @@
 //= require includes/MathJaxConfig
 //= require includes/MathJax
 //= require includes/sir-trevor
+//= require ./blocks/equation_text_block.js
 //= require ./blocks/equation.js
 //= require ./blocks/diagram.js
 
@@ -22,21 +23,41 @@ $(document).on('turbolinks:load', function(){
   SirTrevor.config.debug = true;
   SirTrevor.config.scribeDebug = true;
   SirTrevor.config.language = "en";
-  SirTrevor.Blocks.Heading.prototype.toolbarEnabled = true;
+  SirTrevor.Blocks.Heading.prototype.toolbarEnabled = false;
   // SirTrevor.Blocks.Quote.prototype.toolbarEnabled = true;
-  SirTrevor.Blocks.Text.prototype.toolbarEnabled = true;
+  SirTrevor.Blocks.Text.prototype.toolbarEnabled = false;
   window.editor = new SirTrevor.Editor({
     el: $(".js-sir-trevor-instance").get(0),
     blockTypes: [
       "Heading",
       "Text",
-      "List",
+	  "EquationText",
       "Image",
       "Video",
   	  "Diagram",
   	  "Equation"
     ]
   });
+  
+  //This is a temporary workaround for an issue with sir trevor.
+  //The EquationTextBlock would ideally replace the text block
+  //but the .st-block-replace button only appears when using the
+  //default implementation of the text block.
+  //To get around this, the default text blocks are still rendered
+  //but the user is unable to interact with it and is instead prompted
+  //to select another type of block to use, with the "Text" option being an EquationTextBlock
+  $('body').delegate('.st-text-block','mouseover',function(){
+	var $this = $(this);
+	$this.blur();
+	$this.removeAttr("contenteditable");
+	
+	//remove the class so this event handler is only called once per block
+	$this.removeClass("st-text-block'");
+	
+	//prompt user to select a block type
+	$this.parent().siblings(".st-block-replacer").click();
+  });
+  
   $('.sir-trevor-form').submit(function(e) {
     //1. Stop the default submission from occuring. This is so we can inject
     //the necessary metadata information into the form.
@@ -46,7 +67,7 @@ $(document).on('turbolinks:load', function(){
     //first step is to find the textarea and store it in a variable. The additional
     //meta forms are exactly what they sound like - additional forms on the page that
     //are to be submitted with the sir trevor form.
-    var $textarea = $(this).find('textarea');
+    var $textarea = $(this).find('textarea.js-sir-trevor-instance');
     var $additionalMetaForms = $('.additional-sir-trevor-form');
 
     //3. Parse the textarea's contents into a variable named json
