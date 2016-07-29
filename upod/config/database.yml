@@ -14,7 +14,7 @@ default: &default
   encoding: utf8
   pool: 5
   username: root
-  password: 
+  password:
   socket: /var/run/mysqld/mysqld.sock
 
 development:
@@ -49,6 +49,6 @@ test:
 #
 production:
   <<: *default
-  database: upod_production
-  username: upod
-  password: <%= ENV['UPOD_DATABASE_PASSWORD'] %>
+  database: "upod-production"
+  username: <%= ENV['UPOD_USR'] %>
+  password: <%= ENV['UPOD_PWD'] %>

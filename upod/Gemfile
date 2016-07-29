@@ -40,7 +40,7 @@ source 'https://rails-assets.org' do
 end
 
 gem 'js-routes'
-
+gem 'mina'
 #Use Administrate for admin panel
 gem "administrate", "~> 0.2.2"
 gem "administrate-field-image"
