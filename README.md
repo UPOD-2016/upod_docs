@@ -1,6 +1,8 @@
 # UPOD
 CP317 - Group Project
 
+PLEASE USE THE OTHER REPO FOR RAILS. THIS IS ONLY FOR DOCS, REQUIREMENTS AND VAPOURWARE.
+
 # [Track Your Time Here](https://docs.google.com/spreadsheets/d/1MnkaSM_pRzdGI3y_fJ5XDKtI90yGePFmsP-MoT9rALs/edit#gid=1694166937)
 
 ### FaceBook Group
