@@ -1,2 +1,0 @@
-module LogTestHelper
-end

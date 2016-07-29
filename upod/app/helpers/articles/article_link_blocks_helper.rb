@@ -1,2 +1,0 @@
-module Articles::ArticleLinkBlocksHelper
-end
