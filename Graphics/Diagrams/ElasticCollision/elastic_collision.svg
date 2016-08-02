@@ -12,8 +12,9 @@
 
     </defs>
 
-    <ellipse id="example2" cx=1000 cy=400 rx=20 ry=20 fill="red"></ellipse>
-    <ellipse id="example2" cx=100 cy=400 rx=20 ry=20 fill="black"></ellipse>
+    <ellipse id="ball1" cx="1000" cy="400" rx="20" ry="20" fill="red"></ellipse>
+    <ellipse id="ball2" cx="100" cy="400" rx="20" ry="20" fill="black"></ellipse>
+    <path id="path_1" d="M50 400 L1050 400" stroke="red" />
     
     <line x1="50" y1="430" x2="1050" y2="430" style="stroke:rgb(40,142,33);stroke-width:20" />
 	<!--input Labels-->
