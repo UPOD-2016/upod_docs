@@ -112,6 +112,13 @@ td {
     background-color: #75FF47;
 }
 
+.notfixed {
+    text-align: center;
+    vertical-align: middle;
+    background-color: #FF0000;
+    color: #FFFFFF;
+}
+
 .convo {
     text-align: center;
     vertical-align: middle;
