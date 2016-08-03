@@ -1,0 +1,115 @@
+<style>
+.button {
+fill: LightGrey ;
+stroke: Silver;
+}
+
+.button:hover {
+cursor: pointer;
+stroke:black;
+}
+
+.button:active {
+fill: DarkGrey;
+stroke: black;
+}
+
+.textSmall {
+ font-family: sans-serif;
+ font-size: 9pt;
+ font-weight: bold;
+ fill: black;
+ stroke: none;
+}
+</style>
+
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200px" height="600px" xml:space="preserve">
+
+	<?Define Buttons?>
+    <defs>
+        <symbol id="button" overflow="visible">
+            <rect x="-30" y="-10" rx="5" ry="5" width="150" height="20"/>
+        </symbol>        
+    </defs>
+
+	<?objects for the diagram?>
+	<rect x="180" y="150" width="40" height="40" stroke="green" fill="green" stroke-width="0"/>
+	<line x1="100" y1="190" x2="300" y2="190" style="stroke:rgb(0,0,0);stroke-width:3" />
+
+	<?description of the situation?>
+	<text x="5" y="20" font-family="sans-serif" font-size="20px" fill="black">A rightward force is applied to a crate to push it across </text>
+	<text x="5" y="45" font-family="sans-serif" font-size="20px" fill="black">the floor at a contant speed. Ignore air resistance. </text>
+	<text x="5" y="70" font-family="sans-serif" font-size="20px" fill="black">Draw the forces acting on this crate. </text>
+
+	<?Solution?>
+	<line id="line1" x1="140" y1="170" x2="260" y2="170" stroke="red" fill="red" stroke-width="2" opacity="0.0" />
+	<line id="line2" x1="200" y1="120" x2="200" y2="230" stroke="red" fill="red" stroke-width="2" opacity="0.0"/>
+	<circle id="circle" cx="200" cy="170" r="2" fill="grey" opacity="0.0"/>
+	<polygon id="arrow1" points="140 175, 140 165, 135 170" fill="red" opacity="0.0"/>
+	<polygon id="arrow2" points="260 175, 260 165, 265 170" fill="red" opacity="0.0"/>
+	<polygon id="arrow3" points="195 120, 205 120, 200 115" fill="red" opacity="0.0"/>
+	<polygon id="arrow4" points="195 230, 205 230, 200 235" fill="red" opacity="0.0"/>
+
+	<text id="norm" x="190" y="100" font-family="sans-serif" font-size="12px" opacity="0.0" fill="black">F<tspan baseline-shift="sub">norm</tspan></text>
+	<text id="app" x="270" y="170" font-family="sans-serif" font-size="12px" opacity="0.0" fill="black">F<tspan baseline-shift="sub">app</tspan></text>
+	<text id="grav" x="190" y="250" font-family="sans-serif" font-size="12px" opacity="0.0" fill="black">F<tspan baseline-shift="sub">grav</tspan></text>
+	<text id="frict" x="105" y="170" font-family="sans-serif" font-size="12px" opacity="0.0" fill="black">F<tspan baseline-shift="sub">frict</tspan></text>
+
+	<?buttons?>
+	
+	<g id="check" onclick="loaded();" class="button">
+        <use xlink:href="#button" x="100" y="330"/>
+        <text style="text-anchor:middle;" class="textSmall" x="145" y="335">Check your answer</text>
+    </g>
+    
+	<g id="reset" onclick="reset();" class="button">
+        <use xlink:href="#button" x="260" y="330"/>
+        <text style="text-anchor:middle;" class="textSmall" x="300" y="335">Reset</text>
+    </g>	 
+     
+  </svg>
+
+<script>
+	var l1=document.getElementById("line1");
+	var l2=document.getElementById("line2");
+	var c1=document.getElementById("circle");
+	var a1=document.getElementById("arrow1");
+	var a2=document.getElementById("arrow2");
+	var a3=document.getElementById("arrow3");
+	var a4=document.getElementById("arrow4");
+	var app=document.getElementById("app");
+	var grav=document.getElementById("grav");
+	var frict=document.getElementById("frict");
+	var norm=document.getElementById("norm");
+	
+	
+function loaded(){
+	l1.setAttribute("opacity", "1.0");
+	l2.setAttribute("opacity", "1.0");
+	c1.setAttribute("opacity", "1.0");
+	a1.setAttribute("opacity", "1.0");
+	a2.setAttribute("opacity", "1.0");
+	a3.setAttribute("opacity", "1.0");
+    a4.setAttribute("opacity", "1.0");
+    grav.setAttribute("opacity", "1.0");
+    app.setAttribute("opacity", "1.0");
+    frict.setAttribute("opacity", "1.0");
+    norm.setAttribute("opacity", "1.0");
+	};
+	
+	
+function reset(){
+	l1.setAttribute("opacity", "0.0");
+	l2.setAttribute("opacity", "0.0");
+	c1.setAttribute("opacity", "0.0");
+	a1.setAttribute("opacity", "0.0");
+	a2.setAttribute("opacity", "0.0");
+	a3.setAttribute("opacity", "0.0");
+    a4.setAttribute("opacity", "0.0");
+    grav.setAttribute("opacity", "0.0");
+    app.setAttribute("opacity", "0.0");
+    frict.setAttribute("opacity", "0.0");
+    norm.setAttribute("opacity", "0.0");
+	};
+	
+</script>

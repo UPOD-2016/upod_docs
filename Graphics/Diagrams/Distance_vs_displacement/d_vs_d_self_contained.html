@@ -1,0 +1,298 @@
+<style>
+
+.button {
+fill: LightGrey ;
+stroke: Silver;
+}
+
+.button:hover {
+cursor: pointer;
+stroke:black;
+}
+
+.button:active {
+fill: DarkGrey;
+stroke: black;
+}
+
+.textSmall {
+ font-family: sans-serif;
+ font-size: 9pt;
+ font-weight: bold;
+ fill: black;
+ stroke: none;
+}
+
+</style>
+
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200px" height="600px" xml:space="preserve" onload="animate();">
+	
+	<?defining the buttons?>
+	<defs>
+        <symbol id="button" overflow="visible">
+            <rect x="-30" y="-10" rx="5" ry="5" width="100" height="20"/>
+        </symbol>
+    </defs>
+	
+	<?Create the rectangle, points A and B on that rectangle, and the side lengths of the rectangle?>
+	<rect x="150" y="80"  width="300" height="150" fill="white" stroke="black" stroke-width="1"/>
+	<text x="127" y="245" font-family="Verdana" font-size="22">A</text>
+	<text x="460" y="85" font-family="Verdana" font-size="22">B</text>
+	<text id="two" x="127" y="160" font-family="Verdana" font-size="16" fill="black">2</text>
+	<text x="460" y="160" font-family="Verdana" font-size="16">2</text>
+	<text id="four" x="295" y="71" font-family="Verdana" font-size="16" fill="black">4</text>
+	<text x="295" y="252" font-family="Verdana" font-size="16">4</text>
+
+	<?Create the lines that will be animated to show distance?>	
+	<line id="line1" x1="150" y1="230" x2="150" y2="230" stroke="black" stroke-width="5"/>
+	<line id="line2" x1="150" y1="80" x2="150" y2="80" stroke="black" stroke-width="5"/>
+
+	<?Create the line that will be animated to show displacement?>	
+	<line id="line3" x1="150" y1="230" x2="150" y2="230" stroke="black" stroke-width="5"/>
+
+	<?Create the red circles on each of the corners of the rectangle?>		
+	<circle id="p1" cx="150" cy="80" r="3" fill="red" opacity="1.0"/>
+	<circle id="p2" cx="450" cy="80" r="3" fill="red" opacity="1.0"/>
+	<circle id="p3" cx="150" cy="230" r="3" fill="red" opacity="1.0"/>
+	<circle id="p4" cx="450" cy="230" r="3" fill="red" opacity="1.0"/>
+
+	<?Create the text that will appear if the user clicks distance?>	
+	<text id="disttitle" x="40" y="360" font-family="Verdana" font-size="22" fill="black" opacity="0.0">Distance from A to B:</text>
+	<text id="two2" x="250" y="415" font-family="Verdana" font-size="20" fill="black" opacity="0.0">2</text>
+	<text id="plus" x="270" y="415" font-family="Verdana" font-size="20" fill="black" opacity="0.0">+</text>
+	<text id="four2" x="293" y="415" font-family="Verdana" font-size="20" fill="black" opacity="0.0">4</text>
+	<text id="equal" x="310" y="415" font-family="Verdana" font-size="20" fill="black" opacity="0.0">= 6</text>
+	<text id="disttext" x="50" y="445" font-family="Verdana" font-size="12" fill="black" opacity="0.0">Distance is a scalar quantity that refers to the collective movements of an object</text>
+	<text id="disttext2" x="140" y="465" font-family="Verdana" font-size="12" fill="black" opacity="0.0">up until the object reaches its final destination.</text>
+
+	<?Create the text that will appear if the user clicks displacement?>	
+	<text id="disptitle" x="40" y="360" font-family="Verdana" font-size="22" fill="black" opacity="0.0">Displacement from A to B:</text>
+	<text id="equation" x="130" y="415" font-family="Verdana" font-size="20" fill="black" opacity="0.0">2<tspan baseline-shift="super">2</tspan> + 4<tspan baseline-shift="super">2</tspan> = d<tspan baseline-shift="super">2</tspan> = sqrt(20) = 4.47</text>
+	<text id="disptext" x="70" y="445" font-family="Verdana" font-size="12" fill="black" opacity="0.0">Displacement is a vector quality that refers to singular change in the objects </text>
+	<text id="disptext2" x="200" y="465" font-family="Verdana" font-size="12" fill="black" opacity="0.0">location from the starting point.</text>
+
+	<?buttons?>
+	<g id="out" onclick="displacement();" class="button">
+        <use xlink:href="#button" x="220" y="300"/>
+        <text style="text-anchor:middle;" class="textSmall" x="240" y="305">Displacement</text>
+    </g>
+    
+	<g id="out" onclick="distance();" class="button">
+        <use xlink:href="#button" x="328" y="300"/>
+        <text style="text-anchor:middle;" class="textSmall" x="347" y="305">Distance</text>
+    </g>
+    
+    <g id="out" onclick="reset();" class="button">
+        <use xlink:href="#button" x="480" y="20"/>
+        <text style="text-anchor:middle;" class="textSmall" x="500" y="25">Reset</text>
+    </g>
+  
+  </svg>
+
+
+
+<script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="//cdn.jsdelivr.net/velocity/1.1.0/velocity.min.js"></script>
+
+<script>
+
+var $element = $("#line1");
+var $element2 = $("#line2");
+var $element3 = $("#line3");
+var $point1 = $("#p1");
+var $point2 = $("#p2");
+var $point3 = $("#p3");
+
+var tracker=0;
+
+var two=document.getElementById("two");
+var four=document.getElementById("four");
+var line1=document.getElementById("line1");
+var line2=document.getElementById("line2");
+var line3=document.getElementById("line3");
+var point1=document.getElementById("p1");
+var point2=document.getElementById("p2");
+var point3=document.getElementById("p3");
+var two2=document.getElementById("two2");
+var plus=document.getElementById("plus");
+var four2=document.getElementById("four2");
+var equals=document.getElementById("equal");
+var text1=document.getElementById("disttext");
+var text2=document.getElementById("disttext2");
+var title=document.getElementById("disttitle");
+var title2=document.getElementById("disptitle");
+var eq=document.getElementById("equation");
+var text3=document.getElementById("disptext");
+var text4=document.getElementById("disptext2");
+
+//Animates the distance from A to B along the sides of the rectangle
+function draw_dist() {
+	if (tracker==0){
+	
+		title.setAttribute("opacity","1");
+		
+		$point3.velocity({
+			  r:7
+			}, {
+			  duration: 300
+			});
+
+		setTimeout(function() {
+			two.setAttribute("fill", "red");
+			two2.setAttribute("opacity","1");
+			}, 600);
+
+		setTimeout(function() {
+			$element.velocity({
+				y2: 80
+	
+			}, {
+				duration: 1000
+			});
+		}, 200);
+		
+		setTimeout(function() {
+			$element.velocity({
+				y2: 80
+	
+			}, {
+				duration: 1000
+			});
+		}, 200);
+
+
+		setTimeout(function() {
+			plus.setAttribute("opacity","1");
+			}, 1000);
+			
+		setTimeout(function() {
+			$point1.velocity({
+			  r:7
+			}, {
+			  duration: 300
+			});
+		}, 1000);
+
+		setTimeout(function() {
+			four.setAttribute("fill", "red");
+			four2.setAttribute("opacity","1");
+			}, 2300);
+	
+		setTimeout(function() {
+			$element2.velocity({
+			  x2:450
+			}, {
+			  duration: 1700
+			});
+		}, 1500);
+
+		setTimeout(function() {
+			$point2.velocity({
+			  r:7
+			}, {
+			  duration: 300
+			});
+		}, 3000);
+		
+		setTimeout(function() {
+			equals.setAttribute("opacity","1");
+			text1.setAttribute("opacity","1");
+			text2.setAttribute("opacity","1");
+			}, 3000);
+			
+		setTimeout(function() {
+			tracker=1;
+		}, 3300);
+	}
+}
+
+//Animates the displacement from A to B by drawing a line string from A to B
+function draw_disp() {
+
+	if (tracker==0){	
+	
+		title2.setAttribute("opacity","1");
+
+		$point3.velocity({
+			  r:7
+			}, {
+			  duration: 300
+			});
+
+
+		setTimeout(function() {
+			$element3.velocity({
+			  x2:450,
+			  y2:80
+			}, {
+			  duration: 2200
+			});
+		}, 300);
+		
+		setTimeout(function() {
+			eq.setAttribute("opacity","1");
+			}, 1400);
+			
+		setTimeout(function() {
+			$point2.velocity({
+			  r:7
+			}, {
+			  duration: 300
+			});
+		}, 2300);
+		
+		setTimeout(function() {
+			tracker=1;
+		}, 2600);
+
+		setTimeout(function() {
+			text3.setAttribute("opacity","1");
+			text4.setAttribute("opacity","1");
+		}, 2600);
+	}
+}
+
+//Clears all of the text and svg elements that result from the animation in order to run the animation again
+function clear() {
+	if(tracker==1){
+		p1.setAttribute("r","3");
+		p2.setAttribute("r","3");
+		p3.setAttribute("r","3");
+		line1.setAttribute("y2","230");
+		line2.setAttribute("x2","150");
+		line3.setAttribute("x2","150");
+		line3.setAttribute("y2","230");
+		two.setAttribute("fill", "black");
+		four.setAttribute("fill", "black");
+		title.setAttribute("opacity","0");
+		two2.setAttribute("opacity","0");
+		plus.setAttribute("opacity","0");
+		four2.setAttribute("opacity","0");
+		equals.setAttribute("opacity","0");
+		text1.setAttribute("opacity","0");
+		text2.setAttribute("opacity","0");
+		text3.setAttribute("opacity","0");
+		text4.setAttribute("opacity","0");
+		title2.setAttribute("opacity","0");
+		eq.setAttribute("opacity","0");
+
+		tracker=0;
+	}
+}
+
+//When the distance button is pushed this function calls the distance animation function
+function distance(){
+	draw_dist();
+};
+
+//When the displacement button is pushed this function calls the displacement animation function
+function displacement(){
+	draw_disp();
+};
+
+//When the clear button is pushed this function calls the clear function
+function reset(){
+	clear();
+};
+
+</script>
