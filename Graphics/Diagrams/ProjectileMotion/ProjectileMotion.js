@@ -91,16 +91,16 @@ function checkHeight() {//ensures that the path cannot leave the grid area
     }
 };
 
-function IncreaseAngle() {//increase the launch angle by 5
+function IncreaseAngle() {
     var angle = parseInt(LaunchAngle);
     reset();
-    if (angle < 85) {//make 85 the max launch angle
+    if (angle < 85) {
         angle += 5;
         document.getElementById("LaunchAngle").textContent = angle;
         LaunchAngle = angle;
-        calculate();//calculate the new values for output
-        var bool = checkHeight();//check and see if the new curve is out of the grid
-        if (bool == "false") {//if yes reset the initial velocity
+        calculate();
+        var bool = checkHeight();
+        if (bool == "false") {
           angle -= 5;
           document.getElementById("LaunchAngle").textContent = angle;
           LaunchAngle = angle;
@@ -120,16 +120,16 @@ function DecreaseAngle() {//decrease the launch angle by 5
     }
 };
 
-function IncreaseVelocity() {//Increase the initial velocity by 5
+function IncreaseVelocity() {
     var velocity = parseInt(vi);
     reset();
-    if (velocity < 100) {//make 100 the max initial velocity
+    if (velocity < 90) {
         velocity += 5;
         document.getElementById("vi").textContent = velocity;
         vi = velocity;
-        calculate();//calculate the new values for output
-        var bool = checkHeight();//check and see if the new curve is out of the grid
-        if (bool == "false") {//if yes reset the initial velocity
+        calculate();
+        var bool = checkHeight();
+        if (bool == "false") {
           velocity -= 5;
           document.getElementById("vi").textContent = velocity;
           vi = velocity;
