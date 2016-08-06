@@ -1,43 +1,6 @@
-/* Admin Page Style */
-/* Created by Tudor Bertiean */
-
-#wrapper {
-    padding-left: 0;
-}
-
-#sidebar-wrapper {
-    position: fixed;
-    left: 0;
-    width: 250px;
-    height: 100%;
-    margin-right: 5px;
-    overflow-y: auto;
-    background: #bdc3c7;
-}
-
-#page-content-wrapper {
-    width: 100%;
-    position: absolute;
-    padding: 15px;
-}
-
-#wrapper {
-    padding-left: 250px;
-}
-
-#page-content-wrapper {
-    padding: 20px;
-    position: relative;
-}
-
-.list-group{
-    text-indent: 15px;
-}
-
-.list-group .article-listing{
-    text-indent: 25px;
-}
-
-.panel-group panel+panel{
-    margin-top: 0px;
-}
+#wrapper {padding-left:250px;}
+#sidebar-wrapper {position:fixed;left:0;width:250px;height:100%;margin-right:5px;overflow-y:auto;background:#bdc3c7;}
+#page-content-wrapper {width:100%;position:relative;padding:20px;}
+.list-group {text-indent:15px;}
+.list-group .article-listing {text-indent:25px;}
+.panel-group panel+panel {margin-top:0;}
