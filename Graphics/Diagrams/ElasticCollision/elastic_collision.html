@@ -1,11 +1,15 @@
 <html>
-    <?xml-stylesheet type="text/css" href="style.css"?>
 
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+    </head>
     <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
          xmlns:xlink="http://www.w3.org/1999/xlink"
          width="1200px" height="600px" xml:space="preserve" onload="get_final_velocities();">
          
-        
+       
+
         <defs>
             <symbol id="button" overflow="visible">
                 <rect x="-30" y="-10" rx="5" ry="5" width="80" height="20"/>
@@ -13,9 +17,11 @@
 
         </defs>
 
-        <ellipse id="ball1" cx="100" cy="400" rx="20" ry="20" fill="red"></ellipse>
-        <ellipse id="ball2" cx="1000" cy="400" rx="20" ry="20" fill="black"></ellipse>
         
+
+        <ellipse id="ball2" cx=1000 cy=400 rx=20 ry=20 fill="red"></ellipse>
+        <ellipse id="ball1" cx=100 cy=400 rx=20 ry=20 fill="black"></ellipse>
+
         <line x1="50" y1="430" x2="1050" y2="430" style="stroke:rgb(40,142,33);stroke-width:20" />
         <!--input Labels-->
         <text x="50" y="20" font-family="'Arial'"
@@ -51,74 +57,80 @@
                font-size="12"></text>      
         <!--buttons-->
          
-         <g id="IncVi1" overflow="visible"
+        <g id="IncVi1" overflow="visible"
          onclick="increase_vi_1();" class="button" >
-            <use xlink:href="#IncVi1" x="335" y="20" />
-            <text class="textSmall" style="text-anchor:middle;" x="337" y="22"  >Vi1 +</text>
+            <use xlink:href="#button" x="335" y="20" />
+            <text class="textSmall" style="text-anchor:middle;" x="342" y="23"  >Vi1 +</text>
         </g>
 
        <g id="IncVi2" overflow="visible"
          onclick="increase_vi_2();" class="button" >
-            <use xlink:href="#IncVi2" x="335" y="40" />
-            <text class="textSmall" style="text-anchor:middle;" x="337" y="42"  >Vi2 +</text>
+            <use xlink:href="#button" x="335" y="40" />
+            <text class="textSmall" style="text-anchor:middle;" x="342" y="43"  >Vi2 +</text>
         </g>
 
         <g id="Incm1" overflow="visible"
          onclick="increase_m_1();" class="button" >
-            <use xlink:href="#Incm1" x="335" y="80" />
-            <text class="textSmall" style="text-anchor:middle;" x="337" y="82" >Mass 1 +</text>
+            <use xlink:href="#button" x="335" y="80" />
+            <text class="textSmall" style="text-anchor:middle;" x="342" y="83" >Mass 1 +</text>
         </g>
 
          <g id="Incm2" overflow="visible"
          onclick="increase_m_2();" class="button" >
-            <use xlink:href="#Incm2" x="335" y="100" />
-            <text class="textSmall" style="text-anchor:middle;" x="337" y="102">Mass 2 +</text>
+            <use xlink:href="#button" x="335" y="100" />
+            <text class="textSmall" style="text-anchor:middle;" x="342" y="103">Mass 2 +</text>
         </g>
 
         <g id="decVi1" overflow="visible"
          onclick="decrease_vi_1();" class="button">
-            <use xlink:href="#decVi1" x="435" y="20" />
-            <text class="textSmall" style="text-anchor:middle;" x="437"
-            y="22">Vi1 -</text>
+            <use xlink:href="#button" x="435" y="20" />
+            <text class="textSmall" style="text-anchor:middle;" x="442"
+            y="23">Vi1 -</text>
         </g>
 
 
          <g id="decVi2" overflow="visible"
          onclick="decrease_vi_2();" class="button">
-            <use xlink:href="#decVi2" x="435" y="40" />
-            <text class="textSmall" style="text-anchor:middle;" x="437"
-            y="42">Vi2 -</text>
+            <use xlink:href="#button" x="435" y="40" />
+            <text class="textSmall" style="text-anchor:middle;" x="442"
+            y="43">Vi2 -</text>
         </g>
 
          <g id="decm1" overflow="visible"
          onclick="decrease_m_1();" class="button">
-            <use xlink:href="#decm1" x="435" y="80" />
-            <text class="textSmall" style="text-anchor:middle;" x="437"
-            y="82" >Mass 1 -</text>
+            <use xlink:href="#button" x="435" y="80" />
+            <text class="textSmall" style="text-anchor:middle;" x="442"
+            y="83" >Mass 1 -</text>
         </g>
 
 
 
         <g id="decm2" overflow="visible"
          onclick="decrease_m_2();" class="button">
-            <use xlink:href="#decm2" x="435" y="100" />
-            <text class="textSmall" style="text-anchor:middle;" x="437"
-            y="102">Mass 2 -</text>
+            <use xlink:href="#button" x="435" y="100" />
+            <text class="textSmall" style="text-anchor:middle;" x="442"
+            y="103">Mass 2 -</text>
         </g>
 
         <g id="launch" overflow="visible"
          onclick="launch();" class="button">
-            <use xlink:href="#launch" x="435" y="160" />
-            <text class="textSmall" style="text-anchor:middle;" x="437"
-            y="162">Launch</text>
+            <use xlink:href="#button" x="435" y="160" />
+            <text class="textSmall" style="text-anchor:middle;" x="442"
+            y="163">Launch</text>
+        </g>
+
+        <g id="reset" overflow="visible"
+         onclick="reset();" class="button">
+            <use xlink:href="#button" x="335" y="160" />
+            <text class="textSmall" style="text-anchor:middle;" x="342"
+            y="163">Reset</text>
         </g>
 
          
 
         
-         
-
-         
-         <script type="text/javascript" xlink:href="elastic_collision.js"></script>
-      </svg>
-  </html>
+        <script type="text/javascript" xlink:href="elastic_collision.js"></script>   
+    </svg>
+ 
+</html>
+  

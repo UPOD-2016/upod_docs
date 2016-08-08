@@ -9,18 +9,18 @@ var vf_a = document.getElementById("vel_1f");
 var vf_b = document.getElementById("vel_2f");
 var ball_1 = document.getElementById("ball1");
 var ball_2 = document.getElementById("ball2");
-var path1 = document.getElementById("path_1");
-
-
-function reset(){
-
-}
-
-
 var incr1_init;
 var incr2_init;
 var incr1_rev;
 var incr2_rev;
+var ball_1_x = parseInt(ball_1.getAttribute("cx"));	// location of 	ball1
+var ball_2_x = parseInt(ball_2.getAttribute("cx"));	// location of ball2 
+var movement;
+var direction = 0;
+
+
+
+
 
 function get_final_velocities(){
 	var v1i = parseInt(v_a);
@@ -37,34 +37,27 @@ function get_final_velocities(){
 	incr1_init = parseInt(vi_a.textContent);
 	incr2_init = parseInt(vi_b.textContent);
 	
-	incr1_rev = parseInt(vf_a.textContent);
-	incr2_rev = parseInt(vf_b.textContent);
+	incr1_rev = parseFloat(vf_a.textContent);
+	incr2_rev = parseFloat(vf_b.textContent);
 }
 
-var ball_1_x = parseInt(ball_1.getAttribute("cx"));	// location of 	ball1
-var ball_2_x = parseInt(ball_2.getAttribute("cx"));	// location of ball2 
+function reset(){
+	clearInterval(movement);
+	ball_1.setAttribute("cx", 100);
+	ball_2.setAttribute("cx", 1000);
+	get_final_velocities();	
 
-var direction = 0;
+}
+
 
 function launch () {
 
 	var TIME = 10;
 
-	if(incr1_rev < 1 && incr1_rev > 0){
-		incr1_rev = 1;
-	}
-	if(incr1_rev < 0 && incr1_rev > -1){
-		incr1_rev = -1;
-	}
-	if(incr2_rev < 1 && incr2_rev > 0){
-		incr2_rev = 1;
-	}
-	if(incr2_rev < 0 && incr2_rev > -1){
-		incr2_rev = -1;
-	}
+	
 	var movement = setInterval(
 		function() {
-			if (Math.abs((ball_1_x + 20) - (ball_2_x - 20)) > 5 && direction == 0) {
+			if (Math.abs((ball_1_x + 20) - (ball_2_x - 20)) > 5 && direction === 0) {
 				// before contact
 				ball_1_x += incr1_init;
 				ball_2_x += incr2_init;
@@ -73,6 +66,7 @@ function launch () {
 				ball_2.setAttribute("cx", ball_2_x);
 			} else if (direction == 1 && ball_1_x > 50 && ball_2_x < 1050) { 
 				// after contact
+				
 				ball_1_x += incr1_rev;
 				ball_2_x += incr2_rev;
 
