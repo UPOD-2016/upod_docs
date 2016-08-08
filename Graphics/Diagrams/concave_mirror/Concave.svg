@@ -10,7 +10,7 @@
    width="100%"
    height="100%"
    version="1.1"
-   viewBox="0 0 4000 3000"
+   viewBox="0 0 8000 5000"
     onload="init()"
     onmouseup="mouseUp(evt)"
     onmousemove="mouseMove(evt)"
@@ -438,6 +438,7 @@ The reason that I put x=2200 and y=1600 is that after sacling the x and y also c
 	xlink:href="#concave_mirror"
 	x="100"
 	y="400"
+	transform="scale(0.5)"
 	/>
 	
  
