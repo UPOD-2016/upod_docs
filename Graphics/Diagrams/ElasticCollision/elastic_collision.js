@@ -22,6 +22,7 @@ var direction = 0;
 
 
 
+
 function get_final_velocities(){
 	var v1i = parseInt(v_a);
 	var v2i = parseInt(v_b);
@@ -43,49 +44,55 @@ function get_final_velocities(){
 
 function reset(){
 	clearInterval(movement);
-	ball_1.setAttribute("cx", 100);
-	ball_2.setAttribute("cx", 1000);
-	get_final_velocities();	
+	ball_1.setAttribute("cx", "100");
+	ball_2.setAttribute("cx", "1000");
+	ball_1_x = parseInt(ball_1.getAttribute("cx"));	// location of 	ball1
+	ball_2_x = parseInt(ball_2.getAttribute("cx"));	// location of ball2 
+	direction = 0;
+	//get_final_velocities();	
 
 }
 
 
 function launch () {
+	clearInterval(movement);
 
 	var TIME = 10;
 
 	
-	var movement = setInterval(
-		function() {
-			if (Math.abs((ball_1_x + 20) - (ball_2_x - 20)) > 5 && direction === 0) {
-				// before contact
-				ball_1_x += incr1_init;
-				ball_2_x += incr2_init;
+	movement = setInterval(function() {animate()}, TIME);
 
-				ball_1.setAttribute("cx", ball_1_x);
-				ball_2.setAttribute("cx", ball_2_x);
-			} else if (direction == 1 && ball_1_x > 50 && ball_2_x < 1050) { 
-				// after contact
-				
-				ball_1_x += incr1_rev;
-				ball_2_x += incr2_rev;
+	
+	
+}
+function animate(){
+	
+	if (Math.abs((ball_1_x + 20) - (ball_2_x - 20)) > 5 && direction === 0) {
+		// before contact
+		console.log("test1");
+		ball_1_x += incr1_init;
+		ball_2_x += incr2_init;
 
-				ball_1.setAttribute("cx", ball_1_x);
-				ball_2.setAttribute("cx", ball_2_x);
-			} else {
-				
-				direction = 1;
-			}
-		}
-	, TIME);
+		ball_1.setAttribute("cx", ball_1_x);
+		ball_2.setAttribute("cx", ball_2_x);
+	} else if (direction == 1 && ball_1_x > 50 && ball_2_x < 1050) { 
+		// after contact
+		
+		ball_1_x += incr1_rev;
+		ball_2_x += incr2_rev;
 
-	setInterval(
-		function() {
-			if ((~~ball_1_x == 50 || ~~ball_2_x === 1050) && direction == 1) {
-				clearInterval(movement);
-			}
-		}
-	, TIME);
+		ball_1.setAttribute("cx", ball_1_x);
+		ball_2.setAttribute("cx", ball_2_x);
+	} 
+	else if ((ball_1_x === 50 || ball_2_x === 1050) && direction == 1) {
+		console.log("test");
+		clearInterval(movement);
+		
+	}	
+	else {
+		console.log("test3");
+		direction = 1;
+	}
 	
 }
 
