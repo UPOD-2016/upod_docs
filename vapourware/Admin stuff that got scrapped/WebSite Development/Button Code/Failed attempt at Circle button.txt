@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+.circle_to_fold_up {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    border-radius: 50%;
+    opacity: 1;
+    transition: height 0.5s;
+}
+
+.lower_circle_popup {
+    position:  absolute;
+    width: 200px;
+    height: 19px;
+    background-color: blue;
+    bottom: 401px;
+    border-radius: 50%;
+    opacity: 1;
+    transition: height 0.5s;
+}
+
+.circle_to_fold_up:hover {
+    height: 0px;
+}
+
+.lower_circle_popup:hover {
+    height: 200px;
+}
+
+</style>
+
+</head>
+<body>
+
+<p class="circle_to_fold_up"> <div class = "lower_circle_popup"> </div> </p>
+
+</body>
+</html>

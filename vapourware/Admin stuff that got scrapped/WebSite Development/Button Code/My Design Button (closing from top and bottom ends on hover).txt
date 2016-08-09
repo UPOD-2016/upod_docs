@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+.save_button {
+    position: relative;
+    width: 130px;
+    height: 80px;
+    background-color: #0040ff;
+    color: cyan;
+    text-align: center;
+    letter-spacing: 4px;
+    font-size: 19px;
+    font-weight: bold;
+    border: 3px solid #fff;
+    transition: all 0.3s;
+}
+
+.save_button::before {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    content: "";
+    width: 100%;
+    height: 5px;
+    opacity: 1;
+    background-color: cyan;
+    transition: all 0.3s;
+
+}
+
+.save_button::after {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    content: "";
+    width: 100%;
+    height: 5px;
+    opacity: 1;
+    background-color: cyan;
+    transition: all 0.3s;
+}
+
+.save_button:hover {
+    color: #0033cc;
+    z-index: 1;
+}
+
+.save_button:hover:before {
+	height: 50%;
+	opacity: 1;
+        z-index: -2;
+}
+
+.save_button:hover:after {
+	height: 50%;
+	opacity: 1;
+        z-index: -1;
+}
+
+</style>
+</head>
+<body>
+
+<button class="save_button"> SAVE</button>
+
+</body>
+</html>

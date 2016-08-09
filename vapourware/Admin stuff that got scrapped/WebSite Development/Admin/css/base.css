@@ -1,0 +1,39 @@
+.container {
+    height: auto;
+    width: 100%;
+    color: #fff;
+}
+
+.content {
+    height: 100%;
+    width: 100%;
+    margin-left: 20px;
+}
+
+.body {
+    height: 100%;
+}
+
+.options-panel {
+    position: absolute;
+    overflow-y: scroll;
+    width: 300px;
+    min-height: 100%;
+    background-color: #BDC3C7;
+    margin: 0;
+    padding-left: 5px;
+    list-style: none;
+}
+
+.options-panel h3 {
+    border-bottom: 2px solid #000000; 
+}
+
+.sidebar-actions li{
+    text-decoration: none;
+    text-indent: 5px;
+    font-size: 20px;
+    line-height: 40px;
+    list-style-type: none;
+}
+
