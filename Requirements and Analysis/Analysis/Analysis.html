@@ -1,185 +1,209 @@
-<!-- Created by: Omid Ghiyasian -->
-<!-- Created on: 29/06/2016 -->
-<!DOCTYPE HTML>
-<html>
-<head>
-	<title>UPOD Analysis Document</title>
-	<link href="./bootstrap.css" rel="stylesheet" type="text/css">
-	<link href="./styles.css" rel="stylesheet" type="text/css">
-	<link href="./analysis.css" rel="stylesheet" type="text/css">
-</head>
-<body>
-	<a id="top"></a>
-	<div id="content">
-		<h1 class="title">UPOD Analysis Document</h1>
+<!doctype html>
+<!-- Created by: Brian Oh -->
+<!-- Creation Date: 2016-08-09 -->
+<html lang="en">
+	<head>
+		<link rel="stylesheet" type="text/css" href="/css/style.css">
+		<meta charset="utf-8">
+	
+		<title>System Requirement Specification Template</title>
+		<style>
+		table, th, td {
+			border: 1px solid black;
+		}
+		
+		h1 {
+			font-size: 120%;
+		}
+		h4 {
+			margin-left: 40px;
+		}
+		#p {
+		margin-top: 100px;
+		margin-bottom: 100px;
+		margin-right: 240px;
+		margin-left: 80px;
+		}
+		#categoryHeading {
+			margin-left:40px;
+			margin-right:25px;
+		}
+		#subcategoryHeading {
+			margin-left: 75px;
+			margin-right: 25px;
+		}
+		* {
+			font-size: 100%;
+			font-family: 'Open Sans', sans-serif;
+		}
 
-		<h4>Authors</h4>
-		<ul id="authors">
+		#indent {
+			padding-left: 20px;			
+		}
+		#indent3 {
+			padding-left: 78px;			
+		}
+
+		#tableMargin {
+		line-height: 24px;
+		}
+
+		</style>
+	</head>
+	
+	<body  id="p">
+		<div>
+			<div>
+				<h1 style="text-align:right;font-size:320%">Software Anaylsis Specification</h3>
+				<h2 style="text-align:right;font-size:210%">for</h3>
+				<h1 style="text-align:right;font-size:320%">UPOD</h3>
+				<h3 style="text-align:right;font-size:140%">Version 0.3</h3>
+				<h3 style="text-align:right;font-size:140%">Prepared by Class of CP317</h3>
+				<h3 style="text-align:right;font-size:140%">Wilfrid Laurier University, CP317</h3>
+				<h3 style="text-align:right;font-size:140%">28/06/2016</h3>
+			</div>
+		<br>
+		
+		
+		<h1>Revision History</h1>
+		<table>
+		  <tr>
+			<th>Name</th>
+			<th>Date</th>
+			<th>Reason for Changes</th>
+			<th>Version</th>
+		  </tr>
+		  <tr>
+			<td>Brian Oh</td>
+			<td>09/08/16</td>
+			<td>Edited and convert to HTML</td>
+			<td>v0.3</td>
+		  </tr>
+		  <tr>
+			<td>Franco Wong</td>
+			<td>28/06/16</td>
+			<td>Added User UML</td>
+			<td>v0.2</td>
+		  </tr>
+		  <tr>
+			<td>Kieran O’Driscoll</td>
+			<td>28/06/16</td>
+			<td>Added UML Diagrams</td>
+			<td>v0.2</td>
+		  </tr>
+		  <tr>
+			<td>Michael Roher</td>
+			<td>27/06/16</td>
+			<td>Added Editor Description</td>
+			<td>v0.1</td>
+		  </tr>
+		  <tr>
+			<td>Kieran O’Driscoll</td>
+			<td>27/06/16</td>
+			<td>Initial Draft</td>
+			<td>v0.1</td>
+		  </tr>
+		  
+		</table>
 			
-		</ul>
+			<h1>Table of Contents</h1>
+			<ol id="tableMargin">
+				<li><a href="#Introduction">Introduction</a></li>
+					<a href="#Scope">1.1 Purpose</a><br>
+					<a href="#Definitions">1.2 Scope</a><br>
+					<a href="#References">1.3 Definitions, Acronyms, Abbreviations</a><br>
+					<a href="#Overview">1.4 References</a><br>
 
-		<div id="table-of-contents">
-			<h4>Table of Contents</h4>
-			<ol>
-				<li><a href="#Intro">Introduction</a></li>
-				<li><a href="#PurposeAndUses">Purpose and Uses</a></li>
-				<li><a href="#ObjectClassification">Object Classification</a></li>
-				<li><a href="#Architecture">Architecture</a></li>
-                <li><a href="#AdditionalInfo">Additional Information</a></li>
-			</ol>
+				<li><a href="#Overall Description">Functional Requirements</a></li>
+
+				<li><a href="#Specific Requirements">Non-Functional Requirements</a></li>
+					<a href="#External Interfaces">3.1 Reliability</a><br>
+					<a href="#Functions">3.2 Security</a><br>
+					<a href="#Performance Requirements">3.3 Maintainability</a><br>
+				<li><a href="#Supporting Information">Supporting Information</a></li>
+					<a href="#Back End Use Cases">4.1 Back End Use Cases</a><br>
+				<li><a href="#UML Diagrams">UML Diagrams</a></li>
+					<a href="#Back End UML Diagrams">5.1 Back End UML Diagrams</a><br>
+				
+			</ol> 
+			
+			<br>
+			<h1><a name="Introduction">1. Introduction</a></h1>
+				<div id="mainHeading">
+					<h2><a name="Scope">1.1 Purpose</a></h2>
+					<p>The purpose of this document is to provide a more in-depth analysis of the UPOD project’s architecture. This will be achieved through the use of UML diagrams and use case diagrams, as well information on user interfaces, models, classes and the connection between them.
+	Undergraduate Physics Online Database is intended to provide students with a wide variety of knowledge and resources to assist in the learning of physics. The website will provide the essential information for learning physics ranging from kinematics to quantum mechanics.</p>
+				</div>
+				<div id="mainHeading">
+					<h3><a name="Definitions">1.2 Scope</a></h2>
+						<p><span>The scope of this project is to design, create, test and maintain the online physics database. This will be accomplished by a variety of teams such as front-end, back-end, SQA and requirements all working together to build a final product.</span></p>
+				</div>
+				<div id="mainHeading">
+					<h3><a name="References">1.3 Definitions, Acronyms and Abbreviations</a></h2>
+					<li id="categoryHeading">UPOD - Undergraduate Physics Online Database</li>
+					<li id="categoryHeading">WYSIWYG - What You See Is What You Get</li>
+					<li id="categoryHeading">CP317- Software Engineering Course</li>
+					<li id="categoryHeading">HTML - Hyper Text Markup Language</li>
+				</div>
+				<div id="mainHeading">
+					<h3><a name="Overview">1.4 References</a></h2>
+					<p>The analysis template is based on the following software specifications template:</p>
+					<li id="categoryHeading">http://users.tricity.wsu.edu/~mckinnon/cpts322/cpts322-srs-v1.doc</li>
+				</div>
+				
 		</div>
-
-		<section id="Intro">
-			<h2 class="heading1"><span class="number">1.</span>Introduction</h2>
-			<p>
-				UPOD is intended to provide students with a wide variety of knowledge and resources to assist in the learning of physics. The website will provide the essential information for learning physics ranging from kinematics to quantum mechanics.
-			</p>
-
-				<h3 class="heading2"><span class="number">1.1</span>Definitions, Acronyms, and Abbreviations</h3>
-					<p id="categoryHeading"><span style="text-decoration: underline;">UPOD</span></p>
-				    <li id="subcategoryHeading">Undergraduate Physics Online Database </li>
-        </section>
-
-		<section id="PurposeAndUses">
-			<h2 class="heading1"><span class="number">2.</span>Purpose and Uses</h2>
-			<p>
-            The purpose of this document is to provide a more in-depth analysis of the UPOD project’s architecture. This will be achieved through the use of UML diagrams and use case diagrams, as well information on user interfaces, models, classes and the connection between them. UPOD provides:
-			</p>
-            
-            <p id="categoryHeading"><span style="text-decoration: underline;">Users</span></p>
-                <li id="subcategoryHeading">Ability to view catetories, sub-categories, and articles</li>
-                <li id="subcategoryHeading">Ability to search for catetories, sub-categories, and articles</li>
-                <li id="subcategoryHeading">Ability to interact with diagrams</li>
-            <br/>
-            
-            <p id="categoryHeading"><span style="text-decoration: underline;">Moderators</span></p>
-                <li id="subcategoryHeading">Ability to login and logout</li>
-                <li id="subcategoryHeading">Ability to add, delete, or edit categories/sub-categories/articles</li>
-            
-        </section>
-
-
-		<section id="ObjectClassification">
-			<h2 class="heading1"><span class="number">3.</span>Objective Classification</h2>
-            <p style="color:red;">
-                To do: Finish this section based on the diagram of 4.1
-            </p>
-			<section>
-				<h3 class="heading2"><span class="number">3.1</span>Entity Objects</h3>
-				<p style="color:red;"> TBA </p>
-			</section>
-
-
-			<section>
-				<h3 class="heading2"><span class="number">3.2</span>Boundary Objects</h3>
-                <p style="color:red;"> TBA </p>
-			</section>
-            
-            
-            <section>
-				<h3 class="heading2"><span class="number">3.3</span>Control Objects</h3>
-				<p style="color:red;"> TBA </p>
-			</section>
-                        
-		</section>
-
-        <section id="Architecture">
-			<h2 class="heading1"><span class="number">4.</span>Architecture</h2>
+		
+		<div>
+			<h1><a name="Overall Description">2. Functional Requirements</a></h1>
+			<div id="mainHeading">
+				<h3><a name="Product Perspective">2.1 Product Perspective</a></h3>
+				<p>The Editor will allow the user to create posts through a drag-n-drop interface. The user will be expected to drag a block from a sidebar onto the main page and will be able to edit it there. The purpose of this structure is mainly to simplify the process of storing the articles in a normalized manner. That is, instead of storing the articles as one large text blob; the article will be split into different blocks in the database - all images will be stored together, all equations will be stored together, etc. 
+This structure was selected to emphasize performance, maintainability and ease of use. Performance will be improved as the most intensive process would be extracting the individual elements out of the large string. The block approach allows the application to receive the individual elements and thus, no extraction is required. Maintainability is emphasized as the large string approach would be mainly dependent on a 3rd party WYSIWYG editor where the output could change without notice. If the string approach was selected, an update to that editor could break the entire application. Additionally, future developers succeeding the current CP317 class would be able to extend the database and functionality more simply. Lastly, the Ease of Use would be simplified as the users will not be expected to write HTML or Markdown syntax.</p>
+		</div>
+		
+		<div>
+			<h1><a name="Specific Requirements">3. Non-Functional Requirements</a></h1>
+			<div id="mainHeading">
+				<h3><a name="External Interfaces">3.1 Reliability</a></h2>
+				<li id="categoryHeading">Database provides up-to-date, accurate information</li>
+				<li id="categoryHeading">No duplicate information is stored in the database</li>
+				<li id="categoryHeading">The search engine should provide a list of articles that contains the keywords or at least related.</li>
+				<h3><a name="Functions">3.2 Security</a></h2>
+				<li id="categoryHeading">Account passwords of administrators and moderators accounts should be stored securely</li>
+				<li id="categoryHeading">Without appropriate permissions, no articles should be added, removed, or edited</li>
+				<h3><a name="Performance Requirements">3.3 Maintainability</a></h2>
+				<li id="categoryHeading">Additional features may be added to the website in the future, so the whole software should be well-documented and easy to maintain</li>
+			</div>
 			
-			<section>
-				<h3 class="heading2"><span class="number">4.1</span>Entity Class Diagram</h3>
-                <p style="color:red;">
-                    To do: Include all attributes for each entity object
-                </p>
-                <img src="../../Diagrams/UML/Back-end/html-docs/diagrams/42a72bda6c0a98c5ea65a5c7eb8c9cf6.svg"/>
-                    
-                <section>
-					<h4 class="heading3"><span class="number">4.1.1</span>Actors Class</h4>
-                    <p style="color:red;"> To do: update this diagram (no "Admin").</p>
-                    <img src="../../Diagrams/UML/Back-end/html-docs/diagrams/8fcd126b30c67031c29ab5953fa18598.svg"/>
-				</section>
-                
-                
-                <section>
-					<h4 class="heading3"><span class="number">4.1.2</span>Category Class</h4>
-                    <p style="color:red;"> Update this diagram, if necessary.</p>
-
-					<img src="../../Diagrams/UML/Back-end/html-docs/diagrams/0359e7984a06fa1bc96ba62c0ca39bc0.svg"/>
-				</section>
-                
-                <section>
-					<h4 class="heading3"><span class="number">4.1.3</span>Article Class</h4>
-                    <p style="color:red;"> Update this diagram, if necessary.</p>
-					<img src="../../Diagrams/UML/Back-end/html-docs/diagrams/64e1c839ad37c254e96af7c68353ca0d.svg"/>
-				</section>
-                
-			</section>
-
-
-			<section>
-			
-				<h3 class="heading2"><span class="number">4.2</span>Entity/Boundary/Control Diagrams</h3>
-                <p style="color:red;">
-                    Note: The following two diagrams are incomplete.
-                    <br/>
-                    To do: Based on the following two diagrams, create Entity/Boundary/Control Diagrams for both User and Moderator (i.e. 4.2.1 and 4.2.2). After that is done, delete the following two diagrams.
-                </p>
-                <img src="../../Diagrams/Boundary-Control-Entity%20Diagram.jpg"/>
-                <img src="../../Diagrams/UML/Frontend_UML_Hierarchy.png"/>
-                
-                
-				<section>
-					<h4 class="heading3"><span class="number">4.2.1</span>User Entity/Boundary/Control Diagram</h4>
-					<p style="color:red;">
-                        //Insert Image Here
-                        <br/>
-                        //Put all entity, boundary, control objects of User into ONE SINGLE diagram.
-                    </p>
-				</section>
-				
-				<section>
-					<h4 class="heading3"><span class="number">4.2.2</span>Moderator Entity/Boundary/Control Diagram</h4>
-					<p style="color:red;">
-                        //Insert Image Here (ONE SINGLE DIAGRAM)
-                        <br/>
-                        //Put all entity, boundary, control objects of Moderator into ONE SINGLE diagram.
-                    </p>
-				</section>
-								
-			</section>
-
-            
-            <section>
-				<h3 class="heading2"><span class="number">4.3</span>Use Case Class Diagrams</h3>
-				<section>
-					<h4 class="heading3"><span class="number">4.3.1</span>User Class Diagrams</h4>
-					<p style="color:red;">
-                        //Insert Images Here
-                        <br/>
-                        //Based on the diagram of 4.2.1, create a diagram for each use case (i.e. Entity + Boundary + Control + their attributes).
-                    </p>
-				</section>
-				
-				<section>
-					<h4 class="heading3"><span class="number">4.3.2</span>Moderator Class Diagrams</h4>
-					<p style="color:red;">
-                        //Insert Images Here
-                        <br/>
-                        //Based on the diagram of 4.2.2, create a diagram for each use case (i.e. Entity + Boundary + Control + their attributes).
-                    </p>
-				</section>
-				
-			</section>
-            
-		</section>
-        
-        
-		<section id="AdditionalInfo">
-			<h2 class="heading1"><span class="number">5.</span>Additional Information</h2>
-			<p>//TODO</p>
-			<span class="to-top"><a href="#top">Back to Top</a></span>
-		</section>
-
-	</div>
-</body>
+		</div>
+		<div>
+			<h1><a name="Supporting Information">4. Supporting Information</a></h1>
+			<div id="mainHeading">
+				<h3><a name="Back End Use Cases">4.1 Back End Use Cases</a></h2>
+				<img src="../../Diagrams/UML/Back-end/html-docs/diagrams/backEndUseCases.png"/>
+				<br>
+			</div>
+		</div>
+		<div>
+			<h1><a name="UML Diagrams">5. UML Diagrams</a></h1>
+			<div id="mainHeading">
+				<h2><a name="Back End UML Diagrams">5.1 Back End UML Diagrams</a></h2>
+				<p>Relationship Between Back-End Functions:</p>
+					<img src="../../Diagrams/UML/Back-end/html-docs/diagrams/betweenBackEndFunctions.png"/>
+					<br>
+					<br>
+				<p>Article Class:</p>
+					<img src="../../Diagrams/UML/Back-end/html-docs/diagrams/articleClass.png"/>
+					<br>
+					<br>
+				<p>Category Class:</p>
+					<img src="../../Diagrams/UML/Back-end/html-docs/diagrams/categoryClass.png"/>
+					<br>
+					<br>
+				<p>User Class:</p>
+					<img src="../../Diagrams/UML/Back-end/html-docs/diagrams/userClass.png"/>
+					<br>
+			</div>
+		</div>
+	</body>
 </html>
