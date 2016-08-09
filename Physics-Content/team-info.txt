@@ -4,3 +4,4 @@
 4. Electricity and Megnetism - Wallise Wu
 5. Quantum Mechanics         - Eddy Perez
 6. Statistical Mechanics     - Pillip Lee
+Content & Equation SQA Done by Dalton Dranitsaris
