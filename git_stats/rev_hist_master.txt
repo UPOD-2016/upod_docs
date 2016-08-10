@@ -1,144 +1,507 @@
-* 04c1753 (HEAD -> master, origin/master, origin/HEAD) see last commit
-* 4c7f4c5 fixed the leaf in the logo so it doesnt look like it was chopped off
-* 7d4c1e2 linked home page to search and removed the awful looking search in header when on the front page.
-| *   7331b9c (refs/stash) WIP on master: ce27b8c accidentally had kept some elastic search mappings in this file
-| |\  
-|/ /  
-| * c8643fb index on master: ce27b8c accidentally had kept some elastic search mappings in this file
-|/  
-* ce27b8c accidentally had kept some elastic search mappings in this file
-* 1a503aa Added searchkick
-* 8f6ef1e switched to searchkick https://github.com/ankane/searchkick
-* 4c247a1 added a few mappings to searchable.rb (work in progress)
-* 8f4923e Added some elasticsearch mappings for testing
-* 8ab7b23 Added Matrix Treatment of Polarization part 2
-* 933b3a5 Added Matrix Treatment of Polarization
-* b2d2b4e Update .gitignore
-* 5e23acf Update README.md
-* 952aa66 updated UML viewing/editing instructions
-* c07d4f9 added more formulas
-* 4e1478d renamed to modular version
-* 3324e56 removed unnecessary files in last commit
-*   2b3cd2d updated electro physics research
+* f7ab84c (HEAD -> master, origin/master, origin/HEAD) Final Version
+* 2a01df6 Final version v.06 (fixed previous edit errors)
+*   4655d70 Merge branch 'master' of https://github.com/UPOD-2016/upod_docs
 |\  
-| *   03b8404 Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+| * b801f0a Fixed date inconsistency
+| * d90cc29 SQA revisions
+| * 4377ac8 standardized dates to MM/DD/YY
+| * 9d8d9bc Fixed version number and date
+| * 4b1d07e Made SQA changes
+| * 12562dd Add files via upload
+| * 628add5 Fixed Link Issue
+| * 7d20aec Renamed Diagram
+| * 20646d0 Changed Use Case Diagram
+* | 4018f21 Updated SQA logs
+|/  
+* 48b7a38 Updated Analysis Documents v0.2
+* b401972 Clarified a few topics
+* 21c0ef9 fixed
+* bfd082c Fixed something
+* b1a59b4 I worked on this for many hours but it was scrapped for other enhancements
+* fad3579 reset button complete, diagram complete
+* 591bc56 Update team-info.txt
+* e322758 Modular Version
+* c9cbebd Add files via upload
+* 52c22fd Update equalarea.html
+* 2732b5f Update readme.txt
+* b1f3949 Create equalarea.js
+* 1986d81 Create equalarea.html
+* f69cc1f Add files via upload
+* 5bf484b Smaller version of concave mirror
+* 59d4534 Fix collision correctness and button
+* 1b0d885 Create Methods of Inducing Electric Charge
+* 70f0915 Minor file edits
+* 6584bac Minor Text Fixes
+* deabf7a minify the css sheet
+*   8f5d60d Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+|\  
+| * 7b20b00 Remove the onload call to the animate function from the velocity and acceleration diagram
+* | 0ff4e39 article class diagram png upload
+|/  
+* 3a9cbcb Update magnetic.html
+* 0719a3e Update spring.html
+* 9ae2d98 Update induction.html
+* 81db749 Update contact.html
+* e39b0e4 Update contact.html
+* aa9319b Update Friction.html
+* eeb935a updated Article class diagram
+* 35b89a6 Update readme.txt
+* eb5e7d6 Update elastic_collision.html
+* 1f2d0cd Update elastic_collision.js
+* 38571bb Combine the css, javascript and svg into one html file for each of the four diagrams in order to integrate them into the UPOD website
+* 547c0c9 Alter projectile motion diagram to fit the 1000 x 1000 demension limit for articles
+* acab038 Update readme.txt
+* b96a454 Create magnetic.js
+* eaf35dc Create magnetic.html
+* 7bf6790 Added additional graphics requirements defects
+* 6667470 individual reports for each major section of the code
+*   58e3ca7 Merge branch 'master' of https://github.com/UPOD-2016/UPOD_DOCS
+|\  
+| * 1138c3f completed SQA on fundamentals physics research
+| * c96033d final copy
+| * 58157eb Update elastic_collision.svg
+* | 0aecb53 Style Guide Report for current UPOD
+|/  
+* af6c119 added a security report which has suggestions to change code that contains known vulnerabilities
+* 7d7025b Added initial SQA review of website
+* 59b8ef8 Create readme.txt
+* c52ac96 Update Diagrams.csv
+* b1cd8b1 Update readme.txt
+* 7df1c1d Create induction.js
+* 270157c Create induction.html
+* 4429142 update readme
+* ed55c17 DELETED RAILS APP FROM THIS REPO - PLEASE USE NEW REPO
+* dd0b6ee initial deployment started
+*   948907d Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+|\  
+| * 947c1b0 Minor Tweaks for Hooke's & Reflection Animations
+| * d9ad1b3 Update Diagrams.csv
+| * 844b590 complete uniform circular motion svg diagram
+* | ebd1cb2 added a custom text block for including inline equations, started working on a how-to guide for article editor page, fixed bug causing other blocks to not render following a link block
+|/  
+* bdc621e was missing a </div> causing purple background
+* ae27b90 CSS Styling Caused Form Error
+* 98c071d Update readme.txt
+* c9ffb18 Create contact.html
+* 53d0ea1 Create Contact.js
+* 7e1b0cc Update readme.txt
+* 3121ec2 Update elastic_collision.js
+* 15e0c3e Update elastic_collision.svg
+* 9305bb3 has added some details to concave mirror
+* 2ca7f68 has corrected the dragging issue on convex mirror
+* 1673c9d merge accident
+*   ac60b3a fix merge conflict
+|\  
+| *   db66139 Resolve merge conflict
 | |\  
-| | * f9697c0 fix button cross browser, add max height constraint
-| * | ead18f5 Completed version of fundamentals research
-* | | 3b93acd updated electromag research
-* | | 6b2c962 added electromagnetism research
+| * | 8090111 Added Title Helper Method, Fixed JS and Started Preparing For Production
+* | | df5a48b made sure the drop down remembers the filter selected.  Added some more filter logic as well.
 | |/  
 |/|   
-* | 08ce637 has created diverging lense
-* | 743cf59 Add files via upload
-* | 992ff3d more mathjax conversion
-* | a28985e Removed second subcategory category id check as it is not needed
-* | 01c37a5 Update Diagrams.csv
-* | cdfcb98 cripts at the Bottom to have better performence
-* | f10d9a5 Fixed _header
-* | cb87990 Added article linking back to subcategory page
-* |   bd667ad Fixed tag for header
-|\ \  
-| * | d77f104 Made categories for homepage dynamic, implemented frontend's mock up for subcategories page, will need frontend team to do tighten the look and feel
-* | | 2f6b252 Made categories for homepage dynamic, implemented frontend's mock up for subcategories page, will need frontend team to do tighten the look and feel
-|/ /  
-* | e1d61ff Update elastic_collision.html
-* | 432d214 Added description for categorization
-* | 73cf5b1 Updated the format, and added some UML diagrams.
-* | 1120783 fixed to fit requirements
-* | 6c0d289 Minor edits to Physics RD
-* | bbd59e3 redone subcategory page
-* | ccd9fbd replaced old article page with new
-* | 7e3bcdd The values for potential energy and distance moved now change as the bow is moved
-* | b92012f Update elastic_collision.html
-* | ac68d30 has created the converging lense
-* | 2344bad did some mathjax conversion
-* | 9c74a85 split css from html in projectile motion diagram
-* | e67b2ef fixed issue with multiple equations not rendering in artilces
-* | 4a5878e have changed concave mirror
-* |   a831fee Merge branch 'master' of https://github.com/UPOD-2016/UPOD
-|\ \  
-| * \   bd35589 Merge branch 'master' of github.com:UPOD-2016/UPOD
-| |\ \  
-| * | | fc39343 Added nullify flag to Category and Subcategory, associated foreign key records are set to null instead of being destroyed
-* | | | 184e5f2 link block and equation block partials
-| |/ /  
-|/| |   
-* | | 4b9f362 equation blocks now properly render and save in the db
-|/ /  
-* | d636a02 More documentation, run annotate
-* | 45b5c72 Create category seed, fix category admin page
-* | 9898763 Updated UML diagrams
-* | 3b427d5 added subcategory pages
-* | f40aa21 updated text for about page
-* | 77a706c Images Almost Working We now have the "properly" set-up between the ArticleImageBlock, Image and Article. The issue is something with the upload directory I believe as the images aren't being loaded properly afterwards. To be continued. Also made minor changes to the equation javascript and reveretd the Articles#index page as it made testing significantly harder and was in the wrong place (the page design was for Article#Show but someone mistakenly put it in Article#Index).
-* |   2d0fc73 merged
-|\ \  
-| * | de9f155 made catagory page only show catagories belonging to them
-| * | 1b36149 Add Categorizations, can be added through admin page
-| * | db7953e have done some changes to concave mirror
-| * | c501ee2 fixed error in admin page
-| * | c000e2f made a mistake
-| * |   a7036ef Merge branch 'master' of https://github.com/UPOD-2016/UPOD
-| |\ \  
-| | * | 339d92c Minor edits
-| | * | 6e202ea Final Edits from David Brown
-| * | | c0cf43a fixed include error
-| |/ /  
-| * |   9e81647 added .gitignore
-| |\ \  
-| | * | 833ae7e (origin/my_work) Convex mirror is created
-| | * | ea3f715 Re-adding create subcatagories
-| * | | d3822fe I hope this doesnt bother anyone
-* | | | 328f779 regenerated docs and annotated models
-| |/ /  
-|/| |   
-* | |   78cedf1 Merge branch 'master' of github.com:UPOD-2016/UPOD
+* | 1dcf802 added logic to show search results if there is a query.  Filter still needs some work
+* | e289ffb missed a comma
+|/  
+* c77640e added logic for search filtration
+* b726ae9 final change takes care of distortion on mobile (small) screens
+* cc7a93e old script was left in from testing... removed
+* f5fae29 changed hackish approach to make sure footer is at bottom of each page even if page has no cotent
+* c40b6ed made sure static footer is at the bottom of each page
+* a8efa7a Legal info taking up far to much room.  I changed the footer away from being fixed to fix this issue.  I don't think we are in danger of breaking the law so bad that we must constantly remind users of our legal policy.
+* a89179e changed from ` (function($, window){` to `  $(function($, window){` becuase the $ means it waits for the page to load (or in js `$(document).ready(){` )
+*   6c955bf Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+|\  
+| * fadd363 redid fixed footer, needs a sticky footer
+* | e1dd1d6 moved the script to only be in one file
+|/  
+* 6499ef5 made the categories button resizable by text length
+*   f886d04 Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+|\  
+| * cce2983 Added some space between the elements
+| * 1c8239d fixed the sizing of the select_tag element
+* | 62c8d8d added legal info
+|/  
+* 0309b45 Made the categories index page look similar to the homepage, fixed the categories page added the subcategories links in it and styled it abit. made the sign in, sign out, forgot password,resend confirmation pages look less ugly, fixed the issue of the header with mobile browsers (where the header would not collapse). Articles would not show up in their respective subcategories, now they do.
+* 1882a2b Add documentation for ProjectileMotion and VectorMath SVG diagrams
+* 24ac4a3 Update readme.txt
+* 8d69271 fix animation
+* 98ad03b pagerank algorithm in ruby
+* 1e5ab13 Create circular motion svg
+* 043338e Update Diagrams.csv
+* 2d36e2e Create the distance vs. displacement diagram
+* a07b24e Update update_stats.sh
+*   a9c80c7 Merge branch 'master' of github.com:UPOD-2016/UPOD
+|\  
+| * 0776b96 Minor changes to dashboards
+* | 3acb72d Added ability to edit images in posts and made alerts/notices look nicer
+|/  
+* ab22dc5 Minor fixes to dashboards
+* 37c794f Dashboard improvements
+* 8866ac3 Formatted the article page a little bit.
+* e0f8cb2 Clean up admin panel, hide unnessecary dashboards
+*   1ed591e Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+|\  
+| * 4a16499 Included a table-like structure for the articles index page. Fixed the header. Fixed the thumbnails and captions on homepage and made the search by category button visible.
+* | 8f02b42 undoing changes didnt work as expected
+|/  
+* 6fce578 Restrict routing on admin panel
+* a44aab9 fix validations, remove unneeded validations
+* b642a99 fix admin panel error and spelling mistake
+* 49deba5 Add author statements and new validations
+* 638bce9 Changed Rails ERD Diagram Maker
+* efb9227 Removing Unused Models, Tests, and Admin Dashboards
+* 59e3f25 Friendly URLs for categories and subcategories
+* 5ff4930 Update elastic_collision.js
+* 87307c9 Create elastic_collision.svg
+* a999450 Create readme.txt
+* f9d1290 Update Diagrams.csv
+* 12aec87 Update Diagrams.csv
+* a7bd1a0 Add a description about the velocity and acceleration for each of the cars
+* 278b93d Hooke's Law Animation Minor Fixes and Additions
+* bc914e1 fixed header a bit, caret still out of place
+* a08261b PNGs fixed
+* ad04c5a Misplaced file removed
+* 6df837e Files moved to proper folders, pngs updated
+* 2b3e75e Minor edits
+* 3536e1a SQA entire document
+* b02a876 SQA entire document
+* a95dc54 Re-uploaded version 0.7 Physics RD
+* e6dd2c0 Old updated record deleted - Re-uploaded
+* 33ca1ba SQA entire document
+* e053be3 SQA the entire document for any errors
+* e4b5c71 Updated back end requirements revision history
+* 84824a0 Animate the other two cars, animate a light to start the race and add buttons to start and reset the animation of the cars
+* 151019c equation and diagram blocks are now editable in /article/edit
+* a32cb17 General Code Improvements Everywhere
+*   0e5a797 fixed merge conflict in header
+|\  
+| * d58bf29 added as_json methods for article_blocks
+| * 3a228f9 minor changes to equation block
+| * aa2ed13 Update seeds.rb
+| * 5536325 accidentally delted the contirubtions association on user. adding it back
+| * a066635 Merging with Kieran
+| *   3a4e112 Merge branch 'master' of github.com:UPOD-2016/UPOD into no-ldap-user-flow
+| |\  
+| * | 7c6e577 Removed LDAP
+* | | 1069e7b changed from create(..) to create!(..) to generate stack trace on error to help mitigate issues with ImageMagick
+* | | 5722f7c Added SQA logs
+* | | 64d4a75 Final revisions completed
+* | | 6071beb Diagrams updated and pngs added
+* | | 76dcb90 Titles Updated
+* | | 48a1074 Control objects fixed for articles and main page
+* | | 567a560 Edit of SQA table, begin logging
+* | |   d2bb4cd Merge branch 'master' of https://github.com/UPOD-2016/UPOD
 |\ \ \  
-| * \ \   93214f5 Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+| * | | e630888 revised the diagram of search
+* | | | 83f8063 minor changes to boundary, control, entity diagram
+|/ / /  
+* | | 331bace minor changes to boundary, control, entity diagram
+* | | 7efab50 Missed a tag
+* | | 5ffe12b Fixed the select button on search bar to be able to pick different categories.
+* | | b5f505a JPEG files saved
+* | | c6b9d6a Boundary-Control-Entity edits made
+* | | dc40948 fixed header, now properly links to everything
+* | | 7469fe0 added some actual content in header, did an ad-hoc merge with search changes
+* | | 7515b35 has solved the dragging issue in converging lense
+* | | 9ea7e84  has solved the dragging issue on diverging lense
+* | | 719b3e9 The dragging issue has been corrected on concave mirror
+* | | 47c2858 Added a dropdown option for the search bar on the header and homepage
+* | | c98b701 Edits made to Entity-Boundary-Control Diagrams
+* | | f8afdf5 Edits to diagrams
+* | | abfed9d Created separate Entity-Boundary-Control diagrams
+* | | 09b7bcc Update Diagrams.csv
+* | | 11be1b7 Add 3 cars to the diagram and animate the movement of the first car
+* | |   ce3db8c Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+|\ \ \  
+| * | | 792aa8b added placeholder megamenu
+* | | | ccb40e9 Vector math diagram basic implimentation
+|/ / /  
+* | | 34d6168 projectile motion diagram complete with animation
+| |/  
+|/|   
+* | c85c570 Create readme.txt
+* | 2dc9ad4 Create readme.txt
+* | 25eb250 Create readme.txt
+* | 1710bda Create Friction.js
+* | b81e7a6 Create Friction.html
+* | 86f5529 Update slug method not needed, taken care of by friendlyID
+* | fb928c6 Create update slug method for friendly urls
+* | ee55979 Install and config friendly urls
+|/  
+* 3dc738b Update Diagrams.csv
+* 68f2c11 Update Diagrams.csv
+*   e2d3470  Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+|\  
+| * 00c708a Removed invalid db migration
+* | 482cafc Add dashboard for equation block variable
+|/  
+* 70c249f rewrote seed to contain proper subcategories and fix equation variables
+* 26ed6e9 Revert "Rewrite seed to include categories, all subcategories, Fix equation variables in seed, etc"
+* 6c6c76f Rewrite seed to include categories, all subcategories, Fix equation variables in seed, etc
+* 4a49176 move file
+* 6983377 Create style.css
+* 97b1150 equation variables now created in sir trevor module
+* 4eddb22 changed suggestions around a bit
+* e993a29 fixed search to include body and labels
+* ef9f433 fixing previous commit
+*   6f22dce added variable labels to equation blocks so writers can describe equations in more detail
+|\  
+| * 7a128b3 Add files via upload
+| * ccb35de as per michael's suggestion, fixes reseeding
+| *   cebd80c Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+| |\  
+| | * caa8d00 Update database.yml
+| * | fc8663f unneeded method
+| |/  
+| * a90536a Revert "playing with active record and changed seed file for images"
+| * 268e019 playing with active record and changed seed file for images
+| * ff65d9c see last commit
+| *   6bcc4ea Removed ldap
+| |\  
+| | *   61517b3 Fixing merge conflict
+| | |\  
+| | * | b629d40 Image Upload Is Now Working!
+| * | | f4d7999 removed ldap
+| * | | 6f5461b added some authentication filters...
+| | |/  
+| |/|   
+| * |   322dd3d Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+| |\ \  
+| | * | 955469c Update Diagram.csv
+| | * | cf78f7f Made a mistake uploaded wrong file
+| | * | 9ace0ee fix Jordans diagrams
+| | * | 50b2f83 Fixed error
+| | * | 2cbc8ed MathJax formulas added
+| * | | c7eaa95 formatting.. (-3-)
+* | | | ae947ca added variable labels to equation blocks so writers can describe equations in more detail
+| |/ /  
+|/| |   
+* | | f58a7e5 added browser support check for sandboxed iframes
+* | | 2918f55 Change the click and drag area for the bow diagram so that it is more user friendly
+| |/  
+|/|   
+* | 03a2793 Added Ability To Edit Articles Edit is now working. Currently only works with text blocks but will be integrated with more blocks shortly.
+* | 89c058b add new vector math diagram
+* |   853cd08 Final revisions complete.
+|\ \  
+| * | c3bbd98 changes on slide menu
+| * | 7d2252a Changed article image seed to 400x400
+| * |   0c56205 Merge branch 'master' of github.com:UPOD-2016/UPOD
+| |\ \  
+| | * | 43cd4ad Update elastic_collision.html
+| * | | fdbb9d4 Changed seed image to another host
+| |/ /  
+| * | 4f94214 Create elastic_collision.js
+| * | 8159bd0 Updated the Modular document to fix some changes on Fundamentals II Research
+| * | cac8fb5 Create readme.txt
+| * | 3d6f567 Create readme.txt
+| * | 3914259 Update Diagrams.csv
+| * | 904ff43 Create database.yml
+| * | 14e65eb fixed syntax
+| * | afff811 added requirements
+| * |   392168e Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+| |\ \  
+| | * | dc08509 todo for me and Omid
+| | * | 3e121a3 Add the ability to click and drag the bow
+| | |/  
+| * | 9ca692f changes the subcategory looks
+| |/  
+| * ac1fe6a Law of Reflection Animation
+| * 9a3acc2 Added Lables to Hooke's Law Animation
+| * 655c9f1 Change Image administrate dashboard to display attached image but I think the image controller has not been working properly at all, to be looked at
+| * 5d9b045 ...
+| * 5f76d23 cant make it work
+| * 1267abd Update database.yml
+| *   21029db 画蛇添足
+| |\  
+| | * 0d586b1 added a diagram block prototype and partial for rendering it in a sandboxed iframe
+| * | 392f169 弹搜💣
+| |/  
+| * fb682c3 I was editing the wrong gitignore >_<!!!!
+| * 7e3c126 removed unnecessary tags
+| * f5283e0 Revert "removed unnecessary tags"
+| * 9584ade removed unnecessary tags
+| *   109a111 UML updated
+| |\  
+| | * 625ddae Removed unnecessary tags for subcategory page
+| * | ae598a0 updated back-end UML diagrams
+| |/  
+| * 9facdf7 Updated UML diagram for Users module
+| * 308bb42 added comments to metadata injection
+| *   3aff5f7 Merge branch 'master' of github.com:UPOD-2016/UPOD
+| |\  
+| | * 00e92ba Update Diagrams.csv
+| | * f6a8592 Hookes Law Animation
+| * | d8887a3 Article Titles And Subcategories Working
+| * |   6587e0a Merge branch 'master' of github.com:UPOD-2016/UPOD
+| |\ \  
+| | |/  
+| | * 61d7f00 what is elasticsearch
+| | * 88d3e7e Quick changes to dashboard views
+| | * aa33da3 fixes to admin dashboards, add image and image_block dashboard
+| | * a4d8f8a Add seeding for articles, update dashboards to show more helpful information
+| | * d7f444d Update Diagrams.csv
+| | * 3413f0c Create readme.txt
+| | * 9e2c19e Delete readme.txt
+| | * e62f223 new vector math svg diagram and javascript files
+| | * 675880f Update ReadMe.txt
+| | * c627a43 Create ReadMe.txt
+| | * 1445555 Delete bow.html
+| | * 51dd20d Delete free_body.html
+| | * f97fe6f Convert the html file to an svg file and add updated css for the buttons
+| | * d3d0653 update the readme for the elastic potential energy bow diagram
+| | * 345db6a Add updated css for buttons, add ability for users to change the value of the spring force constant and converted the html file into an svg file
+| | * e44f2a6 Create readme.txt
+| | * c9d78e7 Basic model of search controller
+| | * 343d2b9 Update readme.txt
+| | * 610d231 Create springmove.js
+| | * de8d0c0 Create spring.html
+| * | 27ac7c1 Spring cleaning
+| |/  
+| * c6973c6 Fix Headings in the about page
+| * a49b07c Updated MathJax Equations
+| * 974650d Learned mathjax and added equations for all concepts of classical mechanics
+| * 5be9e24 updated stats for the week
+| * 04c1753 see last commit
+| * 4c7f4c5 fixed the leaf in the logo so it doesnt look like it was chopped off
+| * 7d4c1e2 linked home page to search and removed the awful looking search in header when on the front page.
+| * ce27b8c accidentally had kept some elastic search mappings in this file
+| * 1a503aa Added searchkick
+| * 8f6ef1e switched to searchkick https://github.com/ankane/searchkick
+| * 4c247a1 added a few mappings to searchable.rb (work in progress)
+| * 8f4923e Added some elasticsearch mappings for testing
+| * 8ab7b23 Added Matrix Treatment of Polarization part 2
+| * 933b3a5 Added Matrix Treatment of Polarization
+| * b2d2b4e Update .gitignore
+| * 5e23acf Update README.md
+| * 952aa66 updated UML viewing/editing instructions
+| * c07d4f9 added more formulas
+| * 4e1478d renamed to modular version
+| * 3324e56 removed unnecessary files in last commit
+| *   2b3cd2d updated electro physics research
+| |\  
+| | *   03b8404 Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+| | |\  
+| | | * f9697c0 fix button cross browser, add max height constraint
+| | * | ead18f5 Completed version of fundamentals research
+| * | | 3b93acd updated electromag research
+| * | | 6b2c962 added electromagnetism research
+| | |/  
+| |/|   
+| * | 08ce637 has created diverging lense
+| * | 743cf59 Add files via upload
+| * | 992ff3d more mathjax conversion
+| * | a28985e Removed second subcategory category id check as it is not needed
+| * | 01c37a5 Update Diagrams.csv
+| * | cdfcb98 cripts at the Bottom to have better performence
+| * | f10d9a5 Fixed _header
+| * | cb87990 Added article linking back to subcategory page
+| * |   bd667ad Fixed tag for header
+| |\ \  
+| | * | d77f104 Made categories for homepage dynamic, implemented frontend's mock up for subcategories page, will need frontend team to do tighten the look and feel
+| * | | 2f6b252 Made categories for homepage dynamic, implemented frontend's mock up for subcategories page, will need frontend team to do tighten the look and feel
+| |/ /  
+| * | e1d61ff Update elastic_collision.html
+| * | 432d214 Added description for categorization
+| * | 73cf5b1 Updated the format, and added some UML diagrams.
+| * | 1120783 fixed to fit requirements
+| * | 6c0d289 Minor edits to Physics RD
+| * | bbd59e3 redone subcategory page
+| * | ccd9fbd replaced old article page with new
+| * | 7e3bcdd The values for potential energy and distance moved now change as the bow is moved
+| * | b92012f Update elastic_collision.html
+| * | ac68d30 has created the converging lense
+| * | 2344bad did some mathjax conversion
+| * | 9c74a85 split css from html in projectile motion diagram
+| * | e67b2ef fixed issue with multiple equations not rendering in artilces
+| * | 4a5878e have changed concave mirror
+| * |   a831fee Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+| |\ \  
+| | * \   bd35589 Merge branch 'master' of github.com:UPOD-2016/UPOD
+| | |\ \  
+| | * | | fc39343 Added nullify flag to Category and Subcategory, associated foreign key records are set to null instead of being destroyed
+| * | | | 184e5f2 link block and equation block partials
+| | |/ /  
+| |/| |   
+| * | | 4b9f362 equation blocks now properly render and save in the db
+| |/ /  
+| * | d636a02 More documentation, run annotate
+| * | 45b5c72 Create category seed, fix category admin page
+| * | 9898763 Updated UML diagrams
+| * | 3b427d5 added subcategory pages
+| * | f40aa21 updated text for about page
+| * | 77a706c Images Almost Working We now have the "properly" set-up between the ArticleImageBlock, Image and Article. The issue is something with the upload directory I believe as the images aren't being loaded properly afterwards. To be continued. Also made minor changes to the equation javascript and reveretd the Articles#index page as it made testing significantly harder and was in the wrong place (the page design was for Article#Show but someone mistakenly put it in Article#Index).
+| * |   2d0fc73 merged
+| |\ \  
+| | * | de9f155 made catagory page only show catagories belonging to them
+| | * | 1b36149 Add Categorizations, can be added through admin page
+| | * | db7953e have done some changes to concave mirror
+| | * | c501ee2 fixed error in admin page
+| | * | c000e2f made a mistake
+| | * |   a7036ef Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+| | |\ \  
+| | | * | 339d92c Minor edits
+| | | * | 6e202ea Final Edits from David Brown
+| | * | | c0cf43a fixed include error
+| | |/ /  
+| | * |   9e81647 added .gitignore
+| | |\ \  
+| | | * | 833ae7e (origin/my_work) Convex mirror is created
+| | | * | ea3f715 Re-adding create subcatagories
+| | * | | d3822fe I hope this doesnt bother anyone
+| * | | | 328f779 regenerated docs and annotated models
+| | |/ /  
+| |/| |   
+| * | |   78cedf1 Merge branch 'master' of github.com:UPOD-2016/UPOD
 | |\ \ \  
-| | * | | 1ee9b31 update readme
-| | * | |   e3e3985 Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+| | * \ \   93214f5 Merge branch 'master' of https://github.com/UPOD-2016/UPOD
 | | |\ \ \  
-| | * | | | 8846712 Minor edits
-| * | | | | c65467c real image path done
-| | |/ / /  
-| |/| | |   
-| * | | | 439bcd0 Fixed image path?
-| |/ / /  
-| * | | 886f079 Delete UPOD_Landing_Page_Prototype.jpg
-| * | | 84a4c22 fixed image type...derp
-| * | | 4d3f5c1 Add landing page prototype image to front end requirements
-* | | |   ad88a89 Merge branch 'master' of github.com:UPOD-2016/UPOD
-|\ \ \ \  
-| |/ / /  
-| * | | 8cde23f Add landing page prototype image
-| * | | 9d29592 Updated scope, definitions, and functions.
-* | | |   90efd79 Merge branch 'master' of github.com:UPOD-2016/UPOD
-|\ \ \ \  
-| |/ / /  
-| * | |   42ff373 Merge branch 'master' of https://github.com/UPOD-2016/UPOD
-| |\ \ \  
-| * | | | 991fe88 Fix missing commas in dashboards
-* | | | | e5c7a54 removing the 7 commits for category image strings
+| | | * | | 1ee9b31 update readme
+| | * | | | c65467c real image path done
+| * | | | |   ad88a89 Merge branch 'master' of github.com:UPOD-2016/UPOD
+| |\ \ \ \ \  
+| * \ \ \ \ \   90efd79 Merge branch 'master' of github.com:UPOD-2016/UPOD
+| |\ \ \ \ \ \  
+| * | | | | | | e5c7a54 removing the 7 commits for category image strings
+* | | | | | | | d5f5841 Final revisions completed.
+| |_|_|_|/ / /  
+|/| | | | | |   
+* | | | | | |   e3e3985 Merge branch 'master' of https://github.com/UPOD-2016/UPOD
+|\ \ \ \ \ \ \  
+| | |_|_|/ / /  
+| |/| | | | |   
+| * | | | | | 439bcd0 Fixed image path?
+* | | | | | | 8846712 Minor edits
+|/ / / / / /  
+* | | | | | 886f079 Delete UPOD_Landing_Page_Prototype.jpg
+* | | | | | 84a4c22 fixed image type...derp
+* | | | | | 4d3f5c1 Add landing page prototype image to front end requirements
+| |_|/ / /  
+|/| | | |   
+* | | | | 8cde23f Add landing page prototype image
+* | | | | 9d29592 Updated scope, definitions, and functions.
 | |/ / /  
 |/| | |   
-* | | | c567fb6 Changed category images dimension sizes
-* | | | 52aa36b Uploaded category images to database, category page is now database driven
-* | | | 27e3428 Fixed Table of Contents and number for previous commit
-* | | |   9a50c1a Merge branch 'master' of github.com:UPOD-2016/UPOD
+* | | |   42ff373 Merge branch 'master' of https://github.com/UPOD-2016/UPOD
 |\ \ \ \  
 | |/ / /  
-| * | | c2aaef5 Add validations, rspec testing and further documetation fixes
-| * | | 4ada23e fixed the optics and quantum mechanics
-| * | | 5550518 added information to functional hierarchy
-| * | | 9692864 Documentation and fixes to RSpec tests
-| * | | 89fc10f Minor fixes, needs to be completed.
-| * | | 2b2c53a Revised v.05
-| * | | 9be0928 v.04 revised
-| * | | d38ee73 Final v.05
-| * | | becdc80 Added styles sheet for all requirements
-* | | | 4e37bdc Implemented Carrierwave field for Administrative, added image to category view
+| * | | c567fb6 Changed category images dimension sizes
+| * | | 52aa36b Uploaded category images to database, category page is now database driven
+| * | | 27e3428 Fixed Table of Contents and number for previous commit
+| * | |   9a50c1a Merge branch 'master' of github.com:UPOD-2016/UPOD
+| |\ \ \  
+| * | | | 4e37bdc Implemented Carrierwave field for Administrative, added image to category view
+* | | | | 991fe88 Fix missing commas in dashboards
+| |/ / /  
+|/| | |   
+* | | | c2aaef5 Add validations, rspec testing and further documetation fixes
+* | | | 4ada23e fixed the optics and quantum mechanics
+* | | | 5550518 added information to functional hierarchy
+* | | | 9692864 Documentation and fixes to RSpec tests
+* | | | 89fc10f Minor fixes, needs to be completed.
+* | | | 2b2c53a Revised v.05
+* | | | 9be0928 v.04 revised
+* | | | d38ee73 Final v.05
+* | | | becdc80 Added styles sheet for all requirements
 |/ / /  
 * | | 7b9f19f Minor fixes, needs to be completed immediately.
 * | | df0ae84 Revised v.05
@@ -283,19 +646,15 @@
 | | * 09c3320 added alert and notice areas to application layout
 | | * c76192c added user model and LDAP models
 | | * 84fa2d4 deleted the back end RD .doc files
+| | * f4af4b5 Removed spaces from name
+| | * 2b6ca90 Removed spaces from name
+| | * 8dc0900 Removed spaces from name
+| | * dff5ab9 Removed spaces from name
+| | * 219084b Version 1 of fundamentals research in modular form
 | * | e875344 cleaning up html
 * | | 97d34e9 delete ds_store
 * | |   06fa32d Merge branch 'master' of https://github.com/UPOD-2016/UPOD
 |\ \ \  
-* | | | 5d77679 Update time tracking sheet with latest contributions as well as backend requirements document with notes and to do list for categories
-| | | | * 71c6eac (origin/administrate) New article redirect
-| | | | * 1ff69ae Add administate gem
-| | | |/  
-| | | * f4af4b5 Removed spaces from name
-| | | * 2b6ca90 Removed spaces from name
-| | | * 8dc0900 Removed spaces from name
-| | | * dff5ab9 Removed spaces from name
-| | | * 219084b Version 1 of fundamentals research in modular form
 | | |/  
 | |/|   
 | * | e1b6f79 updated optics
@@ -330,6 +689,7 @@
 | * 3d1420b deleted editor for another one
 | * ad9eef5 fixed an entry
 | * c0fc21a make slide menu easier to maintain and update template.html
+* | 5d77679 Update time tracking sheet with latest contributions as well as backend requirements document with notes and to do list for categories
 |/  
 * f8ef430 Fixed an issue of the push menu cutting off before end of page
 *   0bd9e18 Merge branch 'master' of https://github.com/UPOD-2016/UPOD
@@ -856,7 +1216,7 @@
 * 92c77fd Updated High Level Requirements on Web Design
 * 9592d7d Added requirements - first draft
 * 1237409 update README.md
-*   4e2a091 (origin/development) Merge pull request #3 from mikeroher/patch-1
+*   4e2a091 Merge pull request #3 from mikeroher/patch-1
 |\  
 | * 7515196 Editing README
 |/  
