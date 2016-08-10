@@ -1,3 +1,5 @@
 By: Emils Matiss
-Status: Research/prototyping
-Files:TBU
+Status: Complete
+Files:self_1dg.html
+
+preview:hopper.wlu.ca/~mati0030/primary.html
