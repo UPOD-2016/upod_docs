@@ -1,0 +1,236 @@
+<style>
+.button {
+fill: LightGrey ;
+stroke: Silver;
+}
+
+.button:hover {
+cursor: pointer;
+stroke:black;
+}
+
+.button:active {
+fill: DarkGrey;
+stroke: black;
+}
+
+.textSmall {
+ font-family: sans-serif;
+ font-size: 9pt;
+ font-weight: bold;
+ fill: black;
+ stroke: none;
+}
+</style>
+
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg" 
+xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 500 500" 
+xml:space="preserve">
+
+	<?Define Buttons?>
+    <defs>
+        <symbol id="button" overflow="visible">
+            <rect x="-30" y="-10" rx="5" ry="5" width="150" 
+height="20"/>
+        </symbol>        
+    </defs>
+
+	<?objects for the diagram?>
+	<line x1="50" y1="300" x2="400" y2="300" 
+style="stroke:rgb(0,0,0);stroke-width:3" />
+
+	<?description of the situation?>
+	<text id="text" x="5" y="20" font-family="sans-serif" font-size="20px" 
+fill="black"> 
+</text>
+
+<text id="u1-v" x="80" y="50" font-family="sans-serif" font-size="14px" fill="black">v=0</text>
+<text id="u1-h" x="80" y="70" font-family="sans-serif" font-size="14px" fill="black">h=160</text>
+<text id="u1-t" x="80" y="90" font-family="sans-serif" font-size="14px" fill="black"></text>
+<text id="u1-m" x="80" y="110" font-family="sans-serif" font-size="14px" fill="black"></text>
+
+<text id="u2-v" x="205" y="50" font-family="sans-serif" font-size="14px" fill="black">v=0</text>
+<text id="u2-h" x="205" y="70" font-family="sans-serif" font-size="14px" fill="black">h=160</text>
+<text id="u2-t" x="205" y="90" font-family="sans-serif" font-size="14px" fill="black"></text>
+<text id="u2-m" x="205" y="110" font-family="sans-serif" font-size="14px" fill="black"></text>
+
+<text id="u3-v" x="330" y="50" font-family="sans-serif" font-size="14px" fill="black">v=0</text>
+<text id="u3-h" x="330" y="70" font-family="sans-serif" font-size="14px" fill="black">h=160</text>
+<text id="u3-t" x="330" y="90" font-family="sans-serif" font-size="14px" fill="black"></text>
+<text id="u3-m" x="330" y="110" font-family="sans-serif" font-size="14px" fill="black"></text>
+
+
+	<?objects?>
+<g id="unit1">
+	<line id="line1" x1="100" y1="140" x2="100" y2="150" 
+stroke="black" fill="black" stroke-width="2" opacity="1.0"/>
+	<polygon id="arrow1" points="95 150, 105 150, 100 155" 
+fill="black" opacity="1.0"/>
+	<circle id="ball1" cx="100" cy="120" r="20" stroke-width="2" stroke="black" fill="green" opacity="1.0"/>
+	<text x="83" y="125" font-family="sans-serif" font-size="12px" fill="white">1 ms<tspan baseline-shift="super" font-size="8px">-2</tspan></text>
+</g>
+
+<g id="unit2">
+	<line id="line2" x1="225" y1="140" x2="225" y2="160" 
+stroke="black" fill="black" stroke-width="2" opacity="1.0"/>
+	<polygon id="arrow2" points="220 160, 230 160, 225 165" 
+fill="black" opacity="1.0"/>
+	<circle id="ball2" cx="225" cy="120" r="20" stroke-width="2" stroke="black" fill="red" opacity="1.0"/>
+	<text x="208" y="125" font-family="sans-serif" font-size="12px" fill="white">2 ms<tspan baseline-shift="super" font-size="8px">-2</tspan></text>
+
+</g>
+	
+<g id="unit3">
+		<line id="line3" x1="350" y1="140" x2="350" y2="170" 
+stroke="black" fill="black" stroke-width="2" opacity="1.0"/>
+	<polygon id="arrow3" points="345 170, 355 170, 350 175" 
+fill="black" opacity="1.0"/>
+	<circle id="ball3" cx="350" cy="120" r="20" stroke-width="2" stroke="black" fill="blue" opacity="1.0"/>
+	<text x="333" y="125" font-family="sans-serif" font-size="12px" fill="white">3 ms<tspan baseline-shift="super" font-size="8px">-2</tspan></text>
+
+</g>
+
+	<?buttons?>
+	
+	<g id="check" onclick="drop();" class="button">
+        <use xlink:href="#button" x="100" y="360"/>
+        <text style="text-anchor:middle;" class="textSmall" x="145" 
+y="365">Drop</text>
+    </g>
+    
+	<g id="reset" onclick="reset();" class="button">
+        <use xlink:href="#button" x="260" y="360"/>
+        <text style="text-anchor:middle;" class="textSmall" x="300" 
+y="365">Reset</text>
+    </g>	 
+     
+  </svg>
+  
+<script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="//cdn.jsdelivr.net/velocity/1.1.0/velocity.min.js"></script>
+
+<script>
+	var timer;	
+	var acc1 = 1;
+	var acc2 = 2;
+	var acc3 = 3; 
+	
+	var v1 = 0;
+	var v2 = 0;
+	var v3 = 0;
+	
+	var x1 = 0;
+	var x2 = 0;
+	var x3 = 0;
+	
+	var t = 0;
+	var t1 = 0;
+	var t2 = 0;
+	var t3 = 0;
+	
+	
+	var $element1 = $("#unit1");
+	var $element2 = $("#unit2");
+	var $element3 = $("#unit3");
+	
+	var o=document.getElementById("text");
+	
+	var b1=document.getElementById("ball1");
+	var b2=document.getElementById("ball2");
+	var b3=document.getElementById("ball3");
+	var a1=document.getElementById("arrow1");
+	var a2=document.getElementById("arrow2");
+	var a3=document.getElementById("arrow3");
+	var l1=document.getElementById("line1");
+	var l2=document.getElementById("line2");
+	var l3=document.getElementById("line3");
+
+	
+
+
+function next(){
+	
+
+		
+	if(x1 > 160){
+		x1=175;
+		$("#u1-v").text("v=0");
+		$("#u1-h").text("h=0");
+		$("#u1-t").text("t="+String(t1));
+	}
+	else{
+		t1++;
+		v1 += acc1;
+		x1 += v1;
+		$("#u1-v").text("v="+String(v1));
+		$("#u1-h").text("h="+String(160-x1));
+	}
+		
+	if(x2 > 160){
+		x2=175;
+		$("#u2-v").text("v=0");
+		$("#u2-h").text("h=0");
+		$("#u2-t").text("t="+String(t2));
+	}
+	else{
+		t2++;
+		v2 += acc2;
+		x2 += v2;
+		$("#u2-v").text("v="+String(v2));
+		$("#u2-h").text("h="+String(160-x2));
+	}
+	
+	if(x3 > 160){
+		x3=175;
+		$("#u3-v").text("v=0");
+		$("#u3-h").text("h=0");
+		$("#u3-t").text("t="+String(t3));
+	}
+	else{
+		t3++;
+		v3 += acc3;
+		x3 += v3;
+		$("#u3-v").text("v="+String(v3));
+		$("#u3-h").text("h="+String(160-x3));
+	}
+	
+	$element1.velocity({translateY: x1}, {duration: 100, easing: "linear"});
+	$element2.velocity({translateY: x2}, {duration: 100, easing: "linear"});
+	$element3.velocity({translateY: x3}, {duration: 100, easing: "linear"});
+			
+	t++;
+	if(t>=20)
+		clearInterval(timer);		
+};
+	
+function drop(){
+	timer = setInterval(function(){next()}, 100);
+
+};
+
+function reset(){
+	clearInterval(timer);
+	$element1.velocity({translateY: 0}, {duration: 1000});
+	$element2.velocity({translateY: 0}, {duration: 1000});
+	$element3.velocity({translateY: 0}, {duration: 1000});
+	$("#u1-h").text("h=160");
+	$("#u2-h").text("h=160");
+	$("#u3-h").text("h=160");
+	$("#u1-t").text("");
+	$("#u2-t").text("");
+	$("#u3-t").text("");
+	t1 = 0;
+	t2 = 0;
+	t3 = 0;
+	v1 = 0;
+	v2 = 0;
+	v3 = 0;
+	x1 = 0;
+	x2 = 0;
+	x3 = 0;
+	t = 0;
+
+	};
+	
+</script>
+
